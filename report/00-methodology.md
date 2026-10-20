@@ -246,6 +246,11 @@ payloads.
   they are good.
 - **No terms-of-service analysis.** Nothing here says whether a given use of a
   service is permitted by its terms. That question needs a lawyer, not a probe.
+- **A challenge page can be served with status 200.** NCBI's E-utilities
+  documentation returns a reCAPTCHA interstitial (`evidence/terms/008_NCBI.body`)
+  while the E-utilities API itself answers normally. Status codes alone would
+  have recorded that docs page as a successful capture. It is classified as a
+  challenge in the terms table, and the API rows are unaffected.
 - **Bot-walled services are unresolved, not absent.** 34 probes hit a challenge
   page. Those services may well have working public APIs; this sandbox could
   not reach them. They are listed with their captures in
