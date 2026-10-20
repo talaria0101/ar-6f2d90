@@ -1,0 +1,96 @@
+slug	name	category	api_probe	docs_url	home_url
+doaj3	DOAJ	academic	https://doaj.org/api/v3/search/articles/test?pageSize=1	https://doaj.org/api/v3/docs	https://doaj.org/
+dblp3	dblp	academic	https://dblp.org/search/publ/api?q=test&format=json&h=1	https://dblp.org/faq/How+to+use+the+dblp+search+API.html	https://dblp.org/
+scholar3	Internet Archive Scholar	archive	https://scholar.archive.org/search?q=test	https://scholar.archive.org/	https://scholar.archive.org/
+swh3	Software Heritage	archive	https://archive.softwareheritage.org/api/1/origin/search/test/?limit=1	https://archive.softwareheritage.org/api/	https://www.softwareheritage.org/
+loc3	Library of Congress	archive	https://www.loc.gov/books/?q=test&fo=json&c=1	https://www.loc.gov/apis/	https://www.loc.gov/
+nara	NARA Catalog	archive	https://catalog.archives.gov/api/v2/records/search?q=test&limit=1	https://www.archives.gov/research/catalog/help/api	https://catalog.archives.gov/
+tna-uk	The National Archives (UK) Discovery	archive	https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=test	https://discovery.nationalarchives.gov.uk/API/sandbox/index	https://www.nationalarchives.gov.uk/
+snac	SNAC	archive	https://api.snaccooperative.org/	https://snaccooperative.org/	https://snaccooperative.org/
+archiveshub	Archives Hub	archive	https://archiveshub.jisc.ac.uk/search?q=test	https://archiveshub.jisc.ac.uk/	https://archiveshub.jisc.ac.uk/
+ape	Archives Portal Europe	archive	https://www.archivesportaleurope.net/api/search?query=test	https://www.archivesportaleurope.net/	https://www.archivesportaleurope.net/
+bne	BNE datos	archive	https://datos.bne.es/sparql?query=SELECT%20*%20WHERE%20%7B%3Fs%20%3Fp%20%3Fo%7D%20LIMIT%201&format=json	https://datos.bne.es/	https://datos.bne.es/
+getty	Getty Vocabularies SPARQL	archive	https://vocab.getty.edu/sparql.json?query=SELECT%20*%20WHERE%20%7B%3Fs%20%3Fp%20%3Fo%7D%20LIMIT%201	https://www.getty.edu/research/tools/vocabularies/obtain/download.html	https://vocab.getty.edu/
+rijksmuseum	Rijksmuseum	archive	https://www.rijksmuseum.nl/api/en/collection?key=0fiuZFh4&q=test&ps=1	https://data.rijksmuseum.nl/	https://www.rijksmuseum.nl/
+metmuseum	Met Museum	archive	https://collectionapi.metmuseum.org/public/collection/v1/search?q=test	https://metmuseum.github.io/	https://www.metmuseum.org/
+artic	Art Institute of Chicago	archive	https://api.artic.edu/api/v1/artworks/search?q=test&limit=1	https://api.artic.edu/docs/	https://www.artic.edu/
+harvardart	Harvard Art Museums	archive	https://api.harvardartmuseums.org/object?apikey=DEMO&size=1	https://harvardartmuseums.org/collections/api	https://www.harvardartmuseums.org/
+cooperhewitt	Cooper Hewitt	archive	https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=test&access_token=DEMO	https://collection.cooperhewitt.org/api/	https://collection.cooperhewitt.org/
+cleveland	Cleveland Museum of Art	archive	https://openaccess-api.clevelandart.org/api/artworks/?q=test&limit=1	https://openaccess-api.clevelandart.org/	https://www.clevelandart.org/
+smk	Statens Museum for Kunst	archive	https://api.smk.dk/api/v1/art/search/?keys=test&offset=0&rows=1	https://www.smk.dk/en/article/smk-api/	https://www.smk.dk/
+gbif	GBIF	academic	https://api.gbif.org/v1/occurrence/search?q=test&limit=1	https://techdocs.gbif.org/en/openapi/	https://www.gbif.org/
+obis	OBIS	academic	https://api.obis.org/v3/occurrence?scientificname=Mola%20mola&size=1	https://api.obis.org/	https://obis.org/
+idigbio	iDigBio	academic	https://search.idigbio.org/v2/search/records/?q=test&limit=1	https://github.com/iDigBio/idigbio-search-api/wiki	https://www.idigbio.org/
+vertnet	VertNet	academic	http://api.vertnet-portal.appspot.com/api/search?q=test&limit=1	http://vertnet.org/	http://vertnet.org/
+eol	Encyclopedia of Life	academic	https://eol.org/api/search/1.0.json?q=test&page=1	https://eol.org/docs/what-is-eol/data-services	https://eol.org/
+theses	theses.fr	academic	https://theses.fr/api/v1/theses/recherche/?q=test&nombre=1	https://theses.fr/	https://theses.fr/
+oatd	OATD	academic	https://oatd.org/oatd/search?q=test	https://oatd.org/	https://oatd.org/
+ndltd	NDLTD	academic	http://search.ndltd.org/search.php?q=test	http://www.ndltd.org/	http://www.ndltd.org/
+core-uk	CORE (UK)	academic	https://api.core.ac.uk/v3/search/works?q=test&limit=1	https://api.core.ac.uk/docs/v3	https://core.ac.uk/
+openaire-fix	OpenAIRE Graph	academic	https://api.openaire.eu/graph/v1/researchProducts?search=test&pageSize=1	https://graph.openaire.eu/docs/apis/	https://graph.openaire.eu/
+openaire-ds	OpenAIRE Datasets	academic	https://api.openaire.eu/search/datasets?title=test&format=json&size=1	https://graph.openaire.eu/docs/	https://explore.openaire.eu/
+eventdata	Crossref Event Data	academic	http://api.eventdata.crossref.org/v1/events?rows=1	https://www.crossref.org/documentation/event-data/	https://www.crossref.org/
+chemrxiv2	ChemRxiv	academic	https://chemrxiv.org/engage/chemrxiv/public-api/v1/items?limit=1	https://chemrxiv.org/engage/chemrxiv/public-api/	https://chemrxiv.org/
+lareferencia2	LA Referencia	academic	https://api.lareferencia.info/v1/search?query=test&size=1	https://api.lareferencia.info/	https://www.lareferencia.info/
+scielo3	SciELO	academic	https://search.scielo.org/?q=test&output=site	https://search.scielo.org/	https://scielo.org/
+redalyc3	Redalyc	academic	https://www.redalyc.org/revista.oa?id=1	https://www.redalyc.org/	https://www.redalyc.org/
+agris3	AGRIS	academic	https://agris.fao.org/search/en/?q=test	https://agris.fao.org/	https://agris.fao.org/
+epistemonikos2	Epistemonikos	academic	https://api.epistemonikos.org/v2/documents?query=test	https://www.epistemonikos.org/	https://www.epistemonikos.org/
+mendeley2	Mendeley Data	archive	https://data.mendeley.com/api/datasets?query=test	https://data.mendeley.com/api/	https://data.mendeley.com/
+4tu2	4TU.ResearchData	archive	https://data.4tu.nl/v2/articles?search=test&page_size=1	https://data.4tu.nl/	https://data.4tu.nl/
+radar2	RADAR	archive	https://www.radar-service.eu/radar/api/en/search/?q=test	https://www.radar-service.eu/	https://www.radar-service.eu/
+citeseerx2	CiteSeerX	academic	https://citeseerx.ist.psu.edu/search?q=test	https://citeseerx.ist.psu.edu/	https://citeseerx.ist.psu.edu/
+fatcat3	Fatcat	archive	https://api.fatcat.wiki/v0/release/lookup?doi=10.1038/nature12373	https://api.fatcat.wiki/	https://fatcat.wiki/
+memento3	Memento TimeTravel	archive	http://timetravel.mementoweb.org/api/json/2020/https://example.com/	https://timetravel.mementoweb.org/guide/api/	http://mementoweb.org/
+ukwa3	UK Web Archive	archive	https://www.webarchive.org.uk/wayback/archive/?url=example.com	https://www.webarchive.org.uk/	https://www.webarchive.org.uk/
+perma2	Perma.cc	archive	https://api.perma.cc/v1/public/archives/?limit=1	https://perma.cc/docs/developer	https://perma.cc/
+conifer	Conifer	archive	https://conifer.rhizome.org/	https://conifer.rhizome.org/	https://conifer.rhizome.org/
+archive-today	archive.today	archive	https://archive.ph/newest/example.com	https://archive.ph/	https://archive.ph/
+webcite	WebCite	archive	https://www.webcite.org/cgi-bin/query?url=example.com	https://www.webcite.org/	https://www.webcite.org/
+datacite-events	DataCite Event Data	archive	https://api.datacite.org/events?page%5Bsize%5D=1	https://support.datacite.org/docs/eventdata-guide	https://datacite.org/
+datacite-media	DataCite Media	archive	https://api.datacite.org/media?page%5Bsize%5D=1	https://support.datacite.org/docs/api	https://datacite.org/
+crossref-members	Crossref Members	academic	https://api.crossref.org/members?rows=1	https://www.crossref.org/documentation/retrieve-metadata/rest-api/	https://www.crossref.org/
+openalex-institutions	OpenAlex Institutions	academic	https://api.openalex.org/institutions?per_page=1	https://docs.openalex.org/	https://openalex.org/
+openalex-topics	OpenAlex Topics	academic	https://api.openalex.org/topics?per_page=1	https://docs.openalex.org/	https://openalex.org/
+openalex-funders	OpenAlex Funders	academic	https://api.openalex.org/funders?per_page=1	https://docs.openalex.org/	https://openalex.org/
+openalex-publishers	OpenAlex Publishers	academic	https://api.openalex.org/publishers?per_page=1	https://docs.openalex.org/	https://openalex.org/
+ror-v2	ROR v2	academic	https://api.ror.org/v2/organizations?query=test	https://ror.readme.io/docs/rest-api	https://ror.org/
+pubmed-efetch	PubMed EFetch	academic	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38000000&retmode=xml	https://www.ncbi.nlm.nih.gov/books/NBK25501/	https://pubmed.ncbi.nlm.nih.gov/
+pubmed-esummary	PubMed ESummary	academic	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=38000000&retmode=json	https://www.ncbi.nlm.nih.gov/books/NBK25501/	https://pubmed.ncbi.nlm.nih.gov/
+pubmed-elink	PubMed ELink	academic	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=pmc&id=38000000&retmode=json	https://www.ncbi.nlm.nih.gov/books/NBK25501/	https://pubmed.ncbi.nlm.nih.gov/
+sra	SRA / ENA	academic	https://www.ebi.ac.uk/ena/portal/api/search?result=study&query=study_title%3D*&limit=1&format=json	https://www.ebi.ac.uk/ena/browser/api	https://www.ebi.ac.uk/ena/
+uniprot	UniProt	academic	https://rest.uniprot.org/uniprotkb/search?query=test&size=1&format=json	https://www.uniprot.org/help/api	https://www.uniprot.org/
+pdb	PDB	academic	https://data.rcsb.org/rest/v1/core/entry/4HHB	https://data.rcsb.org/	https://www.rcsb.org/
+alphafold	AlphaFold DB	academic	https://alphafold.ebi.ac.uk/api/prediction/P00533	https://alphafold.ebi.ac.uk/api-docs	https://alphafold.ebi.ac.uk/
+ensembl	Ensembl REST	academic	https://rest.ensembl.org/info/ping?content-type=application/json	https://rest.ensembl.org/	https://www.ensembl.org/
+interpro	InterPro	academic	https://www.ebi.ac.uk/interpro/api/entry/interpro/?page_size=1	https://www.ebi.ac.uk/interpro/api/	https://www.ebi.ac.uk/interpro/
+reactome	Reactome	academic	https://reactome.org/ContentService/data/query/R-HSA-109581	https://reactome.org/ContentService/	https://reactome.org/
+chembl	ChEMBL	academic	https://www.ebi.ac.uk/chembl/api/data/target.json?limit=1	https://chembl.gitbook.io/chembl-interface-documentation/web-services	https://www.ebi.ac.uk/chembl/
+opentargets	Open Targets	academic	https://api.platform.opentargets.org/api/v4/graphql?query=%7Btarget(ensemblId%3A%22ENSG00000157764%22)%7Bid%7D%7D	https://platform.opentargets.org/	https://www.opentargets.org/
+clinicaltrials3	ClinicalTrials.gov v2	academic	https://clinicaltrials.gov/api/v2/studies?pageSize=1&format=json	https://clinicaltrials.gov/data-api/api	https://clinicaltrials.gov/
+ictrp	WHO ICTRP	academic	https://trialsearch.who.int/Default.aspx	https://trialsearch.who.int/	https://trialsearch.who.int/
+isrctn	ISRCTN	academic	https://www.isrctn.com/api/query?q=test	https://www.isrctn.com/	https://www.isrctn.com/
+euctr2	EU CTR	academic	https://www.clinicaltrialsregister.eu/ctr-search/search?query=test	https://www.clinicaltrialsregister.eu/	https://www.clinicaltrialsregister.eu/
+psyctr	PsyArXiv	academic	https://api.osf.io/v2/preprints/?filter%5Bprovider%5D=psyarxiv&page%5Bsize%5D=1	https://developer.osf.io/	https://psyarxiv.com/
+eartharxiv	EarthArXiv	academic	https://api.osf.io/v2/preprints/?filter%5Bprovider%5D=eartharxiv&page%5Bsize%5D=1	https://developer.osf.io/	https://eartharxiv.org/
+ssoar	SSOAR	academic	https://www.ssoar.info/oai/request?verb=Identify	https://www.ssoar.info/	https://www.ssoar.info/
+dart	DART-Europe	academic	https://www.dart-europe.org/basic-search.php?keyword=test	https://www.dart-europe.org/	https://www.dart-europe.org/
+ethos	EThOS	academic	https://ethos.bl.uk/	https://ethos.bl.uk/	https://ethos.bl.uk/
+cORE	ORE	academic	https://api.core.ac.uk/v3/search/works?q=test&limit=1	https://api.core.ac.uk/docs/v3	https://core.ac.uk/
+semantic-doi	Semantic Scholar (DOI)	academic	https://api.semanticscholar.org/graph/v1/paper/DOI:10.1038/nature12373?fields=title,abstract	https://api.semanticscholar.org/api-docs/	https://www.semanticscholar.org/
+semantic-citations	Semantic Scholar Citations	academic	https://api.semanticscholar.org/graph/v1/paper/DOI:10.1038/nature12373/citations?limit=1	https://api.semanticscholar.org/api-docs/	https://www.semanticscholar.org/
+paperswithcode2	Papers with Code	academic	https://paperswithcode.com/api/v1/papers/?page_size=1	https://paperswithcode.com/api/v1/docs/	https://paperswithcode.com/
+openreview2	OpenReview	academic	https://api2.openreview.net/notes?limit=1	https://docs.openreview.net/reference/api-v2	https://openreview.net/
+orkg2	ORKG	academic	https://api.orkg.org/api/papers?size=1	https://orkg.org/about/26/API	https://orkg.org/
+scinapse	Scinapse	academic	https://api.scinapse.io/search?query=test&size=1	https://scinapse.io/	https://scinapse.io/
+oa-mg	OA.mg	academic	https://api.openalex.org/works?per_page=1	https://oa.mg/	https://oa.mg/
+scite	Scite	academic	https://api.scite.ai/	https://scite.ai/	https://scite.ai/
+europepmc-citations	Europe PMC Citations	academic	https://www.ebi.ac.uk/europepmc/webservices/rest/MED/38000000/citations?format=json&pageSize=1	https://europepmc.org/RestfulWebService	https://europepmc.org/
+europepmc-refs	Europe PMC References	academic	https://www.ebi.ac.uk/europepmc/webservices/rest/MED/38000000/references?format=json&pageSize=1	https://europepmc.org/RestfulWebService	https://europepmc.org/
+doi-handle	DOI Handle System	academic	https://doi.org/api/handles/10.1038/nature12373	https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation	https://www.doi.org/
+handle	Handle.net	archive	https://hdl.handle.net/api/handles/11234/1-3030	https://www.handle.net/	https://www.handle.net/
+urn-nbn	URN:NBN	archive	https://nbn-resolving.org/api/urn:nbn:de:101:1-201404171117	https://nbn-resolving.org/	https://nbn-resolving.org/
+openlibrary-covers	OpenLibrary Covers	archive	https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg	https://openlibrary.org/dev/docs/api/covers	https://openlibrary.org/
+wikidata-entity	Wikidata EntityData	archive	https://www.wikidata.org/wiki/Special:EntityData/Q42.json	https://www.wikidata.org/wiki/Wikidata:Data_access	https://www.wikidata.org/
+commons-api	Wikimedia Commons	archive	https://commons.wikimedia.org/w/api.php?action=query&titles=File:Example.jpg&prop=imageinfo&format=json	https://www.mediawiki.org/wiki/API:Main_page	https://commons.wikimedia.org/
+wikisource	Wikisource	archive	https://en.wikisource.org/w/api.php?action=query&list=search&srsearch=test&format=json&srlimit=1	https://www.mediawiki.org/wiki/API:Main_page	https://en.wikisource.org/

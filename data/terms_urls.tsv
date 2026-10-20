@@ -1,0 +1,69 @@
+provider	terms_url
+OpenAlex	https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication
+Crossref	https://www.crossref.org/documentation/retrieve-metadata/rest-api/tips-for-using-the-crossref-rest-api/
+DataCite	https://support.datacite.org/docs/rate-limit
+OpenAIRE	https://graph.openaire.eu/docs/apis/terms-of-use
+CORE	https://core.ac.uk/services/api
+Semantic Scholar	https://www.semanticscholar.org/product/api
+Europe PMC	https://europepmc.org/RestfulWebService
+NCBI	https://www.ncbi.nlm.nih.gov/books/NBK25497/
+arXiv	https://info.arxiv.org/help/api/tou.html
+Unpaywall	https://unpaywall.org/products/api
+ROR	https://ror.readme.io/docs/rest-api
+OpenCitations	https://opencitations.net/index/api/v1
+HAL	https://api.archives-ouvertes.fr/docs
+ORCID	https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/
+J-STAGE	https://www.jstage.jst.go.jp/static/pages/JstageServices/TAB4/-char/en
+NASA	https://sti.nasa.gov/ntrs-api/
+OSTI	https://www.osti.gov/api/v1/docs
+ClinicalTrials.gov	https://clinicaltrials.gov/data-api/about-api
+theses.fr	https://theses.fr/
+EconStor	https://www.econstor.eu/
+EBI	https://www.ebi.ac.uk/ebisearch/swagger.ebi
+OSF	https://developer.osf.io/
+GBIF	https://techdocs.gbif.org/en/openapi/
+OBIS	https://api.obis.org/
+iDigBio	https://github.com/iDigBio/idigbio-search-api/wiki
+EOL	https://eol.org/docs/what-is-eol/data-services
+UniProt	https://www.uniprot.org/help/api
+RCSB PDB	https://data.rcsb.org/
+AlphaFold DB	https://alphafold.ebi.ac.uk/api-docs
+Ensembl	https://rest.ensembl.org/
+InterPro	https://www.ebi.ac.uk/interpro/api/
+Reactome	https://reactome.org/ContentService/
+ChEMBL	https://chembl.gitbook.io/chembl-interface-documentation/web-services
+Internet Archive	https://archive.org/developers/bots.html
+Arquivo.pt	https://arquivo.pt/api
+Common Crawl	https://commoncrawl.org/cc-index-table
+Europeana	https://pro.europeana.eu/page/apis
+DigitalNZ	https://digitalnz.org/developers
+Smithsonian	https://edan.si.edu/openaccess/apidocs/
+Art Institute of Chicago	https://api.artic.edu/docs/
+Cleveland Museum of Art	https://openaccess-api.clevelandart.org/
+SMK	https://www.smk.dk/en/article/smk-api/
+Getty	https://www.getty.edu/research/tools/vocabularies/obtain/download.html
+DNB	https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html
+K10plus	https://www.k10plus.de/
+The National Archives (UK)	https://discovery.nationalarchives.gov.uk/API/sandbox/index
+HathiTrust	https://www.hathitrust.org/bib_api
+OpenLibrary	https://openlibrary.org/developers/api
+Wikimedia	https://www.mediawiki.org/wiki/API:Etiquette
+Zenodo	https://developers.zenodo.org/
+Figshare	https://docs.figshare.com/
+Dryad	https://datadryad.org/api/v2/docs/
+Dataverse	https://guides.dataverse.org/en/latest/api/
+DANS	https://dataverse.nl/
+B2SHARE	https://eudat.eu/services/b2share
+DataONE	https://dataone.org/
+PANGAEA	https://wiki.pangaea.de/wiki/Elasticsearch_API
+re3data	https://www.re3data.org/api/doc
+Mendeley	https://data.mendeley.com/api/
+DOI Foundation	https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation
+PLOS	https://api.plos.org/solr/faq/
+eLife	https://api.elifesciences.org/
+Research Square	https://www.researchsquare.com/
+DSpace	https://wiki.lyrasis.org/display/DSDOC7x/REST+API
+InvenioRDM	https://inveniordm.docs.cern.ch/
+NARA	https://www.archives.gov/research/catalog/help/api
+Met Museum	https://metmuseum.github.io/
+bioRxiv/medRxiv	https://api.biorxiv.org/

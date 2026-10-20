@@ -1,0 +1,11 @@
+{
+  "response":{
+    "numFound":27,
+    "start":0,
+    "numFoundExact":true,
+    "docs":[{
+      "docid":"170866",
+      "label_s":"Librosdelacorte"
+    }]
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<error>
+    <code>403</code>
+    <reason>Forbidden</reason>
+    <detail>Exceeds allowed rate</detail>
+</error>

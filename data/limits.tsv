@@ -1,0 +1,69 @@
+provider	code	limit_sentence	terms_url	capture_path
+OpenAlex	200	” When the person clicks it, the key starts working, with a free account’s $1 a day	https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication	evidence/terms/001_OpenAlex.body
+Crossref	200	not-found	https://www.crossref.org/documentation/retrieve-metadata/rest-api/tips-for-using-the-crossref-rest-api/	evidence/terms/002_Crossref.body
+DataCite	404	not-found	https://support.datacite.org/docs/rate-limits	evidence/terms/003_DataCite.body
+OpenAIRE	404	not-found	https://graph.openaire.eu/docs/apis/terms-of-use	evidence/terms/004_OpenAIRE.body
+CORE	200	not-found	https://api.core.ac.uk/docs/v3#section/Introduction	evidence/terms/005_CORE.body
+Semantic Scholar	200	49 Billion Citations 79 Million Authors Do I need an API Key? Most Semantic Scholar endpoints are available to the public without authentication, but they are rate-limited to 1000 requests per second shared among all unauthenticated users	https://www.semanticscholar.org/product/api	evidence/terms/006_Semantic_Scholar.body
+Europe PMC	403	not-found	https://europepmc.org/RestfulWebService	evidence/terms/007_Europe_PMC.body
+NCBI	200	not-found	https://www.ncbi.nlm.nih.gov/books/NBK25497/	evidence/terms/008_NCBI.body
+arXiv	200	not-found	https://info.arxiv.org/help/api/tou.html	evidence/terms/009_arXiv.body
+Unpaywall	200	not-found	https://unpaywall.org/products/api	evidence/terms/010_Unpaywall.body
+ROR	200	Registration and rate limits No registration is currently required to use the ROR API, but note that the rate limit is a maximum of 2000 requests in a 5-minute period per IP address, and API traffic can be quite heavy at popular times like midnight UTC	https://ror.readme.io/docs/rest-api	evidence/terms/011_ROR.body
+OpenCitations	200	not-found	https://opencitations.net/index/api/v1	evidence/terms/012_OpenCitations.body
+HAL	200	not-found	https://api.archives-ouvertes.fr/docs	evidence/terms/013_HAL.body
+ORCID	200	not-found	https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/	evidence/terms/014_ORCID.body
+J-STAGE	200	not-found	https://www.jstage.jst.go.jp/static/pages/JstageServices/TAB4/-char/en	evidence/terms/015_J-STAGE.body
+NASA	404	not-found	https://sti.nasa.gov/ntrs-api/	evidence/terms/016_NASA.body
+OSTI	200	not-found	https://www.osti.gov/api/v1/docs	evidence/terms/017_OSTI.body
+ClinicalTrials.gov	200	not-found	https://clinicaltrials.gov/data-api/about-api	evidence/terms/018_ClinicalTrials.gov.body
+theses.fr	200	not-found	https://theses.fr/	evidence/terms/019_theses.fr.body
+EconStor	200	not-found	https://www.econstor.eu/	evidence/terms/020_EconStor.body
+EBI	200	not-found	https://www.ebi.ac.uk/ebisearch/swagger.ebi	evidence/terms/021_EBI.body
+OSF	200	not-found	https://developer.osf.io/	evidence/terms/022_OSF.body
+GBIF	200	not-found	https://techdocs.gbif.org/en/openapi/	evidence/terms/023_GBIF.body
+OBIS	200	not-found	https://api.obis.org/	evidence/terms/024_OBIS.body
+iDigBio	200	not-found	https://github.com/iDigBio/idigbio-search-api/wiki	evidence/terms/025_iDigBio.body
+EOL	403	not-found	https://eol.org/docs/what-is-eol/data-services	evidence/terms/026_EOL.body
+UniProt	200	not-found	https://www.uniprot.org/help/api	evidence/terms/027_UniProt.body
+RCSB PDB	200	not-found	https://data.rcsb.org/	evidence/terms/028_RCSB_PDB.body
+AlphaFold DB	200	not-found	https://alphafold.ebi.ac.uk/api-docs	evidence/terms/029_AlphaFold_DB.body
+Ensembl	200	not-found	https://rest.ensembl.org/	evidence/terms/030_Ensembl.body
+InterPro	200	not-found	https://www.ebi.ac.uk/interpro/api/	evidence/terms/031_InterPro.body
+Reactome	200	not-found	https://reactome.org/ContentService/	evidence/terms/032_Reactome.body
+ChEMBL	200	not-found	https://chembl.gitbook.io/chembl-interface-documentation/web-services	evidence/terms/033_ChEMBL.body
+Internet Archive	200	not-found	https://archive.org/developers/bots.html	evidence/terms/034_Internet_Archive.body
+Arquivo.pt	200	not-found	https://arquivo.pt/api	evidence/terms/035_Arquivo.pt.body
+Common Crawl	404	not-found	https://commoncrawl.org/cc-index-table	evidence/terms/036_Common_Crawl.body
+Europeana	403	not-found	https://pro.europeana.eu/page/apis	evidence/terms/037_Europeana.body
+DigitalNZ	202	not-found	https://digitalnz.org/developers	evidence/terms/038_DigitalNZ.body
+Smithsonian	200	not-found	https://edan.si.edu/openaccess/apidocs/	evidence/terms/039_Smithsonian.body
+Art Institute of Chicago	200	Anonymous users are throttled to 60 requests per minute	https://api.artic.edu/docs/	evidence/terms/040_Art_Institute_of_Chicago.body
+Cleveland Museum of Art	200	not-found	https://openaccess-api.clevelandart.org/	evidence/terms/041_Cleveland_Museum_of_Art.body
+SMK	200	not-found	https://www.smk.dk/en/article/smk-api/	evidence/terms/042_SMK.body
+Getty	200	not-found	https://www.getty.edu/research/tools/vocabularies/obtain/download.html	evidence/terms/043_Getty.body
+DNB	200	not-found	https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html	evidence/terms/044_DNB.body
+K10plus	000	not-found	https://www.k10plus.de/	evidence/terms/045_K10plus.body
+The National Archives (UK)	200	not-found	https://discovery.nationalarchives.gov.uk/API/sandbox/index	evidence/terms/046_The_National_Archives_UK.body
+HathiTrust	403	not-found	https://www.hathitrust.org/bib_api	evidence/terms/047_HathiTrust.body
+OpenLibrary	200	Default (non-identified requests): - 1 request per second Identified requests (with User-Agent and email): - 3 requests per second User-Agent: MyLibraryApp (contact@example	https://openlibrary.org/developers/api	evidence/terms/048_OpenLibrary.body
+Wikimedia	200	not-found	https://www.mediawiki.org/wiki/API:Etiquette	evidence/terms/049_Wikimedia.body
+Zenodo	200	Pages Limitations Global limit for guest users 60 requests per minute, 2000 requests per hour Global limit for authenticated users 100 requests per minute, 5000 requests per hour Search REST API endpoints 30 requests per minute O	https://developers.zenodo.org/	evidence/terms/050_Zenodo.body
+Figshare	200	not-found	https://docs.figshare.com/	evidence/terms/051_Figshare.body
+Dryad	200	not-found	https://datadryad.org/api/v2/docs/	evidence/terms/052_Dryad.body
+Dataverse	200	not-found	https://guides.dataverse.org/en/latest/api/	evidence/terms/053_Dataverse.body
+DANS	200	not-found	https://dataverse.nl/	evidence/terms/054_DANS.body
+B2SHARE	200	not-found	https://eudat.eu/services/b2share	evidence/terms/055_B2SHARE.body
+DataONE	200	not-found	https://dataone.org/	evidence/terms/056_DataONE.body
+PANGAEA	404	not-found	https://wiki.pangaea.de/wiki/Elasticsearch_API	evidence/terms/057_PANGAEA.body
+re3data	200	not-found	https://www.re3data.org/api/doc	evidence/terms/058_re3data.body
+Mendeley	200	not-found	https://data.mendeley.com/api/	evidence/terms/059_Mendeley.body
+DOI Foundation	200	not-found	https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation	evidence/terms/060_DOI_Foundation.body
+PLOS	200	PLOS Search API rate limit: Please limit your API requests to 7200 requests a day, 300 per hour, 10 per minute and allow 5 seconds for your search to return results	https://api.plos.org/solr/faq/	evidence/terms/061_PLOS.body
+eLife	200	not-found	https://api.elifesciences.org/	evidence/terms/062_eLife.body
+Research Square	200	not-found	https://www.researchsquare.com/	evidence/terms/063_Research_Square.body
+DSpace	403	not-found	https://wiki.lyrasis.org/display/DSDOC7x/REST+API	evidence/terms/064_DSpace.body
+InvenioRDM	200	not-found	https://inveniordm.docs.cern.ch/	evidence/terms/065_InvenioRDM.body
+NARA	200	Rate Limits To ensure consistent system and API availability and performance, NARA limits the number of Catalog API requests to a default rate of 10,000 queries per month per API key	https://www.archives.gov/research/catalog/help/api	evidence/terms/066_NARA.body
+Met Museum	200	Please limit request rate to 80 requests per second	https://metmuseum.github.io/	evidence/terms/067_Met_Museum.body
+bioRxiv/medRxiv	200	not-found	https://api.biorxiv.org/	evidence/terms/068_bioRxiv_medRxiv.body

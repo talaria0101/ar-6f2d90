@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/"><zs:version>1.1</zs:version><zs:numberOfRecords>270500</zs:numberOfRecords><zs:records><zs:record><zs:recordSchema/><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>     cam a22     2c 4500</leader>
+  <controlfield tag="001">890427410</controlfield>
+  <controlfield tag="003">DE-627</controlfield>
+  <controlfield tag="005">20251224204923.0</controlfield>
+  <controlfield tag="007">cr uuu---uuuuu</controlfield>
+  <controlfield tag="008">170615s7117    xx |||||o     00| ||eng c</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">9780803669857</subfield>
+    <subfield code="q"> : electronic bk.</subfield>
+    <subfield code="9">978-0-8036-6985-7</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="z">9780803660854</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DE-627)890427410</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DE-576)9890427419</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DE-599)GBV890427410</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(EBC)EBC4872148</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(EBL)EBL4872148</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(EBR)ebr11394058</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DE-627-1)036009326</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DE-627</subfield>
+    <subfield code="b">ger</subfield>
+    <subfield code="c">DE-627</subfield>
+    <subfield code="e">rda</subfield>
+  </datafield>
+  <datafield tag="041" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2=" ">
+    <subfield code="a">610.7306/93</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Dahlkemper, Tamara</subfield>
+    <subfield code="4">aut</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Nursing Leadership, Management, and Professional Practice for the LPN/LVN, 6e</subfield>
+  </datafield>
+  <datafield tag="264" ind1=" " ind2="1">
+    <subfield code="a">Philadelphia</subfield>
+    <subfield code="b">F.A. Davis</subfield>
+    <subfield code="c">7117</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">1 Online-Ressource (361 pages)</subfield>
+  </datafield>
+  <datafield tag="336" ind1=" " ind2=" ">
+    <subfield code="a">Text</subfield>
+    <subfield code="b">txt</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield tag="337" ind1=" " ind2=" ">
+    <subfield code="a">Computermedien</subfield>
+    <subfield code="b">c</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield tag="338" ind1=" " ind2=" ">
+    <subfield code="a">Online-Ressource</subfield>
+    <subfield code="b">cr</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Be prepared for the opportunities that await you!In today's healthcare environment, the responsibilities and clinical practice of Licensed Practical Nurses and Licensed Vocational Nurses have expanded far beyond those of traditional settings. Build the knowledge you need to assume the leadership and management roles that you will be asked to fulfill and confidently navigate the increasingly complex environments in which you will practice</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Inside Front Cover -- Copyright -- Foreword -- Preface -- Contributors -- Reviewers -- Acknowledgments -- Table of Contents -- Unit One The Nursing Professionin Today's Health-CareEnvironment -- Chapter 1 Historical Perspective and Current Trends -- THE BEGINNING OF NURSING -- DARK AGES AND INTRODUCTION OF CHRISTIANITY -- RENAISSANCE PERIOD -- ERA OF INDUSTRIALIZATION -- EARLY HEALTH CARE IN THE UNITED STATES -- THE BEGINNING OF MODERN NURSING -- Nursing Education -- Florence Nightingale -- Other Modern Nursing Leaders -- HISTORY OF THE LICENSED PRACTICAL AND VOCATIONAL NURSE -- CURRENT TRENDS AND ISSUES -- Healthcare-Associated Infections -- Disaster Nursing -- Cultural Diversity -- Technology -- Nursing Shortages -- Substance Use Disorders in Nurses -- Aging U.S. Population -- Quality and Safety Education for Nurses -- Chapter 2 Caring as a Personal and Professional Behavior -- WHAT IS CARING? -- Dr. Jean Watson -- APPLYING CARING THEORY IN YOUR PERSONAL LIFE -- UNDERSTANDING NURSING MODELS -- APPLYING CARING THEORY IN YOUR PROFESSIONAL LIFE -- Caring as It Relates to Colleagues -- Caring for Patients -- SETTING PRIORITIES USING TRANSPERSONAL CARING -- CARING FOR FAMILY AND SIGNIFICANT OTHERS -- CARING INCLUDES EVERYONE -- PERSONAL MOTIVATION -- What Is Motivation? -- There Is a Reason for Every Behavior -- Chapter 3 Understanding the Changing Roles in Nursing -- PARADIGM THINKING DEFINED -- Paradigm Shift -- Shifting Paradigm of Nursing Practice -- CRITICAL THINKING CONCEPTS -- Clinical Judgment and Clinical Reasoning -- THEORETICAL FRAMEWORKS FOR MANAGEMENT -- Dr. Abraham Maslow -- Dr. Jean Watson -- BASIC PRINCIPLE OF PATIENT ADVOCACY -- Protecting the Rights of Patients -- Other Aspects of Advocacy -- Chapter 4 Health-Care Environment -- HEALTH-CARE SYSTEMS -- Financing of Health Care -- Risks of Health Care -- Health-Care Technology</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">ROLES AND TASKS OF THE LICENSED PRACTICAL NURSE IN THE HEALTH-CARE SYSTEM -- Eight Roles of the Licensed Practical Nurse -- Summary of Roles -- HEALTH-CARE AGENCIES -- Hospitals -- Home Health Care -- Hospice -- Extended Care Facility -- Assisted Living Centers -- Public Health Department -- Physician's Office -- Emergent Care Centers -- Industrial Clinics -- School Health Clinics -- Inner-City Clinics -- Chapter 5 Nursing and Informatics -- LOOKING AT THE PAST -- Evidence-Based Practice -- LOOKING AT TODAY -- NURSING INFORMATICS -- Electronic Health Records -- Integration of Sciences -- Data, Knowledge, and Wisdom -- Telehealth -- HIPAA -- Computers and Systems -- Papers and Presentations -- Health Literacy -- Spreadsheets -- Presentation Software -- Teleconferencing -- Other Issues -- LOOKING FORWARD -- Unit Two From Studentto Nurse -- Chapter 6 Fulfill Your Role as a Student -- KNOWING YOURSELF AND UNDERSTANDING NURSES' WAYS OF KNOWING -- LEARNING IN THE CLASSROOM -- Learning Styles -- Organization and Note Taking -- Study Habits -- Your Health and Lifestyle -- Thoughts About Attire and Time -- YOU AS A STUDENT IN THE CLINICAL AREA -- Preparing for Clinical Assignments -- Dress -- Being Well Prepared -- COMMUNICATION IN THE CLINICAL SETTING -- Communication Principles for the Clinical Setting -- Confidentiality -- Honesty -- SUCCESSFUL STUDY STRATEGIES -- Time Management -- Setting Priorities -- Developing Test-Taking Skills -- Academic or Honor Codes -- Attend Class and Do the Reading -- Create Study Tools -- How to Review for a Test -- UNDERSTANDING TEST QUESTIONS -- Multiple-Choice Tests -- True-or-False Questions -- Completion and Matching Questions -- Essay Questions -- MANAGING TEST ANXIETY -- Psychological First-Aid Kit for Test Preparation -- Physiological First-Aid Kit for Test Taking -- WRITING SUCCESSFUL PAPERS -- Basics of Writing</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Types of Papers -- Principles of Writing -- Potential Problems in All Writing -- CONCLUSION -- Chapter 7 The Importance of Critical Thinking -- WHAT IS CRITICAL THINKING? -- THOROUGH THINKING -- THOROUGH OR CRITICAL THINKING AS APPLIED TO SCIENCE -- THOROUGH OR CRITICAL THINKING AS APPLIED TO NURSING -- CREATIVE THINKING -- Conduct a Brainstorming Session -- Focus and Let Go -- Cultivate Creative Serendipity -- Keep Idea Files -- Refine Ideas and Follow Through -- CRITICAL THINKING -- Be Willing to Say, "I Don't Know" -- Define Your Terms -- Practice Tolerance -- Understand Before Criticizing -- What Pushes Your Buttons? -- Consider the Source -- Ask Questions -- Look for at Least Three Solutions -- Be Willing to Change Your Mind -- Chapter 8 Entry Into Practice -- NURSE PRACTICE ACT -- Maslow Revisited -- FINDING THE PERFECT JOB Be Objective -- Worst-Case Scenario Example -- Other Concepts to Consider -- MENTORING -- OTHER STRATEGIES -- Networking -- Motivation -- Commitment to Lifelong Learning -- Chapter 9 Employment Process -- EMPLOYER EXPECTATIONS -- APPLICATION PROCESS -- Organizational Suggestions -- Cover Letter -- Preparing a Résumé -- PREPARING FOR THE INTERVIEW -- LETTER OF RESIGNATION -- Chapter 10 Leadership and Management as a Professional Concept -- LEADERSHIP VERSUS MANAGEMENT -- Formal Leader -- Informal Leader -- Management -- HISTORICAL OVERVIEW OF NURSING LEADERSHIP AND MANAGEMENT ROLES -- Florence Nightingale -- Lillian Wald -- Dr. Jean Watson -- WHERE IS THE LICENSED PRACTICAL NURSE IN THIS HISTORICAL PICTURE? -- LEADERSHIP STYLES -- Autocratic Leader -- Democratic Leader -- Laissez-Faire Leader -- Multicratic or Participative Leader -- Transformational Leader -- Emotional Intelligence and Leadership -- WHAT TYPE OF LEADER ARE YOU? -- Chapter 11 Communication Skills in Leadership and Management</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">COMMUNICATION IN THE ACADEMIC SETTING -- Listening Skills -- Nonverbal Communication -- Negative or Hostile Communication -- Questioning Skills -- Friendly Conversation -- COMMUNICATION IN THE CLINICAL SETTING -- FAILED COMMUNICATION -- Feedback -- Communication Blocks -- TYPES OF COMMUNICATION -- Assertive Communication -- Aggressive Communication -- Nonassertive Communication -- Passive-Aggressive Communication -- OTHER FORMS OF COMMUNICATION -- Chapter 12 Considering Culture -- WHAT IS CULTURE? -- POPULATION MOSAIC OF THE UNITED STATES -- The Population Is Growing -- The Emerging Majority of People of Color -- The Population Is Aging -- Poverty as Another Aspect of Culture -- Gender Roles and Human Sexuality -- PERSONAL CULTURAL COMPENTENCY -- Thoughts on Cultural Competence -- HOW TO DEVELOP CULTURALLY COMPETENT CARE -- Cultural Desire -- Cultural Awareness -- Cultural Knowledge -- Cultural Skill -- Cultural Encounter -- BARRIERS TO CULTURAL COMPETENCY -- COMMON ETHNIC GROUPS IN THE UNITED STATES -- European Americans -- Native Americans and Alaska Natives -- African Americans -- Asian and Pacific Islander Americans -- Hispanic Americans -- CULTURAL ASSESSMENT -- HIRING AND MANAGING A DIVERSE WORKFORCE -- Maintaining Diversity -- Diversity and Quality Care -- NURSE MANAGERS AND CULTURE -- A Final Story -- Chapter 13 Understanding Benefits of Change -- WHAT IS CHANGE? -- EFFECTIVE DECISION MAKING DURING CHANGE PROCESS -- KURT LEWIN'S CHANGE THEORY -- Driving and Restraining Forces -- Unfreezing -- Moving -- Refreezing -- ROLE OF THE LICENSED PRACTICAL NURSE AS CHANGE AGENT -- Evidence-Based Practice -- TRANSITIONS -- A Story -- Understanding Transitions -- Transition Into a Licensed Practical Nurse Program -- Transition as an In-Between Place -- Facilitating Transitions -- FINAL THOUGHTS -- Chapter 14 Setting Meaningful Priorities</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">SETTING PERSONAL PRIORITIES -- APPLICATION OF MASLOW'S AND WATSON'S THEORIES -- PRIORITY SETTING IN THE CLINICAL ARENA REQUIRES TEAMWORK -- NEED FOR PRIORITY SETTING -- IT STARTS WITH THE ABILITY TO MAKE GOOD DECISIONS -- CONCLUSION -- Chapter 15 Handling Conflict in the Nursing Profession -- HOW CONFLICT OCCURS -- Competitive or Opposing Actions of Incompatibles -- Mental Struggle Resulting From Incompatible or Opposing Needs, Drives, Wishes, or External or Internal Demands -- Collusion -- TYPES OF CONFLICT IN NURSING -- Nurse-to-Nurse Conflict -- Nurse-to-Physician Conflict -- Nurse-to-Patient Conflict -- Staffing -- CAUSES OF CONFLICT AND APPROACHES TO RESOLVING IT -- Role Ambiguity -- Limited Resources -- Distancing and Unifying Mechanisms -- Perceived or Felt Conflict -- Unresolved Conflict -- ESTABLISHING A CONFLICT RESOLUTION STYLE -- Communication Styles -- THE ROLE OF THE LPN -- TRANSACTIONAL APPROACH TO CONFLICT MANAGEMENT -- Win-Lose -- Win-Yield -- Lose-Lose -- Win-Win -- OTHER IMPORTANT SKILLS -- Art of Negotiation -- Managing Anger -- Chapter 16 Dealing With Chaos -- UNDERSTANDING THE CHANGES -- UNDERSTANDING NEWTONIAN PHYSICS OR THE SCIENTIFIC AGE -- UNDERSTANDING QUANTUM PHYSICS OR THE NEW SCIENCE -- CHAOS THEORY -- Clinical Chaos -- Attractor Concept -- STRANGE ATTRACTOR -- ARE YOU READY? -- Chapter 17 Ethics and Law in Nursing Management -- PERSONAL VALUES -- UNDERSTANDING ETHICS -- Ethical Principles -- Ethical Issues -- Ethical Theories -- Steps for Ethical Reasoning -- LEGAL ISSUES -- NURSE PRACTICE ACT -- UNDERSTANDING THE LAW -- Statutory Law -- Common Law -- Institutional Policies and Procedures -- Criminal Law -- Civil Law -- LEGAL ISSUES SPECIFIC TO NURSING -- Duty to Seek Medical Care for the Patient -- Confidentiality -- Permission to Treat -- Informed Consent -- Defamation of Character -- Advance Directives -- Negligence</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+    <subfield code="a">Malpractice</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Practical nursing</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Electronic books</subfield>
+  </datafield>
+  <datafield tag="776" ind1="1" ind2=" ">
+    <subfield code="z">9780803660854</subfield>
+  </datafield>
+  <datafield tag="776" ind1="0" ind2="8">
+    <subfield code="i">Erscheint auch als</subfield>
+    <subfield code="n">Druck-Ausgabe</subfield>
+    <subfield code="a">Dahlkemper, Tamara</subfield>
+    <subfield code="t">Nursing Leadership, Management, and Professional Practice for the LPN/LVN, 6e</subfield>
+    <subfield code="d">Philadelphia : F.A. Davis,c7117</subfield>
+    <subfield code="z">9780803660854</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">https://ebookcentral.proquest.com/lib/kxp/detail.action?docID=4872148</subfield>
+    <subfield code="m">X:EBC</subfield>
+    <subfield code="x">Aggregator</subfield>
+    <subfield code="z">lizenzpflichtig</subfield>
+    <subfield code="3">Volltext</subfield>
+    <subfield code="7">1</subfield>
+  </datafield>
+  <datafield tag="912" ind1=" " ind2=" ">
+    <subfield code="a">ZDB-30-PQE</subfield>
+  </datafield>
+  <datafield tag="912" ind1=" " ind2=" ">
+    <subfield code="a">SSG-OLC-pha</subfield>
+  </datafield>
+  <datafield tag="924" ind1="1" ind2=" ">
+    <subfield code="a">1708549668</subfield>
+    <subfield code="b">DE-Brg3</subfield>
+    <subfield code="9">Brg 3</subfield>
+    <subfield code="c">GBV</subfield>
+    <subfield code="d">d</subfield>
+    <subfield code="g">Online-Ressource</subfield>
+    <subfield code="k">https://thh-friedensau.idm.oclc.org/login?url=http://ebookcentral.proquest.com/lib/thhfriedensau/detail.action?docID=4872148</subfield>
+    <subfield code="y">Full Text only for ThHF affiliates</subfield>
+  </datafield>
+  <datafield tag="924" ind1="1" ind2=" ">
+    <subfield code="a">4071915684</subfield>
+    <subfield code="b">DE-950</subfield>
+    <subfield code="9">950</subfield>
+    <subfield code="c">BSZ</subfield>
+    <subfield code="d">d</subfield>
+    <subfield code="g">eBook ProQuest</subfield>
+    <subfield code="k">https://ebookcentral.proquest.com/lib/hfwu/detail.action?docID=4872148</subfield>
+    <subfield code="l">Zum Online-Dokument</subfield>
+    <subfield code="l">Zugang ausschließlich für Hochschulangehörige der HfWU via Shibboleth</subfield>
+  </datafield>
+  <datafield tag="951" ind1=" " ind2=" ">
+    <subfield code="a">BO</subfield>
+  </datafield>
+</record></zs:recordData><zs:recordPosition>1</zs:recordPosition></zs:record></zs:records><zs:echoedSearchRetrieveRequest><zs:version>1.1</zs:version><zs:query>pica.all=test</zs:query><zs:maximumRecords>1</zs:maximumRecords><zs:recordPacking>xml</zs:recordPacking></zs:echoedSearchRetrieveRequest></zs:searchRetrieveResponse>

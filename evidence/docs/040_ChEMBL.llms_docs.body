@@ -1,0 +1,29 @@
+# ChEMBL Interface Documentation
+
+## ChEMBL Interface Documentation
+
+- [Web Interface](https://chembl.gitbook.io/chembl-interface-documentation/readme.md)
+- [Web Services](https://chembl.gitbook.io/chembl-interface-documentation/web-services.md)
+- [ChEMBL Data Web Services](https://chembl.gitbook.io/chembl-interface-documentation/web-services/chembl-data-web-services.md)
+- [Cheminformatic Utils Web Services](https://chembl.gitbook.io/chembl-interface-documentation/web-services/cheminformatic-utils-web-services.md)
+- [Publications](https://chembl.gitbook.io/chembl-interface-documentation/web-services/publications.md)
+- [Getting help](https://chembl.gitbook.io/chembl-interface-documentation/web-services/getting-help.md)
+- [Frequently Asked Questions](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions.md)
+- [General Questions](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions.md)
+- [Assay and Activity Questions](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-data-questions.md)
+- [Drug and Compound Questions](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/drug-and-compound-questions.md)
+- [Target Questions](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/target-questions.md)
+- [Document and Data Source Questions](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/document-and-data-source-questions.md)
+- [Interface Questions](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-interface-questions.md)
+- [Download Questions](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-download-questions.md)
+- [Schema Questions and SQL Examples](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/schema-questions-and-sql-examples.md)
+- [Downloads](https://chembl.gitbook.io/chembl-interface-documentation/downloads.md)
+- [Acknowledgements](https://chembl.gitbook.io/chembl-interface-documentation/acknowledgments.md)
+- [About](https://chembl.gitbook.io/chembl-interface-documentation/about.md)
+- [Privacy notices](https://chembl.gitbook.io/chembl-interface-documentation/data-protection-privacy-notice-for-chembls-public-website.md): Find out what personal data is collected by the specific EMBL-EBI service you are requesting and for what purposes, as well as how your data are processed and kept secure.
+- [ChEMBL website](https://chembl.gitbook.io/chembl-interface-documentation/data-protection-privacy-notice-for-chembls-public-website/chembl-website.md): This privacy notice explains what personal data is collected by the ChEMBL website, for what purposes, how it is processed, and how we keep it secure.
+- [ChEMBL announce mailing list](https://chembl.gitbook.io/chembl-interface-documentation/data-protection-privacy-notice-for-chembls-public-website/chembl-announce-mailing-list.md): This privacy notice explains what personal data is collected by the ChEMBL announce mailing list, for what purposes, how it is processed, and how we keep it secure.
+- [ChEMBL deposition](https://chembl.gitbook.io/chembl-interface-documentation/data-protection-privacy-notice-for-chembls-public-website/chembl-deposition.md): This privacy notice explains what personal data is collected by the ChEMBL deposition service, for what purposes, how it is processed, and how we keep it secure.
+- [ChEMBL helpdesk](https://chembl.gitbook.io/chembl-interface-documentation/data-protection-privacy-notice-for-chembls-public-website/chembl-helpdesk.md): This privacy notice explains what personal data is collected by the ChEMBL helpdesk, for what purposes, how it is processed, and how we keep it secure.
+- [Legacy Resources](https://chembl.gitbook.io/chembl-interface-documentation/legacy-resources.md)
+- [Training Material](https://chembl.gitbook.io/chembl-interface-documentation/training-material.md)

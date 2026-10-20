@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/jpg" sizes="200x200" href="_static/logo.jpg">
+    <title>Item Metadata API: Read &#8212; Internet Archive Developer Portal</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=3feec52e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=c562abe5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'md-read';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Item Metadata API: Write" href="md-write.html" />
+    <link rel="prev" title="Item Metadata API" href="metadata.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.jpg" class="logo__image only-light" alt="Internet Archive Developer Portal - Home"/>
+    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Internet Archive Developer Portal - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Home
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="index-tutorials.html">Tutorials</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial-get-ia-credentials.html">Get your Internet Archive credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial-get-snapshot-wayback.html">See whether a website exists in the archives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial-compare-snapshot-wayback.html">Compare two versions of a website</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index-apis.html">Tools and APIs</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bots.html">Bots, LLMs, and Automated Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="items.html">Internet Archive Items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata-schema/index.html">Internet Archive Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internetarchive/cli.html">Command-Line Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internetarchive/index.html">The Internet Archive Python Library</a></li>
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="ias3.html">ias3 Internet archive S3-like API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata.html">Item Metadata API</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Item Metadata API: Read</a></li>
+<li class="toctree-l2"><a class="reference internal" href="md-write.html">Item Metadata API: Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="md-record.html">Item Metadata API: Record details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="md-write-adv.html">Item Metadata API: Advanced Topics &amp; Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html">API for discovering changes to archive.org items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="views_api.html">Views data service api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="views.html">Item Engagement counting on the archive.org website.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iarest.html">Internet Archive RESTful microservices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html">Internet Archive Tasks API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simplelists.html">Simple Lists (Relationships API)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviews.html">Reviews API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ocr.html">OCR at the Internet Archive with Tesseract and hOCR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdf.html">PDF analysis, generation and compression at the Internet Archive</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/md-read.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Item Metadata API: Read</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> On this page </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-reads">Partial reads</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errors">Errors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-errors">Extended errors</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-error-code-list">Extended error code list</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="item-metadata-api-read">
+<h1>Item Metadata API: Read<a class="headerlink" href="#item-metadata-api-read" title="Link to this heading">#</a></h1>
+<p><a class="reference internal" href="metadata.html"><span class="doc std std-doc">Item Metadata API</span></a> (MDAPI) Read fetches an item’s metadata.</p>
+<p><em>(<strong>NOTE:</strong> In this document, JSON is pretty-printed for legibility.)</em></p>
+<p>An item’s metadata may be fetched by making an HTTP GET request to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">archive</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">metadata</span><span class="o">/</span><span class="p">{</span><span class="n">identifier</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">{identifier}</span></code> is the exact item identifier.  MDAPI will return the item’s metadata record in JSON format.</p>
+<p>An example request:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">metadata</span><span class="o">/</span><span class="n">xfetch</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">Host</span><span class="p">:</span> <span class="n">archive</span><span class="o">.</span><span class="n">org</span>
+</pre></div>
+</div>
+<p>And a successful response (some fields trimmed for compactness):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">200</span> <span class="n">OK</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">Transfer</span><span class="o">-</span><span class="n">Encoding</span><span class="p">:</span> <span class="n">chunked</span>
+
+<span class="p">{</span>
+  <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="mi">1616004182</span><span class="p">,</span>
+  <span class="s2">&quot;d1&quot;</span><span class="p">:</span> <span class="s2">&quot;ia600308.us.archive.org&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;d2&quot;</span><span class="p">:</span> <span class="s2">&quot;ia800308.us.archive.org&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/21/items/xfetch&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;xfetch.pdf&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;original&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;Text PDF&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;mtime&quot;</span><span class="p">:</span> <span class="s2">&quot;1479169618&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;419170&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;md5&quot;</span><span class="p">:</span> <span class="s2">&quot;ee68c235c2cfc1007a5ab998d21d643c&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;crc32&quot;</span><span class="p">:</span> <span class="s2">&quot;4db3022d&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;abceccfc74a577ed06a5aeb7bebe365e9ff8946d&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;xfetch_files.xml&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;original&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;Metadata&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;md5&quot;</span><span class="p">:</span> <span class="s2">&quot;d6ea3edc409f11ecfd69c061719e9368&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;summation&quot;</span><span class="p">:</span> <span class="s2">&quot;md5&quot;</span>
+    <span class="p">},</span>
+    <span class="o">//</span> <span class="o">...</span> <span class="n">additional</span> <span class="n">files</span> <span class="o">...</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;files_count&quot;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+  <span class="s2">&quot;item_last_updated&quot;</span><span class="p">:</span> <span class="mi">1613804036</span><span class="p">,</span>
+  <span class="s2">&quot;item_size&quot;</span><span class="p">:</span> <span class="mi">10682344</span><span class="p">,</span>
+  <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;mediatype&quot;</span><span class="p">:</span> <span class="s2">&quot;texts&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;collection&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&quot;opensource&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;community&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;XFETCH: Optimal Probabilistic Cache Stampede Prevention&quot;</span><span class="p">,</span>
+    <span class="o">//</span> <span class="o">...</span> <span class="n">additional</span> <span class="n">key</span><span class="o">-</span><span class="n">value</span> <span class="n">metadata</span> <span class="n">fields</span> <span class="o">...</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;server&quot;</span><span class="p">:</span> <span class="s2">&quot;ia800308.us.archive.org&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;uniq&quot;</span><span class="p">:</span> <span class="mi">267404775</span><span class="p">,</span>
+  <span class="s2">&quot;workable_servers&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;ia800308.us.archive.org&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ia600308.us.archive.org&quot;</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Most of the top-level fields (<code class="docutils literal notranslate"><span class="pre">d1</span></code>, <code class="docutils literal notranslate"><span class="pre">dir</span></code>, <code class="docutils literal notranslate"><span class="pre">files_count</span></code>, etc.) are available across all items.  Some are optional and not always available.  Others depend on the content within the item itself.</p>
+<p>A full description of each item record field may be found <a class="reference internal" href="md-record.html"><span class="doc std std-doc">here</span></a>.</p>
+<section id="partial-reads">
+<span id="md-read-partial-reads"></span><h2>Partial reads<a class="headerlink" href="#partial-reads" title="Link to this heading">#</a></h2>
+<p>Partial MDAPI records may be fetched by addressing the field (or even a sub-field) directly.  For example, to fetch the <code class="docutils literal notranslate"><span class="pre">server</span></code> field, call <code class="docutils literal notranslate"><span class="pre">https://archive.org/metadata/xfetch/server</span></code>.</p>
+<p>A partial fetch successful response:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">200</span> <span class="n">OK</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">Transfer</span><span class="o">-</span><span class="n">Encoding</span><span class="p">:</span> <span class="n">chunked</span>
+
+<span class="p">{</span>
+  <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="s2">&quot;ia800308.us.archive.org&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Or, to fetch the first file in the <code class="docutils literal notranslate"><span class="pre">files</span></code> list, call <code class="docutils literal notranslate"><span class="pre">https://archive.org/metadata/xfetch/files/0</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">200</span> <span class="n">OK</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">Transfer</span><span class="o">-</span><span class="n">Encoding</span><span class="p">:</span> <span class="n">chunked</span>
+
+<span class="p">{</span>
+  <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;__ia_thumb.jpg&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;original&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mtime&quot;</span><span class="p">:</span> <span class="s2">&quot;1613804036&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;14393&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;JPEG Thumb&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;rotation&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;md5&quot;</span><span class="p">:</span> <span class="s2">&quot;1fe0b765283352b5556e6dea4e0fb4ae&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;crc32&quot;</span><span class="p">:</span> <span class="s2">&quot;cd8a1de7&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;f39cb5dec565af57de5cca03a77edf6231aa1dd3&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>When using partial reads, two query parameters are available for slicing elements out of a large array:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">start</span></code> - index to start slice</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">count</span></code> - length of slice</p></li>
+</ul>
+<p>For example, if an item has hundreds of files, files from 100 to 104 may be retrieved as so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://archive.org/metadata/gov.uspto.patents.application.10743335/files?start=100&amp;count=5
+</pre></div>
+</div>
+</section>
+<section id="errors">
+<h2>Errors<a class="headerlink" href="#errors" title="Link to this heading">#</a></h2>
+<p>If the item identifier does not exist or cannot be found, MD Read returns an empty array.</p>
+<p>For other errors, MDAPI returns an <code class="docutils literal notranslate"><span class="pre">error</span></code> field with a human-readable string explaining the problem.</p>
+<p>If a partial read is performed (e.g., <code class="docutils literal notranslate"><span class="pre">https://archive.org/metadata/xfetch/files/0</span></code>), MD Read will return an <code class="docutils literal notranslate"><span class="pre">error</span></code> if the item cannot be found, not an empty array.</p>
+<section id="extended-errors">
+<h3>Extended errors<a class="headerlink" href="#extended-errors" title="Link to this heading">#</a></h3>
+<p>To simplify error-handling, extended errors can be enabled.  This is a newer feature of MDAPI and is not enabled by default for backwards compatibility.</p>
+<p>When enabled, the returned value is different in three important ways:</p>
+<ol class="arabic simple">
+<li><p>For a certain class of errors, an integer <code class="docutils literal notranslate"><span class="pre">errcode</span></code> value is returned along with <code class="docutils literal notranslate"><span class="pre">error</span></code>.  This integer code is machine-parsable.  (See below.)</p></li>
+<li><p>If the item fails to locate in the data cluster <em>and</em> its history cannot be found, an empty array is returned (keeping with prior behavior).</p></li>
+<li><p>If an item cannot be located but there’s an indication the item exists or existed, rather than returning an empty array, <code class="docutils literal notranslate"><span class="pre">errcode</span></code> and <code class="docutils literal notranslate"><span class="pre">error</span></code> are returned.</p></li>
+</ol>
+<p>Extended errors are available on the <code class="docutils literal notranslate"><span class="pre">/metadata/</span></code> endpoint by adding <code class="docutils literal notranslate"><span class="pre">extended_err=1</span></code> as a request URL parameter.</p>
+<section id="extended-error-code-list">
+<h4>Extended error code list<a class="headerlink" href="#extended-error-code-list" title="Link to this heading">#</a></h4>
+<p>User-visible extended error codes defined at this time:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">101</span></code>: Item creation is pending.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">102</span></code>: Item is unavailable (data node(s) are offline or not responding).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">103</span></code>: Unbacked user item.  (Older user items, e.g., <code class="docutils literal notranslate"><span class="pre">&#64;example</span></code>, were not automatically created when the account was created.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">104</span></code>: Item was deleted.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">105</span></code>: Primary data node not found.  (Only returned when <code class="docutils literal notranslate"><span class="pre">primaryonly</span></code> option is set.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">106</span></code>: Unbalanced locations.  (The most authoritative copy of the item metadata is not available, so a secondary copy was used.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">400</span></code>: Inaccurate lookahead.  (Tasks are queued that update the metadata, but one or more cannot be applied without errors.)</p></li>
+</ul>
+<p>See <code class="docutils literal notranslate"><span class="pre">Metadata\ExtendedError</span></code> for a full list of codes.</p>
+<p>Not all MDAPI errors have been adapted to extended errors at this time.  No <code class="docutils literal notranslate"><span class="pre">errcode</span></code> will be present for these errors.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="metadata.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Item Metadata API</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="md-write.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Item Metadata API: Write</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-reads">Partial reads</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errors">Errors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-errors">Extended errors</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-error-code-list">Extended error code list</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Internet Archive
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2018-2026, Internet Archive.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

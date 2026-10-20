@@ -1,0 +1,1 @@
+{"error":{"timestamp":"2026-10-20T01:38:12.8765549Z","path":"/search","exceptionName":"org.springframework.web.servlet.resource.NoResourceFoundException","message":"No static resource search.","reason":"Not Found","status":404}}

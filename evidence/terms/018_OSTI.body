@@ -1,0 +1,825 @@
+
+<!doctype html lang="en">
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+
+	<title>OSTI.GOV API (v1) Documentation</title>
+
+	<script src="/assets/260925.1738/js/api-docs/jquery-3.5.1.min.js"></script>
+	<script src="/assets/260925.1738/js/api-docs/bootstrap.js"></script>
+	<!-- <script src='/assets/260925.1738/js/api-docs/flatdoc.js'></script> -->
+	<script src='/assets/260925.1738/js/api-docs/scroll.js'></script>
+	
+	<link href="/assets/260925.1738/css/api-docs/bootstrap.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Roboto+Slab:400,300,700" rel="stylesheet" type="text/css">
+	<link href="/assets/260925.1738/css/api-docs/bootstrap-theme.css" rel="stylesheet">
+	<link href="/assets/260925.1738/css/api-docs/api-docs.css" rel="stylesheet">
+	
+	<!-- Meta -->
+	<meta content="OSTI.GOV API (v1) Documentation" property="og:title">
+	<meta content="REST API for accessing the OSTI.GOV repository of research resulting from DOE R&amp;D funding" name="description">
+	
+	<script>
+//	  Flatdoc.run({
+//		  fetcher: Flatdoc.file('https://www.osti.gov/res/api-readme.md')
+		  // fetcher: Flatdoc.github('USER/REPO')
+//	  });
+	</script>
+
+</head>
+<body role='flatdoc'>
+
+<div class="top-band row">
+	<div class="col-xs-12">
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAAsCAMAAAA5FiaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gIUFCYeEB02agAAAu5QTFRFAAAA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////47V6AAAAPl0Uk5TAAABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fICEiIyQlJicoKSssLS4vMDEyMzQ1Nzg5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" alt="OSTI.GOV" style="margin-top:-10px;margin-bottom:0px;margin-left:15px;" height="44" width="220">
+		<h1 style="display:inline-block;color: #fff; margin:24px; margin-left:30px; font-weight: 300;">API Documentation</h1>
+	</div>
+</div>
+	
+<div class="row">
+	<div class="col-xs-2 toc-wrapper">
+		<div id="toc" class="toc affix" role="flatdoc-menu-bak">
+				<ul>
+					<li id="root-item" class="level-0">
+						<ul class="level-1" id="root-list">
+							<li id="introduction-item" class="level-1"><a id="introduction-link" href="#introduction" class="level-1">Introduction</a></li>
+							<li id="general-guidelines-item" class="level-1"><a id="general-guidelines-link" href="#general-guidelines" class="level-1">General Guidelines</a>
+								<ul class="level-2" id="general-guidelines-list">
+									<li id="general-guidelines-httpmethods-item" class="level-2"><a id="general-guidelines-httpmethods-link" href="#general-guidelines-httpmethods" class="level-2">HTTP Methods</a></li>
+									<li id="general-guidelines-responseformats-item" class="level-2"><a id="general-guidelines-responseformats-link" href="#general-guidelines-responseformats" class="level-2">Response Formats</a></li>
+									<li id="general-guidelines-responseheaders-item" class="level-2"><a id="general-guidelines-responseheaders-link" href="#general-guidelines-responseheaders" class="level-2">Response Headers</a></li>
+									<li id="general-guidelines-pagination-item" class="level-2"><a id="general-guidelines-pagination-link" href="#general-guidelines-pagination" class="level-2">Pagination Structure</a></li>
+								</ul>
+							</li>
+							<li id="record-model-item" class="level-1"><a id="record-model-link" href="#record-model" class="level-1">Record Model</a>
+								<ul class="level-2" id="record-model-list">
+									<li id="record-model-httpstatuscodes-item" class="level-2"><a id="record-model-httpstatuscodes-link" href="#record-model-httpstatuscodes" class="level-2">HTTP Status Codes</a></li>
+									<li id="record-model-fields-item" class="level-2"><a id="record-model-fields-link" href="#record-model-fields" class="level-2">Record Fields</a></li>
+								</ul>
+							</li>
+							<li id="error-model-item" class="level-1"><a id="error-model-link" href="#error-model" class="level-1">Error Model</a>
+								<ul class="level-2" id="error-model-list">
+									<li id="error-model-httpstatuscodes-item" class="level-2"><a id="error-model-httpstatuscodes-link" href="#error-model-httpstatuscodes" class="level-2">HTTP Status Codes</a></li>
+									<li id="error-model-fields-item" class="level-2"><a id="error-model-fields-link" href="#error-model-fields" class="level-2">Error Fields</a></li>
+								</ul>
+							</li>
+							<li id="endpoints-item" class="level-1"><a id="endpoints-link" href="#endpoints" class="level-1">Endpoints</a>
+								<ul class="level-2" id="records-collection-list">
+									<li id="endpoints-recordlist-item" class="level-2"><a id="endpoints-recordlist-link" href="#endpoints-recordlist" class="level-2">Record List (Search)</a></li>
+									<li id="endpoints-singlerecord-item" class="level-2"><a id="endpoints-singlerecord-link" href="#endpoints-singlerecord" class="level-2">Single Record by ID</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+		</div>
+	</div>
+	<div class="col-xs-10 page-wrapper">
+		<div class="row">
+			<div class="col-xs-12">
+				
+				<div id="spacer-top"></div>
+				
+				<!-- introduction -->
+				<div class="anchor" id="introduction"></div>
+				<section>
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h2>Introduction</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box" role="flatdoc-content-bak">
+                            <!-- <div class="alert alert-warning">
+                                Please note: This version of the OSTI.GOV API (v1) is a release candidate being made available for review and testing, and will be deprecated in the near future in favor of an official v1 release. Please <a href="//contact">contact us</a> with any suggestions or questions.
+                            </div> -->
+							<p>The OSTI.GOV API allows you to query the Department of Energy's repository of research information resulting from DOE research funding.</p>
+							<p>The API is built on a REST architecture, providing predictable URLs that make writing applications easy. The API is HTTP-based, so it can be accessed using a wide variety of clients; most examples are illustrated using the cURL command to demonstrate basic use cases.</p>
+							<p>The list of resources available through the API, and their corresponding reference documentation, will always be made available at the API root endpoint (this document).</p>
+						</div>
+						<div class="col-xs-6 example-box">
+							<h4>API Root Endpoint</h4>
+							<pre><code class="lang-javascript">https://www.osti.gov/api/v1</span></code></pre>
+						</div>
+					</div>
+				</section>				
+						
+				<div class="anchor" id="general-guidelines"></div>
+				<section>
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h2>General Guidelines</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box" role="flatdoc-content-bak">
+							<p>Each resource endpoint in the API will vary slightly in some respects, such as what query parameters are valid for that type of request and how the expected output may be structured. These variations will be outlined in detail in the resource-specific sections below. There are, however, some general rules and expectations that are common to all interactions with the API.</p>
+						</div>
+						<div class="col-xs-6 example-box">
+						</div>
+					</div>
+				</section>				
+
+				<div class="anchor sub" id="general-guidelines-httpmethods"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>HTTP Methods</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p>The OSTI.GOV API uses the HTTP verb (method) associated with the incoming request to identify the type of action being performed.
+							Note that at this time the OSTI.GOV API has methods for querying data only, and therefore all requests to the API will be GET requests.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">Request Methods</th>
+							</tr>
+							<tr>
+							<th class="col-title">Method</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+							<tr>
+							<td>GET</td>
+							<td>Used for retrieving resources.</td>
+							</tr>
+							<tr>
+							<td class="text-muted">POST</td>
+							<td class="text-muted">Used for creating resources and performing resource actions.<br/><em class="text-warning">Not currently valid for OSTI.GOV API resource requests</em></td>
+							</tr>
+							<tr>
+							<td class="text-muted">PUT</td>
+							<td class="text-muted">Used for updating resources.<br/><em class="text-warning">Not currently valid for OSTI.GOV API resource requests</em></td>
+							</tr>
+							<tr>
+							<td class="text-muted">DELETE</td>
+							<td class="text-muted">Used for deleting resources.<br/><em class="text-warning">Not currently valid for OSTI.GOV API resource requests</em></td>
+							</tr>
+							</tbody></table>							
+						</div>
+						<div class="col-xs-6 example-box">
+							<p>Using the GET method, you can retrieve a list (collection) of resources or details of a particular resource.</p>
+							<p>To get a list of records:</p>
+							<pre><code>$ curl https://www.osti.gov/api/v1/records</code></pre>
+							<p>To get details of a record with a particular ID:</p>
+							<pre><code>$ curl https://www.osti.gov/api/v1/records/{osti_id}</code></pre>
+							<p>To get details of a record with a particular ID:</p>
+							<pre><code>$ curl https://www.osti.gov/api/v1/records/{osti_id}</code></pre>
+						</div>
+					</div>
+				</section>
+				
+				<div class="anchor sub" id="general-guidelines-responseformats"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>Response Formats</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p>
+								By default, results from the OSTI.GOV API will be returned in JSON format. By specifying an expected mime type in the <code class="text-muted">Accept</code> header of the 
+								request, results can also be returned in any of JSON, XML, or BibTeX formats.
+							</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">Format Types and Accept Headers</th>
+							</tr>
+							<tr>
+							<th class="col-title">Format</th>
+							<th class="col-title">Accept header</th>
+							</tr>
+							</thead><tbody>
+							<tr>
+							<td>JSON</td>
+							<td>application/json</td>
+							</tr>
+							<tr>
+							<td>XML</td>
+							<td>application/xml</td>
+							</tr>
+							<tr>
+							<td>BibTeX</td>
+							<td>application/x-bibtex</td>
+							</tr>
+							</tbody></table>							
+						</div>
+						<div class="col-xs-6 example-box">
+							<p>Specifying the <code>Accept</code> header in the request, you can retrieve results in a particular format.</p>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#common-rules-content-types-t1" data-toggle="tab">JSON</a></li>
+  <li><a href="#common-rules-content-types-t2" data-toggle="tab">XML</a></li>
+  <li><a href="#common-rules-content-types-t3" data-toggle="tab">BibTeX</a></li>
+</ul>							
+<div class="tab-content">
+  <div id="common-rules-content-types-t1" class="tab-pane active">
+<p>To get a record's metadata in JSON format:</p>
+<pre><code>$ curl https://www.osti.gov/api/v1/records/{osti_id} \
+	-H 'Accept: application/json'</code></pre>
+  </div>
+  <div id="common-rules-content-types-t2" class="tab-pane">
+<p>To get a record's metadata in XML format:</p>
+<pre><code>$ curl https://www.osti.gov/api/v1/records/{osti_id} \
+	-H 'Accept: application/xml'</code></pre>
+  </div>
+  <div id="common-rules-content-types-t3" class="tab-pane">
+<p>To get a record's metadata in BibTeX format:</p>
+<pre><code>$ curl https://www.osti.gov/api/v1/records/{osti_id} \
+	-H 'Accept: application/x-bibtex'</code></pre>
+  </div>
+</div>
+						</div>
+					</div>
+				</section>
+				
+				<div class="anchor sub" id="general-guidelines-responseheaders"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>Response Headers</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p>Responses from the API will include certain common HTTP headers, providing details about the response or the included content.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">Common Response Headers</th>
+							</tr>
+							<tr>
+							<th class="col-title">Response Header</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+							<tr>
+							<td>Date</td>
+							<td>The date the repsonse is issued, in RFC 1123 format</td>
+							</tr>
+							<tr>
+							<td>Content-Type</td>
+							<td>The mime type in which the response data is formatted</td>
+							</tr>
+							<tr>
+							<td>X-Total-Count</td>
+							<td>For reponses containing data, the number of records returned in the current response</td>
+							</tr>
+							<tr>
+							<td>Link</td>
+							<td>If more matching records are available than are returned in the current response, this will contain links to more pages in RFC 5988 format</td>
+							</tr>
+							</tbody></table>							
+						</div>
+						<div class="col-xs-6 example-box">
+							<h4>Example Response Headers</h4>
+<pre><code>HTTP/1.1 200 OK
+
+Date: Thu, 26 May 2016 16:25:04 GMT
+Content-Type: application/json
+X-Total-Count: 50
+Link: &lt;https://www.osti.gov/api/v1/records?page=2>; rel="next", &lt;https://www.osti.gov/api/v1/records?page=3>; rel="last"
+Content-Length: 3911</code></pre>
+						</div>
+					</div>
+				</section>
+				
+				<div class="anchor sub" id="general-guidelines-pagination"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>Pagination</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p>Requests that return multiple records will be paginated to 20 records by default; the number of records per page can be modified by specifying a numerical value for the <code class="text-muted">?rows</code> parameter, and the specific page with the <code class="text-muted">?page</code> parameter (default 1). If more matching records exist, the <code class="text-muted">Link</code> response header will contain links to additional pages of data, in RFC 5988 format. The specific type of link is denoted by the "rel" value.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">Link Header Rel Values</th>
+							</tr>
+							<tr>
+							<th class="col-title">Name</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+							<tr>
+							<td>next</td>
+							<td>The link relation for the immediate next page of results</td>
+							</tr>
+							<tr>
+							<td>last</td>
+							<td>The link relation for the last page of results</td>
+							</tr>
+							<tr>
+							<td>first</td>
+							<td>The link relation for the last page of results</td>
+							</tr>
+							<tr>
+							<td>prev</td>
+							<td>The link relation for the immediate previous page of results</td>
+							</tr>
+							</tbody></table>							
+						</div>
+						<div class="col-xs-6 example-box">
+							<h4>Example Link Header Values</h4>
+<pre><code>
+$ curl https://www.osti.gov/api/v1/records?page=2&rows=20
+
+HTTP/1.1 200 OK
+
+...
+X-Total-Count: 250
+Link:
+&lt;https://www.osti.gov/api/v1/records?page=3&rows=20>; rel="next",
+&lt;https://www.osti.gov/api/v1/records?page=13&rows=20>; rel="last",
+&lt;https://www.osti.gov/api/v1/records?page=1&rows=20>; rel="first",
+&lt;https://www.osti.gov/api/v1/records?page=1&rows=20>; rel="prev"
+...</code></pre>
+						</div>
+					</div>
+				</section>
+				
+				<div class="anchor" id="record-model"></div>
+				<section>
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h2>Record Model</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box" role="flatdoc-content-bak">
+							<p>Responses returning data all return the same basic structure, formatted as appropriate for the content type requested.</p>
+						</div>
+						<div class="col-xs-6 example-box">
+						</div>
+					</div>
+				</section>				
+
+				<div class="anchor sub" id="record-model-httpstatuscodes"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>HTTP Status Codes</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p>A successful response from the API will always return an HTTP status code of 200.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">HTTP Success Status</th>
+							</tr>
+							<tr>
+							<th class="col-title">Status</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+							<tr>
+							<td>200</td>
+							<td>OK</td>
+							</tr>
+							</tbody></table>
+						</div>
+						<div class="col-xs-6 example-box">
+						</div>
+					</div>
+				</section>
+
+				<div class="anchor sub" id="record-model-fields"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>Record Fields</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p>Results are always presented as a list of Record objects, formatted according to the content type requested. For JSON, records are returned as an array of objects. For XML, records are returned as <code class="text-muted">&lt;record></code> elements wrapped in a <code class="text-muted">&lt;records></code> container. BibTeX results are formatted serially.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">Record Fields</th>
+							</tr>
+							<tr>
+							<th class="col-title">Field Name</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+								<tr><td>osti_id</td><td>The unique OSTI identifier for the record</td></tr>
+								<tr><td>title</td><td>A name or title by which the record is known</td></tr>
+								<tr><td>authors</td><td>The person(s) primarily responsible for the creation of the data</td></tr>
+								<tr><td>subjects</td><td>A list of subjects, keywords, or key phrases describing the resource</td></tr>
+								<tr><td>description</td><td>A short description or abstract</td></tr>
+								<tr><td>publisher</td><td>The name of the entity that holds, archives, distributes, releases, or produces the resource</td></tr>
+								<tr><td>country_publication</td><td>The country in which this version of the record was published</td></tr>
+								<tr><td>publication_date</td><td>The publication date, in ISO-8601 format</td></tr>
+								<tr><td>entry_date</td><td>The date the record was added or last modified, in ISO-8601 format</td></tr>
+								<tr><td>doi</td><td>The Digital Object Identifier (DOI)</td></tr>
+								<tr><td>journal_name</td><td>The name of the journal the article was published in</td></tr>
+								<tr><td>journal_volume</td><td>The journal volume containing this article</td></tr>
+								<tr><td>journal_issue</td><td>The journal issue containing to this article</td></tr>
+								<tr><td>product_type</td><td>The product type of the record (defaults to "Journal Article")</td></tr>
+								<tr><td>language</td><td>The primary language of the resource</td></tr>
+								<tr><td>availability</td><td>If applicable, the office or organization to refer access requests to</td></tr>
+								<tr><td>research_org</td><td>If credited, the organization name primarily responsible for conducting the research</td></tr>
+								<tr><td>sponsor_org</td><td>If credited, the organzation name that sponsored / funded the research</td></tr>
+								<tr><td>contributor_org</td><td>If credited, the organzation(s) contributing to the research</td></tr>
+								<tr><td>format</td><td>Additional format / paging information</td></tr>
+								<tr><td>report_number</td><td>The report number associated with the entry</td></tr>
+								<tr><td>doe_contract_number</td><td>The DOE contract number associated with the entry</td></tr>
+								<tr><td>nsa_number</td><td>The NSA number associated with the entry, if present</td></tr>
+								<tr><td>links</td><td>A multivalued field containting link references for this article, typed by "rel" attribute (HATEOAS constraint)</td></tr>
+							</tbody></table>
+						</div>
+						<div class="col-xs-6 example-box">
+							<h4>Example Response</h4>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#response-model-fields-t1" data-toggle="tab">JSON</a></li>
+  <li><a href="#response-model-fields-t2" data-toggle="tab">XML</a></li>
+  <li><a href="#response-model-fields-t3" data-toggle="tab">BibTeX</a></li>
+</ul>
+<div class="tab-content">
+  <div id="response-model-fields-t1" class="tab-pane active">
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json</code></pre>
+<pre><code>[
+    {
+        "osti_id": "{osti_id}",
+        "title": "Example Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "authors": [
+            "Nominator, Lois D.",
+            "Dactyl, Terry",
+            "Anthemum, Chris"
+            "Turner, Paige"
+        ],
+        "doi": "https://doi.org/10.5555/12345678",
+        "journal_name": "The Journal of Psychoceramics",
+        "journal_volume": "60",
+        "journal_issue": "5",
+        "publisher": "Example Publisher",
+        "country_publication": "United States",
+        "product_type": "Journal Article",
+        "article_type": "Accepted Manuscript",
+        "language": "English",
+        "publication_date": "2015-06-02T04:00:00Z",
+        "entry_date": "2016-09-07T04:00:00Z",
+        "sponsor_orgs": [
+            "USDOE",
+            "Example Sponsor Orgnization 2"
+        ],
+        "research_orgs": [
+            "Example Research Orgnization 1",
+            "Example Research Orgnization 2"
+        ],
+        "report_number": "XX-YY-15-12345; XYZ-2015-4321A",
+        "doe_contract_number": "ACXX-012345678; ACXX-987654321",
+        "availability": "",
+        "format": "Medium: ED; Size: p. 445-455",
+        "subjects": [
+            "magnetic relaxometry",
+            "nanoparticles",
+            "cancer",
+            "relaxometry"
+        ],
+        "links": [{
+            "rel": "citation",
+            "href": "https://www.osti.gov/biblio/{osti_id}"
+        }, {
+            "rel": "fulltext",
+            "href": "https://www.osti.gov/servlets/purl/{osti_id}"
+        }]
+    }
+]</code></pre>
+  </div>
+  <div id="response-model-fields-t2" class="tab-pane">
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/xml</code></pre>
+<pre><code>&lt;?xml version="1.0"?>
+&lt;records>
+    &lt;record>
+        &lt;osti_id>{osti_id}&lt;/osti_id>
+        &lt;title>Example Title&lt;/title>
+        &lt;description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/description>
+        &lt;authors>
+            &lt;author>Nominator, Lois D.&lt;/author>
+            &lt;author>Dactyl, Terry&lt;/author>
+            &lt;author>Anthemum, Chris&lt;/author>
+            &lt;author>Turner, Paige&lt;/author>
+        &lt;/authors>
+        &lt;doi>https://doi.org/10.5555/12345678&lt;/doi>
+        &lt;journal_name>The Journal of Psychoceramics&lt;/journal_name>
+        &lt;journal_volume>60&lt;/journal_volume>
+        &lt;journal_issue>5&lt;/journal_issue>
+        &lt;publisher>Example Publisher&lt;/publisher>
+        &lt;country_publication>United States&lt;/country_publication>
+        &lt;product_type>Journal Article&lt;/product_type>
+        &lt;article_type>Accepted Manuscript&lt;/article_type>
+        &lt;language>English&lt;/language>
+        &lt;publication_date>2015-06-02T04:00:00Z&lt;/publication_date>
+        &lt;entry_date>2016-09-07T04:00:00Z&lt;/entry_date>
+        &lt;sponsor_orgs>
+            &lt;sponsor_org>USDOE&lt;/sponsor_org>
+            &lt;sponsor_org>Example Sponsor Orgnization 2&lt;/sponsor_org>
+        &lt;/sponsor_orgs>
+        &lt;research_orgs>
+            &lt;research_org>Example Research Orgnization 1&lt;/research_org>
+            &lt;research_org>Example Research Orgnization 2&lt;/research_org>
+        &lt;/research_org>
+        &lt;report_number>XX-YY-15-12345; XYZ-2015-4321A&lt;/report_number>
+        &lt;doe_contract_number>ACXX-012345678; ACXX-987654321&lt;/doe_contract_number>
+        &lt;availability>&lt;/availability>
+        &lt;format>Medium: ED; Size: p. 445-455&lt;/format>
+        &lt;subjects>
+            &lt;subject>magnetic relaxometry&lt;/subject>
+            &lt;subject>nanoparticles&lt;/subject>
+            &lt;subject>cancer&lt;/subject>
+            &lt;subject>relaxometry&lt;/subject>
+        &lt;/subjects>
+        &lt;links>
+            &lt;link rel="citation" href="https://www.osti.gov/biblio/{osti_id}" />
+            &lt;link rel="fulltext" href="https://www.osti.gov/servlets/purl/{osti_id}" />
+        &lt;/links>
+    &lt;/record>
+&lt;/records></code></pre>
+  </div>
+  <div id="response-model-fields-t3" class="tab-pane">
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/x-bibtex</code></pre>
+<pre><code>@misc{osti_{osti_id},
+  title        = {Example Title},
+  author       = {Nominator, L. and Dactyl, T. and Anthemum, C. and Turner, P.},
+  abstractNote = {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.},
+  doi          = {10.5555/12345678},
+  place        = {United States},
+  year         = 2015,
+  month        = 9,
+  note         = {An optional note}, 
+}</code></pre>
+  </div>
+</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="anchor" id="error-model"></div>
+				<section>
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h2>Error Model</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box" role="flatdoc-content-bak">
+							<p>If for some reason the API returns an error response, it will be formatted as appropriate for the content type requested. All error responses have the same basic structure.</p>
+						</div>
+						<div class="col-xs-6 example-box">
+						</div>
+					</div>
+				</section>				
+
+				<div class="anchor sub" id="error-model-httpstatuscodes"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>HTTP Status Codes</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p>Errors will be returned with an HTTP error status code appropriate to the type of error encountered.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">HTTP Error Status</th>
+							</tr>
+							<tr>
+							<th class="col-title">Status</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+							<tr>
+							<td>400</td>
+							<td>Bad request</td>
+							</tr>
+							<tr>
+							<td>401</td>
+							<td>Unauthorized</td>
+							</tr>
+							<tr>
+							<td>404</td>
+							<td>Resource Not Found</td>
+							</tr>
+							<tr>
+							<td>405</td>
+							<td>Method Not Allowed</td>
+							</tr>
+							<tr>
+							<td>500</td>
+							<td>Internal Error</td>
+							</tr>
+							</tbody></table>
+						</div>
+						<div class="col-xs-6 example-box">
+						</div>
+					</div>
+				</section>
+
+				<div class="anchor sub" id="error-model-fields"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>Error Fields</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p>Errors are always presented as a single object, formatted according to the content type requested.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">Error Fields</th>
+							</tr>
+							<tr>
+							<th class="col-title">Field Name</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+								<tr><td>statusCode</td><td>The response error code, duplicated for convenience</td></tr>
+								<tr><td>statusMessage</td><td>A brief description of the error type</td></tr>
+								<tr><td>errorDescription</td><td>A more detailed description of the specific error cause</td></tr>
+							</tbody></table>
+						</div>
+						<div class="col-xs-6 example-box">
+							<h4>Example Error</h4>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#error-model-fields-t1" data-toggle="tab">JSON</a></li>
+  <li><a href="#error-model-fields-t2" data-toggle="tab">XML</a></li>
+  <li><a href="#error-model-fields-t3" data-toggle="tab">BibTeX</a></li>
+</ul>
+<div class="tab-content">
+  <div id="error-model-fields-t1" class="tab-pane active">
+<pre><code>HTTP/1.1 404 Not Found
+Content-Type: application/json</code></pre>
+<pre><code>{
+    "statusCode": 404,
+    "statusMessage": "Not Found",
+    "errorDescription": "No record matching the supplied OSTI ID was found"
+}</code></pre>
+  </div>
+  <div id="error-model-fields-t2" class="tab-pane">
+<pre><code>HTTP/1.1 404 Not Found
+Content-Type: application/xml</code></pre>
+<pre><code>&lt;?xml version="1.0"?>
+&lt;error>
+    &lt;statusCode>404&lt;/statusCode>
+    &lt;statusMessage>Not Found&lt;/statusMessage>
+    &lt;errorDescription>No record matching the supplied OSTI ID was found&lt;/errorDescription>
+&lt;/error></code></pre>
+  </div>
+  <div id="error-model-fields-t3" class="tab-pane">
+<pre><code>HTTP/1.1 404 Not Found
+Content-Type: application/x-bibtex</code></pre>
+<pre><code>404
+Not Found
+No record matching the supplied OSTI ID was found</code></pre>
+  </div>
+</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="anchor" id="endpoints"></div>
+				<section>
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h2>Endpoints</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box" role="flatdoc-content-bak">
+							<p>The OSTI.GOV API currently supports two endpoints, both of which are data retrieval endpoints and as such only GET method requests are valid. All endpoints are relative to the root endpoint.</p>
+						</div>
+						<div class="col-xs-6 example-box">
+							<h4>API Root Endpoint</h4>
+							<pre><code class="lang-javascript">https://www.osti.gov/api/v1</span></code></pre>
+						</div>
+					</div>
+				</section>				
+
+				<div class="anchor sub" id="endpoints-recordlist"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>Record List (Search)</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p><code class="text-muted">GET</code> /records</p>
+							<p>The record list endpoint allows you to search for lists of records in OSTI.GOV by a variety of criteria.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">Record List Query Parameters</th>
+							</tr>
+							<tr>
+							<th class="col-title">Parameter</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+							<tr><td>q</td><td>General query field, will search full record for provided terms</td></tr>
+							<tr><td>osti_id</td><td>The unique OSTI identifier for a record</td></tr>
+							<tr><td>doi</td><td>The Digital Object Identifier (DOI), e.g. 10.5555/12345678</td></tr>
+							<tr><td>fulltext</td><td>Searches the article full text (if available) for the provided terms</td></tr>
+							<tr><td>biblio</td><td>Searches the bibliographic information for the provided terms</td></tr>
+							<tr><td>author</td><td>Searches the author entries</td></tr>
+							<tr><td>title</td><td>Searches within document titles</td></tr>
+							<tr><td>identifier</td><td>Finds records based on common identifiers (report number, contract number, etc.)</td></tr>
+							<tr><td>sponsor_org</td><td>Searches the sponsoring organization field</td></tr>
+							<tr><td>research_org</td><td>Searches the research organization field</td></tr>
+							<tr><td>contributing_org</td><td>Searches the contributing organization field</td></tr>
+							<tr><td>source_id</td><td>A code specifying the organization that submitted the record</td></tr>
+							<tr><td>publication_date_start</td><td>Beginning publication date boundary in MM/DD/YYYY format</td></tr>
+							<tr><td>publication_date_end</td><td>End publication date boundary in MM/DD/YYYY format</td></tr>
+							<tr><td>entry_date_start</td><td>Beginning entry date boundary in MM/DD/YYYY format</td></tr>
+							<tr><td>entry_date_end</td><td>Ending entry date boundary in MM/DD/YYYY format</td></tr>
+							<tr><td>language</td><td>Finds records by language</td></tr>
+							<tr><td>country</td><td>Finds records by country of publication</td></tr>
+							<tr><td>site_ownership_code</td><td>Finds records by the ID code of the submitting organization</td></tr>
+							<tr><td>subject</td><td>Searches both the standardized subject categories and keywords associated with the record. Subject categories and keywords are optional metadata fields, so the data may be limited.</td></tr>
+							<tr><td>has_fulltext</td><td><code>true</code> to select records with available full text, <code>false</code> to select citation-only records</td></tr>
+							<tr><td>sort</td><td>Specifies a field name on which to sort</td></tr>
+							<tr><td>order</td><td>Specifies the sort order (one of asc or desc)</td></tr>
+							<tr><td>rows</td><td>The number of rows per page to return (default 20)</td></tr>
+							<tr><td>page</td><td>The specific page of records to return (default 1)</td></tr>
+							</tbody></table>
+						</div>
+						<div class="col-xs-6 example-box">
+							<h4>Record List Endpoint</h4>
+							<pre><code class="lang-javascript">https://www.osti.gov/api/v1/records</span></code></pre>
+							<hr/>
+							<p>Note: The API expects parameter values to be submitted as url-escaped strings. Most browsers and scripting libraries handle this automatically,
+								but if the request is issued as a simple string (such as the default case using the <code>curl</code> command), it may be necessary to specify that encoding
+								to avoid unexpected results using some characters, e.g. double quotes.
+							</p>
+							<pre><code class="lang-javascript">$ curl --get \
+--data-urlencode "identifier=\"fusion energy\"" \
+--data-urlencode "rows=100" \
+https://www.osti.gov/api/v1/records</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<div class="anchor sub" id="endpoints-singlerecord"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-12 section-title">
+							<h3>Single Record by ID</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<p><code class="text-muted">GET</code> /records/{osti_id}</p>
+							<p>The single record by id endpoint allows you to retrieve details for a specific record by providing the appropriate OSTI ID value as the key in the request path.</p>
+							<table class="table"><thead>
+							<tr>
+							<th colspan="2" class="table-title">Record List Query Parameters</th>
+							</tr>
+							<tr>
+							<th class="col-title">Parameter</th>
+							<th class="col-title">Description</th>
+							</tr>
+							</thead><tbody>
+							<tr><td class="text-center text-muted">none</td></tr>
+							</tbody></table>
+						</div>
+						<div class="col-xs-6 example-box">
+							<h4>Single Record Endpoint</h4>
+							<pre><code class="lang-javascript">https://www.osti.gov/api/v1/records/{osti_id}</span></code></pre>
+						</div>
+					</div>
+				</section>
+				
+				<div class="anchor sub" id="footer-text"></div>
+				<section class="sub">
+					<div class="row">
+						<div class="col-xs-6 content-box">
+							<div style="margin-top: 400px; padding-top: 30px; border-top: 1px solid #ddd;">
+								<p class="text-muted">The OSTI.GOV API is actively in development; the documentation should be kept up to date with the functionality of the current release. If you have any questions or suggestions, please <a href="mailto:comments@osti.gov">let us know</a>.</p>
+								<div class="clearfix"></div>
+							</div>				
+						</div>
+						<div class="col-xs-6 example-box">
+						</div>
+					</div>
+				</section>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>

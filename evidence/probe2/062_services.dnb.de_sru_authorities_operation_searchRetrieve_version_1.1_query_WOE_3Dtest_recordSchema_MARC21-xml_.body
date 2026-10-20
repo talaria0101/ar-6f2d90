@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/"><version>1.1</version><numberOfRecords>2403</numberOfRecords><records><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1418352403</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20260903082631.0</controlfield>
+    <controlfield tag="008">260903n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1418352403</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1418352403</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1418352403</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1418352403</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">Design, Automation &amp; Test in Europe Conference</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Verona</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Design, Automation and Test in Europe Conference</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Verona</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">DATE</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Verona</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">DATE26</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Verona</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">20.04.2026-22.04.2026</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040631109</subfield>
+      <subfield code="0">(DE-588)4063110-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4063110-2</subfield>
+      <subfield code="a">Verona</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 03.09.2026</subfield>
+      <subfield code="u">https://date26.date-conference.com/</subfield>
+    </datafield>
+  </record></recordData><recordPosition>1</recordPosition></record></records><nextRecordPosition>2</nextRecordPosition><echoedSearchRetrieveRequest><version>1.1</version><query>WOE=test</query><xQuery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/><maximumRecords>1</maximumRecords><recordSchema>MARC21-xml</recordSchema></echoedSearchRetrieveRequest></searchRetrieveResponse>

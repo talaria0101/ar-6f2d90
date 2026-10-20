@@ -1,0 +1,2659 @@
+<html/>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="icon" href="https://www.clevelandart.org/sites/all/themes/clevelandartv2/favicon.ico" />
+
+    <style type="text/css">
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+
+        h5 {
+            margin-top: 10px;
+        }
+
+        code pre {
+            border: #ccc 1px solid;
+            padding: 10px;
+            background-color: #f3f3f3;
+            white-space: pre-wrap;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>The Cleveland Museum of Art Open Access API</h1>
+
+        <p>[ <i>The API and this documentation are a work in progress. Last update: 2025-07-11</i> ]</p>
+
+        <h2>The Cleveland Museum of Art Open Access</h2>
+
+        <p>
+            The Cleveland Museum of Art (CMA) was founded in 1913 “for the benefit of all the people forever.” The museum
+            strives to help the broadest possible audience understand and engage with the world’s great art. The
+            Cleveland
+            Museum of Art is one of the most comprehensive art museums in the world and one of northeastern Ohio’s
+            principal
+            civic and cultural institutions. 
+        </p>
+
+        <p>
+            The Cleveland Museum of Art provides datasets of information on more than 64,000 artwork records in its
+            Collection for unrestricted commercial and noncommercial use. Additionally, the museum provides image assets
+            for
+            over 37,000 works, which are made available under the same terms. Links to the web, print, and full-sized,
+            uncompressed versions of these images are included in the dataset where applicable.
+        </p>
+
+        <p>
+            To the extent possible under law, The Cleveland Museum of Art has waived all copyright and related or
+            neighboring
+            rights to this dataset using Creative Commons Zero. This work is published from: The United States Of
+            America. You
+            can also find the text of the CC Zero deed in the file LICENSE in this repository. These select datasets are
+            now
+            available for use in any media without permission or fee; they also include identifying data for artworks
+            under
+            copyright. The datasets support the search, use, and interaction with the Museum’s collection.
+        </p>
+
+        <p>For more information about CMA's Open Access initiative, please visit: </p>
+
+        <p><a href="https://clevelandart.org/open-access">https://clevelandart.org/open-access</a></p>
+
+        <p>
+            For any questions about the dataset, the API, or anything else related to CMA's Open Access initiative,
+            please
+            contact:
+        </p>
+
+        <p><a href="/cdn-cgi/l/email-protection#d9b6a9bcb7b8bababcaaaa99bab5bcafbcb5b8b7bdb8abadf7b6abbe"><span class="__cf_email__" data-cfemail="5837283d36393b3b3d2b2b183b343d2e3d3439363c392a2c76372a3f">[email&#160;protected]</span></a></p>
+
+        <p>
+            Code examples for querying the API and manipulating the response data can be found <a href="#appendix-d">here</a>.
+
+        <p>
+            If you do not wish to use our API, you can obtain the complete and current dataset in JSON or CSV format from
+            our
+            <a href="https://github.com/ClevelandMuseumArt/openaccess">GitHub repository</a>.
+        </p>
+
+        <a name="release-history"></a>
+        <h2>Release History</h2>
+
+        <h3><strong>Version 4.0.3 (2026-07-09)</strong></h3>
+        <ul>
+            <li>
+                Added early_education_description for the "Little Learners" didactic.
+                Added artlens_description for the Artlens didactic used in the new app @ CMA.
+            </li>
+        </ul>
+
+        <h3><strong>Version 4.0.2 (2026-02-09)</strong></h3>
+        <ul>
+            <li>
+                Added the advanced search filters for: 'added_to_oa_before', 'added_to_oa_after'
+                To filter based on the date an object was added to Open Access.
+                NOTE:  This currently only works for 2026 and beyond.  Attempts to reconstruct added dates prior to 2026 are underway.
+            </li>
+        </ul>
+
+        <h3>Version 4.0.1 (2025-07-11)</h3>
+        <p>
+            Added new attributes and functionality for objects with Inseparable Parts, such as manuscripts and portfolios.
+            API now indicates whether an object has inseparable parts, and which part(s) are on-view (if any)
+            New attributes:  inseparable_parts, part_visible
+        </p>
+
+        <h3>Version 4.0.0 (2024-11-22)</h3>
+        <p>
+            New major version 4.0 incorporates many changes intended to improve usability of CMA artwork objects.  It is fully backwards-compatible
+            to 3.x versions for existing users, but offers additional sorting/filtering/searching features and standardizes field names previously
+            different across different object types.
+        </p>
+
+        <h2>Version History:</h2>
+        <h3>Version 3.1.2 (2023-10-23)</h3>
+        <ul>
+            <li>
+                New <code>no_description</code> parameter was added to Artworks.
+                Filters by no_description
+            </li>
+            <li>
+                New <code>did_you_know</code> parameter was added to Artworks.
+                Filters by did_you_know
+            </li>
+            <li>
+                New <code>no_did_you_know</code> parameter was added to Artworks.
+                Filters by did_you_know
+            </li>
+            <li>
+                New <code>has_did_you_know</code> parameter was added to Artworks.
+                Filters by did_you_know
+            </li>
+        </ul>
+
+        <h3>Version 3.1.1 (2023-10-13)</h3>
+        <ul>
+            <li>
+                The artwork data values <code>wall_description</code> and <code>digital_description</code> were replaced
+                with a singular <code>description</code> value.
+            </li>
+            <li>
+                The artwork data value <code>fun_fact</code> was changed to <code>did_you_know</code>.
+            </li>
+            <li>
+                A new <code>is_cma</code> parameter was added to the exhibition endpoint. Setting this to <code>True</code>
+                will ensure that only exhibitions from CMA venues are returned
+            </li>
+            <li>
+                New <code>description</code> parameter was added to Artworks.
+                Filter by description.
+            </li>
+            <li>
+                New <code>did_you_know</code> parameter was added to Artworks.
+                Filters “Did you know?” value.
+            </li>
+            <li>
+                New <code>gallery</code> parameter was added to Artworks.
+                Filters by gallery.
+            </li>
+            <li>
+                New <code>exhibtion_id</code> parameter was added to Artworks.
+                Filter by exhibition id from Athena. Used for creating exhibition filters on Collection Online.
+            </li>
+            <li>
+                New <code>asian_american_artists</code> parameter was added to Artworks.
+                Filters by works created by Asian American artists.
+            </li>
+            <li>
+                New <code>lgbtq_artists</code> parameter was added to Artworks.
+                Filters by works created by LGBTQ artists.
+            </li>
+            <li>
+                New <code>is_3d</code> parameter was added to Artworks.
+                Filters artwork that has a 3d sketchfab model. Value must be 1 for this filter to be applied.
+            </li>
+            <li>
+                New <code>collection</code> parameter was added to Artworks.
+                Subset of Curatorial area of collection.
+            </li>
+            <li>
+                New <code>department</code> parameter was added to Artworks.
+                Filters by department, i.e., curatorial area of collection.
+            </li>
+            <li>
+                New <code>highlight</code> parameter was added to Artworks.
+                Filter artworks that are to be highlighted on the Collection Online main page. Value must be 1 for this filter to be applied.
+            </li>
+            <li>
+                New <code>classification_type</code> parameter was added to Artworks.
+                Filter by classification type (type of object).. Alias for type.
+            </li>
+            <li>
+                New <code>accession_number</code> parameter was added to Artworks.
+                Filter by accession number
+            </li>
+            <li>
+                New <code>legal_status</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>accession_date</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>sortable_date</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>date_text</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>collapse_artists</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>on_loan</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>recently_acquired</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>record_type</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>cover_accession_number</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>conservation_statement</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>is_nazi_era_provenance</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>impression</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>alternate_titles</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>is_highlight</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>current_exhibition</code> field was added to Artworks data response.
+            </li>
+            <li>
+                New <code>is_venue_cma</code> field was added to Exhibitions data response.
+            </li>
+        </ul>
+
+        <h3>Version 3.1.0 (2023-01-13)</h3>
+        <ul>
+            <li>
+                Introducing the <code>fields</code> parameter, which accepts a comma-delimited list of
+                <a href="#appendix-a">response fields</a> and returns only those fields in the API response.
+            </li>
+        </ul>
+
+        <h3><strong>Version 3.0.0 (2023-01-09)</strong></h3>
+        <ul>
+            <li>Image similarity search: a multi-part POST request with a file object will return a list of artworks ranked by image similarity. See code example in <a href="#appendix-e">Appendix E</a>.</li>
+            <li>Alternate images: links to detail views, alternate perspectives, and older photography included in the API response.</li>
+            <li>
+                Completely refactored codebase using Python 3.10 and FastAPI:
+                <ul>
+                    <li>Faster and more stable API.</li>
+                    <li>Automatic <a href="/docs/">endpoint documentation and testing harness</a>.</li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <h3>Version 2.3.6 (2022-09-02)</h3>
+        <ul>
+            <li>
+                Add <code>technique</code> as an alias for <code>medium</code> in advanced search parameters. This
+                creates consistency with
+                the field name for that value, which is <code>technique</code>.
+            </li>
+        </ul>
+
+        <h3>Version 2.3.5 (2022-03-24)</h3>
+        <ul>
+            <li>
+                Add updated_since parameter to get artworks updated since a particular date
+            </li>
+            <li>
+                Add image specifications to the documentation
+            </li>
+        </ul>
+
+        <h3>Version 2.3.4 (2022-03-21)</h3>
+        <ul>
+            <li>
+                Add Sketchfab ID and Sketchfab URL for artworks with available 3D objects.
+            </li>
+        </ul>
+
+
+        <h3>Version 2.3.3 (2021-06-25)</h3>
+        <ul>
+            <li>
+                Improved efficiency and removed redundancy (overwriting identical data) in uploading to Internet Archive
+                and incorporated better handling of CC0 image on the CDN to have a more robust system for retrying
+                failed downloads.
+            </li>
+        </ul>
+
+        <h3>Version 2.3.2 (2021-04-07)</h3>
+        <ul>
+            <li>
+                Improved database update scripts to handle large <code>share_license_status</code> updates on the
+                backend.
+            </li>
+        </ul>
+
+        <h3>Version 2.3.1 (2021-03-21)</h3>
+        <ul>
+            <li>Fixed bug for BCE created dates appearing as positive integers.</li>
+        </ul>
+
+        <h3>Version 2.3 (2020-11-02)</h3>
+        <ul>
+            <li>
+                New endpoints that allow searching <a href="#api-endpoints-creators">creator</a> and <a href="#api-endpoints-exhibitions">exhibition</a> data,
+                in addition to the previously available search terms for creators and exhibition history.
+            </li>
+        </ul>
+
+        <h3>Version 2.2 (2020-10-18)</h3>
+        <ul>
+            <li>Search artworks by dimensions and size.</li>
+        </ul>
+
+        <h3>Version 2.1 (2020-03-23)</h3>
+        <ul>
+            <li>Updated to Version 2019-05-06 of the Azure Search API.</li>
+        </ul>
+
+        <h3><strong>Version 2.0 (2020-03-19)</strong></h3>
+        <ul>
+            <li>
+                Split the ‘cc0’ Boolean search filter into the two search filters ‘cc0’ and ‘copyrighted’ which take no
+                parameters.
+            </li>
+            <li>
+                Added the following advanced search filters: 'artists', 'title', 'medium', 'credit',
+                'catalogue_raisonne',
+                'provenance', 'citations', 'exhibition_history', 'created_before', 'created_after', 'currently_on_view',
+                'currently_on_loan', 'african_american_artists', 'cia_alumni_artists', 'may_show_artists',
+                'female_artists',
+                'recently_acquired', 'nazi_era_provenance', 'created_after_age', 'created_before_age'.
+            </li>
+        </ul>
+
+        <h3>Version 1.0 (2019-01-23)</h3>
+        <ul>
+            <li>Initial release of API, includes basic search filters and 'GET Artwork (Specific)'.</li>
+        </ul>
+
+
+        <a name="data"></a>
+        <h2>Data</h2>
+
+        <h5>Updates</h5>
+
+        <p>
+            All of the data in API and corresponding <a href="https://github.com/ClevelandMuseumArt/openaccess">
+                GitHub
+                repository
+            </a>, collectively referred to here as the "dataset", is updated via automated process daily
+            directly
+            from our central collection content management system (CCMS). Any changes in the CCMS will be reflected upon
+            this
+            update in the dataset.
+        </p>
+
+        <p>
+            As part of this update, the data in the CCMS is analyzed to account for any new artworks or new information
+            in an
+            artwork record that would necessitate a change to the <code>share_license_status</code> field.
+        </p> This
+        field will
+        have values of "CC0", "Copyrighted", or "Other". While all data in the dataset is released with a CC0
+        designation,
+        only artworks with the CC0 <code>share_license_status</code> will additionally provide access to CC0 images.</p>
+
+        <p>These automated updates are generally completed by 5am daily.</p>
+
+        <a name="api-endpoints"></a>
+        <h2>API Endpoints</h2>
+
+        <!-- BEGIN ARTWORK API DOCUMENTATION -->
+
+        <a name="api-endpoints-search"></a>
+        <h5>GET Artworks (Search)</h5>
+
+        <p>
+            Get a list of artworks and associated metadata and image
+            links based on a search term.
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/">https://openaccess-api.clevelandart.org/api/artworks/</a>
+        </p>
+
+        <a name="parameters"></a>
+        <p><b>Parameters</b></p>
+
+        <table class="table table-bordered">
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Type</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td><b>q</b></td>
+                <td>string</td>
+                <td>
+                    Any keyword or phrase that searches against title, creator, artwork description, and several other
+                    meaningful
+                    fields related to the artwork.
+                </td>
+            </tr>
+            <tr>
+                <td><b>cc0</b></td>
+                <td>none</td>
+                <td>
+                    Filters by works that have <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">
+                        share
+                        license cc0
+                    </a>.
+                </td>
+            </tr>
+            <tr>
+                <td><b>copyrighted</b></td>
+                <td>none</td>
+                <td>Filters by works that have some sort of copyright.</td>
+            </tr>
+            <tr>
+                <td><b>department</b></td>
+                <td>string</td>
+                <td>Filter by department. List of valid departments in <a href="#appendix-b">Appendix B</a>.</td>
+            </tr>
+            <tr>
+                <td><b>type</b></td>
+                <td>string</td>
+                <td>Filter by artwork types. List of valid types in <a href="#appendix-c">Appendix C</a>.</td>
+            </tr>
+            <tr>
+                <td><b>orderby</b></td>
+                <td>string</td>
+                <td>Order results by field name, as described in <i>Advanced Search Fields</i> below.  Supports either "[fieldname] ASC/DESC" syntax, or "+/-[fieldname]" syntax for ordering.</td>
+            </tr>
+            <tr>
+                <td><b>has_image</b></td>
+                <td>integer</td>
+                <td>
+                    0 or 1. Filter to return only artworks that have a web image asset. (<i>
+                        synonymous with the
+                        deprecated field
+                        web_image
+                    </i>)
+                </td>
+            </tr>
+            <tr>
+                <td><b>indent</b></td>
+                <td>integer</td>
+                <td>Number of spaces to indent JSON content if "pretty" formatting is desired.</td>
+            </tr>
+            <tr>
+                <td><b>skip</b></td>
+                <td>integer</td>
+                <td>Offset index for results.  Use with <i>limit</i> to paginate results. (eg: skip=1000,limit=1000 would be page 2...)</td>
+            </tr>
+            <tr>
+                <td><b>limit</b></td>
+                <td>integer</td>
+                <td>
+                    Limit for number of results. If no limit provided, API will return the maximum (<b>1000</b>)
+                    number of records.
+                </td>
+            </tr>
+            <tr>
+                <td><b>updated_since</b></td>
+                <td>ISO-8601 date string</td>
+                <td>
+                    Return artworks updated since date string (represented in ISO-8601 format). eg:
+                    <pre>updated_since=2022-01-01</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><b>fields</b></td>
+                <td>string</td>
+                <td>
+                    Comma-delimited list of <a href="#appendix-a">fields</a> to be returned in the API response (instead of returning all fields).
+                </td>
+            </tr>
+        </table>
+
+        <a name="searchfields"></a>
+        <p><b>Advanced Search Fields</b></p>
+
+        <table class="table table-bordered">
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Type</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td><b>artists</b></td>
+                <td>string</td>
+                <td>Filter by name of artist.</td>
+            </tr>
+            <tr>
+                <td><b>culture</b></td>
+                <td>string</td>
+                <td>Filter by culture description of creator(s).</td>
+            </tr>
+            <tr>
+                <td><b>title</b></td>
+                <td>string</td>
+                <td>Filter by title of artwork.</td>
+            </tr>
+            <tr>
+                <td><b>technique</b></td>
+                <td>string</td>
+                <td>
+                    Filter by artwork technique, i.e. materials of creation. For example, "wood carving" or "glass
+                    beads"
+                </td>
+            </tr>
+            <tr>
+                <td><b>medium</b></td>
+                <td>string</td>
+                <td>
+                    Filter by artwork technique, i.e. materials of creation. For example, "wood carving" or "glass
+                    beads".<br />
+                    Alias for "technique".
+                </td>
+            </tr>
+            <tr>
+                <td><b>dimensions</b></td>
+                <td>float,float,float</td>
+                <td>
+                    Filter artworks by dimensions with the unit of measurement being meters. This filter is somewhat
+                    tricky, as
+                    the terminolgy
+                    for describing object dimensions varies from object to object (for example coins have diameters,
+                    swords have lengths, and necklaces have heights).
+                    An object's most descriptive
+                    dimension (whatever you think is the best way to describe it in meters)
+                    is generally put in the first part of the comma seperated list of dimensions.
+
+                    A default value of 20cm will be used if no value is provided for a dimension in the list.
+
+                    The second and third dimensions places are interchangable and describe a square that an object's
+                    remaining
+                    dimensions could fit inside. The dimensions filter returns objects with a fault tolerance
+                    of 20cm on all dimensions.
+                </td>
+            </tr>
+            <tr>
+                <td><b>dimensions_max</b></td>
+                <td>float,float,float</td>
+                <td>
+                    Filter artworks to return all works that can fit inside a box defined by provided 3 values with the
+                    unit of
+                    measurement being meters.
+                    Place the most descriptive dimension in the first value,
+                    and any remaining dimensions in the second
+                    two values. If no value is provided for a dimension, a default value of 20cm is used. The
+                    dimensions_max
+                    filter has a fault tolerance of 0 on all dimensions, and will not return objects
+                    that cannot fit in the described box.
+                </td>
+            </tr>
+            <tr>
+                <td><b>dimensions_min</b></td>
+                <td>float,float,float</td>
+                <td>
+                    Filter artworks to return all works that cannot fit inside a box defined by provided 3 values
+                    with the unit of measurement being meters. Place the most descriptive dimension in the first value,
+                    and any
+                    remaining dimensions in the second
+                    two values. If no value is provided for a dimension, a default value of 20cm is used. The
+                    dimensions_min
+                    filter has a fault tolerance of 0 on all dimensions, and will not return objects
+                    that can fit in the described box.
+                </td>
+            </tr>
+            <tr>
+                <td><b>credit</b></td>
+                <td>string</td>
+                <td>Filter by credit line.</td>
+            </tr>
+            <tr>
+                <td><b>catalogue_raisonne</b></td>
+                <td>string</td>
+                <td>
+                    Filter by <a href="https://en.wikipedia.org/wiki/Catalogue_raisonn%C3%A9">catalogue raisonne</a>.
+                </td>
+            </tr>
+            <tr>
+                <td><b>provenance</b></td>
+                <td>string</td>
+                <td>Filter by <a href="https://en.wikipedia.org/wiki/Provenance">provenance</a> of artwork</td>
+            </tr>
+            <tr>
+                <td><b>citations</b></td>
+                <td>string</td>
+                <td>Keyword search against the <a href="#citations">citations</a> field.</td>
+            </tr>
+            <tr>
+                <td><b>exhibition_history</b></td>
+                <td>string</td>
+                <td>Filter by exhibition history of artwork.</td>
+            </tr>
+            <tr>
+                <td><b>created_before</b></td>
+                <td>integer</td>
+                <td>Returns artworks created before the year specified. Negative years are BCE.</td>
+            </tr>
+            <tr>
+                <td><b>created_after</b></td>
+                <td>integer</td>
+                <td>Returns artworks created after the year specified. Negative years are BCE.</td>
+            </tr>
+            <tr>
+                <td><b>added_to_oa_before</b></td>
+                <td>integer</td>
+                <td>Returns artworks added to CC0 Open Access before the ISO date specified (yyyymmdd)</td>
+            </tr>
+            <tr>
+                <td><b>added_to_oa_after</b></td>
+                <td>integer</td>
+                <td>Returns artworks added to CC0 Open Access after the ISO date specified (yyyymmdd)</td>
+            </tr>
+            <tr>
+                <td><b>currently_on_view</b></td>
+                <td>none</td>
+                <td>Filters by works that are currently on view at CMA.</td>
+            </tr>
+            <tr>
+                <td><b>currently_on_loan</b></td>
+                <td>none</td>
+                <td>Filters by works that are currently on loan.</td>
+            </tr>
+            <tr>
+                <td><b>artist_tags</b></td>
+                <td>none</td>
+                <td>A comma-separated list of Tags that filters by works based on CMA artist tags.  The next two options are tags that are still broken out separately for backwards-compatibility purposes.</td>
+            </tr>
+            <tr>
+                <td><b>african_american_artists</b></td>
+                <td>none</td>
+                <td>Filters by works created by African American artists.</td>
+            </tr>
+            <tr>
+                <td><b>cia_alumni_artists</b></td>
+                <td>none</td>
+                <td>Filters by works created by Cleveland Institute of Art alumni.</td>
+            </tr>
+            <tr>
+                <td><b>may_show_artists</b></td>
+                <td>none</td>
+                <td>
+                    Filters by works exhibited in Cleveland Museum of Art <a href="https://www.clevelandart.org/magazine/cleveland-art-novemberdecember-2019/learn-about-may-show-artists">
+                        May
+                        Shows
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><b>female_artists</b></td>
+                <td>none</td>
+                <td>Filters by artworks created by female artists.</td>
+            </tr>
+            <tr>
+                <td><b>recently_acquired</b></td>
+                <td>none</td>
+                <td>Filters by artworks acquired by the museum in the last three years.</td>
+            </tr>
+            <tr>
+                <td><b>nazi_era_provenance</b></td>
+                <td>none</td>
+                <td>
+                    Filters by <a href="https://www.clevelandart.org/research/curatorial/nazi-era-provenance">
+                        nazi-era
+                        provenance
+                    </a>.
+                </td>
+            </tr>
+            <tr>
+                <td><b>created_after_age</b></td>
+                <td>integer</td>
+                <td>
+                    Filters by artworks that were created by artists older than the provided value in years at time of
+                    creation.
+                </td>
+            </tr>
+            <tr>
+                <td><b>created_before_age</b></td>
+                <td>integer</td>
+                <td>
+                    Filters by artworks that were created by artists younger than the provided value in years at time of
+                    creation.
+                </td>
+            </tr>
+            <tr>
+                <td><b>description</b></td>
+                <td>string</td>
+                <td>Filter by description.</td>
+            </tr>
+            <tr>
+                <td><b>did_you_know</b></td>
+                <td>string</td>
+                <td>Filters “Did you know?” value.</td>
+            </tr>
+            <tr>
+                <td><b>early_education_description</b></td>
+                <td>string</td>
+                <td>Filters the Early Education didactics text.</td>
+            </tr>
+            <tr>
+                <td><b>artlens_description</b></td>
+                <td>string</td>
+                <td>Filters the Artlens didactics text.</td>
+            </tr>
+            <tr>
+                <td><b>gallery</b></td>
+                <td>string</td>
+                <td>
+                    parameter was added to Artworks.
+                    Filters by gallery.
+                </td>
+            </tr>
+            <tr>
+                <td><b>exhibtion_id</b></td>
+                <td>integer</td>
+                <td>
+                    Filter by exhibition id from Athena.
+                    Used for creating exhibition filters
+                    on Collection Online.
+                </td>
+            </tr>
+            <tr>
+                <td><b>asian_american_artists</b></td>
+                <td>boolean</td>
+                <td>Filters by works created by Asian American artists..</td>
+            </tr>
+            <tr>
+                <td><b>lgbtq_artists</b></td>
+                <td>boolean</td>
+                <td>Filters by works created by LGBTQ artists.</td>
+            </tr>
+            <tr>
+                <td><b>is_3d</b></td>
+                <td>boolean</td>
+                <td>
+                    Filters artwork that has a 3d sketchfab model.
+                    Value must be 1 for this filter to be applied.
+                </td>
+            </tr>
+            <tr>
+                <td><b>collection</b></td>
+                <td>string</td>
+                <td>Subset of Curatorial area of collection.</td>
+            </tr>
+            <tr>
+                <td><b>department</b></td>
+                <td>string</td>
+                <td>Filters by department, i.e., curatorial area of collection. </td>
+            </tr>
+            <tr>
+                <td><b>highlight</b></td>
+                <td>string</td>
+                <td>
+                    Filter artworks that are to be highlighted on the Collection
+                    Online main page. Value must be 1 for this filter to be applied.
+                </td>
+            </tr>
+            <tr>
+                <td><b>highlight</b></td>
+                <td>string</td>
+                <td>
+                    Filter artworks that are to be highlighted on the Collection
+                    Online main page. Value must be 1 for this filter to be applied.
+                </td>
+            </tr>
+            <tr>
+                <td><b>classification_type</b></td>
+                <td>string</td>
+                <td>
+                    Filter by classification type (type of object)..
+                    Alias for type.
+                </td>
+            </tr>
+            <tr>
+                <td><b>accession_number</b></td>
+                <td>string</td>
+                <td>Filter by accession number</td>
+            </tr>
+        </table>
+
+        <a name="artworks-api-examples"></a>
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/?q=song%20xu&skip=2&limit=1&indent=1">https://openaccess-api.clevelandart.org/api/artworks/?q=song%20xu&skip=2&limit=1&indent=1</a>
+        </p>
+
+        <p><b>Example Response</b></p>
+
+        <p>(A complete listing of the fields in the response can be found in <a href="#appendix-a">Appendix A</a>.)</p>
+
+        <code>
+            <pre>
+{
+ "info": {
+  "total": 22,
+  "parameters": {
+   "q": "song xu",
+   "skip": "2",
+   "limit": "1",
+   "indent": "1",
+   "search": "song xu"
+  }
+ },
+ "data": [
+  {
+   "id": 160729,
+   "accession_number": "1998.78.14",
+   "share_license_status": "CC0",
+   "tombstone": "Eighteen Views of Huzhou: Baoyang Lake, 1500s. Song Xu (Chinese, 1525-c. 1606). Album; ink and color on silk; sheet: 26.4 x 28.4 cm (10 3/8 x 11 3/16 in.). The Cleveland Museum of Art, The Severance and Greta Millikin Purchase Fund 1998.78.14",
+   "current_location": null,
+   "title": "Baoyang Lake",
+   "title_in_original_language": "\u5305\u967d\u6e56",
+   "series": "Eighteen Views of Huzhou",
+   "series_in_original_language": "\u6e56\u5dde\u5341\u516b\u666f\u5716",
+   "creation_date": "1500s",
+   "creation_date_earliest": 1525,
+   "creation_date_latest": 1599,
+   "creators": [
+    {
+     "description": "Song Xu (Chinese, 1525-c. 1606)",
+     "extent": null,
+     "qualifier": null,
+     "role": "artist",
+     "biography": "Song Xu (\u5b8b\u65ed, 1525-c. 1606), was a versatile Chinese painter active in northern Zhejiang and Jiangsu provinces. He was skilled in landscapes, boundary paintings (\u754c\u756b, paintings of architecture), figure painting, and Buddhist painting. Although born a commoner, he also cultivated the literati arts of poetry and calligraphy. He studied Chan Buddhism and eventually became a Buddhist priest himself.",
+     "name_in_original_language": "\u5b8b\u65ed",
+     "birth_year": "1525",
+     "death_year": "1606"
+    }
+   ],
+   "culture": [
+    "China, Jiaxing, 16th century"
+   ],
+   "technique": "album; ink and color on silk",
+   "support_materials": [],
+   "department": "Chinese Art",
+   "collection": "ASIAN - Album leaf",
+   "type": "Painting",
+   "measurements": "Sheet: 26.4 x 28.4 cm (10 3/8 x 11 3/16 in.)",
+   "dimensions": {
+    "sheet": {
+     "height": 0.264,
+     "width": 0.284
+    }
+   },
+   "state_of_the_work": null,
+   "edition_of_the_work": null,
+   "creditline": "The Severance and Greta Millikin Purchase Fund",
+   "copyright": null,
+   "inscriptions": [],
+   "exhibitions": {
+    "current": [],
+    "legacy": [
+     "Main Asian Rotation (Gallery 122); March 4, 2003 - July 23, 2003."
+    ]
+   },
+   "provenance": [],
+   "find_spot": null,
+   "related_works": [],
+   "description": "This album of landscape paintings depicts the famous scenic areas located in and around the city of Wuxing in southeastern China. The artist, Song Xu, was not a native of that city, but must have visited it when he accepted the commission, for he carefully depicted all eighteen views and wrote comments on each of them. These places were all known for their natural beauty, but in addition, a number were distingusihed by their links to eminent historical figures and events. Unlike other artists of his time, Song Xu favored a painting style that was technically polished and focused attention on specific, realistic details. Such an approach was well suited to projects like this one, for which the artist was in great demand.",
+   "did_you_know": null,
+   "citations": [
+    {
+     "citation": "Cleveland Museum of Art, Ju-hsi Chou, and Anita Chung. Silent poetry: Chinese paintings from the collection of the Cleveland Museum of Art. 2015.",
+     "page_number": "287-295",
+     "url": null
+    }
+   ],
+   "catalogue_raisonne": null,
+   "url": "https://clevelandart.org/art/1998.78.14",
+   "images": {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1998.78.14/1998.78.14_web.jpg",
+     "filename": "1998.78.14_web.jpg",
+     "filesize": "718224",
+     "width": "956",
+     "height": "893"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1998.78.14/1998.78.14_print.jpg",
+     "filename": "1998.78.14_print.jpg",
+     "filesize": "10933890",
+     "width": "3400",
+     "height": "3177"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1998.78.14/1998.78.14_full.tif",
+     "filename": "1998.78.14_full.tif",
+     "filesize": "77605796",
+     "width": "5260",
+     "height": "4916"
+    }
+   },
+   "updated_at": "2019-01-22 14:39:18.064000"
+  }
+ ]
+}
+</pre>
+        </code>
+
+        <p><b>More Example Requests</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/?artists=picasso&created_after_age=30&nazi_era_provenance">https://openaccess-api.clevelandart.org/api/artworks/?artists=picasso&created_after_age=30&nazi_era_provenance</a>
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/?cia_alumni_artists&african_american_artists">https://openaccess-api.clevelandart.org/api/artworks/?cia_alumni_artists&african_american_artists</a>
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/?female_artists&recently_acquired&created_before_age=25">https://openaccess-api.clevelandart.org/api/artworks/?female_artists&recently_acquired&created_before_age=25</a>
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/?q=sword&dimensions=1">https://openaccess-api.clevelandart.org/api/artworks/?q=sword&dimensions=1</a>
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/?q=chair&dimensions_max=.1,.1,.1">https://openaccess-api.clevelandart.org/api/artworks/?q=chair&dimensions_max=.1,.1,.1</a>
+        </p>
+
+        <a name="api-endpoints-artwork"></a>
+        <h5>GET Artwork (Specific)</h5>
+
+        <p>
+            Get a specific artwork record by id parameter, which can
+            be the artwork’s Athena id or accession number
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/%7bid%7d">https://openaccess-api.clevelandart.org/api/artworks/{id}</a>
+        </p>
+
+        <p><b>Parameters</b></p>
+
+        <table class="table table-bordered">
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Type</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td><b>indent</b></td>
+                <td>integer</td>
+                <td>Number of spaces to indent JSON content if "pretty" formatting is desired.</td>
+            </tr>
+        </table>
+
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/artworks/1953.424?indent=1">https://openaccess-api.clevelandart.org/api/artworks/1953.424?indent=1</a>
+        </p>
+
+        <p><b>Example Response</b></p>
+
+        <code>
+            <pre>
+{
+ "data": {
+  "id": 130707,
+  "accession_number": "1953.424",
+  "share_license_status": "CC0",
+  "tombstone": "Head of Saint John the Baptist, c. 1550-1650. Spain or Northern Italy, mid 16th - mid 17th century. Oil on canvas; framed: 80.6 x 104.8 x 7.6 cm (31 3/4 x 41 1/4 x 3 in.); unframed: 50 x 75.2 cm (19 11/16 x 29 5/8 in.). The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund 1953.424",
+  "current_location": "118 Italian Renaissance",
+  "title": "Head of Saint John the Baptist",
+  "title_in_original_language": null,
+  "series": null,
+  "series_in_original_language": null,
+  "creation_date": "c. 1550-1650",
+  "creation_date_earliest": 1550,
+  "creation_date_latest": 1650,
+  "creators": [],
+  "culture": [
+   "Spain or Northern Italy, mid 16th - mid 17th century"
+  ],
+  "technique": "oil on canvas",
+  "support_materials": [],
+  "department": "European Painting and Sculpture",
+  "collection": "P - Italian 16th & 17th Century",
+  "type": "Painting",
+  "measurements": "Framed: 80.6 x 104.8 x 7.6 cm (31 3/4 x 41 1/4 x 3 in.); Unframed: 50 x 75.2 cm (19 11/16 x 29 5/8 in.)",
+  "dimensions": {
+   "framed": {
+    "height": 0.806,
+    "width": 1.048,
+    "depth": 0.076
+   },
+   "unframed": {
+    "height": 0.5,
+    "width": 0.752
+   }
+  },
+  "state_of_the_work": null,
+  "edition_of_the_work": null,
+  "creditline": "Mr. and Mrs. William H. Marlatt Fund",
+  "copyright": null,
+  "inscriptions": [
+   {
+    "inscription": "Inscription of ribbon entwining the reed cross: ECCE AGNUS DEI",
+    "inscription_translation": null,
+    "inscription_remark": null
+   }
+  ],
+  "exhibitions": {
+   "current": [
+    {
+     "title": "The Venetian Tradition",
+     "description": "<i>The Venetian Tradition</i>. The Cleveland Museum of Art (November 8, 1956-January 1, 1957).",
+     "opening_date": "1956-11-08T05:00:00"
+    }
+   ],
+   "legacy": [
+    "Vienna, Sezesion (second exhibition by the Verein der Museumfreunde), 1924: \"Meisterwerker Italienischer Renaissance Kunst aus Privtbesitz,\" cat. no. 112. <br>Venice, Palazo P\u00e9saro, 1935: \"Mostra di Tiziano,\" cat. no. 63 (catalogue by Gino Fogliari). <br>CMA, 1956: \"The Venetian Tradition,\" cat. no. 22, pl. IX. (Catalogue by Henry S Francis)."
+   ]
+  },
+  "provenance": [
+   {
+    "description": "[Alessandro Brass, Venice], sold to the Cleveland Museum of Art, 1953.",
+    "citations": [],
+    "footnotes": null,
+    "date": null
+   }
+  ],
+  "find_spot": null,
+  "related_works": [],
+  "description": "Salome\u2019s dancing so pleased her stepfather Herod that he offered her anything she wanted. Her mother advised Salome to demand John the Baptist\u2019s head, which Salome presented to her family in an elaborate dish. Here, the head stands on its own, with a startlingly tangible presence. Despite its biblical source, this work was meant for a domestic setting, whose owner would have admired the artful presentation of a shocking story. Acquired in 1953 as the work of the Venetian Renaissance artist Titian, the painting soon lost this attribution because it lacks Titian\u2019s distinctive brushwork. After decades of research, the museum has yet to identify a clear author. Recently, several scholars have argued persuasively for a Spanish artist, partly because the subject is common in Spanish art in the early 1600s. Yet the color scheme and the handling of paint in the face recalls the work of earlier artists inspired by Titian in northern Italy.",
+  "did_you_know": null,
+  "citations": [
+   {
+    "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1966</em>. Cleveland, OH: The Cleveland Museum of Art, 1966.",
+    "page_number": "Reproduced: p. 97",
+    "url": "https://archive.org/details/CMAHandbook1966#page=121"
+   },
+   {
+    "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1969</em>. Cleveland, OH: The Cleveland Museum of Art, 1969.",
+    "page_number": "Reproduced: p. 97",
+    "url": "https://archive.org/details/CMAHandbook1969#page=121"
+   },
+   {
+    "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1978</em>. Cleveland, OH: The Cleveland Museum of Art, 1978.",
+    "page_number": "Reproduced: p. 111",
+    "url": "https://archive.org/details/CMAHandbook1978#page=131"
+   },
+   {
+    "citation": "The Cleveland Museum of Art<em>. The Cleveland Museum of Art Catalogue of Paintings, Part 3: European Paintings of the 16th, 17th, and 18th Centuries</em>. Cleveland, OH: The Cleveland Museum of Art, 1982.",
+    "page_number": "Mentioned and Reproduced: p. 442",
+    "url": null
+   }
+  ],
+  "catalogue_raisonne": null,
+  "url": "https://clevelandart.org/art/1953.424",
+  "images": {
+   "web": {
+    "url": "https://openaccess-cdn.clevelandart.org/1953.424/1953.424_web.jpg",
+    "filename": "1953.424_web.jpg",
+    "filesize": "724828",
+    "width": "1263",
+    "height": "830"
+   },
+   "print": {
+    "url": "https://openaccess-cdn.clevelandart.org/1953.424/1953.424_print.jpg",
+    "filename": "1953.424_print.jpg",
+    "filesize": "5897752",
+    "width": "3400",
+    "height": "2235"
+   },
+   "full": {
+    "url": "https://openaccess-cdn.clevelandart.org/1953.424/1953.424_full.tif",
+    "filename": "1953.424_full.tif",
+    "filesize": "72441096",
+    "width": "6060",
+    "height": "3983"
+   }
+  },
+  "updated_at": "2019-01-22 14:37:34.138000"
+ }
+}
+</pre>
+        </code>
+
+
+        <!-- END ARTWORK API DOCUMENTATION -->
+        <!-- BEGIN CREATOR API DOCUMENTATION -->
+
+
+        <a name="api-endpoints-creators"></a>
+        <h5>GET Creators (Search)</h5>
+
+        <p>Get a list of creators and their associated metadata and artworks based on a search terms.</p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/creators/">https://openaccess-api.clevelandart.org/api/creators/</a>
+        </p>
+
+        <a name="parameters"></a>
+        <p><b>Parameters</b></p>
+
+        <table class="table table-bordered">
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Type</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td><b>name</b></td>
+                <td>string</td>
+                <td>Filter by matches or partial matches to the name of any creator.</td>
+            </tr>
+            <tr>
+                <td><b>biography</b></td>
+                <td>string</td>
+                <td>Filter by a keyword in creator biography. </td>
+            </tr>
+            <tr>
+                <td><b>nationality</b></td>
+                <td>string</td>
+                <td>Filter by a keyword in creator nationality, e.g. 'French'. </td>
+            </tr>
+            <tr>
+                <td><b>birth_year</b></td>
+                <td>integer</td>
+                <td>Filter by exact match on creator's birth year. </td>
+            </tr>
+            <tr>
+                <td><b>birth_year_after</b></td>
+                <td>integer</td>
+                <td>Filter by creators born after a certain year. </td>
+            </tr>
+            <tr>
+                <td><b>birth_year_before</b></td>
+                <td>integer</td>
+                <td>Filter by creators born before a certain year. </td>
+            </tr>
+            <tr>
+                <td><b>death_year</b></td>
+                <td>integer</td>
+                <td>Filter by exact match on creator's death year. </td>
+            </tr>
+            <tr>
+                <td><b>death_year_after</b></td>
+                <td>integer</td>
+                <td>Filter by creators who have died after a certain year. </td>
+            </tr>
+            <tr>
+                <td><b>death_year_before</b></td>
+                <td>integer</td>
+                <td>Filter by creators who have died before a certain year. </td>
+            </tr>
+            <tr>
+                <td><b>indent</b></td>
+                <td>integer</td>
+                <td>Number of spaces to indent JSON content if "pretty" formatting is desired.</td>
+            </tr>
+            <tr>
+                <td><b>skip</b></td>
+                <td>integer</td>
+                <td>Offset index for results.  Use with <i>limit</i> to paginate results. (eg: skip=1000,limit=1000 would be page 2...)</td>
+            </tr>
+            <tr>
+                <td><b>limit</b></td>
+                <td>integer</td>
+                <td>
+                    Limit for number of results. If no limit provided, API will return the maximum (<b>100</b>)
+                    number of records.
+                </td>
+            </tr>
+        </table>
+
+        <a name="artworks-api-examples"></a>
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/creators/?name=smith&birth_year_after=1900&limit=1&indent=1">https://openaccess-api.clevelandart.org/api/creators/?name=smith&birth_year_after=1900&limit=1&indent=1</a>
+        </p>
+
+        <p><b>Example Response</b></p>
+
+        <code>
+            <pre>
+{
+ "info": {
+  "total": 21,
+  "parameters": {
+   "name": "smith",
+   "birth_year_after": "1900",
+   "limit": "1",
+   "indent": "1"
+  }
+ },
+ "data": [
+  {
+   "created_at": "2020-11-04 19:01:09.608000",
+   "updated_at": "2020-11-04 22:36:25.316000",
+   "name": "William E. Smith",
+   "nationality": "American",
+   "description": "William E. Smith (American, 1913-1997)",
+   "biography": "A highly skilled printmaker, William Elijah Smith specialized in genre scenes of working-class African-American life in Cleveland. Born in Chattanooga, Smith moved to Cleveland at the age of 13 and became involved with Karamu House, learning print making and stage design. He studied art at the Huntington Polytechnic Institute, 1933\u201334. During this time he began teaching at Karamu House and continued to do so until 1940. In 1941 he won the art competition for presenting one of his prints to the Library of Congress for its permanent collection. Smith exhibited at the Connecticut Academy of Fine Arts in Hartford (1935), in the annual May Shows at the Cleveland Museum of Art (1936\u2013 49), at the Associated American Artists Galleries of New York (1942), and at Atlanta University (1942). During World War II, he served as a photographer in the army\u2019s educational department. After the war, he returned to Cleveland and established a commercial silkscreening studio. In 1946 the Lyman Brothers\u2019 Gallery in Indianapolis mounted his first solo exhibition. From 1946 to 1948 he studied painting and printmaking at the Cleveland School of Art and the Cooper School of Art. In the late 1940s Smith moved to Los Angeles, where he associated with Curtis Tann, a former colleague from Karamu House. With Tann, Smith cofounded the Eleven Associated Artists Gallery, the first Los Angeles gallery devoted specifically to African art. In 1952 Smith was hired to work as a blueprint draftsman at Lockheed Aircraft, beginning a long association with the corporation. In 1960 he cofounded Art West Associated, an African-American artists\u2019 advocacy organization in Los Angeles. In 1970 he published illustrations of subjects from African-American history for Cleveland\u2019s New Day Press. Smith\u2019 s works were displayed ins numerous group exhibitions in the Los Angeles area (1960s\u201380s).<br><em>Transformations in Cleveland Art.</em> (CMA, 1996), p. 238",
+   "birth_year": "1913",
+   "death_year": "1997",
+   "id": 7978,
+   "artworks": [
+    {
+     "id": 117264,
+     "accession_number": "1937.83",
+     "title": "Mother and Baby",
+     "tombstone": "Mother and Baby, c. 1936. William E. Smith (American, 1913-1997). Linoleum cut; The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1937.83",
+     "url": "https://clevelandart.org/art/1937.83"
+    },
+    {
+     "id": 119964,
+     "accession_number": "1940.76",
+     "title": "Sharecropper",
+     "tombstone": "Sharecropper, 1940. William E. Smith (American, 1913-1997). Linoleum cut; The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1940.76",
+     "url": "https://clevelandart.org/art/1940.76"
+    },
+    {
+     "id": 120267,
+     "accession_number": "1941.122",
+     "title": "My Son!  My Son!",
+     "tombstone": "My Son!  My Son!, 1941. William E. Smith (American, 1913-1997). Linoleum cut; The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1941.122",
+     "url": "https://clevelandart.org/art/1941.122"
+    },
+    {
+     "id": 122977,
+     "accession_number": "1943.244",
+     "title": "Siesta",
+     "tombstone": "Siesta, 1943. William E. Smith (American, 1913-1997). Linoleum cut; platemark: 22.8 x 20.4 cm (9 x 8 1/16 in.); sheet: 27.7 x 21.7 cm (10 7/8 x 8 9/16 in.). The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1943.244",
+     "url": "https://clevelandart.org/art/1943.244"
+    }
+   ]
+  }
+ ]
+}
+</pre>
+        </code>
+
+        <p><b>More Example Requests</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/creators/?nationality=french&birth_year_before=1940">https://openaccess-api.clevelandart.org/api/creators/?nationality=french&birth_year_before=1940</a>
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/creators/?biography=brooklyn&limit=10">https://openaccess-api.clevelandart.org/api/creators/?biography=brooklyn&limit=10</a>
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/creators/?death_year_before=1974&limit=10">https://openaccess-api.clevelandart.org/api/creators/?death_year_before=1974&limit=10</a>
+        </p>
+
+
+        <a name="api-endpoints-creator"></a>
+        <h5>GET Creator (Specific)</h5>
+
+        <p>Get a specific creator record by id parameter.</p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/creators/%7bid%7d">https://openaccess-api.clevelandart.org/api/creators/{id}</a>
+        </p>
+
+        <p><b>Parameters</b></p>
+
+        <table class="table table-bordered">
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Type</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td><b>indent</b></td>
+                <td>integer</td>
+                <td>Number of spaces to indent JSON content if "pretty" formatting is desired.</td>
+            </tr>
+        </table>
+
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/creators/7978?indent=1">https://openaccess-api.clevelandart.org/api/creators/7978?indent=1</a>
+        </p>
+
+        <p><b>Example Response</b></p>
+
+        <code>
+            <pre>
+{
+ "data": {
+  "name": "William E. Smith",
+  "nationality": "American",
+  "description": "William E. Smith (American, 1913\u20131997)",
+  "biography": "A highly skilled printmaker, William Elijah Smith specialized in genre scenes of working-class African-American life in Cleveland. Born in Chattanooga, Smith moved to Cleveland at the age of 13 and became involved with Karamu House, learning print making and stage design. He studied art at the Huntington Polytechnic Institute, 1933\u201334. During this time he began teaching at Karamu House and continued to do so until 1940. In 1941 he won the art competition for presenting one of his prints to the Library of Congress for its permanent collection. Smith exhibited at the Connecticut Academy of Fine Arts in Hartford (1935), in the annual May Shows at the Cleveland Museum of Art (1936\u2013 49), at the Associated American Artists Galleries of New York (1942), and at Atlanta University (1942). During World War II, he served as a photographer in the army\u2019s educational department. After the war, he returned to Cleveland and established a commercial silkscreening studio. In 1946 the Lyman Brothers\u2019 Gallery in Indianapolis mounted his first solo exhibition. From 1946 to 1948 he studied painting and printmaking at the Cleveland School of Art and the Cooper School of Art. In the late 1940s Smith moved to Los Angeles, where he associated with Curtis Tann, a former colleague from Karamu House. With Tann, Smith cofounded the Eleven Associated Artists Gallery, the first Los Angeles gallery devoted specifically to African art. In 1952 Smith was hired to work as a blueprint draftsman at Lockheed Aircraft, beginning a long association with the corporation. In 1960 he cofounded Art West Associated, an African-American artists\u2019 advocacy organization in Los Angeles. In 1970 he published illustrations of subjects from African-American history for Cleveland\u2019s New Day Press. Smith\u2019 s works were displayed ins numerous group exhibitions in the Los Angeles area (1960s\u201380s).<br><em>Transformations in Cleveland Art.</em> (CMA, 1996), p. 238",
+  "birth_year": "1913",
+  "death_year": "1997",
+  "id": 7978,
+  "artworks": [
+   {
+    "id": 117264,
+    "accession_number": "1937.83",
+    "title": "Mother and Baby",
+    "tombstone": "Mother and Baby, c. 1936. William E. Smith (American, 1913\u20131997). Linoleum cut; The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1937.83",
+    "url": "https://clevelandart.org/art/1937.83"
+   },
+   {
+    "id": 119964,
+    "accession_number": "1940.76",
+    "title": "Sharecropper",
+    "tombstone": "Sharecropper, 1940. William E. Smith (American, 1913\u20131997). Linoleum cut; The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1940.76",
+    "url": "https://clevelandart.org/art/1940.76"
+   },
+   {
+    "id": 120267,
+    "accession_number": "1941.122",
+    "title": "My Son!  My Son!",
+    "tombstone": "My Son!  My Son!, 1941. William E. Smith (American, 1913\u20131997). Linoleum cut; The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1941.122",
+    "url": "https://clevelandart.org/art/1941.122"
+   },
+   {
+    "id": 122977,
+    "accession_number": "1943.244",
+    "title": "Siesta",
+    "tombstone": "Siesta, 1940. William E. Smith (American, 1913\u20131997). Linoleum cut; platemark: 22.8 x 20.4 cm (9 x 8 1/16 in.); sheet: 27.7 x 21.7 cm (10 7/8 x 8 9/16 in.). The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1943.244",
+    "url": "https://clevelandart.org/art/1943.244"
+   },
+   {
+    "id": 454849,
+    "accession_number": "2022.56",
+    "title": "Little Joy",
+    "tombstone": "Little Joy, 1940. William E. Smith (American, 1913\u20131997). Linocut; platemark: 22.7 x 17.5 cm (8 15/16 x 6 7/8 in.); sheet: 28.6 x 23.4 cm (11 1/4 x 9 3/16 in.). The Cleveland Museum of Art, Severance and Greta Millikin Trust 2022.56",
+    "url": "https://clevelandart.org/art/2022.56"
+   },
+   {
+    "id": 454850,
+    "accession_number": "2022.53",
+    "title": "Leaning Chimneys",
+    "tombstone": "Leaning Chimneys, 1938. William E. Smith (American, 1913\u20131997). Linocut; platemark: 24.4 x 29.5 cm (9 5/8 x 11 5/8 in.); sheet: 30.4 x 40.6 cm (11 15/16 x 16 in.). The Cleveland Museum of Art, Severance and Greta Millikin Trust 2022.53",
+    "url": "https://clevelandart.org/art/2022.53"
+   },
+   {
+    "id": 454851,
+    "accession_number": "2022.55",
+    "title": "I've Known Rivers",
+    "tombstone": "I've Known Rivers, 1941. William E. Smith (American, 1913\u20131997). Linocut; platemark: 21.7 x 21.7 cm (8 9/16 x 8 9/16 in.); sheet: 40.7 x 30.4 cm (16 x 11 15/16 in.). The Cleveland Museum of Art, Severance and Greta Millikin Trust 2022.55",
+    "url": "https://clevelandart.org/art/2022.55"
+   },
+   {
+    "id": 454852,
+    "accession_number": "2022.57",
+    "title": "Politics",
+    "tombstone": "Politics, 1940. William E. Smith (American, 1913\u20131997). Linocut; platemark: 23.1 x 17.3 cm (9 1/8 x 6 13/16 in.); sheet: 29.5 x 24.1 cm (11 5/8 x 9 1/2 in.). The Cleveland Museum of Art, Severance and Greta Millikin Trust 2022.57",
+    "url": "https://clevelandart.org/art/2022.57"
+   },
+   {
+    "id": 534895,
+    "accession_number": "2022.251",
+    "title": "Pay Day",
+    "tombstone": "Pay Day, 1938. William E. Smith (American, 1913\u20131997). Linocut; image: 20.3 x 15.1 cm (8 x 5 15/16 in.); sheet: 26.9 x 21.9 cm (10 9/16 x 8 5/8 in.). The Cleveland Museum of Art, The Jane B. Tripp Charitable Lead Annuity Trust 2022.251",
+    "url": "https://clevelandart.org/art/2022.251"
+   }
+  ]
+ }
+}
+</pre>
+        </code>
+
+        <!-- END CREATOR API DOCUMENTATION -->
+        <!-- BEGIN EXHIBITION API DOCUMENTATION -->
+
+        <a name="api-endpoints-exhibitions"></a>
+        <h5>GET exhibitions (Search)</h5>
+
+        <p>
+            Get a list of exhibitions and associated metadata and image
+            links based on a search term.
+        </p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/exhibitions/">https://openaccess-api.clevelandart.org/api/exhibitions/</a>
+        </p>
+
+        <a name="parameters"></a>
+        <p><b>Parameters</b></p>
+
+        <table class="table table-bordered">
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Type</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td><b>closed_after</b></td>
+                <td>date</td>
+                <td>Filter exhibitions closed after a certain data. (date in YYYY-MM-DD format, e.g. 1974-01-01)</td>
+            </tr>
+            <tr>
+                <td><b>closed_before</b></td>
+                <td>date</td>
+                <td>Filter exhibitions closed before a certain data. (date in YYYY-MM-DD format, e.g. 1974-01-01)</td>
+            </tr>
+            <tr>
+                <td><b>indent</b></td>
+                <td>integer</td>
+                <td>Number of spaces to indent JSON content if "pretty" formatting is desired.</td>
+            </tr>
+            <tr>
+                <td><b>include_artworks</b></td>
+                <td>boolean</td>
+                <td>Whether to include artwork stub records for accessioned artworks (ONLY) in response. This defaults to FALSE because it’s an expensive secondary DB query.</td>
+            </tr>
+            <tr>
+                <td><b>limit</b></td>
+                <td>integer</td>
+                <td>
+                    Limit for number of results. If no limit provided, API will return the maximum (<b>100</b>)
+                    number of records.
+                </td>
+            </tr>
+            <tr>
+                <td><b>opened_after</b></td>
+                <td>date</td>
+                <td>Filter exhibitions opened after a certain data. (date in YYYY-MM-DD format, e.g. 1974-01-01)</td>
+            </tr>
+            <tr>
+                <td><b>opened_before</b></td>
+                <td>date</td>
+                <td>Filter exhibitions opened before a certain data. (date in YYYY-MM-DD format, e.g. 1974-01-01)</td>
+            </tr>
+            <tr>
+                <td><b>organizer</b></td>
+                <td>string</td>
+                <td>Filter by exhibition organizer. </td>
+            </tr>
+            <tr>
+                <td><b>skip</b></td>
+                <td>integer</td>
+                <td>Offset index for results.  Use with <i>limit</i> to paginate results. (eg: skip=1000,limit=1000 would be page 2...)</td>
+            </tr>
+            <tr>
+                <td><b>title</b></td>
+                <td>string</td>
+                <td>Filter by matches or partial matches to the title of an exhibition.</td>
+            </tr>
+            <tr>
+                <td><b>venue</b></td>
+                <td>string</td>
+                <td>Filter by exhibitioned opened in certain venues.</td>
+            </tr>
+
+        </table>
+
+        <a name="artworks-api-examples"></a>
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/exhibitions/?title=picasso&venue=cleveland&opened_after=2000-01-01&limit=1">https://openaccess-api.clevelandart.org/api/exhibitions/?title=picasso&venue=cleveland&opened_after=2000-01-01&limit=1</a>
+        </p>
+
+        <p><b>Example Response</b></p>
+
+        <code>
+            <pre>
+{
+ "info": {
+  "total": 4,
+  "parameters": {
+   "title": "picasso",
+   "venue": "cleveland",
+   "opened_after": "2000-01-01",
+   "limit": "1",
+   "indent": "1"
+  }
+ },
+ "data": [
+  {
+   "created_at": "2020-11-04 19:00:40.600000",
+   "updated_at": "2020-11-04 22:30:57.320000",
+   "title": "Barcelona & Modernity: Picasso, Gaud\u00ed, Mir\u00f3, Dal\u00ed (1868-1939)",
+   "description": null,
+   "organizer": "The Cleveland Museum of Art",
+   "opening_date": "2006-10-15 00:00:00",
+   "closing_date": "2007-06-03 00:00:00",
+   "venues": [
+    {
+     "venue_id": 174789,
+     "name": "The Metropolitan Museum of Art",
+     "start_date": "2007-03-04 00:00:00",
+     "end_date": "2007-06-03 00:00:00"
+    },
+    {
+     "venue_id": 4712,
+     "name": "The Cleveland Museum of Art",
+     "start_date": "2006-10-15 00:00:00",
+     "end_date": "2007-01-07 00:00:00"
+    }
+   ],
+   "id": 206339,
+   "artworks": [
+    {
+     "id": 124245,
+     "accession_number": "1945.24",
+     "title": "La Vie",
+     "tombstone": "La Vie, 1903. Pablo Picasso (Spanish, 1881-1973). Oil on canvas; framed: 239 x 170 x 10 cm (94 1/8 x 66 15/16 x 3 15/16 in.); unframed: 196.5 x 129.2 cm (77 3/8 x 50 7/8 in.). The Cleveland Museum of Art, Gift of the Hanna Fund 1945.24 \u00a9 Estate of Pablo Picasso / Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1945.24"
+    },
+    {
+     "id": 127208,
+     "accession_number": "1949.527",
+     "title": "Mother and Child",
+     "tombstone": "Mother and Child, 1921. Pablo Picasso (Spanish, 1881-1973). Pencil on paper; sheet: 24.8 x 32.1 cm (9 3/4 x 12 5/8 in.). The Cleveland Museum of Art, Mr. and Mrs. Lewis B. Williams Collection 1949.527 \u00a9 Estate of  Pablo Picasso / Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1949.527"
+    },
+    {
+     "id": 132416,
+     "accession_number": "1954.865",
+     "title": "Reclining Nude (Fernande)",
+     "tombstone": "Reclining Nude (Fernande), 1906. Pablo Picasso (Spanish, 1881-1973). Watercolor and gouache, with graphite and possibly charcoal; sheet: 47.3 x 61.3 cm (18 5/8 x 24 1/8 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Michael Straight 1954.865 \u00a9 Estate of  Pablo Picasso / Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1954.865"
+    },
+    {
+     "id": 135434,
+     "accession_number": "1958.43",
+     "title": "Head of a Boy",
+     "tombstone": "Head of a Boy, 1905-6. Pablo Picasso (Spanish, 1881-1973). Opaque matte paint, possibly tempera; sheet: 24.6 x 18.6 cm (9 11/16 x 7 5/16 in.). The Cleveland Museum of Art, Bequest of Leonard C. Hanna, Jr. 1958.43 \u00a9 Estate of  Pablo Picasso / Artists Rights Society (ARS), New York\r\n",
+     "url": "https://clevelandart.org/art/1958.43"
+    },
+    {
+     "id": 135456,
+     "accession_number": "1958.45",
+     "title": "The Harem ",
+     "tombstone": "The Harem , 1906. Pablo Picasso (Spanish, 1881-1973). Oil on canvas; framed: 174 x 130.5 x 11.4 cm (68 1/2 x 51 3/8 x 4 1/2 in.); unframed: 154.3 x 110 cm (60 3/4 x 43 5/16 in.); former: 163.2 x 120 x 6.1 cm (64 1/4 x 47 1/4 x 2 3/8 in.). The Cleveland Museum of Art, Bequest of Leonard C. Hanna, Jr. 1958.45 \u00a9 Estate of  Pablo Picasso / Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1958.45"
+    },
+    {
+     "id": 142653,
+     "accession_number": "1966.377",
+     "title": "The Artist's Sister Lola ",
+     "tombstone": "The Artist's Sister Lola , 1899-1900. Pablo Picasso (Spanish, 1881-1973). Oil on canvas; framed: 62.5 x 54 x 8 cm (24 5/8 x 21 1/4 x 3 1/8 in.); unframed: 46.7 x 37.5 cm (18 3/8 x 14 3/4 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. David S. Ingalls 1966.377 \u00a9 Estate of  Pablo Picasso / Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1966.377"
+    },
+    {
+     "id": 147390,
+     "accession_number": "1973.137.4",
+     "title": "Dream and Lie of Franco:  (January 9, 1937)",
+     "tombstone": "Dream and Lie of Franco:  (January 9, 1937), 1937. Pablo Picasso (Spanish, 1881-1973). Etching and aquatint; The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1973.137.4 \u00a9 2006 Estate of Pablo Picasso/Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1973.137.4"
+    },
+    {
+     "id": 147391,
+     "accession_number": "1973.137.5",
+     "title": "Dream and Lie of Franco:  (January 8, 1937)",
+     "tombstone": "Dream and Lie of Franco:  (January 8, 1937), 1937. Pablo Picasso (Spanish, 1881-1973). Etching and aquatint; The Cleveland Museum of Art, Gift of The Print Club of Cleveland 1973.137.5 \u00a9 2006 Estate of Pablo Picasso/Artists Rights Society (ARS), New York (Cleveland only).",
+     "url": "https://clevelandart.org/art/1973.137.5"
+    },
+    {
+     "id": 149408,
+     "accession_number": "1978.61",
+     "title": "Nocturne",
+     "tombstone": "Nocturne, 1935. Joan Mir\u00f3 (Spanish, 1893-1983). Oil on copper; framed: 62.2 x 48.8 x 5.1 cm (24 1/2 x 19 3/16 x 2 in.); unframed: 42 x 29.2 cm (16 9/16 x 11 1/2 in.). The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund 1978.61 \u00a9 2006 Successi\u00f3 Mir\u00f3/Artists Rights Society (ARS), New York.",
+     "url": "https://clevelandart.org/art/1978.61"
+    },
+    {
+     "id": 150110,
+     "accession_number": "1980.32",
+     "title": "Pensive Face",
+     "tombstone": "Pensive Face, 1929. Julio Gonz\u00e1lez (Spanish, 1876-1942). Iron mounted on painted wood; framed: 34.9 x 30.5 x 8.3 cm (13 3/4 x 12 x 3 1/4 in.); overall: 24.5 x 19.7 cm (9 5/8 x 7 3/4 in.). The Cleveland Museum of Art, Gift of Ralph King, by exchange 1980.32 \u00a9 Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1980.32"
+    },
+    {
+     "id": 150459,
+     "accession_number": "1981.25",
+     "title": "Black and Red Series: Plate 4",
+     "tombstone": "Black and Red Series: Plate 4, 1938. Joan Mir\u00f3 (Spanish, 1893-1983). Drypoint printed in red and black; image: 16.8 x 25.8 cm (6 5/8 x 10 3/16 in.). The Cleveland Museum of Art, Bequests of Charles T. Brooks and Grover Higgins by exchange 1981.25 \u00a9 Successi\u00f3 Mir\u00f3 / Artists Rights Society (ARS), New York / ADAGP, Paris",
+     "url": "https://clevelandart.org/art/1981.25"
+    },
+    {
+     "id": 152776,
+     "accession_number": "1985.57",
+     "title": "Bull Skull, Fruit, Pitcher",
+     "tombstone": "Bull Skull, Fruit, Pitcher, 1939. Pablo Picasso (Spanish, 1881-1973). Oil on canvas; framed: 85.7 x 117.2 x 7 cm (33 3/4 x 46 1/8 x 2 3/4 in.); unframed: 65 x 92 cm (25 9/16 x 36 1/4 in.). The Cleveland Museum of Art, Leonard C. Hanna, Jr. Fund 1985.57 \u00a9 Estate of  Pablo Picasso / Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1985.57"
+    },
+    {
+     "id": 162080,
+     "accession_number": "2001.34",
+     "title": "The Dream",
+     "tombstone": "The Dream, 1931. Salvador Dal\u00ed (Spanish, 1904-1989). Oil on canvas; framed: 120 x 120 x 7.7 cm (47 1/4 x 47 1/4 x 3 1/16 in.); unframed: 96 x 96 cm (37 13/16 x 37 13/16 in.). The Cleveland Museum of Art, John L. Severance Fund 2001.34 \u00a9 Salvador Dali, Gala-Salvador Dali Foundation / Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/2001.34"
+    },
+    {
+     "id": 173643,
+     "accession_number": "1932.719",
+     "title": "Nude, Study for The Harem (Woman Washing Herself)",
+     "tombstone": "Nude, Study for The Harem (Woman Washing Herself), 1905. Pablo Picasso (Spanish, 1881-1973). Watercolor; unframed: 63.6 x 48.3 cm (25 1/16 x 19 in.). The Cleveland Museum of Art, Hinman B. Hurlbut Collection 1932.719 \u00a9 Estate of  Pablo Picasso / Artists Rights Society (ARS), New York",
+     "url": "https://clevelandart.org/art/1932.719"
+    }
+   ]
+  }
+ ]
+}
+</pre>
+        </code>
+
+        <a name="api-endpoints-exhibition"></a>
+        <h5>GET Exhibition (Specific)</h5>
+
+        <p>Get a specific exhibition record by id parameter.</p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/exhibitions/%7bid%7d">https://openaccess-api.clevelandart.org/api/exhibitions/{id}</a>
+        </p>
+
+        <p><b>Parameters</b></p>
+
+        <table class="table table-bordered">
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Type</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td><b>indent</b></td>
+                <td>integer</td>
+                <td>Number of spaces to indent JSON content if "pretty" formatting is desired.</td>
+            </tr>
+            <tr>
+                <td><b>include_artworks</b></td>
+                <td>boolean</td>
+                <td>Whether to include artwork stub records for accessioned artworks (ONLY) in response. This defaults to FALSE because it’s an expensive secondary DB query.</td>
+            </tr>
+        </table>
+
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/exhibitions/453138?indent=1">https://openaccess-api.clevelandart.org/api/exhibitions/453138?indent=1</a>
+        </p>
+
+        <p><b>Example Response</b></p>
+
+        <code>
+            <pre>
+{
+ "data": {
+  "id": 453138,
+  "title": "Riemenschneider and Late Medieval Alabaster",
+  "description": null,
+  "organizer": "The Cleveland Museum of Art",
+  "opening_date": "2023-03-26T04:00:00",
+  "closing_date": "2023-07-23T04:00:00",
+  "venues": [
+   {
+    "venue_id": 4712,
+    "name": "The Cleveland Museum of Art",
+    "start_date": "2023-03-26T04:00:00",
+    "end_date": "2023-07-23T04:00:00"
+   }
+  ],
+  "artworks": [
+   {
+    "id": 106123,
+    "accession_number": "1924.224",
+    "title": "Virgin and Child with an Apple",
+    "tombstone": "Virgin and Child with an Apple, c. 1475. Martin Schongauer (German, c.1450\u20131491). Engraving; The Cleveland Museum of Art, Gift of Ralph King 1924.224",
+    "url": "https://clevelandart.org/art/1924.224"
+   },
+   {
+    "id": 119132,
+    "accession_number": "1940.128",
+    "title": "Mourner from the Tomb of Philip the Bold, Duke of Burgundy (1364\u20131404)",
+    "tombstone": "Mourner from the Tomb of Philip the Bold, Duke of Burgundy (1364\u20131404), 1404\u20131410. Claus de Werve (Netherlandish, 1380\u20131439). Vizille alabaster; overall: 41.7 x 16.6 x 11.7 cm (16 7/16 x 6 9/16 x 4 5/8 in.). The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1940.128",
+    "url": "https://clevelandart.org/art/1940.128"
+   },
+   {
+    "id": 119143,
+    "accession_number": "1940.129",
+    "title": "Mourner from the Tomb of John the Fearless and Margaret of Bavaria",
+    "tombstone": "Mourner from the Tomb of John the Fearless and Margaret of Bavaria, 1443\u201345. Jean de la Huerta (Spanish, active Burgundy, 1431\u201362). Salins alabaster; overall: 41 x 20.3 x 12.4 cm (16 1/8 x 8 x 4 7/8 in.). The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1940.129",
+    "url": "https://clevelandart.org/art/1940.129"
+   },
+   {
+    "id": 125103,
+    "accession_number": "1946.82",
+    "title": "Saint Jerome and the Lion (From the former Church of St. Peter in Erfurt)",
+    "tombstone": "Saint Jerome and the Lion (From the former Church of St. Peter in Erfurt), c. 1495. Tilman Riemenschneider (German, active W\u00fcrzburg, c. 1460\u20131531). Alabaster, traces of polychromy; overall: 37.8 x 28.1 x 15.9 cm (14 7/8 x 11 1/16 x 6 1/4 in.). The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1946.82",
+    "url": "https://clevelandart.org/art/1946.82"
+   },
+   {
+    "id": 131814,
+    "accession_number": "1954.387",
+    "title": "The Archangel Gabriel from an Annunciation Group",
+    "tombstone": "The Archangel Gabriel from an Annunciation Group, c. 1350. France, Champagne. Alabaster with traces of paint and gilding; overall: 56.5 x 26 x 10.5 cm (22 1/4 x 10 1/4 x 4 1/8 in.). The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1954.387",
+    "url": "https://clevelandart.org/art/1954.387"
+   },
+   {
+    "id": 135140,
+    "accession_number": "1958.173",
+    "title": "The Angel of the Annunciation\r\n",
+    "tombstone": "The Angel of the Annunciation\r\n, c. 1470\u201375. Martin Schongauer (German, c.1450\u20131491). Engraving; The Cleveland Museum of Art, Dudley P. Allen Fund 1958.173",
+    "url": "https://clevelandart.org/art/1958.173"
+   },
+   {
+    "id": 135538,
+    "accession_number": "1958.66",
+    "title": "Mourner from the Tomb of Philip the Bold, Duke of Burgundy (1364-1404)",
+    "tombstone": "Mourner from the Tomb of Philip the Bold, Duke of Burgundy (1364-1404), 1404\u201310. Claus de Werve (Netherlandish, 1380\u20131439). Vizille alabaster; overall: 41 x 12.7 x 15 cm (16 1/8 x 5 x 5 7/8 in.). The Cleveland Museum of Art, Bequest of Leonard C. Hanna, Jr. 1958.66",
+    "url": "https://clevelandart.org/art/1958.66"
+   },
+   {
+    "id": 135539,
+    "accession_number": "1958.67",
+    "title": "Mourner from the Tomb of Philip the Bold, Duke of Burgundy (1364\u20131404)",
+    "tombstone": "Mourner from the Tomb of Philip the Bold, Duke of Burgundy (1364\u20131404), 1404\u201310. Claus de Werve (Netherlandish, 1380\u20131439). Vizille alabaster; overall: 41.1 x 17.6 x 11 cm (16 3/16 x 6 15/16 x 4 5/16 in.). The Cleveland Museum of Art, Bequest of Leonard C. Hanna, Jr. 1958.67",
+    "url": "https://clevelandart.org/art/1958.67"
+   },
+   {
+    "id": 166195,
+    "accession_number": "2008.145",
+    "title": "Enthroned Virgin and Child",
+    "tombstone": "Enthroned Virgin and Child, c. 1480. Gil de Silo\u00e9 (Spanish, active c. 1475\u20131505). Alabaster with traces of gilding and polychromy; overall: 31.5 x 22.5 x 16 cm (12 3/8 x 8 7/8 x 6 5/16 in.). The Cleveland Museum of Art, John L. Severance Fund 2008.145",
+    "url": "https://clevelandart.org/art/2008.145"
+   },
+   {
+    "id": 453144,
+    "accession_number": "2022.41",
+    "title": "Two Standing Apostles (probably Saint John the Evangelist and St. Paul)",
+    "tombstone": "Two Standing Apostles (probably Saint John the Evangelist and St. Paul), c. 1430. Master of the Saint-Omer Apostles (Southern Netherlandish, active Bruges?). Alabaster; overall: 23.7 x 9.3 x 5.8 cm (9 5/16 x 3 11/16 x 2 5/16 in.); overall: 23.7 x 10.2 x 5.9 cm (9 5/16 x 4 x 2 5/16 in.). The Cleveland Museum of Art, Severance and Greta Millikin Purchase Fund 2022.41",
+    "url": "https://clevelandart.org/art/2022.41"
+   },
+   {
+    "id": 453145,
+    "accession_number": "2022.41.2",
+    "title": "Standing Apostle (Saint Paul?)",
+    "tombstone": "Standing Apostle (Saint Paul?), c. 1430. Master of the Saint-Omer Apostles (Southern Netherlandish, active Bruges?). Alabaster; overall: 23.7 x 9.3 x 5.8 cm (9 5/16 x 3 11/16 x 2 5/16 in.). The Cleveland Museum of Art, Severance and Greta Millikin Purchase Fund 2022.41.2",
+    "url": "https://clevelandart.org/art/2022.41.2"
+   },
+   {
+    "id": 453146,
+    "accession_number": "2022.41.1",
+    "title": "Standing Apostle (Probably Saint John the Evangelist)",
+    "tombstone": "Standing Apostle (Probably Saint John the Evangelist), c. 1430. Master of the Saint-Omer Apostles (Southern Netherlandish, active Bruges?). Alabaster; overall: 23.7 x 10.2 x 5.9 cm (9 5/16 x 4 x 2 5/16 in.). The Cleveland Museum of Art, Severance and Greta Millikin Purchase Fund 2022.41.1",
+    "url": "https://clevelandart.org/art/2022.41.1"
+   }
+  ],
+  "links": [],
+  "gallery_views_urls": null,
+  "press_release_urls": null,
+  "catalog_urls": null
+ }
+}
+</pre>
+        </code>
+
+        <!-- END EXHIBITION API DOCUMENTATION -->
+        <!-- BEGIN COLLECTION ONLINE API DOCUMENTATION -->
+
+        <a name="collection-online-endpoints"></a>
+        <h2>Collection Online Endpoints</h2>
+
+        <p>
+            In addition to the RESTful endpoints above, there are 3 additional endpoints that are used by the
+            <a href="https://clevelandart.org/art/collection/search">CMA Collection Online</a> to link directly to data
+            and
+            images in certain formats for CC0-designated
+            artworks. Strictly speaking, these endpoints weren't intended to be used independently of the Collection
+            Online, but are included here for completeness.
+        </p>
+
+        <h5>GET JPEG and Caption</h5>
+
+        <p>
+            Return the print- and web-resolution images, as well as a text file containing the caption or "tombstone"
+            information for
+            the artwork. This is accomplished by pulling the tombstone and image urls directly from the API database,
+            writing
+            them to a zipfile, and returning it in the API response.
+        </p>
+
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/collectiononline/jpeg_and_caption/1974.1">https://openaccess-api.clevelandart.org/api/collectiononline/jpeg_and_caption/1974.1</a>
+        </p>
+
+        <h5>GET High-Resolution TIFF</h5>
+
+        <p>
+            Return the high-resolution TIFF of the artwork. This simply redirects the user to the TIFF location in the
+            CDN.
+        </p>
+
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/collectiononline/tiff/1974.1">https://openaccess-api.clevelandart.org/api/collectiononline/tiff/1974.1</a>
+        </p>
+
+        <h5>GET Metadata Only</h5>
+
+        <p>
+            Return a formatted plain-text file with all the API data for the artwork. This is accomplished by pulling all
+            artwork data directly from the API database, putting it into human-readable format via a <a href="https://palletsprojects.com/p/jinja/">Jinja template</a>, and returning as a text-file.
+        </p>
+
+        <p><b>Example Request</b></p>
+
+        <p>
+            <a href="https://openaccess-api.clevelandart.org/api/collectiononline/metadata/1974.1">https://openaccess-api.clevelandart.org/api/collectiononline/metadata/1974.1</a>
+        </p>
+
+
+
+        <a name="appendix-a"></a>
+        <h2>Appendix A: Artwork Response Fields</h2>
+
+        <table class="table table-bordered">
+
+            <tr>
+                <td><b>Field</b></td>
+                <td><b>Description</b></td>
+            </tr>
+
+            <tr>
+                <td><b>id</b></td>
+                <td>ID in AthenaCCMS.</td>
+            </tr>
+
+            <tr>
+                <td><b>accession_number</b></td>
+                <td>Accession number.</td>
+            </tr>
+
+            <tr>
+                <td><b>share_license_status</b></td>
+                <td>CC0, Copyrighted, or Other.</td>
+            </tr>
+
+            <tr>
+                <td><b>tombstone</b></td>
+                <td>Aggregated information about the artwork.</td>
+            </tr>
+
+            <tr>
+                <td><b>current_location</b></td>
+                <td>Computed location field of the current gallery location.</td>
+            </tr>
+
+            <tr>
+                <td><b>title</b></td>
+                <td>Title in English.</td>
+            </tr>
+
+            <tr>
+                <td><b>title_in_original_language</b></td>
+                <td>Original language title.</td>
+            </tr>
+
+            <tr>
+                <td><b>series</b></td>
+                <td>Title of series (if applicable).</td>
+            </tr>
+
+            <tr>
+                <td><b>series_in_original_language</b></td>
+                <td>Title of series in original language (if applicable.)</td>
+            </tr>
+
+            <tr>
+                <td><b>creation_date</b></td>
+                <td>
+                    Creation date; negative, print, date of duplication.
+                    NOTE: this is a string and other creation dates are integers, because this could be
+                    not strictly numeric, e.g., "1690-1693".
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>creation_date_earliest</b></td>
+                <td>Earliest date that the work could have been completed.</td>
+            </tr>
+
+            <tr>
+                <td><b>creation_date_latest</b></td>
+                <td>Latest date that the work could have been completed.</td>
+            </tr>
+
+            <tr>
+                <td><b>creators</b></td>
+                <td>
+                    Name of artist,
+                    culture, firm, etc OR Nationality or culture area (Mesoamerica, Andes, etc.),
+                    including ethnic origin or affiliation and race.<br>
+                    Includes:
+                    Extent (printed by, designed by)<br>
+                    Qualifier (attributed to, workshop of, follower of)<br>
+                    Role (printer, painter, goldsmith)<br>
+                    Artist Biography<br />
+                    Name in original language
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>culture</b></td>
+                <td>
+                    Place name
+                    important to the work or the creator, including geographic sub-regions (e.g.,
+                    North Coast, South Coast, Plains, Arctic, Siena, Beijing, Rift Valley) OR Period or phase
+                    name, when relevant (e.g., Early Horizon, Formative Period).
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>technique</b></td>
+                <td>
+                    Technique Name
+                    (e.g., cut glass, lithograph; for textiles, woven, embroidered, printed).
+                    Inkjet prints: brands and model numbers of printer and of ink or pigment;
+                    brand of paper OR Type of Work (e.g., refectory table, altarpiece, portfolio,
+                    drinking vessel, rhyton, boudoir photograph, hand scroll, hanging scroll,
+                    album or manuscript leaf, etc.).
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>support_materials</b></td>
+                <td>
+                    Name of support
+                    or ground material, when relevant (laid paper, canvas, board, etc.)<br />
+                    Includes watermarks, if applicable.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>department</b></td>
+                <td>
+                    Curatorial area
+                    of collection.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>collection</b></td>
+                <td>
+                    Subset of Curatorial area of
+                    collection.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>type</b></td>
+                <td>
+                    Classification
+                    of Work (e.g., furniture, painting, drawing, etc).
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>measurements</b></td>
+                <td>
+                    Full set of the
+                    artwork’s dimensions, including height, width, depth, circumference, weight,
+                    length of time; includes framed/matted dimensions and image size (for prints
+                    and photos.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>dimensions</b></td>
+                <td>
+                    A more granular dictionary of
+                    a work's dimensions, encompassing all relevant measured aspects. All measurements in meters.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>state_of_the_work</b></td>
+                <td>
+                    State of the
+                    work.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>edition_of_the_work</b></td>
+                <td>
+                    Edition of the
+                    work.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>creditline</b></td>
+                <td>
+                    Ownership and
+                    credit line.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>copyright</b></td>
+                <td>Copyright statement, if any.</td>
+            </tr>
+
+            <tr>
+                <td><b>inscriptions</b></td>
+                <td>
+                    Signature or
+                    maker’s mark related to origin or accompanying dealer tags and labels. Includes
+                    translation and remarks, if applicable.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>exhibitions</b></td>
+                <td>
+                    Exhibition history
+                    and loans, any public display of the work at CMA or elsewhere, including
+                    online presentation, current and legacy. 'Current' refers to information pulled
+                    from currently-maintained, well-formed data (includes opening date, title, description).
+                    'Legacy' refers to any additional archival exhibition history that has been discovered.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>provenance</b></td>
+                <td>
+                    Ownership
+                    history date and description, plus footnotes and citations where applicable.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>find_spot</b></td>
+                <td>
+                    geographic location where the
+                    work was excavated or discovered.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>related_works</b></td>
+                <td>
+                    Related works,
+                    such as design drawings and series (CMA collection), including relationship and
+                    description where applicable.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>did_you_know</b></td>
+                <td>
+                    Short, memorable fact or
+                    perspective on the work.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>early_education_description</b></td>
+                <td>
+                    Didactics text for early education audiences.
+                </td>
+            </tr>
+            <tr>
+                <td><b>artlens_description</b></td>
+                <td>
+                    Didactics text for Artlens.
+                </td>
+            </tr>
+            <tr>
+                <td><b>description</b></td>
+                <td>
+                    Short description of the work intended
+                    for digital publications or an approved label text for gallery
+                    installations.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b><a name="citations" />citations</a></b></td>
+                <td>
+                    Textual
+                    references, both in full and brief citations &nbsp;(e.g., Millon, Baroque
+                    Architecture, 1961), including published bibliographic materials, web sites,
+                    archival documents, unpublished manuscripts, and verbal opinions.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>catalogue_raisonne</b></td>
+                <td>
+                    Identifier of the artist's catalogue
+                    raisonné (a definitive, annotated catalogue of an artist's work).
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>url</b></td>
+                <td>Link to artwork on CMA website</td>
+            </tr>
+
+            <tr>
+                <td><b>images</b></td>
+                <td>
+                    Records for web, print, and
+                    full size image assets of the work. Includes url, filesize, filename, and dimensions.<br>
+                    Image specifications: <br>
+                    <ul>
+                        <li>web: 900px at longest side, 300 dpi, jpeg format</li>
+                        <li>print: 3400px at longest side, 300 dpi, jpeg format</li>
+                        <li>original: variable dimensions and dpi, tiff format</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>alternate_images</b></td>
+                <td>
+                    Records for web, print, and
+                    full size image assets for alternate views of the work. Includes url, filesize, filename, and dimensions.<br>
+                    Image specifications: <br>
+                    <ul>
+                        <li>web: 900px at longest side, 300 dpi, jpeg format</li>
+                        <li>print: 3400px at longest side, 300 dpi, jpeg format</li>
+                        <li>original: variable dimensions and dpi, tiff format</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>sketchfab_id</b></td>
+                <td>ID of the 3D model on Sketchfab (if available).</td>
+            </tr>
+
+            <tr>
+                <td><b>sketchfab_url</b></td>
+                <td>URL to access the 3D model on Sketchfab (if available).</td>
+            </tr>
+
+            <tr>
+                <td><b>updated_at</b></td>
+                <td>
+                    Timestamp for when the artwork
+                    record was last updated in the API database.
+                </td>
+            </tr>
+            <tr>
+                <td><b>legal_status</b></td>
+                <td>
+                    Legal contract status,
+                    e.g., "accessioned" or "long-term loan"
+                </td>
+            </tr>
+            <tr>
+                <td><b>accession_date</b></td>
+                <td>Date the work was accessioned.</td>
+            </tr>
+            <tr>
+                <td><b>sortable_date</b></td>
+                <td>The +/- creation year value of an artwork.</td>
+            </tr>
+            <tr>
+                <td><b>date_text</b></td>
+                <td>Computed description of creation date. </td>
+            </tr>
+            <tr>
+                <td><b>collapse_artists</b></td>
+                <td>
+                    A value calculated in the API based on
+                    number of creators and certain other criteria
+                    that determines how multiple artists are
+                    displayed on front-end.
+                </td>
+            </tr>
+            <tr>
+                <td><b>on_loan</b></td>
+                <td>Whether artwork is a long-term loan.</td>
+            </tr>
+            <tr>
+                <td><b>recently_acquired</b></td>
+                <td>Whether the artwork was accessioned within the last 3 years.</td>
+            </tr>
+            <tr>
+                <td><b>record_type</b></td>
+                <td>
+                    <ul>
+                        <li>cover: record for an artwork that has multiple parts and/or components.</li>
+                        <li>part: record for a part of an artwork that couldn't be considered as its own work.</li>
+                        <li>component: record for a component of an artwork that could be considered its own work.</li>
+                        <li>object: record for an artwork that doesn't relate to parts or components and is a singular work.</li>
+                    </ul>
+                    See also <code>cover_accession_number</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><b>cover_accession_number</b></td>
+                <td>
+                    The accession number of the cover record if the artwork is of <code>record_type</code> "part" or "component".
+                </td>
+            </tr>
+            <tr>
+                <td><b>conservation_statement</b></td>
+                <td>The conservation statement of the work.</td>
+            </tr>
+            <tr>
+                <td><b>is_nazi_era_provenance</b></td>
+                <td>Artwork is of nazi-era provenance. </td>
+            </tr>
+            <tr>
+                <td><b>impression</b></td>
+                <td>Impression number of the addition.</td>
+            </tr>
+            <tr>
+                <td><b>alternate_titles</b></td>
+                <td>A list of alternate titles of the work.</td>
+            </tr>
+            <tr>
+                <td><b>is_highlight</b></td>
+                <td>Artwork is marked as a featured highlight.</td>
+            </tr>
+            <tr>
+                <td><b>current_exhibition</b></td>
+                <td>
+                    Info on current CMA exhibition featuring this artwork, if any.
+                    Dictionary will contain:
+                    <ul>
+                        <li>id</li>
+                        <li>title</li>
+                        <li>start_date</li>
+                        <li>end_date</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <a name="appendix-b"></a>
+        <h2>Appendix B: Departments</h2>
+
+        <table class="table table-bordered">
+            <tr>
+                <td>African Art</td>
+                <td>American Painting and Sculpture</td>
+                <td>Art of the Americas</td>
+            </tr>
+            <tr>
+                <td>Chinese Art</td>
+                <td>Contemporary Art</td>
+                <td>Decorative Art and Design</td>
+            </tr>
+            <tr>
+                <td>Drawings</td>
+                <td>Egyptian and Ancient Near Eastern Art</td>
+                <td>European Painting and Sculpture</td>
+            </tr>
+            <tr>
+                <td>Greek and Roman Art</td>
+                <td>Indian and South East Asian Art</td>
+                <td>Islamic Art</td>
+            </tr>
+            <tr>
+                <td>Japanese Art</td>
+                <td>Korean Art</td>
+                <td>Medieval Art</td>
+            </tr>
+            <tr>
+                <td>Modern European Painting and Sculpture</td>
+                <td>Oceania</td>
+                <td>Performing Arts, Music, & Film</td>
+            </tr>
+            <tr>
+                <td>Photography</td>
+                <td>Prints</td>
+                <td>Textiles</td>
+            </tr>
+        </table>
+
+
+        <a name="appendix-c"></a>
+        <h2>Appendix C: Types</h2>
+
+        <table class="table table-bordered">
+            <tr>
+                <td>Amulets</td>
+                <td>Apparatus</td>
+                <td>Arms and Armor</td>
+            </tr>
+            <tr>
+                <td>Basketry</td>
+                <td>Book Binding</td>
+                <td>Bound Volume</td>
+            </tr>
+            <tr>
+                <td>Calligraphy</td>
+                <td>Carpet</td>
+                <td>Ceramic</td>
+            </tr>
+            <tr>
+                <td>Coins</td>
+                <td>Cosmetic Objects</td>
+                <td>Drawing</td>
+            </tr>
+            <tr>
+                <td>Embroidery</td>
+                <td>Enamel</td>
+                <td>Forgery</td>
+            </tr>
+            <tr>
+                <td>Frame</td>
+                <td>Funerary Equipment</td>
+                <td>Furniture and woodwork</td>
+            </tr>
+            <tr>
+                <td>Garment</td>
+                <td>Glass</td>
+                <td>Glyptic</td>
+            </tr>
+            <tr>
+                <td>Illumination</td>
+                <td>Implements</td>
+                <td>Inlays</td>
+            </tr>
+            <tr>
+                <td>Ivory</td>
+                <td>Jade</td>
+                <td>Jewelry</td>
+            </tr>
+            <tr>
+                <td>Knitting</td>
+                <td>Lace</td>
+                <td>Lacquer</td>
+            </tr>
+            <tr>
+                <td>Leather</td>
+                <td>Linoleum Block</td>
+                <td>Lithographic Stone</td>
+            </tr>
+            <tr>
+                <td>Manuscript</td>
+                <td>Metalwork</td>
+                <td>Miniature</td>
+            </tr>
+            <tr>
+                <td>Miscellaneous</td>
+                <td>Mixed Media</td>
+                <td>Monotype</td>
+            </tr>
+            <tr>
+                <td>Mosaic</td>
+                <td>Musical Instrument</td>
+                <td>Netsuke</td>
+            </tr>
+            <tr>
+                <td>Painting</td>
+                <td>Papyri</td>
+                <td>Photograph</td>
+            </tr>
+            <tr>
+                <td>Plaque</td>
+                <td>Plate</td>
+                <td>Portfolio</td>
+            </tr>
+            <tr>
+                <td>Portrait Miniature</td>
+                <td>Print</td>
+                <td>Relief</td>
+            </tr>
+            <tr>
+                <td>Rock crystal</td>
+                <td>Rubbing</td>
+                <td>Sampler</td>
+            </tr>
+            <tr>
+                <td>Scarabs</td>
+                <td>Sculpture</td>
+                <td>Seals</td>
+            </tr>
+            <tr>
+                <td>Silver</td>
+                <td>Spindle Whorl</td>
+                <td>Stencil</td>
+            </tr>
+            <tr>
+                <td>Stone</td>
+                <td>Tapestry</td>
+                <td>Textile</td>
+            </tr>
+            <tr>
+                <td>Time-based Media</td>
+                <td>Tool</td>
+                <td>Velvet</td>
+            </tr>
+            <tr>
+                <td>Vessels</td>
+                <td>Wood</td>
+                <td>Woodblock</td>
+            </tr>
+        </table>
+
+        <a name="appendix-d"></a>
+        <h2>Appendix D: Code Examples</h2>
+
+        <p>
+            The following are some basic examples in Python, Ruby, Node.js, and Go for querying the CMA Open Access API
+            and
+            printing a list of artwork tombstone and image information. In each example, the code grabs the first 10
+            artworks
+            that
+            match the keyword "monet".
+        </p>
+
+        <h4>Python</h4>
+
+        <code>
+            <pre>
+import json
+import requests
+
+
+def print_openaccess_results(keyword, skip=0, limit=100):
+    url = "https://openaccess-api.clevelandart.org/api/artworks"
+    params = {
+            'q': keyword,
+            'skip': skip,
+            'limit': limit,
+            'has_image': 1
+        }
+
+    r = requests.get(url, params=params)
+
+    data = r.json()
+
+    for artwork in data['data']:
+        tombstone = artwork['tombstone']
+        image = artwork['images']['web']['url']
+
+        print(f"{tombstone}\n{image}\n---")
+
+if __name__ == '__main__':
+    print_openaccess_results("monet", 0, 10)
+
+</pre>
+        </code>
+
+        <h4>Ruby</h4>
+
+        <code>
+            <pre>
+require 'net/http'
+require 'json'
+
+
+def print_openaccess_results(keyword, skip, limit)
+    uri = URI("https://openaccess-api.clevelandart.org/api/artworks")
+    params = {
+        :q => keyword,
+        :skip => skip,
+        :limit => limit,
+        :has_image => 1
+    }
+
+    uri.query = URI.encode_www_form(params)
+
+    resp = Net::HTTP.get_response(uri)
+
+    JSON.parse(resp.body)['data'].each do |artwork|
+        tombstone = artwork['tombstone']
+        image = artwork['images']['web']['url']
+
+        puts "#{tombstone}\n#{image}\n---"
+    end
+end
+
+print_openaccess_results "monet", 0, 10
+
+</pre>
+        </code>
+
+        <h4>Node.js</h4>
+
+        <code>
+            <pre>
+const axios = require("axios");
+
+
+const printOpenAccessResults = (keyword, skip, limit) => {
+    const url = "https://openaccess-api.clevelandart.org/api/artworks"
+    const params = {
+            q: keyword,
+            skip: skip,
+            limit: limit,
+            has_image: 1
+        };
+
+    const resp = axios(url, {params})
+        .then((resp) => {
+            for (const artwork of resp.data.data) {
+                const tombstone = artwork.tombstone;
+                const image = artwork.images.web.url;
+
+                console.log(`${tombstone}\n${image}\n---`);
+            }
+        })
+        .catch((e) => {
+            console.log("ERROR getting artwork data");
+            console.log(e);
+        });
+}
+
+printOpenAccessResults("monet", 0, 10);
+
+</pre>
+        </code>
+
+        <h4>Go</h4>
+
+        <code>
+            <pre>
+package main
+
+import (
+    "encoding/json"
+    "fmt"
+    "io/ioutil"
+    "net/http"
+)
+
+type ParsedData struct {
+    Artworks []struct {
+        Tombstone string `json:"tombstone"`
+        Images struct {
+            Web struct {
+                Url string `json:"url"`
+            } `json:"web"`
+        } `json:"images"`
+    } `json:"data"`
+}
+
+func main() {
+    apiUrl := "https://openaccess-api.clevelandart.org/api/artworks"
+    keyword := "monet"
+    skip := "0"
+    limit := "10"
+
+    client := &http.Client{}
+    req, _ := http.NewRequest("GET", apiUrl, nil)
+
+    q := req.URL.Query()
+    q.Add("q", keyword)
+    q.Add("skip", skip)
+    q.Add("limit", limit)
+    req.URL.RawQuery = q.Encode()
+
+    resp, _ := client.Do(req)
+    defer resp.Body.Close()
+
+    data, _ := ioutil.ReadAll(resp.Body)
+
+    var parsedData ParsedData
+    err := json.Unmarshal([]byte(data), &parsedData)
+
+    if err != nil {
+
+    }
+
+    artworks := parsedData.Artworks
+
+    for _, artwork := range artworks {
+        fmt.Println(artwork.Tombstone)
+        fmt.Println(artwork.Images.Web.Url)
+        fmt.Println("---")
+    }
+}
+
+</pre>
+        </code>
+
+        <a name="appendix-e"></a>
+        <h2>Appendix E: Image Similarity Search Code Example</h2>
+
+        <p>
+            Below is a simple Python code example demonstrating how to use the image similarity search functionality
+            in the API.
+        </p>
+
+        <code>
+            <pre>
+import requests, json
+
+def post_a_file(filepath, params={}):
+    url = "https://openaccess-api.clevelandart.org/api/artworks"
+    
+    with open(filepath, 'rb') as f:
+        file_data = {
+            'file': f
+        }
+        r = requests.post(url, data=params, files=file_data)
+    
+    data = r.json()
+    return data
+
+def get_similar_images(filepath):
+    data = post_a_file(filepath)
+    
+    for artwork in data['data']:
+        print(artwork['accession_number'])
+        print(artwork['images']['web']['url'])
+
+if __name__ == '__main__':
+    filepath = '/home/user/you_image.jpg' # replace with your file path
+    
+    get_similar_images(filepath)
+    
+</pre>
+        </code>
+
+
+    </div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>

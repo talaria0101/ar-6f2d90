@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="homeRevistaApp" ng-controller="HomeRevistaController"><head>
+	
+	
+	<title></title>
+	
+	<meta name="application-name" content="Redalyc" />
+	<meta name="language" content="spanish" />
+	<meta name="description" lang="es" content="Fascículos y artículos de la revista " />
+	<meta name="keywords" content="Redalyc, Revista, , , , " />
+	<meta name="robots" content="index,follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="es,en" />
+	
+	<meta property="og:title" />
+	<meta property="og:description" content="Fascículos y artículos de la revista " />
+	<meta property="og:image" content="https://www.redalyc.org/redalyc/media/inc/img/revista/movil/revista/rva1.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.redalyc.org/revista.oa?id=1" />
+	<meta property="og:site_name" content="Redalyc.org" />
+    <meta property="og:locale" content="es_LA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    
+    <meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@Redalyc" />
+	<meta name="twitter:url" content="https://www.redalyc.org/revista.oa?id=1" />
+	<meta name="twitter:title" />
+ 	<meta name="twitter:description" content="Fascículos y artículos de la revista " />
+	<meta name="twitter:image" content="https://www.redalyc.org/redalyc/media/inc/img/revista/movil/revista/rva1.png" />
+        
+    <meta name="citation_abstract_html_url" content="https://www.redalyc.org/revista.oa?id=1" />
+    <meta name="citation_journal_title" />	
+    <meta name="citation_publisher" />
+    <meta name="citation_language" />
+	
+	<link rel="shortcut icon" href="img/r2020.ico" />
+	<link rel="image_src" type="image/png" href="https://www.redalyc.org/redalyc/media/inc/img/revista/movil/revista/rva1.png" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/homeRevista.css" />
+	
+	
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PG5DW8YGFY"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-PG5DW8YGFY');
+	</script>
+	<script type="text/javascript">
+	 	var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-3153272-1']);
+		_gaq.push(['_trackPageview']);
+	 	(function() {
+	 		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	
+	<script src="js/angular.js"></script>
+	<script src="js/angular-sanitize.js"></script>	
+	<script src="js/angular-route.js"></script>
+	<script src="js/jquery.min.js"></script>
+		
+	
+	<script src="js/jQWCloudv3.1.js"></script>	
+	<script src="js/allNewGraphs.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/highcharts-3d.js"></script>
+	<script src="js/exporting.js"></script>
+	<script src="js/ammapBuble.js"></script>
+	<script type="text/javascript" src="js/worldLow2.js"></script>
+	<script type="text/javascript" src="js/none.js"></script>
+	<script src="js/d3.min.js" type="text/javascript"></script>	
+	
+	<script src="js/homeRevistaJS.js"></script>
+	<script src="js/homeRevistaAngularJS.js"></script></head> 
+<body>
+<script type="text/javascript">
+	  /**
+		evento de visita
+	  */
+	  gtag('event', 'screen_view', {
+	    'app_name': 'PortalRedalyc',
+	    'screen_name': 'HomeRevista'
+	  });
+	  gtag('event', 'page_view', {
+		  'page_title': 'HomeRevista',
+		  'page_location': 'https://redalyc.org/revista.oa'
+	  });
+	</script>
+	<header class="header">
+		<input id="pageLanguaje" type="hidden" />
+	
+		<input id="circle1Data1" type="hidden" />
+		<input id="circle1Data2" type="hidden" />
+		
+		<input id="circle2Data1" type="hidden" />
+		<input id="circle2Data2" type="hidden" />
+		
+		<input id="circle3Data1" type="hidden" />
+		<input id="circle3Data2" type="hidden" />
+		<input id="circle3Data3" type="hidden" />
+		
+		<input id="circle4Data1" type="hidden" />
+		
+		<input id="circleData1" type="hidden" />
+		<input id="circleData2" type="hidden" />
+		<input id="circleData3" type="hidden" />
+		<input id="circleData4" type="hidden" />
+		<input id="circleData5" type="hidden" />
+		<input id="circleData6" type="hidden" />
+		<input id="circleData7" type="hidden" />
+		<input id="circleData8" type="hidden" />
+		
+
+		<input id="g2Title" type="hidden" />
+		<input id="g2Data1" type="hidden" />
+		<input id="g2Data2" type="hidden" />
+
+		<input id="g1Title" type="hidden" />
+		<input id="g1Data1" type="hidden" />
+		<input id="g1Data2" type="hidden" />
+
+		<input id="g3Title" type="hidden" />
+		<input id="g3Data1" type="hidden" />
+		<input id="g3Data2" type="hidden" />
+		<input id="g3Data3" type="hidden" />
+
+		<input id="g4Title" type="hidden" />
+		<input id="g4Data1" type="hidden" />
+		<input id="g4Data2" type="hidden" />
+		
+		<input id="g5Data1" type="hidden" />
+		<input id="g5Data2" type="hidden" />
+		
+		<input id="g6Title" type="hidden" />
+		<input id="g6Data1" type="hidden" />
+		<input id="g6Data2" type="hidden" />
+		<input id="g6Data3" type="hidden" />
+		
+		<input id="g7Title" type="hidden" />
+		<input id="g7Data1" type="hidden" />
+		<input id="g7Data2" type="hidden" />
+		
+		<input id="artValInd" type="hidden" />
+		<input id="paiValInd" type="hidden" />
+		<input id="instValInd" type="hidden" />
+		
+		<input id="dataPubRev1" type="hidden" />
+		<input id="dataPubRev2" type="hidden" />
+		<input id="dataPubRev3" type="hidden" />
+		<input id="dataPubRev4" type="hidden" />
+		<input id="dataPubRev5" type="hidden" />
+		<input id="dataPubRev6" type="hidden" />
+
+		
+		<input id="g1ColTitle" type="hidden" />
+		<input id="g1ColData1" type="hidden" />
+		<input id="g1ColData2" type="hidden" />
+		
+		<input id="g2ColTitle" type="hidden" />
+		<input id="g2ColData1" type="hidden" />
+		<input id="g2ColData2" type="hidden" />
+		<input id="g2ColData3" type="hidden" />
+		
+		<input id="g3ColTitle" type="hidden" />
+		<input id="g3ColData1" type="hidden" />
+		<input id="g3ColData2" type="hidden" />
+		
+		<input id="g4ColTitle" type="hidden" />
+		<input id="g4ColData1" type="hidden" />
+		<input id="g4ColData2" type="hidden" />
+		
+		<input id="g5ColTitle" type="hidden" />
+		<input id="g5ColData1" type="hidden" />
+		<input id="g5ColData2" type="hidden" />
+		<input id="g5ColData3" type="hidden" />
+		
+		<input id="g6ColTitle" type="hidden" />
+		<input id="g6ColData1" type="hidden" />
+		<input id="g6ColData2" type="hidden" />
+
+		<input id="g7ColData1" type="hidden" />
+		<input id="g7ColData2" type="hidden" />
+		
+		<input id="dataIndCol1" type="hidden" />
+		<input id="dataIndCol2" type="hidden" class="colaboracion-revista" />
+		
+		<input id="g1DataUse1" type="hidden" />
+		<input id="g1DataUse2" type="hidden" />
+		<input id="g1DataUse3" type="hidden" />
+		<input id="g1DataUse4" type="hidden" />
+		<input id="g1DataUse5" type="hidden" />
+		<input id="g1DataUse6" type="hidden" />
+		<input id="g1DataUse7" type="hidden" />
+		<input id="g1DataUse8" type="hidden" />
+
+		<input id="dataTableUse1" type="hidden" />
+		<input id="dataTableUse2" type="hidden" />
+		<input id="dataTableUse3" type="hidden" />
+		<input id="dataTableUse4" type="hidden" />
+		<input id="dataTableUse5" type="hidden" />
+		<input id="dataTableUse6" type="hidden" />
+		<input id="dataTableUse7" type="hidden" />
+		
+		<section class="modal-hidden"></section>
+		<div id="containerHeader">
+			<div id="redalyc-general">
+				<div id="logoDiv">
+					<a href="home.oa"><img id="logo-redalyc" src="img/nuevoHeaderHome/logo_redalyc.png" /></a>
+				</div>
+				<div id="textContainer">
+					<div>
+						<b><span ng-bind-html="t.redalyc.redalyc"></span></b><br />
+						<span ng-bind-html="t.redalyc.network"></span><br />
+						<span ng-bind-html="t.redalyc.oa"></span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="idiomas-redes-estaticas cont-social">
+					<a href="home.oa" class="tr">
+						<img class="imgHome" src="img/homeRevista2024/home-principal.png" />
+					</a>
+					<span class="idioma" ng-click="traducir('es', 'event')" ng-bind-html="t.languages.spa"></span>
+					<span class="idioma" ng-click="traducir('en', 'event')" ng-bind-html="t.languages.en"></span>
+					<a href="https://www.instagram.com/redalyc_oficial/" target="_blank">
+						<img class="twitter" src="img/nuevoHeaderHome/ic_in.png" />
+					</a>
+					<a href="https://twitter.com/Redalyc" target="_blank">
+						<img class="twitter" src="img/nuevoHeaderHome/ic_x.png" />
+					</a> 
+					<a href="https://www.facebook.com/Redalyc/" target="_blank">
+						<img class="facebook" src="img/nuevoHeaderHome/icon_fb.png" />
+					</a>					
+			</div>
+		</div>
+	</header>
+		<main ng-if="!error404">
+				<div id="redalyc-revista">
+					<section class="modal-hidden"></section>
+					<div id="informacion-revista">
+				
+						<div>
+							<p>
+								<img src="/redalyc/media/inc/img/revista/movil/revista/rva{{claveDeLaRevista}}.png" id="logo-revista" />
+								<img src="/redalyc/media/inc/img/institucion/{{revista.imgInstitucion}}" id="logo-institucion-revista" />
+							</p>
+						</div>
+						<div id="datos-generales-revista">
+								<p id="titulo-revista" ng-bind-html="revista.nombre"></p>
+								<input value="{{revista.nomAre}}" id="revistaAreaNombre" type="hidden" />
+							<div>
+								<div>
+									<span>
+										<span ng-if="revista.issnrev != '' &amp;&amp; revista.issnrev != 'null'"><b>ISSN:</b> <b class="Bnone" ng-bind-html="revista.issnrev"></b></span>
+										<span ng-if="revista.issnelerev != '' &amp;&amp; revista.issnelerev != 'null'"><b class="Bnone" ng-bind-html="t.issn.issn_e"></b>: <b class="Bnone" ng-bind-html="revista.issnelerev"></b></span>
+									</span>
+									<span ng-bind-html="revista.periodo"></span>
+									<span ng-bind-html="revista.nomAre"></span>
+									<span><a href="institucion.oa?id={{revista.cveint}}" ng-bind-html="revista.institucion"></a></span>
+									<span><a href="pais.oa?id={{revista.cvepais}}" ng-bind-html="revista.pais"></a></span>
+									<span ng-if="linksRevista[2] != null">
+										<a href="{{linksRevista[2]}}" target="_blank">Revista con exportación de datos en   <img id="doaj" src="img/1-DOAJ.png" />   desde Redalyc</a>
+									</span>
+									<span ng-if="revistaEnAura === true">
+										<a href="http://aura.amelica.org/detalle-revista.html?cveRevista={{au}}" target="_blank"><span class="boton-revista" ng-bind-html="t.politics.politics"></span></a>
+										
+										
+									</span>
+									<a class="btn-menu-movil">
+										<div>-</div>
+										<div>-</div>
+									</a>
+								</div>
+								<div id="servicios-revista">
+								<span><a href="/redalyc/media/normas/normcol{{claveDeLaRevista}}.html" target="_blank" ng-bind-html="t.menu_journal.norms"></a></span>
+								<span><a ng-click="muestraCaracterticasDeLaPublicacion(revista.coltb2rev)" target="_blank" ng-bind-html="t.menu_journal.features"></a></span>
+								<span ng-if="linksRevista[0].includes('http')"><a href="{{linksRevista[0]}}" target="_blank" ng-bind-html="t.menu_journal.about"></a></span>
+								<span ng-if="!linksRevista[0].includes('http')"><a href="http://{{linksRevista[0]}}" target="_blank" ng-bind-html="t.menu_journal.about"></a></span>
+								<span><a href="{{linksRevista[1]}}" target="_blank" ng-bind-html="t.menu_journal.website"></a></span>
+								<span ng-if="revista.comite.trim() != &quot;&quot;"><a ng-click="muestraDirectorio(revista.comite)" ng-bind-html="t.menu_journal.board"></a></span>
+								<span><a class="doContact" ng-bind-html="t.menu_journal.contact"></a></span>
+								<span ng-if="revista.aniosNumeros!=' '"><a href="/redalyc/media/rss/revista{{claveDeLaRevista}}.rss" target="_blank"><b ng-bind-html="t.menu_journal.rss" class="Bnone"></b><img id="rss" src="img/2-RSS.png" /></a></span>
+								<div class="email-options">
+										<a href="{{email.gmail}}" target="_blank"><img src="img/gmail.png" /></a>
+										<a href="{{email.outlook}}" target="_blank"><img src="img/outlook.gif" /></a>
+								</div>
+							</div>
+							</div>	
+						</div>
+					</div>
+					
+								
+								
+									
+		        							   
+		       							
+		     						
+								
+								
+								
+								
+								
+					<br />
+					<br />
+					<br />
+					<div id="tabs-revista" ng-if="revista.aniosNumeros!=' '">
+						<a href="revista.oa?id={{claveRevista}}&amp;tipo=coleccion" style="text-decoration: none;">
+							<div id="tab-acervo">
+						
+								<p><img src="img/homeRevista2024/ic_acervo02.png" /><br />
+								<span style="color:{{(tabVisile==='acervo')?'#6a747d':'white'}}">{{t.menu_pages.collection}}</span></p>
+							
+							</div>
+						</a>
+						<a href="revista.oa?id={{claveRevista}}&amp;tipo=indicadores" style="text-decoration: none;">
+							<div id="tab-indicadores" ng-if="revista.aniosNumeros!=' '">
+							
+								<p><img src="img/homeRevista2024/ic_indicadores02.png" /><br />
+								<span>{{t.menu_pages.indicators}}</span></p>
+							
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div id="contH" ng-if="revista.aniosNumeros!=' ' &amp;&amp; tabVisible !== 'indicadores'">
+					
+					<div class="herramienta" id="contenido-buscador">
+						<div id="buscador">
+							<div>
+								<select id="item-seleccionado" name="itemseleccionado" size="1" ng-model="busqueda.tipo">
+									<option value="Art">Artículos</option>
+									<option value="Aut">Autores</option>
+								</select>
+							</div>
+							<div>
+								<input id="input-articulo" type="text" name="input-articulo" value="" class="entrada-busqueda" ng-model="busqueda.textoABuscar" ng-keypress="($event.which === 13) ? buscarArticulos() : 0" />
+								<input id="boton-buscar-articulo" type="image" src="img/nuevoHeaderHome/ic_busqueda.png" name="boton-buscar-articulo" alt="Buscar en Revista" ng-click="buscarArticulos()" />
+							</div>
+						</div>
+					</div>
+					
+					<h2>{{t.titulosHerramientas.nube}}</h2>
+					<div class="herramienta" id="contenido-nube">
+						<div id="nube-palabras" ng-Style="{'display': languaje == 'es' ? 'block' : 'none' }"></div>
+						<div id="nube-palabrasEN" ng-Style="{'display': languaje == 'en' ? 'block' : 'none' }"></div>
+					</div>
+					<h2>{{t.titulosHerramientas.numeros}}</h2>
+					<div class="herramienta panel-visible" id="contenido-numeros">
+						<div>
+						</div>
+						<div id="numeros-flotantes"></div>
+					</div>
+				</div>
+			<div ng-if="tabVisible === 'indicadores'" ng-include="'html/indicadoresHomeRevista.html'" ng-controller="IndicadoresHomeRevistaController"></div>
+			<div id="buscador-articulo" ng-include="'html/plantillaArticulos.html'" ng-controller="ArticulosHomeRevistaController" style="display: none;"></div>
+			
+			<div id="overlay" style="display:none;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.5; cursor: wait; position: fixed;"></div>
+			<div id="loading" style="display:none;z-index: 1011; position: fixed; padding: 15px; margin: 0px; width: 30%; top: 40%; left: 35%; text-align: center; color: rgb(255, 255, 255); border: none; background-color: rgb(0, 0, 0); cursor: wait; border-radius: 10px; opacity: 0.5; font-size: 20px; font-family: Helvetica;">
+				<img src="img/loading-2.gif" width="100" height="100" /> <br />Buscando artículos
+			</div>
+			
+			
+			<div id="fondo-flotante">
+				<div id="ventana-flotante">
+					<table class="table-flotante">
+						<tr>
+							<th colspan="2" style="text-align:left;">
+								<div id="titulo-flotante">
+									<p></p>
+									<div id="cierra-flotante"></div>
+								</div>
+							</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td id="elemento-flotante">
+							</td>
+							<td class="customTD">
+								<div id="contenido-flotante" style="height: 100%;">
+									<div style="height: 100%;"></div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div id="fondo-criterios-evaluacion">
+				<div id="criterios-evaluacion">
+					<div id="titulo-criterios-evaluacion">
+						<span>Criterios de Evaluación</span>
+						<img id="cerrar-evaluacion" src="img/art-cerrar.gif" />
+					</div>
+					<div id="lista-criterios-evaluacion">
+						<div class="criterios">
+							<span ng-if="evaluacion[0].tipoEvaluacion!='2'">Criterios Básicos de Admisión</span>
+							<span ng-if="evaluacion[0].tipoEvaluacion=='2'">Criterios Básicos de Admisión</span>
+							<span class="toogle-icon"></span>
+							<div>
+								<table>
+									<tbody ng-if="evaluacion[0].tipoEvaluacion!='2'">
+										<tr ng-repeat="criterio in evaluacion | filter:{categoriaCriterio: 'CBA'} | orderBy : 'prioridadCriterio'">
+											<td>{{criterio.prioridadCriterio}}. {{criterio.observaciones}}</td>
+											<td><img ng-if="criterio.puntuacionCriterio == 1" class="palomita" src="img/criterio-cumplido.png" /></td>
+											<td>
+												<img ng-if="criterio.puntuacionCriterio == 1" class="verificar" src="img/verificar-cumplido.gif" />
+												<img ng-if="criterio.puntuacionCriterio == 0" class="verificar" style="width: 17px;" src="img/clipboard-grey.png" />
+											</td>
+										</tr>
+									</tbody>
+									
+									<tbody ng-if="evaluacion[0].tipoEvaluacion=='2'">
+										<tr ng-repeat="criterio in evaluacion | filter:{categoriaCriterio: '1. CRITERIOS BÁSICOS DE ADMISIÓN'} | orderBy : 'prioridadCriterio'">
+											<td>{{criterio.prioridadCriterio}}. {{criterio.observaciones}}</td>
+											<td><img ng-if="criterio.puntuacionCriterio == 1" class="palomita" src="img/criterio-cumplido.png" /></td>
+											<td>
+												<img ng-if="criterio.puntuacionCriterio == 1" class="verificar" src="img/verificar-cumplido.gif" />
+												<img ng-if="criterio.puntuacionCriterio == 0" class="verificar" style="width: 17px;" src="img/clipboard-grey.png" />
+												
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="criterios">
+							<span ng-if="evaluacion[0].tipoEvaluacion!='2'">Criterios Altamente Valorados / Criterios Deseables</span>
+							<span ng-if="evaluacion[0].tipoEvaluacion=='2'">Criterios Cualitativos</span>
+							<span class="toogle-icon"></span>
+							<div>
+								<table>
+									<tbody ng-if="evaluacion[0].tipoEvaluacion!='2'">
+										<tr ng-repeat="criterio in evaluacion | filter:{categoriaCriterio: '!CBA'} | orderBy : 'prioridadCriterio'">
+											<td>{{criterio.prioridadCriterio}}. {{criterio.observaciones}}</td>
+											<td><img ng-if="criterio.puntuacionCriterio == 1" class="palomita" src="img/criterio-cumplido.png" /></td>
+											<td>
+												<img ng-if="criterio.puntuacionCriterio == 1" class="verificar" src="img/verificar-cumplido.gif" />
+												<img ng-if="criterio.puntuacionCriterio == 0" class="verificar" style="width: 17px;" src="img/clipboard-grey.png" />
+											</td>
+										</tr>
+									</tbody>
+									
+									<tbody ng-if="evaluacion[0].tipoEvaluacion=='2'">
+										<tr ng-repeat="criterio in evaluacion | filter:{categoriaCriterio: '2. CRITERIOS CUALITATIVOS'} | orderBy : 'prioridadCriterio'">
+											<td>{{criterio.prioridadCriterio}}. {{criterio.observaciones}}</td>
+											<td><img ng-if="criterio.puntuacionCriterio == 1" class="palomita" src="img/criterio-cumplido.png" /></td>
+											<td>
+												<img ng-if="criterio.puntuacionCriterio == 1" class="verificar" src="img/verificar-cumplido.gif" />
+												<img ng-if="criterio.puntuacionCriterio == 0" class="verificar" style="width: 17px;" src="img/clipboard-grey.png" />
+											</td>
+										</tr>
+									</tbody>
+									
+								</table>
+							</div>
+						</div>
+						
+						<div class="criterios" id="criterios-nuevaEv2">
+							<span>Criterios Altamente Valorados Cuantitativos</span>
+							<span class="toogle-icon"></span>
+							<div>
+								<table>
+									<tbody>
+										<tr ng-repeat="criterio in evaluacion | filter:{categoriaCriterio: '3. CRITERIOS ALTAMENTE VALORADOS CUANTITATIVOS'} | orderBy : 'prioridadCriterio'">
+											<td>{{criterio.prioridadCriterio}}. {{criterio.observaciones}}</td>
+											<td><img ng-if="criterio.puntuacionCriterio == 1" class="palomita" src="img/criterio-cumplido.png" /></td>
+											<td>
+												<img ng-if="criterio.puntuacionCriterio == 1" class="verificar" src="img/verificar-cumplido.gif" />
+												<img ng-if="criterio.puntuacionCriterio == 0" class="verificar" style="width: 17px;" src="img/clipboard-grey.png" />
+											</td>
+										</tr>
+									</tbody>
+									
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	<div ng-include="'html/error404.html'"></div>
+		<footer id="pie-pagina">
+			<div id="informacion-redalyc">
+				<span><b style="font-weight: lighter;" ng-bind-html="t.footer.redalyc"></b><b> ®</b></span><br />
+				<span ng-bind-html="t.footer.network"></span><br />
+				<br />
+				<span ng-bind-html="t.footer.ver"></span><span id="current-year"></span><br />
+				<span>comunicacion@redalyc.org</span>			
+			</div>
+			<div id="pie-logos">
+				<img src="img/nuevoHeaderHome/logo_redalyc.png" />
+				<img src="img/administracion 2021.png" />
+			</div>
+		</footer>
+		<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtiene el año actual
+            const currentYear = new Date().getFullYear();
+            // Establece el contenido del span con id 'current-year'
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = currentYear;
+            }
+        });
+    </script>
+</body> 
+</html>

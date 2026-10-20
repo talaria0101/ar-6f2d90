@@ -1,0 +1,85 @@
+slug	name	category	api_probe	docs_url	home_url
+openalex	OpenAlex	academic	https://api.openalex.org/works?per_page=1	https://docs.openalex.org/	https://openalex.org/
+crossref	Crossref REST	academic	https://api.crossref.org/works?rows=1	https://www.crossref.org/documentation/retrieve-metadata/rest-api/	https://www.crossref.org/
+datacite	DataCite REST	academic	https://api.datacite.org/dois?page%5Bsize%5D=1	https://support.datacite.org/docs/api	https://datacite.org/
+openaire	OpenAIRE Graph	academic	https://api.openaire.eu/search/publications?title=test&format=json&size=1	https://graph.openaire.eu/docs/	https://graph.openaire.eu/
+core	CORE	academic	https://api.core.ac.uk/v3/search/works?q=test&limit=1	https://api.core.ac.uk/docs/v3	https://core.ac.uk/
+semanticscholar	Semantic Scholar	academic	https://api.semanticscholar.org/graph/v1/paper/search?query=test&limit=1	https://api.semanticscholar.org/api-docs/	https://www.semanticscholar.org/
+europepmc	Europe PMC	academic	https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=test&format=json&pageSize=1	https://europepmc.org/RestfulWebService	https://europepmc.org/
+pubmed	PubMed E-utilities	academic	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=test&retmode=json&retmax=1	https://www.ncbi.nlm.nih.gov/books/NBK25501/	https://pubmed.ncbi.nlm.nih.gov/
+arxiv	arXiv API	academic	https://export.arxiv.org/api/query?search_query=all:test&max_results=1	https://info.arxiv.org/help/api/index.html	https://arxiv.org/
+doaj	DOAJ	academic	https://doaj.org/api/search/articles/test?pageSize=1	https://doaj.org/api/v3/docs	https://doaj.org/
+unpaywall	Unpaywall	academic	https://api.unpaywall.org/v2/10.1038/nature12373?email=research@example.org	https://unpaywall.org/products/api	https://unpaywall.org/
+ror	ROR	academic	https://api.ror.org/organizations?query=test	https://ror.readme.io/docs/rest-api	https://ror.org/
+opencitations	OpenCitations	academic	https://opencitations.net/index/api/v1/citation-count/10.1038/nature12373	https://opencitations.net/index/api/v1	https://opencitations.net/
+zenodo	Zenodo	archive	https://zenodo.org/api/records?size=1	https://developers.zenodo.org/	https://zenodo.org/
+figshare	Figshare	archive	https://api.figshare.com/v2/articles?page_size=1	https://docs.figshare.com/	https://figshare.com/
+dryad	Dryad	archive	https://datadryad.org/api/v2/datasets?page=1&per_page=1	https://datadryad.org/api/v2/docs/	https://datadryad.org/
+osf	OSF	archive	https://api.osf.io/v2/nodes/?page%5Bsize%5D=1	https://developer.osf.io/	https://osf.io/
+dblp	dblp	academic	https://dblp.org/search/publ/api?q=test&format=json&h=1	https://dblp.org/faq/How+to+use+the+dblp+search+API.html	https://dblp.org/
+hal	HAL	academic	https://api.archives-ouvertes.fr/search/?q=test&rows=1&wt=json	https://api.archives-ouvertes.fr/docs	https://hal.science/
+biorxiv	bioRxiv	academic	https://api.biorxiv.org/details/biorxiv/2020-01-01/2020-01-02/0	https://api.biorxiv.org/	https://www.biorxiv.org/
+medrxiv	medRxiv	academic	https://api.medrxiv.org/details/medrxiv/2020-01-01/2020-01-02/0	https://api.biorxiv.org/	https://www.medrxiv.org/
+orcid	ORCID	academic	https://pub.orcid.org/v3.0/expanded-search/?q=test&rows=1	https://info.orcid.org/documentation/api-tutorials/	https://orcid.org/
+base	BASE	academic	https://api.base-search.net/cgi-bin/BaseHttpSearchInterface.fcgi?func=PerformSearch&query=test&format=json	https://www.base-search.net/about/en/	https://www.base-search.net/
+fatcat	Fatcat	archive	https://api.fatcat.wiki/v0/release/lookup?doi=10.1038/nature12373	https://api.fatcat.wiki/	https://fatcat.wiki/
+scholar-archive	Internet Archive Scholar	archive	https://scholar.archive.org/search?q=test	https://scholar.archive.org/	https://scholar.archive.org/
+wayback-cdx	Wayback Machine CDX	archive	http://web.archive.org/cdx/search/cdx?url=example.com&limit=2&output=json	https://archive.org/developers/wayback-cdx-server.html	https://web.archive.org/
+wayback-available	Wayback Availability	archive	https://archive.org/wayback/available?url=example.com	https://archive.org/help/wayback_api.jsp	https://web.archive.org/
+memento	Memento TimeTravel	archive	https://timetravel.mementoweb.org/api/json/2020/https://example.com	https://timetravel.mementoweb.org/guide/api/	http://mementoweb.org/
+arquivo	Arquivo.pt	archive	https://arquivo.pt/wayback/cdx?url=example.com&output=json&limit=2	https://arquivo.pt/api	https://arquivo.pt/
+commoncrawl	Common Crawl Index	archive	https://index.commoncrawl.org/CC-MAIN-2024-10-index?url=example.com&output=json&limit=1	https://commoncrawl.org/cc-index-table	https://commoncrawl.org/
+swh	Software Heritage	archive	https://archive.softwareheritage.org/api/1/origin/search/test/?limit=1	https://archive.softwareheritage.org/api/	https://www.softwareheritage.org/
+europeana	Europeana	archive	https://api.europeana.eu/record/v2/search.json?wskey=api2demo&query=test&rows=1	https://pro.europeana.eu/page/apis	https://www.europeana.eu/
+dpla	DPLA	archive	https://api.dp.la/v2/items?q=test&page_size=1	https://pro.dp.la/developers/api-codex	https://dp.la/
+digitalnz	DigitalNZ	archive	https://api.digitalnz.org/v3/records.json?text=test&per_page=1	https://digitalnz.org/developers	https://digitalnz.org/
+trove	Trove	archive	https://api.trove.nla.gov.au/v3/result?q=test&category=book&n=1	https://trove.nla.gov.au/about/create-something/using-api	https://trove.nla.gov.au/
+chroniclingamerica	Chronicling America	archive	https://chroniclingamerica.loc.gov/search/pages/results/?andtext=test&format=json&rows=1	https://chroniclingamerica.loc.gov/about/api/	https://chroniclingamerica.loc.gov/
+locgov	Library of Congress	archive	https://www.loc.gov/collections/?fo=json&c=1	https://www.loc.gov/apis/	https://www.loc.gov/
+si-smithsonian	Smithsonian Open Access	archive	https://api.si.edu/openaccess/api/v1.0/search?q=test&api_key=DEMO_KEY	https://edan.si.edu/openaccess/apidocs/	https://www.si.edu/openaccess
+hathitrust	HathiTrust Bib API	archive	https://catalog.hathitrust.org/api/volumes/brief/oclc/1234567.json	https://www.hathitrust.org/bib_api	https://www.hathitrust.org/
+bhl	Biodiversity Heritage Library	archive	https://www.biodiversitylibrary.org/api3?op=TitleSearchSimple&title=test&format=json&apikey=DEMO	https://www.biodiversitylibrary.org/docs/api3.html	https://www.biodiversitylibrary.org/
+gallica	Gallica (BnF)	archive	https://gallica.bnf.fr/SRU?operation=searchRetrieve&version=1.2&query=gallica%20all%20%22test%22&maximumRecords=1	https://api.bnf.fr/api-gallica	https://gallica.bnf.fr/
+ddb	Deutsche Digitale Bibliothek	archive	https://api.deutsche-digitale-bibliothek.de/search?query=test	https://api.deutsche-digitale-bibliothek.de/	https://www.deutsche-digitale-bibliothek.de/
+finna	Finna	archive	https://api.finna.fi/v1/search?lookfor=test&limit=1	https://api.finna.fi/	https://www.finna.fi/
+libris	LIBRIS XL	archive	https://libris.kb.se/XL/search?q=test	https://libris.kb.se/api/	https://libris.kb.se/
+dnb-gnd	GND (DNB)	archive	https://services.dnb.de/sru/authorities?operation=searchRetrieve&version=1.1&query=WOE%3Dtest&recordSchema=MARC21-xml	https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html	https://www.dnb.de/
+k10plus	K10plus SRU	archive	https://sru.k10plus.de/opac-de-627?version=1.1&operation=searchRetrieve&query=pica.all%3Dtest&maximumRecords=1	https://www.k10plus.de/	https://www.k10plus.de/
+openlibrary	OpenLibrary	archive	https://openlibrary.org/search.json?q=test&limit=1	https://openlibrary.org/developers/api	https://openlibrary.org/
+wikidata	Wikidata SPARQL	archive	https://query.wikidata.org/sparql?query=SELECT%20*%20WHERE%20%7B%3Fs%20%3Fp%20%3Fo%7D%20LIMIT%201&format=json	https://www.medienkunstnetz.de/	https://www.wikidata.org/
+viaf	VIAF	archive	https://viaf.org/viaf/AutoSuggest?query=test	https://viaf.org/	https://viaf.org/
+isni	ISNI	archive	https://isni.oclc.org/xslt/DB=1.2/CMD?ACT=SRCH&IKT=8006&TRM=test	https://www.isni.org/	https://www.isni.org/
+orkg	ORKG	academic	https://api.orkg.org/api/papers?size=1	https://orkg.org/about/26/API	https://orkg.org/
+paperswithcode	Papers with Code	academic	https://paperswithcode.com/api/v1/papers/?page_size=1	https://paperswithcode.com/api/v1/docs/	https://paperswithcode.com/
+openreview	OpenReview	academic	https://api2.openreview.net/notes?limit=1	https://docs.openreview.net/reference/api-v2	https://openreview.net/
+dataverse	Dataverse	archive	https://dataverse.harvard.edu/api/search?q=test&per_page=1	https://guides.dataverse.org/en/latest/api/	https://dataverse.harvard.edu/
+b2share	B2SHARE (EUDAT)	archive	https://b2share.eudat.eu/api/records?size=1	https://eudat.eu/services/b2share	https://b2share.eudat.eu/
+dans	DANS EASY	archive	https://dataverse.nl/api/search?q=test&per_page=1	https://dataverse.nl/	https://dans.knaw.nl/
+pangaea	PANGAEA	archive	https://ws.pangaea.de/es/pangaea/panmd/_search?size=1	https://wiki.pangaea.de/wiki/Elasticsearch_API	https://www.pangaea.de/
+dataone	DataONE	archive	https://cn.dataone.org/cn/v2/query/solr/?q=test&rows=1&wt=json	https://dataone.org/	https://dataone.org/
+re3data	re3data	academic	https://re3data.org/api/v1/repositories?query=test	https://www.re3data.org/api/doc	https://www.re3data.org/
+fairsharing	FAIRsharing	academic	https://api.fairsharing.org/standards?q=test	https://fairsharing.org/API_doc	https://fairsharing.org/
+clinicaltrials	ClinicalTrials.gov	academic	https://clinicaltrials.gov/api/v2/studies?pageSize=1	https://clinicaltrials.gov/data-api/api	https://clinicaltrials.gov/
+agris	AGRIS (FAO)	academic	https://agris.fao.org/search/en/?q=test	https://agris.fao.org/	https://agris.fao.org/
+pubag	PubAg (USDA)	academic	https://pubag.nal.usda.gov/catalog.json?search=test&per_page=1	https://pubag.nal.usda.gov/	https://pubag.nal.usda.gov/
+scielo	SciELO	academic	https://search.scielo.org/?q=test&output=xml&count=1	https://search.scielo.org/	https://scielo.org/
+redalyc	Redalyc	academic	https://www.redalyc.org/revista.oa?id=1	https://www.redalyc.org/	https://www.redalyc.org/
+lens	Lens.org	academic	https://api.lens.org/scholarly/search	https://docs.api.lens.org/	https://www.lens.org/
+dimensions	Dimensions	academic	https://api.dimensions.ai/	https://docs.dimensions.ai/	https://www.dimensions.ai/
+scilit	Scilit	academic	https://www.scilit.com/publications?q=test	https://www.scilit.com/	https://www.scilit.com/
+ads	NASA ADS	academic	https://api.adsabs.harvard.edu/v1/search/query?q=test	https://ui.adsabs.harvard.edu/help/api/	https://ui.adsabs.harvard.edu/
+crossref-eventdata	Crossref Event Data	academic	https://api.eventdata.crossref.org/v1/events?rows=1	https://www.crossref.org/documentation/event-data/	https://www.crossref.org/
+altmetric	Altmetric	academic	https://api.altmetric.com/v1/doi/10.1038/nature12373	https://api.altmetric.com/	https://www.altmetric.com/
+icpsr	ICPSR	archive	https://www.icpsr.umich.edu/web/ICPSR/search/studies?q=test	https://www.icpsr.umich.edu/	https://www.icpsr.umich.edu/
+ukda	UK Data Service	archive	https://discover.ukdataservice.ac.uk/catalogue/?q=test	https://ukdataservice.ac.uk/	https://ukdataservice.ac.uk/
+gesis	GESIS	archive	https://search.gesis.org/research_data?q=test	https://www.gesis.org/	https://www.gesis.org/
+mendeley-data	Mendeley Data	archive	https://data.mendeley.com/public-api/datasets?query=test	https://data.mendeley.com/api/	https://data.mendeley.com/
+4tu	4TU.ResearchData	archive	https://data.4tu.nl/v2/articles?search=test&page_size=1	https://data.4tu.nl/	https://data.4tu.nl/
+radar	RADAR	archive	https://www.radar-service.eu/radar/api/en/search/?q=test	https://www.radar-service.eu/	https://www.radar-service.eu/
+citeseerx	CiteSeerX	academic	https://citeseerx.ist.psu.edu/search?q=test	https://citeseerx.ist.psu.edu/	https://citeseerx.ist.psu.edu/
+aclanthology	ACL Anthology	academic	https://aclanthology.org/anthology.bib	https://aclanthology.org/	https://aclanthology.org/
+nlm	NLM Digital Collections	archive	https://collections.nlm.nih.gov/api/search?q=test	https://collections.nlm.nih.gov/	https://collections.nlm.nih.gov/
+veidar	Veidar (Iceland)	archive	https://vefir.malvinnsla.is/veidar/?q=test	https://vefir.malvinnsla.is/veidar/	https://vefir.malvinnsla.is/veidar/
+ukwa	UK Web Archive	archive	https://www.webarchive.org.uk/wayback/archive/?url=example.com	https://www.webarchive.org.uk/	https://www.webarchive.org.uk/
+archiveit	Archive-It	archive	https://partner.archive-it.org/	https://archive-it.org/	https://archive-it.org/
+perma	Perma.cc	archive	https://api.perma.cc/v1/public/archives/?limit=1	https://perma.cc/docs/developer	https://perma.cc/

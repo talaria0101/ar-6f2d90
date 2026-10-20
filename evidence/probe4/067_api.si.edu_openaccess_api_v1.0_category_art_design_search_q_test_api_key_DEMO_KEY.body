@@ -1,0 +1,1828 @@
+{
+  "status": 200,
+  "responseCode": 1,
+  "response": {
+    "rows": [
+      {
+        "id": "ld1-1667638301861-1667638378388-0",
+        "title": "Ann Test",
+        "unitCode": "NPG",
+        "type": "edanmdm",
+        "url": "edanmdm:npg_S_NPG.2002.184.463",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "c. 1803-04"
+              }
+            ],
+            "name": [
+              {
+                "label": "Artist",
+                "content": "William Bache, 22 Dec 1771 - 9 Jul 1845"
+              },
+              {
+                "label": "Sitter",
+                "content": "Ann Test, active c. 1803 - 1812"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Portfolio/Series",
+                "content": "Ledger book of William Bache, with associated pieces"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Topic",
+                "content": "Silhouette\\Cut-out"
+              },
+              {
+                "label": "Topic",
+                "content": "Book\\Album"
+              },
+              {
+                "label": "Topic",
+                "content": "Ann Test: Female"
+              },
+              {
+                "label": "Topic",
+                "content": "Portrait"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "National Portrait Gallery Collection"
+              },
+              {
+                "label": "Location",
+                "content": "Currently not on view"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "National Portrait Gallery, Smithsonian Institution; partial gift of Sarah Bache Bloise"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "National Portrait Gallery"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Object number",
+                "content": "S/NPG.2002.184.463"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Silhouette"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Cut coated paper mounted on paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Image (approx): 7.9 × 7 cm (3 1/8 × 2 3/4\")"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Book closed: 47.3 × 34.9 × 4.8 cm (18 5/8 × 13 3/4 × 1 7/8\")"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Book open: 47.3 × 66.7 × 4.8 cm (18 5/8 × 26 1/4 × 1 7/8\")"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1800s"
+            ],
+            "name": [
+              "Bache, William",
+              "Test, Ann"
+            ],
+            "topic": [
+              "Women",
+              "Cut-out",
+              "Books and reading",
+              "Portraits",
+              "Silhouette",
+              "Albums"
+            ],
+            "object_type": [
+              "Silhouettes"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/sm4e9947e98-b96d-406b-90c3-788e8fe6e174",
+            "title": {
+              "label": "Title",
+              "content": "Ann Test"
+            },
+            "record_ID": "npg_S_NPG.2002.184.463",
+            "unit_code": "NPG",
+            "title_sort": "ANN TEST",
+            "data_source": "National Portrait Gallery",
+            "record_link": "https://npg.si.edu/object/npg_S_NPG.2002.184.463",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:NPG-S_NPG_2002_184_463",
+                  "guid": "http://n2t.net/ark:/65665/tr2e1ed74e4-9dac-4b7d-98b9-86b470d9da42",
+                  "type": "Images",
+                  "idsId": "NPG-S_NPG_2002_184_463",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=NPG-S_NPG_2002_184_463",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=NPG-S_NPG_2002_184_463",
+                  "altTextAccessibility": "Artist: William Bache, Sitter: Ann Test, Current owner: National Portrait Gallery, Smithsonian Institution",
+                  "extDescrAccessibility": "",
+                  "resources": [
+                    {
+                      "label": "High-resolution TIFF",
+                      "url": "https://ids.si.edu/ids/download?id=NPG-S_NPG_2002_184_463.tif",
+                      "width": 2180,
+                      "height": 2781,
+                      "dimensions": "2180x2781"
+                    },
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=NPG-S_NPG_2002_184_463.jpg",
+                      "width": 2180,
+                      "height": 2781,
+                      "dimensions": "2180x2781"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=NPG-S_NPG_2002_184_463_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=NPG-S_NPG_2002_184_463_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "16a7a1e54d6cb58fda12a73a9fb2ac4332c82f82",
+        "docSignature": "07eb2ecb7faed11bfb26cbcf9d0797f8",
+        "timestamp": "1667638396",
+        "lastTimeUpdated": "1778322956",
+        "version": "1778320096"
+      },
+      {
+        "id": "ld1-1643399887910-1643399903465-1",
+        "title": "Raccolta di teste",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1931-67-112-1",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1750–1780"
+              }
+            ],
+            "name": [
+              {
+                "label": "Print Maker",
+                "content": "Giovanni Domenico Tiepolo, Italian, 1727 – 1804"
+              },
+              {
+                "label": "After",
+                "content": "Giovanni Battista Tiepolo, Italian, 1692 - 1770"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Vertical rectangle. Middle-aged bearded man turned three-quarters left and wearing a cap."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Italy"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Collection: Charles Toché | Given by the Misses Hewitt"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1931-67-112-1"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching on paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H: OM148 W: OM112"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1780s",
+              "1750s"
+            ],
+            "name": [
+              "Tiepolo, Giovanni Battista",
+              "Tiepolo, Giovanni Domenico"
+            ],
+            "place": [
+              "Italy"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Italy"
+                }
+              }
+            ],
+            "object_type": [
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4ace3b920-59cf-4c94-8d3e-d17d8ac4eecc",
+            "title": {
+              "label": "Title",
+              "content": "Raccolta di teste"
+            },
+            "record_ID": "chndm_1931-67-112-1",
+            "unit_code": "CHNDM",
+            "title_sort": "RACCOLTA DI TESTE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/48205",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-9BA0E1D805702-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc99ee1f033-7e54-44cc-a0a7-2b176616c425",
+                  "type": "Images",
+                  "idsId": "CHSDM-9BA0E1D805702-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-9BA0E1D805702-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-9BA0E1D805702-000001",
+                  "altTextAccessibility": "RACCOLTA DI TESTE",
+                  "extDescrAccessibility": "Vertical rectangle. Middle-aged bearded man turned three-quarters left and wearing a cap.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-9BA0E1D805702-000001.jpg",
+                      "width": 2052,
+                      "height": 2900,
+                      "dimensions": "2052x2900"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-9BA0E1D805702-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-9BA0E1D805702-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "d80f202df55bf393fa2a9bab14eb8107d50e6e72",
+        "docSignature": "fda0c5a9cb76308872b3e584e12e7dc8",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1776336432",
+        "version": "1776332796"
+      },
+      {
+        "id": "ld1-1643399887910-1643399903464-2",
+        "title": "Raccolta di teste",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1931-67-111-3",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1750–1780"
+              }
+            ],
+            "name": [
+              {
+                "label": "Print Maker",
+                "content": "Giovanni Domenico Tiepolo, Italian, 1727 – 1804"
+              },
+              {
+                "label": "After",
+                "content": "Giovanni Battista Tiepolo, Italian, 1692 - 1770"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Vertical rectangle. Old man ''of Rembrandtesque type''."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Italy"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Collection: Charles Toché | Given by the Misses Hewitt"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1931-67-111-3"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching on laid paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "H: OM138 W: OM108"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1780s",
+              "1750s"
+            ],
+            "name": [
+              "Tiepolo, Giovanni Battista",
+              "Tiepolo, Giovanni Domenico"
+            ],
+            "place": [
+              "Italy"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Italy"
+                }
+              }
+            ],
+            "object_type": [
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4288442df-4379-421e-8857-c1031ce0563b",
+            "title": {
+              "label": "Title",
+              "content": "Raccolta di teste"
+            },
+            "record_ID": "chndm_1931-67-111-3",
+            "unit_code": "CHNDM",
+            "title_sort": "RACCOLTA DI TESTE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/48203",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-DB05CCE1BB5F2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc958a27170-d010-4715-9c65-6e3a461bd34d",
+                  "type": "Images",
+                  "idsId": "CHSDM-DB05CCE1BB5F2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-DB05CCE1BB5F2-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-DB05CCE1BB5F2-000001",
+                  "altTextAccessibility": "RACCOLTA DI TESTE",
+                  "extDescrAccessibility": "Vertical rectangle. Old man ''of Rembrandtesque type''.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DB05CCE1BB5F2-000001.jpg",
+                      "width": 1502,
+                      "height": 1909,
+                      "dimensions": "1502x1909"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DB05CCE1BB5F2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DB05CCE1BB5F2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "bf193eff84d0fdc618e54289f03d94c0c249badc",
+        "docSignature": "ca09bee981eea52a35f324d5b8ef98e2",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1776336432",
+        "version": "1776332796"
+      },
+      {
+        "id": "ld1-1643399887910-1643399888334-1",
+        "title": "Raccolta di teste",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1896-31-82",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1770–1774"
+              }
+            ],
+            "name": [
+              {
+                "label": "Print Maker",
+                "content": "Giovanni Domenico Tiepolo, Italian, 1727 – 1804"
+              },
+              {
+                "label": "After",
+                "content": "Giovanni Battista Tiepolo, Italian, 1692 - 1770"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Half-length figure of a pope in frontal view facing downward. He wears a skull-cap and holds in his left hand a vase."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Italy"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1896-31-82"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "figures"
+              },
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching on laid paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Plate: 14.4 × 11.3 cm (5 11/16 × 4 7/16 in.)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Paper: 14.9 × 11.9 cm (5 7/8 × 4 11/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1770s"
+            ],
+            "name": [
+              "Tiepolo, Giovanni Battista",
+              "Tiepolo, Giovanni Domenico"
+            ],
+            "place": [
+              "Italy"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Italy"
+                }
+              }
+            ],
+            "object_type": [
+              "Figures (representations)",
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq410b37362-aced-4d62-a178-9b348b0566ac",
+            "title": {
+              "label": "Title",
+              "content": "Raccolta di teste"
+            },
+            "record_ID": "chndm_1896-31-82",
+            "unit_code": "CHNDM",
+            "title_sort": "RACCOLTA DI TESTE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/6270",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-4C9807CDBEEE2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc90e147db8-2d14-47e3-aa7a-895c096b243e",
+                  "type": "Images",
+                  "idsId": "CHSDM-4C9807CDBEEE2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-4C9807CDBEEE2-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-4C9807CDBEEE2-000001",
+                  "altTextAccessibility": "RACCOLTA DI TESTE",
+                  "extDescrAccessibility": "Half-length figure of a pope in frontal view facing downward. He wears a skull-cap and holds in his left hand a vase.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-4C9807CDBEEE2-000001.jpg",
+                      "width": 1516,
+                      "height": 1872,
+                      "dimensions": "1516x1872"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-4C9807CDBEEE2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-4C9807CDBEEE2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "27a9a87c94ef3d091201a902f9229418c4d3ebae",
+        "docSignature": "4e786a2f539cf4a731ad1383a6a31a50",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1769540882",
+        "version": "1769538334"
+      },
+      {
+        "id": "ld1-1643399887910-1643399888335-0",
+        "title": "Raccolta di teste",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1896-31-83",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1770–1774"
+              }
+            ],
+            "name": [
+              {
+                "label": "Print Maker",
+                "content": "Giovanni Domenico Tiepolo, Italian, 1727 – 1804"
+              },
+              {
+                "label": "After",
+                "content": "Giovanni Battista Tiepolo, Italian, 1692 - 1770"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Head of an old man in frontal view with his face bent downward. The big hat and beard leave only his nose visible from his face."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Italy"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1896-31-83"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "figures"
+              },
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching on laid paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "15.6 × 11.5 cm (6 1/8 × 4 1/2 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1770s"
+            ],
+            "name": [
+              "Tiepolo, Giovanni Battista",
+              "Tiepolo, Giovanni Domenico"
+            ],
+            "place": [
+              "Italy"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Italy"
+                }
+              }
+            ],
+            "object_type": [
+              "Figures (representations)",
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4420dd921-e9fe-4c0f-a4dd-42970dc8697c",
+            "title": {
+              "label": "Title",
+              "content": "Raccolta di teste"
+            },
+            "record_ID": "chndm_1896-31-83",
+            "unit_code": "CHNDM",
+            "title_sort": "RACCOLTA DI TESTE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/6271",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-843BE22B248C2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc949e2bd96-defd-4a62-b6fb-f38b96cd2194",
+                  "type": "Images",
+                  "idsId": "CHSDM-843BE22B248C2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-843BE22B248C2-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-843BE22B248C2-000001",
+                  "altTextAccessibility": "RACCOLTA DI TESTE",
+                  "extDescrAccessibility": "Head of an old man in frontal view with his face bent downward. The big hat and beard leave only his nose visible from his face.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-843BE22B248C2-000001.jpg",
+                      "width": 1481,
+                      "height": 1936,
+                      "dimensions": "1481x1936"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-843BE22B248C2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-843BE22B248C2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "7eb6cabf0eb135417893eeea59862c46f833be5a",
+        "docSignature": "b644827db5a74536e260fd4534a41ca4",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1769540882",
+        "version": "1769538334"
+      },
+      {
+        "id": "ld1-1643399887910-1643399888336-0",
+        "title": "Raccolta di teste",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1896-31-85",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1770–1774"
+              }
+            ],
+            "name": [
+              {
+                "label": "Print Maker",
+                "content": "Giovanni Domenico Tiepolo, Italian, 1727 – 1804"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Old man with beard and wearing a turban in frontal view, his head turned to right. His open coat leaves visible a belt docrated with plaquettes."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Italy"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1896-31-85"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "figures"
+              },
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching on laid paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Plate: 13.8 × 11 cm (5 7/16 × 4 5/16 in.)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Paper: 14.5 × 11.6 cm (5 11/16 × 4 9/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1770s"
+            ],
+            "name": [
+              "Tiepolo, Giovanni Domenico"
+            ],
+            "place": [
+              "Italy"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Italy"
+                }
+              }
+            ],
+            "object_type": [
+              "Figures (representations)",
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq45ba427dd-3717-4dd1-b76a-c6aa44e0a6ba",
+            "title": {
+              "label": "Title",
+              "content": "Raccolta di teste"
+            },
+            "record_ID": "chndm_1896-31-85",
+            "unit_code": "CHNDM",
+            "title_sort": "RACCOLTA DI TESTE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/6273",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-8D8FE3E79E7A2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9f615ad89-7241-4e1e-ac2c-93e29f265c66",
+                  "type": "Images",
+                  "idsId": "CHSDM-8D8FE3E79E7A2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-8D8FE3E79E7A2-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-8D8FE3E79E7A2-000001",
+                  "altTextAccessibility": "RACCOLTA DI TESTE",
+                  "extDescrAccessibility": "Old man with beard and wearing a turban in frontal view, his head turned to right. His open coat leaves visible a belt docrated with plaquettes.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8D8FE3E79E7A2-000001.jpg",
+                      "width": 1450,
+                      "height": 1798,
+                      "dimensions": "1450x1798"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8D8FE3E79E7A2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-8D8FE3E79E7A2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "9950d8937fe65963657bcd1f955a80073400185d",
+        "docSignature": "e427a288fc6e84f8b573ad035703bce7",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1769540882",
+        "version": "1769538334"
+      },
+      {
+        "id": "ld1-1643399887910-1643399888335-1",
+        "title": "Raccolta di teste",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1896-31-84",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1770–1774"
+              }
+            ],
+            "name": [
+              {
+                "label": "Print Maker",
+                "content": "Giovanni Domenico Tiepolo, Italian, 1727 – 1804"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Three quarter view of an old bearded man turned to right. The wide brim of his hat is turned up in front."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Italy"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1896-31-84"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "figures"
+              },
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching on laid paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Plate: 15 × 11.4 cm (5 7/8 × 4 1/2 in.)"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Paper: 15.4 × 12 cm (6 1/16 × 4 3/4 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1770s"
+            ],
+            "name": [
+              "Tiepolo, Giovanni Domenico"
+            ],
+            "place": [
+              "Italy"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Italy"
+                }
+              }
+            ],
+            "object_type": [
+              "Figures (representations)",
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq4296a602d-0469-413c-9fb2-11b3f5b24a59",
+            "title": {
+              "label": "Title",
+              "content": "Raccolta di teste"
+            },
+            "record_ID": "chndm_1896-31-84",
+            "unit_code": "CHNDM",
+            "title_sort": "RACCOLTA DI TESTE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/6272",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-19535447EF272-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9d5d194b4-74a2-4df2-9012-1a6fc89b1a6e",
+                  "type": "Images",
+                  "idsId": "CHSDM-19535447EF272-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-19535447EF272-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-19535447EF272-000001",
+                  "altTextAccessibility": "RACCOLTA DI TESTE",
+                  "extDescrAccessibility": "Three quarter view of an old bearded man turned to right. The wide brim of his hat is turned up in front.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-19535447EF272-000001.jpg",
+                      "width": 1509,
+                      "height": 1915,
+                      "dimensions": "1509x1915"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-19535447EF272-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-19535447EF272-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "a4fda436a18511a90faed2ca96605677bdada05f",
+        "docSignature": "32292a397a84e135b47b22d40ffd3d18",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1769540882",
+        "version": "1769538334"
+      },
+      {
+        "id": "ld1-1643399887910-1643399903452-0",
+        "title": "Raccolta di teste",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1931-67-106-2",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "ca. 1757"
+              }
+            ],
+            "name": [
+              {
+                "label": "Artist",
+                "content": "Giovanni Domenico Tiepolo, Italian, 1727 – 1804"
+              },
+              {
+                "label": "After",
+                "content": "Giovanni Battista Tiepolo, Italian, 1692 - 1770"
+              },
+              {
+                "label": "Print Maker",
+                "content": "Giovanni Domenico Tiepolo, Italian, 1727 – 1804"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Man in a turban with full beard, full face, looking right"
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "Italy"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Collection: Charles Toché | Given by The Misses Hewitt"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1931-67-106-2"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "portraits"
+              },
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching on white laid paper"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Platemark: 13.9 x 10.9 cm (5 1/2 x 4 5/16 in.)"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1750s",
+              "1760s"
+            ],
+            "name": [
+              "Tiepolo, Giovanni Battista",
+              "Tiepolo, Giovanni Domenico"
+            ],
+            "place": [
+              "Italy"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "Italy"
+                }
+              }
+            ],
+            "object_type": [
+              "Portraits",
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq40884581e-fa66-4df7-80e5-e85b9404a8ca",
+            "title": {
+              "label": "Title",
+              "content": "Raccolta di teste"
+            },
+            "record_ID": "chndm_1931-67-106-2",
+            "unit_code": "CHNDM",
+            "title_sort": "RACCOLTA DI TESTE",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/48181",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-74D9216556FD2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9ebd8c248-f211-4175-badb-5d61a632178c",
+                  "type": "Images",
+                  "idsId": "CHSDM-74D9216556FD2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-74D9216556FD2-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-74D9216556FD2-000001",
+                  "altTextAccessibility": "RACCOLTA DI TESTE",
+                  "extDescrAccessibility": "Man in a turban with full beard, full face, looking right",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-74D9216556FD2-000001.jpg",
+                      "width": 1966,
+                      "height": 2828,
+                      "dimensions": "1966x2828"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-74D9216556FD2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-74D9216556FD2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "1be77ca835708e854b706cc8d5e2afd7aab0b49e",
+        "docSignature": "e7fb170bcd1ac04d22deef6cdc7df73e",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1776336432",
+        "version": "1776332796"
+      },
+      {
+        "id": "ld1-1643399887910-1643399925083-1",
+        "title": "On the Test",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1954-89-2",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1859"
+              }
+            ],
+            "name": [
+              {
+                "label": "Print Maker",
+                "content": "Francis Seymour Haden, English, 1818–1910"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "Horizontal rectangle. The sun has sunk behind distant hills, which enclose a richly, thickly inhabited plain. In mid-distance a row of cottages are half hidden in trees reflected in the river. On the right are poplars, a rustic bridge, and a flock of sheep."
+              }
+            ],
+            "place": [
+              {
+                "label": "made in",
+                "content": "England"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Leo Wallerstein"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1954-89-2"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching"
+              },
+              {
+                "label": "Dimensions",
+                "content": "Plate line: H: OM151 W: OM225 Paper: H: OM198 W: OM275"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1850s"
+            ],
+            "name": [
+              "Haden, Francis Seymour"
+            ],
+            "place": [
+              "England"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "England"
+                }
+              }
+            ],
+            "object_type": [
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq45aa944a0-9d9e-4e8c-8e2f-335187e7b26e",
+            "title": {
+              "label": "Title",
+              "content": "On the Test"
+            },
+            "record_ID": "chndm_1954-89-2",
+            "unit_code": "CHNDM",
+            "title_sort": "ON THE TEST",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/111002",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-DAFEB4B3776B2-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc9c6251a64-f99b-4be7-a049-df57701d9ea3",
+                  "type": "Images",
+                  "idsId": "CHSDM-DAFEB4B3776B2-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-DAFEB4B3776B2-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-DAFEB4B3776B2-000001",
+                  "altTextAccessibility": "ON THE TEST",
+                  "extDescrAccessibility": "Horizontal rectangle. The sun has sunk behind distant hills, which enclose a richly, thickly inhabited plain. In mid-distance a row of cottages are half hidden in trees reflected in the river. On the right are poplars, a rustic bridge, and a flock of sheep.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DAFEB4B3776B2-000001.jpg",
+                      "width": 3765,
+                      "height": 2727,
+                      "dimensions": "3765x2727"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DAFEB4B3776B2-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-DAFEB4B3776B2-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "8d0b53a54e770b11b2d5aab665def8cf886c6d62",
+        "docSignature": "86442ce28bf7c76129cd34081d4c8af4",
+        "timestamp": "1663784057",
+        "lastTimeUpdated": "1776336432",
+        "version": "1776332796"
+      },
+      {
+        "id": "ld1-1643399887910-1643399900013-1",
+        "title": "LA TESTE DE L’ISLE DU PALAIS",
+        "unitCode": "CHNDM",
+        "type": "edanmdm",
+        "url": "edanmdm:chndm_1921-6-533-34",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1688–1703"
+              }
+            ],
+            "name": [
+              {
+                "label": "Print Maker",
+                "content": "Adam Perelle, French, 1638 – 1695"
+              },
+              {
+                "label": "Publisher",
+                "content": "Nicolas Langlois, French, 1640 - 1703"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Catalogue Status",
+                "content": "Research in Progress"
+              },
+              {
+                "label": "Description",
+                "content": "View of the Île de la Cité in Paris from the river Seine with the Notre Dame cathedral in the center, and a bridge to the left. Buildings, trees, and figures throughout. Barges and row boats on the river. The plate is titled with a description. Buildings and details are numbered with a legend below."
+              }
+            ],
+            "place": [
+              {
+                "label": "published in",
+                "content": "Paris, France"
+              },
+              {
+                "label": "place depicted",
+                "content": "Paris, France"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Cooper Hewitt, Smithsonian Design Museum Collection"
+              },
+              {
+                "label": "See more items in",
+                "content": "Drawings, Prints, and Graphic Design Department"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Purchased for the Museum by the Advisory Council"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Cooper Hewitt, Smithsonian Design Museum"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Accession Number",
+                "content": "1921-6-533-34"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "Print"
+              },
+              {
+                "label": "Type",
+                "content": "Print"
+              }
+            ],
+            "objectRights": [
+              {
+                "label": "Restrictions & Rights",
+                "content": "CC0"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Medium",
+                "content": "Etching on laid paper"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1700s",
+              "1680s"
+            ],
+            "name": [
+              "Perelle, Adam",
+              "Langlois, Nicolas"
+            ],
+            "place": [
+              "France",
+              "Paris"
+            ],
+            "geoLocation": [
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                },
+                "L5": {
+                  "type": "City",
+                  "content": "Paris"
+                }
+              },
+              {
+                "L2": {
+                  "type": "Country",
+                  "content": "France"
+                },
+                "L5": {
+                  "type": "City",
+                  "content": "Paris"
+                }
+              }
+            ],
+            "object_type": [
+              "Prints"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "http://n2t.net/ark:/65665/kq41356e756-d70d-4cd0-aa45-60d8a7b9b8f4",
+            "title": {
+              "label": "Title",
+              "content": "LA TESTE DE L’ISLE DU PALAIS"
+            },
+            "record_ID": "chndm_1921-6-533-34",
+            "unit_code": "CHNDM",
+            "title_sort": "LA TESTE DE L’ISLE DU PALAIS",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://collection.cooperhewitt.org/view/objects/asitem/id/36462",
+            "online_media": {
+              "media": [
+                {
+                  "id": "media:CHSDM-87B686F714532-000001",
+                  "guid": "http://n2t.net/ark:/65665/vc997dc7a6f-2314-4086-94a9-b586b2f67809",
+                  "type": "Images",
+                  "idsId": "CHSDM-87B686F714532-000001",
+                  "usage": {
+                    "access": "CC0"
+                  },
+                  "content": "https://ids.si.edu/ids/deliveryService?id=CHSDM-87B686F714532-000001",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=CHSDM-87B686F714532-000001",
+                  "altTextAccessibility": "LA TESTE DE L'ISLE DU PALAIS",
+                  "extDescrAccessibility": "View of the Île de la Cité in Paris from the river Seine with the Notre Dame cathedral in the center, and a bridge to the left. Buildings, trees, and figures throughout. Barges and row boats on the river. The plate is titled with a description. Buildings and details are numbered with a legend below.",
+                  "resources": [
+                    {
+                      "label": "High-resolution JPEG",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-87B686F714532-000001.jpg",
+                      "width": 5611,
+                      "height": 4724,
+                      "dimensions": "5611x4724"
+                    },
+                    {
+                      "label": "Screen Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-87B686F714532-000001_screen"
+                    },
+                    {
+                      "label": "Thumbnail Image",
+                      "url": "https://ids.si.edu/ids/download?id=CHSDM-87B686F714532-000001_thumb"
+                    }
+                  ]
+                }
+              ],
+              "mediaCount": 1
+            },
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "39250e60b424e97763902ed1632d824444444b35",
+        "docSignature": "7530a24e5731d29da0ef99a46f609bbd",
+        "timestamp": "1663784056",
+        "lastTimeUpdated": "1769540882",
+        "version": "1769538334"
+      }
+    ],
+    "facets": {},
+    "rowCount": 25,
+    "message": "content found"
+  }
+}

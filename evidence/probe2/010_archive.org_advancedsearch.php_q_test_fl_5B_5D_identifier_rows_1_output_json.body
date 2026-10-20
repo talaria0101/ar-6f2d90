@@ -1,0 +1,1 @@
+{"responseHeader":{"status":0,"QTime":62,"params":{"query":"text:test OR text:test OR text__reviews:test","qin":"test","fields":"identifier","wt":"json","rows":1,"start":0}},"response":{"numFound":993785,"start":0,"docs":[{"identifier":"ARCHIVEIT-2356-TEST_SAVED-JOB690488-00000"}]}}

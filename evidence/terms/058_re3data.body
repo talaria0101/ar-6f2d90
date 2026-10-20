@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="r3d-html ">
+    <head>
+                <title> | re3data.org</title>
+        
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+                <link rel="search" type="application/opensearchdescription+xml" href="/api/opensearch/opensearch.xml" title="re3data.org search">
+        
+                                <link rel="stylesheet" href="/build/588.00ce8873.css"><link rel="stylesheet" href="/build/219.2a3d4eb6.css"><link rel="stylesheet" href="/build/frontend.b5bcc6c3.css">
+        
+        <link rel="stylesheet" href="/bundles/nelmioapidoc/swagger-ui/swagger-ui.css">
+        <link rel="stylesheet" href="/bundles/nelmioapidoc/style.css">
+        <style>
+            .information-container {
+                display: none;
+            }
+            .r3d-body {
+                background-color: #fff;
+            }
+            .opblock.opblock-get .opblock-summary-method {
+               background-color: #289cd3 !important;
+            }
+        </style>
+
+                                    <script src="/build/runtime.be063f77.js" defer></script><script src="/build/667.b1829ec9.js" defer></script><script src="/build/588.3e0a8c6f.js" defer></script><script src="/build/frontend.233f0f30.js" defer></script>
+        
+        <script src="/bundles/nelmioapidoc/swagger-ui/swagger-ui-bundle.js"></script>
+        <script src="/bundles/nelmioapidoc/swagger-ui/swagger-ui-standalone-preset.js"></script>
+                
+    <script id="swagger-data" type="application/json">{"spec":{"swagger":"2.0","info":{"title":"re3data - registry of research data repositories","version":"1.0.0"},"paths":{"/api/v40/repositories":{"get":{"summary":"Returns an index list of repositories","description":"The easiest way to build a filter query is to use the search and facetting at\n\u003Ca href=\"https://www.re3data.org/search\"\u003Ere3data.org\u003C/a\u003E, apply the desired\nfilters, and then copy the query string from the browser URL directly to this endpoint.","produces":["application/xml"],"parameters":[{"name":"query","in":"query","required":false,"description":"Filter by search term, e.g. 'WDCC'","type":"string"},{"name":"aidSystems[]","in":"query","required":false,"description":"Filter by author identifier systems, e.g. 'ORCID'","type":"string"},{"name":"apis[]","in":"query","required":false,"description":"Filter by APIs, e.g. 'SPARQL'","type":"string"},{"name":"certificates[]","in":"query","required":false,"description":"Filter by certificates, e.g. 'CoreTrustSeal'","type":"string"},{"name":"citationReferences[]","in":"query","required":false,"description":"Filter by citation references, e.g. 'SCOPUS'","type":"string"},{"name":"contentType40[]","in":"query","required":false,"description":"Filter by content types (schema 4.0), e.g. 'software'","type":"string"},{"name":"countries[]","in":"query","required":false,"description":"Filter by institution countries, e.g. 'NZL'","type":"string"},{"name":"dataAccess[]","in":"query","required":false,"description":"Filter by data access, e.g. 'open'","type":"string"},{"name":"dataAccessRestrictions[]","in":"query","required":false,"description":"Filter by data access restrictions, e.g. 'feeRequired'","type":"string"},{"name":"databaseAccess[]","in":"query","required":false,"description":"Filter by database access, e.g. 'restricted'","type":"string"},{"name":"databaseAccessRestrictions[]","in":"query","required":false,"description":"Filter by database access restrictions, e.g. 'registration'","type":"string"},{"name":"databaseLicenses[]","in":"query","required":false,"description":"Filter by database licenses, e.g. 'CC0'","type":"string"},{"name":"dataLicenses[]","in":"query","required":false,"description":"Filter by data licenses, e.g. 'BSD'","type":"string"},{"name":"dataUploads[]","in":"query","required":false,"description":"Filter by data upload, e.g. 'closed'","type":"string"},{"name":"dataUploadRestrictions[]","in":"query","required":false,"description":"Filter by data upload restrictions, e.g. 'institutional membership'","type":"string"},{"name":"enhancedPublication[]","in":"query","required":false,"description":"Filter by enhanced publication, e.g. 'yes'","type":"string"},{"name":"institutionType[]","in":"query","required":false,"description":"Filter by institution type, e.g. 'commercial'","type":"string"},{"name":"keywords[]","in":"query","required":false,"description":"Filter by keywords, e.g. 'FAIR'","type":"string"},{"name":"metadataStandard40[]","in":"query","required":false,"description":"Filter by metadata standards (schema 4.0), e.g. 'DCAT-AP'","type":"string"},{"name":"metrics[]","in":"query","required":false,"description":"Filter by metrics, e.g. 'Altmetric'","type":"string"},{"name":"pidSystems[]","in":"query","required":false,"description":"Filter by persistent identifier systems, e.g. 'DOI'","type":"string"},{"name":"profiles[]","in":"query","required":false,"description":"Filter by profiles, e.g. 'Helmholtz Association'","type":"string"},{"name":"providerTypes[]","in":"query","required":false,"description":"Filter by provider type, e.g. 'serviceProvider'","type":"string"},{"name":"qualityManagement[]","in":"query","required":false,"description":"Filter by quality management, e.g. 'yes'","type":"string"},{"name":"repositoryLanguages[]","in":"query","required":false,"description":"Filter by repository languages, e.g. 'fin'","type":"string"},{"name":"responsibilityTypes[]","in":"query","required":false,"description":"Filter by institution responsibility types, e.g. 'technical'","type":"string"},{"name":"software[]","in":"query","required":false,"description":"Filter by software, e.g. 'CKAN'","type":"string"},{"name":"subjects[]","in":"query","required":false,"description":"Filter by subjects (schema 4.0), e.g. '11204'","type":"string"},{"name":"syndications[]","in":"query","required":false,"description":"Filter by syndications, e.g. 'RSS'","type":"string"},{"name":"types[]","in":"query","required":false,"description":"Filter by repository types, e.g. 'institutional'","type":"string"},{"name":"versioning[]","in":"query","required":false,"description":"Filter by versioning capabilities, e.g. 'yes'","type":"string"}],"responses":{"200":{"description":"Returned when the list could be successfully generated."},"404":{"description":"Returned when an error occurred. Please send a bug report in this case."},"500":{"description":"Returned when an error occurred. Please send a bug report in this case."}},"tags":["Version 4.0"]}},"/api/v40/repository/{id}":{"get":{"summary":"Returns a repository description","produces":["application/xml"],"parameters":[{"name":"id","in":"path","required":true,"description":"The re3data identifier of the repository, e.g. 'r3d100000001'","type":"string"}],"responses":{"200":{"description":"Returned when the repository was found."},"404":{"description":"Returned when the repository could not be found."},"500":{"description":"Returned when an error occurred. Please send a bug report in this case."}},"tags":["Version 4.0"]}},"/api/beta/repositories":{"get":{"summary":"Returns a index list of repositories","description":"A GET-Request will return a an XML-Document following the HATEOAS-Principles\n\nExample:\u003Cbr\u003E\n&lt;list&gt;\u003Cbr\u003E\n     &nbsp;&lt;repository&gt;\u003Cbr\u003E\n          &nbsp;&nbsp;&lt;id&gt;r3d100000000&lt;/id&gt;\u003Cbr\u003E\n          &nbsp;&nbsp;&lt;doi&gt;https://doi.org/10.17616/R3D&lt;/doi&gt;\u003Cbr\u003E\n          &nbsp;&nbsp;&lt;link href=&quot;/api/beta/repository/r3d100000000&quot; rel=&quot;self&quot;/&gt;\u003Cbr\u003E\n     &nbsp;&lt;/repository&gt;\u003Cbr\u003E\n&lt;/list&gt;\u003Cbr\u003E\n\nYou can parse the list and follow the links pointing to the repositorios\nto retrieve a detailed representation.\n\nIn addition to that it is possible to filter the list via GET-Parameters.\nThe filter parameters (except the \"query\") are designed as arrays so you\ncan apply them multiple times.\n\nHere is an example in which all repositories in Canada within the life and\nnatural sciences providing DOIs are queried \u003Ca href=\"https://www.re3data.org/api/beta/repositories?query=&countries%5B%5D=CAN&subjects%5B%5D=2%20Life%20Sciences&subjects%5B%5D=3%20Natural%20Sciences&pidSystems%5B%5D=DOI\"\u003EExample \u003C/a\u003E","produces":["application/xml"],"parameters":[{"name":"query","in":"query","required":false,"description":"Filter by search term, e.g. 'biosharing'","type":"string"},{"name":"aidSystems[]","in":"query","required":false,"description":"Filter by the author identifier systems, e.g. 'ORCID'","type":"string"},{"name":"apis[]","in":"query","required":false,"description":"Filter by APIs, e.g. 'SPARQL'","type":"string"},{"name":"certificates[]","in":"query","required":false,"description":"Filter by certificates, e.g. 'DSA'","type":"string"},{"name":"contentTypes[]","in":"query","required":false,"description":"Filter by content types, e.g. 'Raw data'","type":"string"},{"name":"countries[]","in":"query","required":false,"description":"Filter by institution countries, e.g. 'CAN'","type":"string"},{"name":"dataAccess[]","in":"query","required":false,"description":"Filter by data access , e.g. 'open'","type":"string"},{"name":"dataAccessRestrictions[]","in":"query","required":false,"description":"Filter by data access restrictions, e.g. 'feeRequired'","type":"string"},{"name":"databaseAccess[]","in":"query","required":false,"description":"Filter by database access, e.g. 'restricted'","type":"string"},{"name":"databaseAccessRestrictions[]","in":"query","required":false,"description":"Filter by database access, e.g. 'registration'","type":"string"},{"name":"databaseLicenses[]","in":"query","required":false,"description":"Filter by database licenses, e.g. 'Public Domain'","type":"string"},{"name":"dataLicenses[]","in":"query","required":false,"description":"Filter by data licenses, e.g. 'CC0'","type":"string"},{"name":"dataUploads[]","in":"query","required":false,"description":"Filter by data upload, e.g. 'open'","type":"string"},{"name":"dataUploadRestrictions[]","in":"query","required":false,"description":"Filter by data upload restrictions, e.g. 'institutional membership'","type":"string"},{"name":"enhancedPublication[]","in":"query","required":false,"description":"Filter by enhanced publication, e.g. 'yes'","type":"string"},{"name":"institutionType[]","in":"query","required":false,"description":"Filter by the institution types, e.g. 'commercial'","type":"string"},{"name":"keywords[]","in":"query","required":false,"description":"Filter by keywords, e.g. 'DNA'","type":"string"},{"name":"metadataStandards[]","in":"query","required":false,"description":"Filter by metadata standards, e.g. 'DCAT - Data Catalog Vocabulary'","type":"string"},{"name":"pidSystems[]","in":"query","required":false,"description":"Filter by persistent identifier systems, e.g. 'DOI'","type":"string"},{"name":"providerTypes[]","in":"query","required":false,"description":"Filter by provider type, e.g. 'dataProvider'","type":"string"},{"name":"qualityManagement[]","in":"query","required":false,"description":"Filter by quality management, e.g. 'yes'","type":"string"},{"name":"repositoryLanguages[]","in":"query","required":false,"description":"Filter by repository languages, e.g. 'deu'","type":"string"},{"name":"responsibilityTypes[]","in":"query","required":false,"description":"Filter by institutions responsibility types, e.g. 'funding'","type":"string"},{"name":"software[]","in":"query","required":false,"description":"Filter by software, e.g. 'CKAN'","type":"string"},{"name":"subjects[]","in":"query","required":false,"description":"Filter by subjects, e.g. '104 Linguistics'","type":"string"},{"name":"syndications[]","in":"query","required":false,"description":"Filter by syndications, e.g. 'RSS'","type":"string"},{"name":"types[]","in":"query","required":false,"description":"Filter by repository types, e.g. 'disciplinary'","type":"string"},{"name":"versioning[]","in":"query","required":false,"description":"Filter by versioning capabilities, e.g. 'yes'","type":"string"}],"responses":{"200":{"description":"Returned when the list could be successfully generated."},"404":{"description":"Returned when error occured. Please send a bug report in this case."},"500":{"description":"Returned when error occured. Please send a bug report in this case."}},"tags":["Beta"]}},"/api/beta/repository/{id}":{"get":{"summary":"Returns a repository description","produces":["application/xml"],"parameters":[{"name":"id","in":"path","required":true,"type":"string"}],"responses":{"200":{"description":"Returned when the list could be successfully generated."},"404":{"description":"Returned when repository could not be found."},"500":{"description":"Returned when error occured. Please send a bug report in this case."}},"tags":["Beta"]}},"/api/v1/repositories":{"get":{"summary":"Returns a index list of repositories","description":"A GET-Request will return a an XML-Document following the HATEOAS-Principles\n\nExample:\u003Cbr\u003E\n&lt;list&gt;\u003Cbr\u003E\n     &nbsp;&lt;repository&gt;\u003Cbr\u003E\n          &nbsp;&nbsp;&lt;id&gt;r3d100000000&lt;/id&gt;\u003Cbr\u003E\n          &nbsp;&nbsp;&lt;doi&gt;https://doi.org/10.17616/R3D&lt;/doi&gt;\u003Cbr\u003E\n          &nbsp;&nbsp;&lt;link href=&quot;/api/beta/repository/r3d100000000&quot; rel=&quot;self&quot;/&gt;\u003Cbr\u003E\n     &nbsp;&lt;/repository&gt;\u003Cbr\u003E\n&lt;/list&gt;\u003Cbr\u003E\n\nYou can parse the content and follow the links related to the repositorios\nto retrieve a detailed representation.","produces":["application/xml"],"responses":{"200":{"description":"Returned when the list could be successfully generated."},"404":{"description":"Returned when error occured. Please send a bug report in this case."},"500":{"description":"Returned when error occured. Please send a bug report in this case."}},"tags":["Version 1"]}},"/api/v1/repository/{id}":{"get":{"summary":"Returns a repository description","produces":["application/xml"],"parameters":[{"name":"id","in":"path","required":true,"type":"string"}],"responses":{"200":{"description":"Returned when the list could be successfully generated."},"404":{"description":"Returned when repository could not be found."},"500":{"description":"Returned when error occured. Please send a bug report in this case."}},"tags":["Version 1"]}},"/api/opensearch/suggest":{"get":{"summary":"Returns suggestions for open search","parameters":[{"name":"search","in":"query","required":false,"description":"Search string","type":"string"}],"responses":{"200":{"description":"Returned when successful"}},"tags":["OpenSearch"]}},"/api/opensearch/opensearch.xml":{"get":{"summary":"Returns XML for open search","responses":{"200":{"description":"Returned when successful"}},"tags":["OpenSearch"]}}},"tags":[{"name":"Version 4.0","description":"Current API based on the re3data metadata schema 4.0"},{"name":"OpenSearch","description":"OpenSearch interface"},{"name":"Beta","description":"Deprecated"},{"name":"Version 1","description":"Deprecated"}]}}</script>
+    </head>
+    <body class="r3d-body">
+
+            <section id="r3d-content">
+                <!-- Header -->
+                <nav class="navbar navbar-default navbar-fixed-top r3d-navbar ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-left" href="/">
+                <img alt="Brand" src="/images/img/re3datalogo_nosubtext_black.png">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#r3d-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+                <div id="r3d-menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/search">Search</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/browse/by-subject/">Browse by subject</a>
+                        </li>
+                        <li>
+                            <a href="/browse/by-country/">Browse by country</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/suggest">Suggest</a>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/schema">Schema 4.0</a></li>
+                        <li><a href="/schema/3-1">Schema 3.1</a></li>
+                        <li><a href="/schema/3-0">Schema 3.0</a></li>
+                        <li><a href="/schema/2-2">Schema 2.2</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/api/doc">API</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/data">Data</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/analytics">Analytics</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/editorialboard">Editorial Board</a></li>
+                        <li><a href="/workinggroup">Working Group</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/publications">Publications</a></li>
+                        <li><a href="/about">About</a></li>
+                                            </ul>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+                <li>
+
+                </li>
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+                <!-- Pagecontent -->
+                    <div class="container">
+    <div class="col-sm-10 col-sm-offset-1">
+        <h1>API Documentation</h1>
+        <p>
+            This documentation is intended for developers to access the content of 
+            re3data.org.
+        </p>
+        <p>
+            re3data.org supports the retrievial of its content via
+            API. Currently the platform offers a simple open search 
+            implementation as well as a first version of a RESTful interface.
+        </p>
+        <p>
+            Despite having HATEOAS in focus for the RESTful interface, 
+            the different APIs are versioned via URL and not via Accept-Header. 
+            This should make it easier to consume the data, since the 
+            client can be less smart.
+            <br><br>
+            The interfaces can be accessed via
+            <br>
+            <code>https://www.re3data.org/api/&lt;api identifier&gt;</code>                
+            <br>
+        </p>                                
+        <p>
+            Feedback and suggestions, especially bug reports and feature requests about the API are highly appreciated. 
+            Feel free to send an email to <a href="mailto:info@re3data.org">info@re3data.org</a>
+        </p>                
+    </div>
+</div>    <div/>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+            <defs>
+                <symbol viewBox="0 0 20 20" id="unlocked">
+                    <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+                </symbol>
+                <symbol viewBox="0 0 20 20" id="locked">
+                    <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"></path>
+                </symbol>
+                <symbol viewBox="0 0 20 20" id="close">
+                    <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"></path>
+                </symbol>
+                <symbol viewBox="0 0 20 20" id="large-arrow">
+                    <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"></path>
+                </symbol>
+                <symbol viewBox="0 0 20 20" id="large-arrow-down">
+                    <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"></path>
+                </symbol>
+                <symbol viewBox="0 0 24 24" id="jump-to">
+                    <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"></path>
+                </symbol>
+                <symbol viewBox="0 0 24 24" id="expand">
+                    <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"></path>
+                </symbol>
+            </defs>
+        </svg>
+                <div id="swagger-ui" class="api-platform"></div>
+                            
+        
+        <script src="/bundles/nelmioapidoc/swagger-ui/swagger-ui-bundle.js"></script>
+        <script src="/bundles/nelmioapidoc/swagger-ui/swagger-ui-standalone-preset.js"></script>
+                <script src="/bundles/nelmioapidoc/init-swagger-ui.js"></script>
+                    <!-- Footer -->
+                <section id="r3d-footer" class="container-fluid">
+            <div class="col-md-2 pull-left">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <a href="/legalnotice">Legal notice / Impressum</a>
+                    </li>
+                    <li>
+                        <a href="/terms">Terms of Use & Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <div class="rss-atom-buttons" style="margin-top: 5px;">
+    <a href="/subscribe?format=rss" class="text-center" style="text-decoration-line: none;" title="Subscribe via RSS" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1"/>
+        </svg>
+    </a>
+
+    <a href="/subscribe?format=atom" class="text-center" style="text-decoration-line: none;" title="Subscribe via Atom" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+        </svg>
+    </a>
+</div>                    </li>
+                </ul>
+
+            </div>
+            <div  class="col-md-2">
+            </div>
+            <div  class="col-md-8">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+                            <img src="https://i.creativecommons.org/p/zero/1.0/80x15.png" style="border-style: none;" alt="CC0" />
+                        </a>
+                        To the extent possible under law,
+                        <a rel="dct:publisher" href="https://www.re3data.org">
+                            re3data.org
+                        </a>
+                        has waived all copyright and related or neighboring rights to
+                        the database entries of re3data.org.
+                    </li>
+                    <li>
+                        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+                            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+                        </a>
+                        Except where otherwise noted, content on this site is licensed under a
+                        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+                            Creative Commons Attribution 4.0 International License
+                        </a>.
+                    </li>
+                    <li style="padding-top: 10px;">
+                        <b>Cite this service:</b> re3data.org - Registry of Research Data Repositories. https://doi.org/10.17616/R3D last accessed: 2026-10-20
+                    </li>
+                </ul>
+            </div>
+</section>            </section>
+
+                <img style="width: 0; height: 0; display: none;" src="/images/img/ajax-loader.gif" alt=""/>
+    </body>
+</html>

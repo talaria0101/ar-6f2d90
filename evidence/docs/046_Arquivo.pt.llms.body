@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt">
+    
+    <head>
+    <!-- starts global document: <head>...</head> -->
+    
+<title>Página não encontrada (404) - Arquivo.pt</title>
+  
+<link rel="icon" href="/img/Favicon.ico" type="image/x-icon">
+<meta charset="utf-8" />
+<meta name="Keywords" content="Web, archive, search, portuguese, Portugal, homepage" />
+<meta name="Description" content="A página procurada não foi encontrada no Arquivo.pt" />
+<!-- starts social media meta data -->
+<meta property="og:title" content="Página não encontrada (404) - Arquivo.pt"/>
+<meta property="og:description" content="A página procurada não foi encontrada no Arquivo.pt"/>
+<meta property="og:image" content="img/logoFace.png"/>
+<meta property="og:image:alt" content="Arquivo.pt">
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
+<meta property="og:type" content="website" />
+<!-- ends social media meta data -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- starts javascript files, Google Font and CSS links -->
+
+
+<!-- starts css styles links -->
+
+<link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/css/styles-header.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/css/styles-footer.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/vendor/css/jquery-ui.min.css" media="screen">
+<!-- starts roboto font links (served locally via @fontsource/roboto) -->
+<link rel="stylesheet" href="/vendor/fonts/roboto/300.css">
+<link rel="stylesheet" href="/vendor/fonts/roboto/400.css">
+<link rel="stylesheet" href="/vendor/fonts/roboto/500.css">
+<link rel="stylesheet" href="/vendor/fonts/roboto/700.css">
+<!-- ends css styles links -->
+
+<!-- starts javascript scripts and links -->
+
+<!-- starts jquery and slider css styles links -->
+<script src="/vendor/js/jquery-1.12.4.js"></script>
+<script src="/vendor/js/jquery-ui.js"></script>
+<!-- ends jquery and slider -->
+
+<!-- add touch support to jQuery-->
+<script src="/vendor/js/jquery.ui.touch-punch.min.js"></script>
+<!-- ends touch support -->
+
+<!-- starts JQuery modal -->
+<script src="/vendor/js/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="/vendor/css/jquery.modal.min.css" />
+<script src="/js/jquery.modal.override.js"></script>
+<link rel="stylesheet" href="/css/jquery.modal.override.css" />
+<!-- ends JQuery modal -->
+
+<!-- starts JQuery anypicker -->
+<script src="/vendor/js/anypicker.min.js"></script>
+<link rel="stylesheet" href="/vendor/css/anypicker.min.css" />
+<link rel="stylesheet" href="/vendor/css/anypicker-ios.css" />
+<!-- ends JQuery anypicker -->
+
+<!-- starts JQuery inputmask plugin -->
+<script src="/vendor/js/jquery.inputmask.bundle.js"></script>
+<!-- ends JQuery inputmask plugin -->
+
+<!-- starts export library -->
+<script src="/vendor/js/xlsx.full.min.js"></script>
+<!-- ends export library -->
+
+<!-- starts Awesome fonts -->
+<script src="/vendor/js/font_awesome.js"></script>
+<!-- ends Awesome fonts -->
+
+<!-- starts Arquivo.pt js functions -->
+<script src="/js/functions.js"></script>
+<!-- ends js functions -->
+
+<!-- Add regional terms to imported libraries -->
+<script>
+
+	const lang = 'pt';
+    
+    
+    
+    // jquery Datepicker
+    jQuery.datepicker.regional.pt = {
+		closeText: "Fechar",
+		prevText: "Anterior",
+		nextText: "Seguinte",
+		currentText: "Hoje",
+		monthNames: ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],
+		monthNamesShort: ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],
+		dayNames: ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"],
+		dayNamesShort: ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],
+		dayNamesMin: ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],
+		weekHeader: "Sem",
+		dateFormat: "dd/mm/yy",
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ""
+	};
+
+    //mobile datepicker
+    jQuery.AnyPicker.i18n["pt"] = jQuery.extend(jQuery.AnyPicker.i18n["pt"], {
+
+    	// Common
+
+    	headerTitle: "Selecionar",
+		setButton: "OK",
+		clearButton: "Limpar",
+		nowButton: "Agora",
+		cancelButton: "Cancelar",
+		dateSwitch: "Data",
+		timeSwitch: "Hora",
+
+    	// DateTime
+
+        veryShortDays: ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],
+		shortDays: ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"],
+		fullDays: ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"],
+		shortMonths: ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],
+		fullMonths: ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],
+		numbers: ["0","1","2","3","4","5","6","7","8","9"],
+		meridiem: 
+		{
+			a: ["a","p"],
+			aa: ["am","pm"],
+			A: ["A","P"],
+			AA: ["AM","PM"]
+		},
+		componentLabels: {
+			date: "Data",
+			day: "Dia",
+			month: "Mês",
+			year: "Ano",
+			hours: "Horas",
+			minutes: "Minutos",
+			seconds: "Segundos",
+			meridiem: "Meio-dia"
+		}
+	
+    });
+    
+	jQuery.datepicker.setDefaults(jQuery.datepicker.regional.pt);
+
+	//global translations
+	const translations = {
+		"modal-datepicker": {"header":{"start":{"pt":"Desde:","en":"From:"},"end":{"pt":"Até:","en":"To:"}},"datehint":{"pt":"dd/mm/aaaa","en":"dd/mm/yyyy"}},
+	};
+</script>
+<!-- General initializations needed for the Arquivo.pt website -->
+<script src="/js/init.js"></script>
+
+
+
+
+<!-- starts js datepicker -->
+<script src="/js/datepicker.js"></script>
+<!-- ends js datepicker -->
+
+
+
+
+<!-- starts Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CV5BP3MR9J"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+function ga4(){dataLayer.push(arguments);}
+ga4('js', new Date());
+ga4('config', 'G-CV5BP3MR9J');
+
+(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'gua');
+	gua('create', 'UA-21825027-1', 'auto');
+	gua('send', 'pageview');
+function gtag(){
+    ga4(...arguments);
+    
+    if (arguments[0] == 'event' && arguments[1] == 'page_view'){
+        gua('send', 'pageview');
+        return;
+    }
+
+    if (arguments[0] == 'event'){
+        let category = arguments[1] || '';
+        let o = arguments[2];
+        let action = o?.type || o?.action || '';
+        let label = o?.label || o?.outputFileExtension || o?.value || o?.query || '';
+        gua('send', 'event', category, action, label);
+        return;
+    }
+}
+
+</script>
+<!-- ends Google Analytics 4-->
+
+<!-- ends javascript scripts and links -->
+
+<!-- Nova property google analytics:  --><!-- ends javascripts files, Google Font and CSS links -->    <!-- ends global document: <head>...</head> -->
+    <link rel="stylesheet" type="text/css" href="/css/styles-arquivo-404.css" media="screen">
+    </head>
+
+    <!-- starts document body content -->
+    <body id="arquivo-404" class="arquivo-404-cl">
+
+        <!-- starts skip to main content -->
+        <a href="#main-content" id="skip-navigation-links" class="button" role="main" aria-label="skip navigation links and jump to main content">Saltar para o conteúdo principal</a>        <!-- ends skip to main content -->
+
+        <!-- starts 404 main content -->
+        <script>
+        function initArquivo404(){
+            ARQUIVO_NOT_FOUND_404
+                .message('<a href=\'{archivedURL}\'>Visite uma versão arquivada da página de {date}</a>')
+                .messageElementId('arquivo404-message')
+                .call();
+        }
+        </script>
+        <script type="text/javascript" src="/arquivo404.js" async defer onload="initArquivo404()"></script>
+
+        <main> 
+            <a id="logo-arquivo-link" href="/"><img id="logo-arquivo" src="/img/logoFace.png" alt="Arquivo.pt"></a>
+            <h3>Não conseguimos encontrar a página.</h3>
+            <p>Pedimos desculpa por este imprevisto.</p>
+            <a href="https://sobre.arquivo.pt/pt/contacto/">Avise-nos do problema</a>
+            <a href="/?l=pt">Voltar à página principal</a>
+            <div id="arquivo404-message" style="margin-top: 4px;"></div>
+        </main>
+        <!-- ends 404 main content -->
+
+    </body>
+    <!-- ends document body content -->
+
+</html>

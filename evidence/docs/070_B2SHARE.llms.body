@@ -1,0 +1,334 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+    <meta name="generator" content="InvenioRDM 14.0"/>
+
+    
+    
+    
+      
+      
+      <title>Page not found | B2SHARE</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico"/>
+          <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-touch-icon-120.png"/>
+          <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-touch-icon-152.png"/>
+          <link rel="apple-touch-icon" sizes="167x167" href="/static/apple-touch-icon-167.png"/>
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon-180.png"/>
+      <link rel="stylesheet" href="/static/dist/css/3526.4cae3bd6be3d45b8be8f.css" />
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  <body data-invenio-config='{"isMathJaxEnabled": ""}'  itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".scrollspy-target">
+      <a id="skip-to-main" class="ui button primary ml-5 mt-5 skip-link" href="#main">Skip to main</a>
+      <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    
+
+<div>
+    <header class="theme header">
+
+        <div class="primary-header">
+            <div class="ui container invenio-header-container">
+                <div class="eight wide column left middle aligned">
+                    
+                    <a rel="noreferrer noopener" href="https://eudat.eu" target="_blank"
+                        class="whitelink">Go to EUDAT
+                        website</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="outer-navbar">
+            <div class="ui container invenio-header-container">
+                <nav id="invenio-nav" class="ui inverted menu borderless p-0">
+                    <div class="item logo p-0">
+                        <a class="logo-link" href="https://b2share.eudat.eu/">
+                            <img class="ui image rdm-logo" src="/static/images/B2SHARE_logo_no_background.png"
+                                alt="B2SHARE home" />
+                        </a>
+                    </div>
+
+                    <div id="rdm-burger-toggle">
+                        <button id="rdm-burger-menu-icon" class="ui button transparent" aria-label="Menu"
+                            aria-haspopup="menu" aria-expanded="false" aria-controls="invenio-menu">
+                            <span class="navicon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <nav id="invenio-menu" aria-labelledby="rdm-burger-menu-icon"
+                        class="ui fluid menu borderless mobile-hidden">
+                        <button id="rdm-close-burger-menu-icon" class="ui button transparent"
+                            aria-label="Close menu">
+                            <span class="navicon" aria-hidden="true"></span>
+                        </button>
+
+    
+    
+    
+      <div class="item p-0 search-bar">
+        <div id="header-search-bar" data-options='[{"key": "records", "text": "All B2SHARE", "value": "/search"}]'>
+          <div class="ui fluid search">
+            <div class="ui icon input">
+              <input
+                autocomplete="off"
+                aria-label="Search records"
+                placeholder="Search records..."
+                type="text"
+                tabindex="0"
+                class="prompt"
+                value=""
+              >
+              <button class="ui icon button right-floated search" aria-label="Search">
+                <i aria-hidden="true" class="search icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                        <div class="right menu item">
+
+                            <!-- Help -->
+                            
+                            <div class="item">
+                                <a href="/">
+                                    Home
+                                </a>
+                            </div>
+                            
+                            <div class="item active">
+                                <a href="/help-page">
+                                    Help
+                                </a>
+                            </div>
+                            
+
+                            <!-- Communities -->
+                            <div class="item">
+                                <a href="/communities-search">Communities</a>
+                            </div>
+    <form>
+      <a
+        href="/login/?next=/llms.txt"
+        class="ui button auth-button" aria-busy="false" aria-live="polite" aria-label="Log in"
+      >
+        <i class="sign-in icon auth-icon" aria-hidden="true"></i>
+        Log in
+      </a>
+      
+    </form>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
+        </div>
+        
+        
+    
+      
+    
+    
+    </header>
+</div>
+
+  <main id="main">
+    <div class="invenio-page-body">
+<div class="ui grid container error-page">
+<div class="ui divider hidden"></div>
+  <div class="row">
+    <div class="column">
+      
+  <h1><i class="bolt icon"></i> Page not found</h1>
+  <p>The page you are looking for could not be found.</p>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </main>
+    <footer id="rdm-footer-element">
+        
+
+<div class="footer-top">
+    <div class="ui container app-rdm-footer">
+        <div class="ui grid app-rdm-footer">
+            <div class="rdm-footer five wide tablet two wide computer column">
+                <h2 class="ui small header">About B2SHARE</h2>
+                
+                <p>
+                    <a href="https://eudat.eu/what-eudat" rel="noopener noreferrer" target="_blank">About EUDAT
+                        <i class="external alternate icon"></i>
+                        
+                        </a>
+                </p>
+                
+                <p>
+                    <a href="https://b2share.eudat.eu" rel="noopener noreferrer" target="_blank">Production site
+                        <i class="external alternate icon"></i>
+                        
+                        </a>
+                </p>
+                
+                <p>
+                        <a href="/help-page">Help
+                            
+                        </a>
+                </p>
+                
+                <p>
+                    <a href="https://docs.eudat.eu/b2share/service-description/" rel="noopener noreferrer" target="_blank">Service Description
+                        <i class="external alternate icon"></i>
+                        
+                        </a>
+                </p>
+                
+            </div>
+            <div class="rdm-footer five wide tablet two wide computer column">
+                <h2 class="ui small header">Get involved & Contact</h2>
+                
+                <p>
+                    
+                    <a href="https://eudat.eu/contact-support-request?service=B2SHARE" rel="noopener noreferrer" target="_blank">Contact
+                        <i class="external alternate icon"></i>
+                        
+                        </a>
+                </p>
+                
+                <p>
+                    
+                    <a href="https://docs.eudat.eu/b2share/overview/" rel="noopener noreferrer" target="_blank">Documentation
+                        <i class="external alternate icon"></i>
+                        
+                        </a>
+                </p>
+                
+            </div>
+            <div class="rdm-footer five wide tablet two wide computer column">
+                <h2 class="ui small header">Terms of use</h2>
+                
+                <p>
+                    
+                    <a href="https://www.eudat.eu/eudat-cdi-aup" rel="noopener noreferrer" target="_blank">Acceptable use policy
+                        <i class="external alternate icon"></i>
+                        
+                        </a>
+                </p>
+                
+                <p>
+                    
+                    <a href="https://csc-eudat.pages.eudat.eu/privacy-policy/CDI_files/CDI-B2SHARE_privacy_notice_en/" rel="noopener noreferrer" target="_blank">Data privacy statement
+                        <i class="external alternate icon"></i>
+                        
+                        </a>
+                </p>
+                
+                <p>
+                    
+                        <a href="/community-agreement">Community agreement
+                            
+                        </a>
+                </p>
+                
+                <p>
+                    
+                        <a href="/terms-of-use">Terms of use
+                            
+                        </a>
+                </p>
+                
+            </div>
+            <div class="four wide column">
+                
+            </div>
+            <div class="six wide column right aligned">
+                <img class="rdm-logo" src="/static/images/logo_eudat_cdi.png"
+                    alt="B2SHARE home" />
+                <p>&copy; 2025 EUDAT Collaborative data infrastructures</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+        <div class="footer-bottom sub-footer">
+    <div class="ui container">
+        <div class="ui grid">
+            <div class="eight wide column left middle aligned">
+                
+                <img src="/static/images/eu.jpg" class="eu-logo" alt="Flag of EU" />
+                
+                
+                <img src="/static/images/eosc-hub-g.png" class="eu-logo" alt="EOSC Hub logo" />
+                
+                
+                <p>B2SHARE is co-funded by the EOSC-hub project (Horizon 2020) under Grant number 777536</p>
+                
+            </div>
+            <div class="eight wide column right aligned footer-text-block center">
+                B2SHARE 4.0.0
+                <br />
+                Powered by
+                
+                <a href="http://inveniosoftware.org/products/rdm" target="_blank" rel="noopener noreferrer" aria-label="InvenioRDM">
+                    <img src="/static/images/logo-rdm-extended.png" class="eu-logo small-logo" alt="Invenio rdm logo" />
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    </footer>
+
+        
+
+        
+<script src="/static/dist/js/manifest.7c28f2dfca37c3a33884.js"></script>
+<script src="/static/dist/js/73.16bdf64db5f12d07e0e7.js"></script>
+<script src="/static/dist/js/3526.27c469309e5fe144b19f.js"></script>
+<script src="/static/dist/js/theme.38c8fa96bacaaa337735.js"></script>
+<script src="/static/dist/js/3471.011c0baea0bfeef4cce9.js"></script>
+<script src="/static/dist/js/7791.c0cf2ab80cf1a6244b09.js"></script>
+<script src="/static/dist/js/3763.8fc990cf30cc95abb068.js"></script>
+<script src="/static/dist/js/7655.091629277f503805e705.js"></script>
+<script src="/static/dist/js/5092.767e9671874c23527cf4.js"></script>
+<script src="/static/dist/js/9777.dbd3ce6680414dee63b0.js"></script>
+<script src="/static/dist/js/541.62f5c3f5f7b793637db1.js"></script>
+<script src="/static/dist/js/3260.ceacf90e833a8c16e282.js"></script>
+<script src="/static/dist/js/3088.424ba96b05c091975aa6.js"></script>
+<script src="/static/dist/js/6585.393986bfbaa933a4d411.js"></script>
+<script src="/static/dist/js/4157.ebcc4d4109c1910ec2cb.js"></script>
+<script src="/static/dist/js/1636.0e7223c83d040b5e7138.js"></script>
+<script src="/static/dist/js/4903.519349de64e376c2049b.js"></script>
+<script src="/static/dist/js/2913.8cfe337de0cf77f62367.js"></script>
+<script src="/static/dist/js/4826.42716355f2314f6a5c53.js"></script>
+<script src="/static/dist/js/5049.82ec343e6ff7e1f25061.js"></script>
+<script src="/static/dist/js/17.199b14057e448895cd33.js"></script>
+<script src="/static/dist/js/base-theme-rdm.08852ebdbccfeccbe316.js"></script>
+<script src="/static/dist/js/i18n_app.f99db11f2523038f0fc8.js"></script>
+<script src="/static/dist/js/5017.29ad6099aceb53d8cfab.js"></script>
+<script src="/static/dist/js/5077.4f677f0b6b3e9199b355.js"></script>
+<script src="/static/dist/js/2301.910d82f7a4de97e3ce86.js"></script>
+<script src="/static/dist/js/5002.da055b5399802b9ec756.js"></script>
+<script src="/static/dist/js/8585.6ec266c44d4115ca4322.js"></script>
+<script src="/static/dist/js/7298.05265d9065c5013475d5.js"></script>
+<script src="/static/dist/js/overridable-registry.a94dde4df985ff641f6c.js"></script>
+        
+  </body>
+</html>

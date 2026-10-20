@@ -1,0 +1,124 @@
+service	code	bytes	sha256	elapsed_ms	content_type	url	path
+OpenAlex	200	20753	4da0d6bd341a2db9ce877ea6fcd78d15908150f09d83b02fa43c2e8845c37077	250	text/html; charset=utf-8	https://docs.openalex.org/	evidence/docs/001_OpenAlex.body
+Crossref	200	70799	7bccbaff86c4f0840f0b8c9620eac091c9cede4d08abf2963d9ee515371b0b82	1715	text/html	https://www.crossref.org/documentation/retrieve-metadata/rest-api/	evidence/docs/002_Crossref.body
+DataCite DOIs	200	347658	78423d07144967dd1766ea912f8b8264591cba6f9e34f2bb37a76c95e72a142a	1089	text/html; charset=utf-8	https://support.datacite.org/docs/api	evidence/docs/003_DataCite_DOIs.body
+DataCite GraphQL	200	347658	e8e69a5adfcae0ff44a724790fb72da41a940f03e0383dd02035bc529b8e940c	1052	text/html; charset=utf-8	https://support.datacite.org/docs/api	evidence/docs/004_DataCite_GraphQL.body
+OpenAIRE	200	14825	82e6b593ed53cbf4264fd7712d6a2a37481b6c735d940bed57db74b95958d229	951	text/html	https://graph.openaire.eu/docs/	evidence/docs/005_OpenAIRE.body
+CORE	200	147718	942a3a0259067966bf75a85e6833f753dee55b78b6e7afafebb8aa3a7e7d36a2	943	text/html; charset=UTF-8	https://api.core.ac.uk/docs/v3	evidence/docs/006_CORE.body
+Semantic Scholar	200	1752	b7533929074f34552a47fa750dab762541ef3d7240232b1fe852d463323eb3c6	457	text/html; charset=utf-8	https://api.semanticscholar.org/api-docs/	evidence/docs/007_Semantic_Scholar.body
+Europe PMC	403	5614	e07f5cc7dd14c92fbc2989c3440d1855eb6634f71b78fe15d782dd887ae44c95	73	text/html; charset=UTF-8	https://europepmc.org/RestfulWebService	evidence/docs/008_Europe_PMC.body
+PubMed ESearch	200	21333	c6437ed0cbb8c2240e3da950211f22937849c4b6ce72e8fcaeaa85a7d17a00d2	1119	text/html; charset=utf-8	https://www.ncbi.nlm.nih.gov/books/NBK25501/	evidence/docs/009_PubMed_ESearch.body
+PubMed Central OAI	200	90605	a5adbb43f6269f58500828db77420239934e1b84be06f12dcb5744b1e010a4db	1988	text/html; charset=utf-8	https://www.ncbi.nlm.nih.gov/pmc/tools/oai/	evidence/docs/010_PubMed_Central_OAI.body
+PMC ID Converter	200	94867	1800ec3856330f320691d9af200a57357a91da44e8982fa569c8065d0e83a486	1734	text/html; charset=utf-8	https://www.ncbi.nlm.nih.gov/pmc/tools/id-converter-api/	evidence/docs/011_PMC_ID_Converter.body
+arXiv	200	81483	d39ef59296d8d1636f81eabea2f98476d2bb62c43c66dde3b408f9a3a2f3dbc8	235	text/html	https://info.arxiv.org/help/api/index.html	evidence/docs/012_arXiv.body
+bioRxiv	200	15899	ac8302fbc99e14273f33c16268b2a12065c204fe888ff2aa52ab31dda1f5c2b4	1986	text/html; charset=UTF-8	https://api.biorxiv.org/	evidence/docs/013_bioRxiv.body
+medRxiv	200	15899	ac8302fbc99e14273f33c16268b2a12065c204fe888ff2aa52ab31dda1f5c2b4	2411	text/html; charset=UTF-8	https://api.biorxiv.org/	evidence/docs/014_medRxiv.body
+Unpaywall	200	1421	0445953f2b1255c157c7fb0aa91d60f75298895086bded982c89e46d6c5d5b01	942	text/html; charset=UTF-8	https://unpaywall.org/products/api	evidence/docs/015_Unpaywall.body
+ROR	200	148028	45af13ec0c11cb17f628a4e5044c13d4a56847650786c3ac81ffa69525c5cf0d	158	text/html; charset=utf-8	https://ror.readme.io/docs/rest-api	evidence/docs/016_ROR.body
+OpenCitations References	200	45480	25fbc4a32f56683e7a431b838a20c14ae57396cefda287e204537c42cf2a3025	1930	text/html	https://opencitations.net/index/api/v1	evidence/docs/017_OpenCitations_References.body
+OpenCitations Meta	200	42017	83af230cebef750130f3bdda97275b85d20034e91793a7ad97a2a68c91aa1325	1943	text/html	https://opencitations.net/meta/api/v1	evidence/docs/018_OpenCitations_Meta.body
+HAL	200	10068	54df623430b92183c68cdc7c737c5f6193e6bcd2593d6ab26f1907e84b7112ba	974	text/html; charset=UTF-8	https://api.archives-ouvertes.fr/docs	evidence/docs/019_HAL.body
+ORCID	200	153470	c968ab2a6c02b52eb28ec65c3d656e6da7d336e01f6553fb4a94f86fe2570f7f	150	text/html; charset=UTF-8	https://info.orcid.org/documentation/api-tutorials/	evidence/docs/020_ORCID.body
+J-STAGE	200	31557	b5ed58f94d328921812ed1903d8e6db5920846caa267ff9328b100859ac384e5	940	text/html;charset=utf-8	https://www.jstage.jst.go.jp/static/pages/JstageServices/TAB4/-char/en	evidence/docs/021_J-STAGE.body
+NASA NTRS	200	70999	69f05720dce5889420cf765fd19fa145c7b7bc8b3d91770579d9b153660e0d84	2416	application/json; charset=utf-8	https://ntrs.nasa.gov/api/citations/search?q=test	evidence/docs/022_NASA_NTRS.body
+OSTI.GOV	200	42439	f6ebb86cc26a66c6f60473cff5e448199f0ed8f90d2cd27efe67715fd3d54ccc	1657	text/html; charset=utf-8	https://www.osti.gov/api/v1/docs	evidence/docs/023_OSTI.GOV.body
+ClinicalTrials.gov	200	94247	c8f2db34b30c0fd6a31735436288114df705be51bf54fbaf2ad98f957f1af94d	803	text/html	https://clinicaltrials.gov/data-api/api	evidence/docs/024_ClinicalTrials.gov.body
+theses.fr	200	712126	de2288f6c7d95f562b53546bea063d35df19e0b3d23ad35f93c1ab8827a3b0d3	1725	text/html;charset=utf-8	https://theses.fr/	evidence/docs/025_theses.fr.body
+EconStor	200	7952	dde6eb33a088bb720f731de1cb1c10f7045ae119b1a8013e6d8d24e224f13ad8	731	text/html; charset=utf-8	https://www.econstor.eu/	evidence/docs/026_EconStor.body
+EBI Search	200	58490	df88670799b49583dc7801f910297884c913f4a52273272e2b507f4678b08ebe	1227	text/html	https://www.ebi.ac.uk/ebisearch/swagger.ebi	evidence/docs/027_EBI_Search.body
+OSF	200	551	8fcdce0773fb855ff9a8cd1da929347522aed744a5b20516ba94829d0094494e	252	text/html	https://developer.osf.io/	evidence/docs/028_OSF.body
+PsyArXiv	200	551	8fcdce0773fb855ff9a8cd1da929347522aed744a5b20516ba94829d0094494e	174	text/html	https://developer.osf.io/	evidence/docs/029_PsyArXiv.body
+GBIF	200	23511	9d5744bd574e711124a74a65c54e4543af2796b88858269e8518434eb7275ba3	1746	text/html; charset=UTF-8	https://techdocs.gbif.org/en/openapi/	evidence/docs/030_GBIF.body
+OBIS	200	1392	ccd680d96caba3fcea401bad55a1af0082e628ef9815d705cb7a56048ade1212	760	text/html; charset=UTF-8	https://api.obis.org/	evidence/docs/031_OBIS.body
+iDigBio	200	268665	bec1d2596289a1affcff11ba988c81c65f30fd5258dfe435de662e522514c84f	1115	text/html; charset=utf-8	https://github.com/iDigBio/idigbio-search-api/wiki	evidence/docs/032_iDigBio.body
+Encyclopedia of Life	403	5668	bb81b2b1adcd82022a2111f439941f5267fbed7ad2453493012a69677e6e8945	102	text/html; charset=UTF-8	https://eol.org/docs/what-is-eol/data-services	evidence/docs/033_Encyclopedia_of_Life.body
+UniProt	200	6577	4d5ee983e6ac6aa40e64e3809f9717d9bf09567a7d0d91b14ef1bc775ab31794	943	text/html	https://www.uniprot.org/help/api	evidence/docs/034_UniProt.body
+RCSB PDB	200	43261	9816b618ad7192f6601a953f8615efe6480754550b173d7d531d7b3c11fc399c	1696	text/html;charset=UTF-8	https://data.rcsb.org/	evidence/docs/035_RCSB_PDB.body
+AlphaFold DB	200	76766	2981ecf402c3c78d5319049aa4361e25327ea1d86a43f47c2ea530118626b6ca	622	text/html;charset=UTF-8	https://alphafold.ebi.ac.uk/api-docs	evidence/docs/036_AlphaFold_DB.body
+Ensembl Ping	200	28794	1cb646abfb0c99ee28920ed52e8ca87e9f306507881377a6639912f82c3c4a8b	2774	text/html; charset=utf-8	https://rest.ensembl.org/	evidence/docs/037_Ensembl_Ping.body
+InterPro	200	14935	e2de7f867c31df2180e3f44cb64445644e65df7d64b19a4202ebc1be376ca2e7	1078	application/json	https://www.ebi.ac.uk/interpro/api/	evidence/docs/038_InterPro.body
+Reactome	200	52832	a3af013c7426313359a610a6de1c568f6448c2bb34afd3f99448eeec9ecdedf3	884	text/html;charset=UTF-8	https://reactome.org/ContentService/	evidence/docs/039_Reactome.body
+ChEMBL	200	370388	810d3c42d2f03e01b0c4da9d9fd1f326f850c6207f5045c35d8da767fc3fcc04	179	text/html; charset=utf-8	https://chembl.gitbook.io/chembl-interface-documentation/web-services	evidence/docs/040_ChEMBL.body
+Wayback CDX	200	325265	3d7d5fa64ff2e2204b7a8b646b3ac104fe1e45e9f127808ac6c2d60c412c257a	1103	text/html; charset=utf-8	https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server	evidence/docs/041_Wayback_CDX.body
+Wayback Availability	200	23165	cae3a135775ba181b9b3bbe334f11523da6fc33367dccc368db2bf6e2c4704b4	1382	text/html; charset=utf-8	https://archive.org/developers/	evidence/docs/042_Wayback_Availability.body
+Wayback TimeMap	200	325265	1ae1289435862b2958c4beb017213c8b5890f5bb31d5de7391b348917bb3d778	708	text/html; charset=utf-8	https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server	evidence/docs/043_Wayback_TimeMap.body
+Internet Archive Advanced Search	200	242013	1a9e26525b57a9c0ce2e6271353953e4c7d61c3571745f607aafa42be935354e	2115	text/html; charset=UTF-8	https://archive.org/advancedsearch.php	evidence/docs/044_Internet_Archive_Advanced_Search.body
+Internet Archive Metadata	200	33230	62318b2e758451d2553469b45196c7691daf0447940ca6a8a555fd53ff0adade	1428	text/html; charset=utf-8	https://archive.org/developers/md-read.html	evidence/docs/045_Internet_Archive_Metadata.body
+Arquivo.pt	200	252871	a16813b05e2f68f6dd316967cee116860c2ae51c6989e27a596c724984e6a8a5	1948	text/html; charset=utf-8	https://arquivo.pt/api	evidence/docs/046_Arquivo.pt.body
+Arquivo.pt Full-text	200	252863	36219bb39837f33ded71342239ade11b22fde362e89dadf253709febdedb582c	2132	text/html; charset=utf-8	https://arquivo.pt/api	evidence/docs/047_Arquivo.pt_Full-text.body
+Common Crawl Index	404	4558	bfdf76d3b503fe78c29d91b9eba0aef375b9b15addd8996262cef598812aa7b9	121	text/html; charset=utf-8	https://commoncrawl.org/cc-index-table	evidence/docs/048_Common_Crawl_Index.body
+Europeana	403	5636	779dad3c0d92f29a3d897ebec7e6101fe9c52522a6cb4dbaa9b4f6cc3306f689	119	text/html; charset=UTF-8	https://pro.europeana.eu/page/apis	evidence/docs/049_Europeana.body
+DigitalNZ	202	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	249	text/html; charset=UTF-8	https://digitalnz.org/developers	evidence/docs/050_DigitalNZ.body
+Smithsonian Open Access	200	44522	ffe0fe2e2ac46f1efecee67594d013bd75336e39a40e52d7ffdfb40c3143a2d1	1885	text/html; charset=UTF-8	https://edan.si.edu/openaccess/apidocs/	evidence/docs/051_Smithsonian_Open_Access.body
+Art Institute of Chicago	200	1028072	0fb0bf4be6d8a67609de846716e1455aa1c14e412ef8efda1a336f70fb445a36	2095	text/html; charset=utf-8	https://api.artic.edu/docs/	evidence/docs/052_Art_Institute_of_Chicago.body
+Cleveland (browse)	200	106973	508b1a8efb4eb883d9aa106825ada1e720c35015b8344daca6c202249f60ca09	1559	text/html; charset=utf-8	https://openaccess-api.clevelandart.org/	evidence/docs/053_Cleveland_browse.body
+SMK (browse)	200	154103	6e846181b296ca62345310580a0ad56ea5b7a83af8066d68145dc9cc6e709cb7	1706	text/html; charset=UTF-8	https://www.smk.dk/en/article/smk-api/	evidence/docs/054_SMK_browse.body
+Getty Vocabularies	200	3066282	537e559b16452ad9c29f593813df6c41fbd127b02e958f894cd9dae89dc77568	1315	text/html; charset=UTF-8	https://www.getty.edu/research/tools/vocabularies/obtain/download.html	evidence/docs/055_Getty_Vocabularies.body
+GND (DNB)	200	71330	9c7c959afd5710ba3a63c432b9a474035aab132be5227d2066f58f98e6b61d08	1617	text/html;charset=utf-8	https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html	evidence/docs/056_GND_DNB.body
+K10plus SRU	000	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	658	-	https://www.k10plus.de/	evidence/docs/057_K10plus_SRU.body
+The National Archives (UK)	200	8550	a14df3b3a365488ba18dcd1448ba04d0dd5b20ac2ac97fbddc7242a46d99e781	685	text/html	https://discovery.nationalarchives.gov.uk/API/sandbox/index	evidence/docs/058_The_National_Archives_UK.body
+HathiTrust Bib API	403	5632	f6930007dccf83580266fc893619c65bc8a450394796ae1ed2db28e0e31caae3	118	text/html; charset=UTF-8	https://www.hathitrust.org/bib_api	evidence/docs/059_HathiTrust_Bib_API.body
+OpenLibrary	200	61173	689b1ee47191e2e4437e3725abcfc0d2f407bac2d8c9e5e3f5cf2ad416765f63	1717	text/html; charset=utf-8	https://openlibrary.org/developers/api	evidence/docs/060_OpenLibrary.body
+Wikidata	200	88932	f865d3a370ec22510d391fe0478ca63311fd174d5f11f291990761f59c465e47	542	text/html; charset=UTF-8	https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service	evidence/docs/061_Wikidata.body
+Wikimedia Commons	200	159177	b8683a5ce768eefa9fdc24dbb63d338ee9806ec379a5f231e03a2e090df0e065	621	text/html; charset=UTF-8	https://www.mediawiki.org/wiki/API:Main_page	evidence/docs/062_Wikimedia_Commons.body
+Wikipedia	200	159177	b8683a5ce768eefa9fdc24dbb63d338ee9806ec379a5f231e03a2e090df0e065	567	text/html; charset=UTF-8	https://www.mediawiki.org/wiki/API:Main_page	evidence/docs/063_Wikipedia.body
+Wikisource	200	159177	b8683a5ce768eefa9fdc24dbb63d338ee9806ec379a5f231e03a2e090df0e065	595	text/html; charset=UTF-8	https://www.mediawiki.org/wiki/API:Main_page	evidence/docs/064_Wikisource.body
+Zenodo	200	191492	bbd72463dcf7e07f597ed2b145e8019fb0e861c4811a8d22e0e5d202bde69e61	552	text/html; charset=utf-8	https://developers.zenodo.org/	evidence/docs/065_Zenodo.body
+Figshare	200	243312	fd0f3c90f9ba5f8d08d3ee10e8e91ae3344a0f226c8dd364384cf2262d344de4	1918	text/html	https://docs.figshare.com/	evidence/docs/066_Figshare.body
+Dryad	200	147	8f1ae73a475c4cd413894cfe011a042e9cd5fd3070968652a6b2d0e5c1a7897f	1121	text/html; charset=UTF-8	https://datadryad.org/api/v2/docs/	evidence/docs/067_Dryad.body
+Dataverse Facets	200	43093	b35aa846a95537710b4ffc5b70435e6d9d9ba24897fce008229c240324fc76c1	1500	text/html; charset=UTF-8	https://guides.dataverse.org/en/latest/api/	evidence/docs/068_Dataverse_Facets.body
+DANS EASY	200	7484	371630a7613ed3e64349aee2c635c78263473f8dec1966f577d5d7c8ac66d023	780	text/html; charset=utf-8	https://dataverse.nl/	evidence/docs/069_DANS_EASY.body
+B2SHARE	200	91757	972026a9009fea4ed2bd499d4a1fa107b18c0971e13475b8ac40709f973dcdab	1518	text/html; charset=UTF-8	https://eudat.eu/services/b2share	evidence/docs/070_B2SHARE.body
+DataONE	200	140483	7e0cf4117050c99e6fc90c690366e688ad2d661af60ffecf4b12907bd2991928	2796	text/html	https://dataone.org/	evidence/docs/071_DataONE.body
+PANGAEA	200	129454	7fc9eef5cd2531105f2b995d638db3a2093e667ed9ad724924a306c894d2e6f9	1592	text/html; charset=UTF-8	https://www.pangaea.de/	evidence/docs/072_PANGAEA.body
+re3data	200	26682	a3c0ceac0305e73b28b9b09aa8011c74b32a90bc99343b488b7669d61ec9317e	1399	text/html; charset=UTF-8	https://www.re3data.org/api/doc	evidence/docs/073_re3data.body
+Mendeley Data	200	108106	9c3739aa7e84aefa0834eaaed386c154184a2d1d8798cca9ebf5142dbf9b2b44	1398	text/html; charset=utf-8	https://data.mendeley.com/api/	evidence/docs/074_Mendeley_Data.body
+DOI Handle API	200	23196	7a107cd58fd59eb9340992e3b6645d7751944e74c11894574a34d37939d79576	120	text/html	https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation	evidence/docs/075_DOI_Handle_API.body
+PLOS	200	3940	cb80b52d17cf7a2bf6cc915a49c37720211c6b492bbb53ccdd82c29c4ae381ad	1158	text/html	https://api.plos.org/	evidence/docs/076_PLOS.body
+eLife	200	738	f471dbcee5809de8f31aa149cb56eee2b794b45630e25c63bd55921480e12c83	821	text/html; charset=UTF-8	https://api.elifesciences.org/	evidence/docs/077_eLife.body
+Research Square	200	22067	4aaaa5f136ea59a03b08a300a319e144e59b58040d8de53abff8bda4f46dc997	926	text/html; charset=utf-8	https://www.researchsquare.com/	evidence/docs/078_Research_Square.body
+DSpace (demo)	403	5659	6fdb9f95c69db9e78b46500cf2f9bcb77a4d2ccf85643afe09498cd787e763fa	125	text/html; charset=UTF-8	https://wiki.lyrasis.org/display/DSDOC7x/REST+API	evidence/docs/079_DSpace_demo.body
+InvenioRDM (demo)	200	137150	8dc06fca6360c7f2eace25575324b66fa117181f7686f07a7ce683c92ee0f57b	1545	text/html; charset=utf-8	https://inveniordm.docs.cern.ch/	evidence/docs/080_InvenioRDM_demo.body
+Zenodo Communities	200	191492	bbd72463dcf7e07f597ed2b145e8019fb0e861c4811a8d22e0e5d202bde69e61	314	text/html; charset=utf-8	https://developers.zenodo.org/	evidence/docs/081_Zenodo_Communities.body
+Figshare Collections	200	243312	fd0f3c90f9ba5f8d08d3ee10e8e91ae3344a0f226c8dd364384cf2262d344de4	1907	text/html	https://docs.figshare.com/	evidence/docs/082_Figshare_Collections.body
+DataCite Activities	200	347658	fe68dc566ca3d1187f558371094291ede0eceb3df08effd640eaba6f566093ae	150	text/html; charset=utf-8	https://support.datacite.org/docs/api	evidence/docs/083_DataCite_Activities.body
+DataCite Clients	200	347658	143d3a32b49e06ea99dfdddfbb439632379da106fbbf6698b4c361297bad4411	150	text/html; charset=utf-8	https://support.datacite.org/docs/api	evidence/docs/084_DataCite_Clients.body
+DataCite Providers	200	347658	e5f07b942cd30281a77f2340cba849e33b660d7fa2e9084bfa80813360365662	114	text/html; charset=utf-8	https://support.datacite.org/docs/api	evidence/docs/085_DataCite_Providers.body
+Crossref Funders	200	70799	7bccbaff86c4f0840f0b8c9620eac091c9cede4d08abf2963d9ee515371b0b82	1764	text/html	https://www.crossref.org/documentation/retrieve-metadata/rest-api/	evidence/docs/086_Crossref_Funders.body
+Crossref Journals	200	70799	7bccbaff86c4f0840f0b8c9620eac091c9cede4d08abf2963d9ee515371b0b82	1794	text/html	https://www.crossref.org/documentation/retrieve-metadata/rest-api/	evidence/docs/087_Crossref_Journals.body
+OpenAIRE Organizations	200	3007	b492c0f32fdd797dde58ff992a6a483d756de429d3a0c2eb80f5f0d131314098	961	text/html;charset=UTF-8	https://graph.openaire.eu/docs/apis/	evidence/docs/088_OpenAIRE_Organizations.body
+OpenAlex Concepts	200	20753	4da0d6bd341a2db9ce877ea6fcd78d15908150f09d83b02fa43c2e8845c37077	230	text/html; charset=utf-8	https://docs.openalex.org/	evidence/docs/089_OpenAlex_Concepts.body
+OpenAlex Keywords	200	20753	4da0d6bd341a2db9ce877ea6fcd78d15908150f09d83b02fa43c2e8845c37077	230	text/html; charset=utf-8	https://docs.openalex.org/	evidence/docs/090_OpenAlex_Keywords.body
+PubMed EInfo	200	21330	6056159890c64ca6e12e52d9a3e62323e114132d0b0eacf8f88ec4231a5d690a	1114	text/html; charset=utf-8	https://www.ncbi.nlm.nih.gov/books/NBK25501/	evidence/docs/091_PubMed_EInfo.body
+HAL References	200	10068	54df623430b92183c68cdc7c737c5f6193e6bcd2593d6ab26f1907e84b7112ba	934	text/html; charset=UTF-8	https://api.archives-ouvertes.fr/docs	evidence/docs/092_HAL_References.body
+GBIF Species	200	23511	9d5744bd574e711124a74a65c54e4543af2796b88858269e8518434eb7275ba3	1665	text/html; charset=UTF-8	https://techdocs.gbif.org/en/openapi/	evidence/docs/093_GBIF_Species.body
+GBIF Datasets	200	23511	9d5744bd574e711124a74a65c54e4543af2796b88858269e8518434eb7275ba3	1701	text/html; charset=UTF-8	https://techdocs.gbif.org/en/openapi/	evidence/docs/094_GBIF_Datasets.body
+RCSB PDB Search	200	114000	a514b244cb2d39ba386be56e80e39f98db3105a84401bd39c56d65a2077d97c5	1973	text/html;charset=UTF-8	https://search.rcsb.org/	evidence/docs/095_RCSB_PDB_Search.body
+Ensembl Lookup	200	28794	1cb646abfb0c99ee28920ed52e8ca87e9f306507881377a6639912f82c3c4a8b	9180	text/html; charset=utf-8	https://rest.ensembl.org/	evidence/docs/096_Ensembl_Lookup.body
+InterPro Entry	200	14935	e2de7f867c31df2180e3f44cb64445644e65df7d64b19a4202ebc1be376ca2e7	1076	application/json	https://www.ebi.ac.uk/interpro/api/	evidence/docs/097_InterPro_Entry.body
+Reactome Search	200	52832	edf7dc540c7e143a9fee8873007e78c79dfbb16bf5f84dae44200e1c7becd473	918	text/html;charset=UTF-8	https://reactome.org/ContentService/	evidence/docs/098_Reactome_Search.body
+ChEMBL Molecule	200	370388	810d3c42d2f03e01b0c4da9d9fd1f326f850c6207f5045c35d8da767fc3fcc04	152	text/html; charset=utf-8	https://chembl.gitbook.io/chembl-interface-documentation/web-services	evidence/docs/099_ChEMBL_Molecule.body
+OpenLibrary Authors	200	61174	83e832f835749fe5c5b09e8876d6be428d342cad436a7e599e8cf172ae5835ab	1830	text/html; charset=utf-8	https://openlibrary.org/developers/api	evidence/docs/100_OpenLibrary_Authors.body
+OpenLibrary Subjects	200	61172	76a914ba393c4d98154b166ba9a42285789940e9ba564f0e8b06964a815ef26a	1816	text/html; charset=utf-8	https://openlibrary.org/developers/api	evidence/docs/101_OpenLibrary_Subjects.body
+Wikidata Search	200	144051	2a9a9e592e41b3d9a5728395310f2b8edb9d5f838644d4ccb5130ef106bc509b	688	text/html; charset=UTF-8	https://www.wikidata.org/wiki/Wikidata:Data_access	evidence/docs/102_Wikidata_Search.body
+Wikimedia Pageviews	200	42426	72351bed5c2ebea9242d9315509d6507885a7659b954c6a34d38c9063b6640a1	1098	text/html; charset=UTF-8	https://wikimedia.org/api/rest_v1/	evidence/docs/103_Wikimedia_Pageviews.body
+DNB SRU	200	71330	9c7c959afd5710ba3a63c432b9a474035aab132be5227d2066f58f98e6b61d08	1179	text/html;charset=utf-8	https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html	evidence/docs/104_DNB_SRU.body
+K10plus SRU (GVK)	000	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	562	-	https://www.k10plus.de/	evidence/docs/105_K10plus_SRU_GVK.body
+Europeana Entity	403	5636	dccbca48538aec79a41dc4d60bd982566a8e03e50fb90ad0b1f83fa1796799b2	113	text/html; charset=UTF-8	https://pro.europeana.eu/page/apis	evidence/docs/106_Europeana_Entity.body
+Smithsonian Category Search	200	44522	ffe0fe2e2ac46f1efecee67594d013bd75336e39a40e52d7ffdfb40c3143a2d1	1960	text/html; charset=UTF-8	https://edan.si.edu/openaccess/apidocs/	evidence/docs/107_Smithsonian_Category_Search.body
+Art Institute (browse)	200	1028072	0fb0bf4be6d8a67609de846716e1455aa1c14e412ef8efda1a336f70fb445a36	1297	text/html; charset=utf-8	https://api.artic.edu/docs/	evidence/docs/108_Art_Institute_browse.body
+Met Museum Objects	200	84532	6fbfe3a7620d9b79bbc49e68313d33ce10410aabbacf38e5e5f1f6349b942ff2	470	text/html; charset=utf-8	https://metmuseum.github.io/	evidence/docs/109_Met_Museum_Objects.body
+NARA Catalog	200	45968	2427610049c68c92707e69fc79fa1c8a06ca835b228e01ee7faf8b2153de008f	251	text/html; charset=utf-8	https://www.archives.gov/research/catalog/help/api	evidence/docs/110_NARA_Catalog.body
+HathiTrust JSON	403	5632	07ca6c52f1ef4361a52e5b8ec4fee4569ef4902a32288ad722e4d9a6e4e20585	124	text/html; charset=UTF-8	https://www.hathitrust.org/bib_api	evidence/docs/111_HathiTrust_JSON.body
+Common Crawl URL lookup	404	4558	bfdf76d3b503fe78c29d91b9eba0aef375b9b15addd8996262cef598812aa7b9	115	text/html; charset=utf-8	https://commoncrawl.org/cc-index-table	evidence/docs/112_Common_Crawl_URL_lookup.body
+Europe PMC Citations	403	5614	e971f16599b929fca4559ca2d26605bd9e89ab5db9f6f919bed06c31ecb34390	123	text/html; charset=UTF-8	https://europepmc.org/RestfulWebService	evidence/docs/113_Europe_PMC_Citations.body
+Europe PMC References	403	5614	74e9b4806269b655aea0e3a6eaaecdfe35bedd59857ec4090d6200d8288a1448	115	text/html; charset=UTF-8	https://europepmc.org/RestfulWebService	evidence/docs/114_Europe_PMC_References.body
+OpenLibrary Covers	200	53654	e0c51395449f063d66b1010f935495299447eecd560a6a6ff66d144b2f31368c	1702	text/html; charset=utf-8	https://openlibrary.org/dev/docs/api/covers	evidence/docs/115_OpenLibrary_Covers.body
+PubMed EFetch	200	21359	fd047c1b59670c379610be42c0d21b54eff564eb151f3c7457f6a20ccb4c539d	273	text/html; charset=utf-8	https://www.ncbi.nlm.nih.gov/books/NBK25501/	evidence/docs/116_PubMed_EFetch.body
+PubMed ELink	200	21362	7e14e61a9c25e24d5d5a13601056bce0667b559c8a79f6be53bcff7558671e86	297	text/html; charset=utf-8	https://www.ncbi.nlm.nih.gov/books/NBK25501/	evidence/docs/117_PubMed_ELink.body
+Semantic Scholar Citations	200	1752	b7533929074f34552a47fa750dab762541ef3d7240232b1fe852d463323eb3c6	924	text/html; charset=utf-8	https://api.semanticscholar.org/api-docs/	evidence/docs/118_Semantic_Scholar_Citations.body
+Wikidata EntityData	200	144051	2a9a9e592e41b3d9a5728395310f2b8edb9d5f838644d4ccb5130ef106bc509b	569	text/html; charset=UTF-8	https://www.wikidata.org/wiki/Wikidata:Data_access	evidence/docs/119_Wikidata_EntityData.body
+OpenAIRE Datasets	200	14825	82e6b593ed53cbf4264fd7712d6a2a37481b6c735d940bed57db74b95958d229	821	text/html	https://graph.openaire.eu/docs/	evidence/docs/120_OpenAIRE_Datasets.body
+OpenAlex Authors	200	20753	4da0d6bd341a2db9ce877ea6fcd78d15908150f09d83b02fa43c2e8845c37077	236	text/html; charset=utf-8	https://docs.openalex.org/	evidence/docs/121_OpenAlex_Authors.body
+Dryad (dataset list)	200	147	8f1ae73a475c4cd413894cfe011a042e9cd5fd3070968652a6b2d0e5c1a7897f	1217	text/html; charset=UTF-8	https://datadryad.org/api/v2/docs/	evidence/docs/122_Dryad_dataset_list.body
+OpenCitations Citation Count	200	45480	25fbc4a32f56683e7a431b838a20c14ae57396cefda287e204537c42cf2a3025	2136	text/html	https://opencitations.net/index/api/v1	evidence/docs/123_OpenCitations_Citation_Count.body

@@ -1,0 +1,1499 @@
+{
+  "status": 200,
+  "responseCode": 1,
+  "response": {
+    "rows": [
+      {
+        "id": "ld1-1643398853934-1643398890477-0",
+        "title": "Psychological Tests, Haines Group Alertness Tests",
+        "unitCode": "NMAH",
+        "type": "edanmdm",
+        "url": "edanmdm:nmah_694280",
+        "content": {
+          "freetext": {
+            "name": [
+              {
+                "label": "maker",
+                "content": "Haines, Thomas H."
+              },
+              {
+                "label": "publisher",
+                "content": "C. H. Stoelting Company"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "The Haines Test has been assigned three subindex numbers. This folder contains the Haines Group Alertness Tests, Forms X and A: A Manual of Directions for Giving the Tests and for Scoring the Results of Tests, The Haines Alertness Test—Form X, and a cardboard sheet with Test 1 and Test 2 on the front and Tests 3, 4, and 5 on the back."
+              },
+              {
+                "label": "Description",
+                "content": "316371.19.01"
+              },
+              {
+                "label": "Description",
+                "content": "The Manual of Directions is twenty pages long. The group test (form X) aimed to measure “general intelligence of adult illiterates of school children in grades I to IV inclusive and in small rural schools.” The booklet provides a script for what the proctor should say. It also provides an opportunity to “practice” each of the different tests before the test itself is given. The different tests include a directions test; a scorekeeping test; a maze test; an unfinished pictures test; and an unfinished sentences test. The group test (form A) was an “adaptation of the Army Alpha Test for use in schools.” This included a directions test; an arithmetic test; a maze test; an antonym test; a disarranged sentence test; an analogy test; a practical judgment test; and a number series extension test."
+              },
+              {
+                "label": "Description",
+                "content": "316371.19.02"
+              },
+              {
+                "label": "Description",
+                "content": "The Haines’ Alertness Test—Form X is eight pages long. It was copyrighted in 1924 by C.H. Stoelting Co."
+              },
+              {
+                "label": "Description",
+                "content": "316371.19.03"
+              },
+              {
+                "label": "Description",
+                "content": "This cardboard sheet does not have a title. It is labeled Test 1 and Test 2 on the front and Tests 3, 4, and 5 on the back."
+              },
+              {
+                "label": "Location",
+                "content": "Currently not on view"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Subject",
+                "content": "Psychology"
+              },
+              {
+                "label": "Subject",
+                "content": "Psychological Tests"
+              },
+              {
+                "label": "Subject",
+                "content": "Mathematics"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Medicine and Science: Mathematics"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of David Shakow"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "National Museum of American History"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "ID Number",
+                "content": "MA.316371.019"
+              },
+              {
+                "label": "catalog number",
+                "content": "316371.019"
+              },
+              {
+                "label": "accession number",
+                "content": "316371"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "psychological test"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical Description",
+                "content": "paper (overall material)"
+              },
+              {
+                "label": "Measurements",
+                "content": "overall: 21.5 cm x 28.3 cm; 8 15/32 in x 11 5/32 in"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "name": [
+              "Haines, Thomas H.",
+              "C. H. Stoelting Company"
+            ],
+            "topic": [
+              "Psychology",
+              "Psychological Tests",
+              "Mathematics"
+            ],
+            "object_type": [
+              "psychological test"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "https://n2t.net/ark:/65665/ng49ca746b4-d5fc-704b-e053-15f76fa0b4fa",
+            "title": {
+              "label": "Title",
+              "content": "Psychological Tests, Haines Group Alertness Tests"
+            },
+            "record_ID": "nmah_694280",
+            "unit_code": "NMAH",
+            "title_sort": "PSYCHOLOGICAL TESTS, HAINES GROUP ALERTNESS TESTS",
+            "data_source": "National Museum of American History",
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "9e7e9cb4c23fc6393ff4e3e351e67dc0cfb8a5c5",
+        "docSignature": "32f4acbf69a77f8b01e7da8ce57a6e66",
+        "timestamp": "1663782564",
+        "lastTimeUpdated": "1732284690",
+        "version": "1732271515"
+      },
+      {
+        "id": "ld1-1646149545906-1646150304997-1",
+        "title": "Record of test results / submitted to Advisory Committee on Advanced Television Service of the Federal Communications Commission by Advanced Television Test Center, Inc. [and others]",
+        "unitCode": "SIL",
+        "type": "edanmdm",
+        "url": "edanmdm:siris_sil_1101788",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1995"
+              },
+              {
+                "label": "Date",
+                "content": "[1995]"
+              }
+            ],
+            "name": [
+              {
+                "label": "Author",
+                "content": "Advanced Television Test Center, Inc"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Notes",
+                "content": "\"October 1995.\""
+              },
+              {
+                "label": "Notes",
+                "content": "\"This report contains the results of tests conducted by the Advanced Television Test Center (ATTC) on the digital HDTV Grand Alliance System during the period April 19-July 21, 1995\"--Page I-I-I."
+              },
+              {
+                "label": "Contents",
+                "content": "Transmission & objective tests -- Tests conducted by the Task Force on digital-specific testing -- Video subjective tests -- Cable television transmission tests -- Multichannel audio subjective tests -- Matrix of test & index of tasks for individual tests -- Field tests"
+              }
+            ],
+            "title": [
+              {
+                "label": "Title",
+                "content": "Record of test results on digital HDTV Grand Alliance System"
+              },
+              {
+                "label": "Title",
+                "content": "Digital HDTV Grand Alliance System"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Topic",
+                "content": "High definition television--Testing"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Smithsonian Libraries"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Books"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical description",
+                "content": "1 volume (various pagings) : illustrations ; 28 cm"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1990s"
+            ],
+            "name": [
+              "Advanced Television Test Center, Inc"
+            ],
+            "topic": [
+              "High definition television",
+              "Testing"
+            ],
+            "language": [
+              "English language"
+            ],
+            "object_type": [
+              "Books"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "title": {
+              "label": "Title",
+              "content": "Record of test results / submitted to Advisory Committee on Advanced Television Service of the Federal Communications Commission by Advanced Television Test Center, Inc. [and others]"
+            },
+            "record_ID": "siris_sil_1101788",
+            "unit_code": "SIL",
+            "title_sort": "RECORD OF TEST RESULTS SUBMITTED TO ADVISORY COMMITTEE ON ADVANCED TELEVISION SERVICE OF THE FEDERAL COMMUNICATIONS COMMISSION BY ADVANCED TELEVISION TEST CENTER INC AND OTHERS",
+            "data_source": "Smithsonian Libraries",
+            "record_link": "https://siris-libraries.si.edu/ipac20/ipac.jsp?&profile=liball&source=~!silibraries&uri=full=3100001~!1101788~!0#focus",
+            "metadata_usage": {
+              "text": "",
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "667bebf6a75fa0f86404a337cabfe9122962c0b0",
+        "docSignature": "caec37d972488fc2108d61268e4f8219",
+        "timestamp": "1556698293",
+        "lastTimeUpdated": "1661961837",
+        "version": "0"
+      },
+      {
+        "id": "ld1-1643398853934-1643398890507-0",
+        "title": "Psychological Tests, Thurstone Reasoning Test A and Thurstone Reasoning Test B",
+        "unitCode": "NMAH",
+        "type": "edanmdm",
+        "url": "edanmdm:nmah_694334",
+        "content": {
+          "freetext": {
+            "name": [
+              {
+                "label": "author",
+                "content": "Thurstone, L. L."
+              },
+              {
+                "label": "maker",
+                "content": "C. H. Stoelting Company"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "This folder has documents related to the Thurstone Reasoning Test. It was published by C.H. Stoelting Co., Chicago, Illinois."
+              },
+              {
+                "label": "Description",
+                "content": "1-Thurstone Reasoning Test B. This test instructs the test taker to identify whether the argument is true or false using plus or minus signs."
+              },
+              {
+                "label": "Description",
+                "content": "2- Thurstone Reasoning Test B. This is an identical version of the test with annotations in red pencil that provide an answer key."
+              },
+              {
+                "label": "Description",
+                "content": "3-Thurstone Reasoning Test A. This test instructs the test taker to identify whether the argument is true or false using plus or minus signs."
+              },
+              {
+                "label": "Description",
+                "content": "4- Thurstone Reasoning Test A. This is an identical version of the test with annotations in red pencil that provide an answer key."
+              },
+              {
+                "label": "Location",
+                "content": "Currently not on view"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Subject",
+                "content": "Psychology"
+              },
+              {
+                "label": "Subject",
+                "content": "Psychological Tests"
+              },
+              {
+                "label": "Subject",
+                "content": "Mathematics"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Medicine and Science: Mathematics"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of David Shakow"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "National Museum of American History"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "ID Number",
+                "content": "MA.316371.068"
+              },
+              {
+                "label": "catalog number",
+                "content": "316371.068"
+              },
+              {
+                "label": "accession number",
+                "content": "316371"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "psychological tests"
+              },
+              {
+                "label": "Object Name",
+                "content": "psychological tests"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical Description",
+                "content": "paper (overall material)"
+              },
+              {
+                "label": "Measurements",
+                "content": "overall: 21.5 cm x 28 cm; 8 15/32 in x 11 1/32 in"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "name": [
+              "Thurstone, L. L.",
+              "C. H. Stoelting Company"
+            ],
+            "topic": [
+              "Psychology",
+              "Psychological Tests",
+              "Mathematics"
+            ],
+            "object_type": [
+              "Psychological tests"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "https://n2t.net/ark:/65665/ng49ca746a5-2d8d-704b-e053-15f76fa0b4fa",
+            "title": {
+              "label": "Title",
+              "content": "Psychological Tests, Thurstone Reasoning Test A and Thurstone Reasoning Test B"
+            },
+            "record_ID": "nmah_694334",
+            "unit_code": "NMAH",
+            "title_sort": "PSYCHOLOGICAL TESTS, THURSTONE REASONING TEST A AND THURSTONE REASONING TEST B",
+            "data_source": "National Museum of American History",
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "32dfcd31edae03652f9025d2bed7790ff4808153",
+        "docSignature": "5005df9e93557b02f4ea6f64fe3c54ad",
+        "timestamp": "1663782564",
+        "lastTimeUpdated": "1732284690",
+        "version": "1732271515"
+      },
+      {
+        "id": "ld1-1646149545906-1646149911506-1",
+        "title": "[Trade catalogs on testing machines : planimeters, integrators, hammer machines, small tensile testing machines, rope testing machines, chain and anchor testing machines, spring testing machines, ball hardness testing machines, impact testing machines, bending testing machines, standardizing boxes, dynamometers, harmonic analyzers ... ]",
+        "unitCode": "SIL",
+        "type": "edanmdm",
+        "url": "edanmdm:siris_sil_710928",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1909"
+              },
+              {
+                "label": "Date",
+                "content": "1909-"
+              }
+            ],
+            "name": [
+              {
+                "label": "Author",
+                "content": "Alfred J. Amsler & Co"
+              },
+              {
+                "label": "Author",
+                "content": "J. Amsler-Laffon & Sohn"
+              },
+              {
+                "label": "Author",
+                "content": "Smithsonian Libraries American History Trade Literature Collection DSI"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Notes",
+                "content": "Trade literature."
+              },
+              {
+                "label": "Notes",
+                "content": "Includes prices, specifications, and operating instructions."
+              },
+              {
+                "label": "Notes",
+                "content": "Includes catalogs issued by J. Amsler-Laffon & Sohn (predecessor)"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Topic",
+                "content": "Testing-machines"
+              },
+              {
+                "label": "Topic",
+                "content": "Integrators"
+              },
+              {
+                "label": "Topic",
+                "content": "Planimeters"
+              },
+              {
+                "label": "Topic",
+                "content": "Dynamometer"
+              },
+              {
+                "label": "Topic",
+                "content": "Harmonic analyzers"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Smithsonian Libraries"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Call number",
+                "content": "053750"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Catalogs"
+              },
+              {
+                "label": "Type",
+                "content": "Trade catalogs"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical description",
+                "content": "<25> v. : ill"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1900s"
+            ],
+            "name": [
+              "Alfred J. Amsler & Co",
+              "J. Amsler-Laffon & Sohn",
+              "Smithsonian Libraries"
+            ],
+            "topic": [
+              "Testing-machines",
+              "Harmonic analyzers",
+              "Integrators",
+              "Planimeters",
+              "Dynamometer"
+            ],
+            "language": [
+              "English language"
+            ],
+            "object_type": [
+              "Catalogs",
+              "Trade catalogs"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "title": {
+              "label": "Title",
+              "content": "[Trade catalogs on testing machines : planimeters, integrators, hammer machines, small tensile testing machines, rope testing machines, chain and anchor testing machines, spring testing machines, ball hardness testing machines, impact testing machines, bending testing machines, standardizing boxes, dynamometers, harmonic analyzers ... ]"
+            },
+            "record_ID": "siris_sil_710928",
+            "unit_code": "SIL",
+            "title_sort": "TRADE CATALOGS ON TESTING MACHINES : PLANIMETERS INTEGRATORS HAMMER MACHINES SMALL TENSILE TESTING MACHINES ROPE TESTING MACHINES CHAIN AND ANCHOR TESTING MACHINES SPRING TESTING MACHINES BALL HARDNESS TESTING MACHINES IMPACT TESTING MACHINES BENDING TESTING MACHINES STANDARDIZING BOXES DYNAMOMETERS HARMONIC ANALYZERS",
+            "data_source": "Smithsonian Libraries",
+            "record_link": "https://siris-libraries.si.edu/ipac20/ipac.jsp?&profile=liball&source=~!silibraries&uri=full=3100001~!710928~!0#focus",
+            "metadata_usage": {
+              "text": "",
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "0c9234a84a8561c4f33795154e77b8159fc5d59c",
+        "docSignature": "9463863606972317e295af80caa600d2",
+        "timestamp": "1498154379",
+        "lastTimeUpdated": "1661962425",
+        "version": "0"
+      },
+      {
+        "id": "ld1-1643398853934-1643398890482-0",
+        "title": "Documents Relating to the Kent-Shakow Group Tests",
+        "unitCode": "NMAH",
+        "type": "edanmdm",
+        "url": "edanmdm:nmah_694289",
+        "content": {
+          "freetext": {
+            "name": [
+              {
+                "label": "author",
+                "content": "Shakow, David"
+              },
+              {
+                "label": "author",
+                "content": "Kent, Grace Helen"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "This number covers material relating the K-S (Kent-Shakow) Group Test. This collection is significant because it illustrates and explains differences between individual tests (which a proctor would give to one person and thus often included an oral component/physical objects) and group tests, which were often paper and pencil tests and could be easily proctored to a group of people. The documents are grouped into two index numbers:"
+              },
+              {
+                "label": "Description",
+                "content": "MA.316371.28.01 - Documents include a chart entitled “Worcester Series Norms (Feb, 1st 1929)”; directions for the K-S Symbol Digit Test; a blank form that included symbols (handwritten in the upper right hand corner are notes that say K-8, Symbol Digit); examples of the K-S Hard Distinction test, K-S Information test, K-S Similarities test, K-S arithmetic test, the K-S Easy Directions test, and the K-S Essential Properties test. There are also tests that ask the test taker to mark the one word in each line that is incorrect and tests that ask the test taker to select the item in the list that is not like the others. Other tests include the Kent opposite test, sentence completion test, and tests about number sequences. The folder also contains some duplicate tests, and various answer keys. There are a few miscellaneous documents including an index card with a chart entitled “arithmetic test, with weighted values,” an oral absurdities test, and figures printed on graph paper. Many of the documents included handwritten notes."
+              },
+              {
+                "label": "Description",
+                "content": "MA.316371.02 -The collection contains handwritten notes on white lined paper that records names, ages, and (occasionally) the scores. It also includes a test that asks the test taker to underline the word to make the sentence correct and a test that asks the test taker to write the opposite of each word."
+              },
+              {
+                "label": "Description",
+                "content": "Moreover, there is a six page document by Grace H. Kent and David Shakow entitled “Group Tests for Clinical Studies.” The document provides information on the development of group tests, their benefits and drawbacks, and a list of ten desirable features of tests, and the different tests that could be developed (these included information; opposites; similarity; essential difference; essential property; comparative usefulness; arithmetical reasoning; number series, completion; and finally number series, cross-out). This document contains some minor handwritten edits/corrections."
+              },
+              {
+                "label": "Description",
+                "content": "There is also a scrap of paper that acknowledges the importance of context for calculating the norms for specific tests (“Of course I never expect that the autogenous norms would have much meaning outside of the institution from which they are derived.”)"
+              },
+              {
+                "label": "Description",
+                "content": "A separate document, entitled “Printed-Page Tests for Clinical Use,” contains much of the same information as the “Group Tests for Clinical Studies.” However, there are important differences, including a case study of two young men to illustrate “the wide difference which may be found in the reactions of a given subject to different tests.” This also contains handwritten notes/edits, and it is possible that this was an earlier draft of “Group Tests for Clinical Studies” document."
+              },
+              {
+                "label": "Description",
+                "content": "One of the highlights of this collection is a series of correspondence between Shakow and the C.H. Stoelting Company, which specialized in Psychological and Physiological apparatus and supplies. The documents suggest that Shakow was upset by the manner in which the company manufactured Worcester boards, which Shakow felt were not ready for publication, specifically because of the “use of norms.” The correspondence also includes examples of the test (presumably the ones Shakow felt were not precise in terms of their norms), information from C.H. Stoelting Company about the ideal testing conditions for proctoring the exam, and finally the initial correspondence between Shakow and the C.H. Stoeling Company where he outlines his instructions for printing the test."
+              },
+              {
+                "label": "Description",
+                "content": "This collection also includes some miscellaneous papers. These include general directors for proctoring the speed test, the sentence competition test, the opposites test, the oral questions, the symbol-digit test, and the word building test. There is also a chart that compares scores on the Shirley Edition and the 1928 edition. Another sheet describes sample items for the test. Yet another sheet describes instructions for administering the group test. Finally, a paper provides a handwritten chart that appears to record norms."
+              },
+              {
+                "label": "Location",
+                "content": "Currently not on view"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Subject",
+                "content": "Psychology"
+              },
+              {
+                "label": "Subject",
+                "content": "Psychological Tests"
+              },
+              {
+                "label": "Subject",
+                "content": "Mathematics"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Medicine and Science: Mathematics"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of David Shakow"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "National Museum of American History"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "ID Number",
+                "content": "MA.316371.028"
+              },
+              {
+                "label": "catalog number",
+                "content": "316371.028"
+              },
+              {
+                "label": "accession number",
+                "content": "316371"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "psychological test"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical Description",
+                "content": "paper (overall material)"
+              },
+              {
+                "label": "Measurements",
+                "content": "overall: 22 cm x 28 cm; 8 21/32 in x 11 1/32 in"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "name": [
+              "Kent, Grace Helen",
+              "Shakow, David"
+            ],
+            "topic": [
+              "Psychology",
+              "Psychological Tests",
+              "Mathematics"
+            ],
+            "object_type": [
+              "psychological test"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "https://n2t.net/ark:/65665/ng49ca746a5-0874-704b-e053-15f76fa0b4fa",
+            "title": {
+              "label": "Title",
+              "content": "Documents Relating to the Kent-Shakow Group Tests"
+            },
+            "record_ID": "nmah_694289",
+            "unit_code": "NMAH",
+            "title_sort": "DOCUMENTS RELATING TO THE KENT-SHAKOW GROUP TESTS",
+            "data_source": "National Museum of American History",
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "0704989bdc18aa65baa1c493f83c49a09cea13c3",
+        "docSignature": "4a536a91ca8bcfefa852b0ff25b3d15e",
+        "timestamp": "1663782564",
+        "lastTimeUpdated": "1732284690",
+        "version": "1732271515"
+      },
+      {
+        "id": "ld1-1643398853934-1643398890506-1",
+        "title": "Psychological Tests with Documentation, Thurstone Vocational Guidance Tests",
+        "unitCode": "NMAH",
+        "type": "edanmdm",
+        "url": "edanmdm:nmah_694333",
+        "content": {
+          "freetext": {
+            "name": [
+              {
+                "label": "author",
+                "content": "Thurstone, L. L."
+              },
+              {
+                "label": "maker",
+                "content": "World Book Company"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "This folder contains multiple documents related to the Thurstone Vocational Guidance Test. The test was intended for High School Seniors and College Freshmen and was written by L.L. Thurstone, Carnegie Institute of Technology. The Carnegie Institute of Technology also copyrighted the test in 1919. It was published by the World Book Company in 1922."
+              },
+              {
+                "label": "Description",
+                "content": "1- Algebra Test"
+              },
+              {
+                "label": "Description",
+                "content": "2-Geometry Test"
+              },
+              {
+                "label": "Description",
+                "content": "3-Physics Test"
+              },
+              {
+                "label": "Description",
+                "content": "4-Technical Information Test"
+              },
+              {
+                "label": "Description",
+                "content": "5-Arithmetic Test"
+              },
+              {
+                "label": "Description",
+                "content": "6-Key for Arithmetic Test"
+              },
+              {
+                "label": "Description",
+                "content": "7-Key for Technical Information Test"
+              },
+              {
+                "label": "Description",
+                "content": "8-Key for Physics Test"
+              },
+              {
+                "label": "Description",
+                "content": "9-Key for Algebra Test"
+              },
+              {
+                "label": "Description",
+                "content": "10-The Manual of Directions"
+              },
+              {
+                "label": "Description",
+                "content": "The tests will be of interest to researchers studying the history of psychology as well as researchers interested in labor history and others interested in how students get “sorted” into specific jobs and professions."
+              },
+              {
+                "label": "Location",
+                "content": "Currently not on view"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Subject",
+                "content": "Psychology"
+              },
+              {
+                "label": "Subject",
+                "content": "Psychological Tests"
+              },
+              {
+                "label": "Subject",
+                "content": "Mathematics"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Medicine and Science: Mathematics"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of David Shakow"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "National Museum of American History"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "ID Number",
+                "content": "MA.316371.067"
+              },
+              {
+                "label": "catalog number",
+                "content": "316371.067"
+              },
+              {
+                "label": "accession number",
+                "content": "316371"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "psychological tests"
+              },
+              {
+                "label": "Object Name",
+                "content": "psychological tests"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical Description",
+                "content": "paper (overall material)"
+              },
+              {
+                "label": "Measurements",
+                "content": "overall: 21.3 cm x 28 cm; 8 3/8 in x 11 1/32 in"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "name": [
+              "Thurstone, L. L.",
+              "World Book Company"
+            ],
+            "topic": [
+              "Psychology",
+              "Psychological Tests",
+              "Mathematics"
+            ],
+            "object_type": [
+              "Psychological tests"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "https://n2t.net/ark:/65665/ng49ca746a5-2d8c-704b-e053-15f76fa0b4fa",
+            "title": {
+              "label": "Title",
+              "content": "Psychological Tests with Documentation, Thurstone Vocational Guidance Tests"
+            },
+            "record_ID": "nmah_694333",
+            "unit_code": "NMAH",
+            "title_sort": "PSYCHOLOGICAL TESTS WITH DOCUMENTATION, THURSTONE VOCATIONAL GUIDANCE TESTS",
+            "data_source": "National Museum of American History",
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "a3fa85075de40fd694431b843c5b78e33c8abd70",
+        "docSignature": "198da298b8f625a562654f19f8053de3",
+        "timestamp": "1663782564",
+        "lastTimeUpdated": "1732359016",
+        "version": "1732357906"
+      },
+      {
+        "id": "ld1-1646149545906-1646150149796-1",
+        "title": "Pilots handbook for critical and exploratory flight testing",
+        "unitCode": "SIL",
+        "type": "edanmdm",
+        "url": "edanmdm:siris_sil_15493",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "Date",
+                "content": "1972"
+              }
+            ],
+            "name": [
+              {
+                "label": "Author",
+                "content": "American Institute of Aeronautics and Astronautics"
+              },
+              {
+                "label": "Author",
+                "content": "Society of Experimental Test Pilots"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Notes",
+                "content": "Sponsored by the Society of Experimental Test Pilots and American Institute of Aeronautics and Astronautics"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Topic",
+                "content": "Airplanes--Flight testing"
+              },
+              {
+                "label": "Topic",
+                "content": "Avions--Essais en vol"
+              },
+              {
+                "label": "Topic",
+                "content": "Aerodynamic characteristics"
+              },
+              {
+                "label": "Topic",
+                "content": "Aerodynamic stability"
+              },
+              {
+                "label": "Topic",
+                "content": "Aeronautics"
+              },
+              {
+                "label": "Topic",
+                "content": "Aircraft carriers"
+              },
+              {
+                "label": "Topic",
+                "content": "AIRCRAFT"
+              },
+              {
+                "label": "Topic",
+                "content": "Altitude tests"
+              },
+              {
+                "label": "Topic",
+                "content": "Armed forces"
+              },
+              {
+                "label": "Topic",
+                "content": "Engine tests"
+              },
+              {
+                "label": "Topic",
+                "content": "Firing (igniting)"
+              },
+              {
+                "label": "Topic",
+                "content": "Flight stability tests"
+              },
+              {
+                "label": "Topic",
+                "content": "Flight test instruments"
+              },
+              {
+                "label": "Topic",
+                "content": "Flight tests"
+              },
+              {
+                "label": "Topic",
+                "content": "High altitude tests"
+              },
+              {
+                "label": "Topic",
+                "content": "Ice formation"
+              },
+              {
+                "label": "Topic",
+                "content": "In-flight monitoring"
+              },
+              {
+                "label": "Topic",
+                "content": "Jet engines"
+              },
+              {
+                "label": "Topic",
+                "content": "Launching"
+              },
+              {
+                "label": "Topic",
+                "content": "Lifting bodies"
+              },
+              {
+                "label": "Topic",
+                "content": "Pilots (personnel)"
+              },
+              {
+                "label": "Topic",
+                "content": "Rotary wing aircraft"
+              },
+              {
+                "label": "Topic",
+                "content": "Stability tests"
+              },
+              {
+                "label": "Topic",
+                "content": "Structural reliability"
+              },
+              {
+                "label": "Topic",
+                "content": "Structural stability"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "Smithsonian Libraries"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "Call number",
+                "content": "TL671.7 .P55X"
+              },
+              {
+                "label": "Call number",
+                "content": "TL671.7.P55X"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Type",
+                "content": "Books"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical description",
+                "content": "x, 186 pages illus 28 cm"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1970s"
+            ],
+            "name": [
+              "American Institute of Aeronautics and Astronautics",
+              "Society of Experimental Test Pilots"
+            ],
+            "topic": [
+              "Airplanes",
+              "Flight testing",
+              "Flight stability tests",
+              "Structural stability",
+              "Lifting bodies",
+              "Structural reliability",
+              "Aerodynamic stability",
+              "Ice formation",
+              "Essais en vol",
+              "Pilots (personnel)",
+              "In-flight monitoring",
+              "Launching",
+              "Avions",
+              "Rotary wing aircraft",
+              "Military",
+              "Flight tests",
+              "Stability tests",
+              "Firing (igniting)",
+              "Aeronautics",
+              "Altitude tests",
+              "High altitude tests",
+              "Engine tests",
+              "Flight test instruments",
+              "Jet engines",
+              "Aircraft carriers",
+              "Aerodynamic characteristics"
+            ],
+            "language": [
+              "English language"
+            ],
+            "object_type": [
+              "Books"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "title": {
+              "label": "Title",
+              "content": "Pilots handbook for critical and exploratory flight testing"
+            },
+            "record_ID": "siris_sil_15493",
+            "unit_code": "SIL",
+            "title_sort": "PILOTS HANDBOOK FOR CRITICAL AND EXPLORATORY FLIGHT TESTING",
+            "data_source": "Smithsonian Libraries",
+            "record_link": "https://siris-libraries.si.edu/ipac20/ipac.jsp?&profile=liball&source=~!silibraries&uri=full=3100001~!15493~!0#focus",
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "7a9c8610945e2532171e78a660fb04aea41f157f",
+        "docSignature": "24b9ac833ea97bed4fd2109889a7e8bd",
+        "timestamp": "1498153881",
+        "lastTimeUpdated": "1724067864",
+        "version": "1724064360"
+      },
+      {
+        "id": "ld1-1643398853934-1643398890468-1",
+        "title": "Psychological Tests, Dearborn Group Tests of Intelligence",
+        "unitCode": "NMAH",
+        "type": "edanmdm",
+        "url": "edanmdm:nmah_694267",
+        "content": {
+          "freetext": {
+            "name": [
+              {
+                "label": "author",
+                "content": "Dearborn, Walter F."
+              },
+              {
+                "label": "publisher",
+                "content": "Educational Test Bureau"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "This is a group of tests from the Dearborn Group Tests of Intelligence. Compare with 316371.07.02 and 316371.07.01. It is from Series I and is the General Examination 2. It was published by J.B. Lippincott. Five of the six tests in this collection are protected by a sheet of red cardboard in the back that is folded over to make up part of the left-hand margin. Each of the tests is two-hole punched."
+              },
+              {
+                "label": "Description",
+                "content": "The first test has circles and squares in red and blue ink. The test also includes pen and ink drawings, and pictures of dominos. The second test is comprised primarily of pen and ink drawings as well as a section dealing with shapes. The third test has a cover page entitled “Games and Puzzles.” This test is comprised of pen and ink drawings as well as games and puzzles. The fourth test includes mazes, word problems, pen and ink drawings, pictures of blocks, and number problems. The fifth test does not include the red cardboard sheet in the back, is entitled “Games and Picture Puzzles,” and includes twenty two different images. The sixth test is entitled “Games and Puzzles, Series II-C” and is the revised edition. The test is six pages long and folds out. It includes questions dealing with pen and ink images, shapes, and word problems. The seventh test, “Games and Puzzles, Series II-D,” is the revised edition and appears to use many of the same questions from the fourth test. Therefore, it is potentially useful to persons interested in studying changes and developments in mental testing."
+              },
+              {
+                "label": "Location",
+                "content": "Currently not on view"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Subject",
+                "content": "Psychology"
+              },
+              {
+                "label": "Subject",
+                "content": "Psychological Tests"
+              },
+              {
+                "label": "Subject",
+                "content": "Mathematics"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Medicine and Science: Mathematics"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of David Shakow"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "National Museum of American History"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "ID Number",
+                "content": "MA.316371.007.03"
+              },
+              {
+                "label": "catalog number",
+                "content": "316371.007.03"
+              },
+              {
+                "label": "accession number",
+                "content": "316371"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "psychological test"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical Description",
+                "content": "paper (overall material)"
+              },
+              {
+                "label": "Measurements",
+                "content": "overall: 22 cm x 28 cm; 8 21/32 in x 11 1/32 in"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "name": [
+              "Educational Test Bureau",
+              "Dearborn, Walter F."
+            ],
+            "topic": [
+              "Psychology",
+              "Psychological Tests",
+              "Mathematics"
+            ],
+            "object_type": [
+              "psychological test"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "https://n2t.net/ark:/65665/ng49ca746b4-f51f-704b-e053-15f76fa0b4fa",
+            "title": {
+              "label": "Title",
+              "content": "Psychological Tests, Dearborn Group Tests of Intelligence"
+            },
+            "record_ID": "nmah_694267",
+            "unit_code": "NMAH",
+            "title_sort": "PSYCHOLOGICAL TESTS, DEARBORN GROUP TESTS OF INTELLIGENCE",
+            "data_source": "National Museum of American History",
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "a7267af72d2435fcb368ad568c45a48f940f9d9d",
+        "docSignature": "bf3732bdcfdd555bc182390c75cd8c0a",
+        "timestamp": "1663782564",
+        "lastTimeUpdated": "1732359016",
+        "version": "1732357906"
+      },
+      {
+        "id": "ld1-1643398853934-1643398890491-0",
+        "title": "Psychological Test Documentation, Directions for Miles Dominance Test",
+        "unitCode": "NMAH",
+        "type": "edanmdm",
+        "url": "edanmdm:nmah_694305",
+        "content": {
+          "freetext": {
+            "notes": [
+              {
+                "label": "Description",
+                "content": "This folder contains a sheet entitled “Directions for Miles Dominance Test.” The test measures dominance but does so by telling the test taker they are taking a test of “sharpness and quickness in seeing.” The sheet lists four steps for proctoring the test."
+              },
+              {
+                "label": "Location",
+                "content": "Currently not on view"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Subject",
+                "content": "Psychology"
+              },
+              {
+                "label": "Subject",
+                "content": "Psychological Tests"
+              },
+              {
+                "label": "Subject",
+                "content": "Mathematics"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Medicine and Science: Mathematics"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of David Shakow"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "National Museum of American History"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "ID Number",
+                "content": "MA.316371.041"
+              },
+              {
+                "label": "catalog number",
+                "content": "316371.041"
+              },
+              {
+                "label": "accession number",
+                "content": "316371"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "psychological test documentation"
+              },
+              {
+                "label": "Object Name",
+                "content": "psychological test documentation"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical Description",
+                "content": "paper (overall material)"
+              },
+              {
+                "label": "Measurements",
+                "content": "overall: 21.5 cm x 28 cm; 8 15/32 in x 11 1/32 in"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "topic": [
+              "Psychology",
+              "Psychological Tests",
+              "Mathematics"
+            ],
+            "object_type": [
+              "psychological test documentation"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "https://n2t.net/ark:/65665/ng49ca746a5-183e-704b-e053-15f76fa0b4fa",
+            "title": {
+              "label": "Title",
+              "content": "Psychological Test Documentation, Directions for Miles Dominance Test"
+            },
+            "record_ID": "nmah_694305",
+            "unit_code": "NMAH",
+            "title_sort": "PSYCHOLOGICAL TEST DOCUMENTATION, DIRECTIONS FOR MILES DOMINANCE TEST",
+            "data_source": "National Museum of American History",
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "4f62958fe24fde66b98a7b93c389bb4463780c02",
+        "docSignature": "cfe16d17bfb5752feb9e06262f636b88",
+        "timestamp": "1663782564",
+        "lastTimeUpdated": "1732284690",
+        "version": "1732271515"
+      },
+      {
+        "id": "ld1-1643399134763-1643399172149-0",
+        "title": "Group of Psychological Tests, Aptitude Tests",
+        "unitCode": "NMAH",
+        "type": "edanmdm",
+        "url": "edanmdm:nmah_904499",
+        "content": {
+          "freetext": {
+            "date": [
+              {
+                "label": "date made",
+                "content": "1948"
+              }
+            ],
+            "notes": [
+              {
+                "label": "Description",
+                "content": "This is a group of aptitude tests for supervisory personnel. It includes a sheet of instructions for completing aptitude tests, an aptitude test information form, and the six tests intended for testing sales personnel (the Bernreuter Personality Inventory, the Otis Employment Test (this acutually is stored with 2000.3029.02.3), the Social Intelligence Test, the Strong Vocational Interest Blank, the test How Perfect is Your Sales Sense?, and the Washburne S-A Inventory). In addition, there are the three tests listed with subindex numbers 2000.3029.03.01 through 2000.3029.03.03 that are described in separate records. The date is taken from a pencil mark on the first sheet."
+              },
+              {
+                "label": "Location",
+                "content": "Currently not on view"
+              }
+            ],
+            "topic": [
+              {
+                "label": "Subject",
+                "content": "Psychology"
+              },
+              {
+                "label": "Subject",
+                "content": "Psychological Tests"
+              }
+            ],
+            "setName": [
+              {
+                "label": "See more items in",
+                "content": "Medicine and Science: Mathematics"
+              }
+            ],
+            "creditLine": [
+              {
+                "label": "Credit Line",
+                "content": "Gift of Cincinnati Boss Company"
+              }
+            ],
+            "dataSource": [
+              {
+                "label": "Data Source",
+                "content": "National Museum of American History"
+              }
+            ],
+            "identifier": [
+              {
+                "label": "ID Number",
+                "content": "2000.3029.03"
+              },
+              {
+                "label": "nonaccession number",
+                "content": "2000.3029"
+              },
+              {
+                "label": "catalog number",
+                "content": "2000.3029.03"
+              }
+            ],
+            "objectType": [
+              {
+                "label": "Object Name",
+                "content": "Psychological Tests, Group Of"
+              }
+            ],
+            "physicalDescription": [
+              {
+                "label": "Physical Description",
+                "content": "paper (overall material)"
+              },
+              {
+                "label": "Measurements",
+                "content": "overall: .4 cm x 22 cm x 28 in; 5/32 in x 8 21/32 in x 71.12 cm"
+              }
+            ]
+          },
+          "indexedStructured": {
+            "date": [
+              "1940s"
+            ],
+            "topic": [
+              "Psychology",
+              "Psychological Tests"
+            ],
+            "object_type": [
+              "Psychological Tests, Group Of"
+            ],
+            "online_media_type": [
+              "Images"
+            ]
+          },
+          "descriptiveNonRepeating": {
+            "guid": "https://n2t.net/ark:/65665/ng49ca746a7-52c2-704b-e053-15f76fa0b4fa",
+            "title": {
+              "label": "Title",
+              "content": "Group of Psychological Tests, Aptitude Tests"
+            },
+            "record_ID": "nmah_904499",
+            "unit_code": "NMAH",
+            "title_sort": "GROUP OF PSYCHOLOGICAL TESTS, APTITUDE TESTS",
+            "data_source": "National Museum of American History",
+            "metadata_usage": {
+              "access": "CC0"
+            }
+          }
+        },
+        "hash": "d70be8fe464573a1600626064704a90ce6fcd98f",
+        "docSignature": "91b05d53ebf9f853b3b18e07f057298d",
+        "timestamp": "1663782630",
+        "lastTimeUpdated": "1732358398",
+        "version": "1732357798"
+      }
+    ],
+    "facets": {},
+    "rowCount": 17502,
+    "message": "content found"
+  }
+}

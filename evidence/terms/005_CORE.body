@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CORE API Documentation</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            text-align: justify;
+        }
+
+        ul li{
+            padding-bottom: 15px;
+        }
+
+        blockquote {
+            color: rgba(0, 0, 0, .87) !important;
+            border-left: 3px solid #b75400 !important;
+            background-color: #f5f5f5 !important;
+            padding: .5rem .5rem !important;
+        }
+
+        .linkDocs {
+            background-color: rgba(190, 100, 22, 0.12);
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .dot {
+            font-weight: bold;
+            color: rgb(229, 57, 53);
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .link {
+            text-decoration: underline !important;
+        }
+
+        .entityTable {
+            font-size: 14px;
+            overflow: auto;
+            width: 100%;
+            display: inline-table;
+        }
+
+        .entityTable tr td:nth-child(3) {
+            width: 120px;
+            word-break: break-word;
+        }
+
+        .entityTable tr td:nth-child(4) {
+            width: 190px;
+            word-break: break-word;
+        }
+
+        .entityTable td {
+            vertical-align: top;
+        }
+
+        .wordBreak {
+            word-break: break-all;
+        }
+
+
+        @media screen and (max-width: 1800px) {
+            .wordBreak {
+                word-break: normal;
+            }
+
+            .entityTable tr td:nth-child(3),
+            .entityTable tr td:nth-child(4) {
+                word-break: normal;
+            }
+
+            .entityTable {
+                overflow-x: auto !important;
+            }
+
+        }
+
+        .preCode {
+            background: #f6f8fa !important;
+            border-radius: 6px !important;
+            overflow-x: auto !important;
+            padding: 10px !important;
+        }
+
+        .codePython {
+            color: #333 !important;
+            font-family: monospace !important;
+            font-size: 0.9em !important;
+            border: none !important;
+            white-space: pre !important;
+        }
+
+        .codeJson {
+            color: rgb(229, 57, 53) !important;
+            font-family: monospace !important;
+            font-size: 0.8em !important;
+            border: none !important;
+            white-space: pre !important;
+        }
+
+        /* Hide the type request in menu */
+        [data-item-id="operation/customHowCallAPI"] span[type="options"].operation-type.options {
+            opacity: 0;
+            display: none;
+        }
+        [data-item-id="operation/PDFDownloadPolicy"] span[type="options"].operation-type.options {
+            opacity: 0;
+            display: none;
+        }
+        [data-item-id="tag/Outputs/operation/optionsCustomSearchOutputsAggregation"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Works/operation/optionsCustomSearchWorksAggregation"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Search/operation/optionsKeywordQueries"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Search/operation/optionsWithoutField"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Entities"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Rate-limits"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Works/operation/optionsCustomWorks"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Works/operation/optionsCustomSearchWorks"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Outputs/operation/optionsCustomOutputs"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Outputs/operation/optionsCustomSearchOutputs"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Data-Providers/operation/optionsCustomDataProviders"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Data-Providers/operation/optionsCustomSearchDataProvidersAggregation"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Data-Providers/operation/optionsCustomSearchDataProviders"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Journals/operation/optionsCustomJournals"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Journals/operation/optionsCustomSearchJournals"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Journals/operation/optionsCustomSearchJournalsAggregation"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Search/operation/optionsCustomSearchWorks"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Search/operation/optionsCustomSearchOutputs"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Search/operation/optionsCustomSearchDataProviders"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Search/operation/optionsCustomSearchJournals"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Search/operation/optionsCustomQueryLanguage"] span[type="options"].operation-type.options,
+        [data-item-id="tag/Search/operation/optionsCustomSearchAggregation"] span[type="options"].operation-type.options {
+            opacity: 0;
+        }
+
+        /* Hide the auth section on left side */
+        [data-section-id="operation/optionsCustomSearchOutputsAggregation"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearchWorksAggregation"] > div:first-child > div:last-child,
+        [data-section-id="operation/customHowCallAPI"] > div:first-child > div:last-child,
+        [data-section-id="operation/PDFDownloadPolicy"] > div:first-child > div:last-child,
+        [data-section-id="operation/customEntitiesIntroduction"] > div:first-child > div:last-child,
+        [data-section-id="operation/customEntitiesDataModel"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsKeywordQueries"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsWithoutField"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomDataProviders"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomJournals"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomWorks"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomOutputs"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearch"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomRecommender"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomDiscovery"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomRateLimitCommon"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomRateLimitMonitor"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearchWorks"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearchOutputs"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearchDataProvidersAggregation"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearchDataProviders"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearchJournals"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearchJournalsAggregation"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomQueryLanguage"] > div:first-child > div:last-child,
+        [data-section-id="operation/optionsCustomSearchAggregation"] > div:first-child > div:last-child {
+            opacity: 0;
+        }
+
+        /* Hide the path section on right side */
+        [data-section-id="operation/optionsCustomSearchOutputsAggregation"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearchWorksAggregation"] > div:last-child,
+        [data-section-id="operation/customEntitiesIntroduction"] > div:last-child,
+        [data-section-id="operation/customEntitiesDataModel"] > div:last-child,
+        [data-section-id="operation/optionsKeywordQueries"] > div:last-child,
+        [data-section-id="operation/optionsWithoutField"] > div:last-child,
+        [data-section-id="operation/optionsCustomDataProviders"] > div:last-child,
+        [data-section-id="operation/optionsCustomJournals"] > div:last-child,
+        [data-section-id="operation/optionsCustomWorks"] > div:last-child,
+        [data-section-id="operation/optionsCustomOutputs"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearch"] > div:last-child,
+        [data-section-id="operation/optionsCustomRecommender"] > div:last-child,
+        [data-section-id="operation/optionsCustomDiscovery"] > div:last-child,
+        [data-section-id="operation/optionsCustomRateLimitCommon"] > div:last-child,
+        [data-section-id="operation/optionsCustomRateLimitMonitor"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearchWorks"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearchOutputs"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearchDataProviders"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearchDataProvidersAggregation"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearchJournals"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearchJournalsAggregation"] > div:last-child,
+        [data-section-id="operation/optionsCustomQueryLanguage"] > div:last-child,
+        [data-section-id="operation/optionsCustomSearchAggregation"] > div:last-child {
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="redoc-container"></div>
+<script src="/js/redoc.standalone.v2.js"></script>
+<script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+<script>
+    // System typefaces extracted from sanitize.css
+    // More: https://github.com/csstools/sanitize.css/blob/master/typography.css
+    const fontFamilySans = '"Roboto", system-ui, -apple-system, "Segoe UI", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
+    const fontFamilyMono = '"Fira Code", "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
+
+    const theme = {
+        colors: {
+            primary: {
+                main: '#b75400',
+            },
+            success: {
+                main: '#5a9216',
+            },
+            warning: {
+                main: '#f9bc04',
+                contrastText: 'rgba(0, 0, 0, .87)',
+            },
+            error: {
+                main: '#c62828',
+            },
+            gray: {
+                50: '#fafafa',
+                100: '#f5f5f5',
+            },
+            text: {
+                primary: 'rgba(0, 0, 0, .87)',
+                secondary: 'rgba(0, 0, 0, .6)',
+            },
+            border: {
+                dark: 'rgba(0, 0, 0, .12)',
+            },
+            responses: {
+                info: {
+                    color: '#01749e',
+                },
+            },
+            http: {
+                get: '#5a9216',
+                post: '#01749e',
+            },
+        },
+        typography: {
+            fontFamily: fontFamilySans,
+            fontSize: '1rem',
+            lineHeight: '1.5',
+            headings: {
+                fontFamily: fontFamilySans,
+                fontWeight: 600,
+                lineHeight: '1.25',
+            },
+            code: {
+                fontFamily: fontFamilyMono,
+                fontSize: '0.85rem',
+            },
+        },
+        sidebar: {
+            width: '16rem',
+            backgroundColor: '#f5f5f5',
+            textColor: 'rgba(0, 0, 0, .87)',
+            activeTextColor: ({colors}) => colors.primary.main,
+        },
+        logo: {
+            gutter: '1rem',
+        },
+        rightPanel: {
+            backgroundColor: '#424242',
+        },
+        codeBlock: {
+            backgroundColor: '#212121',
+        },
+
+    };
+
+    const options = {
+        theme,
+        hideDownloadButton: true,
+        nativeScrollbars: true,
+        unsafeMarkdown: true
+    };
+
+    const mountElement = document.getElementById('redoc-container');
+
+    const logo = {
+        url: 'https://oacore.github.io/content/images/logos/core-api.svg',
+        altText: 'CORE API',
+    }
+
+    const specUrl = '/swagger/v3.json';
+
+    fetch(specUrl)
+        .then((response) => response.json())
+        .then((spec) => {
+            spec.info['x-logo'] = logo;
+
+            const introWorks = {
+                options: {
+                    summary: "Introduction",
+                    description: "Works represent individual pieces of scholarly research, such as research articles, " +
+                        "theses, preprints, conference papers, and more. Each Work in CORE is a deduplicated and enriched " +
+                        "representation of one or more underlying Outputs that have been harvested " +
+                        "from different sources (repositories or journals)." +
+                        "<br/><br/>The following table describes the Works API response fields:" +
+                        "<table class='entityTable'>" +
+                        "<tr>" +
+                        "  <td class='bold'>Field Name</td>" +
+                        "  <td class='bold'>Description</td>" +
+                        "  <td class='bold'>Method for obtaining the value</td>" +
+                        "  <td class='bold'>Searchable field</td>" +
+                        "  <td class='bold'>Cardinality</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'abstract'</td>" +
+                        "  <td>A summary of the work.</td>" +
+                        "  <td>OAI-PMH. The value is populated from the output with abstract != NULL.</td>" +
+                        "  <td>Searchable using field lookup via GET.Example - https://api.core.ac.uk/v3/search/works/?q=abstract:\"bibliometrics\"</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'acceptedDate'</td>" +
+                        "  <td>Date when the record was accepted for publication. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Crossref</td>" +
+                        "  <td>Supports aggregation via POST.Example - Body: <code>{ \"aggregations\": [\"acceptedDate\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'arxivId'</td>" +
+                        "  <td>Unique identifier assigned to the record in arXiv. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYMM.number</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Obtained from arXiv or retrieved from the deduplicated group if any of the output includes a relation to an ArXiv URL.</td>" +
+                        "  <td>Searchable using field lookup via GET. " +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=arxivId:1905.13497 " +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST. " +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"arxivId\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'authors'</td>" +
+                        "  <td>List of author names. Format -<br/>" +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "[<br/>" +
+                        "   {\"name\": < author_name>},<br/>" +
+                        "   ...<br/>" +
+                        "]" +
+                        "</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>OAI-PMH or enriched by obtaining values from output with the most number of authors from the deduplicated group.</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=authors:David" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - <code>Body: { \"aggregations\": [\"authors\"] }</code></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'citationCount'<span class='dot'>&#42;</span></td>" +
+                        "  <td>Number of citations received.</td>" +
+                        "  <td>Microsoft  Academic Graph (MAG)</td>" +
+                        "  <td>Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"citationCount\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'contributors'</td>" +
+                        "  <td>List of entities (editors, translators, organisations etc.) responsible for making contributions to the resource.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=contributors:CiteSeerX" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"contributors\"] }</code></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'createdDate'</td>" +
+                        "  <td>Timestamp when the record was initially created in CORE. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Database</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=createdDate:\"2016-06-16T16:34:27\"" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"createdDate\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'dataProviders'</td>" +
+                        "  <td class='wordBreak'>List of data-provider information. Format - " +
+
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"dataProviders\": <br/>" +
+                        "[{ <br/>" +
+                        "   \"id\": < data_provider_id>, <br/>" +
+                        "   \"name\": \"< name_of_data_provider>\",<br/>" +
+                        "   \"url\": \"< API_endpoint>\",<br/>" +
+                        "   \"logo\": \"< URL_of_the_logo>\" <br/>" +
+                        "}]" +
+                        "</code>" +
+                        "</pre>" +
+
+                        "</td>" +
+                        "  <td>Database</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=dataProviders:103" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"dataProviders\"] }</code>" +
+                        "</td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'depositedDate'</td>" +
+                        "  <td>Date when the record was deposited to the repository and follows the format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Crossref</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=depositedDate:\"2001-06-01T00:00:00\"" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"depositedDate\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'documentType'</td>" +
+                        "  <td>List of types of the record. Example types are ‘research’, ‘thesis’, ‘unknown’, ‘slides’, ‘research article’, 'text', 'journal article', 'conference paper', 'review', 'book', 'other', 'report', 'project', 'doctoral thesis’, 'book part', 'working paper', 'dataset', 'master thesis', 'presentation', 'bachelor thesis', 'lecture', 'conference proceedings', 'image', 'software', 'conference object', 'patent', 'video', 'annotation', 'conference poster', 'musical notation', 'preprint', 'technical report', ‘interactive resource’, ‘research proposal’, ‘review article’.</td>" +
+                        "  <td>From a machine learning tool  when possible with full-text, otherwise with an interpretation of the values from OAI-PMH dc.subject and dc.type </td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=documentType:thesis" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: { \"aggregations\": [\"documentType\"] } </td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'doi'</td>" +
+                        "  <td>DOI of the record.</td>" +
+                        "  <td>OAI-PMH and Crossref</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=doi:10.26153/tsw/52804" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"doi\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'downloadUrl'</td>" +
+                        "  <td>Download URL of the work. </td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'fieldOfStudy'<span class='dot'>&#42;</span></td>" +
+                        "  <td>Subject area or discipline related to the work.</td>" +
+                        "  <td>Obtained from  Microsoft  Academic Graph (MAG)</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'fullText'</td>" +
+                        "  <td>Full-text of the work.</td>" +
+                        "  <td>Using the download URL from OAI-PMH, the PDF is crawled and value is obtained from PDF using Apache PDFBox.</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=fullText:political-science</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "  <td class='bold'>'id'</td>" +
+                        "  <td>Unique Work identifier</td>" +
+                        "  <td>Database</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=id:152480964" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"id\"] }</code>" +
+                        "</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'identifiers'</td>" +
+                        "  <td class='wordBreak'>List of CORE_IDs and external identifiers (ARXIV_ID, DOI, OAI_ID) associated with the record. Identifiers follows the structure - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"identifiers\": <br/>" +
+                        "[{<br/>" +
+                        " \"identifier\": \"< identifier_value>\",<br/>" +
+                        " \"type\": \"< identifier_type>\<br/>" +
+                        " },<br/>" +
+                        " ... <br/>" +
+                        "]" +
+                        "</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>Crossref, OAI-PMH and any additional sources identifying the work. CORE_ID is obtained from the database.</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=identifiers:oai:arxiv.org:2310.16146</td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'journals'</td>" +
+                        "  <td class='wordBreak'>List of metadata (journal title and identifiers including issn) about the journal associated with the record. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"journals\":<br/>" +
+                        "[{<br/>" +
+                        "\"title\": \"< journal_title>\", <br/>" +
+                        "\"identifiers\":<br/>" +
+                        "   [<br/>" +
+                        "   \"< identifier_1>\",<br/>" +
+                        "   \"< identifier_2>\",<br/>" +
+                        "   ...<br/>" +
+                        "   ]<br/>" +
+                        "}]</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>From issn resolution and journal identifiers</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'links'</td>" +
+                        "  <td class='wordBreak'>List of different types of CORE URLs associated with the record. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"links\":<br/>" +
+                        "[{<br/>" +
+                        "   \"type\": \"< link_type>\",<br/>" +
+                        "   \"url\": \"< corresponding_url>\"<br/>" +
+                        " },<br/>" +
+                        " ...<br/>" +
+                        "]" +
+                        "</code>" +
+                        "</pre>  Example link types are 'download', 'reader', 'display', 'thumbnail_l', 'thumbnail_m'." +
+                        "</td>" +
+                        "  <td>CORE records</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'magId'<span class='dot'>&#42;</span></td>" +
+                        "  <td>Unique identifier assigned to the work in Microsoft Academic Graph.</td>" +
+                        "  <td>Obtained from  Microsoft  Academic Graph (MAG).</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=magId:2139460650" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"magId\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'oaiIds'</td>" +
+                        "  <td class='wordBreak'>List of OAI identifiers for the work and follows the structure: <code>oai:repository.domain.com:identifier</code><br/> " +
+                        "- oai: fixed prefix indicating that this is an OAI identifier.<br/> " +
+                        "- repository.domain.com :  domain name of the repository.<br>" +
+                        "- identifier : unique identifier assigned by the repository to the specific record.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=oaiIds:\"oai:nrl.northumbria.ac.uk:522\"" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"oaiIds\"] }</code>" +
+                        "</td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'outputs'</td>" +
+                        "  <td>List of URLs, pointing to a specific output in CORE.</td>" +
+                        "  <td>List of CORE IDs of the deduplicated outputs this work represents.</td>" +
+                        "  <td class='wordBreak'>Searchable via works identifier. " +
+                        "Example - https://api.core.ac.uk/v3/works/{identifier}/outputs </td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'publishedDate'</td>" +
+                        "  <td>Date, the record is published and follows the format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Crossref and OAI-PMH. The date that is  earliest is selected.</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=publishedDate:\"2009-10-18T00:00:00\"" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"publishedDate\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'publisher'</td>" +
+                        "  <td>Name of the publisher.</td>" +
+                        "  <td>OAI-PMH, Crossref, DOI prefixes. Normalised using publisher names from crossref</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=publisher:Nature" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/><br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"publisher\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'pubmedId'</td>" +
+                        "  <td>Unique identifier assigned to the record in PubMed.</td>" +
+                        "  <td>PubMed</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/><br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=pubmedId:2844484" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"pubmedId\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'references'</td>" +
+                        "  <td>List of references cited in the work. Each reference contains metadata such as id (CORE ID), title, authors, date, doi, raw (full citation text), and cites (works that cite the given document)</td>" +
+                        "  <td>From full-text parsing (when available)</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'sourceFulltextUrls'</td>" +
+                        "  <td>List of URLs where full-text is available.</td>" +
+                        "  <td>OAI-PMH metadata</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'title'</td>" +
+                        "  <td>Title of the work.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=title:retrieval-augmented-generation" +
+                        "</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'updatedDate'</td>" +
+                        "  <td>Date when the work was last updated in CORE </td>" +
+                        "  <td>Database</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=updatedDate:\"2024-08-16T00:03:23\"" +
+                        "<br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"updatedDate\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'yearPublished'</td>" +
+                        "  <td>Year the document was published.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/works/?q=yearPublished:2024" +
+                        "<br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"yearPublished\"] }</code> " +
+                        "</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "</table>" +
+                        "<span class='dot'>&#42;</span> - deprecated (This information is no longer updated.)"
+                    ,
+                    operationId: "optionsCustomWorks",
+                    tags: ["Works"],
+                },
+            };
+
+            const searchWorksPath = {
+                options: {
+                    summary: "Search Works",
+                    description: "This section provides details about how to use the CORE API query language for more complex searches within the works entity. <br/><br/>" +
+                        "<b>API Endpoint</b>" +
+                        "<pre class='preCode'><code class='codePython'>GET https://api.core.ac.uk/v3/search/works</code></pre>" +
+                        "<b>Example Search</b><br/><br/>" +
+                        "Search for works published between 2015 and 2024, that contain either \"machine learning\" or \"artificial intelligence\" in the title and have full text.<br/><br/>" +
+                        "<a href='https://api.core.ac.uk/v3/search/works/?q=(title:%22machine%20learning%22%20OR%20title:%22artificial%20intelligence%22)%20AND%20yearPublished%3E=%222015%22%20AND%20yearPublished%3C=%222024%22%20AND%20_exists_:fullText&limit=5'" +
+                        " target='_blank' class='link'>https://api.core.ac.uk/v3/search/works?q=(title:\"machine learning\" OR title:\"artificial intelligence\") AND yearPublished>=\"2015\" AND yearPublished<=\"2024\" AND _exists_:fullText&limit=5</a>" +
+                        "<br/><br/>" +
+                        "This query retrieves up to 5 works that meet all of the above conditions.<br/>" +
+                        "Example python source code to search works by DOI:<br/>" +
+
+                        // "Search within the CORE works entity using specific query parameters and fields. Below are detailed instructions and examples of how to perform targeted searches.<br/><br/>" +
+                        // "Example Searches<br/><br/>" +
+                        // "<b>Search works by DOI:</b><br/>" +
+                        // "Retrieve works with a specific DOI:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/works?q=doi:\"10.1038/s41597-023-02208-w\"</span><br/><br/>" +
+                        // "<b>Search works by Title:</b><br/>" +
+                        // "Retrieve works with a specific title, limiting the results to 1:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/works?q=title:\"Mathematics\"&limit=1</span><br/><br/>" +
+                        // "<b>Search works by keywords in full-text:</b><br/>" +
+                        // "Retrieve works containing \"sustainable development goals\" in the fulltext, with pagination set to 5:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/works?q=fullText:\"development\"&offset=5</span><br/><br/>" +
+                        // "<b>Search works by author name:</b><br/>" +
+                        // "Retrieve works authored by a specific individual:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/works?q=authors:\"Jane\"</span><br/><br/>" +
+                        // "Example python source code to search works by DOI:<br/>" +
+
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "   def search_works_by_doi(doi:str):<br/>" +
+                        "       url = \"https://api.core.ac.uk/v3/search/works\"<br/>" +
+                        "       headers = {\"Authorization\": f\"Bearer {apikey}\"}<br/>" +
+                        "       params = {\"q\": f\"doi:\"{doi}\"\", \"limit\": 1}<br/>" +
+                        "<br/>" +
+                        "           try:<br/>" +
+                        "               response = requests.get(url, headers=headers, params=params)<br/>" +
+                        "               if response.status_code == 200:<br/>" +
+                        "                   return response.json()<br/>" +
+                        "               else:<br/>" +
+                        "                   print(f\"Error {response.status_code}: {response.text}\")<br/>" +
+                        "                   return None<br/>" +
+                        "           except requests.exceptions.RequestException as e:<br/>" +
+                        "               print(f\"Request failed: {e}\")<br/>" +
+                        "               return None" +
+                        "</code>" +
+                        "</pre>" +
+                        "More examples on field specific search is available <a href='/docs/v3#tag/Works/operation/optionsCustomWorks'>here</a>"
+                    ,
+                    operationId: "optionsCustomSearchWorks",
+                    tags: ["Works"],
+                },
+            };
+
+            const searchWorksPathAggregation = {
+                options: {
+                    summary: "Search Works using aggregation",
+                    description: "POST request body example:" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "{" +
+                        "<br/>\"q\": \"climate change\"," +
+                        "<br/>\"aggregations\": [\"yearPublished\", \"authors\"]" +
+                        "<br/>}" +
+                        "</code>" +
+                        "</pre>" +
+                        "<br/>Example source code to aggregate results for works based on the above request body:" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "def search_with_aggregation(query):<br/>" +
+                        "   url = \"https://api.core.ac.uk/v3/search/works/aggregate\"<br/>" +
+                        "   headers = {<br/>" +
+                        "       \"Authorization\": f\"Bearer {apikey}\",<br/>" +
+                        "       \"Content-Type\": \"application/json\"<br/>" +
+                        "   }<br/>" +
+                        "   data = {<br/>" +
+                        "       \"q\": query,<br/>" +
+                        "       \"aggregations\": [\"yearPublished\", \"authors\"]<br/>" +
+                        "   }<br/>" +
+                        "   try:<br/>" +
+                        "       response = requests.post(url, json=data, headers=headers)<br/>" +
+                        "<br/>" +
+                        "       if response.status_code == 200:<br/>" +
+                        "           print(\"Aggregation Results:\")<br/>" +
+                        "           print(response.json())<br/>" +
+                        "       else:<br/>" +
+                        "           print(f\"Error {response.status_code}: {response.text}\")<br/>" +
+                        " <br/>" +
+                        "   except requests.exceptions.RequestException as e:<br/>" +
+                        "       print(f\"Request failed: {e}\") <br/>" +
+                        "</code>" +
+                        "</pre>" +
+                        "<br/>Aggregation response sample for <code>query=\"climate change\"</code>" +
+
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "{<br/>" +
+                        "\"aggregations\": {<br/>" +
+                        "  \"yearPublished\": {<br/>" +
+                        "    \"2025\": 4116,<br/>" +
+                        "    \"2024\": 108312,<br/>" +
+                        "    \"2023\": 151061,<br/>" +
+                        "    \"2022\": 151742,<br/>" +
+                        "    \"2021\": 135433,<br/>" +
+                        "    \"2020\": 132744,<br/>" +
+                        "    .....................<br/>" +
+                        "    .....................<br/>" +
+                        "    \"1897\": 605,<br/>" +
+                        "    \"1896\": 664,<br/>" +
+                        "    \"1892\": 543<br/>" +
+                        "  },<br/>" +
+                        "  \"authors\": {<br/>" +
+                        "    \"Wang\": 5319,<br/>" +
+                        "    \"Smith\": 4805,<br/>" +
+                        "    \"Zhang\": 4524,<br/>" +
+                        "    \"IPCC\": 4397,<br/>" +
+                        "    ......................<br/>" +
+                        "    ......................<br/>" +
+                        "    \"Campbell\": 1101,<br/>" +
+                        "    \"Hu\": 1101,<br/>" +
+                        "    \"Wood\": 1100<br/>" +
+                        "  }<br/>" +
+                        "}<br/>" +
+                        "}" +
+                        "</code>" +
+                        "</pre><br/>" +
+                        "The works fields that support aggregation can be viewed <a href='/docs/v3#tag/Works/operation/optionsCustomWorks'>here</a>"
+                    ,
+                    operationId: "optionsCustomSearchWorksAggregation",
+                    tags: ["Works"],
+                },
+            };
+
+            const introOutputs = {
+                options: {
+                    summary: "Introduction",
+                    description: "Outputs are the raw, source-specific representations of research works as harvested " +
+                        "directly from individual data providers (e.g., institutional repositories). Unlike Works, " +
+                        "Outputs are not deduplicated or enriched — they reflect the original metadata exactly as provided " +
+                        "by the source. Each Output is a single harvested item from a repository, preprint server, " +
+                        "or journal and includes detailed metadata such as authors, identifiers, publication date, " +
+                        "full text (when available), repository source information and more." +
+                        "<br/><br/>" +
+                        "Outputs response field details are described in the following table." +
+                        "<table class='entityTable'>" +
+                        "<tr>" +
+                        "  <td class='bold'>Field Name</td>" +
+                        "  <td class='bold'>Description</td>" +
+                        "  <td class='bold'>Method for obtaining the value</td>" +
+                        "  <td class='bold'>Searchable field</td>" +
+                        "  <td class='bold'>Cardinality</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'abstract'</td>" +
+                        "  <td>Abstract of the document.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'acceptedDate'</td>" +
+                        "  <td class='wordBreak'>Date when the article was accepted for publication. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Crossref</td>" +
+                        "  <td>Supports aggregation via POST.Example - Body: <code>{ \"aggregations\": [\"acceptedDate\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'authors'</td>" +
+                        "  <td>List of authors <names class=''></names></td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=authors:Schmidt</td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'contributors'</td>" +
+                        "  <td class='wordBreak'>List of entities (editors, translators, organisations etc.) responsible for making contributions to the resource.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=contributors:Schmidt&limit=50</td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'createdDate'</td>" +
+                        "  <td class='wordBreak'>Timestamp when the output record was initially created in CORE. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS±HH:MM</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'deleted'</td>" +
+                        "  <td class='wordBreak'>Shows the status of the document, if it is accessible or not. Format - <code>\"deleted\": \"< status>\"</code>, where status is ALLOWED (accessible) or DELETED (non-accessible). </td>" +
+                        "  <td>Database</td>" +
+                        "  <td class='wordBreak'>Supports aggregation via POST. Example - Body: <code>{ \"aggregations\": [\"deleted\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'depositedDate'</td>" +
+                        "  <td>The timestamp indicating when the article was initially deposited in the institutional repository. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS±HH:MM</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Supports aggregation via POST.Example - Body: <code>{ \"aggregations\": [\"depositedDate\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'disabled'</td>" +
+                        "  <td>Boolean flag (true / false) that shows if the document is disabled or restricted in the system.</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'documentType'</td>" +
+                        "  <td class='wordBreak'>List of types of the outputs. Example types are ‘research’, ‘thesis’, ‘unknown’, ‘slides’, ‘research article’, 'text', 'journal article', 'conference paper', 'review', 'book', 'other', 'report', 'project', 'doctoral thesis’, 'book part', 'working paper', 'dataset', 'master thesis', 'presentation', 'bachelor thesis', 'lecture', 'conference proceedings', 'image', 'software', 'conference object', 'patent', 'video', 'annotation', 'conference poster', 'musical notation', 'preprint', 'technical report', ‘interactive resource’, ‘research proposal’, ‘review article’. </td>" +
+                        "  <td>Using machine learning-based approach when full-text is available, otherwise with an interpretation of the values from dc.subject and dc.type </td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=documentType:thesis" +
+                        "<br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"documentType\"] }</code></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'doi'</td>" +
+                        "  <td>DOI of the output.</td>" +
+                        "  <td>OAI-PMH and Crossref matching</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=doi:\"10.1007/s002210100705\"" +
+                        "<br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"doi\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'downloadUrl'</td>" +
+                        "  <td>Direct link to download the full-text document in PDF format (if available). " +
+                        "More information about our PDF download policy can be viewed " +
+                        "<a href='/docs/v3#operation/PDFDownloadPolicy'>here</a></td>" +
+                        "  <td>Database</td>" +
+                        "  <td class='wordBreak'>Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"downloadUrl\"] }</code></td>" +
+                        "  <td class='bold'></td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'fullText'</td>" +
+                        "  <td>Full-text of the output.</td>" +
+                        "  <td>From downloading and parsing the pdf</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=fullText:Ontario</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'fulltextStatus'</td>" +
+                        "  <td>Indicates whether full text is present (enabled) or not (disabled).</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'id'</td>" +
+                        "  <td>Unique CORE identifier (CORE_ID)</td>" +
+                        "  <td>Database</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=id:216874849" +
+                        "<br/>" +
+                        "Supports aggregation via POST. " +
+                        "Example - Body: <code>{ \"aggregations\": [\"id\"] } </code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'identifiers'</td>" +
+                        "  <td class='wordBreak'>External unique identifiers for the document, such as DOI and OAI. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"identifiers\":<br/>" +
+                        "{<br/>" +
+                        "   \"doi\": \"< doi_value>\",<br/>" +
+                        "   \"oai\": \"< oai_identifier>\"<br/>" +
+                        "}" +
+                        "</code>" +
+                        "</pre>" +
+
+                        "</td>" +
+                        "  <td>OAI-PMH, Crossref and any other identifier provider</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'journals'</td>" +
+                        "  <td class='wordBreak'>List of metadata (journal title and identifiers including issn) about the journal associated with the document. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"journals\": <br/>" +
+                        "[{ <br/>" +
+                        "   \"title\": \"< journal_title>\",<br/>" +
+                        "   \"identifiers\": <br/>" +
+                        "       [ <br/>" +
+                        "       \"< identifier_1>\", <br/>" +
+                        "       \"< identifier_2>\", <br/>" +
+                        "       ...<br/>" +
+                        "       ]<br/>" +
+                        "}]" +
+                        "</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>Issn matching and CORE records</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'></td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'language'</td>" +
+                        "  <td class='wordBreak'>Language of the document including the name and code. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "“language”:<br/>" +
+                        " {<br/>" +
+                        "   \"code\":\"< ISO_639_language_code>\",<br/>" +
+                        "   \"name\":\"< name_of_the_language>\"<br/>" +
+                        " }" +
+                        "</code>" +
+                        "</pre>" +
+                        "Example language codes: 'en' (English), 'es' (Spanish), 'pt' (Portuguese), etc. </td>" +
+                        "  <td>OAI-PMH and machine learning-based approach from fullText</td>" +
+                        "  <td class='wordBreak'>Supports aggregation via POST. " +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"language\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'lastUpdate'</td>" +
+                        "  <td class='wordBreak'>Last update timestamp and follows the format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS±HH:MM</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'license'</td>" +
+                        "  <td class='wordBreak'>License under which the document is published. Possible values - ‘http://creativecommons.org/licenses/by/2.0/’, ‘http://creativecommons.org/licenses/by/3.0/’, ‘http://creativecommons.org/licenses/by-nc-sa/3.0/’, ‘http://creativecommons.org/licenses/by/4.0/’, ‘https://creativecommons.org/licenses/by-sa/4.0’, ‘https://creativecommons.org/licenses/by-nc/4.0/’. Frequently used licenses are - CC-BY" +
+                        "<br/>" +
+                        "CC-BY-SA" +
+                        "<br/>" +
+                        "CC-BY-ND" +
+                        "<br/>" +
+                        "CC-BY-NC" +
+                        "<br/>" +
+                        "CC-BY-NC-SA </td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=license:\"http://creativecommons.org/licenses/by/3.0\"</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'links'</td>" +
+                        "  <td class='wordBreak'>List of different types of CORE URLs associated with the document. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"links\":<br/>" +
+                        " [<br/>" +
+                        "   { <br/>" +
+                        "   \"type\": \"< link_type>\",<br/>" +
+                        "   \"url\": \"< corresponding_url>\"<br/>" +
+                        "   },<br/> " +
+                        "   ...<br/>" +
+                        "]" +
+                        "</code>" +
+                        "</pre> Example link types are 'download', 'reader', 'display', 'thumbnail_l', 'thumbnail_m'." +
+                        "</td>" +
+                        "  <td>CORE records</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'oai'</td>" +
+                        "  <td class='wordBreak'>OAI identifier. Format - <code>oai:repository.domain.com:identifier</code></td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=oai:\"oai:researchonline.lshtm.ac.uk:3689\"" +
+                        "<br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"oai\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'publishedDate'</td>" +
+                        "  <td class='wordBreak'>Timestamp when the output was first published. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS+TZ</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>OAI-PMH and Crossref</td>" +
+                        "  <td class='wordBreak'>Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"publishedDate\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'publisher'</td>" +
+                        "  <td>Name of the publisher.</td>" +
+                        "  <td>OAI-PMH, Crossref, DOI prefixes. All made uniform using publisher names from crossref</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'references'</td>" +
+                        "  <td class='wordBreak'>List of references cited in the output. Each reference contains metadata such as id (CORE ID), title, authors, date, doi, raw (full citation text), and cites (outputs that cite the given document). </td>" +
+                        "  <td>From full-text parsing when available</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'repositories'</td>" +
+                        "  <td class='wordBreak'>Information about repositories holding the output. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"repositories\": <br/>" +
+                        " {<br/>" +
+                        "   \"id\": \"< repository_id>\",<br/>" +
+                        "   \"openDoarId\": < open_doar_id>,<br/>" +
+                        "   \"name\": \"< repository_name>\",<br/>" +
+                        "   \"urlHomepage\": \"< homepage_url>,<br/>" +
+                        "   \"uriJournals\": \"< journals_uri>\",<br/>" +
+                        "   \"physicalName\": \"< physical_repository_name>\",<br/>" +
+                        "   \"roarId\": < roar_id>,<br/>" +
+                        "   \"baseId\": < base_id>,<br/>" +
+                        "   \"pdfStatus\": \"< pdf_availability_status>\",<br/>" +
+                        "   \"nrUpdates\": < number_of_updates>,<br/>" +
+                        "   \"lastUpdateTime\": \"< last_update_timestamp>\"<br/>" +
+                        "} " +
+                        "</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'repositoryDocument'</td>" +
+                        "  <td class='wordBreak'>Metadata information of the output including its id and different timestamps. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"repositoryDocument\":<br/>" +
+                        " {<br/>" +
+                        "   \"id\": < CORE_ID>,<br/>" +
+                        "   \"depositedDate\": \"< deposit_date>\",<br/>" +
+                        "   \"publishedDate\": \"< publication_date>\",<br/>" +
+                        "   \"updatedDate\": \"< last_updated_date>\",<br/>" +
+                        "   \"acceptedDate\": \"< acceptance_date>\",<br/>" +
+                        "   \"createdDate\": \"< record_creation_date>\"<br/>" +
+                        " } " +
+                        "</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'sdg'</td>" +
+                        "  <td class='wordBreak'>Multi-label Sustainable Development Goals (SDG) classification. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "[<br/>" +
+                        "   {<br/>" +
+                        "   \"type\": \"< SDG_Class>\",<br/>" +
+                        "   \"score\": \"< confidence_score>\"<br/>" +
+                        "   },<br/>" +
+                        "   ...<br/>" +
+                        "]" +
+                        "</code>" +
+                        "</pre>" +
+                        "Example SDG_Class is ‘SDG04’</td>" +
+                        "  <td>From multi-label machine learning-based SDG classifier</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'setSpecs'</td>" +
+                        "  <td>List of IDs used to filter metadata records based on predefined groupings or categories within a repository.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET. " +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=setSpecs:7374617475733D707562</td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'sourceFulltextUrls'</td>" +
+                        "  <td>List of URLs to view the full-text of the document.</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'subjects'</td>" +
+                        "  <td class='wordBreak'>List with possible values - ''Article', 'Text', 'NonPeerReviewed', 'Thesis', 'PeerReviewed’, 'Peer-reviewed Article', 'Journal', 'Journal Article', 'posted-content', ''publication-article', 'preprint', 'Student thesis', 'Peer reviewed', 'Book''</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Supports aggregation via POST. " +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"subjects\"] }</code></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'tags'</td>" +
+                        "  <td>List of topical labels associated with the article</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'title'</td>" +
+                        "  <td>Title of the article.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=title:\"sustainable development goals\"</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'updatedDate'</td>" +
+                        "  <td class='wordBreak'>Date in which the article was updated in CORE. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "<span>YYYY-MM-DDTHH:MM:SS±HH:MM</span>" +
+                        "</pre>" +
+                        "</code>" +
+                        "</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'urls'</td>" +
+                        "  <td class='wordBreak'>List of URLs pointing to resources related to the output.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'yearPublished'</td>" +
+                        "  <td>Year the document was published.</td>" +
+                        "  <td>OAI-PMH</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/outputs/?q=yearPublished:2016</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "</table>"
+                    ,
+                    operationId: "optionsCustomOutputs",
+                    tags: ["Outputs"],
+                },
+            };
+
+            const searchOutputsPath = {
+                options: {
+                    summary: "Search Outputs",
+                    description: "Search through the CORE outputs entity using specific query parameters and fields. " +
+                        "Below are detailed instructions and examples of how to perform targeted searches.<br/><br/>" +
+                        "<b>API Endpoint</b><br/>" +
+                        "<pre class='preCode'><code class='codePython'>GET https://api.core.ac.uk/v3/search/outputs</code></pre>" +
+                        "<b>Example Search</b><br/><br/>" +
+                        "The following query retrieves up to 25 outputs that meet the following conditions:  The documentType is \"research\" and " +
+                        "the output contains license information (i.e., the license field is not empty).<br/><br/>" +
+                        "<a href='https://api.core.ac.uk/v3/search/outputs/?q=documentType:%22research%22%20AND%20_exists_:license&limit=25' " +
+                        "target='_blank' class='link'>https://api.core.ac.uk/v3/search/outputs/?q=documentType:\"research\" AND _exists_:license&limit=25</a>" +
+                        "<br/><br/>Example python source code to search outputs full text by keywords:<br/>" +
+
+                        // "Search through the CORE outputs entity using specific query parameters and fields. " +
+                        // "Below are detailed instructions and examples of how to perform targeted searches.<br/><br/>" +
+                        // "Example Searches<br/><br/>" +
+                        // "<b>Search outputs by id:</b><br/>" +
+                        // "Retrieve outputs with a specific CORE ID:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/outputs?q=id:\\\"571215426\\\"</span><br/><br/>" +
+                        // "<b>Search outputs by Title:</b><br/>" +
+                        // "Retrieve outputs with a specific title, limiting the results to 1:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/outputs?q=title:\\\"Mathematics\\\"&limit=1</span><br/><br/>" +
+                        // "<b>Search outputs by keywords in full-text:</b><br/>" +
+                        // "Retrieve outputs containing \\\"sustainable development goals\\\" in the full-text, with pagination offset set to 5:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/outputs?q=fullText:\\\"development\\\"&offset=5</span><br/><br/>" +
+                        // "<b>Search outputs by author name:</b><br/>" +
+                        // "Retrieve outputs authored by a specific individual:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/outputs?q=authors:\\\"Jane\\\"</span><br/><br/>" +
+                        // "Example source code to search outputs by keywords in full-text:<br/>" +
+
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "   def search_outputs_by_keywords(keywords:str):<br/>" +
+                        "       url = \"https://api.core.ac.uk/v3/search/outputs\"<br/>" +
+                        "       headers = {\"Authorization\": f\"Bearer {apikey}\"}<br/>" +
+                        "       params = {\"q\": f\"fullText:\"{keywords}\"\", \"limit\": 5}<br/>" +
+                        "<br/>" +
+                        "           try:<br/>" +
+                        "               response = requests.get(url, headers=headers, params=params)<br/>" +
+                        "               if response.status_code == 200:<br/>" +
+                        "                   return response.json()<br/>" +
+                        "               else:<br/>" +
+                        "                   print(f\"Error {response.status_code}: {response.text}\")<br/>" +
+                        "                   return None<br/>" +
+                        "           except requests.exceptions.RequestException as e:<br/>" +
+                        "               print(f\"Request failed: {e}\")<br/>" +
+                        "               return None" +
+                        "</code>" +
+                        "</pre>" +
+                        "More examples on field specific search is available <a href='/docs/v3#tag/Outputs/operation/optionsCustomOutputs'>here</a>"
+                    ,
+                    operationId: "optionsCustomSearchOutputs",
+                    tags: ["Outputs"],
+                },
+            };
+
+            const searchOutputsPathAggregation = {
+                options: {
+                    summary: "Search Outputs using aggregation",
+                    description: "POST request body example:" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "{" +
+                        "<br/>\"q\": \"climate change\"," +
+                        "<br/>\"aggregations\": [\"documentType\"]" +
+                        "<br/>}" +
+                        "</code>" +
+                        "</pre>" +
+                        "Example source code to aggregate results for outputs based on the above request body: <br/>" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "def search_with_aggregation(query):<br/>" +
+                        "   url = \"https://api.core.ac.uk/v3/search/outputs/aggregate\"<br/>" +
+                        "   headers = {<br/>" +
+                        "       \"Authorization\": f\"Bearer {apikey}\",<br/>" +
+                        "       \"Content-Type\": \"application/json\"<br/>" +
+                        "   }<br/>" +
+                        "<br/>" +
+                        "   data = {<br/>" +
+                        "       \"q\": query,<br/>" +
+                        "       \"aggregations\": [\"documentType\"]<br/>" +
+                        "   }<br/>" +
+                        "<br/>" +
+                        "   try:<br/>" +
+                        "       response = requests.post(URL, json=data, headers=headers)<br/>" +
+                        "<br/>" +
+                        "       if response.status_code == 200:<br/>" +
+                        "           print(\"Aggregation Results:\")<br/>" +
+                        "           print(response.json())<br/>" +
+                        "       else:<br/>" +
+                        "           print(f\"Error {response.status_code}: {response.text}\")<br/>" +
+                        "   except requests.exceptions.RequestException as e:<br/>" +
+                        "       print(f\"Request failed: {e}\")<br/>" +
+                        "</code>" +
+                        "</pre>" +
+                        "Aggregation response sample for <code>query=\"climate change\"</code>" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "{<br/>" +
+                        "   'aggregations':<br/>" +
+                        "       {'documentType':<br/>" +
+                        "           {'thesis': 356641,<br/>" +
+                        "           'research article': 306314,<br/>" +
+                        "           'research': 297313,<br/>" +
+                        "           'text': 202666,<br/>" +
+                        "           'review': 124039,<br/>" +
+                        "           'journal article': 88727,<br/>" +
+                        "           'unknown': 56630,<br/>" +
+                        "           'book': 31395,<br/>" +
+                        "           ................... <br/>" +
+                        "           ................... <br/>" +
+                        "           'data paper': 7,<br/>" +
+                        "           'project deliverable': 4,<br/>" +
+                        "           'sound': 2,<br/>" +
+                        "           'technical documentation': 2,<br/>" +
+                        "           'musical notation': 1,<br/>" +
+                        "           'website': 1}<br/>" +
+                        "       }<br/>" +
+                        "}" +
+                        "</code>" +
+                        "</pre>"
+                    ,
+                    operationId: "optionsCustomSearchOutputsAggregation",
+                    tags: ["Outputs"],
+                },
+            };
+
+            const introDataProviders = {
+                options: {
+                    summary: "Introduction",
+                    description: "Data-providers  entity gives access to the collection of sources that supply content to CORE. " +
+                        "These include – Institutional repositories, disciplinary repositories, preprint servers,  journals and publishers. " +
+                        "Each data provider record includes details about the source, such as its name, OAI-PMH endpoint, metadata format, software used, " +
+                        "institutional identifiers, and geographic location." +
+                        "<br/><br/>" +
+                        "Data-providers response field descriptions is shown below:" +
+                        "<table class='entityTable'>" +
+                        "<tr>" +
+                        "  <td class='bold'>Field Name</td>" +
+                        "  <td class='bold'>Description</td>" +
+                        "  <td class='bold'>Method for obtaining the value</td>" +
+                        "  <td class='bold'>Searchable field</td>" +
+                        "  <td class='bold'>Cardinality</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'aliases'</td>" +
+                        "  <td>List of alternative names or acronyms for the institution.</td>" +
+                        "  <td>Research Organization Registry (ROR)</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=aliases:Lisboa</td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'createdDate'</td>" +
+                        "  <td></td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'email'</td>" +
+                        "  <td>Contact email for the data provider.</td>" +
+                        "  <td>Manually curated and from oai-pmh</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=email:\"napier.ac.uk\"</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'homepageUrl'</td>" +
+                        "  <td>Homepage URL of the data provider.</td>" +
+                        "  <td>Manually curated and automatically detected</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'id'</td>" +
+                        "  <td>Unique identifier for the data provider.</td>" +
+                        "  <td>Database</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=id:\"100\"" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"id\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'institutionName'</td>" +
+                        "  <td>Name of the institution responsible for the repository or data provider.</td>" +
+                        "  <td>Research Organization Registry (ROR)</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=institutionName:Basel</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'location'</td>" +
+                        "  <td class='wordBreak'>Geographical location details about the data provider or repository, including country code, latitude, and longitude. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"location\":<br/>" +
+                        " {<br/>" +
+                        "   \"countryCode\": \"< ISO_country_code>\",<br/>" +
+                        "   \"latitude\": < latitude_value>,<br/>" +
+                        "   \"longitude\": < longitude_value><br/>" +
+                        " }" +
+                        "</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>Manually curated or available at various repository sources</td>" +
+                        "  <td class='wordBreak'>Searchable with subfields via GET." +
+                        "<br/>" +
+                        "Example: https://api.core.ac.uk/v3/search/data-providers/?q=location.countryCode:se</td>" +
+                        "  <td class='bold'></td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'logo'</td>" +
+                        "  <td>CORE API URL to the logo image of the data provider.</td>" +
+                        "  <td>Manually curated</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'metadataFormat'</td>" +
+                        "  <td>Metadata format used.</td>" +
+                        "  <td>Automatically detected or manually curated</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=metadataFormat:\"rioxx\"</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'name'</td>" +
+                        "  <td>Name of the data provider.</td>" +
+                        "  <td>From db, manually curated and automated</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=name:Glasgow</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'oaiPmhUrl'</td>" +
+                        "  <td class='wordBreak'>Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) endpoint URL of a repository.</td>" +
+                        "  <td>Manually curated and automatically added</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'openDoarId'</td>" +
+                        "  <td>Unique identifier of the repository from OpenDOAR.</td>" +
+                        "  <td>From matching with opendoar</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=openDoarId:1275" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"openDoarId\"] }</code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'otherIdentifiers'</td>" +
+                        "  <td class='wordBreak'>External global identifiers for the institution including Global Research Identifier Database (GRID) ID. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"otherIdentifiers\":<br/>" +
+                        "   {<br/>" +
+                        "   \"< identifier_type>\": <br/>" +
+                        "       {<br/>" +
+                        "       \"preferred\": \"< preferred_identifier>\",<br/>" +
+                        "       \"all\": \"< all_identifiers>\"<br/>" +
+                        "       }<br/>" +
+                        "   }" +
+                        "</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>Research Organization Registry (ROR)</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'rorId'</td>" +
+                        "  <td>Unique ROR (Research Organization Registry) identifier.</td>" +
+                        "  <td class='wordBreak'>Automatically detected by matching institutions and also manually curated</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET. " +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=rorId:\"https://ror.org/04ea70f07\"</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'software'</td>" +
+                        "  <td class='wordBreak'>Software used by data-providers for managing digital repositories. Examples include - ‘EPrints’, ‘DSpace’, ‘WEKO’, ‘DigitalCommons / BEPress’, ‘ojs’, ‘Dataverse’ etc. </td>" +
+                        "  <td>Automatically detected</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "Example - https://api.core.ac.uk/v3/search/data-providers/?q=software:\"DSpace\" " +
+                        "Supports aggregation via POST." +
+                        "Example - Body:  <code>{ \"aggregations\": [\"software\"] } </code></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'type'</td>" +
+                        "  <td>Indicates the classification of the data provider. Possible values are REPOSITORY, JOURNAL</td>" +
+                        "  <td>Automatically detected based on repository features</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "</table>"
+                    ,
+                    operationId: "optionsCustomDataProviders",
+                    tags: ["Data Providers"],
+                },
+            };
+
+            const searchDataProvidersPath = {
+                options: {
+                    summary: "Search Data Providers",
+                    description: "Search through the CORE data providers entity using specific query parameters and fields. " +
+                        "Below are detailed instructions and examples of how to perform targeted searches.<br/><br/>" +
+                        "<b>API Endpoint</b><br/>" +
+                        "<pre class='preCode'><code class='codePython'>GET https://api.core.ac.uk/v3/search/data-providers</code></pre>" +
+                        "<b>Example Search</b><br/><br/>" +
+                        "The following query retrieves all data providers in the US with \"university\" in the name of the data provider.<br/><br/>" +
+                        "<a href='https://api.core.ac.uk/v3/search/data-providers/?q=location.countryCode:us%20AND%20name:university' " +
+                        "target='_blank' class='link'>https: //api.core.ac.uk/v3/search/data-providers/?q=location.countryCode:us AND name:university</a>" +
+
+                        // "Search through the CORE data-providers entity using specific query parameters and fields. " +
+                        // "Below are detailed instructions and examples of how to perform targeted searches.<br/><br/>" +
+                        // "Example Searches<br/>" +
+                        // "<b>Search data providers by ID:</b><br/>" +
+                        // "Retrieve data providers with a specific id:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/data-providers?q=id:\\\"86\\\"</span><br/><br/>" +
+                        // "<b>Search data providers by Name:</b><br/>" +
+                        // "Retrieve data providers based on the name:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/data-providers?q=name:\\\"NERC\\\"</span><br/><br/>" +
+                        // "<b>Search data providers by Institution Name:</b><br/>" +
+                        // "Retrieve data providers from a specific institution:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/data-providers?q=institutionName:\\\"Glasgow\\\"</span><br/><br/>" +
+                        // "Example source code to search data-providers by ID:" +
+
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "   def search_dp_by_id(id:str):<br>" +
+                        "       url = \"https://api.core.ac.uk/v3/search/data-providers\"<br>" +
+                        "       headers = {\"Authorization\": f\"Bearer {apikey}\"}<br>" +
+                        "       params = {\"q\": f\"id:\"{id}\"\", \"limit\": 1}<br>" +
+                        "<br/>" +
+                        "           try:<br>" +
+                        "               response = requests.get(url, headers=headers, params=params)<br>" +
+                        "               if response.status_code == 200:<br>" +
+                        "                   return response.json()<br>" +
+                        "               else:<br>" +
+                        "                   print(f\"Error {response.status_code}: {response.text}\")<br>" +
+                        "                   return None<br>" +
+                        "           except requests.exceptions.RequestException as e:<br>" +
+                        "               print(f\"Request failed: {e}\")<br>" +
+                        "               return None" +
+                        "</code>" +
+                        "</pre>" +
+                        "More examples on data-providers field specific search is available " +
+                        "<a href='/docs/v3#tag/Data-Providers/operation/optionsCustomDataProviders'>here</a>",
+                    operationId: "optionsCustomSearchDataProviders",
+                    tags: ["Data Providers"],
+                },
+            };
+
+            const searchDataProvidersPathAggregation = {
+                options: {
+                    summary: "Search Data Providers using aggregation",
+                    description:
+                        "POST request body example:" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "{<br/>" +
+                        "   \"q\": \"climate change\", <br/>" +
+                        "   \"aggregations\": [\"id\"]<br/>" +
+                        "}" +
+                        "</code>" +
+                        "</pre>" +
+                        "Example source code to aggregate results for outputs based on the above request body:" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "def search_with_aggregation(query):<br/>" +
+                        "   url = \"https://api.core.ac.uk/v3/search/data-providers/aggregate\"<br/>" +
+                        "   headers = {<br/>" +
+                        "       \"Authorization\": f\"Bearer {apikey}\",<br/>" +
+                        "       \"Content-Type\": \"application/json\"<br/>" +
+                        "   }<br/>" +
+                        "<br/>" +
+                        "   data = {<br/>" +
+                        "       \"q\": query,<br/>" +
+                        "       \"aggregations\": [\"id\"]<br/>" +
+                        "   }<br/>" +
+                        "<br/>" +
+                        "   try:<br/>" +
+                        "       response = requests.post(URL, json=data, headers=headers)<br/>" +
+                        "       if response.status_code == 200:<br/>" +
+                        "           print(\"Aggregation Results:\")<br/>" +
+                        "           print(response.json())<br/>" +
+                        "       else:<br/>" +
+                        "           print(f\"Error {response.status_code}: {response.text}\")<br/>" +
+                        "<br/>" +
+                        "   except requests.exceptions.RequestException as e:<br/>" +
+                        "       print(f\"Request failed: {e}\")<br/>" +
+                        "</code>" +
+                        "</pre>"
+                    ,
+                    operationId: "optionsCustomSearchDataProvidersAggregation",
+                    tags: ["Data Providers"],
+                },
+            };
+
+            const introJournals = {
+                options: {
+                    summary: "Introduction",
+                    description: "The Journals entity provides metadata about academic journals associated with the CORE collection. " +
+                        "This includes journals directly supplied by CORE data providers and those referenced through metadata enrichment. " +
+                        "Each journal object includes key information such as identifiers (e.g. ISSN, DOAJ ID), subject areas, " +
+                        "language, publisher, and a link to a contributing data provider." +
+                        "<br/><br/>" +
+                        "More details about the Journals response fields is as follows:" +
+
+                        "<table class='entityTable'>" +
+                        "<tr>" +
+                        "  <td class='bold'>Field Name</td>" +
+                        "  <td class='bold'>Description</td>" +
+                        "  <td class='bold'>Method for obtaining the value</td>" +
+                        "  <td class='bold'>Searchable field</td>" +
+                        "  <td class='bold'>Cardinality</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'dataProviderId'</td>" +
+                        "  <td>Unique identifier in CORE assigned for data-provider.</td>" +
+                        "  <td>Database</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'identifiers'</td>" +
+                        "  <td class='wordBreak'>List of unique identifiers associated with a journal, such as ISSNs, OAI identifiers, and URLs. Format - " +
+                        "<pre class='preCode'>" +
+                        "<code class='codeJson'>" +
+                        "\"identifiers\":<br/>" +
+                        "   [<br/>" +
+                        "   \"< identifier_value>\",<br/>" +
+                        "   \"issn:< issn_value>\",<br/>" +
+                        "   \"oai:< oai_identifier>\",<br/>" +
+                        "   \"url:< journal_url>\"<br/>" +
+                        "   ]" +
+                        "</code>" +
+                        "</pre>" +
+                        "</td>" +
+                        "  <td>From list</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/journals/?q=\"1744-9081\"</td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'language'</td>" +
+                        "  <td>Language used in the journal.</td>" +
+                        "  <td>Collected at submission time, either manually or automatically</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'publisher'</td>" +
+                        "  <td>Name of the publisher.</td>" +
+                        "  <td>Collected at submission time, either manually or automatically</td>" +
+                        "  <td></td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'subjects'</td>" +
+                        "  <td class='wordBreak'>List of domains associated with the journal. Possible values - ‘Medicine’, ‘Science’, ‘Social Sciences’, ‘Mathematics’, ‘Chemistry’, etc.</td>" +
+                        "  <td>Collected at submission time, either manually or automatically</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/journals/?q=subjects:Agriculture" +
+                        "<br/><br/>" +
+                        "Supports aggregation via POST." +
+                        "<br/>" +
+                        "Example - Body: <code>{ \"aggregations\": [\"subjects\"] }</code></td>" +
+                        "  <td class='bold'>multiple</td>" +
+                        "</tr>" +
+
+                        "<tr>" +
+                        "  <td class='bold'>'title'</td>" +
+                        "  <td>Name of the journal.</td>" +
+                        "  <td class='wordBreak'>Collected at submission time, either manually or automatically</td>" +
+                        "  <td class='wordBreak'>Searchable using field lookup via GET." +
+                        "<br/>" +
+                        "Example - https://api.core.ac.uk/v3/search/journals/?q=title:Revista</td>" +
+                        "  <td class='bold'>single</td>" +
+                        "</tr>" +
+
+                        "</table>",
+                    operationId: "optionsCustomJournals",
+                    tags: ["Journals"],
+                },
+            };
+
+            const searchJournalsPath = {
+                options: {
+                    summary: "Search Journals",
+                    description: "Search through the CORE data providers entity using specific query parameters and fields. "+
+                        "Below are detailed instructions and examples of how to perform targeted searches." +
+                        "<b>API Endpoint</b><br/>" +
+                        "<pre class='preCode'><code class='codePython'>GET https://api.core.ac.uk/v3/search/journals</code></pre>" +
+                        "<b>Example Search</b><br/>" +
+                        "The following query retrieves 10 journals with \"neuroscience\" in the subject and \"Brain\" in the title:<br/><br/>" +
+                        "<a href='https://api.core.ac.uk/v3/search/journals/?q=title:%22Brain%22%20AND%20subjects:%22neuroscience%22&limit=10' " +
+                        "target='_blank' class='link'>https: //api.core.ac.uk/v3/search/journals?q=title:\"Brain\" AND subjects:\"neuroscience\"&limit=10</a>" +
+                        "<br/><br/>Example python source code to search journals by subject:" +
+
+                        // "Search through the CORE journals entity using specific query parameters. Below are detailed instructions and examples of targeted searches.<br/><br/>" +
+                        // "Example Searches<br/>" +
+                        // "<b>Search journals by Identifier (ISSN):</b><br/>" +
+                        // "Retrieve journals with a specific ISSN:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/journals?q=\\\"1744-9081\\\"</span><br/><br/>" +
+                        // "<b>Search journals by Name:</b><br/>" +
+                        // "Retrieve journals with a specific title:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/journals/?q=title:\\\"BioData\\\"</span><br/><br/>" +
+                        // "<b>Search journals by subject:</b><br/>" +
+                        // "Retrieve journals based on the input subject, limiting to 5 records and pagination set to 1:<br/>" +
+                        // "<span class='linkDocs'>https://api.core.ac.uk/v3/search/journals?q=subject:\\\"Computing\\\"&limit=5&offset=1</span><br/><br/><br/>" +
+                        // "Example source code to search journals by subject:<br/>" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "   def search_journal_by_subject(subject:str):<br>" +
+                        "       url = \"https://api.core.ac.uk/v3/search/journals\"<br>" +
+                        "       headers = {\"Authorization\": f\"Bearer {apikey}\"}<br>" +
+                        "       params = {\"q\": f\"subjects:\"{subject}\"\", \"limit\": 1, \"offset\":1}<br>" +
+                        "<br/>" +
+                        "           try:<br>" +
+                        "                   response = requests.get(url, headers=headers, params=params)<br>" +
+                        "               if response.status_code == 200:<br>" +
+                        "                   return response.json()<br>" +
+                        "               else:<br>" +
+                        "                   print(f\"Error {response.status_code}: {response.text}\")<br>" +
+                        "                   return None<br>" +
+                        "           except requests.exceptions.RequestException as e:<br>" +
+                        "               print(f\"Request failed: {e}\")<br>" +
+                        "               return None" +
+                        "</code>" +
+                        "</pre>" +
+                        "More examples on journals field specific search is available " +
+                        "<a href='/docs/v3#tag/Journals/operation/optionsCustomJournals'>here</a>",
+                    operationId: "optionsCustomSearchJournals",
+                    tags: ["Journals"],
+                },
+            };
+
+            const searchJournalsPathAggregation = {
+                options: {
+                    summary: "Search Journals using aggregation",
+                    description: "POST request body example: " +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "{<br/>" +
+                        "   \"q\": \"climate change\",<br/>" +
+                        "   \"aggregations\": [\"subjects\"]<br/>" +
+                        "}" +
+                        "</code>" +
+                        "</pre>" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "def search_with_aggregation(query):<br/>" +
+                        "   url = \"https://api.core.ac.uk/v3/search/journals/aggregate\"<br/>" +
+                        "   headers = {<br/>" +
+                        "       \"Authorization\": f\"Bearer {apikey}\",<br/>" +
+                        "       \"Content-Type\": \"application/json\"<br/>" +
+                        "   }<br/>" +
+                        "   data = {<br/>" +
+                        "       \"q\": query,<br/>" +
+                        "       \"aggregations\": [\"subjects\"]<br/>" +
+                        "   }<br/>" +
+                        "<br/>" +
+                        "   try:<br/>" +
+                        "       response = requests.post(url, json=data, headers=headers)<br/>" +
+                        "<br/>" +
+                        "   if response.status_code == 200:<br/>" +
+                        "       print(\"Aggregation Results:\")<br/>" +
+                        "       print(response.json())<br/>" +
+                        "   else:<br/>" +
+                        "       print(f\"Error {response.status_code}: {response.text}\")<br/>" +
+                        "   except requests.exceptions.RequestException as e:<br/>" +
+                        "       print(f\"Request failed: {e}\")<br/>" +
+                        "</code>" +
+                        "</pre>" +
+                        "Aggregation response sample for <code>query=\"climate change\"</code>" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "{'aggregations':<br/>" +
+                        "   {'subjects':<br/>" +
+                        "       {'climate change': 14,<br/>" +
+                        "       'Environmental sciences': 10,<br/>" +
+                        "       'GE1-350': 10,<br/>" +
+                        "       'Q': 7,<br/>" +
+                        "       'Science': 7,<br/>" +
+                        "       'G': 5,<br/>" +
+                        "       'Geography. Anthropology. Recreation': 5,<br/>" +
+                        "       'ecology': 4,<br/>" +
+                        "        .....................<br/>" +
+                        "       .....................<br/>" +
+                        "       'proteomics': 1,<br/>" +
+                        "       'renewable energies': 1,<br/>" +
+                        "       'risk management': 1,<br/>" +
+                        "       'sensors': 1,<br/>" +
+                        "       'social sustainability': 1}<br/>" +
+                        "    }<br/>" +
+                        "}" +
+                        "</code>" +
+                        "</pre>" +
+                        "The journals API response fields that support aggregation " +
+                        "can be viewed <a href='/docs/v3#tag/Journals/operation/optionsCustomJournals'>here</a>.",
+                    operationId: "optionsCustomSearchJournalsAggregation",
+                    tags: ["Journals"],
+                },
+            };
+
+            const searchOptionsKeywordQueries = {
+                options: {
+                    summary: "Keyword Queries and Phrase Matching",
+                    description: "The CORE API allows flexible text matching through both <span class='bold'>keyword queries</span> " +
+                        "and <span class='bold'>phrase searches</span>:" +
+                        "<br/><br/>1. <span class='bold'>Keyword search (unquoted)</span>: When search terms are unquoted, CORE will match documents where " +
+                        "the field contains any or all of the words, in any order." +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=title:Attention is all you need" +
+                        "</pre>" +
+                        "</code>" +
+                        "This returns documents where the title contains any or all of the words: <span class='italic'>'Attention', 'is', 'all', 'you', 'need'</span>." +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=title:attention-is-all-you-need" +
+                        "</pre>" +
+                        "</code>" +
+                        "This returns documents where the title contains all of the words: <span class='italic'>'Attention', 'is', 'all', 'you', 'need'</span> and the order does not matter." +
+                        "<br/><br/>2. <span class='bold'>Phrase search (quoted)</span>: When the search term is wrapped in double quotes, " +
+                        "CORE matches documents containing that exact phrase, in order." +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=title:\"Attention is all you need\"" +
+                        "</pre>" +
+                        "</code>" +
+                        "This returns documents where the title exactly matches that phrase."
+                    ,
+                    operationId: "optionsKeywordQueries",
+                    tags: ["Search"],
+                },
+            };
+
+            const searchOptionsWithoutField = {
+                options: {
+                    summary: "Free Text Search - Searching without field lookup",
+                    description: "If no search lookup field is specified, the query is processed through all <span class='bold'>searchable</span> fields." +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=scientometrics" +
+                        "</pre>" +
+                        "</code>" +
+                        "This retrieves results where the term 'scientometrics' appears anywhere in the document’s metadata, " +
+                        "enabling broad and flexible discovery across the complete CORE collection.",
+                    operationId: "optionsWithoutField",
+                    tags: ["Search"],
+                },
+            };
+
+            const searchQueryLanguagePath = {
+                options: {
+                    summary: "CORE API Query Language",
+                    description: "The CORE API query language allows users to explore the CORE collection " +
+                        "and construct complex queries using various operators. " +
+                        "The following table outlines the available operators and their usage: <br/>" +
+                        "<table>" +
+                        "<tr>" +
+                        "    <td>Operator</td>" +
+                        "    <td>Accepted symbols</td>" +
+                        "    <td>Meaning</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "    <td>And</td>" +
+                        "    <td><code>AND</code>, <code>+</code>, <code>space</code></td>" +
+                        "    <td>Logical binary AND. Used to retrieve results matching all conditions.</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "    <td>Or</td>" +
+                        "    <td><code>OR</code></td>" +
+                        "    <td>Logical binary OR. Used to retrieve results matching at least one condition.</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "    <td>Grouping</td>" +
+                        "    <td><code>(...)</code></td>" +
+                        "    <td>Used to prioritize and group elements of the query.</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "    <td>Field lookup</td>" +
+                        "    <td><code>field_name:value</code></td>" +
+                        "    <td>Used to search specific fields (e.g., <code>title:\\\"Artificial Intelligence\\\"</code>).</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "    <td>Range queries</td>" +
+                        "    <td><code>fieldName(&gt;, &lt;, &gt;=, &lt;=) value</code></td>" +
+                        "    <td>For numeric and date fields, specifies a range of values.</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "    <td>Exists queries</td>" +
+                        "    <td><code>&#95;exists&#95;:fieldName</code></td>" +
+                        "    <td>Returns all items where the specified field is not empty.</td>" +
+                        "</tr>" +
+                        "</table>" +
+                        "<h3>Examples of Query Usage</h3>" +
+                        "1. <b>Field lookup</b>: Search for works with \\\"Machine Learning\\\" in the title" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=title:\\\"<b>Machine Learning</b>\\\"" +
+                        "</code>" +
+                        "</pre>" +
+                        "<br/>" +
+                        "2. <b>Range queries:</b> Search for works published after 2018" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=yearPublished><b>2018</b>" +
+                        "</code>" +
+                        "</pre>" +
+                        "<br/>" +
+                        "3. <b>AND:</b> Search for works by multiple authors" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=authors:\\\"<b>Jane Doe</b>\\\" AND authors:\\\"<b>John Smith</b>\\\"" +
+                        "</code>" +
+                        "</pre>" +
+                        "<br/>" +
+                        "4. <b>OR:</b> Search works with \\\"AI\\\" in the title or \\\"Deep Learning\\\" in the full-text" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=title:\\\"<b>AI</b>\\\" OR fullText:\\\"<b>Deep Learning</b>\\\"" +
+                        "</code>" +
+                        "</pre>" +
+                        "<br/>" +
+                        "5. <b>Exists queries:</b> Find works with full-text available" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=_exists_:fullText" +
+                        "</code>" +
+                        "</pre>" +
+                        "<br/>" +
+                        "6. <b>Grouping:</b> Search works using multiple conditions" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "q=(title:\"<b>Artificial Intelligence</b>\" OR title:\"<b>Machine Learning</b>\") AND yearPublished>\"<b>2020</b>\"" +
+                        "</code>" +
+                        "</pre>"
+                    ,
+                    operationId: "optionsCustomQueryLanguage",
+                    tags: ["Search"],
+                },
+            };
+
+            spec.paths["/v3/search/search-aggregation"] = {
+                options: {
+                    summary: "Search using aggregation",
+                    description: "The CORE API provides an aggregation feature to summarise and group search results " +
+                        "based on specific fields. Aggregation queries differ from normal search queries as they provide " +
+                        "summarised counts instead of detailed individual document records. To get the details of records, " +
+                        "please check the CORE API Query Language page." +
+                        "<h4>Aggregation Endpoint Structure</h4>" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "POST https://api.core.ac.uk/v3/search/{entityType}/aggregate" +
+                        "</code>" +
+                        "</pre>" +
+                        "Replace <b>{entityType}</b> with one of the supported entities." +
+                        "<h4>Request Body Format</h4>" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "{<br/>" +
+                        "   \"q\": \"< search_query>\", <br/>" +
+                        "   \"aggregations\": [\"< field_1>\", \"< field_2>\", \"...\"]<br/>" +
+                        "}" +
+                        "</code>" +
+                        "</pre>" +
+                        "<table>" +
+                        "<tr>" +
+                        "<td><span class='bold'>Field</span></td>" +
+                        "<td><span class='bold'>Type</span></td>" +
+                        "<td><span class='bold'>Description</span></td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "<td>q</td>" +
+                        "<td>string</td>" +
+                        "<td>The query string is written using CORE’s query language.</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "<td>aggregations</td>" +
+                        "<td>List</td>" +
+                        "<td>A list of fields to aggregate results by. Only supported fields are allowed.</td>" +
+                        "</tr>" +
+                        "</table>" +
+                        "<b>Note:</b> The aggregation feature does not support all fields returned by the API entity responses. " +
+                        "Only certain fields can be used effectively." +
+                        "<br/><br/>For instance, you can aggregate works using the following fields: " +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "\"yearPublished\"<br/>" +
+                        "\"authors\"<br/>" +
+                        "\"dataProvider\"<br/>" +
+                        "\"documentType\"<br/>" +
+                        "\"publishedDate\"<br/>" +
+                        "\"updatedDate\"<br/>" +
+                        "\"language\"<br/>" +
+                        "\"publisher\"<br/>" +
+                        "\"fieldOfStudy\"<br/>" +
+                        "</code>" +
+                        "</pre><br/>" +
+                        "Outputs can be aggregated using the following fields:" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "\"acceptedDate\"<br/>" +
+                        "\"authors\"<br/>" +
+                        "\"contributors\"<br/>" +
+                        "\"depositedDate\"<br/>" +
+                        "\"documentType\"<br/>" +
+                        "\"language\"<br/>" +
+                        "\"publishedDate\"<br/>" +
+                        "\"subjects\"<br/>" +
+                        "</code>" +
+                        "</pre><br/>" +
+                        "Data-providers entity supports following aggregations:" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "\"software\"" +
+                        "</code>" +
+                        "</pre><br/>" +
+                        "Following fields from Journals entity supports aggregation:" +
+                        "<pre class='preCode'>" +
+                        "<code class='codePython'>" +
+                        "\"subjects\"" +
+                        "</code>" +
+                        "</pre>" +
+                        "Refer to the entity-specific documentation for more information."
+                    ,
+                    operationId: "optionsCustomSearchAggregation",
+                    tags: ["Search"],
+                },
+            };
+
+            spec.paths["/custom/rate_limit/common"] = {
+                options: {
+                    summary: "Common",
+                    description: "Access to the CORE API is free and requires no authentication. Providing free access to general users is part of our mission. " +
+                        "Being a sustainable scholarly infrastructure is also part of our mission. As a result, we offer better performance to registered users. " +
+                        "The below table provides information about our rate limits depending on your situation.<br><br>" +
+                        "To control the load on our systems we use a rate-limiting technology based on tokens. Each user has access to a certain number of tokens " +
+                        "at the start of their session and they can use them to perform their queries.<br><br>" +
+                        "Certain calls in CORE are more computationally expensive than others, therefore some calls such as recommender, " +
+                        "scroll search and bulk queries will cost you more tokens than others. As a rule of thumb, a simple query will cost you 1 token " +
+                        "while more complex queries will cost you between 3 to 5 tokens. <br><br>" +
+                        "We are monitoring the load on our servers and at some point we might decide to increase or decrease the “cost” of certain " +
+                        "operations to control the overall load. The best way to keep on top of your API usage is to use the HTTP headers included " +
+                        "in every API call response (see below for details about the headers).<br><br>" +
+                        "<div><table><tbody><tr><td>User type</td><td>How to obtain</td><td>Rate limit</td><td>Support</td></tr>" +
+                        "<tr>" +
+                            "<td>Unauthenticated users<span class='dot'>&#42;</span></td>" +
+                            "<td>No registration required, just start using the API.</td>" +
+                            "<td>100 tokens per day, maximum 10 per minute.</td>" +
+                            "<td>No support</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                            "<td>Registered Personal users</td>" +
+                            "<td>Registration through the <a href='https://core.ac.uk/services/api'> CORE API </a> form</td>" +
+                            "<td>1,000 tokens per day, maximum 25 per minute.</td>" +
+                            "<td>Best effort</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                            "<td>Registered academic users NOT affiliated with Supporting or Sustaining institutions.</td>" +
+                            "<td>Registration through the <a href='https://core.ac.uk/services/api'> CORE API </a> form</td>" +
+                            "<td>5,000 tokens per day, maximum 10 per minute.</td> " +
+                            "<td>Best effort</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                            "<td>Registered academic users affiliated with Supporting or Sustaining institutions and Non-academic organisation users</td>" +
+                            "<td>Registration through the <a href='https://core.ac.uk/services/api'> CORE API </a> form</td>" +
+                            "<td>The API limits are designed to allow reasonable usage and we will change them depending on the load on our servers. However, on average, we estimate this plan should be good for up to about 200k tokens per day. You are able to monitor your current API limit by looking for our customised HTTP headers: X-RateLimitRemaining X-RateLimit-Retry-After X-RateLimit-Limit</td>" +
+                            "<td>Dedicated support</td>" +
+                        "</tr>" +
+                        "<tr><td>VIP</td><td>Contact us to discuss a dedicated plan to upgrade your registration.&nbsp;</td>" +
+                        "<td>Sky is the limit. We can support your needs. Just let us know and we will find a way to accommodate your usage needs.&nbsp;</td>" +
+                        "<td>Unlimited priority support</td></tr>" +
+                        "</tbody></table>" +
+                        "<span class='dot'>&#42;</span> - Full-text is not available for unauthenticated API users." +
+                        "</div>",
+                    operationId: "optionsCustomRateLimitCommon",
+                    tags: ["Rate limits"]
+                }
+            };
+
+            spec.paths["/custom/rate_limit/monitor"] = {
+                options: {
+                    summary: "How to monitor your API rate limits",
+                    description: "To ensure fair usage and maintain API stability, CORE implements rate limits. " +
+                        "These limits may be adjusted dynamically based on server load and usage patterns." +
+                        "<p>You can monitor your current rate usage by checking the following custom HTTP response " +
+                        "headers included in every API response:</p>" +
+                        "<table><tr><td><b>Header</b></td><td><b>Description</b></td></tr>" +
+                        "<tr>" +
+                        "<td>`X-RateLimit-Limit`</td>" +
+                        "<td>The total number of requests allowed within the current rate-limiting window. " +
+                        "This represents your maximum quota before the limit resets.</td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "<td>`X-RateLimit-Remaining`</td>" +
+                        "<td>The number of requests you still have available in the current window. Once this value reaches zero, additional requests will be blocked until the window resets. </td>" +
+                        "</tr>" +
+                        "<tr>" +
+                        "<td>`X-RateLimit-Retry-After`</td>" +
+                        "<td>Indicates when you can safely make another request after hitting the rate limit.</td>" +
+                        "</tr></table>",
+                    operationId: "optionsCustomRateLimitMonitor",
+                    tags: ["Rate limits"]
+                }
+            };
+
+            spec.paths["/custom/entities/introduction"] = {
+                options: {
+                    summary: "Introduction",
+                    description: "The CORE API provides convenient and comprehensive access to global research results. " +
+                        "CORE is based on the global repositories network and collects, aggregates and expands " +
+                        "the metadata provided and the associated full texts. The API allows access to the data summarised in the search index.",
+                    operationId: "customEntitiesIntroduction",
+                    tags: ["Entities"]
+                }
+            };
+
+            spec.paths["/custom/entities/data_model"] = {
+                options: {
+                    summary: "CORE data model",
+                    description: "The following diagram depicts the primary entities and their main attributes (the full list is in the documentation below)" +
+                        "<img src='/images/docs/api_documentation_diagram.png' />" +
+                        "<br/><br/><span class='bold'>Works</span>" +
+                        "<br/>Works provide a representation of a research work in a way that is independent of its manifestations. " +
+                        "Each research work can have one or more manifestations (Outputs) available from any data provider. " +
+                        "Works refer to a deduplicated and harmonised meta-entity describing the research work and connecting its Outputs." +
+                        "<br/><br/><span class='bold'>Outputs</span>" +
+                        "<br/>Outputs refer to specific manifestations of a research work (Works)." +
+                        "<br/><br/><span class='bold'>Data Providers</span>" +
+                        "<br/>The Data Provider entity represents the data sources from which Outputs are collected. These sources include but are not limited to institutional, subject, preprint, repositories and journals or their collections.",
+                    operationId: "customEntitiesDataModel",
+                    tags: ["Entities"]
+                }
+            };
+
+            // spec.paths["/custom/querying_large_datasets"] = {
+            //     options: {
+            //         summary: "Querying large datasets",
+            //         description: "The API is great to use for small queries and fast access to the CORE data. " +
+            //             "For bigger queries we recommend you using the <a href='https://core.ac.uk/documentation/dataset'>CORE dataset</a>." +
+            //             "The maximum size for a result set using the API is 10,000 results, to get bigger datasets the search endpoints offer the possibility of scroll queries." +
+            //             "By appending a parameter called <code>scroll</code> the system will provide you an id that you can use to perform bigger queries." +
+            //             "Our example will show you how to use it. Please keep in mind that performing these queries has " +
+            //             "a bigger performance impact and we are limiting them more strictly than the normal queries.",
+            //         operationId: "customQueryingLargeDatasets",
+            //         tags: []
+            //     }
+            // };
+
+            spec.paths["/custom/how_call_API"] = {
+                options: {
+                    summary: "How to call the API",
+                    description: "There are a few ways you can perform API requests using your API Key. <a href='https://core.ac.uk/services/api#form' target='_blank'>Request an API key here</a>. Please do not disclose your API key. It is for your use only. " +
+                        "<ul><li> <i>preferred</i> You can embed the API Key in the header. This keeps the authorisation separated from the requests parameters. Add the header <code>Authorization: Bearer [API_KEY]</code></li> " +
+                        "<li> If you cannot set your headers you can also use the API key as a parameter in your requests including it like this: <code>api_key=[API_KEY]</code> . " +
+                        "</li></ul>",
+                    operationId: "customHowCallAPI",
+                    tags: []
+                }
+            };
+
+            spec.paths["/custom/PDF_download_policy"] = {
+                options: {
+                    summary: "PDF download policy",
+                    description: "<ul>" +
+                        "<li>Outputs PDF downloads are possible via the original <b>‘downloadUrl’</b> supplied link, if a " +
+                        "URL exists. This is the preferred method.</li>" +
+                        "<li>Where users are prevented, restricted or blocked from reaching the resource specified " +
+                        "in the <b>‘downloadUrl’</b>, then CORE API users can also use the GET request endpoint - <br/>" +
+                        "<pre class='preCode'><code class='codePython'>" +
+                        "GET <a href='https://api.core.ac.uk/v3/outputs/{identifier}/download'>https://api.core.ac.uk/v3/outputs/{identifier}/download</a></code></pre> for downloading " +
+                        "PDFs directly from CORE. This request counts against your API tokens allowance and is " +
+                        "generally more expensive, because it has more significant data implications.</li>" +
+                        "<li><b>IMPORTANT</b>: Systematic harvesting of PDFs from CORE outside that circumvents the API, e.g. " +
+                        "via <code>https://fileserver-az.core.ac.uk/download/{identifier}.pdf</code> or other methods is unacceptable. " +
+                        "Such usage will be blocked and associated API keys will be disabled.</li>" +
+                        "</ul>",
+                    operationId: "PDFDownloadPolicy",
+                    tags: []
+                }
+            };
+
+            const newPaths = {};
+            for (const path in spec.paths) {
+                if (path === "/v3/works/{identifier}") {
+                    newPaths["/v3/works/intro"] = introWorks;
+                }
+
+                if (path === "/v3/works/{identifier}") {
+                    newPaths["/v3/works/search"] = searchWorksPath;
+                }
+
+                if (path === "/v3/works/{identifier}") {
+                    newPaths["/v3/works/aggregation"] = searchWorksPathAggregation;
+                }
+
+                if (path === "/v3/outputs/{identifier}") {
+                    newPaths["/v3/outputs/intro"] = introOutputs;
+                }
+
+                if (path === "/v3/outputs/{identifier}") {
+                    newPaths["/v3/outputs/search"] = searchOutputsPath;
+                }
+
+                if (path === "/v3/outputs/{identifier}") {
+                    newPaths["/v3/outputs/aggregation"] = searchOutputsPathAggregation;
+                }
+
+                if (path === "/v3/data-providers/{identifier}") {
+                    newPaths["/v3/data-providers/intro"] = introDataProviders;
+                }
+
+                if (path === "/v3/data-providers/{identifier}") {
+                    newPaths["/v3/data-providers/search"] = searchDataProvidersPath;
+                }
+
+                if (path === "/v3/data-providers/{identifier}") {
+                    newPaths["/v3/data-providers/aggregation"] = searchDataProvidersPathAggregation;
+                }
+
+                if (path === "/v3/journals/{identifier}") {
+                    newPaths["/v3/journals/intro"] = introJournals;
+                }
+
+                if (path === "/v3/journals/{identifier}") {
+                    newPaths["/v3/journals/search"] = searchJournalsPath;
+                }
+
+                if (path === "/v3/journals/{identifier}") {
+                    newPaths["/v3/journals/aggregation"] = searchJournalsPathAggregation;
+                }
+
+                if (path === "/v3/search/{entityType}") {
+                    newPaths["/v3/search/query-language"] = searchQueryLanguagePath;
+                }
+                if (path === "/v3/search/{entityType}") {
+                    newPaths["/v3/search/keyword-queries"] = searchOptionsKeywordQueries;
+                }
+                if (path === "/v3/search/{entityType}") {
+                    newPaths["/v3/search/without-field"] = searchOptionsWithoutField;
+                }
+
+                newPaths[path] = spec.paths[path];
+            }
+            spec.paths = newPaths;
+
+            console.log(spec); //dev
+
+            const orderedPaths = [
+                '/custom/entities/introduction',
+                '/custom/entities/data_model',
+
+                '/v3/search/works',
+                '/v3/search/outputs',
+                '/v3/search/data-providers',
+                '/v3/search/journals',
+                '/v3/search/query-language',
+                '/v3/search/keyword-queries',
+                '/v3/search/without-field',
+                '/v3/search/search-aggregation',
+
+                '/v3/search/{entityType}',
+                '/v3/search/{entityType}/',
+                '/v3/search/{entityType}/aggregate',
+
+                '/v3/works/intro',
+                '/v3/works/search',
+                '/v3/works/aggregation',
+                '/v3/works/{identifier}',
+                '/v3/works/{identifier}/outputs',
+                '/v3/works/{identifier}/stats',
+                '/v3/works/tei/{identifier}',
+                '/v3/works/{identifier}/download',
+
+                '/v3/outputs/intro',
+                '/v3/outputs/search',
+                '/v3/outputs/aggregation',
+                '/v3/outputs/{identifier}',
+                '/v3/outputs/{identifier}/download',
+                '/v3/outputs/{identifier}/history',
+                '/v3/outputs/{identifier}/raw',
+                '/v3/outputs/{identifier}/stats',
+
+                '/v3/data-providers/intro',
+                '/v3/data-providers/search',
+                '/v3/data-providers/aggregation',
+                '/v3/data-providers/{identifier}',
+                '/v3/data-providers/{identifier}/outputs',
+                '/v3/data-providers/{identifier}/stats',
+
+                '/v3/journals/intro',
+                '/v3/journals/search',
+                '/v3/journals/aggregation',
+                '/v3/journals/{identifier}',
+                '/v3/journals/{identifier}/stats',
+
+                '/v3/labs/expert-finder',
+                '/v3/discover',
+                '/v3/recommend',
+                '/custom/rate_limit/common',
+                '/custom/rate_limit/monitor',
+
+                '/custom/how_call_API',
+                '/custom/PDF_download_policy'
+            ];
+
+            // then rebuild `spec.paths` in that exact sequence
+            const newPathsV2 = {};
+            orderedPaths.forEach(p => {
+                if (spec.paths[p]) newPathsV2[p] = spec.paths[p];
+            });
+            // finally copy any remaining (if needed)
+            Object.keys(spec.paths).forEach(p => {
+                if (!newPathsV2[p]) newPathsV2[p] = spec.paths[p];
+            });
+            spec.paths = newPathsV2;
+
+            Redoc.init(spec, options, mountElement);
+        });
+</script>
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4d47d214ddd9e7a',t:'MTc5MjQ2MjI1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

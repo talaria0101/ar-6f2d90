@@ -1,0 +1,423 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="head1"><title>
+	ICTRP Search Portal
+</title><link href="Css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type ="text/css" >
+    <!--
+    .nounderline A {text-decoration:none}
+    .highlight {background:yellow;}
+    .highlight2 {background:orange;}
+    -->
+    </style>
+    <meta name="keywords" content="clinical trial, clinical trials, clinical research, clinical, trial, trials, research" />
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NFGQ2PMZE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0NFGQ2PMZE');
+</script>
+  
+<style type="text/css">
+	.Menu1_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.Menu1_1 { color:#284E98;font-family:Arial;font-size:Small;text-decoration:none; }
+	.Menu1_2 { color:#284E98;background-color:#B5C7DE;font-family:Arial;font-size:Small;width:70%; }
+	.Menu1_3 {  }
+	.Menu1_4 { padding:2px 5px 2px 5px; }
+	.Menu1_5 { background-color:Gainsboro; }
+	.Menu1_6 {  }
+	.Menu1_7 { padding:2px 5px 2px 5px; }
+	.Menu1_8 { background-color:#B5C7DE; }
+	.Menu1_9 {  }
+	.Menu1_10 { background-color:#507CD1; }
+	.Menu1_11 {  }
+	.Menu1_12 { background-color:#507CD1; }
+	.Menu1_13 { color:White; }
+	.Menu1_14 { color:White;background-color:#284E98; }
+	.Menu1_15 { color:White; }
+	.Menu1_16 { color:White;background-color:#284E98; }
+
+</style></head>
+<body onload="onload()">
+    <form name="form1" method="post" action="./Trial2.aspx?TrialID=test" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="twhQtxzGuMN7pKiAtP4X+pmq5wR7NRdRkun4SqYspWQSRMA0IshGI1O94PMbKAOFZapLGy5F+s/yhS2WYjp44eCu5bFNL4Xjd1z3liIJntbVFvYlPfUCKUWLrjWa/dsMaZMQV/s/R+/eBHxzvNpx2TEYOtl6aIRie7TIi8To4ZXaojtiltlTdsnXQgNQd42Ah/FEsGtDElVIuxW08lkpLNoGg8v/NGePepc/vUs/+l3UJPndW/UleG8JEzqnbUfiT7v+yh5ztM+3y9aE3uNyseefnGpmbBqutUf//hnUUDvQ/HH2IDBnGEa609/xDmgaZz+yM0sGdRYOYY/Toqni1VdhVrVfU5swiA8nOxCToHcBlhy+aMU43Q9BeBNcIO7ID5HFzqFj5Q2dZjqUl7mRXcJykEOO8PPNyh0zNFXy6gUPOYFvWUhHG5Rnhn85Az46aQI4/XV135SPcaoHTO+X7eXn0d9+H1Wf8Ndk0p44JPcsQuugS+gcnguf6hcuU2MCvcy9bCr4hDvVwuOg6uyp8Lap22aDv/61lZkMz2p2UT5sHufJDgICLScWmBm0SX+6+fD5XuWs005uyO+ccfspA0Il7PYVHgxBKENaFSvouDWrt108Qh6DY+hN/bImwCV59DiXuIdhImhXyvecJx9zPGo43lCjpKt1dH7TvZ/01FdaXgndiEJiDxOX96hKEl5I8jNgQelPwk8S1tzXKzzSjWvgXYk0AUDUW4Qc0faRIXyDB1TVAvs5pwOWf2WPR65LO5U/mZolSslPYSPCXncj/7lVeDCqpgbLLIs2hCK5Ip0OkliQtGko6fh6IDlD1B0D+1i3ywX4LL15O7i+PBGm1fnfX5WKr+p6Uv0ErDhKqtPTQaFC8oMLu/+aZeKXARVjj2L6+o+W6CbBI+xELJdxbmcUuXhUOVhYnPhXftZjS7KFFGoxdNfpldKtU3z/wQvxAIMlJqBELHU8N2vMdti9NaX+3/Q+bL0nB5lzBPnMoL2pzVCTWs+0CxN83hFUImJ2YssNbxHdkRIVGR0Zxwl3Fg==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=lSy4Ww84sAhdYXtQ9e6Qe-jnM8zyvY6wG2fECAo1dnHIJSvbylmh6x_xkgpdy3RrvLge5YSpMk542Dyj_YTYIPnshbbUsT2v-RMV5f7xBRo1&amp;t=639190879820000000" type="text/javascript"></script>
+
+<script language='Javascript'> function onload() {}</Script>
+<script src="/ScriptResource.axd?d=KC7GgTJ0YuIn21zBNo4lo9PLIrt-iFXy_WKSsh3UvObvLkPCezvtjQ3XUFGM2ilHjl7754Do9rWeJsCWW_np_krusp07MXIIJo7GtOpJ0biMACWzuxX6SCCqS_RU4VRb5FX8vCajym9YxjOCiN-XcA2&amp;t=201f5ece" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dDq09krMEimhhYl5tzDIL0M2GQbNKdwapbQY8eZuVEoRIJLZGFQHm6Sk1Q7ZOXj0oZ3rw07PtX6OWfUvg6yeaOgIe2qHL4J2ebsmoU1IrhGZBoFSDuvE17e16Rw7obQ_BZUU07SEUZ-lab8OMH6g-sD2LdI6JTxm4vd3VYw9eHlgUwQMFe0sZn2ms06u1HnF0&amp;t=3e3fe94" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=57to-kM9aPzOAojSkSfAuSkECwzqD5PaACwJ_15sLHElreqySABoWpISCUM51q2or7_1Hu5aVre6avXpYzQumiNr87AwBgbEyqrrrGmmavjDAQgi7U4wJAOBAjjAvJaAWbDWJ6GD9Q2_Y3VPhJB-uhiPfHVGPgx_OqsyXtBw4OlTcKUIcK6WFp0CcsQMYjxekQdGt3GRt0MnG1b1zC2DaA2&amp;t=3e3fe94" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0FED3764" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="QKhqZaNj7Z/MBpXq3yhmKtaX0ANdD4CI2iqdSfCPOq4b8Kc8Xf1e8VAgKKadFb+WmvMz9aPiRC6fq3eHogkcTOICPCAZGOWRYCxBNS/whlJJMHyo/ItZ+r54mkAToD7GQJSSyo/gFKQZvT8JB6dtdA==" />
+</div>
+  <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', [], [], [], 90, '');
+//]]>
+</script>
+
+        <div style="width: 169px; height: 105px; left: 696px; position: absolute; top: 112px; text-align: right;"><span style="font-size: 10pt">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;&nbsp;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp;
+            &nbsp;&nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> 
+        
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp;
+                </div>
+              
+        <table style="width: 100%;" align="center" bgcolor="#6BA2CC" >
+           <tr>
+                <td align="center" >
+                
+                    <table bgcolor="#6BA2CC" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top"><a href="http://www.who.int/en/" target="_new"><img src="who_logo_en2.gif" alt="World Health Organization site" border="0"></a></td>
+
+</tr>
+
+</table>
+
+
+
+                </td>
+            </tr>
+          </table>            
+        
+         <table align="center" style="color: #6ba2cc">
+          <tr>
+              <td style="height: 21px" align="center">
+                  <img alt="" src="ICTRP_logo4.jpg" style="height: 62px" /></td> 
+          </tr>  
+            </table>
+       
+           
+   <table bgcolor="gainsboro" bordercolor="gainsboro" style="width: 100%" cellspacing="0" class="nounderline">
+             <tr >
+                <td >
+                    <a href="#Menu1_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=xcJNU7w2dlou18e4-Dh6Q9rpxMVThXbm5kHfk-sgIU2E8qZq0HlZMmP_ehwTkX59x5teQ0mQqaDw_-ux8Rcw9YecjJWKNogZfpBikXG7UeI1&amp;t=639190879820000000" width="0" height="0" style="border-width:0px;" /></a><table id="Menu1" class="Menu1_5 Menu1_2" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n0"><table class="Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="Menu1_1 Menu1_3" href="Default.aspx">Home</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n1"><table class="Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="Menu1_1 Menu1_3" href="AdvSearch.aspx">Advanced Search</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n2"><table class="Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="Menu1_1 Menu1_3" href="javascript:__doPostBack(&#39;Menu1&#39;,&#39;List By&#39;)">List By</a></td><td style="width:0;"><img src="/WebResource.axd?d=uJ67jg4y3VmLp_IaWWmit0T87CjU7JaGMN5QSYsyv3V8CcPeFDg47s2C_WYmNW-7dR1EkZ4m2cOf3slCNv-2xpFzXp7WoKFa1O2lzbG03rvNMp-l1NA9ypM4Ym7xmGpb0&amp;t=639190879820000000" alt="Expand List By" style="border-style:none;vertical-align:middle;" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n3"><table class="Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="Menu1_1 Menu1_3" href="https://www.who.int/clinical-trials-registry-platform/the-ictrp-search-portal/search-tips" target="Blank">Search Tips</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Universal Trial Number (UTN)" id="Menu1n4"><table class="Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="Menu1_1 Menu1_3" href="https://trialsearch.who.int/utn.aspx">UTN</a></td><td style="width:0;"><img src="/WebResource.axd?d=uJ67jg4y3VmLp_IaWWmit0T87CjU7JaGMN5QSYsyv3V8CcPeFDg47s2C_WYmNW-7dR1EkZ4m2cOf3slCNv-2xpFzXp7WoKFa1O2lzbG03rvNMp-l1NA9ypM4Ym7xmGpb0&amp;t=639190879820000000" alt="Expand UTN" style="border-style:none;vertical-align:middle;" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n5"><table class="Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="Menu1_1 Menu1_3" href="http://www.who.int/ictrp" target="_blank">ICTRP website</a></td><td style="width:0;"><img src="/WebResource.axd?d=uJ67jg4y3VmLp_IaWWmit0T87CjU7JaGMN5QSYsyv3V8CcPeFDg47s2C_WYmNW-7dR1EkZ4m2cOf3slCNv-2xpFzXp7WoKFa1O2lzbG03rvNMp-l1NA9ypM4Ym7xmGpb0&amp;t=639190879820000000" alt="Expand ICTRP website" style="border-style:none;vertical-align:middle;" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n6"><table class="Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="Menu1_1 Menu1_3" href="Contact.aspx">Contact us</a></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><div id="Menu1n2Items" class="Menu1_0 Menu1_8">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n7">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="ListBy.aspx?TypeListing=0">List By Health Topics</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n8">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="ListBy.aspx?TypeListing=1">List By Countries</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n9">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="ListBy.aspx?TypeListing=2">List By Regions/Countries</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="Menu1_7 Menu1_0" id="Menu1n2ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=-LgYthJjkX0q27dKuablfmK-LRaCS8FET4PNgJ8mRx1tP6ZZOTtXs97ovRSnw0ikxa1crRkpT5X4ERS7pMkyK2ng-r_iZnEhBxzvMWYPyphUet_9xLWck4ZO5EEkykIL0&amp;t=639190879820000000" alt="Scroll up" />
+	</div><div class="Menu1_7 Menu1_0" id="Menu1n2ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=Gz028kRe4z9L7lCBZ2KMYhlSHXYJ2QF_yYpbhxhRjuyYb9qZHwotewN8vqF4baSyi8Iihjo0IzIixKUQStfb6azV1_5K79Geox_9WDabwCikN0Oi3ILgG13_exPc24JR0&amp;t=639190879820000000" alt="Scroll down" />
+	</div>
+</div><div id="Menu1n4Items" class="Menu1_0 Menu1_8">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n10">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="https://trialsearch.who.int/utn.aspx">UTN request</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n11">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="utnvalid.aspx">UTN validation</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="Menu1_7 Menu1_0" id="Menu1n4ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=-LgYthJjkX0q27dKuablfmK-LRaCS8FET4PNgJ8mRx1tP6ZZOTtXs97ovRSnw0ikxa1crRkpT5X4ERS7pMkyK2ng-r_iZnEhBxzvMWYPyphUet_9xLWck4ZO5EEkykIL0&amp;t=639190879820000000" alt="Scroll up" />
+	</div><div class="Menu1_7 Menu1_0" id="Menu1n4ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=Gz028kRe4z9L7lCBZ2KMYhlSHXYJ2QF_yYpbhxhRjuyYb9qZHwotewN8vqF4baSyi8Iihjo0IzIixKUQStfb6azV1_5K79Geox_9WDabwCikN0Oi3ILgG13_exPc24JR0&amp;t=639190879820000000" alt="Scroll down" />
+	</div>
+</div><div id="Menu1n5Items" class="Menu1_0 Menu1_8">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n12">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="http://www.who.int/ictrp" target="_blank">In English</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n13">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="http://www.who.int/ictrp/fr" target="_blank">In French</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n14">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="http://www.who.int/ictrp/es" target="_blank">In Spanish</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n15">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="http://www.who.int/ictrp/ar" target="_blank">In Arabic</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n16">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="http://www.who.int/ictrp/zh" target="_blank">In Chinese</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n17">
+			<td><table class="Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="Menu1_1 Menu1_6" href="http://www.who.int/ictrp/ru" target="_blank">In Russian</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="Menu1_7 Menu1_0" id="Menu1n5ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=-LgYthJjkX0q27dKuablfmK-LRaCS8FET4PNgJ8mRx1tP6ZZOTtXs97ovRSnw0ikxa1crRkpT5X4ERS7pMkyK2ng-r_iZnEhBxzvMWYPyphUet_9xLWck4ZO5EEkykIL0&amp;t=639190879820000000" alt="Scroll up" />
+	</div><div class="Menu1_7 Menu1_0" id="Menu1n5ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=Gz028kRe4z9L7lCBZ2KMYhlSHXYJ2QF_yYpbhxhRjuyYb9qZHwotewN8vqF4baSyi8Iihjo0IzIixKUQStfb6azV1_5K79Geox_9WDabwCikN0Oi3ILgG13_exPc24JR0&amp;t=639190879820000000" alt="Scroll down" />
+	</div>
+</div><a id="Menu1_SkipLink"></a>
+                    </td>
+            </tr>
+                   
+            </table>
+           
+                <table style="width: 100%">
+                    <tr style="width: 100%">
+                        <td  style="width: 100%">
+
+                            <br />
+                           
+                            <table id="DataList3" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;height:150px;width:100%;border-collapse:collapse;left: 26px; top: 258px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Main</span>
+                                </td>
+	</tr>
+</table>
+                            
+                            <table id="DataList2" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td colspan="8" style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Countries of recruitment</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList4" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td colspan="3" style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Contacts</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList6" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Key inclusion &amp; exclusion criteria</span>
+                                </td>
+	</tr>
+</table>
+                            
+                            <table id="DataList8" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Health Condition(s)</span> or Problem(s) studied
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList10" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Intervention(s)</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList12" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Primary Outcome(s)</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList14" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Secondary Outcome(s)</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList16" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Secondary ID(s)</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList18" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Source(s) of Monetary Support</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList20" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Secondary Sponsor(s)</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataList5" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Ethics review</span>
+                                </td>
+	</tr>
+</table>
+                            <table id="DataListResults" cellspacing="0" cellpadding="3" border="0" style="background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;font-family:Arial;font-size:Small;width:100%;border-collapse:collapse;left: 80px; top: 1771px;">
+	<tr>
+		<td style="color:White;background-color:#006699;font-weight:bold;">
+                                    <span>Results</span>
+                                </td>
+	</tr>
+</table>
+                        </td>
+                    </tr>
+                </table>
+      
+        
+            <table align=center width="100%"   >
+                <tr>
+                    <td style="border-top: #6ba2cc thick solid"  >
+                        <span id="Label18" style="display:inline-block;font-family:Arial;font-size:X-Small;font-weight:bold;width:100%;">Disclaimer: Trials posted on this search portal are not endorsed by WHO, but are provided as a service to our users. In no event shall the World Health Organization be liable for any damages arising from the use of the information linked to in this section. None of the information obtained through use of the search portal should in any way be used in clinical care without consulting a physician or licensed health professional. WHO is not responsible for the accuracy, completeness and/or use made of the content displayed for any trial record.</span></td>
+                </tr>
+                <tr>
+                
+                        <td align="center">
+                            <a id="HyperLink8" href="http://www.who.int/about/copyright/en/" target="_blank" style="font-family:Arial;font-size:X-Small;font-weight:bold;text-align: center">Copyright - World Health Organization</a>
+                            <span id="Label17" style="font-family:Arial;font-size:X-Small;font-weight:bold;">- Version 3.6 -</span>
+                            <a id="HyperLink3" href="ICTRP_Revisions_document.pdf" target="_blank" style="font-family:Arial;font-size:X-Small;font-weight:bold;text-align: center">Version history</a>
+
+                        </td>
+            
+               </tr><tr>
+                
+                        <td style="text-align: center;">
+                            &nbsp;&nbsp;
+                            </td>
+            
+               </tr></table>  
+         
+            
+      
+   
+    
+
+<script type="text/javascript">
+//<![CDATA[
+var Menu1_Data = new Object();
+Menu1_Data.disappearAfter = 500;
+Menu1_Data.horizontalOffset = 2;
+Menu1_Data.verticalOffset = 0;
+Menu1_Data.hoverClass = 'Menu1_16';
+Menu1_Data.hoverHyperLinkClass = 'Menu1_15';
+Menu1_Data.staticHoverClass = 'Menu1_14';
+Menu1_Data.staticHoverHyperLinkClass = 'Menu1_13';
+//]]>
+</script>
+</form>
+</body>
+</html>
+

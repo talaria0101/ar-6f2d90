@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>RCSB PDB Data API: Understanding and Using</title>
+
+    <link href="./docs/assets/screen.css" rel="stylesheet" media="screen">
+    <link href="./docs/assets/print.css" rel="stylesheet" media="print">
+    <script src="./docs/assets/helpers.js"></script>
+</head>
+
+<body data-languages="[&quot;shell&quot;]">
+
+<div class="docs-header">
+    <p class="docs-title">RCSB PDB: Data API Documentation</p>
+</div>
+
+<div class="toc-wrapper">
+    <div class="toc-header">
+        <div class="search">
+            <label for="input-search"></label><input type="text" class="search" id="input-search" placeholder="Search documentation">
+        </div>
+        <ul class="search-results">
+            <li><a href="#data-api">Data API Basics</a></li>
+            <li><a href="#rest-api">REST-based API</a></li>
+            <li><a href="#gql-api">GraphQL-based API</a></li>
+            <li><a href="#gql-vs-rest">Using GraphQL vs REST API</a></li>
+            <li><a href="#data-organization">Data Organization</a></li>
+            <li><a href="#data-schema">Data Schema</a></li>
+            <li><a href="#gql-schema">GraphQL Schema</a></li>
+            <li><a href="#fetch-data-graphql">Fetch GraphQL Data</a></li>
+            <li><a href="#gql-root-queries">Root Queries</a></li>
+            <li><a href="#gql-nodes-and-edges">Nodes and Edges</a></li>
+            <li><a href="#gql-usage-guidelines">Usage Guidelines</a></li>
+            <li><a href="#data-attributes">Data Attributes</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#archive-wide-queries">Archive-wide Queries</a></li>
+            <li><a href="#gql-example-1">Query Entries</a></li>
+            <li><a href="#gql-example-2">Query Primary Citation</a></li>
+            <li><a href="#gql-example-3">Query Polymer Entities</a></li>
+            <li><a href="#gql-example-4">Query Polymer Instances</a></li>
+            <li><a href="#gql-example-5">Query Carbohydrates</a></li>
+            <li><a href="#gql-example-6">Sequence Positional Features</a></li>
+            <li><a href="#gql-example-7">Reference Sequence Identifiers</a></li>
+            <li><a href="#gql-example-8">Query Chemical Components</a></li>
+            <li><a href="#gql-example-9">Computed Structure Models</a></li>
+            <li><a href="#gql-example-10">Integrative Structures</a></li>
+            <li><a href="#migration-guide">Migrating from Legacy Fetch API</a></li>
+            <li><a href="#acknowledgements">Acknowledgements</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="toc" class="toc-list-h1">
+        <ul>
+            <li>
+                <a href="#data-api" class="toc-h1 toc-link" data-title="data-api">Data API Basics</a>
+                <ul class="toc-list-h2 active" style="display: block;">
+                    <li>
+                        <a href="#rest-api" class="toc-h2 toc-link" data-title="rest-api">REST-based API</a>
+                    </li>
+                    <li>
+                        <a href="#gql-api" class="toc-h2 toc-link" data-title="gql-api">GraphQL-based API</a>
+                    </li>
+                    <li>
+                        <a href="#gql-vs-rest" class="toc-h2 toc-link" data-title="gql-vs-rest">Using GraphQL vs REST API</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#data-organization" class="toc-h1 toc-link" data-title="data-organization">Data Organization</a>
+                <ul class="toc-list-h2 active" style="display: block;">
+                    <li>
+                        <a href="#data-schema" class="toc-h2 toc-link" data-title="data-schema">Data Schema</a>
+                    </li>
+                    <li>
+                        <a href="#gql-schema" class="toc-h2 toc-link" data-title="gql-schema">GraphQL Schema</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#fetch-data-graphql" class="toc-h1 toc-link" data-title="fetch-data-graphql">Fetch GraphQL Data</a>
+                <ul class="toc-list-h2 active" style="display: block;">
+                    <li>
+                        <a href="#gql-root-queries" class="toc-h2 toc-link" data-title="gql-root-queries">Root Queries</a>
+                    </li>
+                    <li>
+                        <a href="#gql-nodes-and-edges" class="toc-h2 toc-link" data-title="gql-nodes-and-edges">Nodes and Edges</a>
+                    </li>
+                    <li>
+                        <a href="#gql-usage-guidelines"  class="toc-h2 toc-link" data-title="gql-usage-guidelines">Usage Guidelines</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#data-attributes" class="toc-h1 toc-link" data-title="data-attributes">Data Attributes</a>
+            </li>
+            <li>
+                <a href="#api-clients" class="toc-h1 toc-link" data-title="api-clients">API Clients</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#api-client-python" class="toc-h2 toc-link" data-title="api-client-python">Python</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#examples" class="toc-h1 toc-link" data-title="examples">Examples</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#gql-example-1" class="toc-h2 toc-link" data-title="gql-example-1">Entries</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-2" class="toc-h2 toc-link" data-title="gql-example-2">Primary Citation</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-3" class="toc-h2 toc-link" data-title="gql-example-3">Polymer Entities</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-4" class="toc-h2 toc-link" data-title="gql-example-4">Polymer Instances</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-5" class="toc-h2 toc-link" data-title="gql-example-5">Carbohydrates</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-6" class="toc-h2 toc-link" data-title="gql-example-6">Sequence Positional Features</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-7" class="toc-h2 toc-link" data-title="gql-example-7">Reference Sequence Identifiers</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-8" class="toc-h2 toc-link" data-title="gql-example-8">Chemical Components</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-9" class="toc-h2 toc-link" data-title="gql-example-9">Computed Structure Models</a>
+                    </li>
+                    <li>
+                        <a href="#gql-example-10" class="toc-h2 toc-link" data-title="gql-example-10">Integrative Structures</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#archive-wide-queries" class="toc-h1 toc-link" data-title="archive-wide-queries">Archive-wide Queries</a>
+            </li>
+            <li>
+                <a href="#migration-guide" class="toc-h1 toc-link" data-title="migration-guide">Migrating from Legacy Fetch API</a>
+            </li>
+            <li>
+                <a href="#acknowledgements" class="toc-h1 toc-link" data-title="acknowledgements">Acknowledgements</a>
+            </li>
+            <li>
+                <a href="#contact-us" class="toc-h1 toc-link" data-title="contact-us">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-page-wrapper">
+
+    <div class="content">
+        <h1 id="data-api">RCSB PDB Data API</h1>
+        <aside>
+            This API provides access to metadata such as molecule names, sequences, and experimental details for
+            experimental structures from the <a href="https://www.rcsb.org/">PDB</a> and certain
+            <a href="https://www.rcsb.org/docs/general-help/computed-structure-models-and-rcsborg#what-csms-are-available">Computed Structure Models (CSMs)</a>.
+        </aside>
+        <p>
+            The RCSB PDB offers two ways to access data through application programming interfaces (APIs):
+        </p>
+        <ul>
+            <li>
+                REST-based API: refer to the full <a href="redoc/index.html" target="_blank">REST-API documentation</a>
+            </li>
+            <li>
+                GraphQL-based API: use in-browser <a href="graphiql/index.html" target="_blank">Graph<i>i</i>QL tool</a>
+                to refer to the full schema documentation
+            </li>
+        </ul>
+        <p>
+            Stay current with API announcements by subscribing to the RCSB PDB API mailing list:
+        </p>
+        <ul>
+            <li>
+                <a href="https://groups.google.com/a/rcsb.org/g/api/about" target="_blank">signing in</a> with
+                existing google account and subscribe
+            </li>
+            <li>
+                or send an email to <a href="mailto:api+subscribe@rcsb.org?subject=Subscribing to RCSB PDB API mailing list">api+subscribe@rcsb.org</a>
+            </li>
+        </ul>
+
+        <h2 id="rest-api">REST-based API</h2>
+        <p>
+            The REST-based API supports the HTTP GET method to access the PDB data through a set of endpoints (or URLs).
+            See <a href="">Data Organization</a> section for more information on the underlying data organization.
+        </p>
+
+        <h5 id="rest-api-get-request">GET request</h5>
+        <p>
+            The path of the endpoints starts with <code>https://data.rcsb.org/rest/v1/core</code>, followed by the type
+            of the resource, e.g. <code>entry</code>, <code>polymer_entity</code>, and the identifier. Note, that compound
+            identifiers, such as entity ID, assembly ID, and entity instance ID (or chain ID) are passed as path parameters.
+        </p>
+        <p>
+            Example request endpoints:
+        </p>
+        <ul>
+            <li>
+                <a href="https://data.rcsb.org/rest/v1/core/entry/4HHB" target="_blank">
+                    https://data.rcsb.org/rest/v1/core/entry/4HHB</a>
+                - here "4HHB" is an alphanumeric identifier of PDB structure (PDB ID).
+            </li>
+            <li>
+                <a href="https://data.rcsb.org/rest/v1/core/polymer_entity/4HHB/1" target="_blank">
+                    https://data.rcsb.org/rest/v1/core/polymer_entity/4HHB/1</a>
+                - here "4HHB" is a PDB ID and 1 is a unique identifier of an entity in PDB structures.
+            </li>
+            <li>
+                <a href="https://data.rcsb.org/rest/v1/core/polymer_entity_instance/4HHB/A" target="_blank">
+                    https://data.rcsb.org/rest/v1/core/polymer_entity_instance/4HHB/A</a>
+                - here "4HHB" is a PDB ID and "A" is a unique chain ID (one or multiple alphanumeric characters;
+                e.g., A, AA). Note, that here chain ID corresponds to <i>_label_asym_id</i> in PDBx/mmCIF schema.
+            </li>
+        </ul>
+
+        <h5 id="rest-response">Response</h5>
+        <p>
+            For any given request, if the data is found on the server, the API will return HTTP response code
+            <code>200 (OK)</code> – along with the response body in JSON format. For more information on the respond
+            schema see the <a href="redoc/index.html" target="_blank">REST-API documentation</a> or refer to the
+            <a href="#data-schema" target="_blank">Data Schema</a> section of this tutorial.
+        </p>
+        <p>
+            In case data is NOT found on the server (e.g. <a href="https://data.rcsb.org/rest/v1/core/entry/xxxx" target="_blank">
+            https://data.rcsb.org/rest/v1/core/entry/xxxx</a>) or the requested endpoint could not be found
+            (e.g. <a href="http://data.rcsb.org/rest/v1/core/foo" target="_blank">
+            https://data.rcsb.org/rest/v1/core/foo</a>), then the API will return HTTP response code <code>404
+            (Fot Found)</code>.
+        </p>
+
+        <h2 id="gql-api">GraphQL-based API</h2>
+        <p>
+            GraphQL server operates on a single URL/endpoint, <code>https://data.rcsb.org/graphql</code>, and all
+            GraphQL requests for this service should be directed at this endpoint. GraphQL HTTP server handles the
+            HTTP GET and POST methods.
+        </p>
+
+        <h5 id="gql-api-get-request">GET request</h5>
+        <p>
+            If the "query" is passed in the URL as a query parameter, the request will be parsed and handled as
+            the HTTP GET request. For example, to execute the following GraphQL query:
+        </p>
+        <div id="gql-api-query-example"></div>
+        <p>
+            This query string should be sent via an HTTP like so:
+        </p>
+        <div id="gql-api-query-get"></div>
+
+        <aside style="margin-top: 60px">
+            Note: the query string (URL part specified after the <code>?</code>) must be URL-encoded in your requests.
+        </aside>
+
+        <p>
+            In the example above, the query arguments are written inside the query string. The query
+            arguments can also be passed as dynamic values that are called <i>variables</i>. The variable
+            definition looks like ($id: String!) in the example below. It lists a variable, prefixed by <code>$</code>,
+            followed by its type, in this case String (<code>!</code> indicates that a non-null argument is required).
+        </p>
+        <p>
+            The following is equivalent to the previous query:
+        </p>
+        <div id="gql-api-query-with-variable"></div>
+        <p>
+            With variable defined like so:
+        </p>
+        <div id="gql-api-query-variable"></div>
+        <p>
+            Query variables, in this case, should be sent as a URL-encoded string in an additional query parameter
+            called <code>variables</code>.
+        </p>
+        <h5 id="gql-api-post-request">POST request</h5>
+        <p>
+            The GraphQL server accepts POST requests with a JSON-encoded body. A valid GraphQL POST request should use
+            the <i>application/json</i> content type, must include <code>query</code>, and may include <code>variables</code>.
+            Here's an example for a valid body of a POST request:
+        </p>
+        <div id="gql-api-query-post"></div>
+
+        <h5 id="gql-response">Response</h5>
+        <p>
+            Regardless of the method by which the query and variables were sent, the response is returned in JSON format.
+            A query might result in some data and some errors. The successful response will be returned in the form of:
+        </p>
+        <div id="gql-api-response"></div>
+
+        <h5 id="gql-error-handling">Error Handling</h5>
+        <p>
+            Error handling in REST is pretty straightforward, we simply check the HTTP headers to get the status of a
+            response. Depending on the HTTP status code we get ( <code>200</code> or <code>404</code>), we can easily
+            tell what the error is and how to go about resolving it. GraphQL server, on the other hand, will always
+            respond with a <code>200 OK</code> status code. When an error occurs while processing GraphQL queries, the
+            complete error message is sent to the client with the response. Below is a sample of a typical GraphQL error
+            message when requesting a field that is not defined in the <a href="#gql-schema">GraphQL schema</a>:
+        </p>
+        <div id="gql-api-error"></div>
+
+        <h2 id="gql-vs-rest">Using GraphQL vs REST API</h2>
+        <p>
+            REST API offers a simple and easy-to-use way to fetch the data and returns a fixed data structure. If
+            you need a full set of fields for a given object in the <a href="#data-organization">macromolecular data
+            hierarchy</a>, the REST API may be a better fit. GraphQL enables declarative data fetching and gives power
+            to request exactly the data that is needed. Also, GraphQL query allows you to traverse the entire hierarchy
+            of the macromolecular data in a single request. Conversely, with the REST API multiple round trips are needed
+            to fetch the data from different levels in the macromolecular hierarchy.
+        </p>
+        <p>
+            No matter which method is used, the data returned by the REST API and the GraphQL query will be identical as
+            they query the same source.
+        </p>
+
+        <h1 id="data-organization">Data Organization</h1>
+        <p>
+            Biological molecules have a natural structural hierarchy, building from atoms to residues to chains to
+            assemblies. The following definitions are relevant to the way the atomic coordinates, experimental data,
+            and metadata are organized for each structure:
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <th>Level</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>Entry</code></td>
+                <td>
+                    Annotations pertaining to a particular structure (entry), designated with an alphanumeric
+                    entry ID (PDB ID, e.g. 1Q2W or CSM ID, e.g. AF_AFP68871F1). Annotations include the title
+                    of the entry, list of depositors, date of deposition, date of release, experimental details,
+                    etc.
+                </td>
+            </tr>
+            <tr>
+                <td><code>Entity</code></td>
+                <td>
+                    Annotations describe the distinct (chemically unique) molecules present in entries. Three
+                    types of entities are differentiated:
+                    <ul>
+                        <li>
+                            <code>polymer_entity</code> - protein (polypeptides), DNA (polydeoxyribonucleotide),
+                            and RNA (polyribonucleotide) identified by amino acids and nucleotides covalently linked
+                            in the order defined by the polymer sequence.
+                        </li>
+                        <li>
+                            <code>branched_entity</code> - either linear or branched carbohydrates (sugars and
+                            oligosaccharides) that are composed of saccharide units covalently linked via one or more
+                            glycosidic bonds.
+                        </li>
+                        <li>
+                            <code>nonpolymer_entity</code> - small chemicals (enzyme cofactors, ligands, ions, etc).
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Entity Instance</code></td>
+                <td>
+                    Entity instances (also referred to as "chains") are distinct copies of entities present in entries.
+                    There can be multiple instances of a given entity. Entity instance data contains information that
+                    can differ for each instance. For example, structural connectivity, secondary structure, validation
+                    data, etc. Note, that information common for all copies of the same molecule is stored at the entity
+                    level. Similarly to entity data, three types of entity instances are differentiated:
+                    <code>polymer_entity_instance</code>, <code>branched_entity_instance</code>,
+                    <code>nonpolymer_entity_instance</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>Assembly</code></td>
+                <td>
+                    Annotations describe structural elements that form a biological assembly (also sometimes referred
+                    to as the biological unit), such as transformations required to generate the biological assembly,
+                    the information regarding the evidence of assembly, the annotations on the symmetry of polymeric
+                    subunits, etc.
+                </td>
+            </tr>
+            <tr>
+                <td><code>Chemical Component</code></td>
+                <td>
+                    Chemical components describe all residues and small molecules found in entries. The annotations
+                    at this level include chemical descriptors (SMILES & InChI), chemical formula, systematic chemical
+                    names, etc.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2 id="data-schema">Data Schema</h2>
+        <p>
+            All data stored in the PDB archive conform to the <a href="http://mmcif.wwpdb.org">PDBx/mmCIF data dictionary</a>.
+            This data is augmented with annotations coming from external resources and computed data. The
+            RCSB PDB data representation, powered by the <a href="http://json-schema.org" target="_blank">JSON Schema</a>
+            language, is connected to the <a href="#data-organization">data hierarchy</a>. Such data organisation groups
+            annotations in objects defined as follows:
+        </p>
+        <ul>
+            <li><a href="/rest/v1/schema/entry" target="_blank">Entry Schema</a></li>
+            <li><a href="/rest/v1/schema/polymer_entity" target="_blank">Polymer Entity Schema</a></li>
+            <li><a href="/rest/v1/schema/branched_entity" target="_blank">Branched Entity Schema</a></li>
+            <li><a href="/rest/v1/schema/nonpolymer_entity" target="_blank">Non-polymer Entity Schema</a></li>
+            <li><a href="/rest/v1/schema/polymer_entity_instance" target="_blank">Polymer Instance Schema</a></li>
+            <li><a href="/rest/v1/schema/branched_entity_instance" target="_blank">Branched Instance Schema</a></li>
+            <li><a href="/rest/v1/schema/nonpolymer_entity_instance" target="_blank">Non-polymer Instance Schema</a></li>
+            <li><a href="/rest/v1/schema/assembly" target="_blank">Assembly Schema</a></li>
+            <li><a href="/rest/v1/schema/chem_comp" target="_blank">Chemical Component Schema</a></li>
+        </ul>
+        <p>
+            Typically, integrated data will be added as additional fields to any of the objects above. Some data,
+            however, has a substantial overlap with the source data in terms of content. Such data appears as a separate
+            object with dedicated schema, where original semantics preserved as much as possible:
+        </p>
+        <ul>
+            <li><a href="/rest/v1/schema/pubmed" target="_blank">PubMed Integrated Data Schema</a></li>
+            <li><a href="/rest/v1/schema/uniprot" target="_blank">UniProt Integrated Data Schema</a></li>
+            <li><a href="/rest/v1/schema/drugbank" target="_blank">DrugBank Integrated Data Schema</a></li>
+        </ul>
+        <p>
+            The relationships between these objects are explicitly implemented through attributes in a dedicated
+            container object: <code>rcsb_[...]_container_identifiers</code>, where <code>[...]</code> should be replaces
+            with the type of the object, e.g. <code>entry</code>, <code>polymer_entity</code>, <code>assembly</code>.
+        </p>
+        <p>
+            For example, <i>rcsb_entry_container_identifiers</i> contains <i>polymer_entity_ids</i>,
+            <i>branched_entity_ids</i>, <i>non_polymer_entity_ids</i> attributes that hold corresponding entity IDs.
+        </p>
+        <div id="gql-api-container-identifiers"></div>
+
+        <h2 id="gql-schema">GraphQL Schema</h2>
+        <p>
+            All GraphQL queries are validated and executed against the GraphQL schema. The GraphQL schema contains
+            nodes and edges, where nodes being objects, that represent <a href="#data-organization">macromolecular
+            data hierarchy</a>, and edges being the relationships between those objects.
+            See <a href="#gql-nodes-and-edges">Nodes and Edges</a> for more details.
+        <p>
+            You can use <a href="http://data.rcsb.org/graphiql/index.html">Graph<i>i</i>QL</a>, which is a "graphical
+            interactive in-browser GraphQL IDE", to explore GraphQL schema. It lets you try different queries, helps
+            with autocompletion and built-in validation. The collapsible <b>Docs</b> panel (Documentation Explorer)
+            on the right side of the page allows you to navigate through the schema definitions. Click on the root
+            <span style="color:darkorange"> Query</span> link to start exploring the GraphQL schema.
+        </p>
+        <img style="border: 1px solid #ddd;" src="docs/images/graphiql.png" alt="GraphiQL">
+
+        <h1 id="fetch-data-graphql">Fetch GraphQL Data</h1>
+        <p>
+            You can use GraphQL to fetch data for objects from different levels of <a href="#data-organization">
+            data organisation</a> with a single API call. GraphQL is strongly typed. It means queries are executed
+            within the context of a <a href="#data-schema">data schema</a> and only queries to valid fields will be
+            successfully processed.
+        </p>
+        <h2 id="gql-root-queries">Root Queries</h2>
+        <p>
+            Root queries define entry-points from where you can start traversing the data hierarchy. You can start
+            your query from any object in the hierarchy and visit adjacent objects through bidirectional
+            links (edges) connecting nodes. See <a href="#gql-nodes-and-edges">Nodes and Edges</a> for more details.
+        </p>
+        <p>
+            Root queries have parameters and except either a single identifier for requested object (e.g. entry ID,
+            entity ID, etc.) or multiple identifiers supplied as a list. The following example shows how to fetch
+            experimental method name for multiple PDB entries:
+        </p>
+        <div id="gql-api-multiple-entries"></div>
+
+        <p style="margin-top: 60px">
+            When requesting data for multiple objects compound identifiers should follow the format:
+        </p>
+        <ul>
+            <li>
+                <b>[entry_id]_[entity_id]</b> - for polymer, branched, or non-polymer entities (e.g. 4HHB_1)
+            </li>
+            <li>
+                <b>[entry_id].[asym_id]</b> - for polymer, branched, or non-polymer entity instances (e.g. 4HHB.A)
+            </li>
+            <li>
+                <b>[entry_id]-[assembly_id]</b> - for biological assemblies (e.g. 4HHB-1)
+            </li>
+        </ul>
+        <p>
+            For example:
+        </p>
+        <div id="gql-api-multiple-assemblies"></div>
+
+        <h2 id="gql-nodes-and-edges">Nodes and Edges</h2>
+        <p>
+            One of the benefits of GraphQL is that it simplifies traversing the graph of relationships between
+            different objects. In RCSB Data API relationships are modelled with data <i>Node</i> objects connected
+            through <i>Edges</i> links. For example, <i>CoreEntry</i> and <i>CorePolymerEntity</i> are data nodes that
+            are connected through <code>polymer_entities</code> link that allows fetching the data all polymer entities
+            present in a given entry.
+        </p>
+        <p>
+            <i>Node</i> is an object that holds all fields for a given level in the data hierarchy. Nodes have fields
+            that can be complex objects or scalar values. GraphQL queries are built by specifying fields within fields
+            (also called nested subfields) until only scalars are returned.
+        </p>
+        <p>
+            <i>Edges</i> represent connections between nodes. Through edges the API allows you to traverse the data
+            hierarchy by visiting adjacent data objects, e.g. from <code>entry</code> to <code>polymer_entity</code>,
+            from <code>polymer_entity</code> to <code>polymer_entity_instance</code>, etc. Traversing up the hierarchy
+            is also possible. For example, you can fetch an organism name for a given polymer entity using the
+            <code>polymer_entity</code> root query and in the same query fetch an experimental method name, that
+            resides at the entry level, using the <code>entry</code> edge.
+        </p>
+        <div id="gql-api-multiple-levels"></div>
+
+        <h2 id="gql-usage-guidelines">Usage Guidelines</h2>
+        <p>
+            There are currently no limits set on the requests rate or query complexity. The only limit is for batch endpoints
+            where a maximum of <strong>1000</strong> IDs can be requested at a time. However, complex queries for
+            a large number of objects are bound to have performance issues. To prevent the API from being overwhelmed
+            and improved the performance of your queries check out the suggestions below.
+        </p>
+
+        <h5 id="gql-usage-batch">Batch Large Requests</h5>
+        <p>
+            Requesting a large number of objects at a time is deemed resource intensive and not recommended.
+            Making requests in periodic batches, instead of a single request for a large number of objects,
+            can be more effective.
+        </p>
+        <p>
+            <a href="#gql-root-queries">GraphQL endpoints</a> require to explicitly specify ID(s) for the requested
+            data objects, there are no endpoints to request all data objects. The
+            <a onclick="window.open('/redoc/index.html#tag/Repository-Holdings-Service'); return false;"
+               target="_blank">Repository Holdings Service</a> REST API
+            <a href="/rest/v1/holdings/current/entry_ids" target="_blank">current entries</a> endpoint provides a
+            full list of current PDB IDs.
+        </p>
+
+        <h5 id="gql-usage-cache-data">Cache Data For Repeat Calls</h5>
+        <p>
+            Repeat calls to PDB data within a weekly update window should be cached when possible.
+        </p>
+
+        <h1 id="data-attributes">Data Attributes</h1>
+        <p>
+            The RCSB PDB data available through the APIs includes only commonly used annotations, rather than supporting
+            all metadata available in the PDBx/mmCIF data dictionary. Refer to the <a href="data-attributes.html" target="_blank">
+            Data Attributes</a> page for a full list of objects and their attributes.
+        </p>
+        <aside>
+            Field names for both internal additions and annotations from external resources are prefixed with
+            <code>rcsb_</code>.
+        </aside>
+
+        <h1 id="api-clients">API Clients</h1>
+        <h2 id="api-client-python">Python</h2>
+        <p>
+            The <a href="https://rcsbapi.readthedocs.io/en/latest/" target="_blank">rcsb-api</a> package
+            provides a Python interface to the RCSB PDB Search and Data APIs (an overview has been published in
+            <a href="https://doi.org/10.1016/j.jmb.2025.168970" target="_blank"><i>Journal for Molecular Biology</i></a>).
+            Use the <code>rcsbapi.search</code> module to fetch lists of PDB IDs corresponding to advanced query searches,
+            and the <code>rcsbapi.data</code> module to fetch data about a given set of structure IDs. RCSB PDB maintains
+            the current version of this package on <a href="https://github.com/rcsb/py-rcsb-api" target="_blank">GitHub</a>.
+        </p>
+        <p>
+            You can find example use cases demonstrating how to utilize this package in scripting workflows in the
+            <a href="https://github.com/rcsb/py-rcsb-api/tree/master/notebooks" target="_blank">py-rcsb-api GitHub repository</a>.
+            These examples provide practical implementations of common tasks, helping users understand how to integrate
+            the package into their own applications. The notebooks serve as a reference for building custom workflows
+            using RCSB resources.
+        </p>
+
+        <h1 id="examples">Examples</h1>
+        <p>
+            This section contains additional examples for using the GraphQL-based RCSB PDB Data API.
+        </p>
+
+        <h2 id="gql-example-1">Entries</h2>
+        <p>
+            Fetch information about structure title and experimental method for PDB entries:
+        </p>
+        <div id="example-1"></div>
+
+        <h2 id="gql-example-2">Primary Citation</h2>
+        <p>
+            Fetch primary citation information (structure authors, PubMed ID, DOI) and release date for PDB
+            entries:
+        </p>
+        <div id="example-2"></div>
+
+        <h2 id="gql-example-3">Polymer Entities</h2>
+        <p>
+            Fetch taxonomy information and information about membership in the sequence clusters for polymer
+            entities:
+        </p>
+        <div id="example-3"></div>
+
+        <h2 id="gql-example-4">Polymer Instances</h2>
+        <p>
+            Fetch information about the domain assignments for polymer entity instances:
+        </p>
+        <div id="example-4"></div>
+
+        <p style="margin-top: 60px">
+            Note, that <code>label_asym_id</code> is used to identify polymer entity instances.
+        </p>
+
+        <h2 id="gql-example-5">Carbohydrates</h2>
+        <p>
+            Query branched entities (sugars or oligosaccharides) for commonly used linear descriptors:
+        </p>
+        <div id="example-5"></div>
+
+        <h2 id="gql-example-6">Sequence Positional Features</h2>
+        <p>
+            Sequence positional features describe regions or sites of interest in the PDB sequences,
+            such as binding sites, active sites, linear motifs, local secondary structure, structural and
+            functional domains, etc. Positional annotations include depositor-provided information available
+            in the PDB archive as well as annotations integrated from external resources (e.g. UniProtKB).
+        </p>
+        <p>
+            Positional features are available for <code>polymer_entities</code> or <code>polymer_entity_instances</code>
+            data objects (see <a href="#data-organization">Data Organization</a> section for more information on the data organization).
+            Polymer entity annotations are obtained from sequence alone (e.g. modified monomers) and polymer entity
+            instance annotations from 3D structural information (e.g., the secondary structure content of proteins).
+        </p>
+        <p>
+            This example queries <code>polymer_entity_instances</code> positional features. The query returns features
+            of different type: for example, CATH and SCOP classifications assignments integrated from UniProtKB data,
+            or the secondary structure annotations from the PDB archive data calculated by the data-processing program
+            called MAXIT (Macromolecular Exchange and Input Tool) that is based on an earlier ProMotif implementation.
+        </p>
+        <div id="example-6"></div>
+
+        <h2 id="gql-example-7">Reference Sequence Identifiers</h2>
+        <p>
+            This example shows how to access identifiers related to entries (cross-references) and found in data
+            collections other than PDB. Each cross-reference is described by the database name and the database
+            accession. A single entry can have cross-references to several databases, e.g. <i>UniProt</i>
+            and <i>GenBank</i> in <a href="https://www.rcsb.org/structure/7NHM" target="_blank">7NHM</a>, or no
+            cross-references, e.g. <a href="https://www.rcsb.org/structure/5L2G" target="_blank">5L2G</a>:
+        </p>
+        <div id="example-7"></div>
+
+        <h2 id="gql-example-8">Chemical Components</h2>
+        <p>
+            Query for specific items in the chemical component dictionary based on a given list of CCD ids:
+        </p>
+        <div id="example-8"></div>
+
+        <h2 id="gql-example-9">Computed Structure Models</h2>
+        <p>
+            This example shows how to get a list of global Model Quality Assessment metrics for AlphaFold structure
+            of Hemoglobin subunit beta:
+        </p>
+        <div id="example-9"></div>
+
+        <h2 id="gql-example-10">Integrative Structures</h2>
+        <p>
+            Dara API delivers <b>integrative structures</b> alongside the experimental structures and
+            computed (predicted) models. Integrative structures are determined using a combination of data
+            from traditional techniques such as X-ray crystallography, NMR spectroscopy, and
+            3D Electron Microscopy (3DEM) along with other experimental approaches like Small Angle Scattering (SAS),
+            Crosslinking Mass Spectrometry, Atomic Force Microscopy, Forster Resonance Energy Transfer, and more.
+            These methods help build structure models of large, dynamic, and heterogeneous biological assemblies
+            that are difficult to resolve with a single technique.
+        <p>
+        <p>
+            This example shows how to query <b>integrative structures</b> to get information on model composition,
+            input datasets used in integrative modeling, and source databases for the input datasets:
+        </p>
+        <div id="example-10"></div>
+
+        <h1 id="archive-wide-queries">Archive-wide Queries</h1>
+        <p>
+            Performing queries across all currently released PDB structures involves multiple steps, as the process is
+            designed to efficiently handle large-scale data. Follow the steps below:
+        </p>
+        <ol type="1">
+            <li>
+                Retrieve the complete list of current PDB IDs. This can be done using the
+                <a href="/rest/v1/holdings/current/entry_ids">Holdings REST API</a>. The API will return a JSON array
+                containing all current PDB IDs
+            </li>
+            <li>
+                To efficiently query the dataset and avoid overwhelming the GraphQL endpoint, batch the PDB IDs into
+                smaller chunks
+            </li>
+            <li>
+                Once you have your batches of PDB IDs, use them to query the GraphQL endpoint
+            </li>
+        </ol>
+        <p>
+            Explore this
+            <a href="https://github.com/rcsb/rcsb-training-resources/tree/master/example-use-cases/archive-wide-queries" target="_blank">GitHub repository</a>
+            for Python notebooks and scripts demonstrating real use cases of this multi-step querying process.
+        </p>
+
+        <h1 id="migration-guide">Migrating from Legacy Fetch API</h1>
+        <p>
+            Applications written on top of the Legacy Fetch APIs no longer work because these services have been
+            discontinued. This <a href="migration-guide.html" target="_blank">migration guide</a> describes the
+            necessary steps to convert applications from using Legacy Fetch API Web Service to a new RCSB Data
+            API.
+        </p>
+
+        <h1 id="acknowledgements">Acknowledgements</h1>
+        <p>
+            To cite this service, please reference:
+        </p>
+        <ul>
+            <li>
+                Yana Rose, Jose M. Duarte, Robert Lowe, Joan Segura, Chunxiao Bi, Charmi Bhikadiya, Li Chen,
+                Alexander S. Rose, Sebastian Bittrich, Stephen K. Burley, John D. Westbrook. RCSB Protein
+                Data Bank: Architectural Advances Towards Integrated Searching and Efficient Access to
+                Macromolecular Structure Data from the PDB Archive, Journal of Molecular Biology, 2020.
+                DOI: <a href="https://doi.org/10.1016/j.jmb.2020.11.003" target="_blank">
+                10.1016/j.jmb.2020.11.003</a>
+            </li>
+        </ul>
+        <p>
+            Related publications:
+        </p>
+        <ul>
+            <li>
+                H.M. Berman, J. Westbrook, Z. Feng, G. Gilliland, T.N. Bhat, H. Weissig, I.N. Shindyalov, P.E. Bourne.
+                (2000) The Protein Data Bank Nucleic Acids Research, 28: 235-242.
+            </li>
+            <li>
+                Stephen K Burley, Helen M. Berman, et al.
+                RCSB Protein Data Bank: biological macromolecular structures enabling research and education in fundamental biology, biomedicine, biotechnology and energy
+                (2019) Nucleic Acids Research 47: D464–D474. doi: 10.1093/nar/gky1004.
+            </li>
+        </ul>
+
+        <h1 id="contact-us">Contact Us</h1>
+        <p>
+            Contact <a href="mailto:info@rcsb.org?subject=RCSB PDB Data API: Questions and Feedback">info@rcsb.org</a>
+            with questions or feedback about this service.
+        </p>
+    </div>
+
+</div>
+
+<script>
+
+    document.body.onload = render_dynamic_parts;
+
+    function render_dynamic_parts() {
+
+        load("gql-api-query-example", "./docs/tutorial/gql-api-query-example.txt", render_txt);
+        load("gql-api-query-get", "./docs/tutorial/gql-api-query-get.txt", render_get_query);
+        load("gql-api-query-with-variable", "./docs/tutorial/gql-api-query-with-variable.txt", render_txt);
+        load("gql-api-query-variable", "./docs/tutorial/gql-api-query-variable.txt", render_txt);
+        load("gql-api-response", "./docs/tutorial/gql-api-response.json", render_json);
+        load("gql-api-error", "./docs/tutorial/gql-api-error.json", render_json);
+        load("gql-api-query-post", "./docs/tutorial/gql-api-query-post.json", render_json);
+        load("gql-api-container-identifiers", "./docs/tutorial/gql-api-container-identifiers.json", render_json);
+        load("gql-api-multiple-levels", "./docs/tutorial/gql-api-multiple-levels.txt", render_get_query);
+        load("gql-api-multiple-entries", "./docs/tutorial/gql-api-multiple-entries.txt", render_get_query);
+        load("gql-api-multiple-assemblies", "./docs/tutorial/gql-api-multiple-assemblies.txt", render_get_query);
+
+        load("example-1", "./docs/examples/example-1.txt", render_get_query);
+        load("example-2", "./docs/examples/example-2.txt", render_get_query);
+        load("example-3", "./docs/examples/example-3.txt", render_get_query);
+        load("example-4", "./docs/examples/example-4.txt", render_get_query);
+        load("example-5", "./docs/examples/example-5.txt", render_get_query);
+        load("example-6", "./docs/examples/example-6.txt", render_get_query);
+        load("example-7", "./docs/examples/example-7.txt", render_get_query);
+        load("example-8", "./docs/examples/example-8.txt", render_get_query);
+        load("example-9", "./docs/examples/example-9.txt", render_get_query);
+        load("example-10", "./docs/examples/example-10.txt", render_get_query);
+
+        var script = document.createElement("script");
+        script.src = "./docs/assets/lib.js";
+        document.body.appendChild(script);
+    }
+
+</script>
+
+</body>

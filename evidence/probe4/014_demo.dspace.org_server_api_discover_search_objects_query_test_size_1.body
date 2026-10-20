@@ -1,0 +1,530 @@
+{
+  "id" : null,
+  "scope" : null,
+  "query" : "test",
+  "appliedFilters" : null,
+  "sort" : null,
+  "configuration" : null,
+  "type" : "discover",
+  "uniqueType" : "discover.discover",
+  "_links" : {
+    "self" : {
+      "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test"
+    }
+  },
+  "_embedded" : {
+    "searchResult" : {
+      "_embedded" : {
+        "objects" : [ {
+          "hitHighlights" : {
+            "dc.title" : [ "<em>test</em>" ]
+          },
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "6034802f-3d97-4c45-83a2-108b1253dcc9",
+              "uuid" : "6034802f-3d97-4c45-83a2-108b1253dcc9",
+              "name" : "test",
+              "handle" : "10673/2649",
+              "metadata" : {
+                "dc.date.accessioned" : [ {
+                  "value" : "2026-10-19T13:06:43Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "0020",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://demo.dspace.org/handle/10673/2649",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject" : [ {
+                  "value" : "test (test) [test]",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.title" : [ {
+                  "value" : "test",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Article",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dspace.customurl" : [ {
+                  "value" : "test",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dspace.entity.type" : [ {
+                  "value" : "Publication",
+                  "language" : "",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2026-10-19T13:10:32.056456Z",
+              "entityType" : "Publication",
+              "type" : "item",
+              "uniqueType" : "core.item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/relationships"
+                },
+                "version" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/thumbnail"
+                },
+                "submitter" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9/submitter"
+                },
+                "self" : {
+                  "href" : "https://demo.dspace.org/server/api/core/items/6034802f-3d97-4c45-83a2-108b1253dcc9"
+                }
+              }
+            }
+          }
+        } ]
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 1,
+        "totalPages" : 87,
+        "totalElements" : 87
+      },
+      "_links" : {
+        "next" : {
+          "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&page=1&size=1"
+        },
+        "last" : {
+          "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&page=86&size=1"
+        },
+        "self" : {
+          "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&size=1"
+        }
+      }
+    },
+    "facets" : [ {
+      "name" : "author",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "minValue" : "Abdominal and Paediatric Surgery",
+      "maxValue" : "مرام محمد(إعداد)",
+      "openByDefault" : true,
+      "uniqueType" : "discover.discover",
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_links" : {
+        "next" : {
+          "href" : "https://demo.dspace.org/server/api/discover/facets/author?query=test&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://demo.dspace.org/server/api/discover/facets/author?query=test&size=5"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Simmons, Cameron",
+          "count" : 31,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.author=Simmons,%20Cameron,equals"
+            }
+          }
+        }, {
+          "label" : "De Wael, Karolien",
+          "count" : 7,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.author=De%20Wael,%20Karolien,equals"
+            }
+          }
+        }, {
+          "label" : "Eens, Marcel",
+          "count" : 5,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.author=Eens,%20Marcel,equals"
+            }
+          }
+        }, {
+          "label" : "Vercauteren, Marcel",
+          "count" : 5,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.author=Vercauteren,%20Marcel,equals"
+            }
+          }
+        }, {
+          "label" : "Abdominal and Paediatric Surgery",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.author=Abdominal%20and%20Paediatric%20Surgery,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "subject",
+      "facetType" : "hierarchical",
+      "facetLimit" : 5,
+      "openByDefault" : false,
+      "uniqueType" : "discover.discover",
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_links" : {
+        "next" : {
+          "href" : "https://demo.dspace.org/server/api/discover/facets/subject?query=test&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://demo.dspace.org/server/api/discover/facets/subject?query=test&size=5"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "college students",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.subject=college%20students,equals"
+            }
+          }
+        }, {
+          "label" : "annuities",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.subject=annuities,equals"
+            }
+          }
+        }, {
+          "label" : "behavior",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.subject=behavior,equals"
+            }
+          }
+        }, {
+          "label" : "Biology",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.subject=Biology,equals"
+            }
+          }
+        }, {
+          "label" : "charitable gifts",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.subject=charitable%20gifts,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "dateIssued",
+      "facetType" : "date",
+      "facetLimit" : 5,
+      "minValue" : "0020",
+      "maxValue" : "9/9/2024",
+      "openByDefault" : false,
+      "uniqueType" : "discover.discover",
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://demo.dspace.org/server/api/discover/facets/dateIssued?query=test&size=5"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "1996 - 1999",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.dateIssued=%5B1996%20TO%201999%5D,equals"
+            }
+          }
+        }, {
+          "label" : "2000 - 2009",
+          "count" : 5,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.dateIssued=%5B2000%20TO%202009%5D,equals"
+            }
+          }
+        }, {
+          "label" : "2010 - 2019",
+          "count" : 46,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.dateIssued=%5B2010%20TO%202019%5D,equals"
+            }
+          }
+        }, {
+          "label" : "2020 - 2026",
+          "count" : 11,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.dateIssued=%5B2020%20TO%202026%5D,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "has_content_in_original_bundle",
+      "facetType" : "standard",
+      "facetLimit" : 2,
+      "openByDefault" : false,
+      "uniqueType" : "discover.discover",
+      "page" : {
+        "number" : 0,
+        "size" : 2
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://demo.dspace.org/server/api/discover/facets/has_content_in_original_bundle?query=test&size=2"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "false",
+          "count" : 48,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.has_content_in_original_bundle=false,equals"
+            }
+          }
+        }, {
+          "label" : "true",
+          "count" : 29,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.has_content_in_original_bundle=true,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "entityType",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "openByDefault" : false,
+      "uniqueType" : "discover.discover",
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://demo.dspace.org/server/api/discover/facets/entityType?query=test&size=5"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Publication",
+          "count" : 58,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.entityType=Publication,equals"
+            }
+          }
+        }, {
+          "label" : "JournalIssue",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.entityType=JournalIssue,equals"
+            }
+          }
+        }, {
+          "label" : "Journal",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.entityType=Journal,equals"
+            }
+          }
+        }, {
+          "label" : "JournalVolume",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.entityType=JournalVolume,equals"
+            }
+          }
+        }, {
+          "label" : "OrgUnit",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.entityType=OrgUnit,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "access_status",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "openByDefault" : false,
+      "uniqueType" : "discover.discover",
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://demo.dspace.org/server/api/discover/facets/access_status?query=test&size=10"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "metadata.only",
+          "count" : 48,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.access_status=metadata.only,equals"
+            }
+          }
+        }, {
+          "label" : "open.access",
+          "count" : 29,
+          "authorityKey" : null,
+          "type" : "discover",
+          "uniqueType" : "discover.discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://demo.dspace.org/server/api/discover/search/objects?query=test&f.access_status=open.access,equals"
+            }
+          }
+        } ]
+      }
+    } ]
+  }
+}

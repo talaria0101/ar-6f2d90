@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<error detailCode="404" errorCode="404" name="NotFound">
+    <description>Not Found: The server has not found anything matching the Request-URI.</description>
+</error>

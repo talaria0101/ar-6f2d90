@@ -1,0 +1,1662 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="https://www.dnb.de/"/>
+  <meta charset="UTF-8"/>
+  <title>DNB  -  SRU Interface</title>
+  <meta name="title" content="SRU Interface"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1"/>
+  <meta name="generator" content="Government Site Builder"/>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Open Graph data -->
+    <meta property="og:site_name" content="December" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SRU interface" />
+    <meta property="og:description" content="SRU interface" />
+    <meta property="og:image" content="https://www.dnb.de/SharedDocs/Bilder/EN/Buehnen/professionell_metadatendiensteSRU_buehne.png?__blob=normal&amp;v=3" />
+    <meta property="og:url" content="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html" />
+    <meta property="og:locale" content="en_EN" />
+    <meta property="fb:admins" content="<FacebookAccount>"/>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SRU interface" />
+    <meta name="twitter:description" content="SRU interface" />
+    <meta name="twitter:image" content="https://www.dnb.de/SharedDocs/Bilder/EN/Buehnen/professionell_metadatendiensteSRU_buehne.png?__blob=normal&amp;v=3" />
+    <meta name="twitter:site" content="<TwitterAccount>" />
+
+  
+    
+    
+    
+
+  
+     <script type="application/ld+json">
+     {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru.html?nn=250696"
+        },
+        "headline": "sru",
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.png?__blob=poster&v=3",
+          "width": 151,
+          "height": 95
+        },
+        "datePublished": "2019-01-12T13:50:48+0100",
+        "dateModified": "2026-06-12T10:07:32+0200",
+        "author": {
+          "@type": "Organization",
+          "name": "December"
+        },
+         "publisher": {
+          "@type": "Organization",
+          "name": "December",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "http://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.png?__blob=poster&v=3",
+            "width": 151,
+            "height": 95
+          }
+        },
+        "description": ""
+     }
+     </script>
+
+
+  <!--
+     Realisiert mit dem Government Site Builder.
+     Die Content Management Lösung der Bundesverwaltung.
+     www.government-site-builder.de
+   -->
+  <link rel="canonical" href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html"/>
+ <link rel="copyright" href="https://www.dnb.de/EN/Service/Impressum/impressum_node.html" type="text/html" title="Imprint" />
+<link rel="glossary" href="https://www.dnb.de/EN/Service/Glossar/glossar_node.html" type="text/html" title="Glossary" />
+<link rel="help" href="https://www.dnb.de/EN/Service/Hilfe/hilfe_node.html" type="text/html" title="Help" />
+<link rel="start" href="https://www.dnb.de/EN/Home/home_node.html" type="text/html" title="Homepage" />
+<link rel="contents" href="https://www.dnb.de/EN/Service/Sitemap/sitemap_node.html" type="text/html" title="Sitemap" />
+<link rel="search" href="https://www.dnb.de/EN/Service/Suche/suche_node.html" type="text/html" title="Search" />
+<link rel="shortcut icon" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/favicon.png?__blob=normal&amp;v=5" type="image/ico" />
+  
+  
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/normalize.css?v=2" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/_libs.css?v=4" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/small.css?v=63" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/medium.css?v=41" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/large.css?v=44" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/xlarge.css?v=22" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/custom.css?v=32" type="text/css"/>
+<!--[if IE 9]><link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_iefix_9.css?v=8" type="text/css"/><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_iefix.css?v=1" type="text/css" /><![endif]-->
+<link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_print.css?v=15" type="text/css" media="print" />
+
+<link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_materna.css?v=48" type="text/css"/>
+
+  
+
+
+</head>
+<body class="gsb startseite js-off lang-en fixed" data-nn="250696" data-matomo-site-id="62" $userlikeLinkString>
+  <div id="wrapperOuter">
+  <div id="wrapperInner">
+    <a id="Start"></a>
+    <h1 id="headerHead" hidden>Navigation and service</h1>
+    <p class="navSkip">
+      <em>Go to:</em>
+    </p>
+    <ul class="navSkip">
+      <li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#content">Content</a></li>
+      <li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#navPrimary">Main Menu</a></li>
+      <li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#search">Search</a></li>
+    </ul>
+    <div class="wrapperDivisions">
+      <header class="header" aria-labelledby="headerHead" data-qa-header="">
+        <div class="wrapperBranding row">
+          
+<div class=" logo show-for-large" id="anfang"><a href="https://www.dnb.de/EN/Home/home_node.html" title="Logo of the German National Library; link to homepage"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.svg?__blob=normal&amp;v=3" alt="Logo of the German National Library; link to homepage" /></a></div>
+<div class=" logo show-for-medium-only" >  <a href="https://www.dnb.de/EN/Home/home_node.html" title="Logo of the German National Library; link to homepage"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.svg?__blob=square&amp;v=3" alt="Logo of the German National Library; link to homepage" /></a></div><div class=" logo show-for-small-only" >  <a href="https://www.dnb.de/EN/Home/home_node.html" title="Logo of the German National Library; link to homepage"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.svg?__blob=square&amp;v=3" alt="Logo of the German National Library; link to homepage" /></a></div>
+
+          <div class="navWrapper">
+            <nav id="navServiceMeta" class="navServiceMeta" aria-labelledby="serviceMenu">
+              <h2 id="serviceMenu" hidden>Servicemeu</h2>
+              
+  <ul>
+    <li class="navServiceLang"><a href="https://www.dnb.de/DE/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html" title="SRU Schnittstelle" xml:lang="de" hreflang="de" lang="de" class="languageLink lang_de"><span class="h-languageLink">Deutsch</span></a>
+    </li>
+    <li  class="navServiceGS"><a href="https://www.dnb.de/EN/Service/Gebaerdensprache/gebaerdensprache_node.html" class="" ><img src="https://www.dnb.de/EN/Service/Gebaerdensprache/gebaerdensprache_node.svg?__blob=picture&amp;v=4" alt="Sign language"/> <span aria-hidden="true">Sign language</span></a></li>
+    <li  class="navServiceGS"><a href="https://www.dnb.de/EN/Ueber-uns/Barrierefreiheit/barrierefreieangebote_node.html" class="" ><img src="https://www.dnb.de/EN/Ueber-uns/Barrierefreiheit/barrierefreieangebote_node.svg?__blob=picture&amp;v=7" alt="Barrier-free offers"/> <span aria-hidden="true">Barrier-free offers</span></a></li>
+    <li  class="navServiceLS"><a href="https://www.dnb.de/EN/Service/LeichteSprache/leichtesprache_node.html" class="" ><img src="https://www.dnb.de/EN/Service/LeichteSprache/leichtesprache_node.svg?__blob=picture&amp;v=3" alt="Simple language"/> <span aria-hidden="true">Simple language</span></a></li>
+    <li ><a href="https://www.dnb.de/EN/Service/Kontakt/KontakteFooter/kontakteFooter_node.html" class="" ><img src="https://www.dnb.de/EN/Service/Kontakt/KontakteFooter/kontakteFooter_node.svg?__blob=picture&amp;v=5" alt="Help and contacts"/> <span aria-hidden="true">Help and contacts</span></a></li></ul>
+
+            </nav>
+            <div class="nav">
+              <nav aria-owns="menu secondaryNav" class="navMobileMenu" id="navMobileMenu" aria-label="Main Menu">
+                <a href="https://www.dnb.de/EN/Service/Sitemap/sitemap_node.html" data-qa-flyout-link="">Menu</a>
+              </nav>
+              <div id="secondaryNav" class="navPrimary" data-qa-navPrimary="">
+                <h2 hidden>Main Menu</h2>
+                <ul>
+    <li  class="hellgruen">
+            <a href="https://www.dnb.de/EN/Benutzung/benutzung_node.html" title="DNB for users" class="" >DNB for users</a></li>
+      <li  class="tuerkis">
+            <a href="https://www.dnb.de/EN/Professionell/professionell_node.html" title="DNB Professional" class="" >DNB Professional</a></li>
+      <li  class="navServiceWarnungen">
+            
+                  </li>
+      <li  class="navServiceMeinKonto">
+            <a class="external" href="https://portal.dnb.de/myAccount/info.htm" title="External link My account (Opens new window)"
+       target="_blank"
+       rel="noopener noreferrer"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/icons/konto_icon.svg?__blob=normal&amp;v=1" alt="icon" /><span class="h-mein-konto">My account</span></a></li>
+      <li  class="navServiceSuche">
+            <a href="https://www.dnb.de/EN/Service/Suche/suche_node.html" class="js-search-opener"  id="search"><img src="https://www.dnb.de/EN/Service/Suche/suche_node.svg?__blob=picture&amp;v=4" alt="Search website" title="Search website"/></a></li>
+      </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="c-warning" role="region" aria-label="warnings" id="header-warning">
+            <button class="c-warning__close js-warning-close">
+              <img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/icons/close_x.svg?__blob=normal&amp;v=5" alt="Close">
+            </button>
+            <div class="c-warning__wrapper">
+            </div>
+            <p class="c-warning__button">
+              <button class="c-button js-viewAll">More</button>
+            </p>
+          </div>
+        <div class="c-search" role="search" id="header-search" aria-labelledby="searchHead" style="display: none;">
+  <div class="row">
+    <div class="small-12 column">
+
+      <h1 class="c-search__heading" id="searchHead">
+            Search website</h1>
+        <p>Search. Find. Discover</p>
+<div class="row">
+          <div class="c-search__input columns small-12 large-8">
+
+            
+  <form name="searchService" action="https://www.dnb.de/SiteGlobals/Forms/DNBWeb/Suche/EN/Servicesuche_Formular.html" method="get" enctype="application/x-www-form-urlencoded">
+  <input type="hidden" name="nn" value="250696"/>
+  <input type="hidden" name="resourceId" value="59544" />
+  <input type="hidden" name="input_" value="250696" />
+  <input type="hidden" name="pageLocale" value="en" />
+
+    <fieldset>
+    <p class="c-content-search__p">
+            
+<span class="formLabel aural">
+  <label for="f59544d59546">Enter search term </label></span>
+<span class="formField">
+  <input id="f59544d59546" name="templateQueryString" value="" title="Enter search term" type="text" placeholder="enter search term" size="26" maxlength="100"/></span>
+            
+  <input class="image" type="image" src="https://www.dnb.de/SiteGlobals/Forms/DNBWeb/_components/Buttons/Servicesuche_Submit.svg?__blob=image&amp;v=1" id="f59544d63528" name="submit" alt="Search" title="Search" />
+    </p>
+</fieldset>
+  </form></div>
+
+          <div class="columns small-12 large-4">
+                <p>Do you want to search our collections?</p>
+<p>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://portal.dnb.de/opac.htm"
+                
+ title="External link Zum Katalog der Deutschen Nationalbibliothek (Opens new window)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    Catalogue search
+                
+  </span>
+</a>
+              
+</p>
+
+                </div>
+
+            </div>
+
+        </div>
+  </div>
+</div>
+
+
+    </div>
+    <div class="c-bglines">
+      <div class="row show-for-small-only">
+        <div class="small-3 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="small-3 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="small-3 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="small-3 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+      </div>
+      <div class="row hide-for-small-only ">
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+          <span class="c-bglines__span c-bglines__span--last show-for-xlarge"> </span>
+        </div>
+      </div>
+    </div>
+    <main id="main" class="main">
+      <nav id="navBreadcrumbs" class="navBreadcrumbs row" aria-labelledby="breadcrumbH" data-qa-breadcrumbs="">
+        <h2 id="breadcrumbH" hidden>You are here:</h2>
+        <ol class="columns small-12 medium-10"><li class="first"><a href="https://www.dnb.de/EN/Home/home_node.html" title="Home" class="">Home</a></li><li><a href="https://www.dnb.de/EN/Professionell/professionell_node.html" title="DNB Professional" class="">DNB Professional</a></li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/metadatendienste_node.html" title="Metadata Services" class="">Metadata Services</a></li><li><strong>SRU Interface</strong></li></ol>
+<ul id="navBreadcrumbsFunctions" class="navBreadcrumbs__functions columns small-12 medium-2" data-mail-url="mailto:">
+  <li id="navBreadcrumbsRecommend" class="navBreadcrumbs__recommend">
+    <a href="https://www.dnb.de/EN/Service/SeiteEmpfehlen/Functions/mailversand.html?nn=250696&amp;handOverParams=uriHash%253D4bb5f5ff59faa77fb87354b932910c0371144b276413%2526uri%253Dhttps%25253A%25252F%25252Fwww.dnb.de%25252FEN%25252FProfessionell%25252FMetadatendienste%25252FDatenbezug%25252FSRU%25252Fsru_node.html" class="" >Recommend</a>
+  </li>
+</ul>
+      </div>
+      <div class="row">
+  <div id="content" class="content small-12 columns">
+<div class="l-color-wrapper tuerkis">
+<div id="c-stage" class="row collapse" data-qa-stage="">
+  <div class="c-stage column c-stage--is-fixed">
+    <div class="c-stage__wrapper">
+
+      <div class="row">
+          <div class="columns small-12">
+            <h1 class="c-stage__h  isFirstInSlot">
+              SRU interface </h1>
+          </div>
+        </div>
+      <div class="row">
+
+        <div class="c-stage__image small-12 small-order-2 medium-8 medium-order-1 column">
+              
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="picture is-capsulated normal"
+
+>
+
+
+
+  
+      <span class="wrapper" style="overflow: visible;">
+
+  
+  
+    
+    
+    
+  <img src=
+  
+
+"https://www.dnb.de/SharedDocs/Bilder/EN/Buehnen/professionell_metadatendiensteSRU_buehne.png?__blob=normal&amp;v=3"
+
+ title="Screenshot of a “Search/Retrieve via URL” request"
+
+ alt="Screenshot of a “Search/Retrieve via URL” request"
+
+ />
+
+
+  
+
+  
+    
+      </span>
+
+
+
+
+
+  <span class="wrapper-text" style="background-color: transparent;" >
+    
+
+    
+  </span>
+
+
+</p>
+
+
+
+
+</div>
+          <div class="smallAccordion small-12 small-order-1 medium-4 medium-order-2 column ">
+            <nav class="c-stage__text tabs-container">
+              <h2 class="c-stage__togglenav__h hide-for-large heading">
+                Content</h2>
+              <div class="c-stage__togglenav">
+                <ul class="c-stage__anchornav">
+<li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText1">Search­ing for and im­port­ing bib­li­o­graph­ic and au­thor­i­ty da­ta</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText2">Stan­dards of SRU in­ter­face</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText3">SRU func­tions</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText4">Ac­cess re­quire­ments</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText5">Avail­able cat­a­logues</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText6">For­mats</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText7">Terms of use and pro­vi­sion</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText8">Prac­ti­cal ex­am­ples</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText9">URL cod­ing</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText10">Num­ber of da­ta records re­turned per re­quest</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText11">Fre­quent­ly asked ques­tions (FAQ)</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText12">Con­tact</a>
+                            </li><li><a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#doc250692bodyText13">News</a>
+                            </li></ul>
+</div>
+            </nav>
+          </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+<div class="row align-center">
+  <div class="columns large-8 small-12">
+
+    <div class="richtext">
+      <a id="doc250692bodyText1"></a><h2>Searching for and importing bibliographic and authority data</h2>
+
+<p>With SRU (<a class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/sru-1-1.html " target="_blank" rel="noopener noreferrer" title="External link SRU-Protokoll  Version 1.1 (Opens new window)">Search/Retrieve via URL</a>), you can use search indices and search terms to conduct systematic searches of the German National Library’s data and subsequently import it into your own environment. The results of the search are provided in a defined <abbr title="Extensible Markup Language">XML</abbr> format.<br/>
+Queries are formulated in the retrieval language (<a class="RichTextExtLink ExternalLink" href="https://www.loc.gov/standards/sru/cql/" target="_blank" rel="noopener noreferrer" title="External link The Contextual Query Language  (Opens new window)"><span lang="en-GB" xml:lang="en-GB">Contextual Query Language</span></a>).</p>
+
+<p>The SRU standard was published by the Library of Congress and is a further development of the Z39.50 protocol.</p>
+
+<p>An overview of all available metadata as well as the different options of obtaining data is given <a class="RichTextIntLink ConfigShortLink" href="https://www.dnb.de/metadataaccess.html?nn=250696" title="metadataaccess">here</a>.</p>
+<a id="doc250692bodyText2"></a><h2>Standards of SRU interface</h2>
+
+<p>SRU protocol: <a class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/sru-1-1.html " target="_blank" rel="noopener noreferrer" title="External link SRU-Protokoll  Version 1.1 (Opens new window)">Version 1.1</a><br/>
+Retrieval language <a class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/cql/contextSets/cql-context-set-v1-2.html" target="_blank" rel="noopener noreferrer" title="External link Retrievalsprache CQL Context Set Version 1.2 (Opens new window)">CQL Context Set Version 1.2</a>, <a class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/cql/conformance.html" target="_blank" rel="noopener noreferrer" title="External link Conformance-Level 2 (Opens new window)">Conformance-Level 2</a></p>
+<a id="doc250692bodyText3"></a><h2>SRU functions</h2>
+
+<p>SRU encompasses the basic functions:</p>
+
+<ul><li><p><a class="RichTextExtLink ExternalLink" href="https://services.dnb.de/sru/dnb?operation=explain&amp;version=1.1" target="_blank" rel="noopener noreferrer" title="External link SRU Explain, Katalog der Deutschen Nationalbibliothek in XML (Opens new window)">Explain</a>: Self-description in <abbr title="Extensible Markup Language">XML</abbr> standard format, including information on</p>
+
+<ul><li>Catalogue</li><li>Indices and supported sorting parameters</li><li>Data formats</li></ul>
+</li></ul>
+
+<ul><li><p>Search/Retrieve: Search query</p>
+
+<ul><li>Retrieval language: CQL (Contextual Query Language)</li><li><p>Boolean operators (and, or, not) are supported. An index must be entered for each search term, otherwise the search is carried out in the default index WOE.</p>
+
+<p><a class="RichTextIntLink Basepage" href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru.html?nn=250696#[syntax]" title="SRU interface">Syntax of a search query</a>: ... index%3Dsearch term%20or%20index%3Dsearch term ...</p>
+</li><li>Help in formulating a <a class="RichTextIntLink NavNode" href="https://www.dnb.de/EN/Service/Hilfe/Katalog/kataloghilfeExpertensuche_node.html" title="Kataloghilfe Expertensuche">CQL search query</a></li></ul>
+</li></ul>
+
+<ul><li><p>Sort: Sorting the result set</p>
+
+<ul><li>the sort parameter is not supported in SRU version 1.1 but as part of <abbr title="Contextual Query Language">CQL</abbr> Context Set version 1.2. For which indices the sorting parameter is supported is available in the catalogue-specific <a class="RichTextExtLink ExternalLink" href="https://services.dnb.de/sru/dnb?operation=explain&amp;version=1.1" target="_blank" rel="noopener noreferrer" title="External link SRU Explain, Katalog der Deutschen Nationalbibliothek in XML (Opens new window)">SRU-Explain</a>, in the specification sort=“true“, a combination is not possible.<br/>
+<a class="RichTextIntLink Basepage" href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru.html?nn=250696#[syntax]" title="SRU interface">Syntax of a search query</a>: sort.descending or sort.ascending</li></ul>
+</li></ul>
+<a id="doc250692bodyText4"></a><h2>Access requirements</h2>
+
+<p>The SRU interface can be accessed free of charge and without registration.</p>
+<a id="doc250692bodyText5"></a><h2>Available catalogues</h2>
+<table><caption><a id="catalog "></a> Catalogues</caption><thead><tr><th colspan="1" rowspan="1" scope="col">Catalogue selection</th><th colspan="1" rowspan="1" scope="col">Start of a search query to this catalogue</th></tr></thead><tbody><tr class="even"><td colspan="1" rowspan="1">Catalogue of the German National Library (<a class="RichTextIntLink NavNode" href="https://www.dnb.de/EN/Professionell/Metadatendienste/Metadaten/Nationalbibliografie/nationalbibliografie_node.html" title="Nationalbibliografie ">DNB</a>) excluding the Integrated Authority File (GND)</td><td colspan="1" rowspan="1">https://services.dnb.de/sru/<strong>dnb</strong>?version=1.1&amp;operation=searchRetrieve&amp;query=…</td></tr><tr class="odd"><td colspan="1" rowspan="1">Catalogue of the German Music Archive (<a class="RichTextIntLink NavNode" href="https://www.dnb.de/EN/Ueber-uns/DMA/dma_node.html" title="German Music Archive">DMA</a>)</td><td colspan="1" rowspan="1">https://services.dnb.de/sru/<strong>dnb.dma</strong>?version=1.1&amp;operation=searchRetrieve&amp;query=…</td></tr><tr class="even"><td colspan="1" rowspan="1">Authorities: Catalogue of Integrated Authority File (<a class="RichTextIntLink NavNode" href="https://www.dnb.de/EN/Professionell/Standardisierung/GND/gnd_node.html" title="The Integrated Authority File (GND)">GND</a>)<br/>
+Restrictions according to <a class="RichTextIntLink Basepage" href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru.html?nn=250696#[syntax]" title="SRU interface">entities</a></td><td colspan="1" rowspan="1">https://services.dnb.de/sru/<strong>authorities</strong>?version=1.1&amp;operation=searchRetrieve&amp;query=…</td></tr><tr class="odd"><td colspan="1" rowspan="1">Catalogue of the German Union Catalogue of Serials (<a class="RichTextIntLink ConfigShortLink" href="https://www.dnb.de/EN/zdb.html?nn=250696" title="zdb">ZDB</a>)</td><td colspan="1" rowspan="1">https://services.dnb.de/sru/<strong>zdb</strong>?version=1.1&amp;operation=searchRetrieve&amp;query=…</td></tr></tbody></table><a id="doc250692bodyText6"></a><h2>Formats</h2>
+
+<p>Detailed information on the formats available is given <a class="RichTextIntLink ConfigShortLink" href="https://www.dnb.de/metadataaccess.html?nn=250696" target="_blank" rel="noopener noreferrer" title="metadataaccess (Opens new window)">here</a>.</p>
+<a id="doc250692bodyText7"></a><h2>Terms of use and provision</h2>
+
+<p>Detailed information on terms of use and provision is given <a class="RichTextIntLink ConfigShortLink" href="https://www.dnb.de/businessmodel.html?nn=250696" target="_blank" rel="noopener noreferrer" title="businessmodel (Opens new window)">here</a>.</p>
+<a id="doc250692bodyText8"></a><h2>Practical examples <a id="[syntax]"></a></h2>
+<table lang="en-GB" xml:lang="en-GB"><caption>Syntax of an SRU query</caption><thead><tr><th colspan="1" rowspan="1" scope="col">Example</th><th colspan="1" rowspan="1" scope="col">Explanation</th></tr></thead><tbody><tr class="even"><td colspan="1" rowspan="1">https://services.dnb.de/sru</td><td colspan="1" rowspan="1">Query to the <abbr title="Deutsche Nationalbibliothek">DNB</abbr>’s <abbr title="Search / Retrieve via URL">SRU</abbr> server</td></tr><tr class="odd"><td colspan="1" rowspan="1">/dnb</td><td colspan="1" rowspan="1">Catalogue specification (<abbr title="exempli gratia; beispielsweise">e.g.</abbr> <abbr title="Deutsche Nationalbibliothek">DNB</abbr>)</td></tr><tr class="even"><td colspan="1" rowspan="1">?version=1.1</td><td colspan="1" rowspan="1">Specification of SRU version, standard</td></tr><tr class="odd"><td colspan="1" rowspan="1">&amp;operation=searchRetrieve</td><td colspan="1" rowspan="1">Command to server</td></tr><tr class="even"><td colspan="1" rowspan="1">&amp;query=</td><td colspan="1" rowspan="1">Anfrage formulieren</td></tr><tr class="odd"><td colspan="1" rowspan="1">SW%3DGoethe<br/>
+%20or%20<br/>
+SW%3DSchiller</td><td colspan="1" rowspan="1">Phrased in retrieval language <a class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/cql/contextSets/cql-context-set-v1-2.html" target="_blank" rel="noopener noreferrer" title="External link Retrievalsprache CQL Context Set Version 1.2 (Opens new window)">CQL</a><br/>
+SW is the name of the index, %3D is the <abbr title="Uniform Resource Locator">URL</abbr> encoding for =, search terms in this example: Goethe or Schiller (boolean combination)</td></tr><tr class="even"><td colspan="1" rowspan="1">%20sortby%20tit/sort.ascending</td><td colspan="1" rowspan="1">Phrased in retrieval language <a class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/cql/contextSets/cql-context-set-v1-2.html" target="_blank" rel="noopener noreferrer" title="External link Retrievalsprache CQL Context Set Version 1.2 (Opens new window)">CQL</a><br/>
+Result set sorted by title from A-Z ascending (optional; implemented only for some indices, see <a class="RichTextExtLink ExternalLink" href="https://services.dnb.de/sru/dnb?operation=explain&amp;version=1.1" target="_blank" rel="noopener noreferrer" title="External link SRU Explain, Katalog der Deutschen Nationalbibliothek in XML (Opens new window)">Explain</a>)</td></tr><tr class="odd"><td colspan="1" rowspan="1">&amp;recordSchema=MARC21-xml</td><td colspan="1" rowspan="1">Desired format for <abbr title="Search / Retrieve via URL">SRU</abbr> response (optional; without a designated format <abbr title="Resource Description Framework">RDF</abbr>xml is returned)</td></tr><tr class="even"><td colspan="1" rowspan="1">&amp;maximumRecords=100</td><td colspan="1" rowspan="1">Number of records to be returned in a partial answer (optional; numbers 0-100 possible)</td></tr><tr class="odd"><td colspan="1" rowspan="1">&amp;startRecord=101</td><td colspan="1" rowspan="1"><p>Request of specific position for continuous data provision over numerous partial ansers or for direct access at a specific point within a returned data set</p>
+
+<p>(optional)</p>
+</td></tr></tbody></table>
+<p>SRU-query for the bibliographic data of a specific edition or calendar week of the <a class="RichTextIntLink NavNode" href="https://www.dnb.de/EN/Professionell/Metadatendienste/Metadaten/ND/nd_node.html" title="New Release Service">New Release Service</a> or a series of the <a class="RichTextIntLink NavNode" href="https://www.dnb.de/EN/Professionell/Metadatendienste/Metadaten/Nationalbibliografie/nationalbibliografie_node.html" title="Nationalbibliografie ">Deutschen Nationalbibliografie</a>: Queries for the calendar week must follow the pattern: YYseriesCW in the „WVN" index (e. g. 24N05 or for Series A, Edition 05 of year 2024 = 24A05). The calendar week requires two digits, weeks 1 through 9 starting with 0.</p>
+
+<p class="backgroundblack"><strong><samp>Example:</samp></strong><br/>
+<samp>https://services.dnb.de/sru/dnb?version=1.1&amp;operation=searchRetrieve&amp;query=WVN%3D24A05&amp;recordSchema=MARC21-xml</samp></p>
+
+<p>The following qualifications are possible: <a id="[entities]"></a></p>
+<table><caption>Qualified by entity in "authorities" catalogue</caption><colgroup><col style="width:25%;"/><col style="width:15%;"/></colgroup><thead><tr><th colspan="1" rowspan="1" scope="col">Entities</th><th colspan="1" rowspan="1" scope="col">Bibliographic genre</th></tr></thead><tbody><tr class="even"><td colspan="1" rowspan="1">Geographical entity</td><td colspan="1" rowspan="1">Tg</td></tr><tr class="odd"><td colspan="1" rowspan="1">Congress/event</td><td colspan="1" rowspan="1">Tf</td></tr><tr class="even"><td colspan="1" rowspan="1">Corporate body</td><td colspan="1" rowspan="1">Tb</td></tr><tr class="odd"><td colspan="1" rowspan="1">Person</td><td colspan="1" rowspan="1">Tp</td></tr><tr class="even"><td colspan="1" rowspan="1">Subject term</td><td colspan="1" rowspan="1">Ts</td></tr><tr class="odd"><td colspan="1" rowspan="1">Work</td><td colspan="1" rowspan="1">Tu</td></tr></tbody></table>
+<p>The Asterisk * is used to mask zero or more characters and must be placed directly behind the value.</p>
+
+<p>Examples of SRU requests:</p>
+<h4>Tp* (Person)</h4>
+
+<p class="backgroundblack"><samp>https://services.dnb.de/sru/authorities?version=1.1&amp;</samp><br/>
+<samp>operation=searchRetrieve&amp;</samp><br/>
+<samp>query=WOE%3DRupp%20Elisabeth%20and%20BBG%3DTp*&amp;</samp><br/>
+<samp>recordSchema=MARC21-xml</samp></p>
+<h4>Ts* (Subject term)</h4>
+
+<p class="backgroundblack"><samp>https://services.dnb.de/sru/authorities?version=1.1&amp;</samp><br/>
+<samp>operation=searchRetrieve&amp;</samp><br/>
+<samp>query=WOE%3DMarketing%20and%20BBG%3DTs*&amp;</samp><br/>
+<samp>recordSchema=MARC21-xml</samp></p>
+<h4>Subject headings can be obtained by qualifiying the search with „COD=s“:</h4>
+
+<p class="backgroundblack"><samp>https://services.dnb.de/sru/authorities?version=1.1&amp;</samp><br/>
+<samp>operation=searchRetrieve&amp;</samp><br/>
+<samp>query=WOE%3Dsozialistenkongress%20and%20COD%3Ds&amp;</samp><br/>
+<samp>recordSchema=MARC21-xml</samp></p>
+<a id="doc250692bodyText9"></a><h2>URL coding</h2>
+
+<p>In <a class="RichTextExtLink ExternalLink" href="https://en.wikipedia.org/wiki/Percent-encoding" target="_blank" rel="noopener noreferrer" title="External link Percent-encoding,  Article from Wikipedial (Opens new window)">URL-Encoding</a> umlauts are coded using UTF-8 and with a prefixed % sign (percent encoding). <br/>
+Example: Lower case ö in UTF-8 = C3 B6. With prefixed % sign = %C3%B6.</p>
+<table><caption>URL coding</caption><colgroup><col style="width:45%;"/><col style="width:10%;"/><col style="width:45%;"/></colgroup><thead><tr><th colspan="1" rowspan="1" scope="col">Zeichen</th><th colspan="1" rowspan="1"></th><th colspan="1" rowspan="1" scope="col">UTF-8 hexadezimal</th></tr></thead><tbody><tr class="even"><td colspan="1" rowspan="1">Ä</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%C3%84</td></tr><tr class="odd"><td colspan="1" rowspan="1">Ö</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%C3%96</td></tr><tr class="even"><td colspan="1" rowspan="1">Ü</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%C3%9C</td></tr><tr class="odd"><td colspan="1" rowspan="1">ä</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%C3%A4</td></tr><tr class="even"><td colspan="1" rowspan="1">ö</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%C3%B6</td></tr><tr class="odd"><td colspan="1" rowspan="1">ü</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%C3%BC</td></tr><tr class="even"><td colspan="1" rowspan="1">ß</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%C3%9F</td></tr><tr class="odd"><td colspan="1" rowspan="1">(space)</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%20</td></tr><tr class="even"><td colspan="1" rowspan="1">" (quotation marks)</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%22</td></tr><tr class="odd"><td colspan="1" rowspan="1">/ (slash)</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%2F</td></tr><tr class="even"><td colspan="1" rowspan="1">\ (backslash)</td><td colspan="1" rowspan="1">=</td><td colspan="1" rowspan="1">%5C</td></tr><tr class="odd"><td colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="http://www.utf8-zeichentabelle.de/unicode-utf8-table.pl?number=1024&amp;names=-&amp;addlinks=1&amp;view=2" target="_blank" rel="noopener noreferrer" title="External link UTF-8-Codetabelle mit Unicode-Zeichen  (Opens new window)">List of other characters</a></td><td colspan="1" rowspan="1"></td><td colspan="1" rowspan="1"></td></tr></tbody></table>
+<p>In order to use "=" in a query (... query=dc.title=musik ...) the guidelines recommend replacing the second "=" by "%3D" (... query=dc.title%3Dmusik ...) and replacing special characters (e. g. <a class="RichTextExtLink ExternalLink" href="http://de.wikipedia.org/wiki/Diakritisches_Zeichen" target="_blank" rel="noopener noreferrer" title="External link Diakritika, Wikipediaartikel (Opens new window)">diacritical marks</a> with UTF-8 hexadecimal) in the search key (<a class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/sru-1-1.html#encoding" target="_blank" rel="noopener noreferrer" title="External link SRU - SearchRetrieve Request Syntax (Opens new window)">Standard</a>).<br/>
+Spaces e.g. before and after Boolean operators should be replaced by %20 (... SW%3DKRAFTWERK%20not%20SW%3DROBOTER ...), depending on client.</p>
+<a id="doc250692bodyText10"></a><h2>Number of data records returned per request</h2>
+
+<p>Standard (default): <a class="RichTextExtLink ExternalLink" href="https://services.dnb.de/sru/dnb?version=1.1&amp;operation=searchRetrieve&amp;query=Leipzig" target="_blank" rel="noopener noreferrer" title="External link SRU-Beispielanfrage mti 10 Datensätzen (Opens new window)">10 data records per response</a><br/>
+Maximum: <a class="RichTextExtLink ExternalLink" href="https://services.dnb.de/sru/dnb?version=1.1&amp;operation=searchRetrieve&amp;query=Leipzig&amp;maximumRecords=100" target="_blank" rel="noopener noreferrer" title="External link SRU-Beispielanfrage mit 100 Datensätzen (Opens new window)">100 data records per reply</a> if ...&amp;maximumRecords=100 specified (possible values 0 to 100) <br/>
+Call of <a class="RichTextExtLink ExternalLink" href="https://services.dnb.de/sru/dnb?version=1.1&amp;operation=searchRetrieve&amp;query=Leipzig&amp;startRecord=101" target="_blank" rel="noopener noreferrer" title="External link SRU-Beispielanfrage weiterer Datensätze (Opens new window)">further data records</a>: ...&amp;startRecord=101 (possible values 1 to 99,000)</p>
+<a id="doc250692bodyText11"></a><h2><a id="[SRU_FAQ]"></a> Frequently asked questions (FAQ)</h2>
+
+<p><a id="FAQ"></a></p>
+
+<p><div class="wrapper-teaser" id="sprg250666">
+
+  <div class="toggleEntry 3">
+    <div class="tabs-container">
+            <h3 class="heading inactive-control" id="sprg250668">What is the difference between SRU and OAI?</h3>
+            <div class="richtext">
+              <p>SRU enables you to conduct purposeful research without having your own database. <br/>
+OAI facilitates the constant synchronisation of large data sets; for this, a current set of basic data stock must be imported into your own database.</p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg250672">Where can I get software to use with SRU?</h3>
+            <div class="richtext">
+              <p>The SRU website of the Library of Congress provides an <a lang="en-GB" xml:lang="en-GB" class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/resources/products.html " title="external link to overview of software to use with SRU">overview of software to use with SRU</a>. An open-source tool developed by <abbr title="Deutsche Nationalbibliothek">DNB</abbr> for researching and downloading small to medium-sized data sets is the <a lang="en-GB" xml:lang="en-GB" class="RichTextExtLink ExternalLink" href="https://github.com/deutsche-nationalbibliothek/SRUQueryTool" title="external link to DNB SRU Query Tool"><abbr title="Deutsche Nationalbibliothek">DNB</abbr> <abbr title="Search / Retrieve via URL">SRU</abbr> Query Tool</a>.</p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg1416826">What are the SRU interface's server name, host name, port and data base designation?</h3>
+            <div class="richtext">
+              <p>Address or name of data source: e.g. https://services.dnb.de/sru or DNB-catalogue (in most cases you are free to choose the designation in this field)<br/>
+Server name/host name/computer: services.dnb.de<br/>
+Port: 443 (<a class="RichTextExtLink ExternalLink" href="https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol_Secure" target="_blank" rel="noopener noreferrer" title="External link HTTPS (Opens new window)">HTTPS-Protokoll</a>)  <br/>
+Data base designation/path: sru/dnb or sru/zdb or sru/authorities etc.<br/>
+Format/syntax: MARC 21/USMARC <br/>
+Coding: <a class="RichTextIntLink Publication FTpdf" href="https://www.dnb.de/SharedDocs/Downloads/EN/Professionell/Metadatendienste/Rundschreiben/rundschreibenUmstellungUTF8.html?nn=250696#Download" target="_blank" rel="noopener noreferrer" title="UTF-8 (decomposed) (Opens new window)">UTF-8 (decomposed)</a></p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg250674">What happens if a parameter in the URL request is incorrect or not supported?</h3>
+            <div class="richtext">
+              <p>The SRU interface delivers an error diagnosis in XML (diagnostic) depending on the standard.</p>
+
+<p>Example:</p>
+
+<p class="backgroundblack"><code>&lt;diagnostics&gt;</code><br/>
+<code>&lt;diag:diagnostic xmlns:diag="http://www.loc.gov/zing/srw/diagnostic/"&gt;</code><br/>
+<code>&lt;diag:uri&gt;info:srw/diagnostic/1/8&lt;/diag:uri&gt;</code><br/>
+<code>&lt;diag:details&gt;Unsupported parameter&lt;/diag:details&gt;</code><br/>
+<code>&lt;diag:message&gt;[quer]&lt;/diag:message&gt;</code><br/>
+<code>&lt;/diag:diagnostic&gt;</code><br/>
+<code>&lt;/diagnostics&gt;</code></p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg250678">What happens if a request is entered without specifying an index?</h3>
+            <div class="richtext">
+              <p>If no index is entered in the SRU request, the request is forwarded to the most extensive index in the catalogue selected (fallback).</p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg250670">How are diacritical marks, spaces and slash marks encoded in a request?</h3>
+            <div class="richtext">
+              <p>In an SRU request, these have to be converted into URL code (UTF-8 hexadecimal, also known as percent encoding). Examples: the letter ä is converted to %C3%A4, a space to %20 and a slash to %2F. Search terms can be enclosed in quotation marks (“search term”). If a search term contains the signs &lt; &gt; = / ( ) or spaces, these must be enclosed by quotation marks (for example the library code "1w/r" in URL code: "1w%2Fr") (see <a class="RichTextExtLink ExternalLink" href="http://www.loc.gov/standards/sru/sru-1-1.html " title="External link SRU-Protokoll  Version 1.1">Standard</a>).</p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg250680">How are markup characters in literal use transported in XML formats?</h3>
+            <div class="richtext">
+              <p>In an interface response (<abbr title="Open Archives Initiative">OAI</abbr>, <abbr title="Search / Retrieve via URL">SRU</abbr>) <span lang="en-GB" xml:lang="en-GB">markup</span> characters (&lt;, &gt; and &amp;) are transported as literal characters in a <a class="RichTextExtLink ExternalLink" href="http://www.w3.org/TR/xml/#dt-cdsection" target="_blank" rel="noopener noreferrer" title="External link CDATA sections (Opens new window)">CDATA section</a>.</p>
+
+<p>In data provided via <abbr title="World Wide Web">WWW</abbr> or <abbr title="Secure File Transfer Protocol">SFTP</abbr> server <span lang="en-GB" xml:lang="en-GB">markup</span> characters in literal use are exported &amp;-masked.</p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg250682">What happens in the case of a request for which no matching data exists?</h3>
+            <div class="richtext">
+              <p>The SRU interface responds with “number of records 0”.</p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg917560">How can I further process data records?</h3>
+            <div class="richtext">
+              <p>If you are just getting started with processing metadata, useful programmes include <a class="RichTextExtLink ExternalLink" href="https://marcedit.reeset.net/" title="External link Website on MarcEdit">MarcEdit</a>, <a class="RichTextExtLink ExternalLink" href="https://www.loc.gov/marc/marctools.html" title="External link Opens the website at the Library of Congress">MARC Specialized tools</a>, the software suite <a class="RichTextExtLink ExternalLink" href="http://librecat.org/" target="_blank" rel="noopener noreferrer" title="External link Seite zu Catmandu (Opens new window)">Catmandu</a>, <a class="RichTextExtLink ExternalLink" href="http://openrefine.org/" target="_blank" rel="noopener noreferrer" title="External link Open Refine (Opens new window)">OpenRefine</a> or <a class="RichTextExtLink ExternalLink" href="https://www.metafacture.org" target="_blank" rel="noopener noreferrer" title="External link Metafacture.org (Opens new window)">Metafacture</a>, while data can be analysed with "Konstanz Information Miner" (<a class="RichTextExtLink ExternalLink" href="https://de.wikipedia.org/wiki/KNIME" target="_blank" rel="noopener noreferrer" title="External link Öffnet die Wikipediaseite zu KNIME (Opens new window)">KNIME</a>) or the <a class="RichTextExtLink ExternalLink" href="https://pkiraly.github.io/" target="_blank" rel="noopener noreferrer" title="External link öffnet die Seite unter Github (Opens new window)">Metadata Quality Assurance Framework</a>. The <a class="RichTextExtLink ExternalLink" href="https://metadaten.community/c/software-und-tools/5" target="_blank" rel="noopener noreferrer" title="External link metadaten.community: Aktuelle Tools und Software (Opens new window)">metadata.community</a> offers an overview of current tools and softwares. A more detailed overview is provided in the presentation slides "<a class="RichTextExtLink ExternalLink" href="https://opus4.kobv.de/opus4-bib-info/frontdoor/index/index/docId/2449" target="_blank" rel="noopener noreferrer" title="External link Öffnet die Folien dazu (Opens new window)">Open Source Software <span lang="de" xml:lang="de">zur Verarbeitung und Analyse von Metadaten</span></a>" (available only in German) and the article "<a class="RichTextExtLink ExternalLink" href="http://www.semantic-web-journal.net/content/survey-tools-linked-data-consumption-1" target="_blank" rel="noopener noreferrer" title="External link Survey of Tools for Linked Data Consumption (Opens new window)">Survey of Tools for Linked Data Consumption</a>".<br/>
+An open-source tool developed by <abbr title="Deutsche Nationalbibliothek">DNB</abbr> is <a class="RichTextExtLink ExternalLink" href="https://github.com/deutsche-nationalbibliothek/marc21-rs/" target="_blank" rel="noopener noreferrer" title="marc21 (Opens new window)">marc21</a>. In addition the <abbr title="Deutsche Nationalbibliothek">DNB</abbr>Lab offers free online <a class="RichTextIntLink ConfigShortLink" href="https://www.dnb.de/librarylabtutorials.html?nn=250696" title="librarylabtutorials">tutorials</a>.</p>
+
+<p>For alignment of own data with the Integrated Authority File (<abbr title="Gemeinsame Normdatei">GND</abbr>) the service <a class="RichTextExtLink ExternalLink" href="https://reconcile.gnd.network/" target="_blank" rel="noopener noreferrer" title="External link GND Reconciliation Service (Opens new window)"><abbr title="Gemeinsame Normdatei">GND</abbr> Reconciliation</a> (only available in German) is at your disposal.</p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg2133570">As a depositor, how I can obtain the metadata of the online publications I submitted?</h3>
+            <div class="richtext">
+              <p>For depositors of <a class="RichTextIntLink ConfigShortLink" href="https://www.dnb.de/EN/netzpublikationen.html?nn=250696" target="_blank" rel="noopener noreferrer" title="netzpublikationen (Opens new window)">online publications</a>, the metadata of the objects submitted to <abbr title="Deutsche Nationalbibliothek">DNB</abbr> are available via the <abbr title="Search / Retrieve via URL">SRU</abbr> interface. To do so, you require the <abbr title="DNB identifier for a depositor of online publications">IDO</abbr> (<abbr title="Deutsche Nationalbibliothek">DNB</abbr> identifier for a depositor of online publications) assigned by <abbr title="Deutsche Nationalbibliothek">DNB</abbr>. It is equivalent to the username/login when delivering via the hotfolder (<abbr title="Secure File Transfer Protocol">SFTP</abbr>). If you don't know your <abbr title="DNB identifier for a depositor of online publications">IDO</abbr>, please contact us at <a href="mailto:np-info@dnb.de" target="_blank" rel="noopener noreferrer">np-info@dnb.de</a>.</p>
+
+<p>Please note the limitation of 99,000 records in the search results per <abbr title="Search / Retrieve via URL">SRU</abbr> query. If needed, a limitation to a specified year of publication can be helpful in order to reduce your search results to under 99,000 data records.</p>
+
+<p>Example <abbr title="DNB identifier for a depositor of online publications">IDO</abbr>:<br/>
+<a class="RichTextExtLink ExternalLink" href="https://services.dnb.de/sru/dnb?version=1.1&amp;operation=searchRetrieve&amp;query=ido%3D%2236208644%22&amp;recordSchema=MARC21-xml" target="_blank" rel="noopener noreferrer" title="External link Example of a SRU query with IDO (Opens new window)">https://services.dnb.de/sru/dnb?version=1.1&amp;operation=searchRetrieve&amp;query=ido%3D%2236208644%22&amp;recordSchema=MARC21-xml</a></p>
+
+<p>Example <abbr title="DNB identifier for a depositor of online publications">IDO</abbr> with limitation to year of publication:<br/>
+<a class="RichTextExtLink ExternalLink" href="https://services.dnb.de/sru/dnb?version=1.1&amp;operation=searchRetrieve&amp;query=ido%3D%2236208644%22%20and%20jhr%3D%222024%22&amp;recordSchema=MARC21-xml" target="_blank" rel="noopener noreferrer" title="External link Example of a SRU query with IDO and year of publication (Opens new window)">https://services.dnb.de/sru/dnb?version=1.1&amp;operation=searchRetrieve&amp;query=ido%3D%2236208644%22%20and%20jhr%3D%222024%22&amp;recordSchema=MARC21-xml</a></p>
+
+            </div>
+            <h3 class="heading inactive-control" id="sprg879916">How can I get important information, <abbr title="exempli gratia; beispielsweise">e.g.</abbr> about changes and disruptions at the SRU interface?</h3>
+            <div class="richtext">
+              <p>We suggest you sign up to the appropriate <a class="RichTextIntLink NavNode" href="https://www.dnb.de/EN/Professionell/Metadatendienste/Newsletter/newsletter_node.html" target="_blank" rel="noopener noreferrer" title="Metadata service newsletter (Opens new window)">mailing list</a> to make sure you receive timely information about changes, new developments, disruptions and maintenance work.</p>
+
+            </div>
+    </div>
+  </div>
+</div></p>
+<a id="doc250692bodyText12"></a><h2>Contact</h2>
+
+<p><a class="RichTextIntLink ContactData" href="https://www.dnb.de/SharedDocs/Kontaktdaten/DE/schnittstellenService.html?nn=250696" title="Schnittstellen-Service">schnittstellen-service@dnb.de</a><br/>
+Phone +49 69 1525-1630</p>
+<a id="doc250692bodyText13"></a><h2>News</h2>
+
+<p><div id="sprg327030" class="wrapper-embedded">
+      <div class="c-content-teaser " aria-labelledby="contentteaser-326994" role="group">
+  <div class="c-content-teaser__wrapper">
+    <div class="c-content-teaser__text tuerkis">
+
+      <h2 class="c-content-teaser__section-header" id="contentteaser-326994">
+          Stay informed!</h2>
+      <p class="c-content-teaser__h">
+          Get current information about the latest developments and activities carried out by the metadata services:<br/>
+newsletter, format changes, mailing lists.</p>
+      <p class="c-content-teaser__button">
+          <a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Newsletter/newsletter_node.html" class="c-button  c-button--transparent">More</a></p>
+      </div>
+  </div>
+</div>
+
+
+  </div></p>
+</div>
+
+
+    <div class="sectionRelated">
+      
+<div class="c-linklist">
+</div></div>
+
+    
+
+  
+  
+                
+                
+                
+              
+     
+  
+              
+    
+              
+  
+  
+
+</div>
+</div>
+
+
+    
+<div class="c-pageinfo">
+  <div class="row align-center">
+    <div class="small-12 large-8 column">
+      <div class="c-pageinfo__wrapper">
+        <p class="docData">
+          <strong class="label">Last changes:</strong>
+          <span class="value">12.06.2026</span><br>
+          <strong class="label">Short-URL:</strong>
+          <span class="value">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://www.dnb.de/EN/sru"
+   class="c-link">
+  
+  
+    <span class="c-link__text">
+    
+      https://www.dnb.de/EN/sru
+    
+    </span>
+  
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://www.dnb.de/EN/sru"
+   class="c-link c-link__copy-url js-copy-url">
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g fill="#1D1D1B"><path d="M14 6v14H0V6h14zm-2 2H2v10h10V8z"/><path d="M6 4V0h14v14h-4v-2h2V2H8v2z"/></g></svg>
+
+  
+</a>
+
+
+
+          </span><br>
+          <strong class="label">Contact:</strong>
+          <span class="value">
+<a class="c-link c-link--mail c-link--internal c-link--block" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#99;&#104;&#110;&#105;&#116;&#116;&#115;&#116;&#101;&#108;&#108;&#101;&#110;&#45;&#115;&#101;&#114;&#118;&#105;&#99;&#101;&#64;&#100;&#110;&#98;&#46;&#100;&#101;" title="E-Mail: &#115;&#99;&#104;&#110;&#105;&#116;&#116;&#115;&#116;&#101;&#108;&#108;&#101;&#110;&#45;&#115;&#101;&#114;&#118;&#105;&#99;&#101;&#64;&#100;&#110;&#98;&#46;&#100;&#101;">
+    <span class="c-link__icon c-link__icon--mail c-link__icon--block"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12"><path fill-rule="evenodd" d="M1.558 0l-.007.009H0V12h17V.009H1.568L1.558 0zm.651 1.79h12.534L8.475 7.007 2.209 1.79zm13 1.486v6.832H1.79v-6.83l6.71 5.56 6.709-5.563z"/></svg>
+</span><span class="c-link__text">&#115;&#99;&#104;&#110;&#105;&#116;&#116;&#115;&#116;&#101;&#108;&#108;&#101;&#110;&#45;&#115;&#101;&#114;&#118;&#105;&#99;&#101;&#64;&#100;&#110;&#98;&#46;&#100;&#101;</span></a>
+</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+  </div>
+</div>
+
+      <div class="row">
+        <div class="columns">
+          <div class="c-nav-to-top js-nav-to-top">
+            <p class="c-nav-to-top__text js-nav-to-top__text">
+              <a href="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html#Start" class="c-nav-to-top__link"
+                 title="to the top"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/icons/nav2top-b.svg?__blob=normal&amp;v=5"
+                                                            alt="to the top" class="c-nav-to-top__image"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+  <div class="small-12 column">
+    <div class="c-newsletter">
+      <div class="row">
+        <div class="small-12 columns c-newsletter__title">
+          <h2 class="c-newsletter__h">
+            Our newsletters</h2>
+        </div>
+        <div class="small-12 medium-8 column c-newsletter__lead">
+          <p class="c-newsletter__p">
+            Informative and up-to-date – sent to you by our newsletter editorial offices</p>
+        </div>
+        <div class="small-12 medium-4">
+            <a href="https://www.dnb.de/EN/Service/Newsletter/newsletter_node.html" class="c-newsletter__button">More</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer aria-labelledby="footerH" data-qa-footer="" class="footer">
+      <div class="footer__wrapper">
+        <h1 id="footerH" hidden>Page functions and information</h1>
+        <div id="navFunctionsWrapper" class="navFunctionsWrapper align-center row" data-mail-url="mailto:">
+          <ul id="navFunctions" class="navFunctions">
+            <li id="navFunctionsRecommend" class="navFunctionsRecommend">
+<a href="https://www.dnb.de/EN/Service/SeiteEmpfehlen/Functions/mailversand.html?handOverParams=uriHash%253Dbfd2b5e41605d64eff0987be66ee76aac19b4d87560d%2526uri%253Dhttps%25253A%25252F%25252Fwww.dnb.de%25252FEN%25252FProfessionell%25252FMetadatendienste%25252FDatenbezug%25252FSRU%25252Fsru_node.html" class="" >Recommend</a>
+            </li>
+          </ul>
+        </div>
+          <div class="generictable">
+
+<div id="siteInfo" class="siteInfo row" role="list">
+  <div class="small-6 columns">
+    <div class="row siteInfo__col--a  small-collapse medium-uncollapse">
+        <div class="siteInfo__col large-6 small-12 columns" role="listitem">
+          <div class="textContainer">
+            <ul>
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Benutzung/Katalog/katalogDNB_node.html" >
+
+                
+
+  <span class="c-link__text">
+    The cat­a­logue
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://portal.dnb.de/myAccount/info.htm"
+                
+ title="External link My account (Opens new window)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    My account
+                
+  </span>
+</a>
+              
+</li>
+
+            
+<li class="navThemen">
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Service/Glossar/glossar_node.html" >
+
+                
+
+  <span class="c-link__text">
+    DNB glos­sary
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Service/Sitemap/sitemap_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Sitemap
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Service/Rechtliches/rechtliches_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Le­gal in­for­ma­tion and ba­sic prin­ci­ples
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://customer-portal.smartintegrityplatform.com/DE/dnb-305/third-party/reporting-channel"
+                
+ title="External link Reporting channel for whistleblowers (Opens new window)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    Reporting channel for whistleblowers
+                
+  </span>
+</a>
+              
+</li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="siteInfo__col large-6 small-12 columns" role="listitem">
+          <div class="textContainer">
+            <ul>
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Beruf-Karriere/stellenangebote/stellenangebote_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Job va­can­cies
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Ueber-uns/Presse/presse_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Press
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Ueber-uns/Nachhaltigkeit/nachhaltigkeit_node.html" >
+
+                
+
+  <span class="c-link__text">
+    DNB Sus­tain­abil­i­ty
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://jahresbericht.dnb.de/Webs/jahresbericht/EN/2022/Home/home_node.htm"
+                
+ title="External link Digital  annual report 2022 of the German National Library (Opens new window)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    DNB Annual Report
+                
+  </span>
+</a>
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://blog.dnb.de"
+                
+ title="External link blog of the German National Library (Opens new window)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    DNB-Blog
+                
+  </span>
+</a>
+              
+</li>
+
+            
+<li class="navBlog">
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Ueber-uns/SocialMedia/socialmedia_node.html" >
+
+                
+
+  <span class="c-link__text">
+    So­cial Me­dia
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://dnb-onlineshop.de"
+                
+ title="External link German National Library online shop (Opens new window)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    DNB online shop
+                
+  </span>
+</a>
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+              
+
+              
+
+              
+
+<a href="https://www.dnb.de/EN/Ueber-uns/Gebaeude/kongresszentrum_footer_url.html?nn=250696"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    Congress Centre
+                
+  </span>
+</a>
+              
+</li>
+
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+    <div class="small-6 columns">
+      <div class="siteInfo__col" role="listitem">
+        <div class="row siteInfo__col--b" role="list">
+            <div class="large-6 small-12 columns" role="listitem">
+              <div class="textContainer" role="group" aria-roledescription="" aria-label="Leipzig">
+                <div class="address">
+                  <h2>DNB Leipzig</h2>
+
+<p>Deutscher Platz 1<br/>
+04103 Leipzig</p>
+
+                </div>
+                <p class="icon-device-phone hide-for-large">
+                  <span>+ 49 341 2271-0</span>
+                </p>
+                <p class="icon-device-phone show-for-large">
+                  <span>+ 49 341 2271-0</span>
+                </p>
+              </div>
+            </div>
+            <div class="large-6 small-12 columns" role="listitem">
+              <div class="textContainer" role="group" aria-roledescription="" aria-label="Leipzig">
+                <div class="address">
+                  <h2>DNB Frankfurt</h2>
+
+<p>Adickesallee 1<br/>
+60322 Frankfurt am Main</p>
+
+                </div>
+                <p class="icon-device-phone hide-for-large">
+                  <span>+ 49 69 1525-0</span>
+                </p>
+                <p class="icon-device-phone show-for-large">
+                  <span>+ 49 69 1525-0</span>
+                </p>
+              </div>
+            </div>
+
+
+          <div class="large-6 small-12 columns" role="listitem">
+            <div class="textContainer">
+              <ul>
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Service/Kontakt/KontakteFooter/kontakteFooter_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Help and con­tacts
+  </span>
+</a>
+
+              
+</li>
+
+                  
+<li >
+
+              
+
+              
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Benutzung/Oeffnungszeiten/oeffnungszeiten_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Open­ing hours
+  </span>
+</a>
+
+              
+</li>
+
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Service/AdresseAnfahrt/anfahrt_node.html" >
+
+                
+
+  <span class="c-link__text">
+    How to find us
+  </span>
+</a>
+
+              
+</li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="large-6 small-12 columns" role="listitem">
+            <div class="textContainer">
+              <ul>
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Service/Impressum/impressum_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Im­print
+  </span>
+</a>
+
+              
+</li>
+
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Service/Datenschutz/datenschutz_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Pri­va­cy Pol­i­cy
+  </span>
+</a>
+
+              
+</li>
+
+                  
+<li class="navServiceGS">
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/EN/Service/Barrierefreiheit/barrierefreiheit_node.html" >
+
+                
+
+  <span class="c-link__text">
+    State­ment on Ac­ces­si­bil­i­ty
+  </span>
+</a>
+
+              
+</li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div></div>
+      </div>
+        
+<div class="footer-section-2">
+  <div class="footer-section-2__wrapper">
+    <div class="row align-middle">
+      <div class="copyright large-6 medium-6 small-12 columns">
+        <p></p>
+      </div>
+        <div class="banner large-6 medium-6 small-12 columns">
+          <div class="row align-right">
+              <div class="small-6 columns">
+                <a href="https://www.deutsche-digitale-bibliothek.de/" target="_blank" title="Opens new window"><span class="wrapper"><img src=
+  
+
+"https://www.dnb.de/SharedDocs/Bilder/DE/Professionell/Projekte_Kooperationen/Kooperationen/ddb/ddbLogo_transparent.png?__blob=normal&amp;v=6"
+
+ title="Logo der Deutschen Digitalen Bibliothek"
+
+ alt="Logo der Deutschen Digitalen Bibliothek"
+
+ />
+
+</span></a>
+              </div>
+              <div class="small-6 columns">
+                <a href="https://kulturstaatsminister.de" target="_blank" title="Opens new window"><span class="wrapper"><img src=
+  
+
+"https://www.dnb.de/SharedDocs/Bilder/DE/Ueber-uns/bkm_logo_2025.svg?__blob=normal&amp;v=5"
+
+ title="Logo von „Der Beauftragte der Bundesregierung für Kultur und Medien“; Link auf dessen Homepage"
+
+ alt="Logo von „Der Beauftragte der Bundesregierung für Kultur und Medien“; Link auf dessen Homepage"
+
+ />
+
+</span></a>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+    </footer>
+
+
+<div id="cookiebanner" class="c-banner c-banner--cookie cookiebanner js-banner c-banner__relative gsb-toggle"
+     data-position="top"
+     role="dialog" aria-modal="true" aria-labelledby="cookiebannerhead" data-cookie="cookiebanner"
+     style="top: 0px; padding-top: 0px; padding-bottom: 0px;" data-animation="true"
+>
+  <div class="row">
+    <div class="column small-12">
+      <div class="c-banner__wrapper c-banner__wrapper--no-wrap cookiebannerbox">
+        <div class="c-banner__content">
+          <div class="cookiebanner__heading">
+            
+              <h2 id="cookiebannerhead">Use of cookies</h2>
+            
+
+            <div class="justify">
+              <p>Cookies help us to provide our services. By using our website you agree that we can use cookies. Read more about our Privacy Policy and visit the following link: <a class="RichTextIntLink NavNode" href="https://www.dnb.de/EN/Service/Datenschutz/datenschutz_node.html" title="Privacy Policy">Privacy Policy</a></p>
+
+            </div>
+          </div>
+          <div class="c-banner__controls button-row">
+            <button class="c-button close js-close-banner">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+</div>
+
+<script type="text/javascript" src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/JavaScript/init/EN/global.js?v=18"></script>
+    <script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/7fa3665db7b4ef28f501a01985c6ea6b6c34d551b060b9ed85e45ec0fc5bd41c.js"></script>
+
+
+<!-- Seite generiert am: Tue Oct 20 04:08:00 CEST 2026 -->
+</body>
+</html>

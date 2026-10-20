@@ -1,0 +1,613 @@
+{
+    "@context": "https://api.europeana.eu/schema/context/entity.jsonld",
+    "id": "https://api.europeana.eu/entity/search?query=test&rows=1&page=1&pageSize=10",
+    "type": "ResultPage",
+    "total": 10,
+    "partOf": {
+        "id": "https://api.europeana.eu/entity/search?&query=test&rows=1",
+        "type": "ResultList",
+        "total": 26
+    },
+    "next": "https://api.europeana.eu/entity/search?query=test&rows=1&page=2&pageSize=10",
+    "items": [
+        {
+            "id": "http://data.europeana.eu/place/180722",
+            "type": "Place",
+            "prefLabel": {
+                "ca": "Test Valley",
+                "de": "Test Valley",
+                "el": "Τεστ Βάλεϊ",
+                "en": "Test Valley",
+                "es": "Test Valley",
+                "fr": "Test Valley",
+                "ga": "Test Valley",
+                "it": "Test Valley",
+                "lv": "Testvelija",
+                "nl": "Test Valley",
+                "pl": "Test Valley",
+                "ro": "Test Valley",
+                "ru": "Тест-Вэлли",
+                "sl": "Test Valley",
+                "sv": "Test Valley District"
+            },
+            "lat": "51.1394",
+            "long": "-1.491",
+            "note": {
+                "el": [
+                    "Δημοτικό διαμέρισμα στο Χάμπσάιρ του Ηνωμένου Βασιλείου"
+                ],
+                "en": [
+                    "Borough in Hampshire, England, UK"
+                ],
+                "fr": [
+                    "District en Angleterre"
+                ],
+                "sl": [
+                    "Borough (okraj) v grofiji Hampshire v Angliji (Združeno kraljestvo)"
+                ],
+                "sv": [
+                    "Distrikt i England, Storbritannien"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q2116338",
+                "https://www.freebase.com/m/029s57",
+                "https://g.co/kg/m/029s57",
+                "https://sws.geonames.org/7290561/",
+                "http://data.ordnancesurvey.co.uk/id/7000000000043511",
+                "http://dbpedia.org/resource/Test_Valley"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/180722#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:43:38Z",
+                "modified": "2026-10-05T12:57:28Z",
+                "pageRank": 7.0,
+                "recordCount": 0,
+                "score": 195.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/place/181408",
+            "type": "Place",
+            "prefLabel": {
+                "ca": "Ashley",
+                "da": "Ashley",
+                "en": "Ashley",
+                "es": "Ashley",
+                "eu": "Ashley",
+                "fr": "Ashley",
+                "ga": "Ashley",
+                "it": "Ashley (Hampshire)",
+                "nl": "Ashley, Test Valley",
+                "pl": "Ashley",
+                "sv": "Ashley"
+            },
+            "altLabel": {
+                "en": [
+                    "Ashley, Hampshire",
+                    "Ashley, Test Valley"
+                ]
+            },
+            "lat": "51.075",
+            "long": "-1.4527777",
+            "note": {
+                "bg": [
+                    "Селище в Обединено кралство Великобритания и Северна Ирландия"
+                ],
+                "el": [
+                    "Οικισμός του Ηνωμένου Βασιλείου"
+                ],
+                "en": [
+                    "Village and civil parish in Test Valley, Hampshire, UK"
+                ],
+                "fi": [
+                    "Kylä Yhdistyneessä kuningaskunnassa"
+                ],
+                "fr": [
+                    "Village britannique (Test Valley)"
+                ],
+                "nl": [
+                    "Dorp in Verenigd Koninkrijk"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q8835105",
+                "https://www.freebase.com/m/08y0yy",
+                "https://g.co/kg/m/08y0yy",
+                "https://sws.geonames.org/7291276/",
+                "https://sws.geonames.org/2656942/",
+                "http://data.ordnancesurvey.co.uk/id/7000000000017752",
+                "http://data.ordnancesurvey.co.uk/id/4000000074567978",
+                "http://dbpedia.org/resource/Ashley,_Test_Valley"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/181408#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:47:37Z",
+                "modified": "2026-10-05T13:07:16Z",
+                "pageRank": 0.0,
+                "recordCount": 0,
+                "score": 1.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/place/188788",
+            "type": "Place",
+            "prefLabel": {
+                "de": "Valley Park",
+                "en": "Valley Park",
+                "es": "Valley Park",
+                "fr": "Valley Park",
+                "ga": "Valley Park",
+                "lt": "Valei Parkas",
+                "pl": "Valley Park",
+                "pt": "Valley Park",
+                "ru": "Вейли-Парк",
+                "sv": "Valley Park"
+            },
+            "altLabel": {
+                "en": [
+                    "Valley Park (civil parish), Hampshire",
+                    "Valley Park, Hampshire"
+                ]
+            },
+            "lat": "50.98",
+            "long": "-1.408",
+            "note": {
+                "de": [
+                    "Siedlung im Vereinigten Königreich"
+                ],
+                "el": [
+                    "Οικισμός του Ηνωμένου Βασιλείου"
+                ],
+                "en": [
+                    "Settlement and civil parish in Test Valley, Hampshire, England"
+                ],
+                "fr": [
+                    "Établissement humain du Test Valley, Angleterre, Royaume-Uni"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q20948943",
+                "https://sws.geonames.org/7298684/",
+                "http://g.co/kg/g/11cn9q_wz5",
+                "http://data.ordnancesurvey.co.uk/id/7000000000017702",
+                "http://data.ordnancesurvey.co.uk/id/4000000074565971",
+                "http://dbpedia.org/resource/Valley_Park,_Chandler%27s_Ford"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/188788#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:56:29Z",
+                "modified": "2026-10-05T14:57:40Z",
+                "pageRank": 0.0,
+                "recordCount": 0,
+                "score": 1.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/place/183773",
+            "type": "Place",
+            "prefLabel": {
+                "en": "East Dean",
+                "ga": "Dean Thoir",
+                "sv": "East Dean"
+            },
+            "altLabel": {
+                "en": [
+                    "East Dean (parish), Hampshire",
+                    "East Dean (civil parish), Hampshire",
+                    "East Dean, Hampshire"
+                ]
+            },
+            "lat": "51.04",
+            "long": "-1.609",
+            "note": {
+                "en": [
+                    "Civil parish in Test Valley, Hampshire, England"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q27671724",
+                "https://sws.geonames.org/7293668/",
+                "http://data.ordnancesurvey.co.uk/id/7000000000017833"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/183773#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:50:55Z",
+                "modified": "2026-10-05T13:43:10Z",
+                "pageRank": 0.0,
+                "recordCount": 0,
+                "score": 1.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/place/186411",
+            "type": "Place",
+            "prefLabel": {
+                "en": "Michelmersh and Timsbury",
+                "ga": "Michelmersh agus Timsbury",
+                "sv": "Michelmersh and Timsbury"
+            },
+            "altLabel": {
+                "en": [
+                    "Michelmersh and Timsbury (civil parish), Hampshire",
+                    "Michelmersh and Timsbury, Hampshire"
+                ]
+            },
+            "lat": "51.032",
+            "long": "-1.509",
+            "note": {
+                "en": [
+                    "Civil parish in Test Valley, Hampshire, England"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q20968322",
+                "https://sws.geonames.org/7296307/",
+                "http://data.ordnancesurvey.co.uk/id/7000000000043166"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/186411#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:55:00Z",
+                "modified": "2026-10-05T14:24:13Z",
+                "pageRank": 0.0,
+                "recordCount": 0,
+                "score": 1.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/place/188121",
+            "type": "Place",
+            "prefLabel": {
+                "bg": "Френчмор",
+                "en": "Frenchmoor",
+                "fr": "Frenchmoor",
+                "ga": "Frenchmoor",
+                "nl": "Frenchmoor",
+                "pl": "Frenchmoor",
+                "sv": "Frenchmoor"
+            },
+            "altLabel": {
+                "en": [
+                    "Frenchmoor, Hampshire"
+                ]
+            },
+            "lat": "51.05582",
+            "long": "-1.61619",
+            "note": {
+                "de": [
+                    "Siedlung im Vereinigten Königreich"
+                ],
+                "el": [
+                    "Οικισμός του Ηνωμένου Βασιλείου"
+                ],
+                "en": [
+                    "Settlement and civil parish in Test Valley, Hampshire, England"
+                ],
+                "fr": [
+                    "Localité britannique"
+                ],
+                "nl": [
+                    "Nederzetting in Verenigd Koninkrijk"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q2284438",
+                "https://sws.geonames.org/7298017/",
+                "http://g.co/kg/g/11x7vg5bj",
+                "http://data.ordnancesurvey.co.uk/id/7000000000017835",
+                "http://data.ordnancesurvey.co.uk/id/4000000074567338",
+                "http://dbpedia.org/resource/Frenchmoor"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/188121#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:57:56Z",
+                "modified": "2026-10-05T14:48:10Z",
+                "pageRank": 0.0,
+                "recordCount": 0,
+                "score": 1.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/agent/162782",
+            "type": "Agent",
+            "isShownBy": {
+                "id": "https://lh3.googleusercontent.com/TWD-wwIcM_p7Xd3Z6pm6121f07qBBMw4tXD6i30Jf4eLjpbMcWQnSVd_G7c6f_3G4QoHYe0k-DIuhZqFZN93r7D0Gg=s0",
+                "type": "WebResource",
+                "source": "http://data.europeana.eu/item/90402/RP_P_1938_1200",
+                "thumbnail": "https://api.europeana.eu/api/v2/thumbnail-by-url.json?uri=https%3A%2F%2Flh3.googleusercontent.com%2FTWD-wwIcM_p7Xd3Z6pm6121f07qBBMw4tXD6i30Jf4eLjpbMcWQnSVd_G7c6f_3G4QoHYe0k-DIuhZqFZN93r7D0Gg%3Ds0&type=IMAGE"
+            },
+            "prefLabel": {
+                "bg": "Pietro Testa",
+                "ca": "Pietro Testa",
+                "cs": "Pietro Testa",
+                "da": "Pietro Testa",
+                "de": "Pietro Testa",
+                "el": "Pietro Testa",
+                "en": "Pietro Testa",
+                "es": "Pietro Testa",
+                "et": "Pietro Testa",
+                "eu": "Pietro Testa",
+                "fi": "Pietro Testa",
+                "fr": "Pietro Testa",
+                "ga": "Pietro Testa",
+                "hr": "Pietro Testa",
+                "hu": "Pietro Testa",
+                "it": "Pietro Testa",
+                "lt": "Pietro Testa",
+                "lv": "Pietro Testa",
+                "mt": "Pietro Testa",
+                "nl": "Pietro Testa",
+                "no": "Pietro Testa",
+                "pl": "Pietro Testa",
+                "pt": "Pietro Testa",
+                "ro": "Pietro Testa",
+                "ru": "Пьетро Теста",
+                "sk": "Pietro Testa",
+                "sl": "Pietro Testa",
+                "sv": "Pietro Testa"
+            },
+            "altLabel": {
+                "de": [
+                    "Testa, Pietro"
+                ],
+                "en": [
+                    "Pedro Teste",
+                    "Pedro Testta",
+                    "Il Lucchesino",
+                    "Pietra Testa",
+                    "Peter Testa",
+                    "Petri Testa",
+                    "Piétre Teste",
+                    "Piestre-Teste",
+                    "Pietro Testa lucchese",
+                    "Petr. Testa",
+                    "Pierre Test",
+                    "Peter Test",
+                    "Pierre Testa",
+                    "P. Teste",
+                    "Pierre Teste",
+                    "P. Testa",
+                    "Testa",
+                    "Pietro testa gen. il lucchesino",
+                    "Pietre Testa",
+                    "Pietre Teste",
+                    "Pietreteste",
+                    "Lucchesino",
+                    "Pet. Test",
+                    "Petro Testa"
+                ],
+                "it": [
+                    "Il Lucchesino"
+                ]
+            },
+            "dateOfBirth": [
+                "1611-01-01"
+            ],
+            "dateOfDeath": [
+                "1650-01-01"
+            ],
+            "note": {
+                "de": [
+                    "Italienischer Maler, Zeichner, Radierer und Schriftsteller"
+                ],
+                "en": [
+                    "Italian artist (1611–1650)"
+                ],
+                "fr": [
+                    "Peintre et graveur italien"
+                ],
+                "ga": [
+                    "Péintéir agus greanadóir Iodálach"
+                ],
+                "it": [
+                    "Pittore italiano del XVII secolo"
+                ],
+                "nl": [
+                    "Italiaans kunstschilder (1611-1650)"
+                ],
+                "sv": [
+                    "Italiensk målare och gravör under barocken"
+                ]
+            },
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q2155480",
+                "http://viaf.org/viaf/36927858",
+                "https://d-nb.info/gnd/118913816",
+                "http://id.loc.gov/authorities/names/n50011095",
+                "http://vocab.getty.edu/ulan/500015047",
+                "http://data.bnf.fr/ark:/12148/cb12003109j",
+                "http://www.idref.fr/028136691/id",
+                "https://www.freebase.com/m/0c2qv_",
+                "https://g.co/kg/m/0c2qv_",
+                "http://openlibrary.org/works/OL1833099A",
+                "http://datos.bne.es/resource/XX1027769",
+                "http://data.bibliotheken.nl/id/thes/p069226873",
+                "http://ta.sandrart.net/-person-31",
+                "http://id.worldcat.org/fast/3286",
+                "http://dbpedia.org/resource/Pietro_Testa"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/agent/162782#aggregation",
+                "type": "Aggregation",
+                "created": "2023-07-03T09:03:03Z",
+                "modified": "2026-10-03T19:17:32Z",
+                "pageRank": 0.0,
+                "recordCount": 310,
+                "score": 888.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/place/188033",
+            "type": "Place",
+            "prefLabel": {
+                "en": "Melchet Park and Plaitford",
+                "ga": "Melchet Park agus Plaitford",
+                "pl": "Melchet Park and Plaitford",
+                "sv": "Melchet Park and Plaitford"
+            },
+            "altLabel": {
+                "en": [
+                    "Melchet Park and Plaitford (civil parish), Hampshire",
+                    "Melchet Park and Plaitford, Hampshire"
+                ]
+            },
+            "lat": "50.988",
+            "long": "-1.606",
+            "note": {
+                "en": [
+                    "Civil parish in Test Valley, Hampshire, England"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q19845651",
+                "https://sws.geonames.org/7297929/",
+                "http://data.ordnancesurvey.co.uk/id/7000000000017875"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/188033#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:57:10Z",
+                "modified": "2026-10-05T14:44:32Z",
+                "pageRank": 0.0,
+                "recordCount": 0,
+                "score": 1.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/place/188034",
+            "type": "Place",
+            "isShownBy": {
+                "id": "https://data.nhm.ac.uk/media/c6c11e05-faf7-4819-b27b-7f21b797fe1f",
+                "type": "WebResource",
+                "source": "http://data.europeana.eu/item/817/NHMUKXZOOX1965XMX19463",
+                "thumbnail": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fdata.nhm.ac.uk%2Fmedia%2Fc6c11e05-faf7-4819-b27b-7f21b797fe1f&type=IMAGE"
+            },
+            "prefLabel": {
+                "bg": "Мотисфонт",
+                "en": "Mottisfont",
+                "fr": "Mottisfont",
+                "ga": "Mottisfont",
+                "it": "Mottisfont",
+                "nl": "Mottisfont",
+                "pl": "Mottisfont",
+                "sv": "Mottisfont"
+            },
+            "altLabel": {
+                "en": [
+                    "Mottisfont, Hampshire"
+                ]
+            },
+            "lat": "51.039555",
+            "long": "-1.5371112",
+            "note": {
+                "de": [
+                    "Gemeinde in der englischen Grafschaft Hampshire"
+                ],
+                "el": [
+                    "Οικισμός του Ηνωμένου Βασιλείου"
+                ],
+                "en": [
+                    "Village and civil parish in Hampshire, UK"
+                ],
+                "fr": [
+                    "Village britannique"
+                ],
+                "nl": [
+                    "Dorp in Test Valley, Verenigd Koninkrijk"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q1242661",
+                "https://www.freebase.com/m/03c3vc8",
+                "https://g.co/kg/m/03c3vc8",
+                "https://sws.geonames.org/2642133/",
+                "https://sws.geonames.org/7297930/",
+                "http://data.ordnancesurvey.co.uk/id/7000000000017742",
+                "http://data.ordnancesurvey.co.uk/id/4000000074564725",
+                "http://dbpedia.org/resource/Mottisfont"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/188034#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:56:51Z",
+                "modified": "2026-10-05T14:44:32Z",
+                "pageRank": 0.0,
+                "recordCount": 2,
+                "score": 231.0
+            }
+        },
+        {
+            "id": "http://data.europeana.eu/place/183778",
+            "type": "Place",
+            "prefLabel": {
+                "en": "Nursling and Rownhams",
+                "ga": "Nursling agus Rownhams",
+                "sl": "Nursling and Rownhams",
+                "sv": "Nursling and Rownhams"
+            },
+            "altLabel": {
+                "en": [
+                    "Nursling and Rownhams (civil parish), Hampshire",
+                    "Nursling and Rownhams, Hampshire"
+                ]
+            },
+            "lat": "50.948",
+            "long": "-1.476",
+            "note": {
+                "en": [
+                    "Civil parish in Test Valley, Hampshire, England"
+                ],
+                "sl": [
+                    "Županija v grofijj Hampshire v Angliji (Združeno kraljestvo)"
+                ]
+            },
+            "isPartOf": [
+                "http://data.europeana.eu/place/86"
+            ],
+            "sameAs": [
+                "http://www.wikidata.org/entity/Q20968326",
+                "https://sws.geonames.org/7293673/",
+                "http://data.ordnancesurvey.co.uk/id/7000000000017714"
+            ],
+            "isAggregatedBy": {
+                "id": "http://data.europeana.eu/place/183778#aggregation",
+                "type": "Aggregation",
+                "created": "2023-06-30T15:51:03Z",
+                "modified": "2026-10-05T13:45:11Z",
+                "pageRank": 0.0,
+                "recordCount": 0,
+                "score": 1.0
+            }
+        }
+    ]
+}

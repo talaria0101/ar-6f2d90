@@ -1,0 +1,1404 @@
+
+
+
+
+<!doctype html>
+<html lang="de">
+<head>
+  <base href="https://www.dnb.de/"/>
+  <meta charset="UTF-8"/>
+  <title>DNBWeb  -  Homepage - HTTP Status 404</title>
+  <meta name="title" content="Homepage - HTTP Status 404"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1"/>
+  <meta name="generator" content="Government Site Builder"/>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Open Graph data -->
+    <meta property="og:site_name" content="Deutsche Nationalbibliothek" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HTTP Status 404" />
+    <meta property="og:description" content="HTTP Status 404" />
+    <meta property="og:image" content="https://www.dnb.de/SharedDocs/Bilder/DE/Buehnen/service_404_buehne.jpg?__blob=normal&amp;v=5" />
+    <meta property="og:url" content="https://www.dnb.de/SiteGlobals/ErrorPages/DNBWeb/ErrorPage404.html" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="fb:admins" content="<FacebookAccount>"/>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HTTP Status 404" />
+    <meta name="twitter:description" content="HTTP Status 404" />
+    <meta name="twitter:image" content="https://www.dnb.de/SharedDocs/Bilder/DE/Buehnen/service_404_buehne.jpg?__blob=normal&amp;v=5" />
+    <meta name="twitter:site" content="<TwitterAccount>" />
+
+  
+
+  
+     <script type="application/ld+json">
+     {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://www.dnb.de/SiteGlobals/ErrorPages/DNBWeb/ErrorPage404.html?nn=56454"
+        },
+        "headline": "ErrorPage404",
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.png?__blob=poster&v=3",
+          "width": 151,
+          "height": 95
+        },
+        "datePublished": "2018-10-22T19:53:18+0200",
+        "dateModified": "2019-07-25T18:47:25+0200",
+        "author": {
+          "@type": "Organization",
+          "name": "Deutsche Nationalbibliothek"
+        },
+         "publisher": {
+          "@type": "Organization",
+          "name": "Deutsche Nationalbibliothek",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "http://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.png?__blob=poster&v=3",
+            "width": 151,
+            "height": 95
+          }
+        },
+        "description": "Deutschsprachige Homepage"
+     }
+     </script>
+
+  <!--
+     Realisiert mit dem Government Site Builder.
+     Die Content Management Lösung der Bundesverwaltung.
+     www.government-site-builder.de
+   -->
+  <link rel="canonical" href="https://www.dnb.de/SiteGlobals/ErrorPages/DNBWeb/ErrorPage404.html"/>
+ <link rel="copyright" href="https://www.dnb.de/DE/Service/Impressum/impressum_node.html" type="text/html" title="Impressum" />
+<link rel="glossary" href="https://www.dnb.de/DE/Service/Glossar/glossar_node.html" type="text/html" title="Glossar" />
+<link rel="help" href="https://www.dnb.de/DE/Service/Hilfe/hilfe_node.html" type="text/html" title="Hilfe" />
+<link rel="start" href="https://www.dnb.de/DE/Home/home_node.html" type="text/html" title="Homepage" />
+<link rel="contents" href="https://www.dnb.de/DE/Service/Sitemap/sitemap_node.html" type="text/html" title="&Uuml;bersicht" />
+<link rel="search" href="https://www.dnb.de/DE/Service/Suche/suche_node.html" type="text/html" title="Suche" />
+<link rel="shortcut icon" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/favicon.png?__blob=normal&amp;v=5" type="image/ico" />
+  
+  
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/normalize.css?v=2" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/_libs.css?v=4" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/small.css?v=63" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/medium.css?v=41" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/large.css?v=44" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/xlarge.css?v=22" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/custom.css?v=32" type="text/css"/>
+<!--[if IE 9]><link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_iefix_9.css?v=8" type="text/css"/><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_iefix.css?v=1" type="text/css" /><![endif]-->
+<link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_print.css?v=15" type="text/css" media="print" />
+
+<link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_materna.css?v=48" type="text/css"/>
+
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/normalize.css?v=2" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/_libs.css?v=4" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/small.css?v=63" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/medium.css?v=41" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/large.css?v=44" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/xlarge.css?v=22" type="text/css"/>
+<link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/custom.css?v=32" type="text/css"/>
+<!--[if IE 9]><link rel="stylesheet"  href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_iefix_9.css?v=8" type="text/css"/><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_iefix.css?v=1" type="text/css" /><![endif]-->
+<link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_print.css?v=15" type="text/css" media="print" />
+
+<link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_materna.css?v=48" type="text/css"/>
+<link rel="stylesheet" href="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Styles/addon_usability.css?v=3" type="text/css"/>
+
+  
+
+
+</head>
+<body class="gsb startseite js-off lang-de fixed" data-nn="56454" data-matomo-site-id="62" $userlikeLinkString>
+  <div id="wrapperOuter">
+  <div id="wrapperInner">
+    <a id="Start"></a>
+    <h1 id="headerHead" hidden>Navigation und Service</h1>
+    <p class="navSkip">
+      <em>Springe direkt zu:</em>
+    </p>
+    <ul class="navSkip">
+      <li><a href="https://www.dnb.de/SiteGlobals/ErrorPages/DNBWeb/ErrorPage404.html?nn=56454#content">Inhalt</a></li>
+      <li><a href="https://www.dnb.de/SiteGlobals/ErrorPages/DNBWeb/ErrorPage404.html?nn=56454#navPrimary">Hauptmenü</a></li>
+      <li><a href="https://www.dnb.de/SiteGlobals/ErrorPages/DNBWeb/ErrorPage404.html?nn=56454#search">Suche</a></li>
+    </ul>
+    <div class="wrapperDivisions">
+      <header class="header" aria-labelledby="headerHead" data-qa-header="">
+        <div class="wrapperBranding row">
+          
+<div class=" logo show-for-large" id="anfang"><a href="https://www.dnb.de/DE/Home/home_node.html" title="Logo der Deutschen Nationalbibliothek; Link zur Startseite"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.svg?__blob=normal&amp;v=3" alt="Logo der Deutschen Nationalbibliothek; Link zur Startseite" /></a></div>
+<div class=" logo show-for-medium-only" >  <a href="https://www.dnb.de/DE/Home/home_node.html" title="Logo der Deutschen Nationalbibliothek; Link zur Startseite"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.svg?__blob=square&amp;v=3" alt="Logo der Deutschen Nationalbibliothek; Link zur Startseite" /></a></div><div class=" logo show-for-small-only" >  <a href="https://www.dnb.de/DE/Home/home_node.html" title="Logo der Deutschen Nationalbibliothek; Link zur Startseite"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/logo.svg?__blob=square&amp;v=3" alt="Logo der Deutschen Nationalbibliothek; Link zur Startseite" /></a></div>
+
+          <div class="navWrapper">
+            <nav id="navServiceMeta" class="navServiceMeta" aria-labelledby="serviceMenu">
+              <h2 id="serviceMenu" hidden>Servicemenü</h2>
+              
+  <ul>
+    <li  class="navServiceGS"><a href="https://www.dnb.de/DE/Service/Gebaerdensprache/gebaerdensprache_node.html" class="" ><img src="https://www.dnb.de/DE/Service/Gebaerdensprache/gebaerdensprache_node.svg?__blob=picture&amp;v=4" alt="Gebärdensprache"/> <span aria-hidden="true">Gebärdensprache</span></a></li>
+    <li  class="navServiceGS"><a href="https://www.dnb.de/DE/Ueber-uns/Barrierefreiheit/barrierefreieangebote_node.html" class="" ><img src="https://www.dnb.de/DE/Ueber-uns/Barrierefreiheit/barrierefreieangebote_node.svg?__blob=picture&amp;v=8" alt="Barrierefreie Angebote"/> <span aria-hidden="true">Barrierefreie Angebote</span></a></li>
+    <li  class="navServiceLS"><a href="https://www.dnb.de/DE/Service/LeichteSprache/leichtesprache_node.html" class="" ><img src="https://www.dnb.de/DE/Service/LeichteSprache/leichtesprache_node.svg?__blob=picture&amp;v=10" alt="Leichte Sprache"/> <span aria-hidden="true">Leichte Sprache</span></a></li>
+    <li ><a href="https://www.dnb.de/DE/Service/Kontakt/KontakteFooter/kontakteFooter_node.html" class="" ><img src="https://www.dnb.de/DE/Service/Kontakt/KontakteFooter/kontakteFooter_node.svg?__blob=picture&amp;v=9" alt="Hilfe und Kontakt"/> <span aria-hidden="true">Hilfe und Kontakt</span></a></li></ul>
+
+            </nav>
+            <div class="nav">
+              <nav aria-owns="menu secondaryNav" class="navMobileMenu" id="navMobileMenu" aria-label="Hauptmenü">
+                <a href="https://www.dnb.de/DE/Service/Sitemap/sitemap_node.html" data-qa-flyout-link="">Menü</a>
+              </nav>
+              <div id="secondaryNav" class="navPrimary" data-qa-navPrimary="">
+                <h2 hidden>Hauptmenü</h2>
+                <ul>
+    <li  class="hellgruen">
+            <a href="https://www.dnb.de/DE/Benutzung/benutzung_node.html" title="Benutzung" class="" >Benutzung</a></li>
+      <li  class="tuerkis">
+            <a href="https://www.dnb.de/DE/Professionell/professionell_node.html" title="DNB Professionell" class="" >DNB Professionell</a></li>
+      <li  class="navServiceWarnungen">
+            
+                  </li>
+      <li  class="navServiceMeinKonto">
+            <a class="external" href="https://portal.dnb.de/myAccount/info.htm" title="Externer Link Mein Konto (Öffnet neues Fenster)"
+       target="_blank"
+       rel="noopener noreferrer"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/icons/konto_icon.svg?__blob=normal&amp;v=1" alt="icon" /><span class="h-mein-konto">Mein Konto</span></a></li>
+      <li  class="navServiceSuche">
+            <a href="https://www.dnb.de/DE/Service/Suche/suche_node.html" class="js-search-opener"  id="search"><img src="https://www.dnb.de/DE/Service/Suche/suche_node.svg?__blob=picture&amp;v=2" alt="Suche" title="Suche"/></a></li>
+      </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="c-warning" role="region" aria-label="Warnungen" id="header-warning">
+            <button class="c-warning__close js-warning-close">
+              <img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/icons/close_x.svg?__blob=normal&amp;v=5" alt="Schlie&szlig;en">
+            </button>
+            <div class="c-warning__wrapper">
+            </div>
+            <p class="c-warning__button">
+              <button class="c-button js-viewAll">Mehr</button>
+            </p>
+          </div>
+        <div class="c-search" role="search" id="header-search" aria-labelledby="searchHead" style="display: none;">
+  <div class="row">
+    <div class="small-12 column">
+
+      <h1 class="c-search__heading" id="searchHead">
+            <span lang="en-GB" xml:lang="en-GB">Webseiten</span> durchsuchen</h1>
+        <p>Suchen. Finden. Entdecken</p>
+<div class="row">
+          <div class="c-search__input columns small-12 large-8">
+
+            
+  <form name="searchService" action="https://www.dnb.de/SiteGlobals/Forms/DNBWeb/Suche/Servicesuche_Formular.html" method="get" enctype="application/x-www-form-urlencoded">
+  <input type="hidden" name="nn" value="56454"/>
+  <input type="hidden" name="resourceId" value="59558" />
+  <input type="hidden" name="input_" value="62230" />
+  <input type="hidden" name="pageLocale" value="de" />
+
+    <fieldset>
+    <p class="c-content-search__p">
+            
+<span class="formLabel aural">
+  <label for="f59558d59550">Suchbegriff eingeben </label></span>
+<span class="formField">
+  <input id="f59558d59550" name="templateQueryString" value="" title="Suchbegriff eingeben" type="text" placeholder="Suchbegriff eingeben" size="26" maxlength="100"/></span>
+            
+  <input class="image" type="image" src="https://www.dnb.de/SiteGlobals/Forms/DNBWeb/_components/Buttons/Servicesuche_Submit.svg?__blob=image&amp;v=1" id="f59558d63528" name="submit" alt="Suchen" title="Suchen" />
+    </p>
+</fieldset>
+  </form></div>
+
+          <div class="columns small-12 large-4">
+                <p class="editor-heading">Sie möchten in unseren Beständen recherchieren?</p>
+<p>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://portal.dnb.de/opac.htm"
+                
+ title="Externer Link Zum Katalog der Deutschen Nationalbibliothek (Öffnet neues Fenster)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    Zur Katalog-Suche
+                
+  </span>
+</a>
+              
+</p>
+
+                </div>
+
+            </div>
+
+        
+  <div class="c-search__suggestions">
+    <small>Häufig gesucht</small>
+    <ul class="c-search__list">
+      
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Beruf-Karriere/stellenangebote/stellenangebote_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Stel­len­an­ge­bo­te
+  </span>
+</a>
+
+              
+</li>
+
+    </ul>
+  </div></div>
+  </div>
+</div>
+
+
+    </div>
+    <div class="c-bglines">
+      <div class="row show-for-small-only">
+        <div class="small-3 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="small-3 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="small-3 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="small-3 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+      </div>
+      <div class="row hide-for-small-only ">
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+        </div>
+        <div class="large-2 columns">
+          <span class="c-bglines__span"> </span>
+          <span class="c-bglines__span c-bglines__span--last show-for-xlarge"> </span>
+        </div>
+      </div>
+    </div>
+    <main id="main" class="main">
+      <nav id="navBreadcrumbs" class="navBreadcrumbs row" aria-labelledby="breadcrumbH" data-qa-breadcrumbs="">
+        <h2 id="breadcrumbH" hidden>Sie sind hier:</h2>
+        <ol class="columns small-12 medium-10"><li class="first"><a href="https://www.dnb.de/DE/Home/home_node.html" title="Startseite" class="">Startseite</a></li><li><strong>HTTP Status 404</strong></li></ol>
+<ul id="navBreadcrumbsFunctions" class="navBreadcrumbs__functions columns small-12 medium-2" data-mail-url="mailto:">
+  <li id="navBreadcrumbsRecommend" class="navBreadcrumbs__recommend">
+    <a href="https://www.dnb.de/DE/Service/SeiteEmpfehlen/Functions/mailversand.html?nn=56454&amp;handOverParams=uriHash%253D7d93b06ea0735985a8a2c47680ed8a1494b26fadac46%2526uri%253Dhttps%25253A%25252F%25252Fwww.dnb.de%25252FSiteGlobals%25252FErrorPages%25252FDNBWeb%25252FErrorPage404.html" class="" >empfehlen</a>
+  </li>
+</ul>
+      </div>
+      <div class="row">
+  <div id="content" class="content small-12 columns">
+<div class="l-color-wrapper rauchgrau">
+<div id="c-stage" class="row collapse" data-qa-stage="">
+  <div class="c-stage column">
+    <div class="c-stage__wrapper">
+
+      <div class="row">
+          <div class="columns small-12">
+            <h1 class="c-stage__h  isFirstInSlot">
+              HTTP Status 404</h1>
+          </div>
+        </div>
+      <div class="row">
+
+        <div class="c-stage__image small-12 small-order-2 medium-8 medium-order-1 column">
+              
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="picture is-capsulated normal"
+
+>
+
+
+
+  
+      <span class="wrapper" style="overflow: visible;">
+
+  
+  
+    
+    
+    
+  <img src=
+  
+
+"https://www.dnb.de/SharedDocs/Bilder/DE/Buehnen/service_404_buehne.jpg?__blob=normal&amp;v=5"
+
+ title="Halb geöffnete Tür zum Sitzungssaal der Deutschen Nationalbibliothek in Frankfurt am Main mit der Raumnummer 404"
+
+ alt="Halb geöffnete Tür zum Sitzungssaal der Deutschen Nationalbibliothek in Frankfurt am Main mit der Raumnummer 404"
+
+ />
+
+
+  
+
+  
+    
+      </span>
+
+
+
+
+
+  <span class="wrapper-text" style="background-color: transparent;" >
+    
+
+    
+  </span>
+
+
+</p>
+
+
+
+
+</div>
+          </div>
+    </div>
+  </div>
+</div>
+<div class="row align-center">
+  <div class="columns large-8 small-12">
+
+    <div class="richtext">
+      <p>Oh nein … diese Seite ist leider nicht (mehr) vorhanden. </p>
+
+<p>Vielleicht haben Sie einen alten Link oder ein altes Bookmark verwendet? Versuchen Sie es  über die Themeneinstiege auf unserer <a class="RichTextIntLink NavNode" href="https://www.dnb.de/DE/Home/home_node.html" title="Startseite">Startseite</a>  oder gehen Sie direkt zu unserer <a class="RichTextIntLink NavNode" href="https://www.dnb.de/DE/Service/Suche/suche_node.html" title="Suche">Webseiten-Suche</a> oder <a class="RichTextExtLink ExternalLink" href="https://portal.dnb.de/opac.htm" target="_blank" rel="noopener noreferrer" title="Externer Link Zum Katalog der Deutschen Nationalbibliothek (Öffnet neues Fenster)">Katalog-Suche</a>.</p>
+
+<p>Helfen Sie uns, besser zu werden! Sollte dieser Fehler öfter auftreten, wenden Sie sich bitte an uns. Vielen Dank. </p>
+</div>
+
+
+    <div class="sectionRelated">
+      
+<div class="c-linklist">
+</div></div>
+
+    </div>
+</div>
+
+
+    
+<div class="c-pageinfo">
+  <div class="row align-center">
+    <div class="small-12 large-8 column">
+      <div class="c-pageinfo__wrapper">
+        <p class="docData">
+          <strong class="label">Kontakt:</strong>
+          <span class="value">
+<a class="c-link c-link--mail c-link--internal c-link--block" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#119;&#101;&#98;&#114;&#101;&#100;&#97;&#107;&#116;&#105;&#111;&#110;&#64;&#100;&#110;&#98;&#46;&#100;&#101;" title="E-Mail an: &#119;&#101;&#98;&#114;&#101;&#100;&#97;&#107;&#116;&#105;&#111;&#110;&#64;&#100;&#110;&#98;&#46;&#100;&#101;">
+    <span class="c-link__icon c-link__icon--mail c-link__icon--block"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12"><path fill-rule="evenodd" d="M1.558 0l-.007.009H0V12h17V.009H1.568L1.558 0zm.651 1.79h12.534L8.475 7.007 2.209 1.79zm13 1.486v6.832H1.79v-6.83l6.71 5.56 6.709-5.563z"/></svg>
+</span><span class="c-link__text">&#119;&#101;&#98;&#114;&#101;&#100;&#97;&#107;&#116;&#105;&#111;&#110;&#64;&#100;&#110;&#98;&#46;&#100;&#101;</span></a>
+</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+  </div>
+</div>
+
+      <div class="row">
+        <div class="columns">
+          <div class="c-nav-to-top js-nav-to-top">
+            <p class="c-nav-to-top__text js-nav-to-top__text">
+              <a href="https://www.dnb.de/SiteGlobals/ErrorPages/DNBWeb/ErrorPage404.html?nn=56454#Start" class="c-nav-to-top__link"
+                 title="Zum Seitenanfang"><img src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/icons/nav2top-b.svg?__blob=normal&amp;v=5"
+                                                            alt="nach oben" class="c-nav-to-top__image"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+  <div class="small-12 column">
+    <div class="c-newsletter">
+      <div class="row">
+        <div class="small-12 columns c-newsletter__title">
+          <h2 class="c-newsletter__h">
+            Unsere Newsletter</h2>
+        </div>
+        <div class="small-12 medium-8 column c-newsletter__lead">
+          <p class="c-newsletter__p">
+            Aktuell und informativ – für Sie von unseren Newsletter-Redaktionen</p>
+        </div>
+        <div class="small-12 medium-4">
+            <a href="https://www.dnb.de/DE/Service/Newsletter/newsletter_node.html" class="c-newsletter__button">Mehr</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer aria-labelledby="footerH" data-qa-footer="" class="footer">
+      <div class="footer__wrapper">
+        <h1 id="footerH" hidden>Seitenfunktionen und -Informationen</h1>
+        <div id="navFunctionsWrapper" class="navFunctionsWrapper align-center row" data-mail-url="mailto:">
+          <ul id="navFunctions" class="navFunctions">
+            <li id="navFunctionsRecommend" class="navFunctionsRecommend">
+<a href="https://www.dnb.de/DE/Service/SeiteEmpfehlen/Functions/mailversand.html?handOverParams=uriHash%253D3c7b07b34d5fd29d8b74a8a00a2f50a0f36ee4cf2eb0%2526uri%253Dhttps%25253A%25252F%25252Fwww.dnb.de%25252FSiteGlobals%25252FErrorPages%25252FDNBWeb%25252FErrorPage404.html" class="" >empfehlen</a>
+            </li>
+          </ul>
+        </div>
+          <div class="generictable">
+
+<div id="siteInfo" class="siteInfo row" role="list">
+  <div class="small-6 columns">
+    <div class="row siteInfo__col--a  small-collapse medium-uncollapse">
+        <div class="siteInfo__col large-6 small-12 columns" role="listitem">
+          <div class="textContainer">
+            <ul>
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Benutzung/Katalog/katalogDNB_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Über den Ka­ta­log
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://portal.dnb.de/myAccount/info.htm"
+                
+ title="Externer Link Mein Konto (Öffnet neues Fenster)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    Mein Konto
+                
+  </span>
+</a>
+              
+</li>
+
+            
+<li class="navThemen">
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Service/Glossar/glossar_node.html" >
+
+                
+
+  <span class="c-link__text">
+    DNB-Glossar
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Service/Sitemap/sitemap_node.html" >
+
+                
+
+  <span class="c-link__text">
+    In­halt (Si­te­map)
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Service/Rechtliches/rechtliches_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Recht­li­ches und Grund­la­gen
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://customer-portal.smartintegrityplatform.com/DE/dnb-305/third-party/reporting-channel"
+                
+ title="Externer Link Meldestelle nach dem Hinweisgeberschutzgesetz (Öffnet neues Fenster)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    Meldestelle nach dem Hinweisgeberschutzgesetz
+                
+  </span>
+</a>
+              
+</li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="siteInfo__col large-6 small-12 columns" role="listitem">
+          <div class="textContainer">
+            <ul>
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Beruf-Karriere/stellenangebote/stellenangebote_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Stel­len­an­ge­bo­te
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Ueber-uns/Presse/presse_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Pres­se 
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Ueber-uns/Nachhaltigkeit/nachhaltigkeit_node.html" >
+
+                
+
+  <span class="c-link__text">
+    DNB Nach­hal­tig­keit
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://jahresbericht.dnb.de"
+                
+ title="Externer Link Digitaler Jahresbericht der Deutschen Nationalbibiliothek (Öffnet neues Fenster)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    DNB Jahresbericht
+                
+  </span>
+</a>
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://blog.dnb.de"
+                
+ title="Externer Link Blog der Deutschen Nationalbibliothek (Öffnet neues Fenster)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    DNB Blog
+                
+  </span>
+</a>
+              
+</li>
+
+            
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Ueber-uns/SocialMedia/socialmedia_node.html" >
+
+                
+
+  <span class="c-link__text">
+    So­ci­al Me­dia
+  </span>
+</a>
+
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+                
+                
+              
+              
+
+              
+
+              
+
+<a href="https://dnb-onlineshop.de"
+                
+ title="Externer Link Onlineshop der Deutschen Nationalbibliothek (Öffnet neues Fenster)"
+ target="_blank"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    DNB Onlineshop
+                
+  </span>
+</a>
+              
+</li>
+
+            
+<li>
+
+              
+              
+              
+              
+              
+              
+              
+              
+
+              
+
+              
+
+<a href="https://www.dnb.de/DE/Ueber-uns/Gebaeude/kongresszentrum_footer_url.html"
+                
+ class="c-link"
+>
+                
+
+  <span class="c-link__text">
+
+                
+    Kongresszentrum
+                
+  </span>
+</a>
+              
+</li>
+
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+    <div class="small-6 columns">
+      <div class="siteInfo__col" role="listitem">
+        <div class="row siteInfo__col--b" role="list">
+            <div class="large-6 small-12 columns" role="listitem">
+              <div class="textContainer" role="group" aria-roledescription="Standort" aria-label="Leipzig">
+                <div class="address">
+                  <h2>DNB Leipzig</h2>
+
+<p>Deutscher Platz 1<br/>
+04103 Leipzig</p>
+
+                </div>
+                <p class="icon-device-phone hide-for-large">
+                  <span>+ 49 341 2271-0</span>
+                </p>
+                <p class="icon-device-phone show-for-large">
+                  <span>+ 49 341 2271-0</span>
+                </p>
+              </div>
+            </div>
+            <div class="large-6 small-12 columns" role="listitem">
+              <div class="textContainer" role="group" aria-roledescription="Standort" aria-label="Leipzig">
+                <div class="address">
+                  <h2>DNB Frankfurt</h2>
+
+<p>Adickesallee 1<br/>
+60322 Frankfurt am Main</p>
+
+                </div>
+                <p class="icon-device-phone hide-for-large">
+                  <span>+ 49 69 1525-0</span>
+                </p>
+                <p class="icon-device-phone show-for-large">
+                  <span>+ 49 69 1525-0</span>
+                </p>
+              </div>
+            </div>
+
+
+          <div class="large-6 small-12 columns" role="listitem">
+            <div class="textContainer">
+              <ul>
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Service/Kontakt/KontakteFooter/kontakteFooter_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Hil­fe und Kon­takt
+  </span>
+</a>
+
+              
+</li>
+
+                  
+<li >
+
+              
+
+              
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Benutzung/Oeffnungszeiten/oeffnungszeiten_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Öff­nungs­zei­ten
+  </span>
+</a>
+
+              
+</li>
+
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Service/AdresseAnfahrt/anfahrt_node.html" >
+
+                
+
+  <span class="c-link__text">
+    An­fahrt
+  </span>
+</a>
+
+              
+</li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="large-6 small-12 columns" role="listitem">
+            <div class="textContainer">
+              <ul>
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Service/Impressum/impressum_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Im­pres­s­um
+  </span>
+</a>
+
+              
+</li>
+
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Service/Datenschutz/datenschutz_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Da­ten­schutz
+  </span>
+</a>
+
+              
+</li>
+
+                  
+<li >
+
+              
+
+              
+                
+                
+              
+
+              
+              
+                
+              
+
+              
+
+              
+              
+
+              
+
+<a class="c-link" href="https://www.dnb.de/DE/Service/Barrierefreiheit/barrierefreiheit_node.html" >
+
+                
+
+  <span class="c-link__text">
+    Er­klä­rung zur Bar­rie­re­frei­heit
+  </span>
+</a>
+
+              
+</li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div></div>
+      </div>
+        
+<div class="footer-section-2">
+  <div class="footer-section-2__wrapper">
+    <div class="row align-middle">
+      <div class="copyright large-6 medium-6 small-12 columns">
+        <p></p>
+      </div>
+        <div class="banner large-6 medium-6 small-12 columns">
+          <div class="row align-right">
+              <div class="small-6 columns">
+                <a href="https://www.deutsche-digitale-bibliothek.de/" target="_blank" title="Öffnet neues Fenster"><span class="wrapper"><img src=
+  
+
+"https://www.dnb.de/SharedDocs/Bilder/DE/Professionell/Projekte_Kooperationen/Kooperationen/ddb/ddbLogo_transparent.png?__blob=normal&amp;v=6"
+
+ title="Logo der Deutschen Digitalen Bibliothek"
+
+ alt="Logo der Deutschen Digitalen Bibliothek"
+
+ />
+
+</span></a>
+              </div>
+              <div class="small-6 columns">
+                <a href="https://kulturstaatsminister.de" target="_blank" title="Öffnet neues Fenster"><span class="wrapper"><img src=
+  
+
+"https://www.dnb.de/SharedDocs/Bilder/DE/Ueber-uns/bkm_logo_2025.svg?__blob=normal&amp;v=5"
+
+ title="Logo von „Der Beauftragte der Bundesregierung für Kultur und Medien“; Link auf dessen Homepage"
+
+ alt="Logo von „Der Beauftragte der Bundesregierung für Kultur und Medien“; Link auf dessen Homepage"
+
+ />
+
+</span></a>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+    </footer>
+
+
+<div id="cookiebanner" class="c-banner c-banner--cookie cookiebanner js-banner c-banner__relative gsb-toggle"
+     data-position="top"
+     role="dialog" aria-modal="true" aria-labelledby="cookiebannerhead" data-cookie="cookiebanner"
+     style="top: 0px; padding-top: 0px; padding-bottom: 0px;" data-animation="true"
+>
+  <div class="row">
+    <div class="column small-12">
+      <div class="c-banner__wrapper c-banner__wrapper--no-wrap cookiebannerbox">
+        <div class="c-banner__content">
+          <div class="cookiebanner__heading">
+            
+              <h2 id="cookiebannerhead">Hinweis zur Verwendung von Cookies</h2>
+            
+
+            <div class="justify">
+              <p>Cookies erleichtern die Bereitstellung unserer Dienste. Mit der Nutzung unserer Dienste erklären Sie sich damit einverstanden, dass wir Cookies verwenden. Weitere Informationen zum Datenschutz erhalten Sie über den folgenden Link: <a class="RichTextIntLink NavNode" href="https://www.dnb.de/DE/Service/Datenschutz/datenschutz_node.html" title="Datenschutz">Datenschutz</a></p>
+
+            </div>
+          </div>
+          <div class="c-banner__controls button-row">
+            <button class="c-button close js-close-banner">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+</div>
+
+<script type="text/javascript" src="https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/JavaScript/init/global.js?v=24"></script>
+    <script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/7fa3665db7b4ef28f501a01985c6ea6b6c34d551b060b9ed85e45ec0fc5bd41c.js"></script>
+
+
+<!-- Seite generiert am: Thu Oct 15 14:37:46 CEST 2026 -->
+</body>
+</html>
+
+

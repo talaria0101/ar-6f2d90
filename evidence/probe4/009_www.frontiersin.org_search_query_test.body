@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <script>
+    dataLayer = [];
+  </script>
+  <script>
+    dataLayer.push({ 'app_id': '1' });
+  </script>
+    <script type="text/javascript">
+      dataLayer.push({
+        'loopId': undefined,
+      });
+    </script>
+  <!-- Google Tag Manager -->
+  <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+          var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
+          j.src = 'https://tag-manager.frontiersin.org/gtm.js?id=' + i + dl + '&gtm_auth=u-n-7MEC83-lilAhi0fqhQ&gtm_preview=env-1&gtm_cookies_win=x';
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5SXX286');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontiers - Search</title>
+  <base href="/">
+  <!-- <link rel="shortcut icon" href="https://brand.frontiersin.org/m/ed3f9ce840a03d7/favicon_16-tenantFavicon-Frontiers.png"> -->
+  <link rel="icon" type="image/png" sizes="16x16" href="https://brand.frontiersin.org/m/ed3f9ce840a03d7/favicon_16-tenantFavicon-Frontiers.png">
+  <link href="https://static2.frontiersin.org/journal-fonts/museo-sans-1.0.1/css/museo-sans.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://static.frontiersin.org/search/static/styles.b16ce94e45e816203eb3.css"></head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://tag-manager.frontiersin.org/ns.html?id=GTM-5SXX286&gtm_auth=u-n-7MEC83-lilAhi0fqhQ&gtm_preview=env-1&gtm_cookies_win=x"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <app-root></app-root>
+  <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+
+<script type="text/javascript" src="https://static.frontiersin.org/search/static/runtime.18b8a06f7ef0bc104eb9.js"></script><script type="text/javascript" src="https://static.frontiersin.org/search/static/polyfills.39de268f414e718b1572.js"></script><script type="text/javascript" src="https://static.frontiersin.org/search/static/scripts.cf123e12d4681518c2c6.js"></script><script type="text/javascript" src="https://static.frontiersin.org/search/static/main.17df1d213127c343af7a.js"></script></body>
+</html>

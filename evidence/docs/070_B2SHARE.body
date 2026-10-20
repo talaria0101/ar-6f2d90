@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="Store and publish research data" />
+<link rel="canonical" href="https://eudat.eu/service-catalogue/b2share-0" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/eudat/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>B2SHARE | EUDAT</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_oA0wAxjSAMZypIf1dGM8IrrpFq4oIhrLgTG06_6yRvQ.css?delta=0&amp;language=en&amp;theme=eudat&amp;include=eJxVjVkOxCAMQy_EwJGqAG6LhhKUkFa9_Sya9cfysyU7XZHLYJkoJZZcuIWP87NwG2jZwTKNsFSOVC86zlra4joJLUJ91ZDFOlX_Tby1brEWXZGdcipUJ11JEOb7JB1Q3vBf_ML0-IA6PXVgC5EUbi84NDzVb5ytwp1swyLe9y_0Au3ctOy4ATMGV_U" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_z-OD2iC1vEQ_u7FjEWoGrp0dEYfsdvX1lLBzrCGHwmk.css?delta=2&amp;language=en&amp;theme=eudat&amp;include=eJxVjVkOxCAMQy_EwJGqAG6LhhKUkFa9_Sya9cfysyU7XZHLYJkoJZZcuIWP87NwG2jZwTKNsFSOVC86zlra4joJLUJ91ZDFOlX_Tby1brEWXZGdcipUJ11JEOb7JB1Q3vBf_ML0-IA6PXVgC5EUbi84NDzVb5ytwp1swyLe9y_0Au3ctOy4ATMGV_U" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_cteu7urYyT1NwKYgOp4XIg5T4-3oWBa8xKrvk9vzVQs.css?delta=3&amp;language=en&amp;theme=eudat&amp;include=eJxVjVkOxCAMQy_EwJGqAG6LhhKUkFa9_Sya9cfysyU7XZHLYJkoJZZcuIWP87NwG2jZwTKNsFSOVC86zlra4joJLUJ91ZDFOlX_Tby1brEWXZGdcipUJ11JEOb7JB1Q3vBf_ML0-IA6PXVgC5EUbi84NDzVb5ytwp1swyLe9y_0Au3ctOy4ATMGV_U" />
+
+    
+
+  </head>
+  <body class="layout-no-sidebars path-node page-node-type-service-catalogue-item">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page internal">
+  
+
+  
+<header id="header" class="site-header navbar-expand-lg py-0">
+  <nav class="navbar navbar-light w-100 p-0">
+    <div class="container header-inner d-flex align-items-center">
+
+            <div class="site-branding-wrap">
+         <div id="block-eudat-site-branding" class="clearfix site-branding block block-system block-system-branding-block">
+  
+    
+        <a href="/" title="Home" rel="home" class="site-branding-logo">
+        
+        <img class="logo" src="/themes/eudat/logo.svg" alt="Home" />
+        
+    </a>
+        <div class="site-branding__text d-none">
+              <div class="site-branding__name">
+          <a href="/" title="Home" rel="home">EUDAT</a>
+        </div>
+                </div>
+  </div>
+
+
+      </div>
+
+            <div class="primary-menu-wrap d-none d-xl-block flex-grow-1">
+                   <nav role="navigation" aria-labelledby="block-eudat-main-menu-menu" id="block-eudat-main-menu">
+            
+  <h2 class="visually-hidden" id="block-eudat-main-menu-menu">Main navigation</h2>
+  
+
+        
+	
+		<div class="gva-navigation">
+
+				<div class="d-none d-xl-block">
+										<ul  class="clearfix gva_menu gva_menu_main">
+																	<li  class="menu-item menu-item--expanded dropdown">
+													<span data-roll-hover="link" class="menu-item-no-link align-items-center"  data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false" role="button" tabindex="0" >
+																<span data-roll-hover="target">About</span>
+																	<span class="icaret fas fa-chevron-down"></span>
+															</span>
+						
+																					<ul class="menu sub-menu dropdown-menu">
+																		<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-697174801" href="/about" >
+																<span data-roll-hover="target">EUDAT</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-891280289" href="/governance" >
+																<span data-roll-hover="target">Governance</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1271504047" href="/members" >
+																<span data-roll-hover="target">Members</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1388862317" href="/collaborations" >
+																<span data-roll-hover="target">Collaborations</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1801521956" href="/projects" >
+																<span data-roll-hover="target">Projects</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1248569731" href="https://eudat.eu/sites/default/files/2024-01/EUDAT%20Visual%20Guidelines%20WEB%20Jan2024%20%281%29.pdf" >
+																<span data-roll-hover="target">Communications Kit</span>
+															</a>
+						
+											</li>
+							</ul>
+			
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-383357758" href="/membership" >
+																<span data-roll-hover="target">Membership</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item menu-item--expanded dropdown">
+													<a data-roll-hover="link" data-link_id="link-1870167665" href="/catalogue"  class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false" role="button" >
+																<span data-roll-hover="target">Services &amp; Support</span>
+																	<span class="icaret fas fa-chevron-down"></span>
+															</a>
+						
+																					<ul class="menu sub-menu dropdown-menu">
+																		<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1977858593" href="/catalogue" >
+																<span data-roll-hover="target">Service Catalogue</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<span data-roll-hover="link" class="menu-item-no-link align-items-center" >
+																<span data-roll-hover="target">EOSC EUDAT Node</span>
+															</span>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-202028929" href="https://docs.eudat.eu/" >
+																<span data-roll-hover="target">User Documentation</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-102105866" href="/eudat-training" >
+																<span data-roll-hover="target">Training</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1719120891" href="/contact-support-request" >
+																<span data-roll-hover="target">Help Desk</span>
+															</a>
+						
+											</li>
+							</ul>
+			
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-133087367" href="/use-cases" >
+																<span data-roll-hover="target">Research Communities</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item menu-item--expanded dropdown">
+													<a data-roll-hover="link" data-link_id="link-1367438767" href=""  class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false" role="button" >
+																<span data-roll-hover="target">News &amp; Events</span>
+																	<span class="icaret fas fa-chevron-down"></span>
+															</a>
+						
+																					<ul class="menu sub-menu dropdown-menu">
+																		<li  class="menu-item">
+													<span data-roll-hover="link" class="menu-item-no-link align-items-center" >
+																<span data-roll-hover="target">News</span>
+															</span>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-297374948" href="/events" >
+																<span data-roll-hover="target">Events</span>
+															</a>
+						
+											</li>
+							</ul>
+			
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1441773318" href="/contact-support-request" >
+																<span data-roll-hover="target">Contact us</span>
+															</a>
+						
+											</li>
+							</ul>
+			
+		</div>
+
+								<div class="d-xl-none">
+			<ul class="mobile-nav list-unstyled m-0">
+																								
+											<li class="nav-panel-item">
+							<button type="button" class="nav-oc-link nav-panel-trigger d-flex justify-content-between align-items-center w-100 border-0 bg-transparent text-start" data-panel="nav-subpanel-8109-1" aria-expanded="false">
+								<span>
+																		About
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" class="nav-chevron" aria-hidden="true">
+									<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+								</svg>
+							</button>
+
+							<div class="nav-subpanel" id="nav-subpanel-8109-1" aria-hidden="true">
+								<div class="nav-subpanel-header">
+									<button type="button" class="nav-back-btn btn btn-link p-0 d-flex align-items-center gap-1">
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"/>
+										</svg>
+										Back
+									</button>
+								</div>
+
+								
+								<ul class="nav-subpanel-list list-unstyled m-0">
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/about" >
+																								EUDAT
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/governance" >
+																								Governance
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/members" >
+																								Members
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/collaborations" >
+																								Collaborations
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/projects" >
+																								Projects
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="https://eudat.eu/sites/default/files/2024-01/EUDAT%20Visual%20Guidelines%20WEB%20Jan2024%20%281%29.pdf"  target="_blank" rel="noopener noreferrer" >
+																								Communications Kit
+											</a>
+										</li>
+																	</ul>
+							</div>
+						</li>
+
+					
+																								
+											<li class="nav-link-item">
+															<a class="nav-oc-link d-flex justify-content-between align-items-center" href="/membership" >
+									<span>
+																				Membership
+									</span>
+																	</a>
+													</li>
+					
+																								
+											<li class="nav-panel-item">
+							<button type="button" class="nav-oc-link nav-panel-trigger d-flex justify-content-between align-items-center w-100 border-0 bg-transparent text-start" data-panel="nav-subpanel-8109-3" aria-expanded="false">
+								<span>
+																		Services &amp; Support
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" class="nav-chevron" aria-hidden="true">
+									<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+								</svg>
+							</button>
+
+							<div class="nav-subpanel" id="nav-subpanel-8109-3" aria-hidden="true">
+								<div class="nav-subpanel-header">
+									<button type="button" class="nav-back-btn btn btn-link p-0 d-flex align-items-center gap-1">
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"/>
+										</svg>
+										Back
+									</button>
+								</div>
+
+																	<a class="nav-subpanel-parent d-flex justify-content-between align-items-center" href="/catalogue" >
+										<span class="fw-semibold">
+																						Services &amp; Support
+										</span>
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+										</svg>
+									</a>
+								
+								<ul class="nav-subpanel-list list-unstyled m-0">
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/catalogue" >
+																								Service Catalogue
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/eudat-eosc-node" >
+																								EOSC EUDAT Node
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="https://docs.eudat.eu/"  target="_blank" rel="noopener noreferrer" >
+																								User Documentation
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/eudat-training" >
+																								Training
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/contact-support-request" >
+																								Help Desk
+											</a>
+										</li>
+																	</ul>
+							</div>
+						</li>
+
+					
+																								
+											<li class="nav-link-item">
+															<a class="nav-oc-link d-flex justify-content-between align-items-center" href="/use-cases" >
+									<span>
+																				Research Communities
+									</span>
+																	</a>
+													</li>
+					
+																								
+											<li class="nav-panel-item">
+							<button type="button" class="nav-oc-link nav-panel-trigger d-flex justify-content-between align-items-center w-100 border-0 bg-transparent text-start" data-panel="nav-subpanel-8109-5" aria-expanded="false">
+								<span>
+																		News &amp; Events
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" class="nav-chevron" aria-hidden="true">
+									<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+								</svg>
+							</button>
+
+							<div class="nav-subpanel" id="nav-subpanel-8109-5" aria-hidden="true">
+								<div class="nav-subpanel-header">
+									<button type="button" class="nav-back-btn btn btn-link p-0 d-flex align-items-center gap-1">
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"/>
+										</svg>
+										Back
+									</button>
+								</div>
+
+																	<a class="nav-subpanel-parent d-flex justify-content-between align-items-center" href="" >
+										<span class="fw-semibold">
+																						News &amp; Events
+										</span>
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+										</svg>
+									</a>
+								
+								<ul class="nav-subpanel-list list-unstyled m-0">
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/news" >
+																								News
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/events" >
+																								Events
+											</a>
+										</li>
+																	</ul>
+							</div>
+						</li>
+
+					
+																								
+											<li class="nav-link-item">
+															<a class="nav-oc-link d-flex justify-content-between align-items-center" href="/contact-support-request" >
+									<span>
+																				Contact us
+									</span>
+																	</a>
+													</li>
+					
+							</ul>
+		</div>
+
+	</div>
+
+  </nav>
+
+
+              </div>
+
+            <div class="header-actions d-flex align-items-center">
+        <div class="d-none d-xl-flex align-items-center gap-3">
+                     <div id="block-eudat-specialone-block-6" class="block block-block-content block-block-content691ad355-b869-4649-85b0-514c9ad345a8">
+  
+    
+      <div class="content">
+      
+
+
+             <a href="/search"><i class="fa fa-search"></i></a> 
+      
+    </div>
+  </div>
+
+
+                                <span class="header-divider" aria-hidden="true"></span>
+             <nav role="navigation" aria-labelledby="block-eudat-account-menu-menu" id="block-eudat-account-menu">
+            
+  <h2 class="visually-hidden" id="block-eudat-account-menu-menu">User account menu</h2>
+  
+
+                
+
+              <ul class="navigation__menu navigation--level-1">
+                                                    <li class="navigation__item navigation__item--level-1">
+                          <a href="/contact-support-request" class="navigation__link navigation__link--level-1" aria-label="Help">Help</a>
+                          </li>
+                                                <li class="navigation__item navigation__item--level-1  navigation__item--last">
+                          <a href="/user/login" class="navigation__link navigation__link--level-1" aria-label="Log in" data-drupal-link-system-path="user/login">Log in</a>
+                          </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+                  </div>
+        <div id="menu-bar" class="menu-bar menu-bar-mobile d-xl-none">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+    <div class="gva-offcanvas-mobile">
+    <div class="offcanvas-nav-header">
+      <a href="/" class="offcanvas-logo" rel="home">
+                  <span></span>
+              </a>
+      <button class="close-offcanvas" type="button" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5.72 5.72a.75.75 0 0 1 1.06 0L12 10.94l5.22-5.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L13.06 12l5.22 5.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L12 13.06l-5.22 5.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 12 5.72 6.78a.75.75 0 0 1 0-1.06Z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="main-menu-inner">
+               <nav role="navigation" aria-labelledby="block-eudat-main-menu-menu" id="block-eudat-main-menu">
+            
+  <h2 class="visually-hidden" id="block-eudat-main-menu-menu">Main navigation</h2>
+  
+
+        
+	
+		<div class="gva-navigation">
+
+				<div class="d-none d-xl-block">
+										<ul  class="clearfix gva_menu gva_menu_main">
+																	<li  class="menu-item menu-item--expanded dropdown">
+													<span data-roll-hover="link" class="menu-item-no-link align-items-center"  data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false" role="button" tabindex="0" >
+																<span data-roll-hover="target">About</span>
+																	<span class="icaret fas fa-chevron-down"></span>
+															</span>
+						
+																					<ul class="menu sub-menu dropdown-menu">
+																		<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-697174801" href="/about" >
+																<span data-roll-hover="target">EUDAT</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-891280289" href="/governance" >
+																<span data-roll-hover="target">Governance</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1271504047" href="/members" >
+																<span data-roll-hover="target">Members</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1388862317" href="/collaborations" >
+																<span data-roll-hover="target">Collaborations</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1801521956" href="/projects" >
+																<span data-roll-hover="target">Projects</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1248569731" href="https://eudat.eu/sites/default/files/2024-01/EUDAT%20Visual%20Guidelines%20WEB%20Jan2024%20%281%29.pdf" >
+																<span data-roll-hover="target">Communications Kit</span>
+															</a>
+						
+											</li>
+							</ul>
+			
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-383357758" href="/membership" >
+																<span data-roll-hover="target">Membership</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item menu-item--expanded dropdown">
+													<a data-roll-hover="link" data-link_id="link-1870167665" href="/catalogue"  class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false" role="button" >
+																<span data-roll-hover="target">Services &amp; Support</span>
+																	<span class="icaret fas fa-chevron-down"></span>
+															</a>
+						
+																					<ul class="menu sub-menu dropdown-menu">
+																		<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1977858593" href="/catalogue" >
+																<span data-roll-hover="target">Service Catalogue</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<span data-roll-hover="link" class="menu-item-no-link align-items-center" >
+																<span data-roll-hover="target">EOSC EUDAT Node</span>
+															</span>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-202028929" href="https://docs.eudat.eu/" >
+																<span data-roll-hover="target">User Documentation</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-102105866" href="/eudat-training" >
+																<span data-roll-hover="target">Training</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1719120891" href="/contact-support-request" >
+																<span data-roll-hover="target">Help Desk</span>
+															</a>
+						
+											</li>
+							</ul>
+			
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-133087367" href="/use-cases" >
+																<span data-roll-hover="target">Research Communities</span>
+															</a>
+						
+											</li>
+														<li  class="menu-item menu-item--expanded dropdown">
+													<a data-roll-hover="link" data-link_id="link-1367438767" href=""  class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false" role="button" >
+																<span data-roll-hover="target">News &amp; Events</span>
+																	<span class="icaret fas fa-chevron-down"></span>
+															</a>
+						
+																					<ul class="menu sub-menu dropdown-menu">
+																		<li  class="menu-item">
+													<span data-roll-hover="link" class="menu-item-no-link align-items-center" >
+																<span data-roll-hover="target">News</span>
+															</span>
+						
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-297374948" href="/events" >
+																<span data-roll-hover="target">Events</span>
+															</a>
+						
+											</li>
+							</ul>
+			
+											</li>
+														<li  class="menu-item">
+													<a data-roll-hover="link" data-link_id="link-1441773318" href="/contact-support-request" >
+																<span data-roll-hover="target">Contact us</span>
+															</a>
+						
+											</li>
+							</ul>
+			
+		</div>
+
+								<div class="d-xl-none">
+			<ul class="mobile-nav list-unstyled m-0">
+																								
+											<li class="nav-panel-item">
+							<button type="button" class="nav-oc-link nav-panel-trigger d-flex justify-content-between align-items-center w-100 border-0 bg-transparent text-start" data-panel="nav-subpanel-8109-1" aria-expanded="false">
+								<span>
+																		About
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" class="nav-chevron" aria-hidden="true">
+									<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+								</svg>
+							</button>
+
+							<div class="nav-subpanel" id="nav-subpanel-8109-1" aria-hidden="true">
+								<div class="nav-subpanel-header">
+									<button type="button" class="nav-back-btn btn btn-link p-0 d-flex align-items-center gap-1">
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"/>
+										</svg>
+										Back
+									</button>
+								</div>
+
+								
+								<ul class="nav-subpanel-list list-unstyled m-0">
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/about" >
+																								EUDAT
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/governance" >
+																								Governance
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/members" >
+																								Members
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/collaborations" >
+																								Collaborations
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/projects" >
+																								Projects
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="https://eudat.eu/sites/default/files/2024-01/EUDAT%20Visual%20Guidelines%20WEB%20Jan2024%20%281%29.pdf"  target="_blank" rel="noopener noreferrer" >
+																								Communications Kit
+											</a>
+										</li>
+																	</ul>
+							</div>
+						</li>
+
+					
+																								
+											<li class="nav-link-item">
+															<a class="nav-oc-link d-flex justify-content-between align-items-center" href="/membership" >
+									<span>
+																				Membership
+									</span>
+																	</a>
+													</li>
+					
+																								
+											<li class="nav-panel-item">
+							<button type="button" class="nav-oc-link nav-panel-trigger d-flex justify-content-between align-items-center w-100 border-0 bg-transparent text-start" data-panel="nav-subpanel-8109-3" aria-expanded="false">
+								<span>
+																		Services &amp; Support
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" class="nav-chevron" aria-hidden="true">
+									<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+								</svg>
+							</button>
+
+							<div class="nav-subpanel" id="nav-subpanel-8109-3" aria-hidden="true">
+								<div class="nav-subpanel-header">
+									<button type="button" class="nav-back-btn btn btn-link p-0 d-flex align-items-center gap-1">
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"/>
+										</svg>
+										Back
+									</button>
+								</div>
+
+																	<a class="nav-subpanel-parent d-flex justify-content-between align-items-center" href="/catalogue" >
+										<span class="fw-semibold">
+																						Services &amp; Support
+										</span>
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+										</svg>
+									</a>
+								
+								<ul class="nav-subpanel-list list-unstyled m-0">
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/catalogue" >
+																								Service Catalogue
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/eudat-eosc-node" >
+																								EOSC EUDAT Node
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="https://docs.eudat.eu/"  target="_blank" rel="noopener noreferrer" >
+																								User Documentation
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/eudat-training" >
+																								Training
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/contact-support-request" >
+																								Help Desk
+											</a>
+										</li>
+																	</ul>
+							</div>
+						</li>
+
+					
+																								
+											<li class="nav-link-item">
+															<a class="nav-oc-link d-flex justify-content-between align-items-center" href="/use-cases" >
+									<span>
+																				Research Communities
+									</span>
+																	</a>
+													</li>
+					
+																								
+											<li class="nav-panel-item">
+							<button type="button" class="nav-oc-link nav-panel-trigger d-flex justify-content-between align-items-center w-100 border-0 bg-transparent text-start" data-panel="nav-subpanel-8109-5" aria-expanded="false">
+								<span>
+																		News &amp; Events
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" class="nav-chevron" aria-hidden="true">
+									<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+								</svg>
+							</button>
+
+							<div class="nav-subpanel" id="nav-subpanel-8109-5" aria-hidden="true">
+								<div class="nav-subpanel-header">
+									<button type="button" class="nav-back-btn btn btn-link p-0 d-flex align-items-center gap-1">
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"/>
+										</svg>
+										Back
+									</button>
+								</div>
+
+																	<a class="nav-subpanel-parent d-flex justify-content-between align-items-center" href="" >
+										<span class="fw-semibold">
+																						News &amp; Events
+										</span>
+										<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="16" height="16" aria-hidden="true">
+											<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 6.22 3.22a.75.75 0 0 1 0-1.06Z"/>
+										</svg>
+									</a>
+								
+								<ul class="nav-subpanel-list list-unstyled m-0">
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/news" >
+																								News
+											</a>
+										</li>
+																			<li>
+											<a class="nav-subpanel-link d-block" href="/events" >
+																								Events
+											</a>
+										</li>
+																	</ul>
+							</div>
+						</li>
+
+					
+																								
+											<li class="nav-link-item">
+															<a class="nav-oc-link d-flex justify-content-between align-items-center" href="/contact-support-request" >
+									<span>
+																				Contact us
+									</span>
+																	</a>
+													</li>
+					
+							</ul>
+		</div>
+
+	</div>
+
+  </nav>
+
+
+          </div>
+  </div>
+
+</header>
+  
+        
+        
+    <div class="breadcrumb pt-3 border-bottom">
+      <div class="container">
+       <div id="block-eudat-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+      <div class="content">
+        <nav role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <ol>
+          <li>
+                  <a href="/">Home</a>
+              </li>
+          <li>
+                  <a href="/catalogue">EUDAT Service Catalogue</a>
+              </li>
+          <li>
+                  B2SHARE
+              </li>
+        </ol>
+  </nav>
+
+    </div>
+  </div>
+
+
+      </div>
+    </div>
+
+  <div id="main-wrapper" class="layout-main-wrapper mb-5 pb-5 pt-0">
+    <div id="main" class="container">
+      <div class="page-title">
+         
+
+      </div>
+      </div>
+
+      
+
+    						 <div id="block-eudat-specialone-system-main" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      
+
+<article data-history-node-id="1450" class="node service-catalogue-item card service-card node--type-service-catalogue-item node--view-mode-full clearfix">
+  <div class="service-page">
+    
+    <header class="service-hero">
+      <div class="container">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-7 d-flex align-items-center gap-3">
+                          <div class="service-hero-mark">
+
+
+              <img loading="lazy" src="/sites/default/files/b2share_2_0.png" width="194" height="225" alt="" />
+
+
+      </div>
+                        <div>
+              <h1 class="service-hero-title">
+                                  <span class="brand-prefix">B2</span><span class="brand-name">SHARE</span>
+                              </h1>
+                              <div class="service-hero-payoff">
+
+
+            Store and publish research data
+      </div>
+                          </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="service-hero-actions d-flex flex-wrap justify-content-lg-end gap-2">
+                              <a class="btn btn-secondary" href="https://b2share.eudat.eu/records/566cb4b12ea94e97ab17be38dc6cd7cd" role="button">Access B2SHARE Portal</a>
+                                            <a class="btn btn-primary" href="/contact-support-request?service=B2SHARE" role="button">Request B2SHARE</a>
+                          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="service-body">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+
+          <div class="col-lg-8 service-main">
+
+                          <div class="service-section">
+                <h2>What is B2SHARE?</h2>
+                <div class="service-lead">
+
+
+            <p>B2SHARE is a user-friendly, reliable and trustworthy way for researchers, scientific communities and citizen scientists to store, publish and share research data in a FAIR way. B2SHARE is a solution that facilitates research data storage, guarantees long-term persistence of data and allows data, results or ideas to be shared worldwide. B2SHARE supports community domains with metadata extensions, access rules and publishing workflows. EUDAT offers communities and organisations customised instances and/or access to repositories supporting large datasets.</p><p><span><strong>Features</strong></span></p><ul><li>Support of metadata descriptions via the EUDAT metadata schema</li><li>Registers DOIs for datasets and Handle PIDs for data objects</li><li>Supports versioning</li><li>Harvested by B2FIND and OpenAIRE explorer</li><li>Direct upload from B2DROP</li><li>Accessible via a Web GUI and an API to support automatic publishing workflows</li><li>Supports community domains</li><li>Allows communities to define metadata extensions, access rules and publishing workflows</li></ul>
+      </div>
+              </div>
+                        
+                          <div class="service-section service-features">
+                <h2>Features</h2>
+                
+
+
+            <ul><li data-list-item-id="ecc06d2ea82bdef11af910f349db48e4d"><a href="https://www.youtube.com/watch?v=17HUb6tcFoA">Multimedia 2</a></li><li data-list-item-id="e20f8f26882a3a09bac156705f878fd26"><a href="https://www2.slideshare.net/EUDAT/eudat-b2share-how-to-store-and-publish-research-data-wwweudateu">Multimedia 1</a></li></ul>
+      
+              </div>
+            
+                          <section class="service-video">
+                  
+
+
+            <figure class="youtube-container youtube-container--responsive">
+  <iframe src="https://www.youtube.com/embed/17HUb6tcFoA?wmode=opaque" id="youtube-field-player--2" class="youtube-field-player" title="Embedded video for B2SHARE" aria-label="Embedded video for B2SHARE: https://www.youtube.com/embed/17HUb6tcFoA?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+</figure>
+
+      
+              </section>
+            
+
+                          <div class="service-section resource-offers">
+                <h2>Resource offers</h2>
+                  <div class="resource-offer-grid g-3">
+                      
+  
+                    
+    <article class="resource-offer">
+      <header class="resource-offer-head">
+        <span class="resource-offer-icon" aria-hidden="true">
+          <svg><use href="/themes/eudat/images/sprite.svg#icon-researcher"></use></svg>
+        </span>
+        <h3 class="resource-offer-title">
+
+
+            For Researchers - Basic
+      </h3>
+      </header>
+
+      <div class="resource-offer-body">
+        
+
+
+            <p>B2SHARE is a free-to-use public service supporting cross disciplinary research, self-registration for any scientists and researchers, free upload of stable research data, data will receive a DOI which can be used for citing, data objects will receive a B2HANDLE PID, access policy is defined by the data owner, metadata in openly accessible and made discoverable via B2FIND, Direct uploads from B2DROP, data integrity is ensured by checksums which are calculated during data ingest.</p>
+      
+                      </div>
+
+              <a class="btn resource-offer-cta" href="/contact-support-request?service=B2SHARE">
+          Contact
+          <svg class="icon" aria-hidden="true"><use href="/themes/eudat/images/sprite.svg#icon-arrow-right"></use></svg>
+        </a>
+          </article>
+ 
+
+                    
+    <article class="resource-offer">
+      <header class="resource-offer-head">
+        <span class="resource-offer-icon" aria-hidden="true">
+          <svg><use href="/themes/eudat/images/sprite.svg#icon-data-provider"></use></svg>
+        </span>
+        <h3 class="resource-offer-title">
+
+
+            For Data managers - Premium
+      </h3>
+      </header>
+
+      <div class="resource-offer-body">
+        
+
+
+            <p>The B2SHARE - Premium service is the same as the basic service, but provides researchers the option to upload of larger data files and datasets (&gt;20GB) and the customization of metadata extensions.</p>
+      
+                          
+
+
+            <table class="table offer-params table-hover"><tbody><tr><td>Requested resource capacity</td><td class="text-right font-weight-bold">100GB - higher than 1TB</td></tr><tr><td>Max size dataset</td><td class="text-right font-weight-bold">lower than 40GB - higher than 80GB</td></tr><tr><td>Is a specific community domain required</td><td class="text-right font-weight-bold">yes - no</td></tr><tr><td>Is specific metadata required</td><td class="text-right font-weight-bold">yes - no</td></tr></tbody></table><p>&nbsp;</p>
+      
+              </div>
+
+              <a class="btn resource-offer-cta" href="/contact-support-request?service=B2SHARE">
+          Contact
+          <svg class="icon" aria-hidden="true"><use href="/themes/eudat/images/sprite.svg#icon-arrow-right"></use></svg>
+        </a>
+          </article>
+ 
+
+                    
+    <article class="resource-offer">
+      <header class="resource-offer-head">
+        <span class="resource-offer-icon" aria-hidden="true">
+          <svg><use href="/themes/eudat/images/sprite.svg#icon-researcher"></use></svg>
+        </span>
+        <h3 class="resource-offer-title">
+
+
+            For Communities And Organisations
+      </h3>
+      </header>
+
+      <div class="resource-offer-body">
+        
+
+
+            <p>The B2SHARE option for communities and organizations offers the option for dedicated and branded B2SHARE instances which can be customized to community and organizational needs. This support customization to the metadata schemas, community domains and access rights.</p>
+      
+                          
+
+
+            <table class="table offer-params table-hover"><tbody><tr><td>Requested total storage capacity</td><td class="text-right font-weight-bold">1TB - higher than 10TB</td></tr><tr><td>How long must the data be stored</td><td class="text-right font-weight-bold">3 years - more than 10 years</td></tr></tbody></table><p>&nbsp;</p>
+      
+              </div>
+
+              <a class="btn resource-offer-cta" href="/contact-support-request?service=B2SHARE">
+          Contact
+          <svg class="icon" aria-hidden="true"><use href="/themes/eudat/images/sprite.svg#icon-arrow-right"></use></svg>
+        </a>
+          </article>
+ 
+
+                    
+    <article class="resource-offer">
+      <header class="resource-offer-head">
+        <span class="resource-offer-icon" aria-hidden="true">
+          <svg><use href="/themes/eudat/images/sprite.svg#icon-data-provider"></use></svg>
+        </span>
+        <h3 class="resource-offer-title">
+
+
+            For Large datasets
+      </h3>
+      </header>
+
+      <div class="resource-offer-body">
+        
+
+
+            <p>EUDAT is a network service providers across Europe specialist in large ICT infrastructure supporting research. To researchers and/or communities seeking need to publish and/or make large datasets accessible in a FAIR way EUDAT can offer access to data repositories supporting large datasets (&gt;50TB). These repositories are made available through the EUDAT partners.</p>
+      
+                          
+
+
+            <table class="table offer-params table-hover"><tbody><tr><td>Requested total storage capacity</td><td class="text-right font-weight-bold">50TB - higher than 500TB</td></tr><tr><td>How long must the data be stored</td><td class="text-right font-weight-bold">3 years - longer than 10 years</td></tr></tbody></table><p>&nbsp;</p>
+      
+              </div>
+
+              <a class="btn resource-offer-cta" href="/contact-support-request?service=B2SHARE">
+          Contact
+          <svg class="icon" aria-hidden="true"><use href="/themes/eudat/images/sprite.svg#icon-arrow-right"></use></svg>
+        </a>
+          </article>
+ 
+
+      
+  
+                  </div>
+              </div>
+            
+            <div class="perfect-for">
+              <h3>B2SHARE is perfect for:</h3>
+                              
+
+
+            <div class="field field-name-field-product-perfect-for-descri field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><ul><li data-list-item-id="eb8557935885b7020b400f5da8a84f279">Researchers who require adequate facilities for storing research data with metadata</li><li data-list-item-id="eb6f4da32961bc1f97dcf2031f0b221f7">Researchers who would like to guarantee the long-term persistence of their locally-stored data</li><li data-list-item-id="ecc20d73ea9dd6dfc90e03849c921b5af">Researchers who require adequate facilities to easily share data, results or ideas with colleagues worldwide</li></ul><p>B2SHARE is available for all researchers and scientists who are affiliated to research institutions or universities as well as to individual researchers (citizen scientists). To deposit research data, researchers must register.</p></div></div></div><p>&nbsp;</p>
+      
+                                            <a class="btn btn-primary mt-3" href="/contact-support-request?service=B2SHARE">Get started</a>
+                          </div>
+
+          </div>
+
+          <aside class="col-lg-4 service-sidebar">
+
+                          
+                
+
+
+            <div class="info-card"><dl class="classification-list"><dt><p>Target Users</p></dt><dd><p>Research Infrastructure Managers, Researchers, Research Communities, Research Projects, Research Groups</p></dd><dt><p>Access Types</p></dt><dd><p>Virtual</p></dd><dt><p>Access Modes</p></dt><dd><p>Free, Paid</p></dd></dl></div><div class="info-card"><h4>Tags</h4><div class="tag-list"><a href="https://marketplace.eosc-portal.eu/services?tag=data+repository">data repository</a><a href="https://marketplace.eosc-portal.eu/services?tag=data+sharing">data sharing</a><a href="https://marketplace.eosc-portal.eu/services?tag=data+publishing">data publishing</a><a href="https://marketplace.eosc-portal.eu/services?tag=fair">fair</a></div></div>
+      
+            
+            
+
+                          <div class="info-card">
+                <h4>Availability</h4>
+                
+
+
+            <div class="details-content"><dl class="classification-list"><dt><p>Geographical Availabilities</p></dt><dd>&nbsp;</dd><dt><p>Languages</p></dt><dd><p>English</p></dd></dl></div><p>&nbsp;</p>
+      
+              </div>
+            
+                          <div class="info-card">
+                <h4>Maturity Information</h4>
+                
+
+
+            <div class="details-content"><dl class="classification-list"><dt><p>Trl</p></dt><dd><p>9 - ACTUAL SYSTEM PROVEN IN OPERATIONAL ENVIRONMENT</p></dd><dt><p>Life Cycle Status</p></dt><dd><p>Production</p></dd><dt><p>Open Source Technologies</p></dt><dd><p>Invenio (<a href="https://inveniosoftware.org/">https://inveniosoftware.org/</a>)</p></dd><dt><p>Version</p></dt><dd><p>2.1.6</p></dd></dl></div><p>&nbsp;</p>
+      
+              </div>
+            
+                          <div class="info-card">
+                <h4>Public Contacts</h4>
+                
+
+
+            <dl class="classification-list is-stacked"><dt><p>EUDAT Secretariat</p></dt><dd>&nbsp;</dd></dl>
+      
+              </div>
+            
+                          <div class="info-card management-links">
+                <h4>Management Links</h4>
+                
+
+
+            <ul><li data-list-item-id="ee93da078a7f2b6e0a4e0fb42a777d310"><a href="/support-request?Service=B2SHARE">Helpdesk</a></li><li data-list-item-id="ef2039b5f9db18fc41ccb048ea63abcff"><a href="/services/userdoc/b2share">Manual</a></li><li data-list-item-id="edf62287532c996c25083d82f3b1fd7ec"><a href="/eudat-cdi-aup">Terms of use</a></li><li data-list-item-id="e8c977008230abbf9d24b07a4ef1d260f"><a href="/privacy-policy-summary">Privacy policy</a></li><li data-list-item-id="ef736fdbdc11fc6c2cf2bc7cccbfc4fa7"><a href="/b2share-training-suite">Training information</a></li><li data-list-item-id="e3a7716e5130d6950281f67c12162f68d"><a href="https://avail.eudat.eu/eudat/dashboard/Critical/B2SHARE%20CDI">Status Monitoring</a></li></ul>
+      
+              </div>
+            
+                          <div class="info-card order-status">
+                <h4>Order Status</h4>
+                <div class="order-status-value">
+
+
+            <ul><li data-list-item-id="ea9dd0f25f35cf5aa3ccaf61e90aa6889">Order type:</li></ul><p>&nbsp;&nbsp;&nbsp;&nbsp; Open Access</p><ul><li data-list-item-id="ee1b4a1698864adf55882d33be6df1685"><a href="https://eudat.eu/support-request?service=B2SHARE">Order url</a></li></ul>
+      </div>
+              </div>
+            
+                          <div class="info-card">
+                <h4>Dependencies</h4>
+                
+
+
+            <ul><li data-list-item-id="ead1d975d62d7f8fbf9faf031040ece12">Required Resources:<ul><li data-list-item-id="ea46b196556221a97a49f9a18218af849"><a href="catalogue/b2access">B2ACCESS</a></li></ul></li><li data-list-item-id="ea9149ba13d4f2de96c547a49996c0cce">Related Resources:<ul><li data-list-item-id="edfde054140ad58e668f9d2f94e294118"><a href="catalogue/b2drop">B2DROP</a></li><li data-list-item-id="e7fd3bfcbee78639c6c458343c53346b6"><a href="https://catalogue/b2find">B2FIND</a></li></ul></li><li data-list-item-id="ec1a8f3c7a81fd060abb4f7b41c3605ff">Platforms:</li></ul><p>&nbsp;&nbsp;&nbsp;&nbsp; Data Infrastructure Capacity for EOSC (DICE), EUDAT CDI</p>
+      
+              </div>
+            
+                          <div class="info-card">
+                <h4>Attribution</h4>
+                
+
+
+            <div class="details-content"><dl class="classification-list is-stacked"><dt><p>Funding Bodies</p></dt><dd><p>European Comission (EC)</p></dd><dt><p>Funding Programs</p></dt><dd><p>The framework programme for research and innovation (H2020)</p></dd><dt><p>Grant Project Names</p></dt><dd><p>DICE (101017207)</p></dd></dl></div><p>&nbsp;</p>
+      
+              </div>
+            
+            
+            
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="views-element-container"><div class="service-use-cases container js-view-dom-id-b015d83a6596bc01baa151fb4ff6fdfe6a9d9f21b1793952d00d322790339dac">
+  
+  
+  
+
+      <header>
+       <div class="use-cases-heading">
+          <h2>Use cases</h2>
+          <p>Learn how EUDAT has supported research communities across different disciplines.</p>
+        </div>
+    </header>
+  
+  
+  
+
+          
+    <div class="swiper-container-usecases">
+      <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+  <div data-history-node-id="1558" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Premacool.webp" width="2000" height="1333" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/premacool-predictive-maintenance-for-commercial-cooling-systems" class="stretched-link" rel="bookmark">
+<span>PreMaCOOL: Predictive Maintenance for Commercial Cooling Systems</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1454" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/RELIANCE%20EUDAT%20USE%20CASE.jpg" width="1920" height="700" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/eudat-services-in-rohub-for-storage-of-scientific-artefacts-and-publication-of-research" class="stretched-link" rel="bookmark">
+<span>EUDAT services in ROHub for storage of scientific artefacts and publication of research objects</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1432" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/CompBioMed.jpg" width="2100" height="1500" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/data-management-in-compbiomed-using-eudat-services" class="stretched-link" rel="bookmark">
+<span>Data Management in CompBioMed using EUDAT services</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1431" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Earth%20System%20Modelling.jpg" width="1640" height="926" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/european-network-for-earth-system-modelling-0" class="stretched-link" rel="bookmark">
+<span>European Network for Earth System Modelling</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1426" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Ecological%20research%20LTER.jpg" width="1728" height="1152" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/linked-data-service-pilot-0" class="stretched-link" rel="bookmark">
+<span>Linked Data service pilot</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1424" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Language%20Resource.jpg" width="5610" height="3740" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/common-language-resources-and-technology-infrastructure-0" class="stretched-link" rel="bookmark">
+<span>Common Language Resources and Technology Infrastructure</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1423" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Atmospheric%20Monitoring.jpg" width="4507" height="3000" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/j%C3%BClich-atmospheric-data-distribution-service-0" class="stretched-link" rel="bookmark">
+<span>Jülich Atmospheric Data Distribution Service</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1419" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Cosmos%20EUDAT%20small-min.jpg" width="3750" height="1875" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/high-resolution-simulations-for-precision-cosmology-0" class="stretched-link" rel="bookmark">
+<span>High resolution simulations for Precision Cosmology</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1416" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Uni%20Helsinki.jpg" width="3000" height="2000" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/research-data-repository-for-students%E2%80%99-own-results-0" class="stretched-link" rel="bookmark">
+<span>Research data repository for students’ own results</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1415" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Universidade%20do%20Porto.jpg" width="4800" height="3204" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/eudat-as-a-long-term-repository-for-the-university-of-porto-0" class="stretched-link" rel="bookmark">
+<span>EUDAT as a long-term repository for the University of Porto</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1414" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/National%20Library%20of%20Scotland.jpg" width="4000" height="2250" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/cloud-like-services-to-improve-the-preservation-of-digital-cultural-heritage-0" class="stretched-link" rel="bookmark">
+<span>Cloud-like services to improve the preservation of digital cultural heritage</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1413" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/EPOS.jpg" width="5000" height="2750" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/european-plate-observing-system-0" class="stretched-link" rel="bookmark">
+<span>European Plate Observing System</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1411" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Aalto%20Uni.jpg" width="5963" height="3766" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/central-online-location-for-data-sharing-for-all-aalto-university-researchers-0" class="stretched-link" rel="bookmark">
+<span>Central online location for data sharing for all Aalto University researchers</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1410" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/bicycles.jpg" width="5272" height="3515" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/public-access-to-fine-grained-city-air-quality-data-from-roving-sensors-0" class="stretched-link" rel="bookmark">
+<span>Public access to fine-grained city air quality data from roving sensors</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1409" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/data%20repository.jpg" width="5334" height="3001" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/information-and-data-management-repository-platform-for-nanoscience-in-europe-0" class="stretched-link" rel="bookmark">
+<span>Information and Data Management Repository Platform for Nanoscience in Europe</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1407" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/protein.jpg" width="6000" height="4000" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/supporting-data-management-for-structural-biologists-0" class="stretched-link" rel="bookmark">
+<span>Supporting data management for structural biologists</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1406" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/nuclear%20fusion.jpg" width="3840" height="2160" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/tokamak-data-mirror-for-jet-and-mast-data-0" class="stretched-link" rel="bookmark">
+<span>Tokamak data mirror for JET and MAST data</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+                            <div class="swiper-slide">
+  <div data-history-node-id="1399" class="swiper-slide story-slide">
+  <div class="card story-card">
+    <div class="story-image">
+      
+
+
+              <img loading="lazy" src="/sites/default/files/Clinical%20Trials_0.jpg" width="3600" height="2400" alt="" />
+
+
+      
+    </div>
+    <div class="story-overlay">
+      <div>
+        <span class="story-category">Communities</span>
+        <h3 class="story-title">
+          <a href="/use-cases/the-use-of-the-eudat-repository-to-store-clinical-trials-in-a-secure-and-compliant-way-0" class="stretched-link" rel="bookmark">
+<span>The use of the EUDAT repository to store clinical trials in a secure and compliant way</span>
+</a>
+        </h3>
+      </div>
+      <div class="btn btn-cirlce">
+        <svg class="icon-control icon-control-chevronright tile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          <path d="m22.5597 16.9375-5.5076-5.5c-.5854-.5854-1.5323-.5825-2.1157.0039-.5835.5869-.5815 1.5366.0039 2.1211l4.4438 4.4375-4.4438 4.4375c-.5854.5845-.5874 1.5342-.0039 2.1211.2922.2944.676.4414 1.0598.4414.3818 0 .7637-.1455 1.0559-.4375l5.5076-5.5c.2815-.2812.4403-.6636.4403-1.0625s-.1588-.7812-.4403-1.0625z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+              </div>
+    </div>
+
+      
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+
+  </div>
+</article>
+
+
+    </div>
+  </div>
+
+
+    
+
+ <div id="main" class="container">
+          </div>
+  </div>
+    
+ 
+    
+<footer class="site-footer">
+  <div class="svg-fan-bg svg-fan-bg--footer" aria-hidden="true">
+    <svg class="svg-fan svg-fan--footer" data-fan-trigger="scroll" data-fan-rotation="45" data-fan-origin="1000 0" data-fan-start="top 45%" viewBox="0 0 1431 1006" preserveAspectRatio="xMinYMax slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#footer-fan-clip)">
+        <path class="svg-fan__blade" d="M722.821 -134.121L792.734 642.442C802.01 745.477 894.757 817.59 999.891 803.513L1792.26 697.407C1897.39 683.327 1975.1 588.391 1965.82 485.355L1895.91 -291.207C1886.63 -394.242 1793.88 -466.359 1688.76 -452.277L896.383 -346.172C791.251 -332.094 713.544 -237.155 722.821 -134.121Z" fill="url(#footer-fan-grad-0)"/>
+        <path class="svg-fan__blade" d="M918.124 -210.048L862.687 421.557C855.331 505.358 918.108 575.926 1002.91 579.174L1642 603.654C1726.79 606.901 1801.49 541.599 1808.85 457.799L1864.29 -173.806C1871.64 -257.608 1808.87 -328.175 1724.07 -331.424L1084.98 -355.903C1000.18 -359.15 925.48 -293.849 918.124 -210.048Z" fill="url(#footer-fan-grad-1)"/>
+        <path class="svg-fan__blade" d="M1082.54 -243.526L949.014 254.667C931.297 320.768 970.694 385.957 1037.01 400.272L1536.81 508.162C1603.13 522.478 1671.25 480.497 1688.97 414.398L1822.49 -83.7947C1840.21 -149.896 1800.81 -215.084 1734.49 -229.4L1234.69 -337.291C1168.38 -351.606 1100.26 -309.626 1082.54 -243.526Z" fill="url(#footer-fan-grad-2)"/>
+        <path class="svg-fan__blade" d="M1216.97 -247.853L1040.93 132.701C1017.58 183.193 1039.32 240.846 1089.51 261.471L1467.76 416.925C1517.94 437.551 1577.56 413.34 1600.92 362.847L1776.96 -17.708C1800.32 -68.1998 1778.56 -125.853 1728.38 -146.479L1350.13 -301.933C1299.95 -322.557 1240.33 -298.346 1216.97 -247.853Z" fill="url(#footer-fan-grad-3)"/>
+        <path class="svg-fan__blade" d="M1323.44 -232.754L1130.67 47.7116C1105.09 84.9246 1114.01 134.103 1150.6 157.555L1426.35 334.308C1462.94 357.759 1513.33 346.603 1538.91 309.392L1731.68 28.9241C1757.27 -8.28618 1748.34 -57.4652 1711.75 -80.9171L1436.01 -257.67C1399.42 -281.121 1349.02 -269.967 1323.44 -232.754Z" fill="url(#footer-fan-grad-4)"/>
+        <path class="svg-fan__blade" d="M1405.16 -205.945L1213.45 -7.9508C1188.01 18.3195 1188.04 58.9394 1213.51 82.7769L1405.51 262.428C1430.99 286.265 1472.26 284.293 1497.7 258.023L1689.42 60.0304C1714.86 33.758 1714.83 -6.86183 1689.35 -30.6974L1497.35 -210.35C1471.87 -234.187 1430.6 -232.215 1405.16 -205.945Z" fill="url(#footer-fan-grad-5)"/>
+        <path class="svg-fan__blade" d="M1465.68 -173.189L1286.53 -41.1C1262.76 -23.5743 1257 8.96106 1273.67 31.5713L1399.32 201.98C1415.98 224.588 1448.76 228.71 1472.53 211.184L1651.69 79.096C1675.46 61.5703 1681.22 29.0349 1664.54 6.42471L1538.9 -163.984C1522.24 -186.592 1489.45 -190.714 1465.68 -173.189Z" fill="url(#footer-fan-grad-6)"/>
+      </g>
+      <defs>
+        <linearGradient id="footer-fan-grad-0" x1="1030.3" y1="914.098" x2="1243.7" y2="146.317" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4F76D3"/>
+          <stop offset="0.33" stop-color="#264899" stop-opacity="0.65"/>
+          <stop offset="0.67" stop-color="#1C356F" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#112145" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="footer-fan-grad-1" x1="1011.12" y1="671.946" x2="1292.53" y2="88.4908" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4F76D3"/>
+          <stop offset="0.33" stop-color="#264899" stop-opacity="0.65"/>
+          <stop offset="0.67" stop-color="#1C356F" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#112145" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="footer-fan-grad-2" x1="1030.28" y1="475.707" x2="1340.06" y2="51.0553" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4F76D3"/>
+          <stop offset="0.33" stop-color="#264899" stop-opacity="0.65"/>
+          <stop offset="0.67" stop-color="#1C356F" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#112145" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="footer-fan-grad-3" x1="1073.47" y1="320.957" x2="1382.47" y2="28.521" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4F76D3"/>
+          <stop offset="0.33" stop-color="#264899" stop-opacity="0.65"/>
+          <stop offset="0.67" stop-color="#1C356F" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#112145" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="footer-fan-grad-4" x1="1129.51" y1="202.98" x2="1417.68" y2="16.4517" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4F76D3"/>
+          <stop offset="0.33" stop-color="#264899" stop-opacity="0.65"/>
+          <stop offset="0.67" stop-color="#1C356F" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#112145" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="footer-fan-grad-5" x1="1190.43" y1="116.243" x2="1445.67" y2="10.9066" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4F76D3"/>
+          <stop offset="0.33" stop-color="#264899" stop-opacity="0.65"/>
+          <stop offset="0.67" stop-color="#1C356F" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#112145" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="footer-fan-grad-6" x1="1250.74" y1="55.1894" x2="1467.35" y2="9.05132" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4F76D3"/>
+          <stop offset="0.33" stop-color="#264899" stop-opacity="0.65"/>
+          <stop offset="0.67" stop-color="#1C356F" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#112145" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="footer-fan-clip">
+          <rect width="1431" height="1006" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="container">
+
+    <div class="row footer-cta-row g-5">
+      <div class="col-lg-6 footer-cta">
+        <h2 class="footer-cta-title">Take the next step</h2>
+        <p class="footer-cta-subtitle">
+          You have options. Choose the bare metal infrastructure that works for you.
+        </p>
+      </div>
+
+      <div class="col-lg-6 footer-form-wrap">
+        
+
+
+            <div id="block-simplenews-39">
+
+<h2 class="title text-center text-color-cdi"><span>Join the EUDAT community to get the</span> latest updates</h2>
+
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+         #mc_embed_signup form {margin:0; color: #000 !important;}
+
+</style>
+<div id="mc_embed_signup" style="background: #f4f4f4">
+<form action="https://gmail.us7.list-manage.com/subscribe/post?u=f8edb3cc8a78f9e7d0699437f&amp;id=5403f079fc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-MMERGE1">First Name  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="MMERGE1" class="required" id="mce-MMERGE1">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-MMERGE6">Organisation  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="MMERGE6" class="required" id="mce-MMERGE6">
+</div>
+<div class="mc-field-group">
+	<label for="mce-MMERGE3">Best way to describe you/your organisation?  <span class="asterisk">*</span>
+</label>
+	<select name="MMERGE3" class="required" id="mce-MMERGE3">
+	<option value=""></option>
+	<option value="Government/Public Administration">Government/Public Administration</option>
+<option value="Large Enterprise">Large Enterprise</option>
+<option value="Small &amp; Medium Enterprise">Small &amp; Medium Enterprise</option>
+<option value="Data Center/Provider">Data Center/Provider</option>
+<option value="Library/Publisher">Library/Publisher</option>
+<option value="Policy/Funding Agency">Policy/Funding Agency</option>
+<option value="Press &amp; Media">Press &amp; Media</option>
+<option value="Non-profit Organisation">Non-profit Organisation</option>
+<option value="Research/Academia">Research/Academia</option>
+<option value="Other">Other</option>
+
+	</select>
+</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group input-group">
+    <strong>Privacy Policy </strong>
+    <ul><li><input type="checkbox" value="1" name="group[80107][1]" id="mce-group[80107]-80107-0" class="required"><label for="mce-group[80107]-80107-0"> By submitting to this form, I accept the EUDAT <a target="_blank"  href="/privacy-policy-summary">Privacy Policy</a></label></li>
+</ul>
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f8edb3cc8a78f9e7d0699437f_5403f079fc" tabindex="-1" value=""></div>
+    <div class="text-center"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary form-submit" style="display: inline-block; margin:0;"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='MMERGE1';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[3]='MMERGE3';ftypes[3]='dropdown';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
+</div>
+
+
+      
+      </div>
+    </div>
+
+    <div class="row footer-columns-row g-4">
+               <div id="block-eudat-specialone-block-64" class="col-lg-4 col-md-6 footer-info block block-block-content block-block-contentb8371d77-03d0-413c-be7b-492dccb4a5ab">
+  
+    
+      <div class="content">
+      
+
+
+                    <p class="footer-brand">EUDAT Ltd</p>
+
+        <address class="footer-contact">
+          <p class="footer-contact-title">Contacts</p>
+          <ul class="footer-contact-list">
+            <li>
+              <a href="mailto:info@eudat.eu">info@eudat.eu</a>
+            </li>
+            <li>EUDAT Ltd</li>
+            <li>Keilaranta 14</li>
+            <li>02150 Espoo, Finland</li>
+            <li>VAT number: FI 28953559</li>
+          </ul>
+        </address>
+
+      
+    </div>
+  </div>
+
+
+                     <div id="block-eudat-specialone-block-63" class="col-lg-3 col-md-4 col-6 footer-col block block-block-content block-block-content8533b089-c5e0-4f64-af37-4afbbf96b7bb">
+  
+    
+      <div class="content">
+      
+
+
+            
+      <h4 class="footer-col-title">Resources</h4>
+        <ul class="footer-links-list">
+          <li><a href="#">[PLACEHOLDER: Link footer 1-1]</a></li>
+          <li><a href="#">[PLACEHOLDER: Link footer 1-2]</a></li>
+          <li><a href="#">[PLACEHOLDER: Link footer 1-3]</a></li>
+        </ul>
+
+      
+    </div>
+  </div>
+
+
+                     <div id="block-eudat-blockinfrafooter" class="col-lg-3 col-md-4 col-6 footer-col block block-block-content block-block-contentb26cdded-fd5d-4602-9bca-da460377d459">
+  
+    
+      <div class="content">
+      
+
+
+                    <h4 class="footer-col-title">Infrastructure</h4>
+        <ul class="footer-links-list">
+          <li><a href="#">[PLACEHOLDER: Link footer 2-1]</a></li>
+          <li><a href="#">[PLACEHOLDER: Link footer 2-2]</a></li>
+          <li><a href="#">[PLACEHOLDER: Link footer 2-3]</a></li>
+        </ul>
+
+      
+    </div>
+  </div>
+
+
+                     <div id="block-eudat-legalinfo-2" class="col-lg-2 col-md-4 col-12 footer-col footer-col--legal block block-block-content block-block-content9ae37efd-02ff-4a6e-b0e1-6670e22abdc0">
+  
+    
+      <div class="content">
+      
+
+
+            <h4 class="footer-col-title">Legal &amp;info</h4><ul class="footer-links-list"><li data-list-item-id="e76192974aa6fc7d3219c1b489e3cdeca"><a href="https://www.eudat.eu/eudat-cdi-aup" target="_blank" rel="noopener noreferrer">EUDAT AUP&nbsp;</a></li><li data-list-item-id="e5c1ca6887c3b28be834d4df6f2fcdea0"><a href="/privacy-policy-summary" target="_blank" rel="noopener noreferrer">Privacy Policy&nbsp;</a></li><li data-list-item-id="ef387aeb9146d1e14547564ad311a8b4a"><a href="/accessibility-statement">Accessibility Statement</a></li><li data-list-item-id="ebfd5a3c3bd3480db076d661418eefe73"><a href="/frequently-asked-questions">FAQs</a></li></ul>
+      
+    </div>
+  </div>
+
+
+          </div>
+             <div id="block-blockfooter3" class="block block-block-content block-block-content80bb8917-19bd-4702-82f4-d8954cd23cfb">
+  
+    
+      <div class="content">
+      
+
+
+            <div class="row footer-bottom-row g-4 align-items-end">
+<div class="col-lg-6 col-md-6">
+        <ul class="footer-social">
+          <li>
+            <a href="https://x.com/Eudat_eu" class="social-btn" aria-label="X">
+              <i class="fa-brands fa-x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/EUDATTraining" class="social-btn" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/eudat/" class="social-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.slideshare.net/EUDAT/" class="social-btn" aria-label="Slideshare">
+              <i class="fa-brands fa-slideshare"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 col-md-6 text-lg-end">
+        <p class="footer-tagline">
+          EUDAT is a pan-European network consisting of more than 20 research organisations, data and computing centers.
+        </p>
+      </div>
+ </div>
+      
+    </div>
+  </div>
+
+
+      </div>
+</footer>
+
+</div>
+
+  </div>
+
+    
+      <span class="c-scrollbar"></span>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/1450","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ckeditorAccordion":{"accordionStyle":{"collapseAll":null,"keepRowsOpen":null,"animateAccordionOpenAndClose":1,"openTabsWithHash":1,"allowHtmlInTitles":0}},"user":{"uid":0,"permissionsHash":"ea8e8f378546c6e99faf3f625b61a97aec02da41e33530ffb6c5b31aa96989b7"}}</script>
+<script src="/sites/default/files/js/js_V93Wr_LUPc45qnyUNPHhV8ho57UwOmXOOgYCUC8pLE8.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=eudat&amp;include=eJw9iUsOgCAMBS-kciRTaCFE6DOlxnh7XRB380mHcHXYTinBuELDT1s2qIvyIheThwj4cKNzev4u3TLQZZbSEKmtw59WtbyduyRO"></script>
+<script src="/modules/contrib/ckeditor_accordion/js/accordion.frontend.min.js?tmyeza"></script>
+<script src="/sites/default/files/js/js_Ajjg-S86DAmDqAviVus5TiG67-ivO6Betnmi8IpI3JI.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=eudat&amp;include=eJw9iUsOgCAMBS-kciRTaCFE6DOlxnh7XRB380mHcHXYTinBuELDT1s2qIvyIheThwj4cKNzev4u3TLQZZbSEKmtw59WtbyduyRO"></script>
+<script src="/themes/eudat/script/gsap/gsap.min.js?tmyeza" defer></script>
+<script src="/themes/eudat/script/gsap/ScrollTrigger.min.js?tmyeza" defer></script>
+<script src="/themes/eudat/script/gsap/ScrambleTextPlugin.min.js?tmyeza" defer></script>
+<script src="/themes/eudat/script/gsap/SplitText.min.js?tmyeza" defer></script>
+<script src="/sites/default/files/js/js_Y-nFkJ4WIFAjIOS8FRHW6wH8rXn98-EtCiJ7SsxhWPI.js?scope=footer&amp;delta=7&amp;language=en&amp;theme=eudat&amp;include=eJw9iUsOgCAMBS-kciRTaCFE6DOlxnh7XRB380mHcHXYTinBuELDT1s2qIvyIheThwj4cKNzev4u3TLQZZbSEKmtw59WtbyduyRO"></script>
+
+  </body>
+</html>

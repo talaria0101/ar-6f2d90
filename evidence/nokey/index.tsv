@@ -1,0 +1,4 @@
+file	bytes	sha256	path
+001_europeana.body	102	3cebaece173c5ca1b49f1cdd61b5c36402f794c181b30b3b4abe0d00256c441f	evidence/nokey/001_europeana.body
+002_europeana_entity.body	361	a5c2c3b1ac0af36e8f1372e8ffdf895744c240f5bd5511e888b31fe905b31a80	evidence/nokey/002_europeana_entity.body
+003_smithsonian.body	127	d541a5cc79f722ba079d2dc3d3e15da19ba0bc8442dbc1e84e3ef1971329094e	evidence/nokey/003_smithsonian.body

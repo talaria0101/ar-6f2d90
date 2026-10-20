@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html lang="en" ng-app="ArchiveIt" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="ArchiveIt" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="ArchiveIt" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="ArchiveIt" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Archive-It</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/app/bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="/static/app/bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="/static/app/css/app.css"/>
+  <link rel="stylesheet" href="/static/app/css/font-awesome.css"/>
+  <script src="/static/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/static/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/static/favicon/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/static/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/static/favicon/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/static/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/static/favicon/manifest.json">
+  <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg%22%20color%3D%22%235bbad5">
+  <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/static/favicon/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init yi Ar jr mi Or Mr capture Li calculateEventProperties Nr register register_once register_for_session unregister unregister_for_session Br getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zr Lr createPersonProfile Hr Rr qr opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug L Ur getPageViewId captureTraceFeedback captureTraceMetric Pr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_W3oj2ezmutakuyK9HDcVzj66p5IGuAjwBCZRh5pZrcg', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+    })
+  </script>
+</head>
+<body style="padding-top: 70px">
+  <noscript style="display:block;font-size:2rem;text-align:center;z-index:999;margin:8rem;padding:1rem;background-color:#700;color:#ccc">javascript required :-\</noscript>
+  <div class='fixed'>
+    <div id='top-shim'></div>
+    <top-bar scrolltop='false' class='sticky top-bar' style="display:block">
+      <ul class='title-area'>
+        <li class='name'><h1><a href='//archive-it.org/'><img src='/static/app/img/ait-logo.png'></a></h1></li>
+      </ul>
+      
+      <top-bar-section class="top-bar-section">
+        <ul id='secondary-menu' class='right show-for-large-up'>
+          <li><a target="_blank" href="https://support.archive-it.org/">Help Center</a></li>
+          
+            <li><a href='/login'>Log In</a></li>
+          
+        </ul>
+      </top-bar-section>
+    </top-bar>
+  </div>
+  
+  
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div>
+    <div class='row'>
+    
+      <div class='small-4 columns small-centered margin-top two'>
+        <form action="login" method="post">
+          
+          
+          <label for='user'>Username</label>
+          <input type="text" id='user' name="username" value="">
+          <label for='pass'>Password</label>
+          <input type="password" id='pass' name="password" ng-model="password">
+          <input type="hidden" name="next" value="/">
+          <button class='padding-top padding-bottom half small'>Log In</button>
+          <a href='/forgot_password' class='smaller right margin-top one'>Forgot Password?</a>
+        </form>
+      </div>
+    <script type="text/javascript">document.getElementById("user").focus();</script>
+
+    </div>
+  </div>
+  <div class='footer'>
+    <div class="footer-link">&#169; Internet Archive&nbsp;&nbsp;&nbsp;&nbsp;Archive-It</div>
+    <div class="footer-link"><a target="_blank" href="https://support.archive-it.org/">Help Center</a></div>
+    <!-- this has been commented until archive-this is re-implemented in 5.0 -->
+    <!--div class="footer-link"><a href="javascript:location.href='http://partner.archive-it.org/archiveit/partner/addSeed.html?accountId=%26url='+encodeURIComponent(location.href) + '%26title=' + encodeURIComponent(document.title);" onclick="window.alert('Drag the &quot;Archive This&quot; link into your bookmarks or favorites.\n\nWhile browsing the web you can click this link which will add the website to your seed list in your Archive-It collections.');return false;" title="Archive This!">Archive This!</a></div-->
+  </div>
+
+</body>
+</html>

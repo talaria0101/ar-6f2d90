@@ -1,0 +1,7 @@
+{
+    "error": {
+        "type": "Input Error",
+        "message": "No input given to the server"
+    },
+    "timing": 1.08
+}

@@ -1,0 +1,15 @@
+{
+  "response":{"numFound":361991,"start":0,"maxScore":0.31588045,"docs":[
+      {
+        "id":"10.1371/journal.pone.0283874",
+        "journal":"PLOS ONE",
+        "eissn":"1932-6203",
+        "publication_date":"2023-07-26T00:00:00Z",
+        "article_type":"Research Article",
+        "author_display":["Omar De La Cruz Cabrera",
+          "Razan Alsehibani"],
+        "abstract":["\nPrior research on pool testing focus on developing testing methods with the main objective of reducing the total number of tests. However, pool testing can also be used to improve the accuracy of the testing process. The objective of this paper is to improve the accuracy of pool testing using the same number of tests as that of individual testing taking into consideration the probability of testing errors and pool multiplicity classification thresholds. Statistical models are developed to evaluate the impact of pool multiplicity classiffcation thresholds on pool testing accuracy using the receiver operating characteristic (ROC) curve and the area under the curve (AUC). The findings indicate that under certain conditions, pool testing multiplicity yields superior testing accuracy compared to individual testing without additional cost. The results reveal that selecting the multiplicity classification threshold is a critical factor in improving the pool testing accuracy and show that the lower the prevalence level the higher the gains in accuracy using multiplicity pool testing. The findings also indicate that performance can be improved using a batch size that is inversely proportional to the prevalence level. Furthermore, the results indicate that multiplicity pool testing not only improves the testing accuracy but also reduces the total cost of the testing process. Based on the findings, the manufacturer’s test sensitivity has more significant impact on the accuracy of multiplicity pool testing compared to that of manufacturer’s test specificity.\n"],
+        "abstract_toc":[""],
+        "title_display":"Statistical modeling and evaluation of the impact of multiplicity classification thresholds on the COVID-19 pool testing accuracy",
+        "score":0.31588045}]
+  }}

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/9SBiFAE2GnhXfPaLFW4Ua/T3YzQ</id>
+  <title>arXiv Query: search_query=all:test&amp;id_list=&amp;start=0&amp;max_results=1</title>
+  <updated>2026-10-20T00:34:51Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:test&amp;start=0&amp;max_results=1&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>1</opensearch:itemsPerPage>
+  <opensearch:totalResults>240856</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1101.4081v3</id>
+    <title>A simple way to speedup Gauss Elimination</title>
+    <updated>2013-08-02T02:26:42Z</updated>
+    <link href="https://arxiv.org/abs/1101.4081v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1101.4081v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This article looks at a simple modification to speedup the conventional Gauss Elimination. The proposed modification speeds up the conventional Gauss Elimination by a factor of nearly 9/7 (in the asymptotic limit).</summary>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-01-21T07:50:33Z</published>
+    <arxiv:comment>Withdrawing test file</arxiv:comment>
+    <arxiv:primary_category term="math.NA"/>
+    <author>
+      <name>Sivaram Ambikasaran</name>
+    </author>
+  </entry>
+</feed>

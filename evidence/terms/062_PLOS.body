@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Solr - FAQ | PLOS API</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Solr - FAQ" />
+<meta name="author" content="Public Library of Science" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Information about available PLOS APIs." />
+<meta property="og:description" content="Information about available PLOS APIs." />
+<link rel="canonical" href="https://api.plos.org/solr/faq/" />
+<meta property="og:url" content="https://api.plos.org/solr/faq/" />
+<meta property="og:site_name" content="PLOS API" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Solr - FAQ" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Public Library of Science"},"description":"Information about available PLOS APIs.","headline":"Solr - FAQ","url":"https://api.plos.org/solr/faq/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://api.plos.org/feed.xml" title="PLOS API" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">PLOS API</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Solr - FAQ</h1>
+  </header>
+
+  <div class="post-content">
+    
+<h3 id="what-is-the-plos-search-api">What is the PLOS Search API?</h3>
+
+<p>The entire PLOS corpus of research articles is regularly indexed on PLOS
+servers running <a href="http://lucene.apache.org/solr/">Apache Solr</a>. PLOS
+provides programmatic access to the Solr API via the
+<strong><a href="http://api.plos.org/search">http://api.plos.org/search</a></strong> endpoint. Documentation for Solr
+queries can be found
+<a href="https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser">here</a>.
+The PLOS endpoint uses “search” instead of the “select” used in the Solr
+documentation.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://api.plos.org/search?q=id:"10.1371/journal.pone.0169045"
+</code></pre></div></div>
+
+<h3 id="what-is-solr">What is “Solr”?</h3>
+
+<p><a href="http://lucene.apache.org/solr/">Solr</a> is an open-source
+search platform from the Apache
+<a href="http://lucene.apache.org/">Lucene</a> project.
+Essentially, Lucene is a Java-based indexing and search tool. Solr
+provides a friendly way to query Lucene and format the results. PLOS
+uses Solr version 4.1.0.</p>
+
+<h3 id="are-there-any-examples-using-the-plos-search-api">Are there any exampleS using the PLOS Search API?</h3>
+
+<p>Two pieces of information are necessary to effectively use the PLOS
+Search API. First, being familiar with the
+<a href="http://api.plos.org/solr/search-fields/">search fields</a> used to index
+documents allows direct searching of specific article sections. Second,
+understanding construction of valid <a href="https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser">Solr
+queries</a>
+using these fields will enable the development of search scripts in the
+programming language of choice. Example queries can be found on <strong><a href="http://api.plos.org/solr/examples/">PLOS
+Solr Query Examples</a>.</strong></p>
+
+<h3 id="recommended-usage-of-the-plos-search-api">Recommended Usage of the PLOS Search API</h3>
+
+<ul>
+  <li><strong>Content Attribution</strong>:  Developers are welcome to make use of the
+data returned from the PLOS Search API and we ask that you indicate
+that the data originate from PLOS. If you wish to brand your work to
+PLOS, you will need to ask us to evaluate the usefulness and
+technical capability of your application prior to receiving a PLOS
+logo which you may then display on the application.  Please see <a href="http://api.plos.org/api-display-policy/" title="API Display Policy">the
+API display
+policy</a>
+for more information.</li>
+  <li><strong>PLOS Search API rate limit</strong>: Please limit your API requests to
+7200 requests a day, 300 per hour, 10 per minute and allow 5 seconds
+for your search to return results. If you exceed this threshold, we
+will lock out your IP address. If you’re a high-volume user of the
+PLOS Search API and need more API requests a day, please contact us
+at <a href="mailto:api@plos.org">api@plos.org</a> to discuss your options. We currently limit API
+users to no more than five concurrent connections from a single IP
+address.</li>
+  <li><strong>PLOS Search API requests</strong>: Please do not send requests that
+return more than 100 rows. That’s a lot of data for our network to
+push all at once and it may take some time to return the result set.
+If you are getting back a result set that bigger than 100+ rows,
+then you likely need to change your query to return a smaller result
+set or set a limit on the records returned and page through the
+results.</li>
+</ul>
+
+<h3 id="i-have-questions-about-using-the-plos-search-api-where-can-i-get-answers">I have questions about using the PLOS Search API. Where can I get answers?</h3>
+
+<p>If you have any questions or comments about the Article-Level Metrics
+application, head over to the <a href="http://api.plos.org/community/">PLOS API Community
+page</a> for information on the <a href="http://groups.google.com/group/plos-api-developers">PLOS API
+developers group</a>.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://api.plos.org/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">Public Library of Science</li>
+          <li><a class="u-email" href="mailto:dev@plos.org">dev@plos.org</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Information about available PLOS APIs.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

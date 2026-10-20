@@ -1,0 +1,9 @@
+{
+  "query_id" : "4426a6c6-4143-42b1-b21a-65b4530d92de",
+  "result_type" : "entry",
+  "total_count" : 9220,
+  "result_set" : [ {
+    "identifier" : "2PGH",
+    "score" : 1.0
+  } ]
+}

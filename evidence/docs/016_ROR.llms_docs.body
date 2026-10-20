@@ -1,0 +1,66 @@
+# ROR Documentation
+
+> Technical documentation for ROR, the Research Organization Registry, a global, community-led registry of open persistent identifiers for research organizations.
+
+## Guides: Getting Started with ROR
+- [ROR basics](https://ror.readme.io/docs/basics.md)
+- [Identifier pattern](https://ror.readme.io/docs/identifier.md)
+- [Infrastructure](https://ror.readme.io/docs/infrastructure.md)
+- [Logos and display guidelines](https://ror.readme.io/docs/display.md)
+- [See who uses ROR](https://ror.readme.io/docs/integrations.md)
+- [Get involved](https://ror.readme.io/docs/get-involved.md)
+- [Community feedback documents](https://ror.readme.io/docs/feedback-docs.md)
+- [Contact us](https://ror.readme.io/docs/contact.md)
+
+## Guides: ROR Metadata
+- [Updates and curation](https://ror.readme.io/docs/updates.md)
+- [Data structure](https://ror.readme.io/docs/ror-data-structure.md)
+- [Fields and sub-fields](https://ror.readme.io/docs/fields.md)
+- [Relationships and hierarchies](https://ror.readme.io/docs/relationships.md)
+- [Schema versions](https://ror.readme.io/docs/schema-versions.md)
+- [Schema 1.0](https://ror.readme.io/docs/schema-v1.md)
+- [Schema 2.0](https://ror.readme.io/docs/schema-v2.md)
+- [Schema 2.1](https://ror.readme.io/docs/schema-v2-1.md)
+
+## Guides: ROR REST API
+- [About the ROR REST API](https://ror.readme.io/docs/rest-api.md)
+- [Register for a client ID](https://ror.readme.io/docs/client-id.md)
+- [Retrieve a single record](https://ror.readme.io/docs/api-single.md)
+- [Retrieve a list of records](https://ror.readme.io/docs/api-list.md)
+- [Query parameter](https://ror.readme.io/docs/api-query.md)
+- [Filtering](https://ror.readme.io/docs/api-filtering.md)
+- [Paging](https://ror.readme.io/docs/api-paging.md)
+- [Advanced query parameter](https://ror.readme.io/docs/api-advanced-query.md)
+- [Affiliation parameter](https://ror.readme.io/docs/api-affiliation.md)
+- [API versions](https://ror.readme.io/docs/api-versions.md)
+
+## Guides: ROR Tools & Services
+- [Data dump](https://ror.readme.io/docs/data-dump.md)
+- [Web search](https://ror.readme.io/docs/web-search.md)
+- [OpenRefine reconciler](https://ror.readme.io/docs/openrefine-reconciler.md)
+
+## Guides: Collecting ROR IDs
+- [Create ROR-powered forms](https://ror.readme.io/docs/forms.md)
+- [Match organization names to ROR IDs](https://ror.readme.io/docs/matching.md)
+- [Map other organization IDs to ROR IDs](https://ror.readme.io/docs/mapping.md)
+- [Retrieve ROR data from Zenodo](https://ror.readme.io/docs/zenodo.md)
+- [Transition from GRID to ROR](https://ror.readme.io/docs/grid.md)
+- [Transition from Open Funder Registry to ROR](https://ror.readme.io/docs/funder-registry.md)
+
+## Guides: Sharing ROR IDs
+- [Add ROR IDs to Crossref DOIs](https://ror.readme.io/docs/crossref.md)
+- [Add ROR IDs to DataCite DOIs](https://ror.readme.io/docs/datacite.md)
+- [Add ROR IDs to JATS XML](https://ror.readme.io/docs/jats.md)
+- [Add ROR IDs to ORCID records](https://ror.readme.io/docs/orcid.md)
+
+## Changelog
+- [2026-05-26 Default affiliation matching strategy is now single search](https://ror.readme.io/changelog/2026-05-26-default-affiliation-matching-strategy-is-now-single-search.md)
+- [2025-12-04 Version 1 of the ROR API and schema is sunsetting](https://ror.readme.io/changelog/2025-12-04-version-1-of-the-ror-api-and-schema-is-sunsetting.md)
+- [2025-07-30 Default response to API requests is now version 2](https://ror.readme.io/changelog/2025-07-30-default-response-to-api-requests-is-now-version-2.md)
+- [2025-07-01 Timeline for the sunset of version 1 of the ROR API and schema](https://ror.readme.io/changelog/2025-07-01-sunset-of-version-1.md)
+- [2024-12-12 Schema v2.1](https://ror.readme.io/changelog/2024-12-12-schema-v2-1.md)
+- [2024-04-11 Schema & API v2](https://ror.readme.io/changelog/2024-04-11-schema-api-v2.md)
+- [2023-04-25 API infrastructure improvements](https://ror.readme.io/changelog/2023-04-25-api-infrastructure-improvements.md)
+- [2023-03-16 CSV data dump](https://ror.readme.io/changelog/2023-03-16-csv-data-dump.md)
+- [2022-12-01 Organization status changes](https://ror.readme.io/changelog/2022-12-01-organization-status-changes.md)
+- [2022-10-24 Affiliation matching improvements (API only)](https://ror.readme.io/changelog/2022-10-24-affiliation-matching-improvements-api-only.md)

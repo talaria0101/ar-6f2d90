@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://dspace.org/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<meta name='robots' content='noindex, follow' />
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/1ec08062f409f2b65f508765/script.js"></script><script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script>
+	<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Page not found - DSpace</title>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="Page not found - DSpace" />
+	<meta property="og:site_name" content="DSpace" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/dspace.org\/#website","url":"https:\/\/dspace.org\/","name":"DSpace","description":"Advancing Knowledge","publisher":{"@id":"https:\/\/dspace.org\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/dspace.org\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/dspace.org\/#organization","name":"LYRASIS","url":"https:\/\/dspace.org\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/dspace.org\/#\/schema\/logo\/image\/","url":"https:\/\/dspace.org\/wp-content\/uploads\/2022\/03\/LYRASIS_Logo_Landscape.jpg","contentUrl":"https:\/\/dspace.org\/wp-content\/uploads\/2022\/03\/LYRASIS_Logo_Landscape.jpg","width":1724,"height":327,"caption":"LYRASIS"},"image":{"@id":"https:\/\/dspace.org\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/wearelyrasis\/","https:\/\/x.com\/lyrasis","https:\/\/www.linkedin.com\/company\/lyrasis","https:\/\/www.youtube.com\/user\/LYRASIS1","https:\/\/en.wikipedia.org\/wiki\/Lyrasis"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel="alternate" type="application/rss+xml" title="DSpace &raquo; Feed" href="https://dspace.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="DSpace &raquo; Comments Feed" href="https://dspace.org/comments/feed/" />
+<meta content="Altitude by LoveDivi v.Version1" name="generator"/><link rel='stylesheet' id='gs-swiper-css' href='https://dspace.org/wp-content/plugins/gs-logo-slider/assets/libs/swiper-js/swiper.min.css?ver=3.8.9' media='all' />
+<link rel='stylesheet' id='gs-tippyjs-css' href='https://dspace.org/wp-content/plugins/gs-logo-slider/assets/libs/tippyjs/tippy.css?ver=3.8.9' media='all' />
+<link rel='stylesheet' id='gs-logo-public-css' href='https://dspace.org/wp-content/plugins/gs-logo-slider/assets/css/gs-logo.min.css?ver=3.8.9' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://dspace.org/wp-includes/css/dist/block-library/common.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-accordion-inline-css">
+.wp-block-accordion{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/accordion/style.min.css */
+</style>
+<style id="wp-block-accordion-item-inline-css">
+.wp-block-accordion-item.is-open>.wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon{transform:rotate(45deg)}@media (prefers-reduced-motion:no-preference){.wp-block-accordion-item{transition:grid-template-rows .3s ease-out}.wp-block-accordion-item>.wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon{transition:transform .2s ease-in-out}}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/accordion-item/style.min.css */
+</style>
+<style id="wp-block-archives-inline-css">
+.wp-block-archives{box-sizing:border-box}.wp-block-archives-dropdown label{display:block}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/archives/style.min.css */
+</style>
+<style id="wp-block-avatar-inline-css">
+.wp-block-avatar{line-height:0}.wp-block-avatar,.wp-block-avatar img{box-sizing:border-box}.wp-block-avatar.aligncenter{text-align:center}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/avatar/style.min.css */
+</style>
+<style id="wp-block-breadcrumbs-inline-css">
+.wp-block-breadcrumbs{box-sizing:border-box}.wp-block-breadcrumbs ol{flex-wrap:wrap;list-style:none}.wp-block-breadcrumbs li,.wp-block-breadcrumbs ol{align-items:center;display:flex;margin:0;padding:0}.wp-block-breadcrumbs li:not(:last-child):after{content:var(--separator,"/")/"";margin:0 .5em;opacity:.7}.wp-block-breadcrumbs span{color:inherit}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/breadcrumbs/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-button-css' href='https://dspace.org/wp-includes/blocks/button/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-calendar-inline-css">
+.wp-block-calendar{text-align:center}.wp-block-calendar td,.wp-block-calendar th{border:1px solid;padding:.25em}.wp-block-calendar th{font-weight:400}.wp-block-calendar caption{background-color:inherit}.wp-block-calendar table{border-collapse:collapse;width:100%}.wp-block-calendar table.has-background th{background-color:inherit}.wp-block-calendar table.has-text-color th{color:inherit}.wp-block-calendar :where(table:not(.has-text-color)){color:#40464d}.wp-block-calendar :where(table:not(.has-text-color)) td,.wp-block-calendar :where(table:not(.has-text-color)) th{border-color:#ddd}:where(.wp-block-calendar table:not(.has-background) th){background:#ddd}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/calendar/style.min.css */
+</style>
+<style id="wp-block-categories-inline-css">
+.wp-block-categories{box-sizing:border-box}.wp-block-categories.alignleft{margin-right:2em}.wp-block-categories.alignright{margin-left:2em}.wp-block-categories.wp-block-categories-dropdown.aligncenter{text-align:center}.wp-block-categories .wp-block-categories__label:not(.screen-reader-text){display:block;width:100%}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/categories/style.min.css */
+</style>
+<style id="wp-block-comment-author-name-inline-css">
+.wp-block-comment-author-name{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/comment-author-name/style.min.css */
+</style>
+<style id="wp-block-comment-content-inline-css">
+.comment-awaiting-moderation{display:block;font-size:.875em;line-height:1.5}.wp-block-comment-content{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/comment-content/style.min.css */
+</style>
+<style id="wp-block-comment-date-inline-css">
+.wp-block-comment-date{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/comment-date/style.min.css */
+</style>
+<style id="wp-block-comment-edit-link-inline-css">
+.wp-block-comment-edit-link{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/comment-edit-link/style.min.css */
+</style>
+<style id="wp-block-comment-reply-link-inline-css">
+.wp-block-comment-reply-link{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/comment-reply-link/style.min.css */
+</style>
+<style id="wp-block-comment-template-inline-css">
+.wp-block-comment-template{box-sizing:border-box;list-style:none;margin-bottom:0;max-width:100%;padding:0}.wp-block-comment-template li{clear:both}.wp-block-comment-template ol{list-style:none;margin-bottom:0;max-width:100%;padding-left:2rem}.wp-block-comment-template.alignleft{float:left}.wp-block-comment-template.aligncenter{margin-left:auto;margin-right:auto;width:-moz-fit-content;width:fit-content}.wp-block-comment-template.alignright{float:right}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/comment-template/style.min.css */
+</style>
+<style id="wp-block-comments-inline-css">
+.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-comments{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/comments/style.min.css */
+</style>
+<style id="wp-block-comments-pagination-inline-css">
+.wp-block-comments-pagination>.wp-block-comments-pagination-next,.wp-block-comments-pagination>.wp-block-comments-pagination-numbers,.wp-block-comments-pagination>.wp-block-comments-pagination-previous{font-size:inherit}.wp-block-comments-pagination .wp-block-comments-pagination-previous-arrow{display:inline-block;margin-right:1ch}.wp-block-comments-pagination .wp-block-comments-pagination-previous-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-comments-pagination .wp-block-comments-pagination-next-arrow{display:inline-block;margin-left:1ch}.wp-block-comments-pagination .wp-block-comments-pagination-next-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-comments-pagination.aligncenter{justify-content:center}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/comments-pagination/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-cover-css' href='https://dspace.org/wp-includes/blocks/cover/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-details-inline-css">
+.wp-block-details{box-sizing:border-box}.wp-block-details summary{cursor:pointer}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/details/style.min.css */
+</style>
+<style id="wp-block-file-inline-css">
+.wp-block-file{box-sizing:border-box}.wp-block-file:not(.wp-element-button){font-size:.8em}.wp-block-file.aligncenter{text-align:center}.wp-block-file.alignright{text-align:right}.wp-block-file *+.wp-block-file__button{margin-left:.75em}:where(.wp-block-file){margin-bottom:1.5em}.wp-block-file__embed{margin-bottom:1em}:where(.wp-block-file__button){border-radius:2em;display:inline-block;padding:.5em 1em}:where(.wp-block-file__button):where(a):active,:where(.wp-block-file__button):where(a):focus,:where(.wp-block-file__button):where(a):hover,:where(.wp-block-file__button):where(a):visited{box-shadow:none;color:#fff;opacity:.85;text-decoration:none}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/file/style.min.css */
+</style>
+<style id="wp-block-footnotes-inline-css">
+.editor-styles-wrapper,.entry-content{counter-reset:footnotes}a[data-fn].fn{counter-increment:footnotes;display:inline-flex;font-size:smaller;text-decoration:none;text-indent:-9999999px;vertical-align:super}a[data-fn].fn:after{content:"[" counter(footnotes) "]";float:left;text-indent:0}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/footnotes/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-gallery-css' href='https://dspace.org/wp-includes/blocks/gallery/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-gallery-theme-inline-css">
+.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/gallery/theme.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-icon-inline-css">
+.wp-block-icon{line-height:0}.wp-block-icon.aligncenter{display:flex;justify-content:center}.wp-block-icon svg{fill:currentColor;box-sizing:border-box}.wp-block-icon svg.is-flip-horizontal{transform:scaleX(-1)}.wp-block-icon svg.is-flip-vertical{transform:scaleY(-1)}.wp-block-icon svg.is-flip-horizontal.is-flip-vertical{transform:scaleX(-1) scaleY(-1)}:where(.wp-block-icon) svg{height:100%;width:100%}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/icon/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-image-css' href='https://dspace.org/wp-includes/blocks/image/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-image-theme-inline-css">
+:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/image/theme.min.css */
+</style>
+<style id="wp-block-latest-comments-inline-css">
+:where(.wp-block-latest-comments){padding-left:0}ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}.has-dates :where(.wp-block-latest-comments:not([style*=line-height])),.has-excerpts :where(.wp-block-latest-comments:not([style*=line-height])){line-height:1.5}.wp-block-latest-comments__comment{list-style:none;margin-bottom:1em}.has-avatars .wp-block-latest-comments__comment{list-style:none;min-height:2.25em}.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt,.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta{margin-left:3.25em}.wp-block-latest-comments__comment-excerpt p{font-size:.875em;margin:.36em 0 1.4em}.wp-block-latest-comments__comment-date{display:block;font-size:.75em}.wp-block-latest-comments .avatar,.wp-block-latest-comments__comment-avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em}.wp-block-latest-comments[class*=-font-size] a,.wp-block-latest-comments[style*=font-size] a{font-size:inherit}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/latest-comments/style.min.css */
+</style>
+<style id="wp-block-latest-posts-inline-css">
+.wp-block-latest-posts{box-sizing:border-box}.wp-block-latest-posts.alignleft{margin-right:2em}.wp-block-latest-posts.alignright{margin-left:2em}.wp-block-latest-posts.wp-block-latest-posts__list{list-style:none}.wp-block-latest-posts.wp-block-latest-posts__list li{clear:both;overflow-wrap:break-word}.wp-block-latest-posts.is-grid:not(.is-layout-grid){display:flex;flex-wrap:wrap}.wp-block-latest-posts.is-grid:not(.is-layout-grid) li{margin:0 1.25em 1.25em 0;width:100%}@media (min-width:600px){.wp-block-latest-posts.columns-2:not(.is-layout-grid) li{width:calc(50% - .625em)}.wp-block-latest-posts.columns-2:not(.is-layout-grid) li:nth-child(2n){margin-right:0}.wp-block-latest-posts.columns-3:not(.is-layout-grid) li{width:calc(33.33333% - .83333em)}.wp-block-latest-posts.columns-3:not(.is-layout-grid) li:nth-child(3n){margin-right:0}.wp-block-latest-posts.columns-4:not(.is-layout-grid) li{width:calc(25% - .9375em)}.wp-block-latest-posts.columns-4:not(.is-layout-grid) li:nth-child(4n){margin-right:0}.wp-block-latest-posts.columns-5:not(.is-layout-grid) li{width:calc(20% - 1em)}.wp-block-latest-posts.columns-5:not(.is-layout-grid) li:nth-child(5n){margin-right:0}.wp-block-latest-posts.columns-6:not(.is-layout-grid) li{width:calc(16.66667% - 1.04167em)}.wp-block-latest-posts.columns-6:not(.is-layout-grid) li:nth-child(6n){margin-right:0}}@media (max-width:600px){.wp-block-latest-posts-is-layout-grid[class*=columns-]:not(.has-native-responsive-grid){grid-template-columns:1fr}}:root :where(.wp-block-latest-posts.is-grid){padding:0}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0}.wp-block-latest-posts__post-author,.wp-block-latest-posts__post-date{display:block;font-size:.8125em}.wp-block-latest-posts__post-excerpt,.wp-block-latest-posts__post-full-content{margin-bottom:1em;margin-top:.5em}.wp-block-latest-posts__featured-image a{display:inline-block}.wp-block-latest-posts__featured-image img{height:auto;max-width:100%;width:auto}.wp-block-latest-posts__featured-image.alignleft{float:left;margin-right:1em}.wp-block-latest-posts__featured-image.alignright{float:right;margin-left:1em}.wp-block-latest-posts__featured-image.aligncenter{margin-bottom:1em;text-align:center}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/latest-posts/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-loginout-inline-css">
+.wp-block-loginout{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/loginout/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-media-text-css' href='https://dspace.org/wp-includes/blocks/media-text/style.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='wp-block-navigation-css' href='https://dspace.org/wp-includes/blocks/navigation/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-navigation-link-inline-css">
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{outline:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/navigation-link/style.min.css */
+</style>
+<style id="wp-block-navigation-overlay-close-inline-css">
+.wp-block-navigation-overlay-close{align-items:center;background:transparent;border:none;cursor:pointer;display:inline-flex;gap:.5em;justify-content:center;padding:0;text-decoration:none}.wp-block-navigation-overlay-close:focus{outline-offset:2px}.wp-block-navigation-overlay-close svg{fill:currentColor;display:block;flex-shrink:0;height:24px;width:24px}.wp-block-navigation-overlay-close .wp-block-navigation-overlay-close__text{align-items:center;display:inline-flex}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/navigation-overlay-close/style.min.css */
+</style>
+<style id="wp-block-page-list-inline-css">
+.wp-block-navigation .wp-block-page-list{align-items:var(--navigation-layout-align,initial);background-color:inherit;display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial)}.wp-block-navigation .wp-block-navigation-item{background-color:inherit}.wp-block-page-list{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/page-list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-playlist-css' href='https://dspace.org/wp-includes/blocks/playlist/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-playlist-track-inline-css">
+.wp-block-playlist-track:has([aria-current=true]){background-color:color-mix(in srgb,currentColor 10%,transparent)}.wp-block-playlist-track:hover{background-color:color-mix(in srgb,currentColor 15%,transparent)}.wp-block-playlist__tracklist-show-numbers .wp-block-playlist-track{counter-increment:playlist-track}.wp-block-playlist-track .wp-block-playlist-track__button{align-items:center;background-color:transparent;border:0;color:inherit;cursor:pointer;display:flex;font-family:inherit;font-size:inherit;outline-offset:2px;padding:var(--wp--preset--spacing--20,.5em);text-align:left;width:100%}.wp-block-playlist__tracklist-show-numbers .wp-block-playlist-track .wp-block-playlist-track__button:before{content:counter(playlist-track);font-size:.85em;margin-right:var(--wp--preset--spacing--20,.5em);opacity:.7;width:2ch}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__image{border:1px solid rgba(0,0,0,.08);box-sizing:border-box;flex:0 0 50px;height:50px;margin-right:var(--wp--preset--spacing--20,.5em);-o-object-fit:cover;object-fit:cover;width:50px}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__content{flex:1 1 0;min-width:0}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__title{display:block}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__artist{display:block;font-size:.85em;margin-top:.125em;opacity:.7}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__length{font-size:.85em;margin-left:auto;opacity:.7}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/playlist-track/style.min.css */
+</style>
+<style id="wp-block-post-author-inline-css">
+.wp-block-post-author{box-sizing:border-box;display:flex;flex-wrap:wrap}.wp-block-post-author__byline{font-size:.5em;margin-bottom:0;margin-top:0;width:100%}.wp-block-post-author__avatar{margin-right:1em}.wp-block-post-author__bio{font-size:.7em;margin-bottom:.7em}.wp-block-post-author__content{flex-basis:0;flex-grow:1}.wp-block-post-author__name{margin:0}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-author/style.min.css */
+</style>
+<style id="wp-block-post-author-biography-inline-css">
+.wp-block-post-author-biography{box-sizing:border-box;white-space:pre-wrap}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-author-biography/style.min.css */
+</style>
+<style id="wp-block-post-author-name-inline-css">
+.wp-block-post-author-name{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-author-name/style.min.css */
+</style>
+<style id="wp-block-post-comments-count-inline-css">
+.wp-block-post-comments-count{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-comments-count/style.min.css */
+</style>
+<style id="wp-block-post-comments-form-inline-css">
+:where(.wp-block-post-comments-form input:not([type=submit])),:where(.wp-block-post-comments-form textarea){border:1px solid #949494;font-family:inherit;font-size:1em}:where(.wp-block-post-comments-form input:where(:not([type=submit]):not([type=checkbox]))),:where(.wp-block-post-comments-form textarea){padding:calc(.667em + 2px)}.wp-block-post-comments-form{box-sizing:border-box}.wp-block-post-comments-form[style*=font-weight] :where(.comment-reply-title){font-weight:inherit}.wp-block-post-comments-form[style*=font-family] :where(.comment-reply-title){font-family:inherit}.wp-block-post-comments-form[class*=-font-size] :where(.comment-reply-title),.wp-block-post-comments-form[style*=font-size] :where(.comment-reply-title){font-size:inherit}.wp-block-post-comments-form[style*=line-height] :where(.comment-reply-title){line-height:inherit}.wp-block-post-comments-form[style*=font-style] :where(.comment-reply-title){font-style:inherit}.wp-block-post-comments-form[style*=letter-spacing] :where(.comment-reply-title){letter-spacing:inherit}.wp-block-post-comments-form :where(input[type=submit]){box-shadow:none;cursor:pointer;display:inline-block;overflow-wrap:break-word;text-align:center}.wp-block-post-comments-form .comment-form input:not([type=submit]):not([type=checkbox]):not([type=hidden]),.wp-block-post-comments-form .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments-form .comment-form-author label,.wp-block-post-comments-form .comment-form-email label,.wp-block-post-comments-form .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments-form .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments-form .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments-form .comment-reply-title{margin-bottom:0}.wp-block-post-comments-form .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-comments-form/style.min.css */
+</style>
+<style id="wp-block-buttons-inline-css">
+.wp-block-buttons{box-sizing:border-box}.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons .wp-block-button__link{width:100%}.wp-block-button.aligncenter{text-align:center}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/buttons/style.min.css */
+</style>
+<style id="wp-block-post-comments-link-inline-css">
+.wp-block-post-comments-link{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-comments-link/style.min.css */
+</style>
+<style id="wp-block-post-content-inline-css">
+.wp-block-post-content{display:flow-root}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-content/style.min.css */
+</style>
+<style id="wp-block-post-date-inline-css">
+.wp-block-post-date{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-date/style.min.css */
+</style>
+<style id="wp-block-post-excerpt-inline-css">
+:where(.wp-block-post-excerpt){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}.wp-block-post-excerpt__excerpt{margin-bottom:0;margin-top:0}.wp-block-post-excerpt__more-text{margin-bottom:0;margin-top:var(--wp--style--block-gap)}.wp-block-post-excerpt__more-link{display:inline-block}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-excerpt/style.min.css */
+</style>
+<style id="wp-block-post-featured-image-inline-css">
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image :where(img){box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:transparent}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-featured-image/style.min.css */
+</style>
+<style id="wp-block-post-navigation-link-inline-css">
+.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link.has-text-align-left[style*="writing-mode: vertical-lr"],.wp-block-post-navigation-link.has-text-align-right[style*="writing-mode: vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-navigation-link/style.min.css */
+</style>
+<style id="wp-block-post-template-inline-css">
+.wp-block-post-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid[class*=columns-]:not(.has-native-responsive-grid){grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-template/style.min.css */
+</style>
+<style id="wp-block-post-terms-inline-css">
+.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-terms/style.min.css */
+</style>
+<style id="wp-block-post-time-to-read-inline-css">
+.wp-block-post-time-to-read{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-time-to-read/style.min.css */
+</style>
+<style id="wp-block-post-title-inline-css">
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/post-title/style.min.css */
+</style>
+<style id="wp-block-query-pagination-inline-css">
+.wp-block-query-pagination.is-content-justification-space-between>.wp-block-query-pagination-next:last-of-type{margin-inline-start:auto}.wp-block-query-pagination.is-content-justification-space-between>.wp-block-query-pagination-previous:first-child{margin-inline-end:auto}.wp-block-query-pagination .wp-block-query-pagination-previous-arrow{display:inline-block;margin-right:1ch}.wp-block-query-pagination .wp-block-query-pagination-previous-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-query-pagination .wp-block-query-pagination-next-arrow{display:inline-block;margin-left:1ch}.wp-block-query-pagination .wp-block-query-pagination-next-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-query-pagination.aligncenter{justify-content:center}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/query-pagination/style.min.css */
+</style>
+<style id="wp-block-query-title-inline-css">
+.wp-block-query-title{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/query-title/style.min.css */
+</style>
+<style id="wp-block-query-total-inline-css">
+.wp-block-query-total{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/query-total/style.min.css */
+</style>
+<style id="wp-block-read-more-inline-css">
+.wp-block-read-more{display:block;width:-moz-fit-content;width:fit-content}.wp-block-read-more:where(:not([style*=text-decoration])){text-decoration:none}.wp-block-read-more:where(:not([style*=text-decoration])):active,.wp-block-read-more:where(:not([style*=text-decoration])):focus{text-decoration:none}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/read-more/style.min.css */
+</style>
+<style id="wp-block-rss-inline-css">
+ul.wp-block-rss.alignleft{margin-right:2em}ul.wp-block-rss.alignright{margin-left:2em}ul.wp-block-rss.is-grid{display:flex;flex-wrap:wrap;padding:0}ul.wp-block-rss.is-grid li{margin:0 1em 1em 0;width:100%}@media (min-width:600px){ul.wp-block-rss.columns-2 li{width:calc(50% - 1em)}ul.wp-block-rss.columns-3 li{width:calc(33.33333% - 1em)}ul.wp-block-rss.columns-4 li{width:calc(25% - 1em)}ul.wp-block-rss.columns-5 li{width:calc(20% - 1em)}ul.wp-block-rss.columns-6 li{width:calc(16.66667% - 1em)}}.wp-block-rss__item-author,.wp-block-rss__item-publish-date{display:block;font-size:.8125em}.wp-block-rss{box-sizing:border-box;list-style:none;padding:0}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/rss/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-search-css' href='https://dspace.org/wp-includes/blocks/search/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-search-theme-inline-css">
+.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/search/theme.min.css */
+</style>
+<style id="wp-block-site-logo-inline-css">
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/site-logo/style.min.css */
+</style>
+<style id="wp-block-site-tagline-inline-css">
+.wp-block-site-tagline{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/site-tagline/style.min.css */
+</style>
+<style id="wp-block-site-title-inline-css">
+.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/site-title/style.min.css */
+</style>
+<style id="wp-block-tab-list-inline-css">
+:where(.wp-block-tab-list button){-moz-appearance:none;appearance:none;-webkit-appearance:none;background:none;border:none;box-sizing:border-box;color:inherit;cursor:pointer;display:block;flex-basis:inherit!important;flex-grow:inherit!important;font-family:inherit;font-size:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:var(--wp--preset--spacing--20,.5em) var(--wp--preset--spacing--30,1em);position:relative;text-align:inherit;text-decoration:none;text-transform:inherit;width:-moz-max-content;width:max-content}:where(.wp-block-tab-list button)[aria-selected=true]:before{border-bottom:2px solid;bottom:0;content:"";left:0;pointer-events:none;position:absolute;width:100%}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/tab-list/style.min.css */
+</style>
+<style id="wp-block-tab-panel-inline-css">
+.wp-block-tab-panel:empty,.wp-block-tab-panel[hidden]{display:none!important}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/tab-panel/style.min.css */
+</style>
+<style id="wp-block-tabs-inline-css">
+.wp-block-tabs{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/tabs/style.min.css */
+</style>
+<style id="wp-block-tag-cloud-inline-css">
+.wp-block-tag-cloud{box-sizing:border-box}.wp-block-tag-cloud.aligncenter{justify-content:center;text-align:center}.wp-block-tag-cloud a{display:inline-block;margin-right:5px}.wp-block-tag-cloud span{display:inline-block;margin-left:5px;text-decoration:none}:root :where(.wp-block-tag-cloud.is-style-outline){display:flex;flex-wrap:wrap;gap:1ch}:root :where(.wp-block-tag-cloud.is-style-outline a){border:1px solid;font-size:unset!important;margin-right:0;padding:1ch 2ch;text-decoration:none!important}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/tag-cloud/style.min.css */
+</style>
+<style id="wp-block-template-part-theme-inline-css">
+:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/template-part/theme.min.css */
+</style>
+<style id="wp-block-term-count-inline-css">
+.wp-block-term-count{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/term-count/style.min.css */
+</style>
+<style id="wp-block-term-description-inline-css">
+:where(.wp-block-term-description){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}.wp-block-term-description p{margin-bottom:0;margin-top:0}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/term-description/style.min.css */
+</style>
+<style id="wp-block-term-name-inline-css">
+.wp-block-term-name{box-sizing:border-box}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/term-name/style.min.css */
+</style>
+<style id="wp-block-term-template-inline-css">
+.wp-block-term-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/term-template/style.min.css */
+</style>
+<style id="wp-block-video-inline-css">
+.wp-block-video{box-sizing:border-box}.wp-block-video video{height:auto;vertical-align:middle;width:100%}@supports (position:sticky){.wp-block-video [poster]{-o-object-fit:cover;object-fit:cover}}.wp-block-video.aligncenter{text-align:center}.wp-block-video :where(figcaption){margin-bottom:1em;margin-top:.5em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/video/style.min.css */
+</style>
+<style id="wp-block-video-theme-inline-css">
+.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/video/theme.min.css */
+</style>
+<style id="wp-block-accordion-heading-inline-css">
+.wp-block-accordion-heading__toggle{align-items:center;background:none;border:none;color:inherit;cursor:pointer;display:flex;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;overflow:hidden;padding:var(--wp--preset--spacing--20,1em) 0;text-align:inherit;text-decoration:inherit;text-transform:inherit;width:100%;word-spacing:inherit}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:hover .wp-block-accordion-heading__toggle-title{text-decoration:underline}.wp-block-accordion-heading__toggle-title{flex:1}.wp-block-accordion-heading__toggle-icon{align-items:center;display:flex;height:1.2em;justify-content:center;width:1.2em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/accordion-heading/style.min.css */
+</style>
+<style id="wp-block-accordion-panel-inline-css">
+.wp-block-accordion-panel[hidden]{border:none!important;box-shadow:none!important;margin-block-start:0;padding:0!important}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/accordion-panel/style.min.css */
+</style>
+<style id="wp-block-audio-inline-css">
+.wp-block-audio{box-sizing:border-box}.wp-block-audio :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-audio audio{min-width:300px;width:100%}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/audio/style.min.css */
+</style>
+<style id="wp-block-audio-theme-inline-css">
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/audio/theme.min.css */
+</style>
+<style id="wp-block-code-inline-css">
+.wp-block-code{box-sizing:border-box}.wp-block-code code{direction:ltr;display:block;font-family:inherit;overflow-wrap:break-word;text-align:initial;white-space:break-spaces}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/code/style.min.css */
+</style>
+<style id="wp-block-code-theme-inline-css">
+.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/code/theme.min.css */
+</style>
+<style id="wp-block-columns-inline-css">
+.wp-block-columns{box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns{align-items:normal!important}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/columns/style.min.css */
+</style>
+<style id="wp-block-embed-inline-css">
+.wp-block-embed.alignleft,.wp-block-embed.alignright,.wp-block[data-align=left]>[data-type="core/embed"],.wp-block[data-align=right]>[data-type="core/embed"]{max-width:360px;width:100%}.wp-block-embed.alignleft .wp-block-embed__wrapper,.wp-block-embed.alignright .wp-block-embed__wrapper,.wp-block[data-align=left]>[data-type="core/embed"] .wp-block-embed__wrapper,.wp-block[data-align=right]>[data-type="core/embed"] .wp-block-embed__wrapper{min-width:280px}.wp-block-cover .wp-block-embed{min-height:240px;min-width:320px}.wp-block-group.is-layout-flex .wp-block-embed{flex:1 1 0%;min-width:0}.wp-block-embed{overflow-wrap:break-word}.wp-block-embed :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-embed iframe{max-width:100%}.wp-block-embed__wrapper{position:relative}.wp-embed-responsive .wp-has-aspect-ratio .wp-block-embed__wrapper:before{content:"";display:block;padding-top:50%}.wp-embed-responsive .wp-has-aspect-ratio iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.wp-embed-responsive .wp-embed-aspect-21-9 .wp-block-embed__wrapper:before{padding-top:42.85%}.wp-embed-responsive .wp-embed-aspect-18-9 .wp-block-embed__wrapper:before{padding-top:50%}.wp-embed-responsive .wp-embed-aspect-16-9 .wp-block-embed__wrapper:before{padding-top:56.25%}.wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before{padding-top:75%}.wp-embed-responsive .wp-embed-aspect-1-1 .wp-block-embed__wrapper:before{padding-top:100%}.wp-embed-responsive .wp-embed-aspect-9-16 .wp-block-embed__wrapper:before{padding-top:177.77%}.wp-embed-responsive .wp-embed-aspect-1-2 .wp-block-embed__wrapper:before{padding-top:200%}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/embed/style.min.css */
+</style>
+<style id="wp-block-embed-theme-inline-css">
+.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/embed/theme.min.css */
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/group/style.min.css */
+</style>
+<style id="wp-block-group-theme-inline-css">
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/group/theme.min.css */
+</style>
+<style id="wp-block-math-inline-css">
+.wp-block-math{overflow-x:auto;overflow-y:hidden}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/math/style.min.css */
+</style>
+<style id="wp-block-preformatted-inline-css">
+.wp-block-preformatted{box-sizing:border-box;white-space:pre-wrap}:where(.wp-block-preformatted.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/preformatted/style.min.css */
+</style>
+<style id="wp-block-pullquote-inline-css">
+.wp-block-pullquote{box-sizing:border-box;margin:0 0 1em;overflow-wrap:break-word;padding:4em 0;text-align:center}.wp-block-pullquote blockquote,.wp-block-pullquote p{color:inherit}.wp-block-pullquote blockquote{margin:0}.wp-block-pullquote p{margin-top:0}.wp-block-pullquote p:last-child{margin-bottom:0}.wp-block-pullquote.alignleft,.wp-block-pullquote.alignright{max-width:420px}.wp-block-pullquote cite,.wp-block-pullquote footer{position:relative}.wp-block-pullquote .has-text-color a{color:inherit}.wp-block-pullquote.has-text-align-left blockquote{text-align:left}.wp-block-pullquote.has-text-align-right blockquote{text-align:right}.wp-block-pullquote.has-text-align-center blockquote{text-align:center}.wp-block-pullquote.is-style-solid-color{border:none}.wp-block-pullquote.is-style-solid-color blockquote{margin-left:auto;margin-right:auto;max-width:60%}.wp-block-pullquote.is-style-solid-color blockquote p{font-size:2em;margin-bottom:0;margin-top:0}.wp-block-pullquote.is-style-solid-color blockquote cite{font-style:normal;text-transform:none}.wp-block-pullquote :where(cite){color:inherit;display:block}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/pullquote/style.min.css */
+</style>
+<style id="wp-block-pullquote-theme-inline-css">
+.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote :where(cite),.wp-block-pullquote :where(footer),.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/pullquote/theme.min.css */
+</style>
+<style id="wp-block-quote-inline-css">
+.wp-block-quote{box-sizing:border-box;overflow-wrap:break-word}.wp-block-quote.is-large:where(:not(.is-style-plain)),.wp-block-quote.is-style-large:where(:not(.is-style-plain)){margin-bottom:1em;padding:0 1em}.wp-block-quote.is-large:where(:not(.is-style-plain)) p,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) p{font-size:1.5em;font-style:italic;line-height:1.6}.wp-block-quote.is-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-large:where(:not(.is-style-plain)) footer,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) footer{font-size:1.125em;text-align:right}.wp-block-quote>cite{display:block}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/quote/style.min.css */
+</style>
+<style id="wp-block-quote-theme-inline-css">
+.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/quote/theme.min.css */
+</style>
+<style id="wp-block-separator-inline-css">
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/separator/style.min.css */
+</style>
+<style id="wp-block-separator-theme-inline-css">
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/separator/theme.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-social-links-css' href='https://dspace.org/wp-includes/blocks/social-links/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-spacer-inline-css">
+.wp-block-spacer{clear:both}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/spacer/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-table-css' href='https://dspace.org/wp-includes/blocks/table/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-table-theme-inline-css">
+.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:hsla(0,0%,100%,.65)}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/table/theme.min.css */
+</style>
+<style id="wp-block-text-columns-inline-css">
+.wp-block-text-columns,.wp-block-text-columns.aligncenter{display:flex}.wp-block-text-columns .wp-block-column{margin:0 1em;padding:0}.wp-block-text-columns .wp-block-column:first-child{margin-left:0}.wp-block-text-columns .wp-block-column:last-child{margin-right:0}.wp-block-text-columns.columns-2 .wp-block-column{width:50%}.wp-block-text-columns.columns-3 .wp-block-column{width:33.3333333333%}.wp-block-text-columns.columns-4 .wp-block-column{width:25%}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/text-columns/style.min.css */
+</style>
+<style id="wp-block-verse-inline-css">
+pre.wp-block-verse{box-sizing:border-box;min-width:1em;overflow:auto;white-space:pre-wrap;word-break:break-word}:where(pre.wp-block-verse){font-family:inherit}
+/*# sourceURL=https://dspace.org/wp-includes/blocks/verse/style.min.css */
+</style>
+<style id="font-awesome-svg-styles-default-inline-css">
+.svg-inline--fa {
+  display: inline-block;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+/*# sourceURL=font-awesome-svg-styles-default-inline-css */
+</style>
+<link rel='stylesheet' id='font-awesome-svg-styles-css' href='https://dspace.org/wp-content/uploads/font-awesome/v6.5.2/css/svg-with-js.css' media='all' />
+<style id="font-awesome-svg-styles-inline-css">
+   .wp-block-font-awesome-icon svg::before,
+   .wp-rich-text-font-awesome-icon svg::before {content: unset;}
+/*# sourceURL=font-awesome-svg-styles-inline-css */
+</style>
+<link rel='stylesheet' id='font-awesome-official-css' href='https://use.fontawesome.com/releases/v6.5.2/css/all.css' media='all' integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous" />
+<link rel='stylesheet' id='sp_eab_fontello_style-css' href='https://dspace.org/wp-content/plugins/easy-accordion-free/Blocks/assets/css/fontello.min.css?ver=3.1.11' media='all' />
+<link rel='stylesheet' id='sp_eab_main_css-css' href='https://dspace.org/wp-content/plugins/easy-accordion-free/Blocks/build/style-ea-blocks.css?ver=3.1.11' media='all' />
+<link rel='stylesheet' id='sp-ea-animation-css' href='https://dspace.org/wp-content/plugins/easy-accordion-free/Blocks/assets/css/animate.min.css?ver=3.1.11' media='all' />
+<link rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://use.fontawesome.com/releases/v6.5.2/css/v4-shims.css' media='all' integrity="sha384-XyvK/kKwgVW+fuRkusfLgfhAMuaxLPSOY8W7wj8tUkf0Nr2WGHniPmpdu+cmPS5n" crossorigin="anonymous" />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:where(.wp-block-gallery.is-layout-flex){gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}:where(.wp-block-gallery.is-layout-grid){gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}
+:where(.wp-block-latest-posts.is-layout-flex){gap: 1.25em;}:where(.wp-block-latest-posts.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='pac-da-keyboard-navigation-outline-style-css' href='https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/css/keyboard-navigation-outline.min.css?ver=1.3.10' media='all' />
+<link rel='stylesheet' id='pac-da-underline-links-style-css' href='https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/css/underline-links.min.css?ver=1.3.10' media='all' />
+<link rel='stylesheet' id='pac-da-underline-links-exclude-heading-style-css' href='https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/css/underline-links-exclude-heading.min.css?ver=1.3.10' media='all' />
+<link rel='stylesheet' id='pac-da-underline-links-exclude-btns-style-css' href='https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/css/underline-links-exclude-btns.min.css?ver=1.3.10' media='all' />
+<link rel='stylesheet' id='pac-da-underline-links-exclude-menu-style-css' href='https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/css/underline-links-exclude-menu.min.css?ver=1.3.10' media='all' />
+<link rel='stylesheet' id='pac-da-enable-dropdown-menu-keyboard-navigation-style-css' href='https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/css/dropdown-menu-keyboard-navigation.min.css?ver=1.3.10' media='all' />
+<link rel='stylesheet' id='pac-da-improve-screen-reader-classes-css' href='https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/css/screen-reader-text.min.css?ver=1.3.10' media='all' />
+<link rel='stylesheet' id='events-manager-css' href='https://dspace.org/wp-content/plugins/events-manager/includes/css/events-manager.min.css?ver=7.4.8' media='all' />
+<link rel='stylesheet' id='ui-font-css' href='https://dspace.org/wp-content/plugins/wp-accessibility/toolbar/fonts/css/a11y-toolbar.css?ver=2.4.4' media='all' />
+<link rel='stylesheet' id='wpa-toolbar-css' href='https://dspace.org/wp-content/plugins/wp-accessibility/toolbar/css/a11y.css?ver=2.4.4' media='all' />
+<link rel='stylesheet' id='wpa-style-css' href='https://dspace.org/wp-content/plugins/wp-accessibility/css/wpa-style.css?ver=2.4.4' media='all' />
+<style id="wpa-style-inline-css">
+
+.wpa-hide-ltr#skiplinks a, .wpa-hide-ltr#skiplinks a:hover, .wpa-hide-ltr#skiplinks a:visited {
+	
+}
+.wpa-hide-ltr#skiplinks a:active,  .wpa-hide-ltr#skiplinks a:focus {
+	background-color: #f1f1f1;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	color: #0073aa;
+	display: block;
+	font-weight: 600;
+	height: auto;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	position: absolute;
+	left: 6px;
+	top: var(--admin-bar-top);
+	text-decoration: none;
+	text-transform: none;
+	width: auto;
+	z-index: 100000;
+}
+	
+		:focus { outline: 2px solid#233c7f!important; outline-offset: 2px !important; }
+		:root { --admin-bar-top : 7px; }
+/*# sourceURL=wpa-style-inline-css */
+</style>
+<link rel='stylesheet' id='ctl_common_style-css' href='https://dspace.org/wp-content/plugins/cool-timeline/includes/shortcodes/assets/css/ctl-common-styles.min.css?ver=4.1.0' media='all' />
+<style id="ctl_common_style-inline-css">
+ .ctl-wrapper{--ctw-first-story-color:#abdfe6;--ctw-second-story-color:#abdfe6;--ctw-cbx-des-background:#ffffff;--ctw-ybx-bg:#abdfe6;--ctw-line-bg:#ffffff;--ctw-cbx-title-font-family:Maven Pro;--ctl-set-title-font-family:Maven Pro;--ctw-cbx-title-font-weight:900;--ctl-set-title-font-weight:900;--ctw-cbx-title-font-size:25px;--ctl-set-title-font-size:25px;--ctw-cbx-desc-font-family:Maven Pro;--ctl-set-desc-font-family:Maven Pro;--ctw-cbx-desc-font-weight:normal;--ctl-set-desc-font-weight:normal;--ctw-cbx-desc-font-size:16px;--ctl-set-desc-font-size:16px;--ctw-cbx-date-font-family:Maven Pro;--ctl-set-date-font-family:Maven Pro;--ctw-cbx-date-font-weight:700;--ctl-set-date-font-weight:700;--ctw-cbx-date-font-size:21px;--ctl-set-date-font-size:21px;}
+/*# sourceURL=ctl_common_style-inline-css */
+</style>
+<link rel='stylesheet' id='ctl_vertical_style-css' href='https://dspace.org/wp-content/plugins/cool-timeline/includes/shortcodes/assets/css/ctl-vertical-timeline.min.css?ver=4.1.0' media='all' />
+<style id="divi-style-parent-inline-inline-css">
+/*!
+Theme Name: Divi
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Version: 4.27.9
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}blockquote{margin:20px 0 30px;border-left:5px solid;padding-left:20px}:focus{outline:0}del{text-decoration:line-through}pre{overflow:auto;padding:10px}figure{margin:0}table{border-collapse:collapse;border-spacing:0}article,aside,footer,header,hgroup,nav,section{display:block}body{font-family:Open Sans,Arial,sans-serif;font-size:14px;color:#666;background-color:#fff;line-height:1.7em;font-weight:500;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body.page-template-page-template-blank-php #page-container{padding-top:0!important}body.et_cover_background{background-size:cover!important;background-position:top!important;background-repeat:no-repeat!important;background-attachment:fixed}a{color:#2ea3f2}a,a:hover{text-decoration:none}p{padding-bottom:1em}p:not(.has-background):last-of-type{padding-bottom:0}p.et_normal_padding{padding-bottom:1em}strong{font-weight:700}cite,em,i{font-style:italic}code,pre{font-family:Courier New,monospace;margin-bottom:10px}ins{text-decoration:none}sub,sup{height:0;line-height:1;position:relative;vertical-align:baseline}sup{bottom:.8em}sub{top:.3em}dl{margin:0 0 1.5em}dl dt{font-weight:700}dd{margin-left:1.5em}blockquote p{padding-bottom:0}embed,iframe,object,video{max-width:100%}h1,h2,h3,h4,h5,h6{color:#333;padding-bottom:10px;line-height:1em;font-weight:500}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:inherit}h1{font-size:30px}h2{font-size:26px}h3{font-size:22px}h4{font-size:18px}h5{font-size:16px}h6{font-size:14px}input{-webkit-appearance:none}input[type=checkbox]{-webkit-appearance:checkbox}input[type=radio]{-webkit-appearance:radio}input.text,input.title,input[type=email],input[type=password],input[type=tel],input[type=text],select,textarea{background-color:#fff;border:1px solid #bbb;padding:2px;color:#4e4e4e}input.text:focus,input.title:focus,input[type=text]:focus,select:focus,textarea:focus{border-color:#2d3940;color:#3e3e3e}input.text,input.title,input[type=text],select,textarea{margin:0}textarea{padding:4px}button,input,select,textarea{font-family:inherit}img{max-width:100%;height:auto}.clear{clear:both}br.clear{margin:0;padding:0}.pagination{clear:both}#et_search_icon:hover,.et-social-icon a:hover,.et_password_protected_form .et_submit_button,.form-submit .et_pb_buttontton.alt.disabled,.nav-single a,.posted_in a{color:#2ea3f2}.et-search-form,blockquote{border-color:#2ea3f2}#main-content{background-color:#fff}.container{width:80%;max-width:1080px;margin:auto;position:relative}body:not(.et-tb) #main-content .container,body:not(.et-tb-has-header) #main-content .container{padding-top:58px}.et_full_width_page #main-content .container:before{display:none}.main_title{margin-bottom:20px}.et_password_protected_form .et_submit_button:hover,.form-submit .et_pb_button:hover{background:rgba(0,0,0,.05)}.et_button_icon_visible .et_pb_button{padding-right:2em;padding-left:.7em}.et_button_icon_visible .et_pb_button:after{opacity:1;margin-left:0}.et_button_left .et_pb_button:hover:after{left:.15em}.et_button_left .et_pb_button:after{margin-left:0;left:1em}.et_button_icon_visible.et_button_left .et_pb_button,.et_button_left .et_pb_button:hover,.et_button_left .et_pb_module .et_pb_button:hover{padding-left:2em;padding-right:.7em}.et_button_icon_visible.et_button_left .et_pb_button:after,.et_button_left .et_pb_button:hover:after{left:.15em}.et_password_protected_form .et_submit_button:hover,.form-submit .et_pb_button:hover{padding:.3em 1em}.et_button_no_icon .et_pb_button:after{display:none}.et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button,.et_button_no_icon.et_button_left .et_pb_button:hover,.et_button_no_icon .et_pb_button,.et_button_no_icon .et_pb_button:hover{padding:.3em 1em!important}.et_button_custom_icon .et_pb_button:after{line-height:1.7em}.et_button_custom_icon.et_button_icon_visible .et_pb_button:after,.et_button_custom_icon .et_pb_button:hover:after{margin-left:.3em}#left-area .post_format-post-format-gallery .wp-block-gallery:first-of-type{padding:0;margin-bottom:-16px}.entry-content table:not(.variations){border:1px solid #eee;margin:0 0 15px;text-align:left;width:100%}.entry-content thead th,.entry-content tr th{color:#555;font-weight:700;padding:9px 24px}.entry-content tr td{border-top:1px solid #eee;padding:6px 24px}#left-area ul,.entry-content ul,.et-l--body ul,.et-l--footer ul,.et-l--header ul{list-style-type:disc;padding:0 0 23px 1em;line-height:26px}#left-area ol,.entry-content ol,.et-l--body ol,.et-l--footer ol,.et-l--header ol{list-style-type:decimal;list-style-position:inside;padding:0 0 23px;line-height:26px}#left-area ul li ul,.entry-content ul li ol{padding:2px 0 2px 20px}#left-area ol li ul,.entry-content ol li ol,.et-l--body ol li ol,.et-l--footer ol li ol,.et-l--header ol li ol{padding:2px 0 2px 35px}#left-area ul.wp-block-gallery{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;list-style-type:none;padding:0}#left-area ul.products{padding:0!important;line-height:1.7!important;list-style:none!important}.gallery-item a{display:block}.gallery-caption,.gallery-item a{width:90%}#wpadminbar{z-index:100001}#left-area .post-meta{font-size:14px;padding-bottom:15px}#left-area .post-meta a{text-decoration:none;color:#666}#left-area .et_featured_image{padding-bottom:7px}.single .post{padding-bottom:25px}body.single .et_audio_content{margin-bottom:-6px}.nav-single a{text-decoration:none;color:#2ea3f2;font-size:14px;font-weight:400}.nav-previous{float:left}.nav-next{float:right}.et_password_protected_form p input{background-color:#eee;border:none!important;width:100%!important;border-radius:0!important;font-size:14px;color:#999!important;padding:16px!important;-webkit-box-sizing:border-box;box-sizing:border-box}.et_password_protected_form label{display:none}.et_password_protected_form .et_submit_button{font-family:inherit;display:block;float:right;margin:8px auto 0;cursor:pointer}.post-password-required p.nocomments.container{max-width:100%}.post-password-required p.nocomments.container:before{display:none}.aligncenter,div.post .new-post .aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{border:1px solid #ddd;text-align:center;background-color:#f3f3f3;margin-bottom:10px;max-width:96%;padding:8px}.wp-caption.alignleft{margin:0 30px 20px 0}.wp-caption.alignright{margin:0 0 20px 30px}.wp-caption img{margin:0;padding:0;border:0}.wp-caption p.wp-caption-text{font-size:12px;padding:0 4px 5px;margin:0}.alignright{float:right}.alignleft{float:left}img.alignleft{display:inline;float:left;margin-right:15px}img.alignright{display:inline;float:right;margin-left:15px}.page.et_pb_pagebuilder_layout #main-content{background-color:transparent}body #main-content .et_builder_inner_content>h1,body #main-content .et_builder_inner_content>h2,body #main-content .et_builder_inner_content>h3,body #main-content .et_builder_inner_content>h4,body #main-content .et_builder_inner_content>h5,body #main-content .et_builder_inner_content>h6{line-height:1.4em}body #main-content .et_builder_inner_content>p{line-height:1.7em}.wp-block-pullquote{margin:20px 0 30px}.wp-block-pullquote.has-background blockquote{border-left:none}.wp-block-group.has-background{padding:1.5em 1.5em .5em}@media (min-width:981px){#left-area{width:79.125%;padding-bottom:23px}#main-content .container:before{content:"";position:absolute;top:0;height:100%;width:1px;background-color:#e2e2e2}.et_full_width_page #left-area,.et_no_sidebar #left-area{float:none;width:100%!important}.et_full_width_page #left-area{padding-bottom:0}.et_no_sidebar #main-content .container:before{display:none}}@media (max-width:980px){#page-container{padding-top:80px}.et-tb #page-container,.et-tb-has-header #page-container{padding-top:0!important}#left-area,#sidebar{width:100%!important}#main-content .container:before{display:none!important}.et_full_width_page .et_gallery_item:nth-child(4n+1){clear:none}}@media print{#page-container{padding-top:0!important}}#wp-admin-bar-et-use-visual-builder a:before{font-family:ETmodules!important;content:"\e625";font-size:30px!important;width:28px;margin-top:-3px;color:#974df3!important}#wp-admin-bar-et-use-visual-builder:hover a:before{color:#fff!important}#wp-admin-bar-et-use-visual-builder:hover a,#wp-admin-bar-et-use-visual-builder a:hover{transition:background-color .5s ease;-webkit-transition:background-color .5s ease;-moz-transition:background-color .5s ease;background-color:#7e3bd0!important;color:#fff!important}* html .clearfix,:first-child+html .clearfix{zoom:1}.iphone .et_pb_section_video_bg video::-webkit-media-controls-start-playback-button{display:none!important;-webkit-appearance:none}.et_mobile_device .et_pb_section_parallax .et_pb_parallax_css{background-attachment:scroll}.et-social-facebook a.icon:before{content:"\e093"}.et-social-twitter a.icon:before{content:"\e094"}.et-social-google-plus a.icon:before{content:"\e096"}.et-social-instagram a.icon:before{content:"\e09a"}.et-social-rss a.icon:before{content:"\e09e"}.ai1ec-single-event:after{content:" ";display:table;clear:both}.evcal_event_details .evcal_evdata_cell .eventon_details_shading_bot.eventon_details_shading_bot{z-index:3}.wp-block-divi-layout{margin-bottom:1em}*{-webkit-box-sizing:border-box;box-sizing:border-box}#et-info-email:before,#et-info-phone:before,#et_search_icon:before,.comment-reply-link:after,.et-cart-info span:before,.et-pb-arrow-next:before,.et-pb-arrow-prev:before,.et-social-icon a:before,.et_audio_container .mejs-playpause-button button:before,.et_audio_container .mejs-volume-button button:before,.et_overlay:before,.et_password_protected_form .et_submit_button:after,.et_pb_button:after,.et_pb_contact_reset:after,.et_pb_contact_submit:after,.et_pb_font_icon:before,.et_pb_newsletter_button:after,.et_pb_pricing_table_button:after,.et_pb_promo_button:after,.et_pb_testimonial:before,.et_pb_toggle_title:before,.form-submit .et_pb_button:after,.mobile_menu_bar:before,a.et_pb_more_button:after{font-family:ETmodules!important;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-shadow:0 0;direction:ltr}.et-pb-icon,.et_pb_custom_button_icon.et_pb_button:after,.et_pb_login .et_pb_custom_button_icon.et_pb_button:after,.et_pb_woo_custom_button_icon .button.et_pb_custom_button_icon.et_pb_button:after,.et_pb_woo_custom_button_icon .button.et_pb_custom_button_icon.et_pb_button:hover:after{content:attr(data-icon)}.et-pb-icon{font-family:ETmodules;speak:none;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;font-size:96px;font-style:normal;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;direction:ltr}#et-ajax-saving{display:none;-webkit-transition:background .3s,-webkit-box-shadow .3s;transition:background .3s,-webkit-box-shadow .3s;transition:background .3s,box-shadow .3s;transition:background .3s,box-shadow .3s,-webkit-box-shadow .3s;-webkit-box-shadow:rgba(0,139,219,.247059) 0 0 60px;box-shadow:0 0 60px rgba(0,139,219,.247059);position:fixed;top:50%;left:50%;width:50px;height:50px;background:#fff;border-radius:50px;margin:-25px 0 0 -25px;z-index:999999;text-align:center}#et-ajax-saving img{margin:9px}.et-safe-mode-indicator,.et-safe-mode-indicator:focus,.et-safe-mode-indicator:hover{-webkit-box-shadow:0 5px 10px rgba(41,196,169,.15);box-shadow:0 5px 10px rgba(41,196,169,.15);background:#29c4a9;color:#fff;font-size:14px;font-weight:600;padding:12px;line-height:16px;border-radius:3px;position:fixed;bottom:30px;right:30px;z-index:999999;text-decoration:none;font-family:Open Sans,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.et_pb_button{font-size:20px;font-weight:500;padding:.3em 1em;line-height:1.7em!important;background-color:transparent;background-size:cover;background-position:50%;background-repeat:no-repeat;border:2px solid;border-radius:3px;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transition-property:all!important;transition-property:all!important}.et_pb_button,.et_pb_button_inner{position:relative}.et_pb_button:hover,.et_pb_module .et_pb_button:hover{border:2px solid transparent;padding:.3em 2em .3em .7em}.et_pb_button:hover{background-color:hsla(0,0%,100%,.2)}.et_pb_bg_layout_light.et_pb_button:hover,.et_pb_bg_layout_light .et_pb_button:hover{background-color:rgba(0,0,0,.05)}.et_pb_button:after,.et_pb_button:before{font-size:32px;line-height:1em;content:"\35";opacity:0;position:absolute;margin-left:-1em;-webkit-transition:all .2s;transition:all .2s;text-transform:none;-webkit-font-feature-settings:"kern" off;font-feature-settings:"kern" off;font-variant:none;font-style:normal;font-weight:400;text-shadow:none}.et_pb_button.et_hover_enabled:hover:after,.et_pb_button.et_pb_hovered:hover:after{-webkit-transition:none!important;transition:none!important}.et_pb_button:before{display:none}.et_pb_button:hover:after{opacity:1;margin-left:0}.et_pb_column_1_3 h1,.et_pb_column_1_4 h1,.et_pb_column_1_5 h1,.et_pb_column_1_6 h1,.et_pb_column_2_5 h1{font-size:26px}.et_pb_column_1_3 h2,.et_pb_column_1_4 h2,.et_pb_column_1_5 h2,.et_pb_column_1_6 h2,.et_pb_column_2_5 h2{font-size:23px}.et_pb_column_1_3 h3,.et_pb_column_1_4 h3,.et_pb_column_1_5 h3,.et_pb_column_1_6 h3,.et_pb_column_2_5 h3{font-size:20px}.et_pb_column_1_3 h4,.et_pb_column_1_4 h4,.et_pb_column_1_5 h4,.et_pb_column_1_6 h4,.et_pb_column_2_5 h4{font-size:18px}.et_pb_column_1_3 h5,.et_pb_column_1_4 h5,.et_pb_column_1_5 h5,.et_pb_column_1_6 h5,.et_pb_column_2_5 h5{font-size:16px}.et_pb_column_1_3 h6,.et_pb_column_1_4 h6,.et_pb_column_1_5 h6,.et_pb_column_1_6 h6,.et_pb_column_2_5 h6{font-size:15px}.et_pb_bg_layout_dark,.et_pb_bg_layout_dark h1,.et_pb_bg_layout_dark h2,.et_pb_bg_layout_dark h3,.et_pb_bg_layout_dark h4,.et_pb_bg_layout_dark h5,.et_pb_bg_layout_dark h6{color:#fff!important}.et_pb_module.et_pb_text_align_left{text-align:left}.et_pb_module.et_pb_text_align_center{text-align:center}.et_pb_module.et_pb_text_align_right{text-align:right}.et_pb_module.et_pb_text_align_justified{text-align:justify}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}.et_pb_bg_layout_light .et_pb_more_button{color:#2ea3f2}.et_builder_inner_content{position:relative;z-index:1}header .et_builder_inner_content{z-index:2}.et_pb_css_mix_blend_mode_passthrough{mix-blend-mode:unset!important}.et_pb_image_container{margin:-20px -20px 29px}.et_pb_module_inner{position:relative}.et_hover_enabled_preview{z-index:2}.et_hover_enabled:hover{position:relative;z-index:2}.et_pb_all_tabs,.et_pb_module,.et_pb_posts_nav a,.et_pb_tab,.et_pb_with_background{position:relative;background-size:cover;background-position:50%;background-repeat:no-repeat}.et_pb_background_mask,.et_pb_background_pattern{bottom:0;left:0;position:absolute;right:0;top:0}.et_pb_background_mask{background-size:calc(100% + 2px) calc(100% + 2px);background-repeat:no-repeat;background-position:50%;overflow:hidden}.et_pb_background_pattern{background-position:0 0;background-repeat:repeat}.et_pb_with_border{position:relative;border:0 solid #333}.post-password-required .et_pb_row{padding:0;width:100%}.post-password-required .et_password_protected_form{min-height:0}body.et_pb_pagebuilder_layout.et_pb_show_title .post-password-required .et_password_protected_form h1,body:not(.et_pb_pagebuilder_layout) .post-password-required .et_password_protected_form h1{display:none}.et_pb_no_bg{padding:0!important}.et_overlay.et_pb_inline_icon:before,.et_pb_inline_icon:before{content:attr(data-icon)}.et_pb_more_button{color:inherit;text-shadow:none;text-decoration:none;display:inline-block;margin-top:20px}.et_parallax_bg_wrap{overflow:hidden;position:absolute;top:0;right:0;bottom:0;left:0}.et_parallax_bg{background-repeat:no-repeat;background-position:top;background-size:cover;position:absolute;bottom:0;left:0;width:100%;height:100%;display:block}.et_parallax_bg.et_parallax_bg__hover,.et_parallax_bg.et_parallax_bg_phone,.et_parallax_bg.et_parallax_bg_tablet,.et_parallax_gradient.et_parallax_gradient__hover,.et_parallax_gradient.et_parallax_gradient_phone,.et_parallax_gradient.et_parallax_gradient_tablet,.et_pb_section_parallax_hover:hover .et_parallax_bg:not(.et_parallax_bg__hover),.et_pb_section_parallax_hover:hover .et_parallax_gradient:not(.et_parallax_gradient__hover){display:none}.et_pb_section_parallax_hover:hover .et_parallax_bg.et_parallax_bg__hover,.et_pb_section_parallax_hover:hover .et_parallax_gradient.et_parallax_gradient__hover{display:block}.et_parallax_gradient{bottom:0;display:block;left:0;position:absolute;right:0;top:0}.et_pb_module.et_pb_section_parallax,.et_pb_posts_nav a.et_pb_section_parallax,.et_pb_tab.et_pb_section_parallax{position:relative}.et_pb_section_parallax .et_pb_parallax_css,.et_pb_slides .et_parallax_bg.et_pb_parallax_css{background-attachment:fixed}body.et-bfb .et_pb_section_parallax .et_pb_parallax_css,body.et-bfb .et_pb_slides .et_parallax_bg.et_pb_parallax_css{background-attachment:scroll;bottom:auto}.et_pb_section_parallax.et_pb_column .et_pb_module,.et_pb_section_parallax.et_pb_row .et_pb_column,.et_pb_section_parallax.et_pb_row .et_pb_module{z-index:9;position:relative}.et_pb_more_button:hover:after{opacity:1;margin-left:0}.et_pb_preload .et_pb_section_video_bg,.et_pb_preload>div{visibility:hidden}.et_pb_preload,.et_pb_section.et_pb_section_video.et_pb_preload{position:relative;background:#464646!important}.et_pb_preload:before{content:"";position:absolute;top:50%;left:50%;background:url(https://dspace.org/wp-content/themes/Divi/includes/builder/styles/images/preloader.gif) no-repeat;border-radius:32px;width:32px;height:32px;margin:-16px 0 0 -16px}.box-shadow-overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;pointer-events:none}.et_pb_section>.box-shadow-overlay~.et_pb_row{z-index:11}body.safari .section_has_divider{will-change:transform}.et_pb_row>.box-shadow-overlay{z-index:8}.has-box-shadow-overlay{position:relative}.et_clickable{cursor:pointer}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}.et_multi_view_hidden,.et_multi_view_hidden_image{display:none!important}@keyframes multi-view-image-fade{0%{opacity:0}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8}90%{opacity:.9}to{opacity:1}}.et_multi_view_image__loading{visibility:hidden}.et_multi_view_image__loaded{-webkit-animation:multi-view-image-fade .5s;animation:multi-view-image-fade .5s}#et-pb-motion-effects-offset-tracker{visibility:hidden!important;opacity:0;position:absolute;top:0;left:0}.et-pb-before-scroll-animation{opacity:0}header.et-l.et-l--header:after{clear:both;display:block;content:""}.et_pb_module{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-duration:.2s;animation-duration:.2s}@-webkit-keyframes fadeBottom{0%{opacity:0;-webkit-transform:translateY(10%);transform:translateY(10%)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes fadeBottom{0%{opacity:0;-webkit-transform:translateY(10%);transform:translateY(10%)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes fadeLeft{0%{opacity:0;-webkit-transform:translateX(-10%);transform:translateX(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeLeft{0%{opacity:0;-webkit-transform:translateX(-10%);transform:translateX(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes fadeRight{0%{opacity:0;-webkit-transform:translateX(10%);transform:translateX(10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeRight{0%{opacity:0;-webkit-transform:translateX(10%);transform:translateX(10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes fadeTop{0%{opacity:0;-webkit-transform:translateY(-10%);transform:translateY(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeTop{0%{opacity:0;-webkit-transform:translateY(-10%);transform:translateY(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.et-waypoint:not(.et_pb_counters){opacity:0}@media (min-width:981px){.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_column .et_pb_module.et-last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_column .et_pb_module:last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_row_inner .et_pb_column .et_pb_module.et-last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_row_inner .et_pb_column .et_pb_module:last-child,.et_pb_section div.et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_pb_section div.et_pb_row .et_pb_column .et_pb_module:last-child{margin-bottom:0}}@media (max-width:980px){.et_overlay.et_pb_inline_icon_tablet:before,.et_pb_inline_icon_tablet:before{content:attr(data-icon-tablet)}.et_parallax_bg.et_parallax_bg_tablet_exist,.et_parallax_gradient.et_parallax_gradient_tablet_exist{display:none}.et_parallax_bg.et_parallax_bg_tablet,.et_parallax_gradient.et_parallax_gradient_tablet{display:block}.et_pb_column .et_pb_module{margin-bottom:30px}.et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_pb_row .et_pb_column .et_pb_module:last-child,.et_section_specialty .et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_section_specialty .et_pb_row .et_pb_column .et_pb_module:last-child{margin-bottom:0}.et_pb_more_button{display:inline-block!important}.et_pb_bg_layout_light_tablet.et_pb_button,.et_pb_bg_layout_light_tablet.et_pb_module.et_pb_button,.et_pb_bg_layout_light_tablet .et_pb_more_button{color:#2ea3f2}.et_pb_bg_layout_light_tablet .et_pb_forgot_password a{color:#666}.et_pb_bg_layout_light_tablet h1,.et_pb_bg_layout_light_tablet h2,.et_pb_bg_layout_light_tablet h3,.et_pb_bg_layout_light_tablet h4,.et_pb_bg_layout_light_tablet h5,.et_pb_bg_layout_light_tablet h6{color:#333!important}.et_pb_module .et_pb_bg_layout_light_tablet.et_pb_button{color:#2ea3f2!important}.et_pb_bg_layout_light_tablet{color:#666!important}.et_pb_bg_layout_dark_tablet,.et_pb_bg_layout_dark_tablet h1,.et_pb_bg_layout_dark_tablet h2,.et_pb_bg_layout_dark_tablet h3,.et_pb_bg_layout_dark_tablet h4,.et_pb_bg_layout_dark_tablet h5,.et_pb_bg_layout_dark_tablet h6{color:#fff!important}.et_pb_bg_layout_dark_tablet.et_pb_button,.et_pb_bg_layout_dark_tablet.et_pb_module.et_pb_button,.et_pb_bg_layout_dark_tablet .et_pb_more_button{color:inherit}.et_pb_bg_layout_dark_tablet .et_pb_forgot_password a{color:#fff}.et_pb_module.et_pb_text_align_left-tablet{text-align:left}.et_pb_module.et_pb_text_align_center-tablet{text-align:center}.et_pb_module.et_pb_text_align_right-tablet{text-align:right}.et_pb_module.et_pb_text_align_justified-tablet{text-align:justify}}@media (max-width:767px){.et_pb_more_button{display:inline-block!important}.et_overlay.et_pb_inline_icon_phone:before,.et_pb_inline_icon_phone:before{content:attr(data-icon-phone)}.et_parallax_bg.et_parallax_bg_phone_exist,.et_parallax_gradient.et_parallax_gradient_phone_exist{display:none}.et_parallax_bg.et_parallax_bg_phone,.et_parallax_gradient.et_parallax_gradient_phone{display:block}.et-hide-mobile{display:none!important}.et_pb_bg_layout_light_phone.et_pb_button,.et_pb_bg_layout_light_phone.et_pb_module.et_pb_button,.et_pb_bg_layout_light_phone .et_pb_more_button{color:#2ea3f2}.et_pb_bg_layout_light_phone .et_pb_forgot_password a{color:#666}.et_pb_bg_layout_light_phone h1,.et_pb_bg_layout_light_phone h2,.et_pb_bg_layout_light_phone h3,.et_pb_bg_layout_light_phone h4,.et_pb_bg_layout_light_phone h5,.et_pb_bg_layout_light_phone h6{color:#333!important}.et_pb_module .et_pb_bg_layout_light_phone.et_pb_button{color:#2ea3f2!important}.et_pb_bg_layout_light_phone{color:#666!important}.et_pb_bg_layout_dark_phone,.et_pb_bg_layout_dark_phone h1,.et_pb_bg_layout_dark_phone h2,.et_pb_bg_layout_dark_phone h3,.et_pb_bg_layout_dark_phone h4,.et_pb_bg_layout_dark_phone h5,.et_pb_bg_layout_dark_phone h6{color:#fff!important}.et_pb_bg_layout_dark_phone.et_pb_button,.et_pb_bg_layout_dark_phone.et_pb_module.et_pb_button,.et_pb_bg_layout_dark_phone .et_pb_more_button{color:inherit}.et_pb_module .et_pb_bg_layout_dark_phone.et_pb_button{color:#fff!important}.et_pb_bg_layout_dark_phone .et_pb_forgot_password a{color:#fff}.et_pb_module.et_pb_text_align_left-phone{text-align:left}.et_pb_module.et_pb_text_align_center-phone{text-align:center}.et_pb_module.et_pb_text_align_right-phone{text-align:right}.et_pb_module.et_pb_text_align_justified-phone{text-align:justify}}@media (max-width:479px){a.et_pb_more_button{display:block}}@media (min-width:768px) and (max-width:980px){[data-et-multi-view-load-tablet-hidden=true]:not(.et_multi_view_swapped){display:none!important}}@media (max-width:767px){[data-et-multi-view-load-phone-hidden=true]:not(.et_multi_view_swapped){display:none!important}}.et_pb_menu.et_pb_menu--style-inline_centered_logo .et_pb_menu__menu nav ul{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@-webkit-keyframes multi-view-image-fade{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}50%{-webkit-transform:scale(1.01);transform:scale(1.01);opacity:1}to{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+/*# sourceURL=divi-style-parent-inline-inline-css */
+</style>
+<link rel='stylesheet' id='divi-dynamic-css' href='https://dspace.org/wp-content/et-cache/notfound/et-divi-dynamic.css?ver=1791896028' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css' href='https://dspace.org/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.2.6.1' media='all' />
+<style id="__EPYT__style-inline-css">
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+/*# sourceURL=__EPYT__style-inline-css */
+</style>
+<style id="pac-da-inline-css">
+.skip-link.da-screen-reader-text {position: fixed;left: 0;top: var(--admin-bar-top);z-index: 999999999999;background-color: #f1f1f1;box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);color: #0073aa;display: block;font-weight: 600;height: auto;line-height: normal;padding: 15px 23px 14px;}.skip-link.da-screen-reader-text {opacity: 0;}.skip-link.da-screen-reader-text:focus {opacity: 1;}
+/*# sourceURL=pac-da-inline-css */
+</style>
+<link rel='stylesheet' id='divi-style-css' href='https://dspace.org/wp-content/themes/altitude-by-lovedivi/style.css?ver=4.27.9' media='all' />
+<script id="jquery-core-js" src="https://dspace.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://dspace.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="jquery-js-after">
+jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+//# sourceURL=jquery-js-after
+</script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="https://dspace.org/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-mouse-js" src="https://dspace.org/wp-includes/js/jquery/ui/mouse.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-sortable-js" src="https://dspace.org/wp-includes/js/jquery/ui/sortable.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-datepicker-js" src="https://dspace.org/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-datepicker-js-after">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+//# sourceURL=jquery-ui-datepicker-js-after
+</script>
+<script id="jquery-ui-resizable-js" src="https://dspace.org/wp-includes/js/jquery/ui/resizable.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-draggable-js" src="https://dspace.org/wp-includes/js/jquery/ui/draggable.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-controlgroup-js" src="https://dspace.org/wp-includes/js/jquery/ui/controlgroup.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-checkboxradio-js" src="https://dspace.org/wp-includes/js/jquery/ui/checkboxradio.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-button-js" src="https://dspace.org/wp-includes/js/jquery/ui/button.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-dialog-js" src="https://dspace.org/wp-includes/js/jquery/ui/dialog.min.js?ver=1.14.2"></script>
+<script id="events-manager-js-extra">
+var EM = {"ajaxurl":"https://dspace.org/wp-admin/admin-ajax.php","locationajaxurl":"https://dspace.org/wp-admin/admin-ajax.php?action=locations_search","firstDay":"1","locale":"en","dateFormat":"yy-mm-dd","ui_css":"https://dspace.org/wp-content/plugins/events-manager/includes/css/jquery-ui/build.min.css","show24hours":"1","is_ssl":"1","autocomplete_limit":"10","calendar":{"breakpoints":{"small":560,"medium":908,"large":false},"month_format":"M Y"},"phone":"","datepicker":{"format":"Y-m-d"},"search":{"breakpoints":{"small":650,"medium":850,"full":false}},"url":"https://dspace.org/wp-content/plugins/events-manager","assets":{"input.em-uploader":{"js":{"em-uploader":{"url":"https://dspace.org/wp-content/plugins/events-manager/includes/js/em-uploader.js?v=7.4.8","event":"em_uploader_ready","requires":"filepond"},"filepond-validate-size":"filepond/plugins/filepond-plugin-file-validate-size.js?v=7.4.8","filepond-validate-type":"filepond/plugins/filepond-plugin-file-validate-type.js?v=7.4.8","filepond-image-validate-size":"filepond/plugins/filepond-plugin-image-validate-size.js?v=7.4.8","filepond-exif-orientation":"filepond/plugins/filepond-plugin-image-exif-orientation.js?v=7.4.8","filepond-get-file":"filepond/plugins/filepond-plugin-get-file.js?v=7.4.8","filepond-plugin-image-overlay":"filepond/plugins/filepond-plugin-image-overlay.js?v=7.4.8","filepond-plugin-image-thumbnail":"filepond/plugins/filepond-plugin-image-thumbnail.js?v=7.4.8","filepond-plugin-pdf-preview-overlay":"filepond/plugins/filepond-plugin-pdf-preview-overlay.js?v=7.4.8","filepond-plugin-file-icon":"filepond/plugins/filepond-plugin-file-icon.js?v=7.4.8","filepond":{"url":"filepond/filepond.js?v=7.4.8","locale":""}},"css":{"em-filepond":"filepond/em-filepond.min.css?v=7.4.8","filepond-preview":"filepond/plugins/filepond-plugin-image-preview.min.css?v=7.4.8","filepond-plugin-image-overlay":"filepond/plugins/filepond-plugin-image-overlay.min.css?v=7.4.8","filepond-get-file":"filepond/plugins/filepond-plugin-get-file.min.css?v=7.4.8"}},".em-event-editor":{"js":{"event-editor":{"url":"https://dspace.org/wp-content/plugins/events-manager/includes/js/events-manager-event-editor.js?v=7.4.8","event":"em_event_editor_ready"}},"css":{"event-editor":"https://dspace.org/wp-content/plugins/events-manager/includes/css/events-manager-event-editor.min.css?v=7.4.8"}},".em-recurrence-sets, .em-timezone":{"js":{"luxon":{"url":"luxon/luxon.js?v=7.4.8","event":"em_luxon_ready"}}},".em-booking-form, #em-booking-form, .em-booking-recurring, .em-event-booking-form":{"js":{"em-bookings":{"url":"https://dspace.org/wp-content/plugins/events-manager/includes/js/bookingsform.js?v=7.4.8","event":"em_booking_form_js_loaded"}}},"#em-opt-archetypes":{"js":{"archetypes":"https://dspace.org/wp-content/plugins/events-manager/includes/js/admin-archetype-editor.js?v=7.4.8","archetypes_ms":"https://dspace.org/wp-content/plugins/events-manager/includes/js/admin-archetypes.js?v=7.4.8","qs":"qs/qs.js?v=7.4.8"}}},"cached":"","uploads":{"endpoint":"https://dspace.org/wp-json/events-manager/v1/uploads","nonce":"5ff885f6a6","delete_confirm":"Are you sure you want to delete this file? It will be deleted upon submission.","images":{"max_file_size":"","image_max_width":"700","image_max_height":"700","image_min_width":"50","image_min_height":"50"},"files":{"max_file_size":"","types":{"0":"image/gif","1":"image/jpeg","3":"image/png","4":"image/webp","5":"image/heic","6":"application/pdf","7":"application/msword","8":"application/x-msword","9":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","10":"text/rtf","11":"application/rtf","12":"application/x-rtf","13":"application/vnd.oasis.opendocument.text","14":"text/plain","15":"application/vnd.ms-excel","16":"application/xls","17":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","18":"text/csv","19":"application/csv","21":"application/vnd.oasis.opendocument.spreadsheet","22":"application/vnd.ms-powerpoint","23":"application/mspowerpoint","24":"application/vnd.openxmlformats-officedocument.presentationml.presentation","25":"application/vnd.oasis.opendocument.presentation"}}},"api_nonce":"ed82442ec5","google_maps_api":"AIzaSyC-1sIDgRg29SXxTCtq2_BussIhcsCaPW0","txt_search":"Search","txt_searching":"Searching...","txt_loading":"Loading..."};
+//# sourceURL=events-manager-js-extra
+</script>
+<script id="events-manager-js" src="https://dspace.org/wp-content/plugins/events-manager/includes/js/events-manager.js?ver=7.4.8"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-5R6X9RD4" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["dspace.org"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-5R6X9RD4");
+//# sourceURL=google_gtagjs-js-after
+</script>
+<script id="__ytprefs__-js-extra">
+var _EPYT_ = {"ajaxurl":"https://dspace.org/wp-admin/admin-ajax.php","security":"648b119a21","gallery_scrolloffset":"20","eppathtoscripts":"https://dspace.org/wp-content/plugins/youtube-embed-plus/scripts/","eppath":"https://dspace.org/wp-content/plugins/youtube-embed-plus/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"14.2.6.1","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com/embed/\"], iframe[src*=\"youtube-nocookie.com/embed/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"","not_live_on_channel":""};
+//# sourceURL=__ytprefs__-js-extra
+</script>
+<script id="__ytprefs__-js" src="https://dspace.org/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=14.2.6.1"></script>
+<link rel="https://api.w.org/" href="https://dspace.org/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dspace.org/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<!-- start Simple Custom CSS and JS -->
+ 
+
+
+
+<script>
+window.addEventListener("load", function(){
+// Get the elements
+let dropdown_menu = document.getElementsByClassName('menu-item-has-children');
+// Set the aria-haspopup and aria-expanded attributes
+for (let i = 0; i < dropdown_menu.length; i++) {
+    dropdown_menu[i].setAttribute('aria-haspopup',true);
+    dropdown_menu[i].setAttribute('aria-expanded',false);
+}
+
+});
+
+jQuery(".menu-item-has-children").mouseover(function(){
+   if(jQuery(this).hasClass('et-hover')) {
+       jQuery(this).attr('aria-expanded',true);
+   }
+}).mouseout(function(){
+    jQuery(this).attr('aria-expanded',false);
+});
+	</script>
+<!-- end Simple Custom CSS and JS -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5, user-scalable=yes"><meta name="generator" content="Site Kit by Google 1.189.0" /><!-- Analytics by WP Statistics - https://wp-statistics.com -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"><link rel="icon" href="https://dspace.org/wp-content/uploads/2022/02/DSpace-100x100.png" sizes="32x32" />
+<link rel="icon" href="https://dspace.org/wp-content/uploads/2022/02/DSpace.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://dspace.org/wp-content/uploads/2022/02/DSpace.png" />
+<meta name="msapplication-TileImage" content="https://dspace.org/wp-content/uploads/2022/02/DSpace.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://dspace.org/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1790275882" /></head>
+<body class="error404 wp-theme-Divi wp-child-theme-altitude-by-lovedivi sp-easy-accordion-enabled wpa-excerpt et_button_no_icon et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns6 et_cover_background et_pb_gutter windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://dspace.org/">
+						<img src="https://dspace.org/wp-content/uploads/2025/08/DSpace-logo-light_fixed.png" width="720" height="184" alt="DSpace" id="logo" data-height-percentage="47" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-22923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22923"><a href="https://dspace.org/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-22933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22933"><a href="https://dspace.org/annual-report/">Annual Reports</a></li>
+	<li id="menu-item-230859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230859"><a href="https://dspace.org/our-team/">Meet the Team</a></li>
+	<li id="menu-item-231362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231362"><a href="https://dspace.org/registry/">Registered Sites</a></li>
+	<li id="menu-item-231514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231514"><a href="https://dspace.org/register-your-instance/">Register Your Instance</a></li>
+	<li id="menu-item-22959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22959"><a href="https://dspace.org/newsletter/">Subscribe to Newsletter</a></li>
+	<li id="menu-item-235508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235508"><a href="https://dspace.org/license/">DSpace Source Code BSD License</a></li>
+</ul>
+</li>
+<li id="menu-item-231402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-231402"><a href="https://dspace.org/why-choose-dspace/">Why DSpace?</a>
+<ul class="sub-menu">
+	<li id="menu-item-22935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22935"><a href="https://dspace.org/features/">Features</a></li>
+	<li id="menu-item-118572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118572"><a href="https://dspace.org/demo/">Demo</a></li>
+	<li id="menu-item-234920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234920"><a href="https://dspace.org/accessibility/">Accessibility</a></li>
+	<li id="menu-item-231344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231344"><a href="https://dspace.org/testimonials/">Testimonials</a></li>
+	<li id="menu-item-118662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118662"><a href="https://dspace.org/share-your-story/">Share Your DSpace Story</a></li>
+</ul>
+</li>
+<li id="menu-item-231429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-231429"><a href="https://dspace.org/join-the-community/">Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-22929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22929"><a href="https://dspace.org/governance/">Governance</a>
+	<ul class="sub-menu">
+		<li id="menu-item-22930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22930"><a href="https://dspace.org/leadership-group/">Leadership Group</a></li>
+		<li id="menu-item-22931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22931"><a href="https://dspace.org/steering-group/">Steering Group</a></li>
+	</ul>
+</li>
+	<li id="menu-item-22938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22938"><a href="https://dspace.org/membership/">Membership</a>
+	<ul class="sub-menu">
+		<li id="menu-item-234307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234307"><a href="https://dspace.org/become-a-member/">Become a member</a></li>
+		<li id="menu-item-230903" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230903"><a href="https://dspace.org/meet-our-members/">Meet Our Members</a></li>
+	</ul>
+</li>
+	<li id="menu-item-235509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-235509"><a href="https://dspace.org/events/">Community Events</a>
+	<ul class="sub-menu">
+		<li id="menu-item-237761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237761"><a href="https://dspace.org/webinars/">Webinars</a></li>
+	</ul>
+</li>
+	<li id="menu-item-22944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22944"><a href="https://dspace.org/community-contributors/">Our Contributors</a></li>
+	<li id="menu-item-118671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118671"><a href="https://dspace.org/contribute-to-development-fund/">Development Fund</a></li>
+	<li id="menu-item-22957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22957"><a href="https://dspace.org/promoting-dspace/">Promoting DSpace</a></li>
+</ul>
+</li>
+<li id="menu-item-22948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22948"><a href="https://dspace.org/registered-service-providers/">Service Providers</a></li>
+<li id="menu-item-230943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-230943"><a href="https://dspace.org/help-resources/">Help &#038; Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-22952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22952"><a href="https://dspace.org/download/">Download Latest Release</a></li>
+	<li id="menu-item-22956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22956"><a target="_blank" href="https://dspace.org/get-support">Get Support</a></li>
+	<li id="menu-item-22953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22953"><a href="https://dspace.org/how-to-configure-dspace/">How to Configure DSpace</a></li>
+	<li id="menu-item-234821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234821"><a href="https://dspace.org/video-tutorials/">Video Tutorials</a></li>
+	<li id="menu-item-231910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231910"><a href="https://dspace.org/support-dspace/">Ways to Contribute</a></li>
+	<li id="menu-item-22958" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-22958"><a href="https://dspace.org/news/">News &#038; Updates</a></li>
+	<li id="menu-item-231913" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231913"><a href="https://dspace.org/contact/">Contact</a></li>
+	<li id="menu-item-22955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22955"><a target="_blank" href="https://wiki.lyrasis.org/display/DSPACE/">Wiki Documentation</a></li>
+</ul>
+</li>
+<li id="menu-item-22927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22927"><a href="https://dspace.org/membership/"><span class="greenbutton">Member Benefits</span></a></li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://dspace.org/">
+					<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+				<article id="post-0" class="et_pb_post not_found">
+					<div class="entry">
+	<h1 class="not-found-title">No Results Found</h1>
+	<p>The page you requested could not be found. Try refining your search, or use the navigation above to locate the post.</p>
+</div>
+				</article>
+			</div>
+
+				<div id="sidebar">
+		<div id="search-1" class="et_pb_widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://dspace.org/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div>
+		<div id="recent-posts-2" class="et_pb_widget widget_recent_entries">
+		<h4 class="widgettitle">Recent Posts</h4>
+		<ul>
+											<li>
+					<a href="https://dspace.org/dspace-newsletter-september-2026-issue-15/">DSpace Newsletter September 2026, Issue 15</a>
+									</li>
+											<li>
+					<a href="https://dspace.org/4science-dspace-community-contributions-update-august-2026/">4Science DSpace community contributions update August 2026</a>
+									</li>
+											<li>
+					<a href="https://dspace.org/4science-will-attend-the-dspace-north-america-user-meeting/">4Science will attend the DSpace North America User meeting</a>
+									</li>
+											<li>
+					<a href="https://dspace.org/knowing-your-dspace-repository-is-healthy-introducing-the-health-report/">Knowing your DSpace repository is healthy: introducing the health report</a>
+									</li>
+											<li>
+					<a href="https://dspace.org/from-cayuse-to-dspace-australian-catholic-university/">From Cayuse to DSpace: Australian Catholic University</a>
+									</li>
+					</ul>
+
+		</div><div id="categories-1" class="et_pb_widget widget_categories"><h4 class="widgettitle">Categories</h4>
+			<ul>
+					<li class="cat-item cat-item-185"><a href="https://dspace.org/category/registered-service-provider/4science/">4Science</a>
+</li>
+	<li class="cat-item cat-item-176"><a href="https://dspace.org/category/registered-service-provider/arvo-consultores/">Arvo Consultores</a>
+</li>
+	<li class="cat-item cat-item-180"><a href="https://dspace.org/category/registered-service-provider/atmire/">Atmire</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="https://dspace.org/category/case-studies/">Case Studies</a>
+</li>
+	<li class="cat-item cat-item-254"><a href="https://dspace.org/category/clarin-dspace/">CLARIN-DSpace</a>
+</li>
+	<li class="cat-item cat-item-177"><a href="https://dspace.org/category/dspace/coar-notify/">COAR Notify</a>
+</li>
+	<li class="cat-item cat-item-184"><a href="https://dspace.org/category/conferences/">Conferences</a>
+</li>
+	<li class="cat-item cat-item-181"><a href="https://dspace.org/category/registered-service-provider/dl/">D&amp;L</a>
+</li>
+	<li class="cat-item cat-item-255"><a href="https://dspace.org/category/registered-service-provider/dataquest/">dataquest</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://dspace.org/category/design/">Design</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="https://dspace.org/category/dspace/">DSpace</a>
+</li>
+	<li class="cat-item cat-item-188"><a href="https://dspace.org/category/dspace-cris/">DSpace-CRIS</a>
+</li>
+	<li class="cat-item cat-item-266"><a href="https://dspace.org/category/registered-service-provider/dspacedirect/">DSpaceDirect</a>
+</li>
+	<li class="cat-item cat-item-158"><a href="https://dspace.org/category/events/">Events</a>
+</li>
+	<li class="cat-item cat-item-115"><a href="https://dspace.org/category/fundraising/">Fundraising</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://dspace.org/category/job-openings/">Job Openings</a>
+</li>
+	<li class="cat-item cat-item-227"><a href="https://dspace.org/category/dspace/learning-opportunity/">Learning Opportunity</a>
+</li>
+	<li class="cat-item cat-item-225"><a href="https://dspace.org/category/dspace/migration/">Migration</a>
+</li>
+	<li class="cat-item cat-item-168"><a href="https://dspace.org/category/national-user-group/">National User Group</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://dspace.org/category/news/">News</a>
+</li>
+	<li class="cat-item cat-item-173"><a href="https://dspace.org/category/news/newsletter/">Newsletter</a>
+</li>
+	<li class="cat-item cat-item-283"><a href="https://dspace.org/category/conferences/north-american-user-group-meeting/">North American User Group Meeting</a>
+</li>
+	<li class="cat-item cat-item-197"><a href="https://dspace.org/category/conferences/open-repositories/">Open Repositories</a>
+</li>
+	<li class="cat-item cat-item-183"><a href="https://dspace.org/category/registered-service-provider/pcg-academia/">PCG Academia</a>
+</li>
+	<li class="cat-item cat-item-175"><a href="https://dspace.org/category/registered-service-provider/">Registered Service Provider</a>
+</li>
+	<li class="cat-item cat-item-131"><a href="https://dspace.org/category/dspace/rsp-news/">Registered Service Provider News</a>
+</li>
+	<li class="cat-item cat-item-192"><a href="https://dspace.org/category/dspace/releases/">Releases</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://dspace.org/category/uncategorized/">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-241"><a href="https://dspace.org/category/dspace/upgrade/">Upgrade</a>
+</li>
+	<li class="cat-item cat-item-270"><a href="https://dspace.org/category/registered-service-provider/vir-softech/">Vir Softech</a>
+</li>
+			</ul>
+
+			</div><div id="archives-2" class="et_pb_widget widget_archive"><h4 class="widgettitle">Archives</h4>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://dspace.org/2026/09/'> September 2026 </option>
+	<option value='https://dspace.org/2026/08/'> August 2026 </option>
+	<option value='https://dspace.org/2026/06/'> June 2026 </option>
+	<option value='https://dspace.org/2026/05/'> May 2026 </option>
+	<option value='https://dspace.org/2026/04/'> April 2026 </option>
+	<option value='https://dspace.org/2026/03/'> March 2026 </option>
+	<option value='https://dspace.org/2026/02/'> February 2026 </option>
+	<option value='https://dspace.org/2026/01/'> January 2026 </option>
+	<option value='https://dspace.org/2025/12/'> December 2025 </option>
+	<option value='https://dspace.org/2025/11/'> November 2025 </option>
+	<option value='https://dspace.org/2025/10/'> October 2025 </option>
+	<option value='https://dspace.org/2025/09/'> September 2025 </option>
+	<option value='https://dspace.org/2025/08/'> August 2025 </option>
+	<option value='https://dspace.org/2025/06/'> June 2025 </option>
+	<option value='https://dspace.org/2025/05/'> May 2025 </option>
+	<option value='https://dspace.org/2025/04/'> April 2025 </option>
+	<option value='https://dspace.org/2025/03/'> March 2025 </option>
+	<option value='https://dspace.org/2025/02/'> February 2025 </option>
+	<option value='https://dspace.org/2024/12/'> December 2024 </option>
+	<option value='https://dspace.org/2024/11/'> November 2024 </option>
+	<option value='https://dspace.org/2024/09/'> September 2024 </option>
+	<option value='https://dspace.org/2024/07/'> July 2024 </option>
+	<option value='https://dspace.org/2024/06/'> June 2024 </option>
+	<option value='https://dspace.org/2024/04/'> April 2024 </option>
+	<option value='https://dspace.org/2024/03/'> March 2024 </option>
+	<option value='https://dspace.org/2024/02/'> February 2024 </option>
+	<option value='https://dspace.org/2023/12/'> December 2023 </option>
+	<option value='https://dspace.org/2023/10/'> October 2023 </option>
+	<option value='https://dspace.org/2023/09/'> September 2023 </option>
+	<option value='https://dspace.org/2023/08/'> August 2023 </option>
+	<option value='https://dspace.org/2023/07/'> July 2023 </option>
+	<option value='https://dspace.org/2023/06/'> June 2023 </option>
+	<option value='https://dspace.org/2023/05/'> May 2023 </option>
+	<option value='https://dspace.org/2023/04/'> April 2023 </option>
+	<option value='https://dspace.org/2023/02/'> February 2023 </option>
+	<option value='https://dspace.org/2022/12/'> December 2022 </option>
+	<option value='https://dspace.org/2022/11/'> November 2022 </option>
+	<option value='https://dspace.org/2022/10/'> October 2022 </option>
+	<option value='https://dspace.org/2022/07/'> July 2022 </option>
+	<option value='https://dspace.org/2022/06/'> June 2022 </option>
+	<option value='https://dspace.org/2022/05/'> May 2022 </option>
+	<option value='https://dspace.org/2022/04/'> April 2022 </option>
+	<option value='https://dspace.org/2022/02/'> February 2022 </option>
+	<option value='https://dspace.org/2021/11/'> November 2021 </option>
+	<option value='https://dspace.org/2021/08/'> August 2021 </option>
+	<option value='https://dspace.org/2021/04/'> April 2021 </option>
+	<option value='https://dspace.org/2020/10/'> October 2020 </option>
+	<option value='https://dspace.org/2020/09/'> September 2020 </option>
+	<option value='https://dspace.org/2020/04/'> April 2020 </option>
+	<option value='https://dspace.org/2020/03/'> March 2020 </option>
+	<option value='https://dspace.org/2019/12/'> December 2019 </option>
+	<option value='https://dspace.org/2019/11/'> November 2019 </option>
+	<option value='https://dspace.org/2019/10/'> October 2019 </option>
+	<option value='https://dspace.org/2019/09/'> September 2019 </option>
+	<option value='https://dspace.org/2019/08/'> August 2019 </option>
+	<option value='https://dspace.org/2019/07/'> July 2019 </option>
+	<option value='https://dspace.org/2019/06/'> June 2019 </option>
+	<option value='https://dspace.org/2019/05/'> May 2019 </option>
+	<option value='https://dspace.org/2019/04/'> April 2019 </option>
+	<option value='https://dspace.org/2019/03/'> March 2019 </option>
+	<option value='https://dspace.org/2019/02/'> February 2019 </option>
+	<option value='https://dspace.org/2019/01/'> January 2019 </option>
+	<option value='https://dspace.org/2018/12/'> December 2018 </option>
+	<option value='https://dspace.org/2018/11/'> November 2018 </option>
+	<option value='https://dspace.org/2018/10/'> October 2018 </option>
+	<option value='https://dspace.org/2018/09/'> September 2018 </option>
+	<option value='https://dspace.org/2018/08/'> August 2018 </option>
+	<option value='https://dspace.org/2018/07/'> July 2018 </option>
+	<option value='https://dspace.org/2018/06/'> June 2018 </option>
+	<option value='https://dspace.org/2018/05/'> May 2018 </option>
+	<option value='https://dspace.org/2018/04/'> April 2018 </option>
+	<option value='https://dspace.org/2018/03/'> March 2018 </option>
+	<option value='https://dspace.org/2018/02/'> February 2018 </option>
+	<option value='https://dspace.org/2018/01/'> January 2018 </option>
+	<option value='https://dspace.org/2017/12/'> December 2017 </option>
+	<option value='https://dspace.org/2017/11/'> November 2017 </option>
+	<option value='https://dspace.org/2017/10/'> October 2017 </option>
+	<option value='https://dspace.org/2017/09/'> September 2017 </option>
+	<option value='https://dspace.org/2017/08/'> August 2017 </option>
+	<option value='https://dspace.org/2017/07/'> July 2017 </option>
+	<option value='https://dspace.org/2017/06/'> June 2017 </option>
+	<option value='https://dspace.org/2017/05/'> May 2017 </option>
+	<option value='https://dspace.org/2017/04/'> April 2017 </option>
+	<option value='https://dspace.org/2017/03/'> March 2017 </option>
+	<option value='https://dspace.org/2017/02/'> February 2017 </option>
+	<option value='https://dspace.org/2017/01/'> January 2017 </option>
+	<option value='https://dspace.org/2016/11/'> November 2016 </option>
+	<option value='https://dspace.org/2016/10/'> October 2016 </option>
+	<option value='https://dspace.org/2016/09/'> September 2016 </option>
+	<option value='https://dspace.org/2015/03/'> March 2015 </option>
+
+		</select>
+
+			<script>
+( ( dropdownId ) => {
+	const dropdown = document.getElementById( dropdownId );
+	function onSelectChange() {
+		setTimeout( () => {
+			if ( 'escape' === dropdown.dataset.lastkey ) {
+				return;
+			}
+			if ( dropdown.value ) {
+				document.location.href = dropdown.value;
+			}
+		}, 250 );
+	}
+	function onKeyUp( event ) {
+		if ( 'Escape' === event.key ) {
+			dropdown.dataset.lastkey = 'escape';
+		} else {
+			delete dropdown.dataset.lastkey;
+		}
+	}
+	function onClick() {
+		delete dropdown.dataset.lastkey;
+	}
+	dropdown.addEventListener( 'keyup', onKeyUp );
+	dropdown.addEventListener( 'click', onClick );
+	dropdown.addEventListener( 'change', onSelectChange );
+})( "archives-dropdown-2" );
+
+//# sourceURL=WP_Widget_Archives%3A%3Awidget
+</script>
+</div>	</div>
+		</div>
+	</div>
+</div>
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+	<div id="footer-widgets" class="clearfix">
+		<div class="footer-widget"><div id="custom_html-2" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><img src="https://dspace.org/wp-content/uploads/2025/09/DSpace-logo-light_fixed-2.png" alt="DSpace logo">
+
+<span style="font-size:11px; line-height:1em;">© Copyright 2026. DSpace. All rights reserved.</span></div></div></div><div class="footer-widget"><div id="nav_menu-2" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">About</h4><div class="menu-about-footer-container"><ul id="menu-about-footer" class="menu"><li id="menu-item-232030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232030"><a href="https://dspace.org/about/">About DSpace</a></li>
+<li id="menu-item-22982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22982"><a href="https://dspace.org/annual-report/">Annual Reports</a></li>
+<li id="menu-item-232509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232509"><a href="https://dspace.org/governance/">Governance</a></li>
+<li id="menu-item-232510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232510"><a href="https://dspace.org/leadership-group/">Leadership Group</a></li>
+<li id="menu-item-232511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232511"><a href="https://dspace.org/steering-group/">Steering Group</a></li>
+<li id="menu-item-232025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232025"><a href="https://dspace.org/registry/">Registered Sites</a></li>
+<li id="menu-item-230858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230858"><a href="https://dspace.org/our-team/">Meet The Team</a></li>
+<li id="menu-item-232026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232026"><a href="https://dspace.org/register-your-instance/">Register Your Instance</a></li>
+<li id="menu-item-232027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232027"><a href="https://dspace.org/newsletter/">Subscribe To Newsletter</a></li>
+<li id="menu-item-232028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232028"><a href="https://dspace.org/license/">DSpace Source Code BSD License</a></li>
+<li id="menu-item-22983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22983"><a href="https://dspace.org/organizational-home/">Organizational Home</a></li>
+<li id="menu-item-231417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-231417"><a rel="privacy-policy" href="https://dspace.org/privacy-policy/">Privacy Policy</a></li>
+</ul></div></div></div><div class="footer-widget"><div id="nav_menu-3" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Why DSpace</h4><div class="menu-why-dspace-footer-container"><ul id="menu-why-dspace-footer" class="menu"><li id="menu-item-118578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118578"><a href="https://dspace.org/why-choose-dspace/">Why Choose DSpace?</a></li>
+<li id="menu-item-22986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22986"><a href="https://dspace.org/features/">Features</a></li>
+<li id="menu-item-118576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118576"><a href="https://dspace.org/demo/">Demo</a></li>
+<li id="menu-item-232033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232033"><a href="https://dspace.org/testimonials/">Testimonials</a></li>
+<li id="menu-item-232032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232032"><a href="https://dspace.org/share-your-story/">Share Your DSpace Story</a></li>
+</ul></div></div></div><div class="footer-widget"><div id="nav_menu-4" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Community</h4><div class="menu-community-footer-container"><ul id="menu-community-footer" class="menu"><li id="menu-item-232039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232039"><a href="https://dspace.org/join-the-community/">Join the Community</a></li>
+<li id="menu-item-22990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22990"><a href="https://dspace.org/membership/">Membership</a></li>
+<li id="menu-item-230914" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-230914"><a target="_blank" href="https://my.lyrasis.org/s/product-details?id=a1BUh000001HHOrMAO">Become a Member</a></li>
+<li id="menu-item-232037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232037"><a href="https://dspace.org/meet-our-members/">Meet Our Members</a></li>
+<li id="menu-item-232038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232038"><a href="https://dspace.org/community-contributors/">Contributors</a></li>
+<li id="menu-item-118674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118674"><a href="https://dspace.org/contribute-to-development-fund/">Development Fund</a></li>
+<li id="menu-item-232243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232243"><a href="https://dspace.org/promoting-dspace/">Promoting DSpace</a></li>
+</ul></div></div></div><div class="footer-widget"><div id="nav_menu-7" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Service Providers</h4><div class="menu-service-providers-footer-container"><ul id="menu-service-providers-footer" class="menu"><li id="menu-item-232043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232043"><a href="https://dspace.org/registered-service-providers/">Registered Service Providers</a></li>
+</ul></div></div></div><div class="footer-widget"><div id="nav_menu-6" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Help &#038; Resources</h4><div class="menu-help-resources-footer-container"><ul id="menu-help-resources-footer" class="menu"><li id="menu-item-232040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232040"><a href="https://dspace.org/help-resources/">Help &#038; Resources</a></li>
+<li id="menu-item-23003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23003"><a href="https://dspace.org/download/">Download Latest Release</a></li>
+<li id="menu-item-23007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23007"><a target="_blank" href="https://dspace.org/get-support">Get Support</a></li>
+<li id="menu-item-118691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118691"><a href="https://dspace.org/video-tutorials/">Video Tutorials</a></li>
+<li id="menu-item-23004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23004"><a href="https://dspace.org/how-to-configure-dspace/">How to Configure DSpace</a></li>
+<li id="menu-item-23006" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23006"><a target="_blank" href="https://wiki.lyrasis.org/display/DSPACE/">Wiki Documentation</a></li>
+<li id="menu-item-232041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232041"><a href="https://dspace.org/support-dspace/">Ways to Contribute</a></li>
+<li id="menu-item-23009" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-23009"><a href="https://dspace.org/news/">News &#038; Updates</a></li>
+<li id="menu-item-232042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232042"><a href="https://dspace.org/contact/">Contact</a></li>
+</ul></div></div></div>	</div>
+</div>
+
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="#" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="#" class="icon">
+			<span>X</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="#" class="icon">
+			<span>Instagram</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-rss">
+		<a href="https://dspace.org/feed/" class="icon">
+			<span>RSS</span>
+		</a>
+	</li>
+
+</ul><p id="footer-info">Designed by <a href="https://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="https://www.wordpress.org">WordPress</a></p>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/altitude-by-lovedivi/*","/wp-content/themes/Divi/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+ <style id='pac-da-global-styles-css'>  </style> 		<script type="text/javascript">
+			(function() {
+				let targetObjectName = 'EM';
+				if ( typeof window[targetObjectName] === 'object' && window[targetObjectName] !== null ) {
+					Object.assign( window[targetObjectName], []);
+				} else {
+					console.warn( 'Could not merge extra data: window.' + targetObjectName + ' not found or not an object.' );
+				}
+			})();
+		</script>
+		<link rel='stylesheet' id='et-builder-googlefonts-css' href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic|Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&#038;subset=latin,latin-ext&#038;display=swap' media='all' />
+<script id="gs-swiper-js" src="https://dspace.org/wp-content/plugins/gs-logo-slider/assets/libs/swiper-js/swiper.min.js?ver=3.8.9"></script>
+<script id="gs-tippyjs-js" src="https://dspace.org/wp-content/plugins/gs-logo-slider/assets/libs/tippyjs/tippy-bundle.umd.min.js?ver=3.8.9"></script>
+<script id="gs-images-loaded-js" src="https://dspace.org/wp-content/plugins/gs-logo-slider/assets/libs/images-loaded/images-loaded.min.js?ver=3.8.9"></script>
+<script id="gs-logo-public-js" src="https://dspace.org/wp-content/plugins/gs-logo-slider/assets/js/gs-logo.min.js?ver=3.8.9"></script>
+<script id="sp-eap-accordion-js" src="https://dspace.org/wp-content/plugins/easy-accordion-free/Blocks/assets/js/sp-eap-accordion.js?ver=3.1.11"></script>
+<script id="sp_eab_script_js-js-extra">
+var sp_eab_ajax = {"ajax_url":"https://dspace.org/wp-admin/admin-ajax.php","nonce":"ff54096ce5"};
+//# sourceURL=sp_eab_script_js-js-extra
+</script>
+<script id="sp_eab_script_js-js" src="https://dspace.org/wp-content/plugins/easy-accordion-free/Blocks/assets/js/script.js?ver=3.1.11"></script>
+<script id="pac-da-js-after">
+jQuery(document).ready(function($) {
+                    $("img").mouseenter(function() {
+                        let $pac_da_title = $(this).attr("title");
+                        $(this).attr("pac_da_title", $pac_da_title);
+                        $(this).attr("title", "");
+                    }).mouseleave(function() {
+                        let $pac_da_title = $(this).attr("pac_da_title");
+                        $(this).attr("title", $pac_da_title);
+                        $(this).removeAttr("pac_da_title");
+                    });
+                });
+                
+//# sourceURL=pac-da-js-after
+</script>
+<script id="pac-da-accessibility-viewport-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/meta-viewport.min.js?ver=1.3.10"></script>
+<script id="pac-da-accessibility-focusable-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/focusable-modules.min.js?ver=1.3.10"></script>
+<script id="pac-da-keyboard-navigation-outline-js-extra">
+var pac_da_objj = {"keyboardOutlineColor":"#E1271A"};
+//# sourceURL=pac-da-keyboard-navigation-outline-js-extra
+</script>
+<script id="pac-da-keyboard-navigation-outline-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/keyboard-navigation-outline.min.js?ver=1.3.10"></script>
+<script id="pac-da-aria-Support-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/aria-support.min.js?ver=1.3.10"></script>
+<script id="pac-da-aria-Support-mobile-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/mobile-menu-aria-support.min.js?ver=1.3.10"></script>
+<script id="pac-da-aria-label-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/aria-label.min.js?ver=1.3.10"></script>
+<script id="pac-da-aria-hidden-icons-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/aria-hidden-icons.min.js?ver=1.3.10"></script>
+<script id="pac-da-skip-navigation-link-js-extra">
+var pac_da_obj = {"skipNavigationLinkText":"Skip To Content"};
+//# sourceURL=pac-da-skip-navigation-link-js-extra
+</script>
+<script id="pac-da-skip-navigation-link-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/skip-navigation-link.min.js?ver=1.3.10"></script>
+<script id="pac-da-fix-duplicate-menu-ids-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/fix-duplicate-menu-ids.min.js?ver=1.3.10"></script>
+<script id="pac-da-enable-dropdown-menu-keyboard-navigation-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/dropdown-menu-keyboard-navigation.min.js?ver=1.3.10"></script>
+<script id="pac-da-improve-screen-reader-and-roles-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/php/public/js/screen-reader-and-roles.min.js?ver=1.3.10"></script>
+<script id="console-errors-js" src="https://dspace.org/wp-content/plugins/divi-assistant/include/js/console-errors.min.js"></script>
+<script id="wp-accessibility-js-extra">
+var wpa = {"skiplinks":{"enabled":true,"output":""},"target":"1","tabindex":"1","underline":{"enabled":false,"target":"a"},"videos":"","dir":"ltr","viewport":"1","lang":"en-US","titles":"1","labels":"1","wpalabels":{"s":"Search","author":"Name","email":"Email","url":"Website","comment":"Comment"},"alt":"","altSelector":".hentry img[alt]:not([alt=\"\"]), .comment-content img[alt]:not([alt=\"\"]), #content img[alt]:not([alt=\"\"]),.entry-content img[alt]:not([alt=\"\"])","current":"","errors":"","tracking":"","ajaxurl":"https://dspace.org/wp-admin/admin-ajax.php","security":"52b6cf134b","action":"wpa_stats_action","url":"disabled","post_id":"","continue":"","pause":"Pause video","play":"Play video","restUrl":"https://dspace.org/wp-json/wp/v2/media","restNonce":"ed82442ec5","ldType":"button","ldHome":"https://dspace.org","ldText":"\u003Cspan class=\"dashicons dashicons-media-text\" aria-hidden=\"true\"\u003E\u003C/span\u003E\u003Cspan class=\"screen-reader\"\u003ELong Description\u003C/span\u003E"};
+//# sourceURL=wp-accessibility-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="wp-accessibility-js" src="https://dspace.org/wp-content/plugins/wp-accessibility/js/wp-accessibility.min.js?ver=2.4.4"></script>
+<script id="wpa-toolbar-js-extra">
+var wpatb = {"location":"body","is_rtl":"ltr","is_right":"reversed","responsive":"a11y-non-responsive","contrast":"Toggle High Contrast","grayscale":"Toggle Grayscale","fontsize":"Toggle Font size","custom_fontsize":"0","custom_location":"standard-location","enable_grayscale":"false","enable_fontsize":"true","enable_contrast":"true","factor":"1.6"};
+var wpa11y = {"path":"https://dspace.org/wp-content/plugins/wp-accessibility/toolbar/css/a11y-contrast.css?version=2.4.4"};
+//# sourceURL=wpa-toolbar-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="wpa-toolbar-js" src="https://dspace.org/wp-content/plugins/wp-accessibility/js/wpa-toolbar.min.js?ver=2.4.4"></script>
+<script id="divi-custom-script-js-extra">
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https://dspace.org/wp-admin/admin-ajax.php","images_uri":"https://dspace.org/wp-content/themes/Divi/images","builder_images_uri":"https://dspace.org/wp-content/themes/Divi/includes/builder/images","et_frontend_nonce":"256c0b8c7c","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"5d16b159ea","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"","unique_test_id":"","ab_bounce_rate":"","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https://dspace.org/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors","accent_color":"#92c644","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+//# sourceURL=divi-custom-script-js-extra
+</script>
+<script id="divi-custom-script-js" src="https://dspace.org/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.9"></script>
+<script id="fitvids-js" src="https://dspace.org/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.27.9"></script>
+<script id="et-core-common-js" src="https://dspace.org/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.9"></script>
+<script id="__ytprefsfitvids__-js" src="https://dspace.org/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=14.2.6.1"></script>
+</body>
+</html>

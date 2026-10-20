@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Archives Portal Europe",
+      "alternateName" : "APE",
+      "url" : "https://www.archivesportaleurope.net",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.archivesportaleurope.net/advanced-search/search-in-archives/?term={search_term_string}&using=default"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+	</script>
+
+	
+
+
+        <!-- Website created by GEL Studios Ltd https://www.gelstudios.co.uk/ //-->
+		<title>Archives Portal Europe Homepage</title>
+        <base href="https://www.archivesportaleurope.net/" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="description" content="Archives Portal Europe is the largest online archives catalogue in the world, a digital service that allows users to search through millions of records from hundreds of institutions in Europe and beyond.">
+        <meta name="keywords" content="">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="index,follow">
+        <meta name="author" content="Archives Portal Europe">
+
+       	<meta property="og:title" content="Archives Portal Europe Homepage">
+        <meta property="og:type" content="website">
+        
+        <meta property="og:image" content="https://www.archivesportaleurope.net/assets/components/phpthumbof/cache/LOGO%20N%20jpg.2a5d8703304789e4ed3e3332265932aa.png">
+        <meta property="og:site_name" content="Archives Portal Europe">
+        <meta property="og:description" content="Archives Portal Europe is the largest online archives catalogue in the world, a digital service that allows users to search through millions of records from hundreds of institutions in Europe and beyond.">
+
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/vnd.microsoft.icon" />
+    	<link rel="icon" href="/assets/images/favicon.ico" type="image/vnd.microsoft.icon" />
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/tooltipster.bundle.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-datetimepicker.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/quill.snow.css" media="screen" />
+        
+        <link rel="stylesheet" type="text/css" href="/assets/css/fullcalendar.min.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/assets/style.css?1792460840" media="screen" />
+        <script>
+            var section = '';
+        </script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+              integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+              crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin=""></script>
+
+
+
+</head>
+<body>
+	<header class="noSearch">
+<div class="container" data-name="header_all">
+    <div class="row">
+        <div class="col-md-3">
+            <a class="logo" href="https://www.archivesportaleurope.net/"><img src="assets/images/logo.jpg"></a>
+            
+            <span class="mobileButton"><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="col-md-9">
+            <div class="tools">
+               
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<div id="navBar">
+    <div class="container">
+        <nav id="navPrimary">
+            <ul>
+                <li><a href="https://www.archivesportaleurope.net/"><i class="fas fa-home"></i></a></li>
+                <li class="first"><a href="https://www.archivesportaleurope.net/advanced-search/" >Advanced search</a></li><li><a href="https://www.archivesportaleurope.net/find-an-institution/" >Find an institution</a></li><li><a href="https://www.archivesportaleurope.net/explore/" >Explore</a></li><li class="parent"><a href="https://www.archivesportaleurope.net/about-us/" >About us</a><ul class=""><li class="first"><a href="https://www.archivesportaleurope.net/about-us/the-portal/" >The portal</a></li><li><a href="https://www.archivesportaleurope.net/about-us/who-we-are/" >Who we are</a></li><li><a href="https://www.archivesportaleurope.net/about-us/background/" >Background</a></li><li><a href="https://www.archivesportaleurope.net/about-us/join-us/" >Join us</a></li><li><a href="https://www.archivesportaleurope.net/about-us/our-media-kit/" >Our media kit</a></li><li class="last"><a href="https://www.archivesportaleurope.net/about-us/work-with-us/" >Work with us</a></li></ul></li><li class="parent"><a href="https://www.archivesportaleurope.net/tools/" >Tools</a><ul class=""><li class="first"><a href="https://www.archivesportaleurope.net/tools/research-tools/" >How the portal works</a></li><li class="parent"><a href="https://www.archivesportaleurope.net/tools/ape-grants/" >APE Grants</a><ul class=""><li class="first"><a href="https://www.archivesportaleurope.net/tools/ape-grants/ape-creative-grant/" >APE Creative Grant</a></li><li><a href="https://www.archivesportaleurope.net/tools/ape-grants/ape-digitisation-grants/" >APE Digitisation Grants</a></li><li class="last"><a href="https://www.archivesportaleurope.net/tools/ape-grants/ape-research-grant/" >APE Research Grant</a></li></ul></li><li class="parent"><a href="https://www.archivesportaleurope.net/tools/for-content-providers/" >For Content Providers</a><ul class=""><li class="first"><a href="https://www.archivesportaleurope.net/tools/for-content-providers/standards/" >Standards</a></li><li><a href="https://www.archivesportaleurope.net/tools/for-content-providers/data-preparation/" >Data preparation</a></li><li class="last"><a href="https://www.archivesportaleurope.net/tools/for-content-providers/supporting-software/" >Supporting software</a></li></ul></li><li class="parent"><a href="https://www.archivesportaleurope.net/tools/for-users/" >For Users</a><ul class=""><li class="first"><a href="https://www.archivesportaleurope.net/tools/for-users/bibliography/" >Bibliography</a></li><li class="last"><a href="https://www.archivesportaleurope.net/tools/for-users/genealogy/" >Genealogy</a></li></ul></li><li><a href="https://www.archivesportaleurope.net/tools/automated-topic-detection/" >Automated Topic Detection Tool</a></li><li class="parent"><a href="https://www.archivesportaleurope.net/tools/archiving-by-design/" >Archiving by Design</a><ul class=""><li class="first"><a href="https://www.archivesportaleurope.net/tools/archiving-by-design/archiving-by-design-guidelines/" >Archiving by Design guidelines</a></li><li><a href="https://www.archivesportaleurope.net/tools/archiving-by-design/archiving-by-design-requirements/" >Archiving by Design requirements</a></li><li class="last"><a href="https://www.archivesportaleurope.net/tools/archiving-by-design/archiving-by-design-glossary/" >Archiving by Design glossary</a></li></ul></li><li><a href="https://www.archivesportaleurope.net/tools/crowdsourcing/" >Crowdsourcing</a></li><li class="last"><a href="https://www.archivesportaleurope.net/tools/useful-links/" >Useful links</a></li></ul></li><li class="parent"><a href="https://www.archivesportaleurope.net/news-events/" >News & Events</a><ul class=""><li class="first"><a href="https://www.archivesportaleurope.net/blog/" >Blog</a></li><li class="last"><a href="https://www.archivesportaleurope.net/newsletter/" >Newsletter</a></li></ul></li><li class="last"><a href="https://www.archivesportaleurope.net/satisfaction-surveys/" >Satisfaction surveys</a></li>
+                <li><a class="toggleHelp">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<nav id="navMobile">
+    <div class="navContainer">
+        <span class="mobileButton"><i class="far fa-times"></i></span>
+       
+        <ul class="pinkBG">
+            <li class="first"><a href="https://www.archivesportaleurope.net/advanced-search/" ><i class="far fa-search"></i> Advanced search</a></li><li class="last"><a href="https://www.archivesportaleurope.net/explore/" ><i class="fas fa-compass"></i> Explore</a></li>
+        </ul>
+        <ul class="blueBG">
+            <li class="first"><a href="https://www.archivesportaleurope.net/find-an-institution/" ><i class="far fa-landmark"></i> Find an institution</a></li><li class="parent"><a><i class="fas fa-info"></i> About us</a><ul class=""><span class="mobileButton"><i class="far fa-times"></i></span><li class="back"><a><i class="far fa-angle-left"></i> Back</a></li><li class="title"><a href="#">About us</a></li><li class="first"><a href="https://www.archivesportaleurope.net/about-us/the-portal/" >The portal</a></li><li><a href="https://www.archivesportaleurope.net/about-us/who-we-are/" >Who we are</a></li><li><a href="https://www.archivesportaleurope.net/about-us/background/" >Background</a></li><li><a href="https://www.archivesportaleurope.net/about-us/join-us/" >Join us</a></li><li><a href="https://www.archivesportaleurope.net/about-us/our-media-kit/" >Our media kit</a></li><li class="last"><a href="https://www.archivesportaleurope.net/about-us/work-with-us/" >Work with us</a></li></ul></li><li class="parent"><a><i class="fas fa-wrench"></i> Tools</a><ul class=""><span class="mobileButton"><i class="far fa-times"></i></span><li class="back"><a><i class="far fa-angle-left"></i> Back</a></li><li class="title"><a href="#">Tools</a></li><li class="first"><a href="https://www.archivesportaleurope.net/tools/research-tools/" >How the portal works</a></li><li><a href="https://www.archivesportaleurope.net/tools/ape-grants/" >APE Grants</a></li><li><a href="https://www.archivesportaleurope.net/tools/for-content-providers/" >For Content Providers</a></li><li><a href="https://www.archivesportaleurope.net/tools/for-users/" >For Users</a></li><li><a href="https://www.archivesportaleurope.net/tools/automated-topic-detection/" >Automated Topic Detection Tool</a></li><li><a href="https://www.archivesportaleurope.net/tools/archiving-by-design/" >Archiving by Design</a></li><li><a href="https://www.archivesportaleurope.net/tools/crowdsourcing/" >Crowdsourcing</a></li><li class="last"><a href="https://www.archivesportaleurope.net/tools/useful-links/" >Useful links</a></li></ul></li><li class="parent"><a><i class="fas fa-comments"></i> News & Events</a><ul class=""><span class="mobileButton"><i class="far fa-times"></i></span><li class="back"><a><i class="far fa-angle-left"></i> Back</a></li><li class="title"><a href="#">News & Events</a></li><li class="first"><a href="https://www.archivesportaleurope.net/blog/" >Blog</a></li><li class="last"><a href="https://www.archivesportaleurope.net/newsletter/" >Newsletter</a></li></ul></li><li class="last"><a href="https://www.archivesportaleurope.net/satisfaction-surveys/" > Satisfaction surveys</a></li>
+        </ul>
+        <ul>
+            <li class="parent">
+                <a><i class="fas fa-life-ring"></i> Help</a>
+                <ul>
+                    <span class="mobileButton"><i class="far fa-times"></i></span>
+                    <li class="back"><a><i class="far fa-angle-left"></i> Back</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-comment"></i> Contact</a></li>
+            <li><a href="https://deprecated.archivesportaleurope.net/sign-in"><i class="fas fa-sign-in"></i> Create account</a></li>
+            <li><a href="https://deprecated.archivesportaleurope.net/sign-in"><i class="fas fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+	<style>
+		#advSearchControls .contentDropdown {
+			color: #555;
+		}
+
+		#advSearchControls .contentDropdown .checkbox input::before,
+		#advSearchControlsP.blueBG .contentDropdown .checkbox input::before {
+			color: #555;
+		}
+
+		#advSearchControls .contentDropdown .tipTitle {
+			padding-left: 0;
+			color: #AAA;
+		}
+
+		#advSearchControls .contentDropdown .tooltipstered {
+			display: none;
+		}
+
+		#advSearchControls .contentDropdown {
+			padding: 11px 10px 5px 10px;
+			border: 1px solid #aeaeae;
+		}
+
+		#advSearchControls .contentDropdown>.title:after {
+			top: 12px;
+			color: #AAA;
+		}
+		@media (min-width: 992px) {
+			#advSearchControls .advSubmit, #advSearchControlsP .advSubmit {
+				text-align: right;
+				margin-top: -45px;
+			}
+
+		}
+
+	</style>
+
+	<section id="homeHero" style="background-image:url(/assets/components/phpthumbof/cache/home_hero_bg.9963cdeb490026fcfdf8f5c97ca1c2f3.jpg);">
+		<div class="overlay">
+			<div class="magGlass"></div>
+			<div class="container">
+				<div class="content text-center">
+					<h1>The history of Europe - one click away</h1>
+					
+					<p>Archives Portal Europe provides you with a single access to find, browse and discover information on archives about Europe held by thousands of cultural heritage institutions from more than 30 countries. We continually grow and expand our content, adding more countries, more institutions, and more archival collections.</p>
+				</div>
+				<div id="searchContainer">
+					<div class="content text-center">
+						<div class="tipTitle">
+							<div class="tipIcon" data-tooltip-content="#searchMainTooltip">
+								<i class="far fa-question-circle"></i>
+							</div>
+							<h4>Start your search</h4>
+						</div>
+						<p>Type in your keywords and discover over 650,000 archival collections including hundreds of millions of documents, the persons and organisations that created and used these documents, and the institutions holding the archival material today.</p>
+					</div>
+					<form class="search large" action="https://www.archivesportaleurope.net/" method="post">
+						<input type="text" autocomplete="off" data-input="search_term" class="searchField" name="search"
+							placeholder="Type search term..."
+							value="">
+						<input type="submit" data-control="search_term_trigger" data-switch-to="archive">
+						<div class="suggestions" data-interface="suggestions">
+
+							<div class="suggest_inner" data-container="section_suggest" style="display: none;">
+								<h5>Sections</h5>
+								<div data-populate="section_suggest"></div>
+								<hr>
+							</div>
+
+							<div class="suggest_inner" data-container="spelling_suggest" style="display: none;">
+								<h5>Spelling</h5>
+								<div data-populate="spelling_suggest"></div>
+								<hr>
+							</div>
+
+							<div class="suggest_inner" data-container="topic_suggest" style="display: none;">
+								<h5>Topics</h5>
+								<div data-populate="topic_suggest"></div>
+								<hr>
+							</div>
+
+
+							
+
+
+						</div>
+						<span class="clearSearch">Clear search term</span>
+						<div class="tools clearfix">
+							<a class="expandAdv"><span>Show</span> advanced search options <i
+									class="fas fa-angle-down"></i></a>
+							<div class="checkboxes" data-control="checkbox_filters">
+								<span class="checkbox">
+									<input data-type="homepage_filter" data-filter-field="containsdigital" data-filter-value="true"
+										data-filter-type="boolean" type="checkbox" name="Contains digital objects">
+									<span class="tipText">
+										Show only materials with digital objects
+										<div class="tipIcon" data-tooltip-content="#searchDigitalTooltip">
+											<i class="far fa-question-circle"></i>
+										</div>
+									</span>
+								</span>
+								<span class="checkbox">
+									<input data-type="homepage_filter" data-filter-field="separate" data-filter-value="true" data-filter-type="boolean"
+										type="checkbox" name="separate">
+									<span class="tipText">
+										Search each term separately
+										<div class="tipIcon" data-tooltip-content="#searchTermTooltip">
+											<i class="far fa-question-circle"></i>
+										</div>
+									</span>
+								</span>
+							</div>
+						</div>
+						<div id="advSearchControls">
+							<p class="bold">These advanced options will focus on results from "Search in archives".</p>
+							<div class="row">
+								<div class="col-sm-6 col-md-3">
+									<div class="advControl">
+										<div class="tipTitle">
+											<div class="tipIcon" data-tooltip-content="#searchElementTooltip">
+												<i class="far fa-question-circle"></i>
+											</div>
+											<p class="strongLabel">Search using</p>
+										</div>
+										<div class="contentDropdown select-topics" data-g="search-select-topics">
+											<div class="title">
+												<div class="tipTitle">
+													<div class="tipIcon tooltipstered"
+														data-tooltip-content="#searchFilterusingTooltip">
+														<i class="far fa-question-circle"></i>
+													</div>
+													Search using
+												</div>
+											</div>
+											<div class="inner" data-facet-set="using" style="display: none;">
+												
+												<div class="checkboxList" data-control="using">
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="advControl">
+										<div class="tipTitle">
+											<div class="tipIcon" data-tooltip-content="#searchDocumentTooltip">
+												<i class="far fa-question-circle"></i>
+											</div>
+											<p class="strongLabel">Find document type</p>
+										</div>
+
+										<div class="contentDropdown">
+											<div class="title">
+												<div class="tipTitle">
+													<div class="tipIcon tooltipstered"
+														data-tooltip-content="#searchFiltertypesTooltip">
+														<i class="far fa-question-circle"></i>
+													</div>
+													Document Type
+												</div>
+											</div>
+											<div class="inner">
+												<div class="checkboxList" data-control="types">
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 hidden">
+									<div class="advControl">
+										<div class="tipTitle">
+											<div class="tipIcon" data-tooltip-content="#searchDateTooltip">
+												<i class="far fa-question-circle"></i>
+											</div>
+											<p class="strongLabel">Date search</p>
+										</div>
+										<div class="dateSearch">
+											<span class="checkbox">
+												<input type="checkbox" name="exactDate" value="1">
+												Exact date search
+											</span>
+											<div class="inputWrapper">
+												<i class="far fa-calendar-alt"></i>
+												<input type="text" id="dateFrom" name="dateFrom" data-input-type="homepage_date_from"
+													placeholder="DD-MM-YYYY">
+											</div>
+											<span class="to">to</span>
+											<div class="inputWrapper">
+												<i class="far fa-calendar-alt"></i>
+												<input type="text" id="dateTo" name="dateTo" data-input-type="homepage_date_to"
+													placeholder="DD-MM-YYYY">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="advSubmit">
+								
+								<a class="button large pink submitSearch1" data-control="search_term_trigger" data-switch-to="archive"><i class="fas fa-search"></i>
+									Search</a>
+								<a class="hideAdv">Hide advanced search options <i
+										class="fas fa-angle-up"></i></a>
+							</div>
+						</div>
+						<div class="mobileSubmit">
+							<a class="button large pink submitSearch2" data-control="search_term_trigger"
+								data-switch-to="archive"><i class="fas fa-search"></i> Search</a>
+							<span class="reduceSearch"><i class="fas fa-eye-slash"></i> Reduce search</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="halfTopMargin">
+	<div class="container">
+		<div class="content text-center">
+			<h4 class="superTitle">Not sure what to search?</h4>
+			<h2><strong>Explore</strong> our highlights and topics</h2>
+		</div>
+		<ul class="nav-tabs buttons mt30">
+			<li class="active"><a href="#tabDocuments" data-toggle="tab">Features</a></li>
+			<li><a href="#tabTopics" data-toggle="tab">Topics</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="tabDocuments" class="tab-pane fade active in">
+				<div class="content text-center">
+					<p>Explore the treasures of European culture and dive into special stories behind the scenes, with these highlights from our partner institutions' most precious collections. </p>
+				</div>
+				<div id="homeDocumentsSlider" class="linkBlockSlider">
+					<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/highlights/toys-in-the-archives/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/Screenshot%202026-10-19%20at%2012.32.33.2e1e365a3ceacc3c98be8c4f535aed91.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>Toys in the Archives</h5>
+							    <p>Playing is one of the most important human activities, and we searched for how toys and games are represented in the archives</p>
+							    <span class="date">
+							        
+							        <i class="far fa-calendar-alt mr"></i> 19-10-2026
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/highlights/the-genoa-g8,-25-years-later/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/Screenshot_2026-07-20_at_13.31.37.a19c132504ed75779c183d6b5fab5cd5.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>The Genoa G8, 25 years later</h5>
+							    <p>The infamous 2001 Genoa G8 is now History - here are some of the archival traces in Archives Portal Europe</p>
+							    <span class="date">
+							        
+							        <i class="far fa-calendar-alt mr"></i> 20-07-2026
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/highlights/women-farmers-in-the-archives/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/Screenshot_2026-10-13_at_17.19.43.2cfe40b090902d0b38c52603a72931d3.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>Women Farmers in the archives</h5>
+							    <p>2026 is the International Year of the Woman Farmer, and we celebrate the archival traces of the women who fed humanity </p>
+							    <span class="date">
+							        
+							        <i class="far fa-calendar-alt mr"></i> 16-06-2026
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/highlights/world-cup-in-the-archives/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/Screenshot_2026-10-16_at_15.18.09.5f33cb14c728d371ee3ae2509f2e54cd.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>World Cup in the archives</h5>
+							    <p>We celebrate the 2026 FIFA world cup by diving in the archives searching for the essential: footballs, gloves, goalposts, and 22 players! </p>
+							    <span class="date">
+							        
+							        <i class="far fa-calendar-alt mr"></i> 11-06-2026
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/highlights/thefts-in-the-archives/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/Screenshot%202026-04-27%20at%2013.25.09.abda7e69ab0c7b94f12a74757ee69bf3.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>Thefts in the Archives</h5>
+							    <p>Thefts in the Archives explores the most famous cases of thefts in the archives, whether documents about theft and thieves, or thefts occurred in archives - this to keep the attention up on stolen patrimony from cultural heritage institutions</p>
+							    <span class="date">
+							        
+							        <i class="far fa-calendar-alt mr"></i> 26-01-2026
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/highlights/arts-in-archives-portal-europe/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/Storybook%20Stairs%20Meet%20Shadowy%20Figure.d39a404aff9a99486aa29965cd659013.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>Arts in the Archives</h5>
+							    <p>#ArtsinAPE celebrates all the music, literature, movies, and visual arts in our archives!</p>
+							    <span class="date">
+							        
+							        <i class="far fa-calendar-alt mr"></i> 12-01-2026
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+				</div>
+				<div class="content text-center">
+					<a class="button pink mt20" href="https://www.archivesportaleurope.net/explore/?tab=documents">View all highlights</a>
+				</div>
+			</div>
+			<div id="tabTopics" class="tab-pane fade">
+				<div class="content text-center">
+					<p>How about looking at our content from a different angle? We have 
+selected numerous topics that allow you to dive into the archives 
+material on a thematic or genre-related approach. </p>
+				</div>
+				<div id="homeTopicsSlider" class="linkBlockSlider">
+					<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/topics/arts/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/0_arts.fd6e9185cbaa74b3224dc48ce5a79953.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>Arts</h5>
+							    <p>Records on all types of arts, creative production, artists</p>
+							    <span class="date">
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/topics/social-history/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/0_social%20history.22ffeeb5c7f83d3f908955ddd09cd051.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>Social history</h5>
+							    <p>Documents that relate to the everyday life of the population, living and working conditions, welfare; collections related to historians of social history. This topic is currently a stub</p>
+							    <span class="date">
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/topics/genealogy/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/0_genealogy.086597833aa262c2460e048519ea87e8.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>Genealogy</h5>
+							    <p>Documents related to the study of families, ancestors, and lineage </p>
+							    <span class="date">
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/topics/church-records-and-registers/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/0_church%20records.85b19addb585cec63c8579ea7dcb7515.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>Church records and registers</h5>
+							    <p>Documents from church archives. This topic is currently a stub</p>
+							    <span class="date">
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+<div class="slide">
+						<a class="linkBlock" href="https://www.archivesportaleurope.net/explore/topics/world-war-i/">
+						    <span class="type pink"><i class="fas fa-file"></i></span>
+						    <div class="imageContainer">
+							    <div class="image short" style="background-image:url(/assets/components/phpthumbof/cache/0_ww1.509b1e8394a921dfd5edc52a34e1250b.c2750f27cf624b07477c83bcecd5f477.jpg);"></div>
+							</div>
+						    <div class="details">
+							    <h5>World War I</h5>
+							    <p>Documents related to the First World War (1914-18)</p>
+							    <span class="date">
+							        
+			                    </span>
+						    </div>
+						</a>
+					</div>
+				</div>
+				<div class="content text-center">
+					<a class="button pink mt20" href="https://www.archivesportaleurope.net/explore/?tab=topics">View all topics</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	
+	<section class="standard alternatingContent">
+		<div class="container">
+			
+			
+        
+	    <div class="row">
+			<div class="col-md-6">
+				<div class="vCentre mobileNL last">
+					<div class="inner">
+						<div class="content">
+							<h2>Do you know our <strong>research tools</strong>?<strong></strong></h2><p>Archival research is always complex, and Archives Portal Europe allows you to find new ways to search into archives. Thanks to the Portal you can search through institutions based in different countries, and in different languages, at the same time. We can help you find an approach specifically designed for your needs, no matter what period, topic, dataset, or collection you are looking for. Get the most out of Archives Portal Europe with our research tools.<br></p>
+							
+							    <a class="button blue" href="https://www.archivesportaleurope.net/tools/research-tools/">View our research tools</a>
+							
+							
+							     
+							
+						</div>
+					</div>
+				</div> 
+			</div>
+		    <div class="col-md-6">
+			    <div class="vCentre last">
+					<div class="inner">
+						<img class="img-responsive" src="/assets/components/phpthumbof/cache/Asset%202.ea8550da985bf62cb5ad8ce578c8478a.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		</div>
+	</section>
+	
+
+	
+
+	<section class="pink">
+		<div class="container">
+			<div class="content text-center">
+				<h2><strong>Join</strong> Archives Portal Europe</h2><p>Archives Portal Europe is a worldwide network of researchers, archivists, records managers and more. There are many ways to join and to contribute - whether as an institution looking to share its content online, as a professional archivist or history researcher, or as someone with a love for cultural heritage, read more on what’s in for you </p><p><strong>Join as:</strong></p>
+			</div>
+			<div class="centreButtons">
+				<a class="button blue border" href="https://www.archivesportaleurope.net/about-us/join-us/?tab=registered-user">Registered user</a><a class="button blue border" href="https://www.archivesportaleurope.net/about-us/join-us/?tab=content-provider">Content Provider</a><a class="button blue border" href="https://www.archivesportaleurope.net/about-us/join-us/?tab=country-manager">Country Manager</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="standard reducedBottomSM">
+    <div class="container">
+		<div class="content text-center">
+			
+			<h2>Find out more and <strong>stay up to date</strong></h2><p><strong>And if you want to subscribe to our newsletter, just click <a href="https://forms.gle/GWpZmpr2whg6VUfW8" target="_blank">here</a> </strong></p>
+		</div>
+		<div id="homeBlogSlider" class="linkBlockSlider inactive">
+            <div class="col-md-3">
+                        <a class="linkBlock" href="https://www.archivesportaleurope.net/blog/ape-at-the-ica-suv-conference/">
+                            <span class="type yellow"><i class="fas fa-tag"></i><span class="text open">Conferences & Workshops</span></span>
+        					<div class="imageContainer">
+        					    <div class="image" style="background-image:url(/assets/components/phpthumbof/cache/Screenshot_2026-10-16_at_14.52.24.15ac4f61bd9b64aa4aad344b83d231e3.jpg);"></div>
+        					</div>
+        					<div class="details">
+        						<h5>APE at the ICA-SUV conference</h5>
+        						<span class="date"><i class="far fa-calendar-alt mr"></i> 16-10-2026</span>																
+        					</div>
+        				</a>
+        			</div>
+<div class="col-md-3">
+                        <a class="linkBlock" href="https://www.archivesportaleurope.net/blog/meet-our-2026-digitisation-grant-holders/">
+                            <span class="type yellow"><i class="fas fa-tag"></i><span class="text open">Grants</span></span>
+        					<div class="imageContainer">
+        					    <div class="image" style="background-image:url(/assets/components/phpthumbof/cache/Apresentac__a__o5.79a1a10ac9d09e0d9b43c4665e9e0275.jpg);"></div>
+        					</div>
+        					<div class="details">
+        						<h5>Meet our 2026 digitisation grant holders</h5>
+        						<span class="date"><i class="far fa-calendar-alt mr"></i> 15-10-2026</span>																
+        					</div>
+        				</a>
+        			</div>
+<div class="col-md-3">
+                        <a class="linkBlock" href="https://www.archivesportaleurope.net/blog/free-exhibition-“lepanto-siege-and-liberation”/">
+                            <span class="type yellow"><i class="fas fa-tag"></i><span class="text open">Exhibitions & Events</span></span>
+        					<div class="imageContainer">
+        					    <div class="image" style="background-image:url(/assets/components/phpthumbof/cache/Fernando_Bertelli%2C_Die_Seeschlacht_von_Lepanto%2C_Venedig_1572%2C_Museo_Storico_Navale_%28550x500%29.d636ff024fed0781609250eefbbaa47a.jpg);"></div>
+        					</div>
+        					<div class="details">
+        						<h5>Free exhibition: “Lepanto: Siege and Liberation”</h5>
+        						<span class="date"><i class="far fa-calendar-alt mr"></i> 07-10-2026</span>																
+        					</div>
+        				</a>
+        			</div>
+<div class="col-md-3">
+                        <a class="linkBlock" href="https://www.archivesportaleurope.net/blog/800th-anniversary-of-the-death-of-francis-of-assisi/">
+                            <span class="type yellow"><i class="fas fa-tag"></i><span class="text open">APE Collections</span></span>
+        					<div class="imageContainer">
+        					    <div class="image" style="background-image:url(/assets/components/phpthumbof/cache/Screenshot_2026-10-06_at_13.56.09.36063427671fa892a51a069b8c190e95.jpg);"></div>
+        					</div>
+        					<div class="details">
+        						<h5>800th anniversary of the death of Francis of Assisi</h5>
+        						<span class="date"><i class="far fa-calendar-alt mr"></i> 06-10-2026</span>																
+        					</div>
+        				</a>
+        			</div>	
+		</div>
+	</div>
+</section>
+
+	
+	<section class="standard alternatingContent reducedTopSM">
+		<div class="container">
+			
+			
+        
+	    <div class="row">
+			<div class="col-md-6">
+				<div class="vCentre mobileNL last">
+					<div class="inner">
+						<div class="content">
+							<h2>Learn more <strong>about us</strong></h2><p>We are a passionate international team working closely to create a single entry point to all archives in and about Europe. Colleagues from more than 30 countries collaborate to integrate centuries of cultural heritage and to create new opportunities for historical research and heritage curation in a digital environment. Previously users had to visit various archival websites for their research, but Archives Portal Europe enables them to find information more efficiently from millions of archival materials stored in hundreds of institutions. This is the first time European archives have collaborated on this scale, and the potential that these connections provide is enormous for both archival professionals and the users.</p>
+							
+							    <a class="button blue" href="https://www.archivesportaleurope.net/about-us/">About us</a>
+							
+							
+							    <a class="button blue" href="https://www.archivesportaleurope.net/tools/">Our tools</a>
+							
+						</div>
+					</div>
+				</div> 
+			</div>
+		    <div class="col-md-6">
+			    <div class="vCentre last">
+					<div class="inner">
+						<img class="img-responsive" src="/assets/components/phpthumbof/cache/7b32e7a2-6070-47f6-8718-10a2aee5a2c1.37c5020c9ec547dcfaac3324b0df0dc8.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		</div>
+	</section>
+	
+
+	<footer>
+    <div class="container">
+		<div class="contactSocial">
+			<p>Follow us:</p>
+			<a href="https://www.facebook.com/archivesportaleurope.net" target="_blank"><img id='followUsImgFB' src="uploads/images/social/c_facebook.png" alt="Facebook" target="_blank" width="42px" height="42px"
+																				   onmouseover="onHover('followUsImgFB','uploads/images/social/c_b_facebook.png');" onmouseout="offHover('followUsImgFB','uploads/images/social/c_facebook.png');" /></a>
+
+<a href="https://twitter.com/ArchivesPortal" target="_blank"><img id='followUsImgTW' src="uploads/images/social/c_twitter.png" alt="Twitter" target="_blank" width="42px" height="42px"
+																				 onmouseover="onHover('followUsImgTW','uploads/images/social/c_b_twitter.png');" onmouseout="offHover('followUsImgTW','uploads/images/social/c_twitter.png');" /></a>
+
+<a href="https://x.com/ape_wgstandards?lang=en" target="_blank"><img id='followUsImgX' src="uploads/images/social/c_X.png" alt="X" width="42px" height="42px"
+																			   onmouseover="onHover('followUsImgX','uploads/images/social/c_b_X.png');" onmouseout="offHover('followUsImgX','uploads/images/social/c_X.png');" /></a>
+
+<a href="https://www.instagram.com/archivesportaleurope/" target="_blank"><img id='followUsImgIN' src="uploads/images/social/c_instagram.png" alt="Instagram" target="_blank" width="42px" height="42px"
+																					 onmouseover="onHover('followUsImgIN','uploads/images/social/c_b_instagram.png');" onmouseout="offHover('followUsImgIN','uploads/images/social/c_instagram.png');" /></a>
+
+<a href="https://www.linkedin.com/company/archives-portal-europe-foundation/" target="_blank"><img id='followUsImgLI' src="uploads/images/social/c_Linkedin.png" alt="Linkedin" target="_blank" width="42px" height="42px"
+																				   onmouseover="onHover('followUsImgLI','uploads/images/social/c_b_linkedin.png');" onmouseout="offHover('followUsImgLI','uploads/images/social/c_Linkedin.png');" /></a>
+
+<a href="https://bsky.app/profile/did:plc:ooua7nbntghhhrixogq7xmwq" target="_blank"><img id='followUsImgBL' src="uploads/images/social/c_bluesky.png" alt="Bluesky" target="_blank" width="42px" height="42px"
+																				 onmouseover="onHover('followUsImgBL','uploads/images/social/c_b_bluesky.png');" onmouseout="offHover('followUsImgBL','uploads/images/social/c_bluesky.png');" /></a>
+
+<a href="https://github.com/archivesportaleuropefoundation" target="_blank"><img id='followUsImgGI' src="uploads/images/social/a_github.png" alt="Github" target="_blank" width="42px" height="42px"
+																			   onmouseover="onHover('followUsImgGI','uploads/images/social/a_b_github.png');" onmouseout="offHover('followUsImgGI','uploads/images/social/a_github.png');" /></a>
+
+<a href="https://www.youtube.com/@archivesportaleurope9721" target="_blank"><img id='followUsImgYT' src="uploads/images/social/YOUTUBE.png" alt="Youtube" target="_blank" width="42px" height="42px"
+																				 onmouseover="onHover('followUsImgYT','uploads/images/social/YOUTUBEgreen.png');" onmouseout="offHover('followUsImgYT','uploads/images/social/YOUTUBE.png');" /></a>
+
+
+<script>
+
+	function onHover(imgId,url)
+	{
+		$("#"+imgId).attr('src', url);
+	}
+
+	function offHover(imgId,url)
+	{
+		$("#"+imgId).attr('src', url);
+	}
+
+</script>
+		</div>
+		<p>To learn more on our background and on searching in Archives Portal Europe, visit our <a href="https://www.archivesportaleurope.net/tools/" alt="Link to the Tools section" target="_blank">Tools</a> page or have a look at our <a href="https://www.archivesportaleurope.net/help/" alt="Link to Help">Help</a> section.
+</p><p>To check on our technical developments and on options to re-use our code, visit us on <a href="https://github.com/archivesportaleuropefoundation" target="_blank">GitHub</a>.<br>
+</p>
+		<div class="logos">
+			<a href="https://ec.europa.eu/cip/ict-psp/index_en.htm" target="_blank"><img class="logo" src="/uploads/footer-logos/ICTPSP_logo.png"></a>
+			<a href="https://ec.europa.eu/info/index_en" target="_blank"><img class="logo" src="/uploads/footer-logos/EU_flag.png"></a>
+			<a href="https://www.europeana.eu/en" target="_blank"><img class="logo" src="/uploads/footer-logos/Connected2Europeana.png"></a>
+            <img class="logo" src="">
+        </div>
+		<p>The portal is supported by the <a href="https://www.archivesportaleurope.net/about-us/who-we-are/" target="_blank">Archives Portal Europe Foundation</a>. It was initially created with funding from the <a href="https://www.archivesportaleurope.net/about-us/background/" target="_blank">European Commission</a>  - © 2025 APEF<br></p>
+		<a href="https://www.archivesportaleurope.net/contact-us/">Contact us</a><span class="pipe">|</span>
+<a href="https://www.archivesportaleurope.net/terms-of-use/">Terms of use</a><span class="pipe">|</span>
+<a href="https://www.archivesportaleurope.net/cookie-policy/">Cookie Policy</a><span class="pipe">|</span>
+<a href="https://www.archivesportaleurope.net/metadata-usage-guidelines/">Archives Portal Europe Metadata Usage Guidelines</a><span class="pipe">|</span>
+		Re-design by <a href="https://www.gelstudios.co.uk" target="_blank">GEL Studios</a>
+	</div>
+	<div class="col-xs-12 text-center" style="padding:30px 0 20px;">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}</script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>      
+    </div>  
+</footer>
+<div id="helpSlidein">
+    <div class="inner">
+        <a class="toggleHelp"><i class="far fa-times"></i></a>
+        <span class="loader"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparent none repeat scroll 0% 0%; display: block; shape-rendering: auto;" width="51px" height="51px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<g transform="rotate(0 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(30 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(60 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(90 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(120 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(150 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(180 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(210 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(240 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(270 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(300 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(330 50 50)">
+  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#b23063">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>
+  </rect>
+</g>
+</svg></span>
+        <div class="header">
+            <div class="selectDropdown closes">
+    		    <div class="title">Choose a help topic</div>
+    			<div class="inner">
+    				                <a class="helpLink" data-category="introduction" href="https://www.archivesportaleurope.net/help-topics/introduction/">Introduction</a>                                <a class="helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/search-and-find/">Search & Find</a>                                <a class="helpLink" data-category="topics" href="https://www.archivesportaleurope.net/help-topics/topics/">Topics</a>                                <a class="helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/glossary/">Glossary</a>                                <a class="helpLink" data-category="troubleshooting" href="https://www.archivesportaleurope.net/help-topics/troubleshooting/">Troubleshooting</a>                
+    			</div>
+    		</div>
+            <div id="helpContent">
+                <div class="inner">
+                    <h2>Archives Portal Europe help guide</h2>
+            		<div class="content">
+            		    <p>Please select amongst the relevant tips we can help with. If you still have questions, please do not hesitate to <a href="/cdn-cgi/l/email-protection#d7beb9b1b897b6a5b4bfbea1b2a4a7b8a5a3b6bbb2a2a5b8a7b2f9b9b2a3">contact us</a>, and we will be in touch as soon as possible. </p>
+            		</div>    
+        		</div>
+            </div>
+        </div>
+        <div class="helpNav">
+            <div class="searchTopics">
+                <h3>Choose a help topic</h3>
+                <form class="searchLight">
+                    <div class="inputWrapper">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="search" placeholder="Find help on...">
+                    </div>
+                </form>
+            </div>
+                        <div class="category introduction">
+                <h5>Introduction</h5>
+                <a class="button pink helpLink" data-category="introduction" href="https://www.archivesportaleurope.net/help-topics/what-is-archives-portal-europe/">What is Archives Portal Europe?</a>
+<a class="button pink helpLink" data-category="introduction" href="https://www.archivesportaleurope.net/help-topics/how-can-i-help/">How can I help?</a>                
+            </div>            <div class="category search-and-find">
+                <h5>Search & Find</h5>
+                <a class="button pink helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/what-can-i-find-in-archives-portal-europe/">What can I find in Archives Portal Europe?</a>
+<a class="button pink helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/troubles-finding-something/">I have troubles finding what I am looking for</a>
+<a class="button pink helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/filters/">Filters</a>
+<a class="button pink helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/multilingual-search/">Multilingual search</a>
+<a class="button pink helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/highlights/">Highlights</a>
+<a class="button pink helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/how-can-archives-portal-europe-help-me-in-my-research/">I need more help!</a>
+<a class="button pink helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/date-filter/">Date Filter</a>
+<a class="button pink helpLink" data-category="search-and-find" href="https://www.archivesportaleurope.net/help-topics/languages-in-ape/">Languages in APE</a>                
+            </div>            <div class="category topics">
+                <h5>Topics</h5>
+                <a class="button pink helpLink" data-category="topics" href="https://www.archivesportaleurope.net/help-topics/topic-search/">Topic search</a>
+<a class="button pink helpLink" data-category="topics" href="https://www.archivesportaleurope.net/help-topics/how-can-i-assign-a-topic/">How can I assign a topic?</a>
+<a class="button pink helpLink" data-category="topics" href="https://www.archivesportaleurope.net/help-topics/why-do-some-topics-only-host-a-few-documents/">Why do some topics only connect to a few documents?</a>
+<a class="button pink helpLink" data-category="topics" href="https://www.archivesportaleurope.net/help-topics/what-is-a-stub/">What is a stub?</a>                
+            </div>            <div class="category glossary">
+                <h5>Glossary</h5>
+                <a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/archival-landscape/">Archival landscape</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/collection/">Collection</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/content-provider/">Content provider</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/country-manager/">Country Manager</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/dashboard/">Dashboard</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/dpt/">Data Preparation Tool (DPT)</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/descriptive-unit/">Descriptive unit</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/digital-archival-object/">Digital archival object</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/finding-aid/">Finding aid</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/fonds/">Fonds</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/holdings-guide/">Holdings guide</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/institution-manager/">Institution Manager</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/metadata/">Metadata</a>
+<a class="button pink helpLink" data-category="glossary" href="https://www.archivesportaleurope.net/help-topics/source-guide/">Source guide</a>                
+            </div>            <div class="category troubleshooting">
+                <h5>Troubleshooting</h5>
+                <a class="button pink helpLink" data-category="troubleshooting" href="https://www.archivesportaleurope.net/help-topics/i-saved-the-url-of-a-finding-aid-but-i-cannot-retrieve-the-page/">I saved the URL of a finding aid but I cannot retrieve the page</a>
+<a class="button pink helpLink" data-category="troubleshooting" href="https://www.archivesportaleurope.net/help-topics/i-click-on-the-link-to-the-digital-object-but-it-does-not-bring-me-to-the-view-of-the-image/">I click on the link to the digital object but it does not work</a>
+<a class="button pink helpLink" data-category="troubleshooting" href="https://www.archivesportaleurope.net/help-topics/i-need-the-digital-object-but-it-is-not-linked-to-archives-portal-europe/">I need the digital object but it is not linked to Archives Portal Europe</a>
+<a class="button pink helpLink" data-category="troubleshooting" href="https://www.archivesportaleurope.net/help-topics/i-cannot-find-the-name-i-need-on-the-portal/">I cannot find the name I need on the portal</a>
+<a class="button pink helpLink" data-category="troubleshooting" href="https://www.archivesportaleurope.net/help-topics/i-know-what-i-am-looking-for-is-in-ape,-but-i-cannot-find-it/">I know what I am looking for is in APE, but I cannot find it</a>
+<a class="button pink helpLink" data-category="troubleshooting" href="https://www.archivesportaleurope.net/help-topics/how-can-i-search-by-date/">How can I search by DATE ?</a>                
+            </div>
+            <a class="returnLink helpLink return" href="https://www.archivesportaleurope.net/help-topics/"><i class="far fa-angle-left"></i> Return to help topics</a>
+        </div>
+    </div>
+</div>
+
+
+	<div id="cookieBanner" style="display:none;" onload="checkCookie()">
+    <div class="container">
+	    <p>Hi, could we please enable some additional services for analytics, functionalities and security? For more information, read our <a href="https://www.archivesportaleurope.net/cookie-policy/">Cookie policy</a>. <a class="button blackPink border cookieAccept">Accept</a> <a class="button blackPink border cookieReject">Reject non-essential</a></p>
+	</div>
+</div>
+
+
+	
+		<div class="promoBanner" id="ec0cfa3465dce4bf31f3be3bd3c3292d" style="display: none;">
+			<div class="container">
+				<h5>Please help us improve Archives Portal Europe by answering our satisfaction survey! <a href="https://www.archivesportaleurope.net/satisfaction-surveys/">More <i class="far fa-angle-right ml"></i></a></h5>
+				<span class="closeIcon"><i class="fas fa-times"></i></span>
+			</div>
+		</div>	
+	
+
+
+	<div id="tooltipContents">
+
+    <span id="searchMainTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>Starting your search here will include all content available in Archives Portal Europe. Simply enter your keyword(s) and hit the search button. Wrap fixed expressions in quotation marks, e.g. “French Revolution”. Check the box to “Search each term separately” in case you are looking for documents containing at least one word, but not necessarily all keywords; this will also allow you to search for the same term in multiple languages at the same time (e.g. “French Revolution” “Révolution Française”). You can also use wildcards - find more about <a href="https://www.archivesportaleurope.net/tools/research-tools/" target="_blank">Research Tools here</a>. If you would like to use more specific settings, try our <a href="https://www.archivesportaleurope.net/advanced-search/" target="_blank">Advanced search</a></p><p></p>
+        </div>
+	</span>
+	<span id="advancedSearchMainTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p></p><p>The additional advanced search options give you the possibility to focus your search in:<br></p><ul><li>archival documents (<strong>Search in archives</strong>),</li><li>names of person and organisations that created, worked with and maintained these documents (<strong>Search in names</strong>),</li><li>Institutions currently holding the documents (<strong>Search in institutions</strong>).</li></ul><p>When searching with multiple terms at the same time, wrap fixed expressions in quotation marks (e.g. "French Revolution"), or check the box "Search each term separately" in case you are looking for either one term of the other. This will also allow you to search for the same term in multiple languages (e.g. "French Revolution" "Révolution française"). You can also choose one of the suggestions matching your search term once you start typing.</p><p>        </p><p></p>
+        </div>
+	</span>
+	<span id="searchDigitalTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>This will only show results that include documents that have been digitised and are available online </p>
+        </div>
+	</span>
+	<span id="searchTermTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>Use this option to search only one or more keywords, rather than all of them<br></p><p>
+</p>
+        </div>
+	</span>
+	<span id="searchElementTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>Select where your search terms should appear specifically inside the archival description:</p><ul>
+	<li><strong>Title:</strong> search terms will appear in the title, or name, of the description</li>
+	<li><strong>Content Summary:</strong> search terms will appear in the main description of the document or of the collection</li>
+	<li><strong>Reference code:</strong> it is the identifier of the archival material as provided by the institution. Use this option if you know the exact reference code of the material you are looking for</li>
+</ul><p>
+</p>
+        </div>
+	</span>
+	<span id="searchElementNameTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>You can filter results by selecting where your search terms appears specifically inside the archival description:</p><ul><li>The <strong>name</strong> can be the full name of a person, family or organisation as well as only parts of it, e.g. only the last name.</li><li>The <strong>identifier</strong> is used internally by the institution or refers to (inter)national vocabularies such as the <a href="https://viaf.org/">Virtual International Authority File (VIAF)</a>.</li><li>The <strong>place</strong> can be the place of birth (or foundation), the place of death (or closing), the place of work or any other place of importance.</li><li>The <strong>occupation</strong> is the profession or job of a person.</li><li>The <strong>mandate</strong> is a law, directive or charter that establishes and defines an organisation's powers, functions, responsibilities or sphere of activities.</li><li>The <strong>function</strong> is an activity, role, or
+                        							purpose performed or manifested by a person, family or organisation.</li></ul>
+        </div>
+	</span>
+	<span id="searchElementInstitutionTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>You can filter results by selecting where your search terms appears specifically inside the description of the archive:<br></p><ul><li><strong>N</strong><strong>ame:</strong> search term appears in the name of the institution. It can be the full name of an archival institution or only parts of it.</li><li><strong>Place:</strong> search term appears in the address or area of the institution. It can be the city or town, where the archival institution is located or any other place of importance (e.g. previous locations)</li></ul><p></p>
+        </div>
+	</span>
+	<span id="searchDocumentTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <ul><li>A <strong>finding aid</strong> is a structured description of archival materials per collection or fonds, up to item level.</li><li>A <strong>holdings guide</strong> is an overview of the collections and fonds of one archival institution.</li><li>A <strong>source guide</strong> is a topic-oriented overview of collections and fonds of one or several institutions.</li></ul>    
+        </div>
+	</span>
+	<span id="searchEntityTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <ul>
+You can filter by one or more entity types: 
+</ul><ul>
+	<li>A <strong>person</strong> (e.g. John Locke, or Jean Jaques Rousseau);</li>
+	<li>A <strong>family </strong>(e.g. Bonaparte, or Helgason);</li>
+	<li>A <strong>corporate body</strong>, i.e. the name of an institution, organisation, or company (e.g. Ministerie van Justitie, or Electro Mecánica Antonio Armentano)</li>
+</ul><p>
+</p>    
+        </div>
+	</span>
+	<span id="searchArchiveTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>Please note that this filter will only include institutions, for which a type has been provided as part of their descriptions:</p><p></p><ul><li>A <strong>business archive</strong> holds the records of (often) commercial organisations.</li><li>A <strong>church or religious archive</strong> holds the records of church parishes or religious organisations, e.g. birth or death registers.</li><li>A <strong>county or local authority archive</strong> holds the records of the county's administrative bodies.</li><li>A <strong>media archive </strong>holds audiovisual or sound records, e.g. a film archive or the archive of a broadcasting company.</li><li>A <strong>municipal archive</strong> holds the records of a town or city administration.</li><li>A <strong>national archive </strong>holds the records of a country's administrative bodies, i.e. from ministries and other public bodies, sometimes also private papers of former ministers, chancellors, or presidents.</li><li>A private person or <strong>family archive </strong>holds the records forming the legacy of a prominent person or family.</li><li>A <strong>regional archive</strong> holds the records of a region's administrative bodies.</li><li>A <strong>specialised governmental archive</strong> holds records of public bodies, often operating on a national level, that are not part of the national archives' holdings.</li><li>A <strong>specialised non-governmental archive</strong> or archive of another cultural heritage institution hold collections from various cultural heritage institutions, eg. museum archives, libraries archives, etc</li><li>A <strong>university archive</strong> or archive of another research organisation holds the records pertaining to the administration of the according educational or research body.</li><li><strong>Political parties,</strong> popular/labour movements and other non-governmental organisations, associations, agencies and foundations hold the archival collections of these institutions, outside of governmental records and outside of business archives (e.g., NGOs)</li></ul>    
+        </div>
+	</span>
+	<span id="searchDateTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>Enter a start and/or end date in the format DD-MM-YYYY, i.e. 01-01-1900 for 1 January 1900. This will allow you to focus your search on a specific period of time. You can use the calendar function or type directly in the text field. The checkbox "Exact date search" concentrates the search on one specific date.</p>
+        </div>
+	</span>
+	<span id="searchContextTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>Check "View in context" to view the results in the hierarchical structure of archives.</p>
+        </div>
+	</span>
+	
+	<span id="searchTabsTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <ul><li>Choose "List view" to view the results in a simple list, ordered according to relevance or date</li><li>Choose "Context view" to view the results in the hierarchical structure of the holding archives. </li></ul><p>For more details see <a href="https://www.archivesportaleurope.net/tools/research-tools/" target="_blank">Research Tools</a></p><p></p>
+        </div>
+	</span>
+	<span id="searchSaveTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>Please sign in to save your searches.<br></p>
+        </div>
+	</span>
+	<span id="searchHoldingTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>A holdings guide is an overview of the collections and fonds of one archival institution.</p>
+        </div>
+	</span>
+	<span id="searchFindingTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+            <p>A finding aid is a structured description of archival materials per collection or fonds up to item level.<br></p>
+        </div>
+	</span>
+	
+	<span id="searchFilterCountryTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results by selecting one or more countries of interest. You can also combine this filter with other filters. Your filter selection will appear above. Click "Clear filters" to see all results matching your initial search request again.<br></p>
+        </div>
+	</span>
+	<span id="searchFilterInstitutionTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results by one or more holding archival institutions. You can also combine this filter with other filters. Your filter selection will appear above. Click "Clear filters" to see all results matching your initial search request again.<br></p>
+        </div>
+	</span>
+	<span id="searchFilterFindingTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can select to view results from a specific <a href="https://www.archivesportaleurope.net/help-topics/finding-aid/" target="_blank">Finding Aid</a>, i.e., a structured description of archival materials per collection or fonds up to item level. You can also combine this filter with other filters. Your filter 
+selection will appear above. Click "Clear filters" to see all results 
+matching your initial search request again.</p>
+        </div>
+	</span>
+	<span id="searchFilterDocumentTypeTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter by type of descriptive document: <br></p><ul><li>"<a href="https://www.archivesportaleurope.net/help-topics/holdings-guide/" target="_blank">Holdings Guide</a>": an overview of the collections and fonds of one archival institution.</li><li>"<a href="https://www.archivesportaleurope.net/help-topics/source-guide/" target="_blank">Source guide</a>": a topic-oriented overview of collections and fonds of one or several institutions. a description of the archival collections available. Similar to Holdings guides</li><li>"<a href="https://www.archivesportaleurope.net/help-topics/finding-aid/" target="_blank">Finding aid</a>" provides more detailed descriptions of the archival materials of specific collections or fonds</li></ul><p>You can also combine this filter with other filters. Your filter 
+selection will appear above. Click "Clear filters" to see all results 
+matching your initial search request again.</p>
+        </div>
+	</span>
+	<span id="searchFilterLevelsTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results by selecting "<a href="https://www.archivesportaleurope.net/help-topics/fonds/" target="_blank">Fonds</a> description" for a general overview or "Other descriptions" for item level. You can also combine this filter with other filters. Your filter 
+selection will appear above. Click "Clear filters" to see all results 
+matching your initial search request again.<br></p>
+        </div>
+	</span>
+	<span id="searchFilterContainsDigiTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results by selecting only those containing digital objects, i.e. the link to the digitised version of the archival material you are looking for. You can also combine this filter with other filters. Your filter 
+selection will appear above. Click "Clear filters" to see all results 
+matching your initial search request again.</p>
+        </div>
+	</span>
+	<span id="searchFilterDigiTypeTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results by  type of digital object you are interested in: <br></p><ul><li><strong>Text:</strong> most documental material, such as administrative records, letters, manuscripts etc.</li><li><strong>Image:</strong> includes photographs, posters, maps.</li><li><strong>Sound: </strong>sound recording with no images </li><li><strong>Video: </strong>moving images with or without sound</li><li><strong>Unspecified:</strong> indicates that the holding institution has not specified the type of digital object</li><li><strong>3D:</strong> 3-d digital objects</li></ul><p>You can also combine this filter with other filters. Your filter 
+selection will appear above. Click "Clear filters" to see all results 
+matching your initial search request again.</p>
+        </div>
+	</span>
+	<span id="searchFilterDateTypeTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results based on the date of creation of the archival material (which may differ from the time period you are interested in - e.g., philosophers from the Enlightenment period reflecting on classic thinkers)  <br></p><ul><li><strong>Full dates</strong> includes normalised date information available for date-based searches. It is recommended to combine this selection with the filters "Start timespan" and "End timespan" for more details.</li><li><strong>Only descriptive dates</strong> provides the date information in human-readable format.</li><li><strong>No date</strong> either includes documents where the creation date is unknown, or where date information is not in a machine-readable format</li></ul><p></p><p>Please note that not all documents contain a machine-readable date. More information <a href="https://www.archivesportaleurope.net/tools/research-tools/" target="_blank">here</a> </p>
+        </div>
+	</span>
+	<span id="searchFilterStartTimeTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results based on the <strong>date of creation</strong> of the archival material (which may differ from the time period you are interested in - e.g., philosophers from the Enlightenment period reflecting on classic thinkers). <strong>This filter will only include materials with "Full dates"</strong>, i.e. those that include date information available for date-based searches. You can either search for a specific date of interest or focus step by step on the time span of a century, decade, year or month. When searching for a specific date, enter the date in the <strong>format DD-MM-YYYY</strong>, i.e. 01/01/1900 for 1 January 1900, via the calendar function or by typing directly in the text field.<br><strong>This filter concentrates on the earliest dates mentioned in the materials. </strong><br></p>
+        </div>
+	</span>
+	<span id="searchFilterEndTimeTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results based on the <strong>date of creation</strong> of the archival material (which may differ from the time period you are interested in - e.g., philosophers from the Enlightenment period reflecting on classic thinkers). <strong>This filter will only include materials with "Full dates"</strong>, i.e. those that include date information available for date-based searches. You can either search for a specific date of interest or focus step by step on the time span of a century, decade, year or month. When searching for a specific date, enter the date in the <strong>format DD-MM-YYYY</strong>, i.e. 01/01/1900 for 1 January 1900, via the calendar function or by typing directly in the text field.<br><strong>This filter concentrates on the latest dates mentioned in the materials. </strong></p><p></p>
+        </div>
+	</span>
+	<span id="searchFilterLangMaterialTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results based on the language in which the material is written. <strong>Please note that this filter will only include materials where specific language information has been provided by the institution and is therefore in a machine-readable format.</strong> You can also combine this filter with other filters. Your selection will then be displayed above the search results (see "Search filters"). Clicking "Clear filters" will remove your selection and you will see all results matching your initial search request again.</p><p>	<span class="redactor-invisible-space"><br><br></span></p><p><strong></strong></p>
+        </div>
+	</span>
+	<span id="searchFilterTopicsTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p></p><p>You can filter results by selecting one or more topics of interest. <strong>Please note 
+that this filter will only include materials where the topic has been assigned and is therefore in a 
+machine-readable format.</strong><span class="redactor-invisible-space"> Read how to assign a topic to documents on the <a href="https://www.archivesportaleurope.net/explore/topics/" target="_blank">Topics page</a>. You can also combine this filter with other filters. Your selection will
+ then be displayed above the search results (see "Search filters"). 
+Clicking "Clear filters" will remove your selection and you will see all
+ results matching your initial search request again.</span></p><p><br><br></p><p></p>
+        </div>
+	</span>
+	<span id="searchFilterUsingTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p></p><p>You can filter results by selecting where your search terms appears specifically inside the archival description:<br></p><ul><li>The <strong>name</strong> can be the full name of a person, family or organisation as well as only parts of it, e.g. only the last name.</li><li>The <strong>identifier</strong> is used internally by the institution or refers to (inter)national vocabularies such as the Virtual International Authority File (VIAF).</li><li>The <strong>place</strong> can be the place of birth (or foundation), the place of death (or closing), the place of work or any other place of importance.</li><li>The <strong>occupation</strong> is the profession or job of a person</li><li>The <strong>mandate</strong> is a law, directive or charter that establishes and defines an organisation's powers, functions, responsibilities or sphere of activities.</li><li>The <strong>function</strong> is an activity, role, or purpose performed or manifested by a person, family or organisation</li></ul><p><span class="redactor-invisible-space">You can also combine this filter with other filters. Your selection will
+ then be displayed above the search results (see "Search filters"). 
+Clicking "Clear filters" will remove your selection and you will see all
+ results matching your initial search request again.</span></p><p><span class="redactor-invisible-space"></span></p>
+        </div>
+	</span>
+	<span id="searchFilterEntityTypeTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>You can filter results by type of entities: </p><ul><li><strong>P</strong><strong>erson</strong> (e.g., John Locke or Jean Jaques Rousseau) </li><li><strong>Family</strong> (e.g., the family Bonaparte)</li><li><strong>Corporate body</strong> (an institution, organisation, or company, e.g. the "Ministerie van Justitie")</li></ul>You can also combine this filter with other filters. Your selection will then be displayed above the search results (see "Search filters"). Clicking "Clear filters" will remove your selection and you will see all results matching your initial search request again.
+        </div>
+	</span>
+	<span id="searchFilterLangDescTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p></p><p>You can filter results based on the language in which the material is written. <strong>Please
+ note that this filter will only include materials where specific 
+language information has been provided by the institution and is 
+therefore in a machine-readable format.</strong> You can also combine 
+this filter with other filters. Your selection will then be displayed 
+above the search results (see "Search filters"). Clicking "Clear 
+filters" will remove your selection and you will see all results 
+matching your initial search request again.</p>
+        </div>
+	</span>
+	<span id="searchFilterArchiveTypeTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p></p><p>You can filter results based on the type of holding institution. <strong>Please note that this filter will only include institutions, for which a type has been provided as part of their descriptions.</strong></p><ul><li>A <strong>business archive</strong> holds the records of (often) commercial organisations.</li><li>A <strong>church or religious archive </strong>holds the records of church parishes or religious organisations, e.g. birth or death registers.</li><li>A <strong>county or local authority archive</strong> holds the records of the county's administrative bodies.</li><li>A <strong>media archive</strong> holds audiovisual or sound records, e.g. a film archive or the archive of a broadcasting company.</li><li>A <strong>municipal archive</strong> holds the records of a town or city administration.</li><li>A n<strong>ational archive</strong> holds the records of a country's administrative bodies, i.e. from ministries and other public bodies, sometimes also private papers of former ministers, chancellors, or presidents.</li><li>A p<strong>rivate person or family archive</strong> holds the records forming the legacy of a prominent person or family.</li><li>A <strong>regional archive</strong> holds the records of a region's administrative bodies.</li><li>A <strong>specialised governmental archive </strong>holds records of public bodies, often operating on a national level, that are not part of the national archives' holdings.</li><li>A<strong> specialised non-governmental archive</strong> or archive of another cultural heritage institution hold collections from various cultural heritage institutions, eg. museum archives, libraries archives, etc</li><li>A u<strong>niversity archive </strong>or archive of another research organisation holds the records pertaining to the administration of the according educational or research body.</li><li><strong>Political parties</strong>, popular/labour movements and other non-governmental organisations, associations, agencies and foundations hold the archival collections of these institutions, outside of governmental records and outside of business archives (e.g., NGOs)</li></ul>
+        </div>
+	</span>
+
+	<span id="contactTranslateTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>Write your message in your own language and use this drop-down menu to have your message translated into English or in the language of the institution for a swifter response. By checking this box and selecting a language you will send your original message along with the translated version</p>
+        </div>
+	</span>
+	<span id="suggestionTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>What kind of suggestion would you like to make?
+</p>
+<ul>
+	<li><strong>Assign to topic: </strong>assign this record to one of our<a href="https://www.archivesportaleurope.net/explore/topics/"> Topics</a>. Topics are created following the<a href="http://vocabularies.unesco.org/browser/thesaurus/en/index"> Unesco Thesaurus</a></li>
+	<li><strong>Suggest translation:</strong> If you have translated this archival description or the documents themselves, please send it to us as a .doc or .pdf file</li>
+	<li><strong>Connect to another resource:</strong> If this object relates to another resource in Archives Portal Europe, or anywhere else on the web (e.g., an article on Wikipedia), you can suggest it to be linked to this resource</li>
+	<li><strong>Other:</strong> If you have any other relevant material, such as a transcription of the document, please upload it and let us know here</li>
+</ul>
+        </div>
+	</span>
+	
+	<span id="copyIconCCTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This is a test area to fill out all the copyright details for Attribution Creative Commons Licence</p>
+        </div>
+	</span>
+	<span id="copyIconPDTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is  not or no 
+longer protected by copyright and has been labelled with the <a href="http://creativecommons.org/publicdomain/mark/1.0/" target="_blank">Public Domain Mark</a>. It can be used by anyone without any restrictions.</p>
+        </div>
+	</span>
+	<span id="copyIconZeroTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is made available under the <a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons CC0 1.0 Public Domain Dedication</a>. All possible existing rights in the content are waived, and
+ the object can be used by anyone without any restrictions.</p>
+        </div>
+	</span>
+	<span id="copyIconByTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is made available under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons - Attribution (BY)</a> licence. You can copy, redistribute, remix, tweak, and build upon the licensed object, even 
+commercially, as long as you attribute the rights holder as described 
+in the licence.<br></p>
+        </div>
+	</span>
+	<span id="copyIconSATooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This is a test area to fill out all the copyright details for Attribution Creative Commons Share Alike Licence</p>
+        </div>
+	</span>
+	<span id="copyIconNDTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This is a test area to fill out all the copyright details for NoDerivs</p>
+        </div>
+	</span>
+	<span id="copyIconNCTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This is a test area to fill out all the copyright details for NonCommercial</p>
+        </div>
+	</span>
+	
+	<span id="copyLogoNonComTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is in the public domain, but has been digitised as the outcome of a public-private partnership, where
+ the terms of the contractual agreement limit commercial use for a 
+certain period of time. You can copy, redistribute, remix, tweak, and build upon the object for <a href="http://rightsstatements.org/vocab/NoC-NC/1.0/" target="_blank">non-commercial use only</a>.<span class="redactor-invisible-space"></span></p>
+        </div>
+	</span>
+	<span id="copyLogoEuOrphanTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object has been 
+identified as an <a href="http://rightsstatements.org/vocab/InC-OW-EU/1.0/" target="_blank">Orphan Work</a> in the country of first publication and in 
+line with the requirements of the national law implementing Directive 
+2012/28/EU of the European Parliament and of the Council of 25 October 
+2012 on certain permitted uses of orphan works. <br></p><p><span class="redactor-invisible-space">You are free to use this object in any way that is permitted by the 
+copyright and related rights legislation that applies to your use. Please note that you are responsible for your own use, including the need to obtain other permissions e.g. with regard to publicity, privacy or moral rights<strong></strong>.</span></p>
+        </div>
+	</span>
+	<span id="copyLogoOtherTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is <span class="redactor-invisible-space">in the public domain, </span>but is subject to <a href="http://rightsstatements.org/vocab/NoC-OKLR/1.0/" target="_blank">known legal restrictions</a> other than copyright which prevent its free re-use. Please contact the providing institution for more information.</p>
+        </div>
+	</span>
+	<span id="copyLogoInCopyTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is currently <a href="http://rightsstatements.org/vocab/InC/1.0/" target="_blank">in copyright</a>. Please contact the providing institution for more information and in order to acquire additional permissions for re-use.</p>
+        </div>
+	</span>
+	<span id="copyLogoNotEvalTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>The copyright status of this object has <a href="http://rightsstatements.org/vocab/CNE/1.0/" target="_blank">not been evaluated yet</a>. Please contact the providing institution for more information.<br></p><p><span class="redactor-invisible-space">You are free to use this object in any way that is permitted by the 
+copyright and related rights legislation that applies to your use. Please note that you are responsible for your own use, including the need to obtain other permissions e.g. with regard to publicity, privacy, or moral rights<strong></strong>.</span><br></p>
+        </div>
+	</span>
+	<span id="copyLogoEduUseTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is currently in copyright and
+ the rights holder(s) have allowed re-use <a href="http://rightsstatements.org/vocab/InC-EDU/1.0/" target="_blank">for educational purposes only</a>. <span class="redactor-invisible-space">You
+ are free to use this object in any way that is permitted by the 
+copyright and related rights legislation that applies to your use. 
+Please note that you are responsible for your own use, including the 
+need to obtain other permissions e.g. with regard to publicity, privacy 
+or moral rights<strong></strong>.</span></p><p>Please contact the providing institution for more information and in order to acquire additional permissions for any other uses.</p>
+        </div>
+	</span>
+
+
+	<span id="copyIconCCPDTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             
+        </div>
+	</span>
+
+
+
+
+
+	<span id="copyIconBYTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is made available under the terms of the <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons - Attribution, ShareAlike (BY-SA)</a> licence. You can copy, redistribute, remix, tweak and build upon the licensed object, even for commercial 
+purposes, as long as you attribute the rights holder as described in 
+the licence, and  you license your adaptations of the object under the same 
+terms.</p>
+        </div>
+	</span>
+	<span id="copyIconBYSATooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is made available under the terms of the <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons - Attribution, ShareAlike (BY-SA)</a> licence. You can copy, redistribute, remix, tweak and build upon the licensed object, even for commercial 
+purposes, as long as you attribute the rights holder as described in 
+the licence, and  you license your adaptations of the object under the same 
+terms.</p>
+        </div>
+	</span>
+	<span id="copyIconBYNDTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is made available under the terms of the <a href="http://creativecommons.org/licenses/by-nd/4.0/" target="_blank">Creative Commons - Attribution, No Derivates (BY-ND)</a> licence. You can copy and redistribute<span class="redactor-invisible-space"> the object, even 
+commercially, as long as no alteration is made to the object and you attribute the rights holder as described in the licence.<br></span></p><p>If you remix, transform or build upon the object, you may not distribute the modified material.<br><span class="redactor-invisible-space"></span></p>
+        </div>
+	</span>
+	<span id="copyIconBYNCTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is made available under the terms of the <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons - Attribution, Non-Commercial (BY-NC)</a> licence. You can copy, redistribute, remix, tweak, and build upon the licensed object for non-commercial use only and <span class="redactor-invisible-space">as long as you attribute the rights 
+holder as described in 
+the licence</span>. </p>
+        </div>
+	</span>
+	<span id="copyIconBYNCSATooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is made available under the terms of the <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA)</a> licence. You can copy, redistribute, remix, tweak, and build upon the licensed object for non-commercial use only, <span class="redactor-invisible-space">as long as you attribute the rights 
+holder as described in 
+the licence, and as long as you license your adaptations of the object under the same 
+terms</span>. <br></p>
+        </div>
+	</span>
+	<span id="copyIconBYNCNDTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is made available under the terms of the <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons - Attribution, Non-Commercial, No Derivates (BY-NC-ND)</a> licence. You can copy and redistribute the object for non-commercial use only, as long as no alteration is made to the object and as long as you attribute the rights 
+holder as described in 
+the licence.<br></p><p>If you remix, transform or build upon the object, you may not distribute the modified material.<br></p>
+        </div>
+	</span>
+
+	<span id="copyIconRSNONCOMTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is in the public domain, but has been digitised as the outcome of a public-private partnership, where
+ the terms of the contractual agreement limit commercial use for a 
+certain period of time. You can copy, redistribute, remix, tweak, and build upon the object for <a href="http://rightsstatements.org/vocab/NoC-NC/1.0/" target="_blank">non-commercial use only</a>.<span class="redactor-invisible-space"></span></p>
+        </div>
+	</span>
+
+	<span id="copyIconRSEUORPHANTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object has been 
+identified as an <a href="http://rightsstatements.org/vocab/InC-OW-EU/1.0/" target="_blank">Orphan Work</a> in the country of first publication and in 
+line with the requirements of the national law implementing Directive 
+2012/28/EU of the European Parliament and of the Council of 25 October 
+2012 on certain permitted uses of orphan works. <br></p><p><span class="redactor-invisible-space">You are free to use this object in any way that is permitted by the 
+copyright and related rights legislation that applies to your use. Please note that you are responsible for your own use, including the need to obtain other permissions e.g. with regard to publicity, privacy or moral rights<strong></strong>.</span></p>
+        </div>
+	</span>
+
+	<span id="copyIconRSOTHERTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is <span class="redactor-invisible-space">in the public domain, </span>but is subject to <a href="http://rightsstatements.org/vocab/NoC-OKLR/1.0/" target="_blank">known legal restrictions</a> other than copyright which prevent its free re-use. Please contact the providing institution for more information.</p>
+        </div>
+	</span>
+
+	<span id="copyIconRSINCOPYTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is currently <a href="http://rightsstatements.org/vocab/InC/1.0/" target="_blank">in copyright</a>. Please contact the providing institution for more information and in order to acquire additional permissions for re-use.</p>
+        </div>
+	</span>
+
+	<span id="copyIconRSNOTEVALTooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>The copyright status of this object has <a href="http://rightsstatements.org/vocab/CNE/1.0/" target="_blank">not been evaluated yet</a>. Please contact the providing institution for more information.<br></p><p><span class="redactor-invisible-space">You are free to use this object in any way that is permitted by the 
+copyright and related rights legislation that applies to your use. Please note that you are responsible for your own use, including the need to obtain other permissions e.g. with regard to publicity, privacy, or moral rights<strong></strong>.</span><br></p>
+        </div>
+	</span>
+
+	<span id="copyIconRSEDUUSETooltip">
+		<span class="closeIcon"><i class="fas fa-times"></i></span>
+		<div class="content">
+             <p>This object is currently in copyright and
+ the rights holder(s) have allowed re-use <a href="http://rightsstatements.org/vocab/InC-EDU/1.0/" target="_blank">for educational purposes only</a>. <span class="redactor-invisible-space">You
+ are free to use this object in any way that is permitted by the 
+copyright and related rights legislation that applies to your use. 
+Please note that you are responsible for your own use, including the 
+need to obtain other permissions e.g. with regard to publicity, privacy 
+or moral rights<strong></strong>.</span></p><p>Please contact the providing institution for more information and in order to acquire additional permissions for any other uses.</p>
+        </div>
+	</span>
+
+</div>
+
+
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+		var enable_search = true; // this enables the search JS on this page
+
+		var section = 'search-in-archives';
+		var force_redirect = true;
+	</script>
+	
+<script src="https://www.google.com/recaptcha/api.js?render=6LeqYC0kAAAAANgBKWHIMk4-VLWE45_lMR00X5Kg"></script>
+<script>
+	function gRecap() {
+		grecaptcha.ready(function () {
+			grecaptcha.execute("6LeqYC0kAAAAANgBKWHIMk4-VLWE45_lMR00X5Kg").then(function (token) {
+				var forms = document.getElementsByTagName('form');
+				for (var i = 0; i < forms.length; i++) {
+
+					// Don't add recaptcha to forms that do want it
+					if (forms[i].classList.contains('noRecap')) {
+						continue;
+					}
+
+					let extTok = document.getElementById("tok_" + i);
+
+					if (typeof extTok !== "undefined" && extTok !== null) {
+						extTok.remove();
+					}
+
+					var x = document.createElement('input');
+					x.type = 'hidden';
+					x.name = 'recaptcha_token';
+					x.value = token;
+					x.id = 'tok_' + i;
+					forms[i].appendChild(x);
+				}
+			});
+		});
+	}
+
+	gRecap();
+	setInterval(function () {
+		gRecap();
+	}, 90 * 1000);
+
+</script>
+
+
+<script>
+	var js_locale = "en-GB";
+</script>
+
+<script src="/assets/production.min.js?v=1792460841"></script>
+
+<script>
+	$('#cookieBanner a.cookieReject').click(function(e) {
+		e.preventDefault();
+		setCookie("cookiesAccept", 0, 1);
+		$('#cookieBanner').hide();
+	});
+	$('#cookieBanner a.cookieAccept').click(function (e) {
+		e.preventDefault();
+		setCookie("cookiesAccept", 1, 31);
+		$('#cookieBanner').hide();
+	});
+	CookiesAccepted();
+</script>
+
+	<script>
+$(document).ready(function(){    
+  $("#homeBlogSlider").slick({
+	  autoplay: false,
+	  arrows: true,
+	  speed: 400,
+	  draggable: false,
+	  dots: true,
+	  fade: false,
+      slidesToShow: 4,
+      slidesToScroll: 2,
+	  infinite: false,
+	  variableWidth: false,
+	  prevArrow: '<span class="prev"><i class="fas fa-angle-left"></i></span>',
+	  nextArrow: '<span class="next"><i class="fas fa-angle-right"></i></span>',
+	  responsive: [
+	  {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+	  {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+	});    
+});        
+</script>
+
+
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4d45a991afbcc10',t:'MTc5MjQ2MDgzOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

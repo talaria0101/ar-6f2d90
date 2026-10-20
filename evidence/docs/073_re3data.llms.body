@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="r3d-html ">
+    <head>
+                <title>404 - Repository Not Found</title>
+        
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+                <link rel="search" type="application/opensearchdescription+xml" href="/api/opensearch/opensearch.xml" title="re3data.org search">
+        
+                                <link rel="stylesheet" href="/build/588.00ce8873.css"><link rel="stylesheet" href="/build/219.2a3d4eb6.css"><link rel="stylesheet" href="/build/frontend.b5bcc6c3.css">
+        
+
+                            <script src="/build/runtime.be063f77.js" defer></script><script src="/build/667.b1829ec9.js" defer></script><script src="/build/588.3e0a8c6f.js" defer></script><script src="/build/frontend.233f0f30.js" defer></script>
+                            
+            </head>
+    <body class="r3d-body">
+
+            <section id="r3d-content">
+                <!-- Header -->
+                <nav class="navbar navbar-default navbar-fixed-top r3d-navbar ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-left" href="/">
+                <img alt="Brand" src="/images/img/re3datalogo_nosubtext_black.png">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#r3d-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+                <div id="r3d-menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/search">Search</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/browse/by-subject/">Browse by subject</a>
+                        </li>
+                        <li>
+                            <a href="/browse/by-country/">Browse by country</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/suggest">Suggest</a>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/schema">Schema 4.0</a></li>
+                        <li><a href="/schema/3-1">Schema 3.1</a></li>
+                        <li><a href="/schema/3-0">Schema 3.0</a></li>
+                        <li><a href="/schema/2-2">Schema 2.2</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/api/doc">API</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/data">Data</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/analytics">Analytics</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/editorialboard">Editorial Board</a></li>
+                        <li><a href="/workinggroup">Working Group</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/publications">Publications</a></li>
+                        <li><a href="/about">About</a></li>
+                                            </ul>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+                <li>
+
+                </li>
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+                <!-- Pagecontent -->
+                    <div class="r3d-error-page">
+        <div class="r3d-error-404 row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <img src="/images/floppydisk.png" alt="re3data.org">
+            </div>
+        </div>
+        <div class="r3d-error-404 row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <h1>404 Not Found</h1>
+                <p>
+                    We even dug through the library basement for older versions. Result: EOC (End of Cat-alog).
+                </p>
+            </div>
+        </div>
+            <div class="r3d-error-404 row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <a href="/" class="btn btn-primary">Home</a>
+                    <a href="/contact" class="btn btn-primary">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- Footer -->
+                <section id="r3d-footer" class="container-fluid">
+            <div class="col-md-2 pull-left">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <a href="/legalnotice">Legal notice / Impressum</a>
+                    </li>
+                    <li>
+                        <a href="/terms">Terms of Use & Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <div class="rss-atom-buttons" style="margin-top: 5px;">
+    <a href="/subscribe?format=rss" class="text-center" style="text-decoration-line: none;" title="Subscribe via RSS" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1"/>
+        </svg>
+    </a>
+
+    <a href="/subscribe?format=atom" class="text-center" style="text-decoration-line: none;" title="Subscribe via Atom" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+        </svg>
+    </a>
+</div>                    </li>
+                </ul>
+
+            </div>
+            <div  class="col-md-2">
+            </div>
+            <div  class="col-md-8">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+                            <img src="https://i.creativecommons.org/p/zero/1.0/80x15.png" style="border-style: none;" alt="CC0" />
+                        </a>
+                        To the extent possible under law,
+                        <a rel="dct:publisher" href="https://www.re3data.org">
+                            re3data.org
+                        </a>
+                        has waived all copyright and related or neighboring rights to
+                        the database entries of re3data.org.
+                    </li>
+                    <li>
+                        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+                            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+                        </a>
+                        Except where otherwise noted, content on this site is licensed under a
+                        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+                            Creative Commons Attribution 4.0 International License
+                        </a>.
+                    </li>
+                    <li style="padding-top: 10px;">
+                        <b>Cite this service:</b> re3data.org - Registry of Research Data Repositories. https://doi.org/10.17616/R3D last accessed: 2026-10-20
+                    </li>
+                </ul>
+            </div>
+</section>            </section>
+
+                <img style="width: 0; height: 0; display: none;" src="/images/img/ajax-loader.gif" alt=""/>
+    </body>
+</html>

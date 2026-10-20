@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/"><version>1.1</version><numberOfRecords>2403</numberOfRecords><records><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1418352403</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20260903082631.0</controlfield>
+    <controlfield tag="008">260903n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1418352403</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1418352403</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1418352403</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1418352403</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">Design, Automation &amp; Test in Europe Conference</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Verona</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Design, Automation and Test in Europe Conference</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Verona</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">DATE</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Verona</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">DATE26</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Verona</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">20.04.2026-22.04.2026</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040631109</subfield>
+      <subfield code="0">(DE-588)4063110-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4063110-2</subfield>
+      <subfield code="a">Verona</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 03.09.2026</subfield>
+      <subfield code="u">https://date26.date-conference.com/</subfield>
+    </datafield>
+  </record></recordData><recordPosition>1</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1420075284</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20260922094955.0</controlfield>
+    <controlfield tag="008">260922n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1420075284</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1420075284</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1420075284</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1420075284</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-GR</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">IEEE European Test Symposium</subfield>
+      <subfield code="n">31.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Chania</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">ETS</subfield>
+      <subfield code="n">31.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Chania</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">ETS26</subfield>
+      <subfield code="n">31.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Chania</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)1307424899</subfield>
+      <subfield code="0">(DE-588)1307424899</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1307424899</subfield>
+      <subfield code="a">Panepistēmio tēs dytikēs Attikēs</subfield>
+      <subfield code="4">vera</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#organizerOrHost</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstalter</subfield>
+      <subfield code="e">Veranstalter</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)000555371</subfield>
+      <subfield code="0">(DE-588)55537-X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/55537-X</subfield>
+      <subfield code="a">Ethnikon Metsobion Polytechneion</subfield>
+      <subfield code="4">vera</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#organizerOrHost</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstalter</subfield>
+      <subfield code="e">Veranstalter</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">25.05.2026-29.05.2026</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040903206</subfield>
+      <subfield code="0">(DE-588)4090320-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4090320-5</subfield>
+      <subfield code="a">Chania</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 22.09.2026</subfield>
+      <subfield code="u">https://ets2026.uniwa.gr/</subfield>
+    </datafield>
+  </record></recordData><recordPosition>2</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1419393227</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20260914083529.0</controlfield>
+    <controlfield tag="008">260914n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1419393227</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1419393227</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1419393227</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1419393227</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-RO</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">IEEE International Conference on Automation, Quality and Testing, Robotics</subfield>
+      <subfield code="n">25.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Băile Felix</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">AQTR</subfield>
+      <subfield code="n">25.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Băile Felix</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">THETA</subfield>
+      <subfield code="n">25.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Băile Felix</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">THETA/AQTR</subfield>
+      <subfield code="n">25.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Băile Felix</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)998135917</subfield>
+      <subfield code="0">(DE-588)16030549-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/16030549-4</subfield>
+      <subfield code="a">IEEE Computer Society</subfield>
+      <subfield code="b">Test Technology Technical Council</subfield>
+      <subfield code="4">vera</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#organizerOrHost</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstalter</subfield>
+      <subfield code="e">Veranstalter</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)983232539</subfield>
+      <subfield code="0">(DE-588)6052052-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/6052052-8</subfield>
+      <subfield code="a">Universitatea Tehnică din Cluj-Napoca</subfield>
+      <subfield code="b">Department of Automation</subfield>
+      <subfield code="4">vera</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#organizerOrHost</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstalter</subfield>
+      <subfield code="e">Veranstalter</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">21.05.2026-23.05.2026</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04097989X</subfield>
+      <subfield code="0">(DE-588)4097989-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4097989-1</subfield>
+      <subfield code="a">Băile Felix</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 14.09.2026</subfield>
+      <subfield code="u">https://www.aqtr.ro/</subfield>
+    </datafield>
+  </record></recordData><recordPosition>3</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1415351279</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20260803144538.0</controlfield>
+    <controlfield tag="008">260803n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1415351279</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1415351279</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1415351279</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1415351279</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XB-JP</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">IEEE International Conference on Microelectronic Test Structures</subfield>
+      <subfield code="n">38.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Matsue</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">IEEE ICMTS</subfield>
+      <subfield code="n">38.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Matsue</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">ICMTS</subfield>
+      <subfield code="n">38.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Matsue</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)001219200</subfield>
+      <subfield code="0">(DE-588)121920-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/121920-0</subfield>
+      <subfield code="a">IEEE Electron Devices Society</subfield>
+      <subfield code="4">spon</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#sponsorOrPatron</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sponsor</subfield>
+      <subfield code="e">Sponsor</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">23.03.2026-26.03.2026</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)950038555</subfield>
+      <subfield code="0">(DE-588)4447732-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4447732-6</subfield>
+      <subfield code="a">Matsue</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 03.08.2026</subfield>
+      <subfield code="u">https://icmts.net/2026/</subfield>
+    </datafield>
+  </record></recordData><recordPosition>4</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1415700176</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20260807123219.0</controlfield>
+    <controlfield tag="008">260807n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1415700176</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1415700176</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1415700176</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1415700176</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XD-BR</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">IEEE Latin American Test Symposium</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Florianópolis</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">IEEE Latin-American Test Symposium</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Florianópolis</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">LATS</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Florianópolis</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">LATS2026</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Florianópolis</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">17.03.2026-20.03.2026</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)949043621</subfield>
+      <subfield code="0">(DE-588)4430257-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4430257-5</subfield>
+      <subfield code="a">Florianópolis</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 07.08.2026</subfield>
+      <subfield code="u">https://cas.polito.it/LATS2026/</subfield>
+    </datafield>
+  </record></recordData><recordPosition>5</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1419722336</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20260917151925.0</controlfield>
+    <controlfield tag="008">260917n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1419722336</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1419722336</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1419722336</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1419722336</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XD-US</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">IEEE VLSI Test Symposium</subfield>
+      <subfield code="n">44.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Napa, Calif.</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">VTS</subfield>
+      <subfield code="n">44.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Napa, Calif</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">27.04.2026-29.04.2026</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04216057X</subfield>
+      <subfield code="0">(DE-588)4216057-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4216057-1</subfield>
+      <subfield code="a">Napa, Calif.</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 17.09.2026</subfield>
+      <subfield code="u">https://www.tttc-vts.org/public_html/new/2026/</subfield>
+    </datafield>
+  </record></recordData><recordPosition>6</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">141248832X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20260722114908.0</controlfield>
+    <controlfield tag="008">260722n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">141248832X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/141248832X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)141248832X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)141248832X</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">Competition on Software Testing</subfield>
+      <subfield code="n">8.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Turin</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Test-Comp</subfield>
+      <subfield code="n">8.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Turin</subfield>
+    </datafield>
+    <datafield tag="511" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)1402880464</subfield>
+      <subfield code="0">(DE-588)1402880464</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1402880464</subfield>
+      <subfield code="a">FASE</subfield>
+      <subfield code="n">29.</subfield>
+      <subfield code="d">2026</subfield>
+      <subfield code="c">Turin</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+      <subfield code="j">Relation allgemein</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">16.04.2026-</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040612457</subfield>
+      <subfield code="0">(DE-588)4061245-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4061245-4</subfield>
+      <subfield code="a">Turin</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 22.07.2026</subfield>
+      <subfield code="u">https://test-comp.sosy-lab.org/2026/index.php</subfield>
+    </datafield>
+  </record></recordData><recordPosition>7</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1380241391</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20251029183157.0</controlfield>
+    <controlfield tag="008">251029n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1380241391</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1380241391</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1380241391</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1380241391</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XD-US</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">Astronomical optics: design, manufacture, and test of space and ground systems</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">San Diego, Calif.</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Astronomical optics</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">San Diego, Calif.</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Astronomical optics: design, manufacture, and test of space and ground systems V</subfield>
+      <subfield code="4">nauv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Unveraenderte Form</subfield>
+      <subfield code="j">Unveraenderte Form</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)985847891</subfield>
+      <subfield code="0">(DE-588)10182148-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/10182148-7</subfield>
+      <subfield code="a">SPIE</subfield>
+      <subfield code="4">spon</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#sponsorOrPatron</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sponsor</subfield>
+      <subfield code="e">Sponsor</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">04.08.2025-07.08.2025</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041254538</subfield>
+      <subfield code="0">(DE-588)4125453-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4125453-3</subfield>
+      <subfield code="a">Veranstaltung</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+      <subfield code="9">X:1</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04269521X</subfield>
+      <subfield code="0">(DE-588)4269521-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4269521-1</subfield>
+      <subfield code="a">San Diego, Calif.</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+  </record></recordData><recordPosition>8</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1370401655</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20250702085523.0</controlfield>
+    <controlfield tag="008">250702n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1370401655</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1370401655</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1370401655</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1370401655</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-FR</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">Design, Automation &amp; Test in Europe Conference</subfield>
+      <subfield code="n">28.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Lyon</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Design, Automation and Test in Europe Conference</subfield>
+      <subfield code="n">28.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Lyon</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">DATE</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="n">28.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Lyon</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">31.03.2025-02.04.2025</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040367703</subfield>
+      <subfield code="0">(DE-588)4036770-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4036770-8</subfield>
+      <subfield code="a">Lyon</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 02.07.2025</subfield>
+      <subfield code="u">https://www.date-conference.com/archive</subfield>
+    </datafield>
+  </record></recordData><recordPosition>9</recordPosition></record><record><recordSchema>MARC21-xml</recordSchema><recordPacking>xml</recordPacking><recordData><record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1383262829</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20251203072642.0</controlfield>
+    <controlfield tag="008">251203n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1383262829</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1383262829</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1383262829</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1383262829</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-89</subfield>
+      <subfield code="c">DE-89</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0089</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-HR</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">f</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">vie</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">DTIP Symposium</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Split</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Symposium on Design, Test, Integration &amp; Packaging of MEMS/MOEMS</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Split</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Symposium on Design, Test, Integration and Packaging of MEMS/MOEMS</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Split</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Design, Test, Integration &amp; Packaging of MEMS/MOEMS</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Split</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">Design, Test, Integration and Packaging of MEMS/MOEMS</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Split</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">DTIP</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Split</subfield>
+    </datafield>
+    <datafield tag="411" ind1="2" ind2=" ">
+      <subfield code="a">DTIP'2025</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2025</subfield>
+      <subfield code="c">Split</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">01.06.2025-04.06.2025</subfield>
+      <subfield code="4">datv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040776875</subfield>
+      <subfield code="0">(DE-588)4077687-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4077687-6</subfield>
+      <subfield code="a">Split</subfield>
+      <subfield code="4">ortv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Veranstaltungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage (via Wayback Machine)</subfield>
+      <subfield code="b">Stand: 13.05.2025</subfield>
+      <subfield code="u">https://web.archive.org/web/20250513035437/https://www.dtip-mems.org/</subfield>
+    </datafield>
+  </record></recordData><recordPosition>10</recordPosition></record></records><nextRecordPosition>11</nextRecordPosition><echoedSearchRetrieveRequest><version>1.1</version><query>WOE=test</query><xQuery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/><recordSchema>MARC21-xml</recordSchema></echoedSearchRetrieveRequest></searchRetrieveResponse>

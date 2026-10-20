@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+	<base href="https://graph.openaire.eu/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>404 - Page not found</title>
+	<link href="/images/Logos/fav-2.svg" rel="icon" sizes="any">
+	<link href="/images/Logos/fav-2.svg#2" rel="icon" type="image/svg+xml">
+	<link href="/images/Logos/fav-2.svg#3" rel="apple-touch-icon">
+
+        <link href="/media/system/css/joomla-fontawesome.min.css?5.0.37" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link href="/templates/yootheme_openaire/css/theme.12.css?1783668262" rel="stylesheet">
+	<link href="/templates/yootheme/css/theme.update.css?5.0.37" rel="stylesheet">
+	<link href="/templates/yootheme_openaire/css/custom.css?5.0.37" rel="stylesheet">
+
+        <script type="application/json" class="joomla-script-options new">{"system.paths":{"root":"","rootFull":"https:\/\/graph.openaire.eu\/","base":"","baseFull":"https:\/\/graph.openaire.eu\/"}}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8"></script>
+	<script src="/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?504da4"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?5.0.37"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-framerate.min.js?5.0.37"></script>
+	<script src="/templates/yootheme/assets/site/js/theme.js?5.0.37"></script>
+	<script>window.yootheme ||= {}; yootheme.theme = {"i18n":{"close":{"label":"Close"},"totop":{"label":"Back to top"},"marker":{"label":"Open"},"navbarToggleIcon":{"label":"Open Menu"},"paginationPrevious":{"label":"Previous page"},"paginationNext":{"label":"Next Page"},"searchIcon":{"toggle":"Open Search","submit":"Submit Search"},"slider":{"next":"Next slide","previous":"Previous slide","slideX":"Slide %s","slideLabel":"%s of %s"},"slideshow":{"next":"Next slide","previous":"Previous slide","slideX":"Slide %s","slideLabel":"%s of %s"},"lightboxPanel":{"next":"Next slide","previous":"Previous slide","slideLabel":"%s of %s","close":"Close"}}};</script>
+	<script>UIkit.util.ready(function () {
+          UIkit.scrollspy('#sticky-to-top', { cls: 'sticky-to-top' });
+  });</script>
+	<script>
+/* Google analytics (gtag.js) */
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){ dataLayer.push(arguments); }
+function gtagConsent(consent) {
+    const ads = consent?.hasConsent('marketing.google_ads') ? 'granted' : 'denied';
+    const analytics = consent?.hasConsent('statistics.google_analytics') ? 'granted' : 'denied';
+    return { ad_storage: ads, ad_user_data: ads, ad_personalization: ads, analytics_storage: analytics };
+}
+
+gtag('js', new Date());
+gtag('config', 'G-V71ZH8PSPC');
+gtag('consent', 'default', gtagConsent());
+
+document.addEventListener('yootheme:consent.init', ({detail}) => gtag('consent', 'update', gtagConsent(detail)));
+document.addEventListener('yootheme:consent.change', ({detail}) => gtag('consent', 'update', gtagConsent(detail)));
+</script>
+<script src="https://www.googletagmanager.com/gtag/js?id=G-V71ZH8PSPC" async></script>
+
+    </head>
+    <body>
+
+        <div class="tm-page">
+            <main id="tm-main">
+
+                
+                <div class="uk-section uk-section-default uk-flex uk-flex-center uk-flex-middle uk-text-center" uk-height-viewport>
+                    <div>
+                        <h1 class="uk-heading-xlarge">404</h1>
+                        <p class="uk-h3">Page not found</p>
+                        <a class="uk-button uk-button-primary" href="/index.php">Home Page</a>
+
+                        
+                    </div>
+                </div>
+
+                
+            </main>
+        </div>
+
+    </body>
+</html>

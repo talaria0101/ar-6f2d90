@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<expanded-search:expanded-search num-found="328927" xmlns:expanded-search="http://www.orcid.org/ns/expanded-search">
+    <expanded-search:expanded-result>
+        <expanded-search:orcid-id>0000-0002-6104-6796</expanded-search:orcid-id>
+        <expanded-search:given-names>Vladislav</expanded-search:given-names>
+        <expanded-search:family-names>Tokarev</expanded-search:family-names>
+        <expanded-search:email>vladislav.tokarev@data-ox.com</expanded-search:email>
+        <expanded-search:institution-name>SD Worx</expanded-search:institution-name>
+        <expanded-search:institution-name>Secretaria da Justiça e da Defesa da Cidadania</expanded-search:institution-name>
+        <expanded-search:institution-name>Test Innovations</expanded-search:institution-name>
+    </expanded-search:expanded-result>
+</expanded-search:expanded-search>

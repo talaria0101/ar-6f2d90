@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GBIF API Reference :: Technical Documentation</title>
+    <link rel="canonical" href="https://techdocs.gbif.org/en/openapi/">
+    <link rel="next" href="v1/registry">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+    <link rel="stylesheet" href="../_/css/icons.css">
+    <link rel="stylesheet" href="../_/css/special-pages.css">
+
+    <!-- Build environment: prod -->
+
+    <link rel="alternate" hreflang="x-default" href="https://techdocs.gbif.org/en/openapi/" />
+    <link rel="alternate" hreflang="en" href="https://techdocs.gbif.org/en/openapi/" />
+    
+    
+    
+
+    
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item gbif-logo" href="https://techdocs.gbif.org/en">
+        <svg class="logo" viewBox="90 239.1 539.7 523.9" xmlns="http://www.w3.org/2000/svg">
+            <path class="gbif-logo-svg" d="M325.5,495.4c0-89.7,43.8-167.4,174.2-167.4C499.6,417.9,440.5,495.4,325.5,495.4"></path>
+            <path class="gbif-logo-svg" d="M534.3,731c24.4,0,43.2-3.5,62.4-10.5c0-71-42.4-121.8-117.2-158.4c-57.2-28.7-127.7-43.6-192.1-43.6c28.2-84.6,7.6-189.7-19.7-247.4c-30.3,60.4-49.2,164-20.1,248.3c-57.1,4.2-102.4,29.1-121.6,61.9c-1.4,2.5-4.4,7.8-2.6,8.8c1.4,0.7,3.6-1.5,4.9-2.7c20.6-19.1,47.9-28.4,74.2-28.4c60.7,0,103.4,50.3,133.7,80.5C401.3,704.3,464.8,731.2,534.3,731"></path>
+        </svg>
+        <div  class="nav-brand__name-area">
+          <span>Technical Documentation</span>
+        </div>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="../data-publishing/">Data publishing</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="../data-processing/">Data processing</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="../data-use/">Data use</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="./">API</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="../cloud-services/">Cloud services</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="../system-components/">System components</a>
+</div>
+      </div>
+
+      <div class="navbar-end">
+        
+        <div class="navbar-item search hide-for-print">
+          <div id="search-field" class="field">
+            <input id="search-input" type="text" placeholder="Search docs">
+          </div>
+        </div>
+        
+
+        <div class="navbar-item has-dropdown is-hoverable">
+  <!-- Current: en -->
+  <a class="navbar-link" href="#">
+    <svg class="navbar-languages" fill="#fcfcfc" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+    </svg>
+  </a>
+  <div class="navbar-dropdown"><a class="navbar-item" href="../../en/openapi/">English</a></div>
+</div>
+        <div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link">
+    <svg class="navbar-feedback" fill="#fcfcfc" height="24" viewBox="0 0 100 100" width="24" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M15.5,15.498h69v51.754H67.253v17.25L50,67.252H15.5V15.498z"/>
+    </svg>
+  </a>
+  <div class="navbar-dropdown">
+    <a class="navbar-item" href="https://github.com/gbif/tech-docs/issues/new?labels=Feedback&body=Feedback+on+[GBIF API Reference](https://techdocs.gbif.org/en/openapi/) ([Github source for this page](../blob/main/./en/openapi/modules/ROOT/pages/index.adoc))%0A%0AWrite+your+feedback+here.">Leave feedback on GitHub</a>
+    <a class="navbar-item" href="mailto:helpdesk@gbif.org?subject=Feedback on technical documentation 'GBIF API Reference'&body=Feedback on https://techdocs.gbif.org/en/openapi/">Send feedback by email</a>
+    <a class="navbar-item" href="https://github.com/gbif/tech-docs/edit/main/en/openapi/modules/ROOT/pages/index.adoc">Edit this page on GitHub</a>
+      </div>
+</div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="openapi" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="./">GBIF API reference</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="v1/registry">Registry API</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="v1/registry-principal-methods">Registry API (Principal methods)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="v1/species">Species API</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="v1/occurrence">Occurrence API</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="images">Occurrence Image API</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="v2/maps">Maps API</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="v1/literature">Literature API</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="v1/validator">Validator API</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="v1/vocabulary">Vocabulary API</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="analytics">Analytics and Data Trends</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="./">GBIF API reference</a></li>
+    <li><a href="./">GBIF API Reference</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Page contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">GBIF API Reference</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/open-api.png" alt="320" width="192">
+</div>
+</div>
+<div class="paragraph">
+<p>The GBIF API provides a programmatic way to query and publish data on GBIF.org.  It can be useful or necessary to use the API to</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>make advanced queries, not supported by the website,</p>
+</li>
+<li>
+<p>include the results of GBIF queries in scripts, workflows or analyses, which can then be repeated reliably and automatically,</p>
+</li>
+<li>
+<p>embed GBIF data into other websites.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The GBIF API is RESTful and most queries return data in JSON format. The base URL is <a href="https://api.gbif.org/" class="bare">https://api.gbif.org/</a>.</p>
+</div>
+<div class="paragraph">
+<p>The API should be considered stable, as should this accompanying documentation.</p>
+</div>
+<div class="paragraph">
+<p><strong>General API documentation and advice on usage, including using R, Python and Java API clients, is in the <a href="../data-use/" class="xref page">Data Use</a> section.</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="api-sections"><a class="anchor" href="#api-sections"></a>API Sections</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The API is split into logical sections to ease understanding:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <a href="v1/registry-principal-methods" class="xref page"><strong>Registry</strong></a> provides means to create, edit, update and search for information about the datasets, publishing organizations, networks and the means to access them (technical endpoints). The registered content controls what is crawled and indexed in the GBIF data portal, but as a shared API may also be used for other initiatives, including the Global Register of Scientific Collections (GRSciColl).</p>
+</li>
+<li>
+<p><a href="v1/species" class="xref page"><strong>Species</strong></a> provides services to discover and access information about species and higher taxa, and utility services for interpreting names and looking up the identifiers and complete scientific names used for species in the GBIF portal.</p>
+</li>
+<li>
+<p><a href="v1/occurrence" class="xref page"><strong>Occurrence</strong></a> provides access to occurrence information crawled and indexed by GBIF, search services to do real-time paged search and asynchronous download services to request large, batch downloads.</p>
+</li>
+<li>
+<p>The <a href="images" class="xref page"><strong>Occurrence Image API</strong></a> provides low or medium resolution images linked to occurrences.</p>
+</li>
+<li>
+<p><a href="v2/maps" class="xref page"><strong>Maps</strong></a> provides services to show maps of GBIF-mobilized content.</p>
+</li>
+<li>
+<p><a href="v1/literature" class="xref page"><strong>Literature</strong></a> provides access to peer-reviewed papers and other literature indexed by GBIF, citing GBIF datasets and downloads.</p>
+</li>
+<li>
+<p><a href="v1/validator" class="xref page"><strong>Validator</strong></a> allows running data structure and quality checks against a dataset before publication to GBIF.</p>
+</li>
+<li>
+<p><a href="v1/vocabulary" class="xref page"><strong>Vocabularies</strong></a> are used during data interpretation to align some terms such as Life Stage to a limited set of values.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="communication"><a class="anchor" href="#communication"></a>Communication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can sign up to the <a href="https://lists.gbif.org/mailman/listinfo/api-users">GBIF API users mailing list</a> to post your questions, and to keep informed about the API. We will announce new versions and scheduled maintenance downtimes before they happen.</p>
+</div>
+<div class="paragraph">
+<p>You can also post questions to the <a href="https://discourse.gbif.org/">GBIF Community Forum</a> or using the feedback buttons at the top of the pages on <a href="https://www.gbif.org/">GBIF.org</a>.</p>
+</div>
+<div class="paragraph">
+<p>Please report any issues you find with the API to <a href="https://github.com/gbif/portal-feedback/issues">GitHub</a> (recommended if you already have a GitHub account), using the "feedback" button on an appropriate page on gbif.org, or by email to the <a href="mailto:helpdesk@gbif.org">Helpdesk</a>.  Errors, omissions or improvements to the documentation can be made in the same way, or with the "Edit this page" links on this site.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="rate-limits"><a class="anchor" href="#rate-limits"></a>Rate limits</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you are integrating the GBIF API into a website or app, we highly recommend you set the HTTP <code>User-Agent</code> to a URL or email address.  We can then contact you if there is a problem.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Many common API operations are able to sustain rapid querying, such as species matching, the geocode API or retrieving individual occurrences.</p>
+</div>
+<div class="paragraph">
+<p><strong>Rapid or numerous queries to search APIs may be rate limited</strong>, depending on our server load.  If this happens, you will receive an <code>HTTP 429</code> error, and you should reduce your query rate or use the <a href="../data-use/api-downloads" class="xref page">download API</a>.  The maximum rate changes depending on our server load; we do not guarantee any particular query rate will work.</p>
+</div>
+<div class="paragraph">
+<p>The most common cause of rate-limiting is when retrieving occurrence records for thousands or tens of thousands of species/countries/datasets/locations.  <strong>If a script will take more than 15 minutes using the occurrence search APIs it will be usually be faster and cause less load on our servers to <a href="../data-use/api-downloads" class="xref page">request a download</a> instead.</strong>  This also allows for proper <a href="https://www.gbif.org/citation-guidelines">attribution and citation</a>.  The download API accepts up to 100,000 search parameters, such as taxa or datasets.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="unsupported-use"><a class="anchor" href="#unsupported-use"></a>Unsupported use</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>API endpoints not listed in the documentation, or those marked "experimental", may be changed or removed without warning.</p>
+</div>
+<div class="paragraph">
+<p>The GBIF website at <a href="https://www.gbif.org">www.GBIF.org</a> is not part of the public API.  Scripted use of www.GBIF.org, including scraping, bulk downloading of webpages or web page resources may be blocked without warning.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="common-operations"><a class="anchor" href="#common-operations"></a>Common operations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following details common cross-cutting parameters used in the API</p>
+</div>
+<div class="sect2">
+<h3 id="paging"><a class="anchor" href="#paging"></a>Paging</h3>
+<div class="paragraph">
+<p>For requests that support paging the following parameters are used:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>limit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Controls the number of results in the page. Using too high a value will be overwritten with the default maximum threshold, depending on the service. Sensible defaults are used so this may be omitted.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>offset</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Determines the offset for the search results. A limit of 20 and offset of 40 will retrieve the third page of 20 results.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="repeatable-parameters"><a class="anchor" href="#repeatable-parameters"></a>Repeatable parameters</h3>
+<div class="paragraph">
+<p>Many search parameters are repeatable, for example the country parameter in the occurrence search.  Repeating the parameter with different values will search for records matching any value.  For example, <code><a href="https://api.gbif.org/v1/occurrence/search?country=GB&amp;country=IE&amp;country=IM" class="bare">https://api.gbif.org/v1/occurrence/search?country=GB&amp;country=IE&amp;country=IM</a></code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="range-queries"><a class="anchor" href="#range-queries"></a>Range queries</h3>
+<div class="paragraph">
+<p>Some search parameters support range queries, for example the year parameter in the occurrence search. In general ranges are given as a single parameter value by concatenating a lower and an upper value with a comma. For example: <code><a href="https://api.gbif.org/v1/occurrence/search?year=1800,1899" class="bare">https://api.gbif.org/v1/occurrence/search?year=1800,1899</a></code>.</p>
+</div>
+<div class="paragraph">
+<p>In most cases, where a parameter can <em>either</em> be repeated, <em>or</em> used as a range, but not queried with multiple ranges.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="authentication"><a class="anchor" href="#authentication"></a>Authentication</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Most use of the GBIF API does not require authentication.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>POST, PUT, DELETE and some GET requests require authentication. The GBIF API uses <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">HTTP Basic Authentication</a> with any existing <a href="https://www.gbif.org/user/profile">GBIF user account</a>.</p>
+</div>
+<div class="paragraph">
+<p>For example, to issue a new download programmatically using curl with a <a href="../data-use/api-downloads" class="xref page">query filter as JSON</a> in a file called filter.json:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ curl -i --user yourUserName:yourPassword -H "Content-Type: application/json" -X POST -d @filter.json https://api.gbif.org/v1/occurrence/download/request`</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="enumerations"><a class="anchor" href="#enumerations"></a>Enumerations</h3>
+<div class="paragraph">
+<p>Many parts of the GBIF API make use of enumerations, i.e. controlled vocabularies for specific topics. Often these are based on existing standards such as ISO or <a href="https://www.tdwg.org/standards/">TDWG</a>. The enumerations are part of the <a href="https://gbif.github.io/gbif-api/apidocs/org/gbif/api/vocabulary/package-summary.html">GBIF Java API</a>, but the currently active version can also be dynamically accessed through our JSON webservices to support more dynamic clients.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Resource URL</th>
+<th class="tableblock halign-left valign-top">Method</th>
+<th class="tableblock halign-left valign-top">Response</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/enumeration/basic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://api.gbif.org/v1/enumeration/basic">Enumeration list</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lists all available enumerations</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/enumeration/basic/{ENUMERATION}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://api.gbif.org/v1/enumeration/basic/TypeStatus">Enumeration values</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lists all available values for a given enumeration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/enumeration/country</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://api.gbif.org/v1/enumeration/country">Country and area list</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lists all countries and areas with their code and title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/enumeration/license</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://api.gbif.org/v1/enumeration/license">License list</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lists all supported GBIF licenses using the License URL or just the enum name if no URL exists.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="roadmap-to-v2"><a class="anchor" href="#roadmap-to-v2"></a>Roadmap to v2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most of the GBIF API is currently at version 1 which means:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The API is stable – we won&#8217;t rename or remove any REST resources or response properties to ensure backwards compatibility, but we might add new resources to the API. Any additions will be announced via the API mailing list.</p>
+</li>
+<li>
+<p>Any bug fixes or additions will result in minor version changes which are not reflected in the API URL, only in the documentation and our Java client code.</p>
+</li>
+<li>
+<p>If and when the need for breaking changes arises we will document our intent here and on the mailing list, and give considerable warning before moving to a future v2.</p>
+</li>
+<li>
+<p>The base URL includes the version as appropriate.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The Maps API is at version 2, with the same expectations (as far as is possible, <a href="v1/maps" class="xref page">Maps API version 1</a> continues to work).</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="next"><a href="v1/registry">Registry API</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="horizontal-stripe light-background">
+    <div class="footer-container">
+      <nav class="site-footer__menu">
+        <div>
+<a href="https://www.gbif.org/">GBIF.org</a>
+<a href="https://data-blog.gbif.org/">Data blog</a>
+<a href="https://www.gbif.org/terms">Terms and agreements</a>
+<a href="https://www.gbif.org/contact-us">Contact</a>
+        </div>
+        <div>
+          <strong>GBIF Secretariat</strong> • Universitetsparken 15 • DK-2100 Copenhagen Ø • Denmark
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="horizontal-stripe">
+    <div class="footer-container">
+      <a href="https://www.gbif.org/"><img src="https://www.gbif.org/img/full_logo_white.svg" alt="GBIF"></a>
+    </div>
+  </div>
+</footer>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+<script src="../_/js/vendor/lunr.js"></script>
+<script src="../_/js/search-ui.js" id="search-ui-script" data-site-root-path=".." data-snippet-length="100" data-stylesheet="../_/css/search.css"></script>
+<script async src="../search-index.js"></script>
+<script defer data-domain="techdocs.gbif.org" src="https://plausible.io/js/script.file-downloads.js"></script>
+  </body>
+</html>

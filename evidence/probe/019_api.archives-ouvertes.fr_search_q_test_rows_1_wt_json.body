@@ -1,0 +1,13 @@
+{
+  "response":{
+    "numFound":141710,
+    "start":0,
+    "maxScore":3.3632514,
+    "numFoundExact":true,
+    "docs":[{
+      "docid":"3187974",
+      "label_s":"Camille Bucher. Validité du test du levier dans le diagnostic clinique de rupture du ligament croisé antérieur du genou. Médecine humaine et pathologie. 2021. &#x27E8;dumas-03187974&#x27E9;",
+      "uri_s":"https://dumas.ccsd.cnrs.fr/dumas-03187974v1"
+    }]
+  }
+}

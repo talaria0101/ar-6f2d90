@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Scholar - Academic Graph API</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+
+    <!--
+    ReDoc doesn't change outer page styles
+    -->
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        padding-top: 40px;
+      }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      font-family: Roboto;
+      background-color: #263238;
+      display:flex;
+      align-items:center;
+    }
+    #links_container {
+        margin: 0;
+        padding: 0;
+    }
+    #links_container a {
+        color: white;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #links_container li {
+        display: inline-block;
+        padding: 10px;
+        padding-right: 15px;
+    }
+    #logo {
+        float:left;
+        height: 40px;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://api.semanticscholar.org"><img id="logo" src="/logo.svg"></a>
+        <ul id="links_container">
+        
+            <li><a href="/api-docs/graph">Academic Graph API</a></li>
+        
+            <li><a href="/api-docs/recommendations">Recommendations API</a></li>
+        
+            <li><a href="/api-docs/datasets">Datasets API</a></li>
+        
+        </ul>
+    </nav>
+    <redoc scroll-y-offset="body > nav"></redoc>
+    <script src="https://cdn.jsdelivr.net/npm/redoc@2.5.2/bundles/redoc.standalone.js"> </script>
+    <script>
+        Redoc.init('/graph/v1/swagger.json');
+    </script>
+</body>
+</html>

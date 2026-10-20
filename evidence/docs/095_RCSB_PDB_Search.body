@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>RCSB PDB Search API: Understanding and Using</title>
+
+    <link href="docs/assets/screen.css" rel="stylesheet" media="screen">
+    <link href="docs/assets/print.css" rel="stylesheet" media="print">
+
+    <script src="docs/assets/helpers.js"></script>
+</head>
+
+<body data-languages="[&quot;shell&quot;]">
+
+<div class="docs-header">
+    <p class="docs-title">RCSB PDB: Search API Documentation</p>
+</div>
+
+<div class="toc-wrapper">
+    <div class="toc-header">
+        <div class="search">
+            <label for="input-search"></label><input type="text" class="search" id="input-search" placeholder="Search documentation">
+        </div>
+        <ul class="search-results">
+            <li><a href="#search-api">Search API Basics</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#building-search-request">Build Your Search</a></li>
+            <li><a href="#search-services">Search Services</a></li>
+            <li><a href="#return-type">Return Type</a></li>
+            <li><a href="#query-language">Query Language</a></li>
+            <li><a href="#basic-queries">Basic Search</a></li>
+            <li><a href="#attribute-queries">Attribute Search</a></li>
+            <li><a href="#boolean-queries">Boolean Expressions</a></li>
+            <li><a href="#scoring-strategy">Scoring Strategy</a></li>
+            <li><a href="#sorting">Sorting</a></li>
+            <li><a href="#pagination">Pagination</a></li>
+            <li><a href="#return-count">Counting Results</a></li>
+            <li><a href="#results_content_type">Include Computed Models</a></li>
+            <li><a href="#using-facets">Faceted Queries</a></li>
+            <li><a href="#facets-terms">Terms Facets</a></li>
+            <li><a href="#facets-histogram">Histogram Facets</a></li>
+            <li><a href="#facets-date-histogram">Date Histogram Facets</a></li>
+            <li><a href="#facets-range">Range Facets</a></li>
+            <li><a href="#facets-date-range">Date Range Facets</a></li>
+            <li><a href="#facets-cardinality">Cardinality Facets</a></li>
+            <li><a href="#facets-sum">Sum Facets</a></li>
+            <li><a href="#facets-avg">Avg Facets</a></li>
+            <li><a href="#facets-filter">Filter Facets</a></li>
+            <li><a href="#facets-multi-dimensional">Multi-Dimensional Facets</a></li>
+            <li><a href="#search-operators">Search Operators</a></li>
+            <li><a href="#exact-match-operators">Exact Match Operators</a></li>
+            <li><a href="#exact-match-operator">exact_match</a></li>
+            <li><a href="#in-operator">in</a></li>
+            <li><a href="#full-text-operators">Full-Text Operators</a></li>
+            <li><a href="#contains-words-operator">contains_words</a></li>
+            <li><a href="#contains-phrase-operator">contains_phrase</a></li>
+            <li><a href="#comparison-operators">Comparison Operators</a></li>
+            <li><a href="#range-operator">Range Operator</a></li>
+            <li><a href="#exists-operator">Exists Operator</a></li>
+            <li><a href="#date-math-expressions">Date Math Expressions</a></li>
+            <li><a href="#search-attributes">Search Attributes</a></li>
+            <li><a href="#search-results">Search Results</a></li>
+            <li><a href="#response-body">Response Body</a></li>
+            <li><a href="#results-set">Results Set</a></li>
+            <li><a href="#results-verbosity-levels">Results Verbosity Level</a></li>
+            <li><a href="#empty-results">Empty Results</a></li>
+            <li><a href="#dealing-with-redundancy">Dealing with Redundancy</a></li>
+            <li><a href="#group-by-context">Group By Parameters</a></li>
+            <li><a href="#group-by-return-type">Group By Return Type</a></li>
+            <li><a href="#group-members-ranking">Group Members Ranking</a></li>
+            <li><a href="#faceting-upon-groups">Faceting Upon Grouped Results</a></li>
+            <li><a href="#sorting-groups">Sorting Grouped Results</a></li>
+            <li><a href="#paging-groups">Paging Grouped Results</a></li>
+            <li><a href="#return-groups-counts">Counting Grouped Results</a></li>
+            <li><a href="#api-clients">API Clients</a></li>
+            <li><a href="#api-client-python">Python</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#search-example-1">Biological Assembly Search</a></li>
+            <li><a href="#search-example-2">X-ray Structures Search</a></li>
+            <li><a href="#search-example-3">Protein Sequence Search</a></li>
+            <li><a href="#search-example-4">3D-embedding Search</a></li>
+            <li><a href="#search-example-5">3Free Ligand Search</a></li>
+            <li><a href="#search-example-6">Sequence Motif Search</a></li>
+            <li><a href="#search-example-7">Chemical Similarity Search</a></li>
+            <li><a href="#search-example-8">Search by UniProt Accession</a></li>
+            <li><a href="#search-example-9">Structure Motif Search</a></li>
+            <li><a href="#search-example-10">Combining Search Services</a></li>
+            <li><a href="#search-example-11">Sequence Cluster Statistics</a></li>
+            <li><a href="#search-example-12">Newly Released Structures</a></li>
+            <li><a href="#search-example-13">Membrane Proteins</a></li>
+            <li><a href="#search-example-14">Symmetry and Enzyme Classification</a></li>
+            <li><a href="#search-example-15">Computed Structure Models</a></li>
+            <li><a href="#search-example-16">Structure Search with Custom Data</a></li>
+            <li><a href="#search-examples-ihm">Integrative Structures</a></li>
+            <li><a href="#migration-guide">Migration Guides</a></li>
+            <li><a href="#migration-legacy">Migrating from Legacy Search API</a></li>
+            <li><a href="#migration-v1-to-v2">Migrating from v1 to v2</a></li>
+            <li><a href="#acknowledgements">Acknowledgements</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+        </ul>
+    </div>
+
+    <div id="toc" class="toc-list-h1">
+        <ul>
+            <li>
+                <a href="#search-api" class="toc-h1 toc-link" data-title="search-api">Search API Basics</a>
+                <ul class="toc-list-h2 active" style="display: block;">
+                    <li>
+                        <a href="#introduction" class="toc-h2 toc-link" data-title="introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#building-search-request" class="toc-h2 toc-link" data-title="building-search-request">Build Your Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-services" class="toc-h2 toc-link" data-title="search-services">Search Services</a>
+                    </li>
+                    <li>
+                        <a href="#return-type" class="toc-h2 toc-link active" data-title="return-type">Return Type</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#query-language" class="toc-h1 toc-link" data-title="query-language">Query Language</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#basic-queries" class="toc-h2 toc-link active" data-title="basic-queries">Basic Search</a>
+                    </li>
+                    <li>
+                        <a href="#attribute-queries" class="toc-h2 toc-link active" data-title="attribute-queries">Attribute Search</a>
+                    </li>
+                    <li>
+                        <a href="#boolean-queries" class="toc-h2 toc-link active" data-title="boolean-queries">Boolean Expressions</a>
+                    </li>
+                    <li>
+                        <a href="#scoring-strategy" class="toc-h2 toc-link active" data-title="scoring-strategy">Scoring Strategy</a>
+                    </li>
+                    <li>
+                        <a href="#sorting" class="toc-h2 toc-link active" data-title="sorting">Sorting</a>
+                    </li>
+                    <li>
+                        <a href="#pagination" class="toc-h2 toc-link active" data-title="pagination">Pagination</a>
+                    </li>
+                    <li>
+                        <a href="#return-count" class="toc-h2 toc-link active" data-title="return-count">Counting Results</a>
+                    </li>
+                    <li>
+                        <a href="#results_content_type" class="toc-h2 toc-link active" data-title="results_content_type">Include Computed Models</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#using-facets" class="toc-h1 toc-link" data-title="using-facets">Faceted Queries</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li><a href="#facets-terms" class="toc-h2 toc-link active" data-title="facets-terms">Terms Facets</a></li>
+                    <li><a href="#facets-histogram" class="toc-h2 toc-link active" data-title="facets-histogram">Histogram Facets</a></li>
+                    <li><a href="#facets-date-histogram" class="toc-h2 toc-link active" data-title="facets-date-histogram">Date Histogram Facets</a></li>
+                    <li><a href="#facets-range" class="toc-h2 toc-link active" data-title="facets-range">Range Facets</a></li>
+                    <li><a href="#facets-date-range" class="toc-h2 toc-link active" data-title="facets-date-range">Date Range Facets</a></li>
+                    <li><a href="#facets-cardinality" class="toc-h2 toc-link active" data-title="facets-cardinality">Cardinality Facets</a></li>
+                    <li><a href="#facets-sum" class="toc-h2 toc-link active" data-title="facets-sum">Sum Facets</a></li>
+                    <li><a href="#facets-avg" class="toc-h2 toc-link active" data-title="facets-avg">Avg Facets</a></li>
+                    <li><a href="#facets-filter" class="toc-h2 toc-link active" data-title="facets-filter">Filter Facets</a></li>
+                    <li><a href="#facets-multi-dimensional" class="toc-h2 toc-link active" data-title="facets-multi-dimensional">Multi-Dimensional Facets</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#search-operators" class="toc-h1 toc-link" data-title="search-operators">Search Operators</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#exact-match-operators" class="toc-h2 toc-link active" data-title="exact-match-operators">Exact Match Operators</a>
+                        <ul class="toc-list-h5" style="display: none;">
+                            <li><a href="#exact-match-operator">exact_match</a></li>
+                            <li><a href="#in-operator">in</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#full-text-operators" class="toc-h2 toc-link active" data-title="full-text-operators">Full-Text Operators</a>
+                        <ul class="toc-list-h5" style="display: none;">
+                            <li><a href="#contains-words-operator">contains_words</a></li>
+                            <li><a href="#contains-phrase-operator">contains_phrase</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#comparison-operators" class="toc-h2 toc-link active" data-title="comparison-operators">Comparison Operators</a></li>
+                    <li><a href="#range-operator" class="toc-h2 toc-link active" data-title="range-operator">Range Operator</a></li>
+                    <li><a href="#exists-operator" class="toc-h2 toc-link active" data-title="exists-operator">Exists Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#date-math-expressions" class="toc-h1 toc-link" data-title="date-math-expressions">Date Math Expressions</a>
+            </li>
+            <li>
+                <a href="#search-attributes" class="toc-h1 toc-link" data-title="search-attributes">Search Attributes</a>
+            </li>
+            <li>
+                <a href="#search-results" class="toc-h1 toc-link" data-title="search-results">Search Results</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#response-body" class="toc-h2 toc-link" data-title="response-body">Response Body</a>
+                    </li>
+                    <li>
+                        <a href="#results-set" class="toc-h2 toc-link" data-title="results-set">Results Set</a>
+                    </li>
+                    <li>
+                        <a href="#results-verbosity-levels" class="toc-h2 toc-link active" data-title="results-verbosity-levels">Results Verbosity Level</a>
+                    </li>
+                    <li>
+                        <a href="#empty-results" class="toc-h2 toc-link" data-title="empty-results">Empty Results</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#dealing-with-redundancy" class="toc-h1 toc-link" data-title="dealing-with-redundancy">Dealing with Redundancy</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#group-by-context" class="toc-h2 toc-link" data-title="group-by-context">Group By Parameters</a>
+                    </li>
+                    <li>
+                        <a href="#group-by-return-type" class="toc-h2 toc-link" data-title="group-by-return-type">Group By Return Type</a>
+                    </li>
+                    <li>
+                        <a href="#group-members-ranking" class="toc-h2 toc-link" data-title="group-members-ranking">Group Members Ranking</a>
+                    </li>
+                    <li>
+                        <a href="#faceting-upon-groups" class="toc-h2 toc-link" data-title="faceting-upon-groups">Faceting Upon Grouped Results</a>
+                    </li>
+                    <li>
+                        <a href="#sorting-groups" class="toc-h2 toc-link" data-title="sorting-groups">Sorting Grouped Results</a>
+                    </li>
+                    <li>
+                        <a href="#paging-groups" class="toc-h2 toc-link" data-title="paging-groups">Paging Grouped Results</a>
+                    </li>
+                    <li>
+                        <a href="#return-groups-counts" class="toc-h2 toc-link" data-title="return-groups-counts">Counting Grouped Results</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#api-clients" class="toc-h1 toc-link" data-title="api-clients">API Clients</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#api-client-python" class="toc-h2 toc-link" data-title="api-client-python">Python</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#examples" class="toc-h1 toc-link" data-title="examples">Examples</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#search-example-1" class="toc-h2 toc-link" data-title="search-example-1">Biological Assembly Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-2" class="toc-h2 toc-link" data-title="search-example-2">X-ray Structures Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-3" class="toc-h2 toc-link" data-title="search-example-3">Protein Sequence Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-4" class="toc-h2 toc-link" data-title="search-example-4">3D-embedding Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-5" class="toc-h2 toc-link" data-title="search-example-5">Free Ligand Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-6" class="toc-h2 toc-link" data-title="search-example-6">Sequence Motif Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-7" class="toc-h2 toc-link" data-title="search-example-7">Chemical Similarity Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-8" class="toc-h2 toc-link" data-title="search-example-8">Search by UniProt Accession</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-9" class="toc-h2 toc-link" data-title="search-example-9">Structure Motif Search</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-10" class="toc-h2 toc-link" data-title="search-example-10">Combining Search Services</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-11" class="toc-h2 toc-link" data-title="search-example-11">Sequence Cluster Statistics</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-12" class="toc-h2 toc-link" data-title="search-example-12">Newly Released Structures</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-13" class="toc-h2 toc-link" data-title="search-example-13">Membrane Proteins</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-14" class="toc-h2 toc-link" data-title="search-example-14">Symmetry and Enzyme Classification</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-15" class="toc-h2 toc-link" data-title="search-example-15">Computed Structure Models</a>
+                    </li>
+                    <li>
+                        <a href="#search-example-16" class="toc-h2 toc-link" data-title="search-example-16">Structure Search with Custom Data</a>
+                    </li>
+                    <li>
+                        <a href="#search-examples-ihm" class="toc-h2 toc-link" data-title="search-examples-ihm">Integrative Structures</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#migration-guide" class="toc-h1 toc-link" data-title="migration-guide">Migration Guides</a>
+                <ul class="toc-list-h2" style="display: none;">
+                    <li>
+                        <a href="#migration-legacy" class="toc-h2 toc-link" data-title="migration-legacy">Migrating from Legacy Search API</a>
+                    </li>
+                    <li>
+                        <a href="#migration-v1-to-v2" class="toc-h2 toc-link" data-title="migration-v1-to-v2">Migrating from v1 to v2</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#acknowledgements" class="toc-h1 toc-link" data-title="acknowledgements">Acknowledgements</a>
+            </li>
+            <li>
+                <a href="#contact-us" class="toc-h1 toc-link" data-title="contact-us">Contact Us</a>
+            </li>
+            <li>
+                <a href="#changelog" class="toc-h1 toc-link" data-title="changelog">Changelog</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-page-wrapper">
+
+    <div class="content">
+        <h1 id="search-api">RCSB PDB Search API</h1>
+        <aside>
+            This API allows searching metadata such as molecule names, sequences, and experimental details for
+            experimental structures from the <a href="https://www.rcsb.org/">PDB</a> and certain
+            <a href="https://www.rcsb.org/docs/general-help/computed-structure-models-and-rcsborg#what-csms-are-available">Computed Structure Models (CSMs)</a>.
+        </aside>
+        <ul>
+            <li>
+                Reference Documentation: <a href="redoc/index.html" target="_blank">RCSB PDB Search API Reference</a>
+            </li>
+            <li>
+                Query Editor: <a href="query-editor.html" target="_blank">RCSB PDB Search API Query Editor</a>
+            </li>
+            <li>
+                Examples: <a href="#examples">RCSB PDB Search API Examples</a>
+            </li>
+        </ul>
+        <p>
+            Stay current with API announcements by subscribing to the RCSB PDB API mailing list:
+        </p>
+        <ul>
+            <li>
+                <a href="https://groups.google.com/a/rcsb.org/g/api/about" target="_blank">signing in</a> with
+                existing google account and subscribe
+            </li>
+            <li>
+                or send an email to <a href="mailto:api+subscribe@rcsb.org?subject=Subscribing to RCSB PDB API mailing list">api+subscribe@rcsb.org</a>
+            </li>
+        </ul>
+
+        <h2 id="introduction">Introduction</h2>
+        <p>
+            The Search API accepts HTTP GET or POST requests with JSON payloads. The base URI of search endpoint is
+            <code>https://search.rcsb.org/rcsbsearch/v2/query</code>. In GET method, search request should be sent
+            as a URL-encoded query string in <code>json</code> parameter:
+            <i>https://search.rcsb.org/rcsbsearch/v2/query?json={search-request}</i>.
+        </p>
+        <p>
+            Query syntax for the <i>{search-request}</i> is detailed in the <a href="#query-language">Query Language</a>
+            section of this guide. See <a href="#building-search-request">Build Your Search</a> section for general
+            information on how to construct the <i>{search-request}</i> object.
+        </p>
+        <p>
+            The search API is designed to return only the identifiers of relevant hits (see
+            <a href="#return-type">Return Type</a> section for more information on the identifiers types that
+            can be requested) and additional metadata. See <a href="#response-body">Response Body</a> section
+            for more information. If you need to extract information on released date, macromolecules, organisms,
+            resolution, modified residues, ligands etc., you should use RCSB Data API:
+            <a href="https://data.rcsb.org" target="_blank">https://data.rcsb.org</a>.
+        </p>
+
+        <h2 id="building-search-request">Build Your Search</h2>
+        <p>
+            A search request is a complete specification of what should be returned in a result set.
+            The search request is represented as a JSON object. The building blocks of the request are:
+        </p>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Context</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>return_type</code></td>
+                <td><i>Required</i>.
+                    Specifies the type of the returned identifiers, e.g. entry, polymer entity,
+                    assembly, etc. See <a href="#return-type">Return Type</a> section for more information.</td>
+            </tr>
+            <tr>
+                <td><code>query</code></td>
+                <td><i>Optional</i>.
+                    Specifies the search expression. Can be omitted if, instead of IDs retrieval, facets or count
+                    operation should be performed. In this case the request must be configured via the
+                    <code>request_options</code> context.</td>
+            </tr>
+            <tr>
+                <td><code>request_options</code></td>
+                <td><i>Optional</i>.
+                    Controls various aspects of the search request including pagination, sorting, scoring and faceting.
+                    If omitted, the default parameters for sorting, scoring and pagination will be applied.</td>
+            </tr>
+            <tr>
+                <td><code>request_info</code></td>
+                <td><i>Optional</i>.
+                    Specifies an additional information about the query, e.g. <code>query_id</code>. It's an optional
+                    property and used internally at RCSB PDB for logging purposes. When <code>query_id</code> is sent with
+                    the search request, it will be included into the corresponding response object.</td>
+            </tr>
+            </tbody>
+        </table>
+
+        The <code>query</code> context may consist of two types of clauses:
+        <ul>
+            <li>
+                <i>Terminal node</i> - performs an atomic search operation, e.g. searches for a particular
+                value in a particular field. Parameters in the terminal query clause provide match criteria
+                for finding relevant search hits. The set of parameters differs for different search services.
+            </li>
+            <li>
+                <i>Group node</i> - wraps other terminal or group nodes and is used to combine multiple
+                queries in a logical fashion.
+            </li>
+        </ul>
+
+        <p>
+            The simplest query requires specifying only <code>return_type</code> parameter and <code>query</code>
+            context. With unspecified <span class="key smaller">parameters</span> property in the <code>query</code> object,
+            a query matches all documents, returning PDB IDs if the <span class="key smaller">return_type</span> property is
+            set to <span class="string">"entry"</span>.
+        </p>
+        <div id="example-match-all"></div>
+
+        <p style="margin-top: 40px">
+            Refer to <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="search-services">Search Services</h2>
+        <p>
+            The RCSB PDB Search API consolidates requests to heterogeneous search services. The list of available
+            services is below:
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>text</code></td>
+                <td>
+                    Performs attribute searches against textual annotations associated with PDB structures. Refer to
+                    <a href="structure-search-attributes.html" target="_blank">Structure Attributes Search</a> page
+                    for a full list of annotations.
+                </td>
+            </tr>
+            <tr>
+                <td><code>text_chem</code></td>
+                <td>
+                    Performs attribute searches against textual annotations associated with PDB molecular definitions.
+                    Refer to <a href="chemical-search-attributes.html" target="_blank">Chemical Attributes Search</a>
+                    page for a full list of annotations.
+                </td>
+            </tr>
+            <tr>
+                <td><code>full_text</code></td>
+                <td>
+                    Performs unstructured searches against textual annotations associated with PDB structures or
+                    molecular definitions. Unstructured search performs a full-text searches against multiple
+                    text attributes.
+                </td>
+            </tr>
+            <tr>
+                <td><code>sequence</code></td>
+                <td>
+                    This service employs the <a href="https://github.com/soedinglab/MMseqs2" target="_blank">MMseqs2</a>
+                    software and performs fast sequence matching searches (BLAST-like) based on a user-provided FASTA
+                    sequence (with E-value or % Identity cutoffs). Following searches are available:
+                    <ul>
+                        <li><code>protein</code>: search for protein sequences</li>
+                        <li><code>dna</code>: search for DNA sequences</li>
+                        <li><code>rna</code>: search for RNA sequences</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><code>seqmotif</code></td>
+                <td>
+                    Performs short motif searches against nucleotide or protein sequences, using three different
+                    types of input format:
+                    <ul>
+                        <li><code>simple</code> (e.g., CXCXXL)</li>
+                        <li><code>prosite</code> (e.g., C-X-C-X(2)-[LIVMYFWC])</li>
+                        <li><code>regex</code> (e.g., CXCX{2}[LIVMYFWC])</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><code>structure</code></td>
+                <td>
+                    Performs fast searches matching a global structure-informed embedding of assemblies or chains of a
+                    given entry (identified by PDB ID), using a custom
+                    <a href="https://github.com/bioinsilico/rcsb-embedding-search" target="_blank">embedding</a>
+                    strategy.
+                </td>
+            </tr>
+            <tr>
+                <td><code>strucmotif</code></td>
+                <td>Performs structure motif searches on all available PDB structures.</td>
+            </tr>
+            <tr>
+                <td><code>chemical</code></td>
+                <td>
+                    <p>Enables queries of small-molecule constituents of PDB structures, based on chemical formula and
+                    chemical structure. Both molecular formula and formula range searches are supported. Queries for
+                    matching and similar chemical structures can be performed using SMILES and InChI descriptors as
+                    search targets. Graph and chemical fingerprint searches are implemented using tools from the
+                        <a href="https://www.eyesopen.com/oechem-tk">OpenEye Chemical Toolkit</a>. </p>
+
+                    <p><b>Descriptor Matching Criteria:</b></p>
+                    <p>The following graph matching searches use a fingerprint prefilter so these are designed to
+                        find only similar molecules. These graph matching comparisons include:</p>
+                    <ul>
+                        <li>
+                            <code>graph-exact</code>: atom type, formal charge, bond order, atom and bond chirality,
+                            aromatic assignment, valence degree, and atom hydrogen count are used as matching criteria
+                            for this search type. Graph matching is performed on the subset of molecules satisfying a
+                            fingerprint screening search. Results will include isomorphic and substructure matches
+                            within this screened subset.
+                        </li>
+                        <li>
+                            <code>graph-strict</code>: atom type, formal charge, bond order, atom and bond chirality,
+                            aromatic assignment, ring membership, and valence degree are used as matching criteria for
+                            this search type. Graph matching is performed on the subset of molecules satisfying a
+                            fingerprint screening search. Results will include isomorphic and substructure matches
+                            within this screened subset.
+                        </li>
+                        <li>
+                            <code>graph-relaxed</code>: atom type, formal charge and bond order are used as matching
+                            criteria for this search type. Graph matching is performed on the subset of molecules
+                            satisfying a fingerprint screening search. Results will include isomorphic and substructure
+                            matches within this screened subset.
+                        </li>
+                        <li>
+                            <code>graph-relaxed-stereo</code>: atom type, formal charge, bond order, atom and bond
+                            chirality are used as matching criteria for this search type. Graph matching is performed
+                            on the subset of molecules satisfying a fingerprint screening search. Results will include
+                            isomorphic and substructure matches within this screened subset.
+                        </li>
+                        <li>
+                            <code>fingerprint-similarity</code>: <a href="https://en.wikipedia.org/wiki/Chemical_similarity"
+                                                                    target="_blank">Tanimoto similarity</a>
+                            is used as the matching criteria for molecular fingerprints. Matches include molecules with
+                            scores exceeding 0.6 for TREE type fingerprints or 0.9 for MACCS type fingerprints.
+                        </li>
+                    </ul>
+                    <p>
+                        The following graph matching searches perform an exhaustive substructure search with no
+                        pre-screening. These substructure graph matching comparisons include:
+                    </p>
+                    <ul>
+                        <li>
+                            <code>sub-struct-graph-exact</code> (atom type, formal charge, aromaticity, bond order,
+                            atom/bond stereochemistry, valence degree, atom hydrogen count)
+                        </li>
+                        <li>
+                            <code>sub-struct-graph-strict</code> (atom type, formal charge, aromaticity, bond order,
+                            atom/bond stereochemistry, ring membership, valence degree)
+                        </li>
+                        <li>
+                            <code>sub-struct-graph-relaxed</code> (atom type, formal charge, bond type)
+                        </li>
+                        <li>
+                            <code>sub-struct-graph-relaxed-stereo</code> (atom type, formal charge, bond type,
+                            atom/bond stereochemistry)
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2 id="return-type">Return Type</h2>
+        <p>
+            The search can return one of the following result types:
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>entry</code></td>
+                <td>
+                    Returns a list of PDB IDs.
+                </td>
+            </tr>
+            <tr>
+                <td><code>assembly</code></td>
+                <td>
+                    Returns a list of PDB IDs appended with assembly IDs in the format of a
+                    <span class="key smaller mono">[pdb_id]-[assembly_id]</span>, corresponding to biological
+                    assemblies.
+                </td>
+            </tr>
+            <tr>
+                <td><code>polymer_entity</code></td>
+                <td>
+                    Returns a list of PDB IDs appended with entity IDs in the format of a
+                    <span class="key smaller mono">[pdb_id]_[entity_id]</span>, corresponding to polymeric molecular
+                    entities.
+                </td>
+            </tr>
+            <tr>
+                <td><code>non_polymer_entity</code></td>
+                <td>
+                    Returns a list of PDB IDs appended with entity IDs in the format of a
+                    <span class="key smaller mono">[pdb_id]_[entity_id]</span>, corresponding to non-polymeric
+                    entities (or ligands).
+                </td>
+            </tr>
+            <tr>
+                <td><code>polymer_instance</code></td>
+                <td>
+                    Returns a list of PDB IDs appended with asym IDs in the format of a
+                    <span class="key smaller mono">[pdb_id].[asym_id]</span>, corresponding to instances of
+                    certain polymeric molecular entities, also known as chains.
+                    Note, that <span class="key smaller mono">asym_id</span> in the instance identifier
+                    corresponds to the <i>_label_asym_id</i> from the mmCIF schema (assigned by the PDB).
+                    It can differ from <i>_auth_asym_id</i> (selected by the author at the time of deposition).
+                </td>
+            </tr>
+            <tr>
+                <td><code>mol_definition</code></td>
+                <td>
+                    Returns a list of molecular definition identifiers that include:
+                    <ul>
+                        <li>
+                            Chemical component entries identified by the alphanumeric code, COMP ID: e.g. ATP, ZN
+                        </li>
+                        <li>
+                            BIRD entries identified by BIRD ID, e.g. PRD_000154
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h1 id="query-language">Query Language</h1>
+        <p>
+            The Search API provides a full query DSL (domain-specific language) based on JSON to define queries.
+        </p>
+
+        <h2 id="basic-queries">Basic Search</h2>
+        <p>
+            The query language allows to perform unstructured (basic) searches. An unstructured query refers to the
+            search of textual annotation associated with PDB structures when the field name is unknown. Such query
+            will search across all fields, available for search, and return a hit if match happens in any field.
+        </p>
+        <p>
+            To perform an unstructured search, you should send the <code>parameters</code> object
+            without an explicit <span class="key smaller">attribute</span> property:
+        </p>
+        <div id="example-basic"></div>
+
+        <p style="margin-top: 40px">
+            Refer to <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <aside>
+            By default, all terms are optional, as long as one term matches. The query <code>thymidine kinase</code>
+            is translated as <code>thymidine</code> OR <code>kinase</code>. You can wrap the input value with a
+            double-quote mark to change boolean logic to <code>AND</code>, i.e. <code>"thymidine kinase"</code>.
+        </aside>
+
+        <p>
+            Complex boolean queries in the basic search can be built with following operators:
+        </p>
+        <ul>
+            <li><code>+</code> signifies AND operation</li>
+            <li><code>|</code> signifies OR operation</li>
+            <li><code>-</code> negates a single token</li>
+            <li><code>"</code> wraps a number of tokens to signify a phrase for searching</li>
+            <li><code>(</code> and <code>)</code> signify precedence</li>
+        </ul>
+        <p>
+            For example, using a <code>interferon + response + factor</code> query string is equivalent
+            to running <code>interferon</code> AND <code>response</code> AND <code>factor</code> search.
+        </p>
+        <div id="example-basic-bool"></div>
+
+        <p style="margin-top: 60px">
+            You can use <code>(</code> and <code>)</code> to signify precedence. For example, searching with
+            a query string <code>isopeptide + ( collagen | fibrinogen )</code> returns structures that contain
+            <code>isopeptide</code> AND either <code>collagen</code> OR <code>fibrinogen</code>.
+        </p>
+        <div id="example-basic-bool-precedence"></div>
+
+        <h2 id="attribute-queries">Attribute Search</h2>
+        <p>
+            Attribute query allows searching for terms with relation to a specific attribute. To perform an attribute search,
+            you should send the <code>parameters</code> object with an explicit <span class="key smaller">attribute</span>
+            property set to a field name, <span class="key smaller">value</span> property set to a search term, and
+            <span class="key smaller">operator</span> property set to a <a href="#search-operators">search operator</a>.
+        </p>
+        <div id="example-attribute"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+        <p>
+            When using attribute search, you must observe the following rules:
+        </p>
+        <ul>
+            <li>
+                The field must be a valid field name listed in <a href="structure-search-attributes.html">Structure Attributes Search</a>
+                or <a href="chemical-search-attributes.html">Chemical Attributes Search</a>.
+            </li>
+            <li>
+                The operator must be compatible with the field. Full list of the operators is available in the
+                <a href="#search-operators">Search Operators</a> section.
+            </li>
+            <li>
+                The values entered must match the type of the field and be compatible with the operator.
+                Date values should be specified in ISO 8601 formats:
+                <ul>
+                    <li>
+                        Date: <code>YYYY-mm-DD</code>
+                    </li>
+                    <li>
+                        Date and Time: <code>YYYY-mm-DD'T'HH:MM:SS'Z'</code>, where the 'Z' means UTC
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4 id="negation">Negation</h4>
+        <p>
+            To perform negation on the operator, the <code>negation</code> property should be set to
+            <span class="boolean"><b>true</b></span> in the query <code>parameters</code> object. The
+            following search returns non-protein polymeric entities:
+        </p>
+        <div id="example-negation"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h4 id="case-sensitive">Case-Sensitive Search</h4>
+        <p>
+            By default, searches performed using <a href="#exact-match-operators">exact match operators</a> are
+            case-insensitive. You can make your search case-sensitive by setting the <code>case_sensitive</code>
+            property in the query <code>parameters</code> object to <span class="boolean"><b>true</b></span>.
+            This option can be useful when capitalization rules help convey additional information. For example,
+            gene symbols can differ in capitalization between homologous from different species, i.e. human genes
+            are always upper case.
+        </p>
+        <p>
+            The following search returns human kinases encoded by the <i>ABL1</i> gene. It excludes results
+            where the case doesn't match, such as non-receptor tyrosine-protein kinase from mouse encoded
+            by the <i>Abl1</i> gene.
+        </p>
+        <div id="example-case-sensitive"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="boolean-queries">Boolean Expressions</h2>
+        <p>
+            The query language supports two boolean operators: <code>AND</code> and <code>OR</code>. Boolean operators
+            should be added to the group node as <span class="key smaller">logical_operator</span> property.
+            The group nodes can be used to logically combine search expressions (terminal nodes) or other group nodes:
+        </p>
+        <div id="example-bool"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+        <h3 id="querying-nested-attributes">Querying Nested Attributes</h3>
+        <p>
+            Some attributes in the RCSB Search API belong to nested objects (for example,
+            <code>rcsb_polymer_entity_annotation.name</code> and <code>rcsb_polymer_entity_annotation.type</code>).
+            When searching for these attributes, it is important to distinguish between two different search semantics:
+        </p>
+        <ul>
+            <li>
+                <strong>Evaluate attributes together</strong> – all conditions must be satisfied by the same object within a collection.
+            </li>
+            <li>
+                <strong>Evaluate attributes independently</strong> – each condition may be satisfied by different objects in the collection.
+            </li>
+        </ul>
+        <p> Boolean grouping is used to express which behavior is intended. </p>
+
+        <h4 id="why-grouping-matters">Why grouping matters</h4>
+        <p>
+            Consider these attributes associated with a structure:
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <th>Annotation Name</th>
+                <th>Annotation Type</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>antibiotic resistance</td>
+                    <td>CARD</td>
+                </tr>
+                <tr>
+                    <td>antibiotic biosynthetic process</td>
+                    <td>GO</td>
+                </tr>
+                <tr>
+                    <td>kinase domain</td>
+                    <td>InterPro</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            If you add the following conditions to your search: <b>Annotation Name contains</b> <code>"antibiotic"</code>
+            AND <b>Annotation Type is</b> <code>"GO"</code>, there are two possible interpretations:
+        </p>
+        <ul>
+            <li>
+                Evaluate the conditions against the same annotation: Find structures that contain a single annotation,
+                where <b>Annotation Type is</b> <code>"GO"</code> and <b>Annotation Name contains</b> <code>"antibiotic"</code>.
+                In the example above, this matches the annotation <b>"antibiotic biosynthetic process"</b>.
+            </li>
+            <li>
+                Evaluate the conditions independently: Find structures that contain <b>any annotation</b> whose name
+                contains <code>"antibiotic"</code> and <b>any annotation</b> whose type is <code>"GO"</code>. These
+                conditions may be satisfied by different annotations. In the example above, the name condition could
+                be satisfied by the <b>CARD</b> annotation <b>"antibiotic resistance"</b>, while the type condition
+                is satisfied by the <b>GO</b> annotation <b>"antibiotic biosynthetic process"</b>.
+            </li>
+        </ul>
+        <p>These queries produce different results. Grouping allows you to specify which interpretation you want.</p>
+
+        <h4 id="nested-boolean-grouping">Boolean grouping</h4>
+        <p>
+            When attributes from nested documents must be evaluated together, place them in the same boolean group,
+            as in the following example:
+        </p>
+        <div id="example-nested-attributes-together"></div>
+
+        <p>
+            In this example the predicates are evaluated independently:
+        </p>
+        <div id="example-nested-attributes-independently"></div>
+
+        <h4 id="nested-schema-annotations">Schema annotations</h4>
+        <p>
+            The search schema, see <a href="/rcsbsearch/v2/metadata/schema" target="_blank">Structure Attributes</a>
+            and <a href="/rcsbsearch/v2/metadata/chemical/schema" target="_blank">Chemical Attributes</a> schemas,
+            identifies which attributes belong to nested documents. These annotations determine when grouping semantics
+            apply.
+        </p>
+        <p>
+            When constructing queries programmatically, applications can inspect the schema metadata to determine
+            whether an attribute is nested and whether grouping may affect query semantics. Specifically, the JSON
+            Schema extension property:
+        </p>
+        <div id="json-schema-nested-context-snippet"></div>
+        <p>
+            is added to array properties whose objects represent nested documents. Any attributes defined within such
+            an array are evaluated according to the grouping rules described above. When predicates on these attributes
+            are placed in the same boolean group, they are evaluated against the same array objects. When they are placed
+            in different groups, they may be satisfied by different objects.
+        </p>
+
+        <h4 id="nested-summary">Summary</h4>
+        <ul>
+            <li>
+                Most attributes behave like ordinary predicates and applying different groping doesn't affect the
+                results, i.e., <code>A+B+C</code> is equal to <code>A+(B+C)</code>.
+            </li>
+            <li>
+                Attributes belonging to nested documents may require grouping when they must refer to the same object.
+            </li>
+            <li>
+                Boolean groups express query intent explicitly, avoiding ambiguity and allowing both search semantics
+                to be represented.
+            </li>
+            <li>
+                Schema annotations identify which attributes are nested and therefore subject to these rules.
+            </li>
+        </ul>
+
+        <h2 id="scoring-strategy">Scoring Strategy</h2>
+        <p>
+            You can customize how scores from different services impact the final relevancy ranking of your search
+            results by setting a <code>scoring_strategy</code> in the <code>request_options</code> context. Following
+            scoring strategies are available: <code>combined</code> (default), <code>sequence</code>,
+            <code>seqmotif</code>, <code>strucmotif</code>, <code>structure</code>, <code>chemical</code>, and
+            <code>text</code>. For example, you might want to boost search results based on the relevance score
+            produced by <i>sequence</i> search service, then <code>sequence</code> scoring strategy should be used.
+        </p>
+        <p>
+            The final relevancy score is calculated as weighted sum of <a href="#results-set">normalized scores</a>
+            produced by different search services (all search result scores are rescaled to the interval [0, 1], 0
+            still means it met the criteria of the search). When <code>combined</code> strategy is used, equal weights
+            are applied. For other strategies, higher weight is used for select service scores making their contribution
+            to the final score bigger and therefore promoting ranking that is influenced by select service.
+        </p>
+
+        <h2 id="sorting">Sorting</h2>
+        <p>
+            Sorting is determined by the <code>sort</code> object in the <code>request_options</code> context.
+            It allows you to add one or more sorting conditions to control the order of the search result hits.
+            The sort operation is defined on a per field level, with special field name for <code>score</code>
+            to sort by score (the default).
+        </p>
+        <p>
+            <a href="structure-search-attributes.html" target="_blank">Structure Attributes Search</a> and
+            <a href="chemical-search-attributes.html" target="_blank">Chemical Attributes Search</a>  pages to
+            find all searchable attributes. Any attribute listing <code>exact_match</code> or <code>equals</code>
+            operators can be used for sorting.
+        </p>
+        <p>
+            By default sorting is done in descending order (<span class="string">"desc"</span>). The sort can be
+            reversed by setting <span class="key smaller">direction</span> property to <span class="string">"asc"</span>.
+            This example demonstrates how to sort the search results by release date:
+        </p>
+        <div id="example-sort"></div>
+
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="pagination">Pagination</h2>
+        <p>
+            By default, only first 10 hits are included in the search result list. Pagination can be configured by
+            the <code>start</code> and <code>rows</code> parameters of the <code>paginate</code> object in the
+            <code>request_options</code> context.
+        </p>
+        <aside>
+            Note that the maximum number of hits that can be retrieved in a single pagination request, with <code>start</code> and <code>rows</code>, is 10,000.
+        </aside>
+        <div id="example-pagination"></div>
+
+        <p style="margin-top: 50px">
+            To retrieve all hits use the <code>return_all_hits</code> parameter in the <code>request_options</code> context.
+            Please note that returning all hits is generally not desirable and may be the source of performance issues.
+        </p>
+        <div id="example-return-all"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="return-count">Counting Results</h2>
+        <p>
+            By default, the search results contains a list of matched identifiers and additional metadata. See
+            <a href="#search-results">Search Results</a> for more details. The <code>return_counts</code> flag
+            in the <code>request_options</code> context allows you to execute a search query and get back only
+            the number of matches for that query. The following query returns a number of current structures in
+            the PDB archive:
+        </p>
+        <div id="example-return-count"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="results_content_type">Include Computed Models</h2>
+        <p>
+            RCSB PDB has integrated Computed Structure Models from
+            <a href="https://alphafold.ebi.ac.uk/" target="_blank">AlphaFold DB</a> and
+            <a href="https://www.modelarchive.org/" target="_blank">ModelArchive</a>.
+            To include Computed Structure Models into your search results, add <code>results_content_type</code>
+            parameter to the <code>request_options</code> context. This parameter allows to specify the content
+            type filter that can include experimental, computational structures or both.
+        </p>
+        <div id="example-results-content-type"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h1 id="using-facets">Faceted Queries</h1>
+        <p>
+            Faceted queries (or facets) provide you with the ability to group and perform calculations and
+            statistics on PDB data by using a simple search query. Facets are the arrangement of search results
+            into categories (buckets) based on the requested field values.
+        </p>
+        <p>
+            If the <span class="key smaller">facets</span> property is specified in the <code>request_options</code>
+            context, the search results are presented along with numerical counts of how many matching IDs were found
+            for each term requested in the facets. If the <code>query</code> context is omitted in the search request
+            with <span class="key smaller">facets</span> specified, the response will contain only the facet counts.
+        </p>
+        <p>
+            This example calculates the breakdown by experimental method of PDB structures, released after 2019-08-20:
+        </p>
+        <div id="example-facets"></div>
+
+        <p style="margin-top: 40px">
+            By default, searches containing a faceted query return both search hits and aggregation results.
+            To return only aggregation results, set <code>rows</code> to 0 in the <a href="#pagination">pagination</a>
+            context:
+        </p>
+        <div id="example-facets-no-hits"></div>
+
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-terms">Terms Facets</h2>
+        <p>
+            Terms faceting is a multi-bucket aggregation where buckets are dynamically built - one per unique value.
+            For each bucket terms faceting counts the documents (entry, polymer_entity, etc.) that contain a given
+            value in a given field. For example, you can run the <code>terms</code> aggregation on the field
+            <code>rcsb_primary_citation.rcsb_journal_abbrev</code> which holds the abbreviated name of a journal
+            associated with an entry. In return, we have buckets for each journal, each with their PDB entry counts.
+        </p>
+        <p>
+            You can specify a threshold value for a count associated with a bucket for that bucket to be returned.
+            Use <code>min_interval_population</code> parameter, e.g., in this example only journals associated with
+            at least 1000 entries are returned:
+        </p>
+        <p>
+            You can also control the returned number of buckets using <code>max_num_intervals</code> parameter (up
+            to 65,536 limit). Larger values of <code>max_num_intervals</code> use more memory to compute and, push
+            the whole aggregation close to the limit. You’ll know you’ve gone too large if the request fails with
+            a message about max_buckets.
+        </p>
+        <div id="example-facets-terms"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-histogram">Histogram Facets</h2>
+        <p>
+            Histogram faceting is a multi-bucket aggregation that can be applied on numeric values. It builds fixed size
+            (a.k.a. interval) buckets over the values. For example, for the <code>rcsb_polymer_entity.formula_weight</code>
+            field that holds a formula mass (KDa) of the entity, we can configure this aggregation to build buckets with
+            interval 50 KDa:
+        </p>
+        <p>
+            You can use the <code>min_interval_population</code> parameter to request buckets with a higher or equal
+            count associated with it.
+        </p>
+        <div id="example-facets-histogram"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-date-histogram">Date Histogram Facets</h2>
+        <p>
+            This multi-bucket aggregation is similar to the <a href="#facets-histogram">histogram</a> aggregation, but
+            it can only be used with date values. Calendar-aware intervals are configured with the <code>interval</code>
+            parameter. For example, we can configure this aggregation to build buckets with 1 year intervals:
+        </p>
+        <div id="example-facets-date-histogram"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-range">Range Facets</h2>
+        <p>
+            A multi-bucket aggregation that enables the user to define a set of numeric ranges, each representing a
+            bucket. Note that this aggregation includes the <code>from</code> value and excludes the <code>to</code>
+            value for each range. Omitted <code>from</code> or <code>to</code> parameters creates a bucket with min
+            or max boundaries. Example:
+        </p>
+        <div id="example-facets-range"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-date-range">Date Range Facets</h2>
+        <p>
+            This multi-bucket aggregation is similar to the <a href="#facets-range">range</a> aggregation but dedicated
+            for date values. The main difference between this aggregation and the normal range aggregation is that the
+            <code>from</code> and <code>to</code> values can be expressed in <a href="#date-math-expressions">date math
+            expressions</a>. Example:
+        </p>
+        <div id="example-facets-date-range"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-cardinality">Cardinality Facets</h2>
+        <p>
+            Cardinality faceting is a single-value metrics aggregation that calculates a count of distinct values
+            returned for a given field. For example, you can count unique source organism name assignments in
+            the PDB archive:
+        </p>
+        <div id="example-facets-cardinality"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-sum">Sum Facets</h2>
+        <p>
+            A single-value metrics aggregation that computes the sum of numeric values that are associated with a given
+            field. For example, you can count the number of polymeric residues in the PDB archive released each year:
+        </p>
+        <div id="example-facets-sum"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-avg">Avg Facets</h2>
+        <p>
+            A single-value metrics aggregation that computes the average of numeric values that are associated with a given
+            field. For example, you can count the average number of polymeric residues in the PDB archive released each year:
+        </p>
+        <div id="example-facets-avg"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-filter">Filter Facets</h2>
+        <p>
+            As its name suggests, the filter aggregation helps you filter documents that contribute to bucket count.
+            In the example below, we are filtering only protein chains which adopt 2 different beta propeller arrangements
+            according to the CATH classification:
+        </p>
+        <div id="example-facets-filter"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="facets-multi-dimensional">Multi-Dimensional Facets</h2>
+        <p>
+            Complex, multidimensional aggregations are possible as in the example below:
+        </p>
+        <div id="example-facets-multi-dimensional"></div>
+        <p style="margin-top: 40px">
+            Refer to the <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h1 id="search-operators">Search Operators</h1>
+        <p>
+            Search operators are commands that help you make your search more specific and focused.
+            The following operators can be used to perform a <a href="#attribute-queries">field search</a>:
+        </p>
+
+        <h2 id="exact-match-operators">Exact Match Operators</h2>
+        <p>
+            Exact match operators indicate that the input value should match a field value
+            exactly (including whitespaces, special characters and case).
+        </p>
+
+        <h5 id="exact-match-operator">exact_match</h5>
+        <p>
+            You can use the <code>exact_match</code> operator to find exact occurrences of the input value.
+            Comparisons with <code>exact_match</code> operator are case-insensitive by default.
+            See the <i>Case-Sensitive Search</i> paragraph of the <a href="#attribute-queries">Attribute Search</a>
+            section to learn how to configure case-sensitive exact searches.
+        </p>
+        <p>
+            A single value input is required for this operator and must be a string.
+        </p>
+
+        <h5 id="in-operator">in</h5>
+        <p>
+            The <code>in</code> operator allows you to specify multiple values in a single search expression.
+            It returns results if any value in a list of input values matches. It can be used instead of
+            multiple OR conditions. Comparisons with <code>in</code> operator are case-sensitive.
+        </p>
+        <p>
+            An input value is required for this operator and it must be a list of strings, numbers or dates.
+        </p>
+
+        <h2 id="full-text-operators">Full-Text Operators</h2>
+        <p>
+            The full-text operators enable you to perform linguistic searches against text data by operating on words
+            and phrases. The input text is analyzed before performing a search. The analysis includes following
+            transformations:
+        </p>
+        <ul>
+            <li>Most punctuation is removed</li>
+            <li>The remaining content is broken into individual words, called tokens</li>
+            <li>Tokens are lowercased which makes search case-insensitive</li>
+        </ul>
+        <p>
+            The standard grammar based tokenization is used to break input text into tokens. Refer to the
+            <a href="https://unicode.org/reports/tr29/" target="_blank">Unicode Text Segmentation</a> documentation
+            for more information on tokenization rules.
+        </p>
+
+        <h5 id="contains-words-operator">contains_words</h5>
+        <p>
+            The <code>contains_words</code> operator performs a full-text search by operating on words in provided
+            text. After text is broken into tokens, more basic queries are constructed and OR boolean logic used to
+            interpret the query. For example, <b>"actin-binding protein"</b> will be interpreted as <b>"actin"</b>
+            OR <b>"binding"</b> OR <b>"protein"</b>. The search will return results if any of these tokens match.
+            This operator can match multiple tokens in any order.
+        </p>
+        <p>
+            A single value input is required for this operator and it must be a string.
+        </p>
+
+        <h5 id="contains-phrase-operator">contains_phrase</h5>
+        <p>
+            The <code>contains_phrase</code> operator performs a full-text search by operating on phrases. The operator
+            will require the following criteria fulfilled in order to return results:
+        </p>
+        <ul>
+            <li>All the tokens must appear in the field</li>
+            <li>They must have the same order as in the input text</li>
+        </ul>
+        <p>
+            For example, <b>"actin-binding protein"</b> will be interpreted as <b>"actin"</b> AND <b>"binding"</b>
+            AND <b>"protein"</b> occurring in a given order.
+        </p>
+        <p>
+            A single value input is required for this operator and it must be a string.
+        </p>
+
+        <h2 id="comparison-operators">Comparison Operators</h2>
+        <p>
+            <code>greater</code>, <code>less</code>, <code>greater_or_equal</code>, <code>less_or_equal</code>,
+            <code>equals</code> operators match fields whose values are larger, smaller, larger or equal,
+            smaller or equal to the given input value.
+        </p>
+        <p>
+            A single value input is required for this operator and it must be a number or date.
+        </p>
+
+        <h2 id="range-operator">Range Operator</h2>
+        <p>
+            The <code>range</code> operator can be used to match values within a provided range.
+        </p>
+        <p>
+            A single value input is required for this operator and it must be an object as follows:
+        </p>
+        <div id="range-operator-input"></div>
+
+        <p>
+            By default, lower and upper bounds are excluded. They can be included by setting <code>include_lower</code>
+            and <code>include_upper</code> to <span class="boolean"><b>true</b></span> respectively. An inclusive bound
+            means that the boundary point itself is included in the range as well, while an exclusive bound means that
+            the boundary point is not included in the range.
+        </p>
+
+        <div id="example-range-operator"></div>
+        <p style="margin-top: 40px">
+            Refer to <a href="#examples">Examples</a> section for more examples.
+        </p>
+
+        <h2 id="exists-operator">Exists Operator</h2>
+        <p>
+            The <code>exists</code> is a logical operator that allows you to check whether a given field contains
+            any value. To be deemed as non-existent the value must be <code>null</code> or <code>[]</code>. The
+            following values will indicate the field does exist:
+        </p>
+        <ul>
+            <li>Empty strings, such as " " or "-"</li>
+            <li>Arrays containing null and another value, such as [null, "foo"]</li>
+        </ul>
+        <p>
+            The operator doesn't require a value.
+        </p>
+
+        <h1 id="date-math-expressions">Date Math Expressions</h1>
+        <p>
+            <a href="#comparison-operators">Comparison</a> and <a href="#range-operator">range</a> operators support
+            using date math expression. The expression starts with an "anchor" date, which can be: a) <code>now</code>
+            or b) a date string (in the applicable format) ending with <code>||</code>. The anchor can then be followed by a math
+            expression, supporting <code>+</code> and <code>-</code>, e.g. "2020-06-01||-12M", "now-1w".
+        </p>
+        <p>
+            The units supported are:
+        </p>
+        <ul>
+            <li>
+                <code>y</code> (year)
+            </li>
+            <li>
+                <code>M</code> (month)
+            </li>
+            <li>
+                <code>w</code> (week)
+            </li>
+        </ul>
+
+        <h1 id="search-attributes">Search Attributes</h1>
+        <p>
+            The attributes available for search include the annotations described by
+            <a href="https://mmcif.wwpdb.org" target="_blank">mmCIF dictionary</a>, annotations coming from
+            external resources and attributes added by RCSB PDB. Both internal additions to the mmCIF dictionary
+            and external resources annotations are prefixed with <code>rcsb_</code>.
+        </p>
+        <p>
+            Refer to the <a href="structure-search-attributes.html" target="_blank">Structure Attributes Search</a>
+            and <a href="chemical-search-attributes.html" target="_blank">Chemical Attributes Search</a>  pages for
+            a full list of the attributes that are available for text searches.
+        </p>
+
+        <h1 id="search-results">Search Results</h1>
+        <p>
+            The HTTP Status 200 (OK) status code indicates that the search API request has been processed successfully
+            and that server returns search results data. The response data is formatted in JSON and its structure
+            is determined by parameters in the query. Query parameters can be used to structure the result set in the
+            following ways:
+        </p>
+        <ul>
+            <li>
+                Specify the granularity of the returned identifiers. See <a href="#return-type">Return Type</a>.
+            </li>
+            <li>
+                Order results. See <a href="#sorting">Sorting</a>.
+            </li>
+            <li>
+                Limit the number of hits in the results (10 by default). See <a href="#pagination">Pagination</a>.
+            </li>
+            <li>
+                Include only the results count. See <a href="#return-count">Counting Results</a>.
+            </li>
+            <li>
+                Include search facets. See <a href="#using-facets">Requesting Facets</a>.
+            </li>
+        </ul>
+
+        <h2 id="response-body">Response Body</h2>
+        <p>
+            The search response body provides details about the search execution itself as well as an array of the
+            individual search hits. Following information is available in the search results response body:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>query_id</code></td>
+                    <td>
+                        <i>Required</i>. Unique query ID assigned to the request or passed as a query parameter.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>result_type</code></td>
+                    <td>
+                        <i>Required</i>. Specifies the granularity of the returned identifiers requested in the query.
+                        See <a href="#return-type">Return Type</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>total_count</code></td>
+                    <td>
+                        <i>Required</i>. The total number of matched identifiers.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>explain_metadata</code></td>
+                    <td>
+                        <i>Optional</i>. Contains details on the query execution time (in milliseconds).
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>result_set</code></td>
+                    <td>
+                        <i>Optional</i>. Search results set is returned as PDB identifiers and accompanying metadata.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>group_set</code></td>
+                    <td>
+                        <i>Optional</i>. Search results are returned as groups.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>facets</code></td>
+                    <td>
+                        <i>Optional</i>. Facets array contains <a href="#using-facets">search facets</a> for
+                        requested attributes.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            An example of search response is shown below:
+        </p>
+        <div id="example-response-body"></div>
+
+        <h2 id="results-set">Results Set</h2>
+        <p>
+            Results set is an array of objects representing search hits. Each hit contains the matching identifier,
+            score, and metadata produced by search services.
+        </p>
+
+        <h4 id="result-identifiers">Result Identifiers</h4>
+        <p>
+            While a search query might include a large number of <a href="#search-attributes">attributes</a>, only
+            the matching PDB identifiers, representing a desired <a href="#return-type">level of granularity</a>,
+            are included in the result set. Following notation is used for PDB identifiers:
+        </p>
+        <ul>
+            <li>
+                <b>[pdb_id]</b> - for PDB entries (e.g. 4HHB)
+            </li>
+            <li>
+                <b>[pdb_id]_[entity_id]</b> - for polymer, branched, or non-polymer entities (e.g. 4HHB_1)
+            </li>
+            <li>
+                <b>[pdb_id].[asym_id]</b> - for polymer, branched, or non-polymer entity instances (e.g. 4HHB.A)
+            </li>
+            <li>
+                <b>[pdb_id]-[assembly_id]</b> - for biological assemblies (e.g. 4HHB-1)
+            </li>
+        </ul>
+
+        <h4 id="relevancy-score">Relevancy Score</h4>
+        <p>
+            The final relevancy score is calculated as weighted sum of normalized scores produced by different search
+            services. By default, scores from all services are weighted equally. See <a href="#scoring-strategy">
+            Scoring Strategy</a> section for more details on how to configure scoring. The higher the score, the
+            more relevant result hit is.
+        </p>
+
+        <h4 id="service-metadata">Service Metadata</h4>
+        <p>
+            Different search services produce different metadata and use different scoring metrics. Set the
+            <a href="#results-verbosity-levels">results verbosity level</a> to <code>verbose</code> return
+            the additional metadata and raw scores reported as described below:
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>node_id</code></td>
+                <td>
+                    <i>Required</i>. Distinct numeric ID is assigned to results produced by each search service.
+                </td>
+            </tr>
+            <tr>
+                <td><code>original_score</code></td>
+                <td>
+                    <i>Required</i>. The original (raw) score produced by a search service chosen as relevance
+                    score for this service. For example, the bit score of the alignment is chosen as raw relevance
+                    score for a <i>sequence</i> search service.
+                </td>
+            </tr>
+            <tr>
+                <td><code>norm_score</code></td>
+                <td>
+                    <i>Required</i>. The original score transformed onto a scale between 0 and 1 using min-max
+                    normalization algorithm (higher means more significant).
+                </td>
+            </tr>
+            <tr>
+                <td><code>match_context</code></td>
+                <td>
+                    <i>Optional</i>. Additional metadata produced by search services. Match context will be
+                    included only for select return types. For example, is sequence search was performed and
+                    <code>polymer_entity</code> is specified as return type, the results will include
+                    <code>matching_context</code> with additional metadata such as sequence identity, E-value,
+                    bit-score values and the residue boundary positions of the matching sequence. The
+                    <code>matching_context</code> will not be included if same search is performed, but the
+                    return type is set to <code>entry</code> or <code>assembly</code>.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p>
+            The following snippet shows an example of search results for a query that combines 4 different
+            <a href="#search-services">search services</a>. Here, the search results set contains one search
+            hit at the granularity of PDB entry:
+        </p>
+        <div id="example-results-set"></div>
+
+        <h2 id="results-verbosity-levels">Results Verbosity Level</h2>
+        <p>
+            By default, search results are returned with additional metadata (see <a href="#search-results">Search Results</a>
+            for more details). Results verbosity level can be adjusted by setting the <code>results_verbosity</code>
+            parameter in the <code>request_options</code> context. The results' verbosity levels from the most verbose
+            to the least are as follows:
+        </p>
+        <ul>
+            <li>
+                <code>verbose</code> - every search hit is returned in a format described in
+                <a href="#result-identifiers">Result Identifiers</a> with all metadata items set
+            </li>
+            <li>
+                <code>minimal</code> (default) - every search hit is returned in a format described in
+                <a href="#result-identifiers">Result Identifiers</a> with only a relevancy score set
+            </li>
+            <li>
+                <code>compact</code> - every search hit is returned as a simple string, e.g. "4HHB",
+                with no additional metadata
+            </li>
+        </ul>
+        <div id="example-results-compact"></div>
+
+        <h2 id="empty-results">Empty Results</h2>
+        <p>
+            The HTTP Status 204 (No Content) status code indicates that the search API request has been processed
+            successfully but no search hits were found.
+        </p>
+
+        <h1 id="dealing-with-redundancy">Dealing with Redundancy</h1>
+        <p>
+            The PDB archive includes multiple structures of same molecule, providing snapshots of the structure,
+            interactions, and functions of these particular molecules which leads to redundancy. For example, the
+            same protein studied in different experimental conditions or with different ligands bound. This leads
+            to data redundancy that may present some challenges in bioinformatics analyses. It is helpful to be able
+            to remove redundancy and group search results as this helps ensuring that similar and homologous proteins
+            that appear in high numbers in a set of results do not introduce undesirable biases. Also, as the size of
+            the PDB continues to grow, reducing redundancy helps when one seeks to obtain smaller datasets of distinct
+            representatives.
+        </p>
+        <p>
+            Redundancy occurs at many levels (such as the level of sequence or structure similarity), and
+            different grouping methods can be applied to PDB data in order to provide a non-redundant view.
+        </p>
+
+        <h2 id="group-by-context">Group By Parameters</h2>
+        <p>
+            To enable results grouping, the <code>group_by</code> parameters must be defined in the
+            <code>request_options</code> context. Different grouping methods are available for a given
+            <a href="#return-type">Return Type</a>:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Return Type</th>
+                    <th>Grouping Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>entry</code></td>
+                    <td>
+                        <ul>
+                            <li>
+                                <code>matching_deposit_group_id</code> - grouping on the basis of common identifier
+                                for a group of entries deposited as a collection. Such entries enter the PDB archive
+                                via GroupDep system that allows for parallel deposition of 10s–100s of related
+                                structures (typically the same protein with different bound ligands).
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>polymer_entity</code></td>
+                    <td>
+                        <ul>
+                            <li>
+                                <code>sequence_identity</code> - grouping on the basis of protein sequence clusters
+                                that meet a predefined identity threshold. Six levels of sequence identity are defined:
+                                <code>100%</code>, <code>95%</code>, <code>90%</code>, <code>70%</code>, <code>50%</code>,
+                                <code>30%</code>. Mutual sequence identity is determined by
+                                <a href="https://github.com/soedinglab/MMseqs2" target="_blank">MMseqs2</a> software.
+                            </li>
+                            <li>
+                                <code>matching_uniprot_accession</code> - grouping on the basis of common UniProt
+                                accession. <a href="https://www.uniprot.org" target="_blank">UniProtKB</a> assigns
+                                a unique accession for each protein products encoded by one gene in a given species.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="group-by-return-type">Group By Return Type</h2>
+        <p>
+            The <code>group_by_return_type</code> parameter in the <code>request_options</code> context
+            controls the form in which the grouped results are returned. Following options are available:
+        </p>
+        <ul>
+            <li>
+                <a href="#return-group-representatives"><code>representatives</code></a> (<i>default</i>) -
+                a single representative is selected from each group and a flat list of representatives is returned
+                in the <a href="#results-set">main results format</a>. Representative is selected as a top ranked
+                group member. The ranking criteria is controlled by the <code>ranking_criteria_type</code>
+                parameter (see <a href="#group-members-ranking">Group Members Ranking</a>).
+            </li>
+            <li>
+                <a href="#return-grouped-results"><code>groups</code></a> - search results are divided into groups
+                and and each group is returned with all associated search hits (members of that group that satisfy
+                given search constraints).
+            </li>
+        </ul>
+
+        <h3 id="return-grouped-results">Return Grouped Results</h3>
+        <p>
+            It can be useful to study the variability among similar (redundant) search hits. You can use the
+            <code>group_by</code> parameters in combination with the <code>group_by_return_type</code> parameter
+            set to <code>groups</code> to return results as groups of similar objects. Few examples are listed below:
+        </p>
+
+        <h4 id="group-by-sequence-identity">Group By Sequence Identity</h4>
+        <p>
+            This example groups together identical human sequences from high-resolution (1.0-2.0Å) structures
+            determined by X-ray crystallography. Among the resulting groups, there is a cluster of human glutathione
+            transferases in complex with different substrates.
+        </p>
+        <div id="example-group-by-sequence-identity"></div>
+
+        <h4 id="group-by-uniprot-accession">Group By UniProt Accession</h4>
+        <p>
+            This example demonstrates how to use <code>matching_uniprot_accession</code> grouping to get distinct
+            Spike protein S1 proteins released from the beginning of 2020 with. Here, all entities are represented
+            by distinct groups of <i>SARS-CoV</i>, <i>SARS-CoV-2</i> and <i>Pangolin coronavirus</i> spike proteins.
+        </p>
+        <div id="example-group-by-uniprot-accession"></div>
+        <p style="margin-top: 40px">
+            Although it’s true that a search hit will only appear once within a grouped set of search hits, it’s
+            important to note that in some cases multiple groups can contain the same search hit. For example, when
+            results are grouped by the UniProt accession, chimeric entities will appear in multiple groups.
+        </p>
+
+        <h3 id="return-group-representatives">Remove Redundant Results</h3>
+        <p>
+            It can be useful to remove redundant search hits from your results. You can use the <code>group_by</code>
+            parameters in combination with the <code>group_by_return_type</code> parameter set to <code>representatives</code>
+            to return only a single representative from each of resulting groups. For example, you may want to remove
+            similar sequences with specific levels of mutual sequence identity. Non-redundant result set will consist
+            solely of representative search hits from the original redundant search results that satisfy given search
+            constraints.
+        </p>
+        <p>
+            This example shows how to retrieve a set of polymer entities from protein-protein complexes with the
+            following constraints:
+        </p>
+        <ul>
+            <li>Must be from a protein-protein complex, not a single protein</li>
+            <li>Complexes must consist of proteins only</li>
+            <li>Experimental Method: X-ray or EM</li>
+            <li>Resolution: <= 2 Angstrom</li>
+            <li>R-observed <= 0.2</li>
+            <li>Sequence identity cutoff to remove redundancy: 30%</li>
+        </ul>
+        <div id="example-group-by-return-representatives"></div>
+
+        <h2 id="group-members-ranking">Group Members Ranking</h2>
+        <p>
+            Group members ranking is designed to order the search hits in each of the resulting groups to
+            present most relevant, useful hits first so that you can more easily find what you’re looking for.
+        </p>
+        <p>
+            The ranking system is made up of a series of options:
+        </p>
+        <ul>
+            <li>
+                ranking by member attribute - this option works in the same way as <a href="#sorting">Sorting</a>.
+                You can use this option to order group members by any property that is available for sorting,
+                for example, resolution, release date, etc.
+            </li>
+            <li>
+                <a href="#relevancy-score">score</a> (default) - this option orders groups members in a way that puts
+                the most relevant for a given search query hits on top.
+            </li>
+            <li>
+                ranking options specific to aggregation method - these options are predefined for each aggregation
+                method and typically involve pre-computation based on certain metrics.
+            </li>
+        </ul>
+        <p>
+            For example, you can search for rhodopsins and rhodopsin-like proteins, request all proteins related by
+            sharing at least 50% sequence identity to be grouped and order polymer entities within each group by
+            sequence similarity score:
+        </p>
+        <div id="example-group-by-ranking"></div>
+
+        <p style="margin-top: 40px">
+            Examples of ranking options specific to aggregation method are detailed below:
+        </p>
+
+        <h4 id="group-by-matching-uniprot-ranking-options">Ranking Options For UniProt Groups</h4>
+        <ul>
+            <li>
+                <code>coverage</code> the percent coverage of the UniProt sequence by the PDB polymer entity sequence
+            </li>
+        </ul>
+
+        <h2 id="faceting-upon-groups">Faceting Upon Grouped Results</h2>
+        <p>
+            By default, facet counts are based upon the original query results, not the grouped results.
+            This means that whether or not you turn grouping on for a query, the facet counts will be the
+            same.
+        </p>
+        <p>
+           To return non-redundant facet counts the <code>group_by_return_type</code> parameter must be set
+            to <code>representatives</code>.
+        </p>
+
+        <h2 id="sorting-groups">Sorting Grouped Results</h2>
+        <p>
+            An important aspect is the way sorting interacts with grouping. By default, all groups are sorted based
+            upon the number of search hits in the group (in descending order by default). You can reverse the order
+            in which groups are sorted. Inside each group, the search hits are sorted based on the ranking score. The
+            type of the ranking score is specified by the <code>ranking_criteria_type</code> parameter.
+        </p>
+        <p>
+            Another important difference is that multi-sort operations are not enabled for grouped results.
+        </p>
+
+        <h2 id="paging-groups">Paging Grouped Results</h2>
+        <p>
+            The <a href="#pagination">Pagination</a> section describes how the Search API uses <code>rows</code>
+            parameter to determine how many search hits to return for a search query. When grouped results are
+            requested, this parameter is putting a limit on how many groups to return. When using <code>start</code>
+            parameter with grouped results, it controls paging through available groups. There is no paging through
+            the results within a group, all search hits per group are returned.
+        </p>
+
+        <h2 id="return-groups-counts">Counting Grouped Results</h2>
+        <p>
+            The <a href="#return-count">Counting Results</a> section of this guide describes the parameter that
+            allows returning only the total count of hits returned by the query. When using it with grouped results,
+            it returns a total count of all resulting groups or representatives.
+        </p>
+
+        <h1 id="api-clients">API Clients</h1>
+        <h2 id="api-client-python">Python</h2>
+        <p>
+            The <a href="https://rcsbsearchapi.readthedocs.io/en/latest/" target="_blank"><code>rcsbsearchapi</code></a>
+            package provides a
+            Python interface to the RCSB PDB Search API. You can use it to fetch lists of PDB IDs corresponding to advanced
+            query searches. This package was originally developed by <a href="https://github.com/sbliven" target="_blank">Spencer Bliven</a>,
+            and a new version is now being maintained by RCSB PDB on <a href="https://github.com/rcsb/py-rcsbsearchapi" target="_blank">GitHub</a>.
+        </p>
+
+        <h1 id="examples">Examples</h1>
+        <p>This section demonstrates how to use the RCSB PDB Search API to perform complex searches.</p>
+
+        <h2 id="search-example-1">Biological Assembly Search</h2>
+        <div id="example-1">
+            <p>
+                This query finds symmetric dimers having a twofold rotation with the DNA-binding
+                domain of a heat-shock transcription factor.
+            </p>
+        </div>
+
+        <h2 id="search-example-2">X-Ray Structures Search</h2>
+        <div id="example-2">
+            <p>
+                This query finds PDB structures of virus's thymidine kinase with substrate/inhibitors, determined
+                by X-ray crystallography at a resolution better than 2.5 Å.
+            </p>
+        </div>
+
+        <h2 id="search-example-3">Protein Sequence Search</h2>
+        <div id="example-3">
+            <p>
+                In this example, using <code>sequence</code> search, we find macromolecular PDB entities that
+                share 90% sequence identity with GTPase HRas protein from <i>Gallus gallus (Chicken)</i>.
+            </p>
+        </div>
+
+        <h2 id="search-example-4">3D-embedding Search</h2>
+        <div id="example-4">
+            <p>
+                This example demonstrates how <code>structure</code> search can be used to find PDB structures of
+                calmodulin with conformational changes upon Ca<sup>2+</sup> binding.
+                Calmodulin (CaM) protein has two homologous globular domains connected by a flexible linker.
+                Ca<sup>2+</sup> binding to each globular domain causes a change from a “closed” to an “open”
+                conformation. This query finds calmodulin structures in “open” conformation.
+            </p>
+            <p>
+                As a <code>structure</code> query input parameter we will use the crystal structure of
+                Ca<sup>2+</sup>-loaded calmodulin (PDB entry 1CLL). This query is combined with the <code>text</code>
+                search for CA chemical component ID. Note: if you leave out the query clause matching Ca<sup>2+</sup>
+                ions, you will also get calmodulin structures in complex with other metals (e.g. strontium in 4BW7).
+            </p>
+        </div>
+
+        <h2 id="search-example-5">Free Ligand Search</h2>
+        <div id="example-5">
+            <p>
+                Ligands are considered “free ligands” when they interact non-covalently with macromolecules. This
+                example shows how to find non-polymeric entities of ATP molecule that is found as “free ligand”.
+            </p>
+        </div>
+
+        <h2 id="search-example-6">Sequence Motif Search</h2>
+        <div id="example-6">
+            <p>
+                A sequence motif search finds macromolecular PDB entities that contain a specific sequence motif.
+                This examples retrieves occurrences of the His<sub>2</sub>/Cys<sub>2</sub> Zinc Finger DNA-binding
+                domain as represented by its PROSITE signature.
+            </p>
+        </div>
+
+        <h2 id="search-example-7">Chemical Similarity Search</h2>
+        <div id="example-7">
+            <p>
+                This example demonstrates how to find molecular definitions chemically similar to <i>Tylenol</i>
+                defined by the InChI string. Note, that the parameter <code>match_type="graph-strict"</code> does
+                not imply exact structure match and you are getting acetaminophen molecules (TYL) together with
+                methoxy (T9V) and ethoxy (N4E) analogs in the result set.
+            </p>
+        </div>
+
+        <h2 id="search-example-8">Search by UniProt Accession</h2>
+        <div id="example-8">
+            <p>
+                This example shows how to search for PDB entities using associated UniProt accession code.
+            </p>
+        </div>
+
+        <h2 id="search-example-9">Structure Motif Search</h2>
+        <div id="example-9">
+            <p>
+                A structure motif search finds macromolecular PDB assemblies that contain a specific arrangement of a
+                small number of residues in a certain geometric arrangement (e.g. residue that constitute the catalytic
+                center or a binding site).
+                This examples retrieves occurrences of the enolase superfamily, a group of proteins diverse in sequence
+                and structure that are all capable of abstracting a proton from a carboxylic acid. Position-specific
+                exchanges are crucial to represent this superfamily accurately.
+            </p>
+        </div>
+
+        <h2 id="search-example-10">Combining Search Services</h2>
+        <div id="example-10">
+            <p>
+                This example shows how to compose <code>text</code>, <code>sequence</code>,
+                <code>structure</code>, and <code>chemical</code> queries employing the Boolean operator AND.
+                The search yields structures (entries) matching all criteria, including co-crystal structures
+                with the desired bound inhibitor, matching the SMILES string for a small-molecule inhibitor
+                designated 7J (<a target="_blank" href="https://www.rcsb.org/ligand/QYS">QYS</a>).
+            </p>
+        </div>
+
+        <h2 id="search-example-11">Sequence Cluster Statistics</h2>
+        <div id="example-11">
+            <p>
+                This example shows how to get the number of distinct protein sequences in the PDB archive.
+            </p>
+        </div>
+
+        <h2 id="search-example-12">Newly Released Structures</h2>
+        <div id="example-12">
+            <p>
+                This example shows how to get a list of all PDB ID for this week's newly released structures.
+            </p>
+        </div>
+
+        <h2 id="search-example-13">Membrane Proteins</h2>
+        <div id="example-13">
+            <p>
+                This example shows how to get a list of PDB ID of entries that are annotated as membrane protein by
+                at least one relevant external resource.
+            </p>
+        </div>
+
+        <h2 id="search-example-14">Symmetry and Enzyme Classification</h2>
+        <div id="example-14">
+            <p>
+                This example shows how to get assembly counts per symmetry types, further broken down by Enzyme Classification (EC) classes.
+                The assemblies are first filtered to homo-oligomers only.
+            </p>
+        </div>
+
+        <h2 id="search-example-15">Computed Structure Models</h2>
+        <div id="example-15">
+            <p>
+                This example shows how to find PDB structures and Computed Structure Models for a given UniProt sequence.
+            </p>
+        </div>
+
+        <h2 id="search-example-16">Structure Search with Custom Data</h2>
+        <div id="example-16">
+            <p>
+                This example showcases how to search with structures not deposited in the PDB archive by pointing to
+                external URLs such as predictions from AlphaFold DB, ModelArchive, or SWISS-MODEL. Any publicly
+                available URL can be referenced.
+
+                This feature can be used for structure (3D-embedding) and strucmotif (structure motif) searches.
+                Required inputs are the file location (<code>url</code>) and <code>format</code> ('cif' or 'bcif' for
+                BinaryCIF). Gzipped content is supported as well.
+            </p>
+        </div>
+
+        <h2 id="search-examples-ihm">Integrative Structures</h2>
+            <p>
+                Search API delivers <b>integrative structures</b> alongside the experimental structures.
+                IHMs combine data from multiple experimental methods (e.g., X-ray crystallography, cryo-EM,
+                NMR, SAXS, crosslinking MS, etc.) to produce structural models. IHMs expand structural coverage
+                to systems difficult to solve using a single method, such as macromolecular machines and dynamic
+                complexes.
+            <p>
+            <p>
+                The <code>rcsb_entry_info.structure_determination_methodology</code> field indicates the methodology
+                used to determine the structure. Its value determines whether the structure is:
+            </p>
+            <ul>
+                <li>
+                    <code>experimental</code> - determined using experimental techniques such as X-ray crystallography,
+                    NMR, cryo-EM, etc
+                </li>
+                <li>
+                    <code>integrative</code> - determined using a combination of experimental and computational methods
+                </li>
+                <li>
+                    <code>computational</code> (predicted) - generated purely through computational prediction methods,
+                    without direct experimental data
+                </li>
+            </ul>
+            <p>
+                Use this field to distinguish between different types of structure determination approaches in your searches.
+            </p>
+
+            <h3 id="search-example-17"></h3>
+            <div id="example-17">
+                <p>
+                    Find all IHM entries currently released in the PDB archive.
+                <p>
+            </div>
+
+            <h3 id="search-example-18"></h3>
+            <div id="example-18">
+                <p>
+                    Find all IHM entries of human proteins that use crosslinking mass spectrometry as part of the
+                    modeling process.
+                <p>
+            </div>
+
+        <h1 id="migration-guide">Migration Guides</h1>
+
+        <h2 id="migration-legacy">Migrating from Legacy Search API</h2>
+        <p>
+            Applications written on top of the Legacy Search APIs no longer work because these services have been
+            discontinued. This <a href="migration/migration-guide-legacy.html" target="_blank">migration guide</a> describes the
+            necessary steps to convert applications from using Legacy Search API Web Service to a new RCSB Search
+            API.
+        </p>
+
+        <h2 id="migration-v1-to-v2">Migrating from v1 to v2</h2>
+        <p>
+            The following guide will help you migrate from API v1 to v2.
+            This <a href="migration/migration-guide-v1-to-v2.html" target="_blank">page</a> contains information you
+            need to know when migrating from deprecated API version v1 to a newer version v2.
+        </p>
+
+        <h1 id="acknowledgements">Acknowledgements</h1>
+        <p>
+            To cite this service, please reference:
+        </p>
+        <ul>
+            <li>
+                Rose, Y., Duarte, J. M., Lowe, R., Segura, J., Bi, C., Bhikadiya, C., ... &amp; Westbrook, J. D. (2021).
+                RCSB Protein Data Bank: architectural advances towards integrated searching and efficient access to
+                macromolecular structure data from the PDB archive. Journal of molecular biology, 433(11), 166704.
+                DOI: <a href="https://doi.org/10.1016/j.jmb.2020.11.003" target="_blank">10.1016/j.jmb.2020.11.003</a>
+            </li>
+            <li>
+                Bittrich, S., Bhikadiya, C., Bi, C., Chao, H., Duarte, J. M., Dutta, S., ... &amp; Rose, Y. (2023). RCSB
+                Protein Data Bank: Efficient Searching and Simultaneous Access to One Million Computed Structure Models
+                Alongside the PDB Structures Enabled by Architectural Advances. Journal of Molecular Biology, 167994.
+                DOI: <a href="https://doi.org/10.1016/j.jmb.2023.167994" target="_blank">10.1016/j.jmb.2023.167994</a>
+            </li>
+        </ul>
+        <p>
+            Related publications:
+        </p>
+        <ul>
+            <li>
+                Berman, H. M., Westbrook, J., Feng, Z., Gilliland, G., Bhat, T. N., Weissig, H., ... &amp; Bourne, P. E.
+                (2000). The protein data bank. Nucleic acids research, 28(1), 235-242.
+                DOI: <a href="https://doi.org/10.1093/nar/28.1.235" target="_blank">10.1093/nar/28.1.235</a>
+            </li>
+            <li>
+                Burley, S. K., Berman, H. M., Bhikadiya, C., Bi, C., Chen, L., Di Costanzo, L., ... &amp; Zardecki, C.
+                (2019). RCSB Protein Data Bank: biological macromolecular structures enabling research and education in
+                fundamental biology, biomedicine, biotechnology and energy. Nucleic acids research, 47(D1), D464-D474.
+                DOI: <a href="https://doi.org/10.1093/nar/gky1004" target="_blank">10.1093/nar/gky1004</a>
+            </li>
+            <li>
+                Burley, S. K., Bhikadiya, C., Bi, C., Bittrich, S., Chao, H., Chen, L., ... &amp; Zardecki, C. (2023).
+                RCSB Protein Data Bank (RCSB. org): delivery of experimentally-determined PDB structures alongside one
+                million computed structure models of proteins from artificial intelligence/machine learning. Nucleic
+                Acids Research, 51(D1), D488-D508.
+                DOI: <a href="https://doi.org/10.1093/nar/gkac1077" target="_blank">10.1093/nar/gkac1077</a>
+            </li>
+        </ul>
+
+        <h1 id="contact-us">Contact Us</h1>
+        <p>
+            Contact <a href="mailto:info@rcsb.org?subject=RCSB PDB Search API: Questions and Feedback">info@rcsb.org</a>
+            with questions or feedback about this service.
+        </p>
+
+        <a id="changelog"></a>
+        <zero-md src="./docs/assets/CHANGELOG.md">
+            <template>
+                <style>
+                    h1, h2, h3, h4, h5 {
+                        font-weight: normal;
+                        color: #000000;
+                    }
+
+                    a {
+                        color: #0086D6;
+                        text-decoration: none;
+                        background-color: transparent;
+                    }
+                </style>
+            </template>
+        </zero-md>
+    </div>
+
+    <div class="lang-selector">
+        <a href="#" data-language-name="shell" class="active">shell</a>
+    </div>
+</div>
+
+<!-- used to render CHANGELOG.md -->
+<!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+<script src="docs/assets/webcomponents-loader.min.js"></script>
+<!-- Load the element definition -->
+<script type="module" src="docs/assets/zero-md.min.js"></script>
+
+<script>
+    // hyperlink for "TRY IT OUT" button
+    const query_base_url = base_endpoint()+"query?json=";
+
+    // hyperlink for "OPEN IN EDITOR" button
+    const query_editor_base = "/query-editor.html";
+    const query_editor_url = query_editor_base+"?json=";
+
+    document.body.onload = render_dynamic_parts;
+
+    function render_dynamic_parts() {
+
+        load("example-match-all", "./docs/tutorial/example-match-all.json", render_query);
+        load("example-basic", "./docs/tutorial/example-basic.json", render_query);
+        load("example-basic-bool", "./docs/tutorial/example-basic-bool.json", render_query);
+        load("example-basic-bool-precedence", "./docs/tutorial/example-basic-bool-precedence.json", render_query);
+        load("example-attribute", "./docs/tutorial/example-attribute.json", render_query);
+        load("example-negation", "./docs/tutorial/example-attribute-negation.json", render_query);
+        load("example-case-sensitive", "./docs/tutorial/example-attribute-case.json", render_query);
+        load("example-bool", "./docs/tutorial/example-bool.json", render_query);
+        load("example-sort", "./docs/tutorial/example-sort.json", render_query);
+        load("example-pagination", "./docs/tutorial/example-pagination.json", render_query);
+        load("example-return-count", "./docs/tutorial/example-return-count.json", render_query);
+        load("example-return-all", "./docs/tutorial/example-return-all.json", render_query);
+        load("example-range-operator", "./docs/tutorial/example-range.json", render_query);
+        load("example-results-content-type", "./docs/tutorial/example-results-content-type.json", render_query);
+
+        load("example-facets", "./docs/tutorial/example-facets.json", render_query);
+        load("example-facets-no-hits", "./docs/tutorial/example-facets-no-hits.json", render_query);
+        load("example-facets-terms", "./docs/tutorial/example-facets-terms.json", render_query);
+        load("example-facets-histogram", "./docs/tutorial/example-facets-histogram.json", render_query);
+        load("example-facets-date-histogram", "./docs/tutorial/example-facets-date-histogram.json", render_query);
+        load("example-facets-range", "./docs/tutorial/example-facets-range.json", render_query);
+        load("example-facets-date-range", "./docs/tutorial/example-facets-date-range.json", render_query);
+        load("example-facets-cardinality", "./docs/tutorial/example-facets-cardinality.json", render_query);
+        load("example-facets-sum", "./docs/tutorial/example-facets-sum.json", render_query);
+        load("example-facets-avg", "./docs/tutorial/example-facets-avg.json", render_query);
+        load("example-facets-filter", "./docs/tutorial/example-facets-filter.json", render_query);
+        load("example-facets-multi-dimensional", "./docs/tutorial/example-facets-multi-dimensional.json", render_query);
+
+        load("range-operator-input", "./docs/snippets/range-operator.json", render_json);
+        load("example-response-body", "./docs/snippets/response-snippet.json", render_json);
+        load("example-results-set", "./docs/snippets/results-set-snippet.json", render_json);
+        load("json-schema-nested-context-snippet", "./docs/snippets/json-schema-nested-context-snippet.json", render_json);
+
+        load("example-results-compact", "./docs/tutorial/example-results-compact.json", render_query);
+
+        load("example-group-by-uniprot-accession", "./docs/tutorial/example-group-by-uniprot-accession.json", render_query);
+        load("example-group-by-sequence-identity", "./docs/tutorial/example-group-by-sequence-identity.json", render_query);
+        load("example-group-by-return-representatives", "./docs/tutorial/example-group-by-return-representatives.json", render_query);
+        load("example-group-by-ranking", "./docs/tutorial/example-group-by-ranking.json", render_query);
+
+        load("example-nested-attributes-together", "./docs/tutorial/example-nested-attributes-together.json", render_query);
+        load("example-nested-attributes-independently", "./docs/tutorial/example-nested-attributes-independently.json", render_query);
+
+        load("example-1", "./docs/examples/example-1.json", render_query);
+        load("example-2", "./docs/examples/example-2.json", render_query);
+        load("example-3", "./docs/examples/example-3.json", render_query);
+        load("example-4", "./docs/examples/example-4.json", render_query);
+        load("example-5", "./docs/examples/example-5.json", render_query);
+        load("example-6", "./docs/examples/example-6.json", render_query);
+        load("example-7", "./docs/examples/example-7.json", render_query);
+        load("example-8", "./docs/examples/example-8.json", render_query);
+        load("example-9", "./docs/examples/example-9.json", render_query);
+        load("example-10", "./docs/examples/example-10.json", render_query);
+        load("example-11", "./docs/examples/example-11.json", render_query);
+        load("example-12", "./docs/examples/example-12.json", render_query);
+        load("example-13", "./docs/examples/example-13.json", render_query);
+        load("example-14", "./docs/examples/example-14.json", render_query);
+        load("example-15", "./docs/examples/example-15.json", render_query);
+        load("example-16", "./docs/examples/example-16.json", render_query);
+        load("example-17", "./docs/examples/example-17.json", render_query);
+        load("example-18", "./docs/examples/example-18.json", render_query);
+        
+        const script = document.createElement("script");
+        script.src = "./docs/assets/lib.js";
+        document.body.appendChild(script);
+    }
+
+</script>
+
+</body>

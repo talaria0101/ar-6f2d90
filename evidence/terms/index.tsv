@@ -1,0 +1,69 @@
+provider	code	bytes	sha256	url	path
+OpenAlex	200	40090	10e90767ef834e1937203cf1a6a3d4463ef1e4d91d1e1ddf791d4692dcbf732d	https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication	evidence/terms/001_OpenAlex.body
+Crossref	200	76605	6d207e8b60b0a3c6c4db0591337fd64d5cb9ca7e4d546cb9dc759c638dcfc94c	https://www.crossref.org/documentation/retrieve-metadata/rest-api/tips-for-using-the-crossref-rest-api/	evidence/terms/002_Crossref.body
+DataCite	404	83661	8b271b6c8e0b0ff4cc64de6caf8ea4a9d3f30ffc3bceaf2c3957dee5fadd2725	https://support.datacite.org/docs/rate-limits	evidence/terms/003_DataCite.body
+OpenAIRE	404	279	c213a4d16953ee3d9296c352ab3dbc344074678c7b3c3ac5f46194b4a47dba7a	https://graph.openaire.eu/docs/apis/terms-of-use	evidence/terms/004_OpenAIRE.body
+CORE	200	147718	20766dc0b72984128ad5bbec0c37e2f350084dbb4fc9d1b389299de54e8ec14d	https://api.core.ac.uk/docs/v3#section/Introduction	evidence/terms/005_CORE.body
+Semantic Scholar	200	38434	e44e94c49f3dee8af281fddfb7ee132609f55ebed7d97ef574d6ba9a3307fb33	https://www.semanticscholar.org/product/api	evidence/terms/006_Semantic_Scholar.body
+Europe PMC	403	5614	6056264dc0c360438030b3624dd3099b0771faf0c9fd9f8229496f266bf4c026	https://europepmc.org/RestfulWebService	evidence/terms/007_Europe_PMC.body
+NCBI	200	21362	17a2e18d5c858b32fb76394dbcf487fe3942ae2a4757a9a255bbc1531f6c7e6b	https://www.ncbi.nlm.nih.gov/books/NBK25497/	evidence/terms/008_NCBI.body
+arXiv	200	85062	badbec1e87aa317038c3a519a3fad3c4a855ebe019f0e681772d72f6a14f4e49	https://info.arxiv.org/help/api/tou.html	evidence/terms/009_arXiv.body
+Unpaywall	200	1421	0445953f2b1255c157c7fb0aa91d60f75298895086bded982c89e46d6c5d5b01	https://unpaywall.org/products/api	evidence/terms/010_Unpaywall.body
+ROR	200	148028	6a0746f4a95708e6b3e9ff1c956e31937282e0a3d700fbdcbeb620bbdb9e5291	https://ror.readme.io/docs/rest-api	evidence/terms/011_ROR.body
+OpenCitations	200	45480	25fbc4a32f56683e7a431b838a20c14ae57396cefda287e204537c42cf2a3025	https://opencitations.net/index/api/v1	evidence/terms/012_OpenCitations.body
+HAL	200	10068	54df623430b92183c68cdc7c737c5f6193e6bcd2593d6ab26f1907e84b7112ba	https://api.archives-ouvertes.fr/docs	evidence/terms/013_HAL.body
+ORCID	200	268424	762db0b2a4531ab7f0dc49e63bb56e6c92337e4194805227f9ed97ff40d53f0b	https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/	evidence/terms/014_ORCID.body
+J-STAGE	200	31557	b5ed58f94d328921812ed1903d8e6db5920846caa267ff9328b100859ac384e5	https://www.jstage.jst.go.jp/static/pages/JstageServices/TAB4/-char/en	evidence/terms/015_J-STAGE.body
+NASA	404	146	55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0	https://sti.nasa.gov/ntrs-api/	evidence/terms/016_NASA.body
+OSTI	200	43998	da5b2ca47e11e9a09e1f7700d48dfa7277d318d69b77f3f58945642f6afab04a	https://www.osti.gov/api/v1/docs	evidence/terms/017_OSTI.body
+ClinicalTrials.gov	200	94247	c8f2db34b30c0fd6a31735436288114df705be51bf54fbaf2ad98f957f1af94d	https://clinicaltrials.gov/data-api/about-api	evidence/terms/018_ClinicalTrials.gov.body
+theses.fr	200	712177	cf72ad2fbb76e1f13d430e88b1f312d51556073b15ce7f87f70fdee24983ab32	https://theses.fr/	evidence/terms/019_theses.fr.body
+EconStor	200	7952	0f6de8b9a174399ddaea4300aee38684f0082465e575a72be84321fa62dc7a4b	https://www.econstor.eu/	evidence/terms/020_EconStor.body
+EBI	200	58490	df88670799b49583dc7801f910297884c913f4a52273272e2b507f4678b08ebe	https://www.ebi.ac.uk/ebisearch/swagger.ebi	evidence/terms/021_EBI.body
+OSF	200	551	8fcdce0773fb855ff9a8cd1da929347522aed744a5b20516ba94829d0094494e	https://developer.osf.io/	evidence/terms/022_OSF.body
+GBIF	200	23511	9d5744bd574e711124a74a65c54e4543af2796b88858269e8518434eb7275ba3	https://techdocs.gbif.org/en/openapi/	evidence/terms/023_GBIF.body
+OBIS	200	1392	ccd680d96caba3fcea401bad55a1af0082e628ef9815d705cb7a56048ade1212	https://api.obis.org/	evidence/terms/024_OBIS.body
+iDigBio	200	268657	0a5a996561660468212369bc440376a337b769a0053b581fc252f5a838dd44fa	https://github.com/iDigBio/idigbio-search-api/wiki	evidence/terms/025_iDigBio.body
+EOL	403	5668	ded05506b923cf01b1362659a6c0c188eab1c3d0a74fa95c4e1ffffc929c7d46	https://eol.org/docs/what-is-eol/data-services	evidence/terms/026_EOL.body
+UniProt	200	6577	4d5ee983e6ac6aa40e64e3809f9717d9bf09567a7d0d91b14ef1bc775ab31794	https://www.uniprot.org/help/api	evidence/terms/027_UniProt.body
+RCSB PDB	200	43261	9816b618ad7192f6601a953f8615efe6480754550b173d7d531d7b3c11fc399c	https://data.rcsb.org/	evidence/terms/028_RCSB_PDB.body
+AlphaFold DB	200	76766	2981ecf402c3c78d5319049aa4361e25327ea1d86a43f47c2ea530118626b6ca	https://alphafold.ebi.ac.uk/api-docs	evidence/terms/029_AlphaFold_DB.body
+Ensembl	200	28794	1cb646abfb0c99ee28920ed52e8ca87e9f306507881377a6639912f82c3c4a8b	https://rest.ensembl.org/	evidence/terms/030_Ensembl.body
+InterPro	200	14935	e2de7f867c31df2180e3f44cb64445644e65df7d64b19a4202ebc1be376ca2e7	https://www.ebi.ac.uk/interpro/api/	evidence/terms/031_InterPro.body
+Reactome	200	52832	a1b62421a031a74a4dcab123e08eeeb6dafcd5e3058cc0c0b5d2602c62caac03	https://reactome.org/ContentService/	evidence/terms/032_Reactome.body
+ChEMBL	200	370388	810d3c42d2f03e01b0c4da9d9fd1f326f850c6207f5045c35d8da767fc3fcc04	https://chembl.gitbook.io/chembl-interface-documentation/web-services	evidence/terms/033_ChEMBL.body
+Internet Archive	200	28225	a9501d1d96a1612f083c6ad5206f907f8a229a0ec6a16ebca44adaf200b18ac3	https://archive.org/developers/bots.html	evidence/terms/034_Internet_Archive.body
+Arquivo.pt	200	252869	2330058625697c9d37f2a021c7e9582735b2c6623b768a17ca62bf1eb8ffc881	https://arquivo.pt/api	evidence/terms/035_Arquivo.pt.body
+Common Crawl	404	4558	bfdf76d3b503fe78c29d91b9eba0aef375b9b15addd8996262cef598812aa7b9	https://commoncrawl.org/cc-index-table	evidence/terms/036_Common_Crawl.body
+Europeana	403	5636	e5553a787d86a54488ea97bd44819c1b598803249d55fea8bf58ac5429f2bd56	https://pro.europeana.eu/page/apis	evidence/terms/037_Europeana.body
+DigitalNZ	202	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	https://digitalnz.org/developers	evidence/terms/038_DigitalNZ.body
+Smithsonian	200	44522	ffe0fe2e2ac46f1efecee67594d013bd75336e39a40e52d7ffdfb40c3143a2d1	https://edan.si.edu/openaccess/apidocs/	evidence/terms/039_Smithsonian.body
+Art Institute of Chicago	200	1028072	0fb0bf4be6d8a67609de846716e1455aa1c14e412ef8efda1a336f70fb445a36	https://api.artic.edu/docs/	evidence/terms/040_Art_Institute_of_Chicago.body
+Cleveland Museum of Art	200	106973	feb338a6feeed34b6ca61597edf70f372d690d340455cba1e16df2eb850c8d73	https://openaccess-api.clevelandart.org/	evidence/terms/041_Cleveland_Museum_of_Art.body
+SMK	200	154103	1c65ff3f09c40876c23bb0834d6adbab4370ad4589b05c9fdb3c4f93a89e049b	https://www.smk.dk/en/article/smk-api/	evidence/terms/042_SMK.body
+Getty	200	3066282	537e559b16452ad9c29f593813df6c41fbd127b02e958f894cd9dae89dc77568	https://www.getty.edu/research/tools/vocabularies/obtain/download.html	evidence/terms/043_Getty.body
+DNB	200	71330	9ffde8c1ec81de8a432b9186a1446a135b04b813dbf2806f267ae6abc900ae9e	https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html	evidence/terms/044_DNB.body
+K10plus	000	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	https://www.k10plus.de/	evidence/terms/045_K10plus.body
+The National Archives (UK)	200	8550	a14df3b3a365488ba18dcd1448ba04d0dd5b20ac2ac97fbddc7242a46d99e781	https://discovery.nationalarchives.gov.uk/API/sandbox/index	evidence/terms/046_The_National_Archives_UK.body
+HathiTrust	403	5632	990e01cc4d8d6e08ee97aba1c11d0c9d76b4b9e26b555bc43b181b84af205f98	https://www.hathitrust.org/bib_api	evidence/terms/047_HathiTrust.body
+OpenLibrary	200	61174	04ddf6b89155cb72dc95da4b1a64e415d42ab4f3a2991b7ebb8fe2af49ed701d	https://openlibrary.org/developers/api	evidence/terms/048_OpenLibrary.body
+Wikimedia	200	95068	23c4dc872ef35632119a5c4f6fd1165d8e0b26717ebf404fc0b25190765cb49c	https://www.mediawiki.org/wiki/API:Etiquette	evidence/terms/049_Wikimedia.body
+Zenodo	200	191492	bbd72463dcf7e07f597ed2b145e8019fb0e861c4811a8d22e0e5d202bde69e61	https://developers.zenodo.org/	evidence/terms/050_Zenodo.body
+Figshare	200	243312	fd0f3c90f9ba5f8d08d3ee10e8e91ae3344a0f226c8dd364384cf2262d344de4	https://docs.figshare.com/	evidence/terms/051_Figshare.body
+Dryad	200	147	8f1ae73a475c4cd413894cfe011a042e9cd5fd3070968652a6b2d0e5c1a7897f	https://datadryad.org/api/v2/docs/	evidence/terms/052_Dryad.body
+Dataverse	200	43093	b35aa846a95537710b4ffc5b70435e6d9d9ba24897fce008229c240324fc76c1	https://guides.dataverse.org/en/latest/api/	evidence/terms/053_Dataverse.body
+DANS	200	7484	8faa37379f56dd47eb17df776ecd7a82dbfaf1aedcfeb72f7c036fc100dff77d	https://dataverse.nl/	evidence/terms/054_DANS.body
+B2SHARE	200	91757	972026a9009fea4ed2bd499d4a1fa107b18c0971e13475b8ac40709f973dcdab	https://eudat.eu/services/b2share	evidence/terms/055_B2SHARE.body
+DataONE	200	140483	7e0cf4117050c99e6fc90c690366e688ad2d661af60ffecf4b12907bd2991928	https://dataone.org/	evidence/terms/056_DataONE.body
+PANGAEA	404	13897	832dc8dd52bffe93ea616a1ab6f21b489c37b692cdae5bf1b548a816ab203b91	https://wiki.pangaea.de/wiki/Elasticsearch_API	evidence/terms/057_PANGAEA.body
+re3data	200	26682	a3c0ceac0305e73b28b9b09aa8011c74b32a90bc99343b488b7669d61ec9317e	https://www.re3data.org/api/doc	evidence/terms/058_re3data.body
+Mendeley	200	108105	f6d442d6438d9f2306f5d8a7bd3d7d58c6f97c941d7d34e529ba19fcd08ad607	https://data.mendeley.com/api/	evidence/terms/059_Mendeley.body
+DOI Foundation	200	23196	7a107cd58fd59eb9340992e3b6645d7751944e74c11894574a34d37939d79576	https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation	evidence/terms/060_DOI_Foundation.body
+PLOS	200	7553	9e8fbbd56fc14dc968ddb52fc1ad856a039ddebf23d580d455dbad17a8bb4e56	https://api.plos.org/solr/faq/	evidence/terms/061_PLOS.body
+eLife	200	738	f471dbcee5809de8f31aa149cb56eee2b794b45630e25c63bd55921480e12c83	https://api.elifesciences.org/	evidence/terms/062_eLife.body
+Research Square	200	22067	4aaaa5f136ea59a03b08a300a319e144e59b58040d8de53abff8bda4f46dc997	https://www.researchsquare.com/	evidence/terms/063_Research_Square.body
+DSpace	403	5659	3ccbc28b025a46381abd6d5dd4cbb349be78cd19b10df9c3dff5c9ceb38b4ec9	https://wiki.lyrasis.org/display/DSDOC7x/REST+API	evidence/terms/064_DSpace.body
+InvenioRDM	200	137150	8dc06fca6360c7f2eace25575324b66fa117181f7686f07a7ce683c92ee0f57b	https://inveniordm.docs.cern.ch/	evidence/terms/065_InvenioRDM.body
+NARA	200	45968	2427610049c68c92707e69fc79fa1c8a06ca835b228e01ee7faf8b2153de008f	https://www.archives.gov/research/catalog/help/api	evidence/terms/066_NARA.body
+Met Museum	200	84532	6fbfe3a7620d9b79bbc49e68313d33ce10410aabbacf38e5e5f1f6349b942ff2	https://metmuseum.github.io/	evidence/terms/067_Met_Museum.body
+bioRxiv/medRxiv	200	15899	ac8302fbc99e14273f33c16268b2a12065c204fe888ff2aa52ab31dda1f5c2b4	https://api.biorxiv.org/	evidence/terms/068_bioRxiv_medRxiv.body

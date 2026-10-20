@@ -1,0 +1,2652 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Developers | Zenodo</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #f8f8f2;
+  background-color: #272822;
+}
+.highlight .err {
+  color: #272822;
+  background-color: #f92672;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #f8f8f2;
+}
+.highlight .p, .highlight .pi {
+  color: #f8f8f2;
+}
+.highlight .gi {
+  color: #a6e22e;
+}
+.highlight .gd {
+  color: #f92672;
+}
+.highlight .gh {
+  color: #66d9ef;
+  background-color: #272822;
+  font-weight: bold;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .ges {
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #ae81ff;
+}
+.highlight .kc {
+  color: #fd971f;
+}
+.highlight .kt {
+  color: #fd971f;
+}
+.highlight .kd {
+  color: #fd971f;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #a6e22e;
+}
+.highlight .sa {
+  color: #ae81ff;
+}
+.highlight .sr {
+  color: #a1efe4;
+}
+.highlight .si {
+  color: #cc6633;
+}
+.highlight .se {
+  color: #cc6633;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #66d9ef;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #a6e22e;
+}
+.highlight .ss {
+  color: #a6e22e;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
+  </head>
+
+  <body class="index" data-languages="[&quot;python&quot;,&quot;shell&quot;,&quot;javascript&quot;]">
+    <div class="header">
+      <a class="logo-container" href="https://zenodo.org">
+        <img src="images/zenodo.svg" alt="Zenodo" />
+      </a>
+      <span class="logo-divider"></span>
+      <a href="http://developers.zenodo.org"><div class="header-title">Developers</div></a>
+      <ul class="header-menu">
+        <!-- These can be configurable I believe... -->
+        <li><a href="http://about.zenodo.org">About</a></li>
+        <li><a href="http://blog.zenodo.org">Blog</a></li>
+        <li><a href="http://help.zenodo.org">Help</a></li>
+        <li><a class="active" href="http://developers.zenodo.org">Developers</a></li>
+      </ul>
+    </div>
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <div class="lang-selector">
+              <a href="#" data-language-name="python">Python</a>
+              <a href="#" data-language-name="shell">cURL</a>
+              <a href="#" data-language-name="javascript">NodeJS</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href="https://about.zenodo.org/privacy-policy">Privacy policy</a></li>
+            <li><a href="https://about.zenodo.org/cookie-policy">Cookie policy</a></li>
+            <li><a href='https://about.zenodo.org/terms'>Terms of Use</a></li>
+            <li><a href='https://about.zenodo.org/contact'>Contact</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="page_content">
+        <div class="dark-box"></div>
+        <div class="content">
+          
+            <h1 id="rest-api">REST API</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The Zenodo REST API currently supports:</p>
+
+<ul>
+<li><strong>Deposit</strong> — upload and publishing of research outputs (identical to
+functionality available in the user interface).</li>
+<li><strong>Records</strong> — search published records.</li>
+<li><strong>Files</strong> — download/upload of files.</li>
+</ul>
+
+<p>Check out the <a href="#quickstart-upload">Quickstart</a> guide for an example on how to
+programmatically upload and publish your research outputs.</p>
+
+<p>The following REST APIs are currently in testing before we launch them in
+<strong>beta</strong> with full documentation:</p>
+
+<ul>
+<li><strong>Communities</strong> - search communities.</li>
+<li><strong>Funders</strong> — search for funders.</li>
+<li><strong>Grants</strong> — search for grants.</li>
+<li><strong>Licenses</strong> — search for licenses.</li>
+</ul>
+
+<p>You can have a sneak peek at the APIs in test from our root endpoint: <code class="prettyprint">https://zenodo.org/api/</code></p>
+
+            <h2 id="quickstart-upload">Quickstart - Upload</h2>
+
+<p>This short guide will give a quick overview of how to upload and publish on
+Zenodo, and will be using either:</p>
+
+<ol>
+<li>Python together with the <a href="http://www.python-requests.org/en/latest/user/install/">Requests</a> package.</li>
+<li>Javascript together with the <a href="https://github.com/axios/axios">axios</a> package.</li>
+</ol>
+<div class="highlight"><pre class="highlight console"><code><span class="gp">#</span><span class="w"> </span>Install <span class="s1">'requests'</span> module <span class="k">for </span>python
+<span class="go">pip install requests
+
+</span><span class="gp">#</span><span class="w"> </span>Install <span class="s1">'axios'</span> module <span class="k">for </span>nodejs 
+<span class="go">npm install axios
+</span></code></pre></div>
+<ul>
+<li>First, make sure you have the
+<a href="http://www.python-requests.org/en/latest/user/install/">Requests</a> module
+installed for python or <a href="https://github.com/axios/axios">axios</a> for nodeJS:</li>
+</ul>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="n">python</span>
+<span class="c1"># Python 3.6.5
+# [GCC 4.8.1] on linux2
+# Type "help", "copyright", "credits" or "license" for more information.
+</span></code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="nx">node</span>
+<span class="c1">// Welcome to Node.js v14.19.0.</span>
+<span class="c1">// Type ".help" for more information.</span>
+</code></pre></div>
+<ul>
+<li>Next, fire up a command prompt:</li>
+</ul>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div>
+<ul>
+<li>Import the module to handle requests:</li>
+</ul>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">"</span><span class="s">https://zenodo.org/api/deposit/depositions</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">r</span><span class="p">.</span><span class="n">status_code</span>
+<span class="c1"># 401
+</span><span class="n">r</span><span class="p">.</span><span class="nf">json</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">axios</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://zenodo.org/api/deposit/depositions</span><span class="dl">"</span><span class="p">).</span><span class="nf">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The server could not verify that you are authorized to access
+  the URL requested. You either supplied the wrong credentials (e.g. a bad
+  password), or your browser doesn't understand how to supply the credentials
+  required."</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<ul>
+<li>We will try to access the API without an authentication token:</li>
+</ul>
+
+<div class="align-columns"></div>
+
+<ul>
+<li>All API access requires an access token, so
+<a href="https://zenodo.org/account/settings/applications/tokens/new/">create</a> one.</li>
+</ul>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="n">ACCESS_TOKEN</span> <span class="o">=</span> <span class="sh">'</span><span class="s">ChangeMe</span><span class="sh">'</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions</span><span class="sh">'</span><span class="p">,</span>
+                  <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">r</span><span class="p">.</span><span class="n">status_code</span>
+<span class="c1"># 200
+</span><span class="n">r</span><span class="p">.</span><span class="nf">json</span><span class="p">()</span>
+<span class="c1"># []
+</span></code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">ACCESS_TOKEN</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">ChangeMe</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">requestConfig</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">'</span><span class="s1">Authorization</span><span class="dl">'</span><span class="p">:</span> <span class="s2">`Bearer </span><span class="p">${</span><span class="nx">ACCESS_TOKEN</span><span class="p">}</span><span class="s2">`</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">axios</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://zenodo.org/api/deposit/depositions</span><span class="dl">"</span><span class="p">,</span> <span class="nx">requestConfig</span><span class="p">).</span><span class="nf">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+  <span class="c1">// &gt; 200</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>  
+  <span class="c1">// &gt; []</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<ul>
+<li>Let&rsquo;s try again (replace <code class="prettyprint">ACCESS_TOKEN</code> with your newly created personal
+access token):</li>
+</ul>
+
+<aside class="notice">
+  Note, if you already uploaded something, the output will be different.
+</aside>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">"</span><span class="s">Content-Type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">application/json</span><span class="sh">"</span><span class="p">,</span>
+    <span class="sh">"</span><span class="s">Authorization</span><span class="sh">"</span><span class="p">:</span> <span class="sa">f</span><span class="sh">"</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">"</span>
+<span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="sh">'</span><span class="s">https://sandbox.zenodo.org/api/deposit/depositions</span><span class="sh">'</span><span class="p">,</span>
+                   <span class="n">json</span><span class="o">=</span><span class="p">{},</span>
+                   <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">r</span><span class="p">.</span><span class="n">status_code</span>
+<span class="c1"># 201
+</span><span class="n">r</span><span class="p">.</span><span class="nf">json</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">requestConfig</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">Content-Type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">Authorization</span><span class="dl">"</span><span class="p">:</span> <span class="s2">`Bearer </span><span class="p">${</span><span class="nx">ACCESS_TOKEN</span><span class="p">}</span><span class="s2">`</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">axios</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://zenodo.org/api/deposit/depositions</span><span class="dl">"</span><span class="p">,</span> <span class="p">{},</span> <span class="nx">requestConfig</span><span class="p">).</span><span class="nf">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+  <span class="c1">// 201</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>  
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">});</span>
+
+</code></pre></div><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"conceptrecid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"542200"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-19T11:58:41.606998+00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"files"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">542201</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"bucket"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/files/568377dd-daf8-4235-85e1-a56011ad454b"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"discard"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/deposit/depositions/542201/actions/discard"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"edit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/deposit/depositions/542201/actions/edit"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"files"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/deposit/depositions/542201/files"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"html"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/deposit/542201"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"latest_draft"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/deposit/depositions/542201"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"latest_draft_html"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/deposit/542201"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"publish"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/deposit/depositions/542201/actions/publish"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/deposit/depositions/542201"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"prereserve_doi"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"doi"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10.5072/zenodo.542201"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"recid"</span><span class="p">:</span><span class="w"> </span><span class="mi">542201</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"modified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-19T11:58:41.607012+00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"owner"</span><span class="p">:</span><span class="w"> </span><span class="mi">12345</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"record_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">542201</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unsubmitted"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"submitted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<ul>
+<li>Next, let&rsquo;s create a new empty upload:</li>
+</ul>
+
+<div class="align-columns"></div>
+
+<ul>
+<li>Now, let&rsquo;s upload a new file. We have recently released a new API, which is significantly more perfomant and supports much larger file sizes. While the older API supports 100MB per file, the new one has a limit of 50GB total in the record (and any given file), and up to 100 files in the record.</li>
+</ul>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="n">bucket_url</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="nf">json</span><span class="p">()[</span><span class="sh">"</span><span class="s">links</span><span class="sh">"</span><span class="p">][</span><span class="sh">"</span><span class="s">bucket</span><span class="sh">"</span><span class="p">]</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-H</span> <span class="s2">"Authorization: Bearer </span><span class="nv">$ACCESS_TOKEN</span><span class="s2">"</span> <span class="se">\</span>
+  https://zenodo.org/api/deposit/depositions/222761
+<span class="o">{</span> ...
+  <span class="s2">"links"</span>: <span class="o">{</span>
+    <span class="s2">"bucket"</span>: <span class="s2">"https://zenodo.org/api/files/568377dd-daf8-4235-85e1-a56011ad454b"</span>,
+    ...,
+  <span class="o">}</span>,
+... <span class="o">}</span>
+</code></pre></div>
+<ul>
+<li>To use the <strong>new files API</strong> we will do a PUT request to the <code class="prettyprint">bucket</code> link. The bucket is a folder-like object storing the files of our record. Our bucket URL will look like this: <code class="prettyprint">https://zenodo.org/api/files/568377dd-daf8-4235-85e1-a56011ad454b</code> and can be found under the <code class="prettyprint">links</code> key in our records metadata.</li>
+</ul>
+<div class="highlight"><pre class="highlight shell"><code><span class="s1">''' 
+This will stream the file located in '</span>/path/to/your/file.dat<span class="s1">' and store it in our bucket.
+The uploaded file will be named according to the last argument in the upload URL,
+'</span>file.dat<span class="s1">' in our case. 
+'''</span>
+<span class="nv">$ </span>curl <span class="nt">--upload-file</span> /path/to/your/file.dat <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: Bearer </span><span class="nv">$ACCESS_TOKEN</span><span class="s2">"</span> <span class="se">\</span>
+  https://zenodo.org/api/files/568377dd-daf8-4235-85e1-a56011ad454b/file.dat
+<span class="o">{</span> ... <span class="o">}</span>
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s"> New API </span><span class="sh">'''</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="sh">"</span><span class="s">my-file.zip</span><span class="sh">"</span>
+<span class="n">path</span> <span class="o">=</span> <span class="sh">"</span><span class="s">/path/to/%s</span><span class="sh">"</span> <span class="o">%</span> <span class="n">filename</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">}</span>
+
+<span class="sh">'''</span><span class="s"> 
+The target URL is a combination of the bucket link with the desired filename
+seperated by a slash.
+</span><span class="sh">'''</span>
+<span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="sh">"</span><span class="s">rb</span><span class="sh">"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">put</span><span class="p">(</span>
+        <span class="sh">"</span><span class="s">%s/%s</span><span class="sh">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">bucket_url</span><span class="p">,</span> <span class="n">filename</span><span class="p">),</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">fp</span><span class="p">,</span>
+        <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="n">r</span><span class="p">.</span><span class="nf">json</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">filePath</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;FILE_PATH&gt;</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// Replace with file path</span>
+<span class="kd">const</span> <span class="nx">bucketURL</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;BUCKET_URL&gt;</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// Replace with bucket url</span>
+<span class="kd">const</span> <span class="nx">fileName</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;FILE_NAME&gt;</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// Replace with file name</span>
+<span class="kd">const</span> <span class="nx">token</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">TOKEN</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// Replace with token value</span>
+
+<span class="c1">// Create a form</span>
+<span class="kd">const</span> <span class="nx">form</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FormData</span><span class="p">();</span>
+
+<span class="c1">// Read file as a stream</span>
+<span class="kd">const</span> <span class="nx">stream</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nf">createReadStream</span><span class="p">(</span><span class="nx">filePath</span><span class="p">);</span>
+<span class="nx">form</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="dl">'</span><span class="s1">file</span><span class="dl">'</span><span class="p">,</span> <span class="nx">stream</span><span class="p">);</span>
+
+<span class="c1">// Create request</span>
+<span class="kd">let</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">bucketURL</span><span class="p">}</span><span class="s2">/</span><span class="p">${</span><span class="nx">fileName</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="dl">'</span><span class="s1">Content-type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/zip</span><span class="dl">'</span><span class="p">,</span>
+    <span class="dl">'</span><span class="s1">Authorization</span><span class="dl">'</span><span class="p">:</span> <span class="s2">`Bearer </span><span class="p">${</span><span class="nx">token</span><span class="p">}</span><span class="s2">`</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">requestConfig</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">data</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="nx">fileName</span><span class="p">,</span>
+      <span class="p">...</span><span class="nx">form</span>
+    <span class="p">},</span>
+    <span class="na">headers</span><span class="p">:</span> <span class="nx">headers</span>
+<span class="p">}</span>
+
+<span class="nx">axios</span><span class="p">.</span><span class="nf">put</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">requestConfig</span><span class="p">).</span><span class="nf">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-file.zip"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"mimetype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/zip"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"checksum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"md5:2942bfabb3d05332b66eb128e0842cff"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"38a724d3-40f1-4b27-b236-ed2e43200f85"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">13264</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-26T14:20:53.805734+00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-26T14:20:53.811817+00:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/files/44cc40bc-50fd-4107-b347-00838c79f4c1/dummy_example.pdf"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/files/44cc40bc-50fd-4107-b347-00838c79f4c1/dummy_example.pdf?versionId=38a724d3-40f1-4b27-b236-ed2e43200f85"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"uploads"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/files/44cc40bc-50fd-4107-b347-00838c79f4c1/dummy_example.pdf?uploads"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"is_head"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"delete_marker"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s">
+Old API
+Get the deposition id from the previous response
+</span><span class="sh">'''</span>
+<span class="n">deposition_id</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="nf">json</span><span class="p">()[</span><span class="sh">'</span><span class="s">id</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">myfirstfile.csv</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">file</span><span class="sh">'</span><span class="p">:</span> <span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">/path/to/myfirstfile.csv</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">rb</span><span class="sh">'</span><span class="p">)}</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/%s/files</span><span class="sh">'</span> <span class="o">%</span> <span class="n">deposition_id</span><span class="p">,</span>
+                   <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+                   <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">)</span>
+<span class="n">r</span><span class="p">.</span><span class="n">status_code</span>
+<span class="c1"># 201
+</span><span class="n">r</span><span class="p">.</span><span class="nf">json</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="c1">// Old API documentation not available for javascript / NodeJS</span>
+</code></pre></div><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"checksum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2b70e04bb31f2656ce967dc07103297f"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"myfirstfile.csv"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eb78d50b-ecd4-407a-9520-dfc7a9d1ab2c"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"filesize"</span><span class="p">:</span><span class="w"> </span><span class="s2">"27"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<ul>
+<li>Here are the instructions for the <strong>old files API</strong>:</li>
+</ul>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="sh">'</span><span class="s">metadata</span><span class="sh">'</span><span class="p">:</span> <span class="p">{</span>
+         <span class="sh">'</span><span class="s">title</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">My first upload</span><span class="sh">'</span><span class="p">,</span>
+         <span class="sh">'</span><span class="s">upload_type</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">poster</span><span class="sh">'</span><span class="p">,</span>
+         <span class="sh">'</span><span class="s">description</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">This is my first upload</span><span class="sh">'</span><span class="p">,</span>
+         <span class="sh">'</span><span class="s">creators</span><span class="sh">'</span><span class="p">:</span> <span class="p">[{</span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">Doe, John</span><span class="sh">'</span><span class="p">,</span>
+                       <span class="sh">'</span><span class="s">affiliation</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">Zenodo</span><span class="sh">'</span><span class="p">}]</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">'</span><span class="s">Content-Type</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">application/json</span><span class="sh">'</span><span class="p">,</span>
+    <span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span>
+<span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">put</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/%s</span><span class="sh">'</span> <span class="o">%</span> <span class="n">deposition_id</span><span class="p">,</span>
+                  <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="p">.</span><span class="nf">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">),</span>
+                  <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">r</span><span class="p">.</span><span class="n">status_code</span>
+<span class="c1"># 200
+</span></code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="c1">// Old API documentation not available for javascript / NodeJS</span>
+</code></pre></div>
+<ul>
+<li>Last thing missing, is just to add some metadata:</li>
+</ul>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight python"><code><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/%s/actions/publish</span><span class="sh">'</span> <span class="o">%</span> <span class="n">deposition_id</span><span class="p">,</span>
+                      <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">r</span><span class="p">.</span><span class="n">status_code</span>
+<span class="c1"># 202
+</span></code></pre></div><div class="highlight"><pre class="highlight javascript"><code><span class="c1">// Old API documentation not available for javascript / NodeJS</span>
+</code></pre></div>
+<ul>
+<li>And we&rsquo;re ready to publish:</li>
+</ul>
+
+<aside class="warning">
+  Don&rsquo;t execute this last step - it will put your test upload straight online.
+</aside>
+
+            <h2 id="testing">Testing</h2>
+
+<p>We provide a sandbox environment where you can test your API integration
+during development. The sandbox environment is available at
+<a href="https://sandbox.zenodo.org">https://sandbox.zenodo.org</a>.</p>
+
+<p>Please note the following:</p>
+
+<ul>
+<li>The sandbox environment can be <strong>cleaned at anytime</strong>.</li>
+<li>The sandbox environment requires a separate registration and separate access token from the ones used on <a href="https://zenodo.org">https://zenodo.org</a>.</li>
+<li>The sandbox environment will issue test DOIs using the 10.5072 prefix
+instead of Zenodo&rsquo;s normal prefix (10.5281).</li>
+</ul>
+
+<h2 id="versioning">Versioning</h2>
+
+<p>The REST API is versioned. We strive not to make backward incompatible changes
+to the API, but if we do, we release a new version. <a href="#changes">Changes</a> to the
+API are documented on this page, and advance notification is given on our
+<a href="https://twitter.com/zenodo_org">Twitter account</a>.</p>
+
+<h2 id="authentication">Authentication</h2>
+
+<p>All API requests must be authenticated and over HTTPS. Any request over plain
+HTTP will fail. We support authentication with via OAuth 2.0.</p>
+
+<h3 id="creating-a-personal-access-token">Creating a personal access token</h3>
+
+<ol>
+<li><a href="https://zenodo.org/signup">Register</a> for a Zenodo account if you don&rsquo;t
+already have one.</li>
+<li>Go to your <a href="https://zenodo.org/account/settings/applications/">Applications</a>,
+to <a href="https://zenodo.org/account/settings/applications/tokens/new/">create a new token</a>.</li>
+<li>Select the OAuth scopes you need (for the quick start tutorial you need
+<code class="prettyprint">deposit:write</code> and <code class="prettyprint">deposit:actions</code>).</li>
+</ol>
+
+<aside class="warning">
+  Do not share your personal access token with anyone else, and only use it over
+  HTTPS.
+</aside>
+
+<h3 id="using-access-tokens">Using access tokens</h3>
+
+<p>An access token must be included in all requests. The recommended and more secure method is using HTTP headers:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>GET /api/deposit/depositions
+Authorization: Bearer &lt;ACCESS_TOKEN&gt;
+</code></pre></div>
+<ul>
+<li><strong>Recommended:</strong> as HTTP request header (<code class="prettyprint">Authorization</code>):</li>
+</ul>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight plaintext"><code>GET /api/deposit/depositions?access_token=&lt;ACCESS_TOKEN&gt;
+</code></pre></div>
+<ul>
+<li>or as URL parameter (named <code class="prettyprint">access_token</code>), though this is less secure:</li>
+</ul>
+
+<div class="align-columns"></div>
+
+<h3 id="scopes">Scopes</h3>
+
+<p>Scopes assigns permissions to your access token to limit access to data and
+actions in Zenodo. The following scopes exist:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Name</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">deposit:write</code></td>
+<td style="text-align: left">Grants write access to depositions, but does not allow publishing the upload.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">deposit:actions</code></td>
+<td style="text-align: left">Grants access to publish, edit and discard edits for depositions.</td>
+</tr>
+</tbody></table>
+
+<h2 id="requests">Requests</h2>
+
+<p>The base URL of the API is <code class="prettyprint">https://zenodo.org/api/</code>.</p>
+
+<p>All <code class="prettyprint">POST</code> and <code class="prettyprint">PUT</code> request bodies must be JSON encoded, and must have content
+type of <code class="prettyprint">application/json</code> unless specified otherwise in the specific resource
+(e.g. in the case of file uploads). The API will return a <code class="prettyprint">415</code> error (see <a href="#http-status-codes">HTTP
+status codes</a> and <a href="#errors">error responses</a>) if the wrong
+content type is provided.</p>
+
+<h2 id="responses">Responses</h2>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"field1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"value"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>All response bodies are JSON encoded (UTF-8 encoded). A single resource is
+represented as a JSON object:</p>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"field1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"value"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+    </span><span class="s2">"..."</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>A collection of resources is represented as a JSON array of objects:</p>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight plaintext"><code>YYYY-MM-DDTHH:MM:SS+00:00
+</code></pre></div>
+<p>Timestamps are in UTC and formatted according to <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO
+8601</a>:</p>
+
+<h2 id="http-status-codes">HTTP status codes</h2>
+
+<p>We use the following HTTP status codes to indicate success or failure of a
+request.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Code</th>
+<th style="text-align: left">Name</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">200</code></td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Request succeeded. Response included. Usually sent for GET/PUT/PATCH requests.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">201</code></td>
+<td style="text-align: left">Created</td>
+<td style="text-align: left">Request succeeded. Response included. Usually sent for POST requests.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">202</code></td>
+<td style="text-align: left">Accepted</td>
+<td style="text-align: left">Request succeeded. Response included. Usually sent for POST requests, where background processing is needed to fulfill the request.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">204</code></td>
+<td style="text-align: left">No Content</td>
+<td style="text-align: left">Request succeeded. No response included. Usually sent for DELETE requests.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">400</code></td>
+<td style="text-align: left">Bad Request</td>
+<td style="text-align: left">Request failed. <a href="#errors">Error response</a> included.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">401</code></td>
+<td style="text-align: left">Unauthorized</td>
+<td style="text-align: left">Request failed, due to an invalid access token. <a href="#errors">Error response</a> included.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">403</code></td>
+<td style="text-align: left">Forbidden</td>
+<td style="text-align: left">Request failed, due to missing authorization (e.g. deleting an already submitted upload or missing scopes for your access token). <a href="#errors">Error response</a> included.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">404</code></td>
+<td style="text-align: left">Not Found</td>
+<td style="text-align: left">Request failed, due to the resource not being found. <a href="#errors">Error response</a> included.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">405</code></td>
+<td style="text-align: left">Method Not Allowed</td>
+<td style="text-align: left">Request failed, due to unsupported HTTP method. <a href="#errors">Error response</a> included.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">409</code></td>
+<td style="text-align: left">Conflict</td>
+<td style="text-align: left">Request failed, due to the current state of the resource (e.g. edit a deopsition which is not fully integrated). <a href="#errors">Error response</a> included.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">415</code></td>
+<td style="text-align: left">Unsupported Media Type</td>
+<td style="text-align: left">Request failed, due to missing or invalid request header <code class="prettyprint">Content-Type</code>. <a href="#errors">Error response</a> included.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">429</code></td>
+<td style="text-align: left">Too Many Requests</td>
+<td style="text-align: left">Request failed, due to rate limiting. <a href="#errors">Error response</a> included.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">500</code></td>
+<td style="text-align: left">Internal Server Error</td>
+<td style="text-align: left">Request failed, due to an internal server error. Error response <em>NOT</em> included. Don&rsquo;t worry, Zenodo admins have been notified and will be dealing with the problem ASAP.</td>
+</tr>
+</tbody></table>
+
+<h2 id="errors">Errors</h2>
+
+<p>Error responses for 400 series errors (e.g. 400, 401, 403, &hellip;) are returned as
+a JSON object with two attributes <code class="prettyprint">message</code> and <code class="prettyprint">status</code> (HTTP status code), and
+possibly an attribute <code class="prettyprint">errors</code> with a list of more detailed errors.</p>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Deposition not found"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>For more complex errors, we include the attribute <code class="prettyprint">errors</code>, a JSON array of
+objects, each with the attributes <code class="prettyprint">message</code> (with a human-readable explanation
+of the error), and possibly <code class="prettyprint">field</code> (with the &ldquo;path&rdquo; to field that contains
+the error).</p>
+
+<p>Example of an error message with detailed errors:</p>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Validation error"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="nl">"field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"metadata.access_right"</span><span class="p">,</span><span class="w"> </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not a valid choice"</span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="nl">"field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"metadata.creators.0.name"</span><span class="p">,</span><span class="w"> </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Name is required."</span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="nl">"field"</span><span class="p">:</span><span class="w"> </span><span class="s2">"non_existent"</span><span class="p">,</span><span class="w"> </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unknown field name."</span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+            <h1 id="entities">Entities</h1>
+
+            <h2 id="depositions">Depositions</h2>
+
+            <h3 id="representation">Representation</h3>
+
+<p>The Deposition resource is used for uploading and editing records on Zenodo.</p>
+
+<h4 id="deposit">Deposit</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Field</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">created</code></br><em>timestamp</em></td>
+<td style="text-align: left">Creation time of deposition (in ISO8601 format).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">doi</code></br><em>string</em></td>
+<td style="text-align: left">Digital Object Identifier (DOI). When you publish your deposition, we register a DOI in <a href="http://www.datacite.org">DataCite</a> for your upload, unless you manually provided us with one. This field is only present for published depositions.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">doi_url</code></br><em>url</em></td>
+<td style="text-align: left">Persistent link to your published deposition. This field is only present for published depositions.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">files</code></br><em>array</em></td>
+<td style="text-align: left">A list of <a href="#deposition-file">deposition files</a> resources.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">id</code></br><em>integer</em></td>
+<td style="text-align: left">Deposition identifier</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">metadata</code></br><em>object</em></td>
+<td style="text-align: left">A <a href="#deposit-metadata">deposition metadata</a> resource</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">modified</code></br><em>timestamp</em></td>
+<td style="text-align: left">Last modification time of deposition (in ISO8601 format).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">owner</code></br><em>integer</em></td>
+<td style="text-align: left">User identifier of the owner of the deposition.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">record_id</code></br><em>integer</em></td>
+<td style="text-align: left">Record identifier. This field is only present for published depositions.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">record_url</code></br><em>url</em></td>
+<td style="text-align: left">URL to public version of record for this deposition. This field is only present for published depositions.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">state</code></br><em>string</em></td>
+<td style="text-align: left">One of the values:<br/>* <code class="prettyprint">inprogress</code>: Deposition metadata can be updated. If deposition is also unsubmitted (see <code class="prettyprint">submitted</code>) files can be updated as well. <br/>* <code class="prettyprint">done</code>: Deposition has been published. <br/>* <code class="prettyprint">error</code>: Deposition is in an error state - contact our support.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">submitted</code></br><em>bool</em></td>
+<td style="text-align: left">True if the deposition has been published, False otherwise.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">title</code></br><em>string</em></td>
+<td style="text-align: left">Title of deposition (automatically set from <code class="prettyprint">metadata</code>). Defaults to empty string.</td>
+</tr>
+</tbody></table>
+
+<h4 id="deposit-metadata">Deposit metadata</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Attribute</th>
+<th style="text-align: left">Required</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">upload_type</code></br><em>string</em></td>
+<td style="text-align: left">Yes</td>
+<td style="text-align: left">Controlled vocabulary:</br>* <code class="prettyprint">publication</code>: Publication</br>* <code class="prettyprint">poster</code>: Poster</br>* <code class="prettyprint">presentation</code>: Presentation</br>* <code class="prettyprint">dataset</code>: Dataset</br>* <code class="prettyprint">image</code>: Image</br>* <code class="prettyprint">video</code>: Video/Audio</br>* <code class="prettyprint">software</code>: Software</br>* <code class="prettyprint">lesson</code>: Lesson</br>* <code class="prettyprint">physicalobject</code>: Physical object</br>* <code class="prettyprint">other</code>: Other</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">publication_type</code></br><em>string</em></td>
+<td style="text-align: left">Yes, if <code class="prettyprint">upload_type</code> is <code class="prettyprint">&quot;publication&quot;</code>.</td>
+<td style="text-align: left">Controlled vocabulary:</br>* <code class="prettyprint">annotationcollection</code>: Annotation collection</br>* <code class="prettyprint">book</code>: Book</br>* <code class="prettyprint">section</code>: Book section</br>* <code class="prettyprint">conferencepaper</code>: Conference paper</br>* <code class="prettyprint">datamanagementplan</code>: Data management plan</br>* <code class="prettyprint">article</code>: Journal article</br>* <code class="prettyprint">patent</code>: Patent</br>* <code class="prettyprint">preprint</code>: Preprint</br>* <code class="prettyprint">deliverable</code>: Project deliverable</br>* <code class="prettyprint">milestone</code>: Project milestone</br>* <code class="prettyprint">proposal</code>: Proposal</br>* <code class="prettyprint">report</code>: Report</br>* <code class="prettyprint">softwaredocumentation</code>: Software documentation</br>* <code class="prettyprint">taxonomictreatment</code>: Taxonomic treatment</br>* <code class="prettyprint">technicalnote</code>: Technical note</br>* <code class="prettyprint">thesis</code>: Thesis</br>* <code class="prettyprint">workingpaper</code>: Working paper</br>* <code class="prettyprint">other</code>: Other</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">image_type</code></br><em>string</em></td>
+<td style="text-align: left">Yes, if <code class="prettyprint">upload_type</code> is <code class="prettyprint">&quot;image&quot;</code>.</td>
+<td style="text-align: left">Controlled vocabulary:</br>* <code class="prettyprint">figure</code>: Figure</br>* <code class="prettyprint">plot</code>: Plot</br>* <code class="prettyprint">drawing</code>: Drawing</br>* <code class="prettyprint">diagram</code>: Diagram</br>* <code class="prettyprint">photo</code>: Photo</br>* <code class="prettyprint">other</code>: Other</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">publication_date</code></br><em>string</em></td>
+<td style="text-align: left">Yes</td>
+<td style="text-align: left">Date of publication in ISO8601 format (<code class="prettyprint">YYYY-MM-DD</code>). Defaults to current date.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">title</code></br><em>string</em></td>
+<td style="text-align: left">Yes</td>
+<td style="text-align: left">Title of deposition.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">creators</code></br><em>array of objects</em></td>
+<td style="text-align: left">Yes</td>
+<td style="text-align: left">The creators/authors of the deposition. Each array element is an object with the attributes:</br>* <code class="prettyprint">name</code>: Name of creator in the format <em>Family name, Given names</em></br>* <code class="prettyprint">affiliation</code>: Affiliation of creator (optional).</br>* <code class="prettyprint">orcid</code>: ORCID identifier of creator (optional).</br>* <code class="prettyprint">gnd</code>: GND identifier of creator (optional).</br></br><strong>Example:</strong> <code class="prettyprint">[{&#39;name&#39;:&#39;Doe, John&#39;, &#39;affiliation&#39;: &#39;Zenodo&#39;}, {&#39;name&#39;:&#39;Smith, Jane&#39;, &#39;affiliation&#39;: &#39;Zenodo&#39;, &#39;orcid&#39;: &#39;0000-0002-1694-233X&#39;}, {&#39;name&#39;: &#39;Kowalski, Jack&#39;, &#39;affiliation&#39;: &#39;Zenodo&#39;, &#39;gnd&#39;: &#39;170118215&#39;}]</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">description</code></br><em>string (allows HTML)</em></td>
+<td style="text-align: left">Yes</td>
+<td style="text-align: left">Abstract or description for deposition.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">access_right</code></br><em>string</em></td>
+<td style="text-align: left">Yes</td>
+<td style="text-align: left">Controlled vocabulary:</br>* <code class="prettyprint">open</code>: Open Access</br>* <code class="prettyprint">embargoed</code>: Embargoed Access</br>* <code class="prettyprint">restricted</code>: Restricted Access</br>* <code class="prettyprint">closed</code>: Closed Access</br></br>Defaults to <code class="prettyprint">open</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">license</code></br><em>string</em></td>
+<td style="text-align: left">Yes, if <code class="prettyprint">access_right</code> is <code class="prettyprint">&quot;open&quot;</code> or <code class="prettyprint">&quot;embargoed&quot;</code>.</td>
+<td style="text-align: left">Controlled vocabulary:</br>The selected license applies to all files in this deposition, but not to the metadata which is licensed under <a href="http://about.zenodo.org/terms/">Creative Commons Zero</a>. You can find the available license IDs via our <a href="#licenses"><code class="prettyprint">/api/licenses</code> endpoint</a>. Defaults to <code class="prettyprint">cc-zero</code> for datasets and <code class="prettyprint">cc-by</code> for everything else.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">embargo_date</code></br><em>date</em></td>
+<td style="text-align: left">Yes, if <code class="prettyprint">access_right</code> is <code class="prettyprint">&quot;embargoed&quot;</code>.</td>
+<td style="text-align: left">When the deposited files will be made automatically made publicly available by the system. Defaults to current date.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">access_conditions</code></br><em>string (allows HTML)</em></td>
+<td style="text-align: left">Yes, if <code class="prettyprint">access_right</code> is <code class="prettyprint">&quot;restricted&quot;</code>.</td>
+<td style="text-align: left">Specify the conditions under which you grant users access to the files in your upload. User requesting access will be asked to justify how they fulfil the conditions. Based on the justification, you decide who to grant/deny access. You are not allowed to charge users for granting access to data hosted on Zenodo.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">doi</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Digital Object Identifier. Did a publisher already assign a DOI to your deposited files? If not, leave the field empty and we will register a new DOI for you when you publish. A DOI allow others to easily and unambiguously cite your deposition.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">prereserve_doi</code></br><em>object/bool</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Set to <code class="prettyprint">true</code>, to reserve a Digital Object Identifier (DOI). The DOI is automatically generated by our system and cannot be changed. Also, The DOI is not registered with <a href="http://www.datacite.org">DataCite</a> until you publish your deposition, and thus cannot be used before then. Reserving a DOI is useful, if you need to include it in the files you upload, or if you need to provide a dataset DOI to your publisher but not yet publish your dataset. The response from the REST API will include the reserved DOI.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">keywords</code></br><em>array of strings</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Free form keywords for this deposition.</br></br><strong>Example:</strong> <code class="prettyprint">[&quot;Keyword 1&quot;, &quot;Keyword 2&quot;]</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">notes</code></br><em>string (allows HTML)</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Additional notes.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">related_identifiers</code></br><em>array of objects</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Persistent identifiers of related publications and datasets. Supported identifiers include: DOI, Handle, ARK, PURL, ISSN, ISBN, PubMed ID, PubMed Central ID, ADS Bibliographic Code, arXiv, Life Science Identifiers (LSID), EAN-13, ISTC, URNs and URLs. Each array element is an object with the attributes:</br>* <code class="prettyprint">identifier</code>: The persistent identifier</br>* <code class="prettyprint">relation</code>: Relationship. Controlled vocabulary (<code class="prettyprint">isCitedBy</code>, <code class="prettyprint">cites</code>, <code class="prettyprint">isSupplementTo</code>, <code class="prettyprint">isSupplementedBy</code>, <code class="prettyprint">isContinuedBy</code>, <code class="prettyprint">continues</code>, <code class="prettyprint">isDescribedBy</code>, <code class="prettyprint">describes</code>, <code class="prettyprint">hasMetadata</code>, <code class="prettyprint">isMetadataFor</code>, <code class="prettyprint">isNewVersionOf</code>, <code class="prettyprint">isPreviousVersionOf</code>, <code class="prettyprint">isPartOf</code>, <code class="prettyprint">hasPart</code>, <code class="prettyprint">isReferencedBy</code>, <code class="prettyprint">references</code>, <code class="prettyprint">isDocumentedBy</code>, <code class="prettyprint">documents</code>, <code class="prettyprint">isCompiledBy</code>, <code class="prettyprint">compiles</code>, <code class="prettyprint">isVariantFormOf</code>, <code class="prettyprint">isOriginalFormof</code>, <code class="prettyprint">isIdenticalTo</code>, <code class="prettyprint">isAlternateIdentifier</code>, <code class="prettyprint">isReviewedBy</code>, <code class="prettyprint">reviews</code>, <code class="prettyprint">isDerivedFrom</code>, <code class="prettyprint">isSourceOf</code>, <code class="prettyprint">requires</code>, <code class="prettyprint">isRequiredBy</code>, <code class="prettyprint">isObsoletedBy</code>, <code class="prettyprint">obsoletes</code>).</br>* <code class="prettyprint">resource_type</code>: Type of the related resource (based on the <code class="prettyprint">upload_type</code>, <code class="prettyprint">publication_type</code>, and <code class="prettyprint">image_type</code> fields).</br></br><strong>Example:</strong> <code class="prettyprint">[{&#39;relation&#39;: &#39;isSupplementTo&#39;, &#39;identifier&#39;:&#39;10.1234/foo&#39;}, {&#39;relation&#39;: &#39;cites&#39;, &#39;identifier&#39;:&#39;https://doi.org/10.1234/bar&#39;, &#39;resource_type&#39;: &#39;image-diagram&#39;}]</code>. Note the identifier type (e.g. DOI) is automatically detected, and used to validate and normalize the identifier into a standard form.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">contributors</code></br><em>array of objects</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">The contributors of the deposition (e.g. editors, data curators, etc.). Each array element is an object with the attributes:</br>* <code class="prettyprint">name</code>: Name of creator in the format <em>Family name, Given names</em></br>* <code class="prettyprint">type</code>: Contributor type. Controlled vocabulary (<code class="prettyprint">ContactPerson</code>, <code class="prettyprint">DataCollector</code>, <code class="prettyprint">DataCurator</code>, <code class="prettyprint">DataManager</code>,<code class="prettyprint">Distributor</code>, <code class="prettyprint">Editor</code>, <code class="prettyprint">HostingInstitution</code>, <code class="prettyprint">Producer</code>, <code class="prettyprint">ProjectLeader</code>, <code class="prettyprint">ProjectManager</code>, <code class="prettyprint">ProjectMember</code>, <code class="prettyprint">RegistrationAgency</code>, <code class="prettyprint">RegistrationAuthority</code>, <code class="prettyprint">RelatedPerson</code>, <code class="prettyprint">Researcher</code>, <code class="prettyprint">ResearchGroup</code>, <code class="prettyprint">RightsHolder</code>,<code class="prettyprint">Supervisor</code>, <code class="prettyprint">Sponsor</code>, <code class="prettyprint">WorkPackageLeader</code>, <code class="prettyprint">Other</code>)</br>* <code class="prettyprint">affiliation</code>: Affiliation of creator (optional).</br>* <code class="prettyprint">orcid</code>: ORCID identifier of creator (optional).</br>* <code class="prettyprint">gnd</code>: GND identifier of creator (optional).</br></br><strong>Example:</strong> <code class="prettyprint">[{&#39;name&#39;:&#39;Doe, John&#39;, &#39;affiliation&#39;: &#39;Zenodo&#39;, &#39;type&#39;: &#39;Editor&#39; }, ...]</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">references</code></br><em>array of strings</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">List of references.</br></br><strong>Example:</strong> <code class="prettyprint">[&quot;Doe J (2014). Title. Publisher. DOI&quot;, &quot;Smith J (2014). Title. Publisher. DOI&quot;]</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">communities</code></br><em>array of objects</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">List of communities you wish the deposition to appear. The owner of the community will be notified, and can either accept or reject your request. Each array element is an object with the attributes:</br>* <code class="prettyprint">identifier</code>: Community identifier</br></br><strong>Example:</strong> <code class="prettyprint">[{&#39;identifier&#39;:&#39;ecfunded&#39;}]</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">grants</code></br><em>array of objects</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">List of OpenAIRE-supported grants, which have funded the research for this deposition. Each array element is an object with the attributes:</br>* <code class="prettyprint">id</code>: grant ID.</br></br><strong>Example:</strong> <code class="prettyprint">[{&#39;id&#39;:&#39;283595&#39;}]</code> (European Commission grants only)</br>or funder DOI-prefixed: <code class="prettyprint">[{&#39;id&#39;: &#39;10.13039/501100000780::283595&#39;}]</code> (All grants, recommended)</br></br> Accepted funder DOI prefixes:</br> <strong>Academy of Finland</strong>: <code class="prettyprint">10.13039/501100002341</code></br> <strong>Agence Nationale de la Recherche</strong>: <code class="prettyprint">10.13039/501100001665</code></br> <strong>Aligning Science Across Parkinson’s</strong>: <code class="prettyprint">10.13039/100018231</code></br> <strong>Australian Research Council</strong>: <code class="prettyprint">10.13039/501100000923</code></br> <strong>Austrian Science Fund</strong>: <code class="prettyprint">10.13039/501100002428</code></br> <strong>Canadian Institutes of Health Research</strong>: <code class="prettyprint">10.13039/501100000024</code></br> <strong>European Commission</strong>: <code class="prettyprint">10.13039/501100000780</code></br> <strong>European Environment Agency</strong>: <code class="prettyprint">10.13039/501100000806</code></br> <strong>Fundação para a Ciência e a Tecnologia</strong>: <code class="prettyprint">10.13039/501100001871</code></br> <strong>Hrvatska Zaklada za Znanost</strong>: <code class="prettyprint">10.13039/501100004488</code></br> <strong>Institut National Du Cancer</strong>: <code class="prettyprint">10.13039/501100006364</code></br> <strong>Ministarstvo Prosvete, Nauke i Tehnološkog Razvoja</strong>: <code class="prettyprint">10.13039/501100004564</code></br> <strong>Ministarstvo Znanosti, Obrazovanja i Sporta</strong>: <code class="prettyprint">10.13039/501100006588</code></br> <strong>National Health and Medical Research Council</strong>: <code class="prettyprint">10.13039/501100000925</code></br> <strong>National Institutes of Health</strong>: <code class="prettyprint">10.13039/100000002</code></br> <strong>National Science Foundation</strong>: <code class="prettyprint">10.13039/100000001</code></br> <strong>Natural Sciences and Engineering Research Council of Canada</strong>: <code class="prettyprint">10.13039/501100000038</code></br> <strong>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</strong>: <code class="prettyprint">10.13039/501100003246</code></br> <strong>Research Councils</strong>: <code class="prettyprint">10.13039/501100000690</code></br> <strong>Schweizerischer Nationalfonds zur Förderung der wissenschaftlichen Forschung</strong>: <code class="prettyprint">10.13039/501100001711</code></br> <strong>Science Foundation Ireland</strong>: <code class="prettyprint">10.13039/501100001602</code></br> <strong>Social Science Research Council</strong>: <code class="prettyprint">10.13039/100001345</code></br> <strong>Templeton World Charity Foundation</strong>: <code class="prettyprint">10.13039/501100011730</code></br> <strong>Türkiye Bilimsel ve Teknolojik Araştırma Kurumu</strong>: <code class="prettyprint">10.13039/501100004410</code></br> <strong>UK Research and Innovation</strong>: <code class="prettyprint">10.13039/100014013</code></br> <strong>Wellcome Trust</strong>: <code class="prettyprint">10.13039/100004440</code></br></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">journal_title</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Journal title, if deposition is a published article.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">journal_volume</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Journal volume, if deposition is a published article.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">journal_issue</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Journal issue, if deposition is a published article.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">journal_pages</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Journal pages, if deposition is a published article.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">conference_title</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Title of conference (e.g. 20th International Conference on Computing in High Energy and Nuclear Physics).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">conference_acronym</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Acronym of conference (e.g. CHEP&#39;13).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">conference_dates</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Dates of conference (e.g. 14-18 October 2013). Conference title or acronym must also be specified if this field is specified.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">conference_place</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Place of conference in the format city, country (e.g. Amsterdam, The Netherlands). Conference title or acronym must also be specified if this field is specified.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">conference_url</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">URL of conference (e.g. http://www.chep2013.org/).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">conference_session</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Number of session within the conference (e.g. VI).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">conference_session_part</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Number of part within a session (e.g. 1).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">imprint_publisher</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Publisher of a book/report/chapter</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">imprint_isbn</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">ISBN of a book/report</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">imprint_place</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Place of publication of a book/report/chapter in the format city, country.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">partof_title</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Title of book for chapters</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">partof_pages</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Pages numbers of book</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">thesis_supervisors</code></br><em>array of objects</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Supervisors of the thesis. Same format as for <code class="prettyprint">creators</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">thesis_university</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Awarding university of thesis.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">subjects</code></br><em>array of objects</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Specify subjects from a taxonomy or controlled vocabulary. Each term must be uniquely identified (e.g. a URL). For free form text, use the keywords field. Each array element is an object with the attributes:</br>* <code class="prettyprint">term</code>: Term from taxonomy or controlled vocabulary.</br>* <code class="prettyprint">identifier</code>: Unique identifier for term.</br>* <code class="prettyprint">scheme</code>: Persistent identifier scheme for id (automatically detected).</br></br><strong>Example:</strong> <code class="prettyprint">[{&quot;term&quot;: &quot;Astronomy&quot;, &quot;identifier&quot;: &quot;http://id.loc.gov/authorities/subjects/sh85009003&quot;, &quot;scheme&quot;: &quot;url&quot;}]</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">version</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Version of the resource. Any string will be accepted, however the suggested format is a semantically versioned tag (see more details on semantic versioning at <a href="http://semver.org/">semver.org</a>)</br><strong>Example:</strong> <code class="prettyprint">2.1.5</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">language</code></br><em>string</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">Specify the main language of the record as ISO 639-2 or 639-3 code, see <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php">Library of Congress ISO 639 codes list</a>.</br><strong>Example:</strong> <code class="prettyprint">eng</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">locations</code></br><em>array of objects</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">List of locations</br>* <code class="prettyprint">lat (double):</code> latitude </br>* <code class="prettyprint">lon (double):</code> longitude</br>* <code class="prettyprint">place (string):</code> place&rsquo;s name (required)</br>* <code class="prettyprint">description (string):</code> place&rsquo;s description (optional)</br><strong>Example:</strong> <code class="prettyprint">[{&quot;lat&quot;: 34.02577, &quot;lon&quot;: -118.7804, &quot;place&quot;: &quot;Los Angeles&quot;}, {&quot;place&quot;: &quot;Mt.Fuji, Japan&quot;, &quot;description&quot;: &quot;Sample found 100ft from the foot of the mountain.&quot;}]</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">dates</code></br><em>array of objects</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">List of date intervals</br>* <code class="prettyprint">start (ISO date string):</code> start date (*) </br>* <code class="prettyprint">end (ISO date string):</code> end date (*)</br>* <code class="prettyprint">type (Collected, Valid, Withdrawn):</code> The interval’s type (required)</br>* <code class="prettyprint">description (string):</code> The interval&rsquo;s description (optional)</br>(*) Note that you have to specify at least a start or end date. For an exact date, use the same value for both <code class="prettyprint">start</code> and <code class="prettyprint">end</code>.</br><strong>Example:</strong> <code class="prettyprint">[{&quot;start&quot;: &quot;2018-03-21&quot;, &quot;end&quot;: &quot;2018-03-25&quot;, &quot;type&quot;: &quot;Collected&quot;, &quot;description&quot;: &quot;Specimen A5 collection period.&quot;}]</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">method</code></br><em>string (allows HTML)</em></td>
+<td style="text-align: left">No</td>
+<td style="text-align: left">The methodology employed for the study or research.</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+  For string fields that allow HTML (e.g. <code>description</code>, <code>notes</code>), for security reasons, only the following tags are accepted:
+  <code>a</code>,
+  <code>abbr</code>,
+  <code>acronym</code>,
+  <code>b</code>,
+  <code>blockquote</code>,
+  <code>br</code>,
+  <code>code</code>,
+  <code>caption</code>,
+  <code>div</code>,
+  <code>em</code>,
+  <code>i</code>,
+  <code>li</code>,
+  <code>ol</code>,
+  <code>p</code>,
+  <code>pre</code>,
+  <code>span</code>,
+  <code>strike</code>,
+  <code>strong</code>,
+  <code>sub</code>,
+  <code>table</code>,
+  <code>caption</code>,
+  <code>tbody</code>,
+  <code>thead</code>,
+  <code>th</code>,
+  <code>td</code>,
+  <code>tr</code>,
+  <code>u</code>,
+  <code>ul</code>.
+</aside>
+
+            <h3 id="list">List</h3>
+
+<p>List all depositions for the currently authenticated user.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">/api/deposit/depositions</span><span class="sh">'</span><span class="p">,</span>
+                        <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">q</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">my title</span><span class="sh">'</span><span class="p">},</span>
+                        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">})</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="nf">json</span><span class="p">())</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> /api/deposit/depositions/
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/deposit/depositions</code></p>
+
+<h4 id="query-arguments">Query arguments</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Parameter</th>
+<th style="text-align: left">Required</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">q</code></br><em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Search query (using <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html">Elasticsearch</a> query string syntax - note that some characters have special meaning here, including <code class="prettyprint">/</code>, which is also present in full DOIs).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">status</code></br><em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Filter result based on deposit status (either <code class="prettyprint">draft</code> or <code class="prettyprint">published</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">sort</code></br><em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Sort order (<code class="prettyprint">bestmatch</code> or <code class="prettyprint">mostrecent</code>). Prefix with minus to change form ascending to descending (e.g. <code class="prettyprint">-mostrecent</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">page</code></br><em>integer</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Page number for pagination.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">size</code></br><em>integer</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Number of results to return per page. Maximum 100.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">all_versions</code></br><em>integer/string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Show (<code class="prettyprint">true</code> or <code class="prettyprint">1</code>) or hide (<code class="prettyprint">false</code> or <code class="prettyprint">0</code>) all versions of deposits.</td>
+</tr>
+</tbody></table>
+
+<h4 id="success-response">Success Response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: an array of <a href="#deposit">deposition</a> resources.</li>
+</ul>
+
+<h4 id="error-response">Error Response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="create">Create</h3>
+
+<p>Create a new deposition resource.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> <span class="nt">-X</span> POST
+     <span class="nt">--data</span> <span class="s1">'{}'</span> /api/deposit/depositions/
+
+<span class="c"># or</span>
+
+curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> <span class="nt">-X</span> POST
+     <span class="nt">--data</span> <span class="s1">'{"metadata": {"title": "My first upload", "upload_type": "poster", "description": "This is my first upload", "creators": [{"name": "Doe, John", "affiliation": "Zenodo"}]}}'</span> /api/deposit/depositions/
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="sh">"</span><span class="s">/api/deposit/depositions/</span><span class="sh">"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">Content-Type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">application/json</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Authorization</span><span class="sh">"</span><span class="p">:</span> <span class="sa">f</span><span class="sh">"</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">"</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="sh">"</span><span class="s">{}</span><span class="sh">"</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">POST /api/deposit/depositions</code></p>
+
+<h4 id="request-headers">Request headers</h4>
+
+<p><code class="prettyprint">Content-Type: application/json</code></p>
+
+<h4 id="data">Data</h4>
+
+<p>An empty JSON object <code class="prettyprint">{}</code> or a <a href="#deposit-metadata">deposition metadata</a>
+resource. Example: <code class="prettyprint">{&quot;metadata&quot;: {&quot;upload_type&quot;: &quot;presentation&quot; } }</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:write</code></p>
+
+<h4 id="success-response">Success Response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">201 Created</code></li>
+<li><strong>Body</strong>: a <a href="#deposit">deposition</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error Response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="retrieve">Retrieve</h3>
+
+<p>Retrieve a single deposition resource.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> /api/deposit/depositions/1234
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">"</span><span class="s">/api/deposit/depositions/1234</span><span class="sh">"</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">})</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/deposit/depositions/:id</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: a <a href="#deposit">deposition</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>. |</p>
+
+            <h3 id="update">Update</h3>
+
+<p>Update an existing deposition resource.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> <span class="nt">-X</span> PUT
+     <span class="nt">--data</span> <span class="s1">'{"metadata": {"title": "My first upload", "upload_type": "poster", "description": "This is my first upload", "creators": [{"name": "Doe, John", "affiliation": "Zenodo"}]}}'</span> https://zenodo.org/api/deposit/depositions/1234
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">requests</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">"</span><span class="s">metadata</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">title</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">My first upload</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">upload_type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">poster</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">description</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">This is my first upload</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">creators</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Doe, John</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">affiliation</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Zenodo</span><span class="sh">"</span><span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">url</span> <span class="o">=</span> <span class="sh">"</span><span class="s">https://zenodo.org/api/deposit/depositions/1234</span><span class="sh">"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">Content-Type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">application/json</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Authorization</span><span class="sh">"</span><span class="p">:</span> <span class="sa">f</span><span class="sh">"</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">"</span><span class="p">}</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">put</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="p">.</span><span class="nf">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">PUT /api/deposit/depositions/:id</code></p>
+
+<h4 id="request-headers">Request headers</h4>
+
+<p><code class="prettyprint">Content-Type: application/json</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:write</code></p>
+
+<div class="align-columns"></div>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"upload_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"presentation"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<h4 id="data-parameters">Data parameters</h4>
+
+<p>A <a href="#deposit-metadata">deposition metadata</a> resource.</p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: a <a href="#deposit">deposition</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="delete">Delete</h3>
+
+<p>Delete an existing deposition resource. Note, only unpublished depositions may
+be deleted.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> https://zenodo.org/api/deposit/depositions/1234 <span class="nt">-X</span> DELETE
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234</span><span class="sh">'</span><span class="p">,</span>
+                    <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">})</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">DELETE /api/deposit/depositions/:id</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:write</code></p>
+
+<h4 id="success-response">Success Response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">201 Created</code></li>
+<li><strong>Body</strong>: Empty.</li>
+</ul>
+
+<h4 id="error-response">Error Response</h4>
+
+<ul>
+<li><code class="prettyprint">404 Not found</code>: Deposition does not exist.</li>
+<li><code class="prettyprint">403 Forbidden</code>: Deleting an already published deposition.</li>
+</ul>
+
+<p>See also <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h2 id="deposition-files">Deposition files</h2>
+
+<aside class="notice">
+    Heads up! We will be launching a new file API which is significant more
+    performant than the current API and which supports much larger file sizes.
+    The current API supports 100MB per file, the new supports 50GB per file.
+</aside>
+
+            <h3 id="representation">Representation</h3>
+
+<p>The Deposition file resource is used for uploading and editing files of a
+deposition on Zenodo.</p>
+
+<h4 id="deposition-file">Deposition File</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Attribute</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">id</code></br><em>string</em></td>
+<td style="text-align: left">Deposition file identifier</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">filename</code></br><em>string</em></td>
+<td style="text-align: left">Name of file</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">filesize</code></br><em>integer</em></td>
+<td style="text-align: left">Size of file in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">checksum</code></br><em>string</em></td>
+<td style="text-align: left">MD5 checksum of file, computed by our system. This allows you to check the integrity of the uploaded file.</td>
+</tr>
+</tbody></table>
+
+            <h3 id="list">List</h3>
+
+<p>List all deposition files for a given deposition.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> https://zenodo.org/api/deposit/depositions/1234/files
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/files</span><span class="sh">'</span><span class="p">,</span>
+                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">})</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/deposit/depositions/:id/files</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: an array of <a href="#deposition-file">deposition file</a> resources.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="create">Create</h3>
+
+<p>Upload a new file.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> https://zenodo.org/api/deposit/depositions/1234/files
+     <span class="nt">-F</span> <span class="nv">name</span><span class="o">=</span>myfirstfile.csv
+     <span class="nt">-F</span> <span class="nv">file</span><span class="o">=</span>@path/to/local_file.csv
+
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/files</span><span class="sh">'</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">myfirstfile.csv</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">file</span><span class="sh">'</span><span class="p">:</span> <span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">path/to/local_file.csv</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">rb</span><span class="sh">'</span><span class="p">)}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">POST  /api/deposit/depositions/:id/files</code></p>
+
+<h4 id="request-headers">Request headers</h4>
+
+<p><code class="prettyprint">Content-Type: multipart/form-data</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:write</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">201 Created</code></li>
+<li><strong>Body</strong>: a <a href="#deposition-file">deposition file</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="sort">Sort</h3>
+
+<p>Sort the files for a deposition. By default, the first file is shown in the file
+preview.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> https://zenodo.org/api/deposit/depositions/1234/files <span class="nt">-X</span> PUT
+     <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+     <span class="nt">--data</span> <span class="s1">'[{"id":"21fedcba-9876-5432-1fed-cba987654321"}, {"id":"12345678-9abc-def1-2345-6789abcdef12"}]'</span>
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/files</span><span class="sh">'</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">Content-Type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">application/json</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Authorization</span><span class="sh">"</span><span class="p">:</span> <span class="sa">f</span><span class="sh">"</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">"</span><span class="p">}</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[{</span><span class="sh">'</span><span class="s">id</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">21fedcba-9876-5432-1fed-cba987654321</span><span class="sh">'</span><span class="p">},</span>
+        <span class="p">{</span><span class="sh">'</span><span class="s">id</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">12345678-9abc-def1-2345-6789abcdef12</span><span class="sh">'</span><span class="p">}]</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">put</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="p">.</span><span class="nf">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">PUT /api/deposit/depositions/:id/files</code></p>
+
+<h4 id="request-headers">Request headers</h4>
+
+<p><code class="prettyprint">Content-Type: application/json</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:write</code></p>
+
+<h4 id="data">Data</h4>
+
+<p>A JSON array of partial <a href="#deposition-file">deposition file</a> resources with only
+the <code class="prettyprint">id</code> attribute. Example:</p>
+<div class="highlight"><pre class="highlight json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;file_id_1&gt;"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;file_id_2&gt;"</span><span class="p">},</span><span class="w">
+    </span><span class="s2">"..."</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: an array of <a href="#deposition-file">deposition file</a> resources.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="retrieve">Retrieve</h3>
+
+<p>Retrieve a single deposition file.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> https://zenodo.org/api/deposit/depositions/1234/files/12345678-9abc-def1-2345-6789abcdef12
+
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/files/12345678-9abc-def1-2345-6789abcdef12</span><span class="sh">'</span><span class="p">,</span>
+                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">})</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/deposit/depositions/:id/files/:file_id</code></p>
+
+<h4 id="success-response">Success Response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: a <a href="#deposition-file">deposition file</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="update">Update</h3>
+
+<p>Update a deposition file resource. Currently the only use is renaming an already
+uploaded file. If you one to replace the actual file, please delete the file and
+upload a new file.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> https://zenodo.org/api/deposit/depositions/1234/files/21fedcba-9876-5432-1fed-cba987654321 <span class="nt">-X</span> PUT
+     <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+     <span class="nt">--data</span> <span class="s1">'{"filename": "someothername.csv"}'</span>
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/files/21fedcba-9876-5432-1fed-cba987654321</span><span class="sh">'</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">Content-Type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">application/json</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Authorization</span><span class="sh">"</span><span class="p">:</span> <span class="sa">f</span><span class="sh">"</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">"</span><span class="p">}</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">someothername.csv</span><span class="sh">"</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">put</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="p">.</span><span class="nf">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">PUT /api/deposit/depositions/:id/files/:file_id</code></p>
+
+<h4 id="request-headers">Request headers</h4>
+
+<p><code class="prettyprint">Content-Type: application/json</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:write</code></p>
+
+<h4 id="data">Data</h4>
+
+<p>A partial <a href="#deposition-file">deposition file</a> resources with only the
+<code class="prettyprint">filename</code> attributes. Example:</p>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;new_file_name&gt;"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: a <a href="#deposition-file">deposition file</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="delete">Delete</h3>
+
+<p>Delete an existing deposition file resource. Note, only deposition files for
+unpublished depositions may be deleted.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> <span class="nt">-X</span> DELETE https://zenodo.org/api/deposit/depositions/1234/files/21fedcba-9876-5432-1fed-cba987654321
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/files/21fedcba-9876-5432-1fed-cba987654321</span><span class="sh">'</span><span class="p">,</span>
+                    <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">})</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">DELETE /api/deposit/depositions/:id/files/:file_id</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:write</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">204 No Content</code></li>
+<li><strong>Body</strong>: Empty.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<ul>
+<li><code class="prettyprint">404 Not found</code>: Deposition file does not exist.</li>
+<li><code class="prettyprint">403 Forbidden</code>: Deleting an already published deposition.</li>
+</ul>
+
+<p>See also <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h2 id="deposition-actions">Deposition actions</h2>
+
+            <h3 id="publish">Publish</h3>
+
+<p>Publish a deposition. Note, once a deposition is published, you can no longer
+delete it.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> <span class="se">\</span>
+  https://zenodo.org/api/deposit/depositions/1234/actions/publish
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/actions/publish</span><span class="sh">'</span><span class="p">,</span>
+                  <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">POST /api/deposit/depositions/:id/actions/publish</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:actions</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">202 Accepted</code></li>
+<li><strong>Body</strong>: a <a href="#deposit">deposition</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="edit">Edit</h3>
+
+<p>Unlock already submitted deposition for editing.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> <span class="nt">-X</span> POST https://zenodo.org/api/deposit/depositions/1234/actions/edit
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/actions/edit</span><span class="sh">'</span><span class="p">,</span>
+                  <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">})</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">POST /api/deposit/depositions/:id/actions/edit</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:actions</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">201 Created</code></li>
+<li><strong>Body</strong>: a <a href="#deposit">deposition</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<ul>
+<li><code class="prettyprint">400 Bad Request</code>: Deposition state does not allow for editing (e.g.
+depositions in state <code class="prettyprint">inprogress</code>).</li>
+<li><code class="prettyprint">409 Conflict</code>: Deposition is in the process of being integrated, please wait
+5 minutes before trying again.</li>
+</ul>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="discard">Discard</h3>
+
+<p>Discard changes in the current editing session.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> <span class="se">\</span>
+  https://zenodo.org/api/deposit/depositions/1234/actions/discard
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/actions/discard</span><span class="sh">'</span><span class="p">,</span>
+                  <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">POST /api/deposit/depositions/:id/actions/discard</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:actions</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">201 Created</code></li>
+<li><strong>Body</strong>: a <a href="#deposit">deposition</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<ul>
+<li><code class="prettyprint">400 Bad Request</code>: Deposition is not being edited.</li>
+</ul>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h3 id="new-version">New version</h3>
+
+<p>Create a new version of a deposition.</p>
+
+<p>This action will create a new deposit, which will be a snapshot of the current resouce, inheriting the metadata as well as snapshot of files.
+The new version deposit will have a state similar to a new, unpublished deposit, most importantly its files will be modifiable as for a new deposit.</p>
+
+<p>Only one unpublished new version deposit can be available at any moment, i.e.: calling new version action multiple times will have no effect, as long as the resulting new version deposit from the first call is not published or deleted.</p>
+
+<p>NOTES: 
+- The response body of this action is NOT the new version deposit, but the original resource.
+The new version deposition can be accessed through the <code class="prettyprint">&quot;latest_draft&quot;</code> under <code class="prettyprint">&quot;links&quot;</code> in the response body.
+- The <code class="prettyprint">id</code> used to create this new version has to be the <code class="prettyprint">id</code> of the latest version. It is not possible to use the global id that references all the versions.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> <span class="se">\</span>
+  https://zenodo.org/api/deposit/depositions/1234/actions/newversion
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/deposit/depositions/1234/actions/newversion</span><span class="sh">'</span><span class="p">,</span>
+                  <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">POST /api/deposit/depositions/:id/actions/newversion</code></p>
+
+<h4 id="scopes">Scopes</h4>
+
+<p><code class="prettyprint">deposit:actions</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">201 Created</code></li>
+<li><strong>Body</strong>: a <a href="#deposit">deposition</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+            <h2 id="records">Records</h2>
+
+            <h3 id="representation">Representation</h3>
+
+<p>The Records resource is used to search through published records.</p>
+
+            <h3 id="list">List</h3>
+
+<p>List all open access records.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/records</span><span class="sh">'</span><span class="p">,</span>
+                        <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">q</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">my title</span><span class="sh">'</span><span class="p">},</span>
+                        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">Authorization</span><span class="sh">'</span><span class="p">:</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Bearer </span><span class="si">{</span><span class="n">ACCESS_TOKEN</span><span class="si">}</span><span class="sh">'</span><span class="p">})</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="nf">json</span><span class="p">())</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> /api/records/
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/records/</code></p>
+
+<h4 id="query-arguments">Query arguments</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Parameter</th>
+<th style="text-align: left">Required</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">q</code></br><em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Search query (using <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html">Elasticsearch</a> query string syntax - note that some characters have special meaning here, including <code class="prettyprint">/</code>, which is also present in full DOIs).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">status</code></br><em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Filter result based on the deposit status (either <code class="prettyprint">draft</code> or <code class="prettyprint">published</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">sort</code></br><em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Sort order (<code class="prettyprint">bestmatch</code> or <code class="prettyprint">mostrecent</code>). Prefix with minus to change form ascending to descending (e.g. <code class="prettyprint">-mostrecent</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">page</code></br><em>integer</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Page number for pagination.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">size</code></br><em>integer</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Number of results to return per page. Maximum 25 for anonymous requests, 100 for authenticated requests.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">all_versions</code></br><em>integer/string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Show (<code class="prettyprint">true</code> or <code class="prettyprint">1</code>) or hide (<code class="prettyprint">false</code> or <code class="prettyprint">0</code>) all versions of records.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">communities</code></br> <em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Return records that are part of the specified communities. (Use of <code class="prettyprint">community identifier</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">type</code></br> <em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Return records of the specified type. (<code class="prettyprint">Publication</code>, <code class="prettyprint">Poster</code>, <code class="prettyprint">Presentation</code>&hellip;)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">subtype</code></br> <em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Return records of the specified subtype. (<code class="prettyprint">Journal article</code>, <code class="prettyprint">Preprint</code>, <code class="prettyprint">Proposal</code>&hellip;)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">bounds</code></br> <em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Return records filtered by a geolocation bounding box. (Format <code class="prettyprint">bounds=143.37158,-38.99357,146.90918,-37.35269</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">custom</code></br> <em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Return records containing the specified custom keywords. (Format <code class="prettyprint">custom=[field_name]:field_value</code>)</td>
+</tr>
+</tbody></table>
+
+<h4 id="header">Header</h4>
+
+<p>The response format of the search can be requested by specifying it in the header.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Accept</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">application/json</code></td>
+<td style="text-align: left">JSON</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">application/vnd.zenodo.v1+json</code></td>
+<td style="text-align: left">Zenodo</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">application/marcxml+xml</code></td>
+<td style="text-align: left">Marc XML</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">application/x-bibtex</code></td>
+<td style="text-align: left">Bibtex</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">application/x-datacite+xml</code></td>
+<td style="text-align: left">Datacite XML</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">application/x-dc+xml</code></td>
+<td style="text-align: left">Dublin Core</td>
+</tr>
+</tbody></table>
+
+<h4 id="success-response">Success Response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: an array of <a href="#records">record</a> resources.</li>
+</ul>
+
+<h4 id="error-response">Error Response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>.</p>
+
+<h4 id="search-guide">Search guide</h4>
+
+<p>Advanced search queries can as well be performed on Zenodo website through the search box. This is documented in the <a href="https://help.zenodo.org/guides/search/">search guide</a></p>
+
+<aside class="notice">
+  <strong>For bulk data access:</strong> If you need to download or process large numbers of records, we recommend using <a href="#oai-pmh">OAI-PMH harvesting</a> or <a href="#metadata-dumps">metadata dumps</a> instead of the search API. These methods are specifically designed for bulk access and will be more efficient for your use case.
+</aside>
+
+            <h3 id="retrieve">Retrieve</h3>
+
+<p>Retrieve a single record.</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-i</span> https://zenodo.org/api/records/1234
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">"</span><span class="s">https://zenodo.org/api/records/1234)
+</span></code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET https://zenodo.org/api/records/:id</code></p>
+
+<p>Again, the output format of the search can be specified in the <a href="#header">header</a></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: a <a href="#records">record</a>.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>. |</p>
+
+            <h2 id="licenses">Licenses</h2>
+
+            <h3 id="representation">Representation</h3>
+
+<p>The License resource is used for serving the license metadata that can be
+applied to uploaded content on Zenodo.</p>
+
+<h4 id="license">License</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Field</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">created</code></br><em>timestamp</em></td>
+<td style="text-align: left">Creation time of the license (in ISO8601 format).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">updated</code></br><em>timestamp</em></td>
+<td style="text-align: left">Last modification time of deposition (in ISO8601 format).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">metadata</code></br><em>object</em></td>
+<td style="text-align: left">The <a href="#license-metadata">license metadata</a> resource</td>
+</tr>
+</tbody></table>
+
+<h4 id="license-metadata">License metadata</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Attribute</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">id</code></br><em>string</em></td>
+<td style="text-align: left">Identifier for the license.</br><strong>Example:</strong> <code class="prettyprint">cc-by-nc-4.0</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">title</code></br><em>string</em></td>
+<td style="text-align: left">The name of the license</br><strong>Example:</strong> GNU Lesser General Public License v3.0</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">url</code></br><em>string</em></td>
+<td style="text-align: left">URL of the license</br><strong>Example:</strong> <a href="http://www.opensource.org/licenses/MIT">http://www.opensource.org/licenses/MIT</a></td>
+</tr>
+</tbody></table>
+
+            <h3 id="list">List</h3>
+
+<p>Search through licenses.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">/api/licenses/</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="nf">json</span><span class="p">())</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>curl /api/licenses/
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/licenses/</code></p>
+
+<h4 id="query-arguments">Query arguments</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Parameter</th>
+<th style="text-align: left">Required</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">q</code></br><em>string</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Search query (using <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html">Elasticsearch</a> query string syntax - note that some characters have special meaning here, including <code class="prettyprint">/</code>, which is also present in full DOIs).</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">page</code></br><em>integer</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Page number for pagination.</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">size</code></br><em>integer</em></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Number of results to return per page.</td>
+</tr>
+</tbody></table>
+
+<h4 id="success-response">Success Response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: an array of <a href="#license">license</a> resources.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>. |</p>
+
+            <h3 id="retrieve">Retrieve</h3>
+
+<p>Retrieve a single license resource.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">"</span><span class="s">/api/licenses/cc-by-nc-4.0</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>curl /api/licenses/cc-by-nc-4.0
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/licenses/:id</code></p>
+
+<h4 id="success-response">Success response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: a <a href="#license">license</a> resource.</li>
+</ul>
+
+<h4 id="error-response">Error response</h4>
+
+<p>See <a href="#http-status-codes">HTTP status codes</a> (400 and 500 series errors) and
+<a href="#errors">error responses</a>. |</p>
+
+            <h2 id="changes">Changes</h2>
+
+<p><strong>2017-10-04</strong></p>
+
+<ul>
+<li>Added new optional field <code class="prettyprint">version</code> to deposition metadata.</li>
+<li>Added new optional field <code class="prettyprint">language</code> to deposition metadata.</li>
+</ul>
+
+<p><strong>2017-06-15</strong></p>
+
+<ul>
+<li>Added support for DOI versioning as part of deposit actions.</li>
+</ul>
+
+<p><strong>2016-09-12</strong></p>
+
+<ul>
+<li>Added support for search, pagination, sorting and filtering.</li>
+<li>Improved speed significantly.</li>
+</ul>
+
+<p><strong>2015-10-06</strong></p>
+
+<ul>
+<li>Added new optional field <code class="prettyprint">contributors</code> to deposition metadata.</li>
+<li>Added new optional field <code class="prettyprint">subjects</code> to deposition metadata.</li>
+<li>Added new optional subfield <code class="prettyprint">gnd</code> to <code class="prettyprint">creators</code> in deposition metadata.</li>
+</ul>
+
+<p><strong>2014-12-20</strong></p>
+
+<ul>
+<li>Added new relationship <code class="prettyprint">isAlternateIdentifier</code> in subfield <code class="prettyprint">relation</code> to
+<code class="prettyprint">related_identifiers</code> in deposition metadata.</li>
+</ul>
+
+<p><strong>2014-12-10</strong></p>
+
+<ul>
+<li>Added new relationships <code class="prettyprint">hasPart</code>, <code class="prettyprint">isPartOf</code> &amp; <code class="prettyprint">isIdenticalTo</code> in subfield
+<code class="prettyprint">relation</code> to <code class="prettyprint">related_identifiers</code> in deposition metadata.</li>
+</ul>
+
+<p><strong>2014-11-20</strong></p>
+
+<ul>
+<li>Added new optional subfield <code class="prettyprint">orcid</code> to <code class="prettyprint">creators</code> in deposition metadata.</li>
+</ul>
+
+<p><strong>2014-10-21</strong></p>
+
+<ul>
+<li>Added new optional fields <code class="prettyprint">conference_session</code> and <code class="prettyprint">conference_session_part</code>
+to deposition metadata.</li>
+</ul>
+
+<p><strong>2014-09-09</strong></p>
+
+<ul>
+<li>Added new optional field <code class="prettyprint">references</code> to deposition metadata.</li>
+</ul>
+
+<p><strong>2014-06-13</strong></p>
+
+<ul>
+<li>Authentication changed from API keys to OAuth 2.0. API key authentication is
+deprecated and will be phased out in October, 2014. Please use <a href="#creating-a-personal-access-token">personal
+access tokens</a> instead of API keys.</li>
+</ul>
+
+<p><strong>2013-12-18</strong></p>
+
+<p>REST API version 1.0 final release:</p>
+
+<ul>
+<li>Deposition actions moved from <code class="prettyprint">deposit/depositions/:id/action</code> to
+<code class="prettyprint">deposit/depositions/:id/actions</code></li>
+<li>Added <code class="prettyprint">edit</code> and <code class="prettyprint">discard</code> deposition action resources.</li>
+<li>Deposition resource representation:
+
+<ul>
+<li><code class="prettyprint">state</code>: Controlled vocabulary changed.</li>
+<li><code class="prettyprint">submitted</code>: Data type changed from Timestamp to Bool.</li>
+</ul></li>
+</ul>
+
+<p><strong>2013-11-13</strong></p>
+
+<p>REST API initial release candidate.</p>
+
+            <h1 id="oai-pmh">OAI-PMH</h1>
+
+<p>Zenodo allows you to harvest our entire repository via the Open Archives
+Initiative Protocol for Metadata Harvesting (<a href="http://www.openarchives.org/pmh/">OAI-
+PMH</a>). OAI-PMH is a widely used protocol for
+harvesting metadata and most popular repository software provide support for
+this protocol.</p>
+
+<p>All metadata is licensed under <a href="http://about.zenodo.org/terms">Creative Commons
+Zero</a>, while the data files may be either open
+access and subject to a license described in the metadata or closed access and
+not available for download.</p>
+
+<h2 id="base-url">Base URL</h2>
+
+<p>Our OAI-PMH base endpoint is at <code class="prettyprint">https://zenodo.org/oai2d</code>.</p>
+
+<h2 id="installing-prerequisites-for-our-example">Installing prerequisites for our example</h2>
+
+<p>For this example, we are going to be using Sickle since it simplifies our workflow and supports XML parsing.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="c1"># Install the Sickle package using pip
+</span><span class="n">pip</span> <span class="n">install</span> <span class="n">Sickle</span>
+</code></pre></div><div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s">Import Sickle and initialize the client by passing the base URL</span><span class="sh">'''</span>
+<span class="kn">from</span> <span class="n">sickle</span> <span class="kn">import</span> <span class="n">Sickle</span>
+<span class="n">sickle</span> <span class="o">=</span> <span class="nc">Sickle</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/oai2d</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="get-information-about-the-oai-pmh-api">Get information about the OAI-PMH API</h2>
+
+<p>To get some general information about the OAI-PMH capabilities we can use the <code class="prettyprint">Identify</code> verb.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s">Get information on the OAI-PMH API by using </span><span class="sh">"</span><span class="s">Identify</span><span class="sh">"'''</span>
+<span class="n">info</span> <span class="o">=</span> <span class="n">sickle</span><span class="p">.</span><span class="nc">Identify</span><span class="p">()</span>
+<span class="n">info</span><span class="p">.</span><span class="n">granularity</span>
+<span class="c1"># 'YYYY-MM-DDThh:mm:ssZ'
+</span>
+<span class="n">info</span><span class="p">.</span><span class="n">earliestDatestamp</span>
+<span class="c1"># '2014-02-03T14:41:33Z'
+</span></code></pre></div>
+<h2 id="resumption-tokens">Resumption tokens</h2>
+
+<p>The OAI-PMH API returns <strong>50 records per page</strong>. Resumption tokens are only valid for <strong>2 minutes</strong>. In case a token expired, you will receive a <code class="prettyprint">422 Unprocessable Entity</code> HTTP error.</p>
+
+<aside class="notice">
+  This means that you must execute the next HTTP request using the
+  resumption token within those two minutes. We recommend that you offload any post processing of the harvested record to a background queue.
+</aside>
+
+<h2 id="rate-limit">Rate limit</h2>
+
+<p>The OAI-PMH API is rated limited like the REST API - i.e. you will receive
+a <code class="prettyprint">429 Too Many Requests</code> HTTP error if you exceed the limit.
+For more information please take a look at the <a href="#rate-limiting">rate limiting documentation</a>.</p>
+
+<h2 id="metadata-formats">Metadata formats</h2>
+
+<p>To list the available records metadata formats we can use <code class="prettyprint">ListMetadataFormats</code>.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s">Metadata for each record is available in several formats</span><span class="sh">'''</span>
+<span class="n">metadataFormats</span> <span class="o">=</span> <span class="n">sickle</span><span class="p">.</span><span class="nc">ListMetadataFormats</span><span class="p">()</span>
+<span class="nf">list</span><span class="p">(</span><span class="n">metadataFormats</span><span class="p">)</span>
+<span class="c1"># [&lt;MetadataFormat marcxml&gt;, &lt;MetadataFormat oai_datacite4&gt;, ...]
+</span></code></pre></div>
+<h3 id="available-metadata-formats">Available metadata formats</h3>
+
+<p><strong><code class="prettyprint">oai_datacite</code></strong></p>
+
+<p>OAI DataCite (latest schema version) — This metadata format has been
+specifically established for the dissemination of DataCite records using
+OAI-PMH. In addition to the original DataCite metadata, this format contains
+several other elements describing the version of the metadata, whether it is of
+reference quality, and the registering datacentre. For more information about
+this format and its schema please see the
+<a href="http://oai.datacite.org/">DataCite OAI schema</a> website.</p>
+
+<p>This metadata format will always deliver metadata according to the latest
+available DataCite schema version.</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;metadataPrefix=oai_datacite&amp;set=openaire_data">See example</a></p>
+
+<aside class="notice">
+  To get the raw XML output of the example above, view the page&rsquo;s source using
+  the web browser&rsquo;s &ldquo;view source&rdquo; option.
+</aside>
+
+<aside class="success">
+    We recommend you harvest using the &ldquo;oai_datacite&rdquo; metadata format. The
+    format contains the most complete metadata and is our primary supported
+    export format.
+</aside>
+
+<p><strong><code class="prettyprint">datacite</code></strong></p>
+
+<p>DataCite (latest version) — This metadata format contains only the original
+DataCite metadata without additions or alterations according to the latest
+DataCite schema. Please note that this format is not OAI-PMH  version 2.0
+compliant.</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;metadataPrefix=datacite&amp;set=openaire_data">See example</a></p>
+
+<p><strong><code class="prettyprint">oai_dc</code></strong></p>
+
+<p>Dublin Core — only minimal metadata is included in this format. The format is exported according to the <a href="http;//guidelines.openaire.eu">OpenAIRE Guidelines</a>.</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;metadataPrefix=oai_dc&amp;set=openaire">See example</a></p>
+
+<p><strong><code class="prettyprint">dcat</code></strong></p>
+
+<p>DCAT — export format based on the <a href="https://joinup.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe">DCAT Application Profile for data portals in Europe (DCAT-AP)</a>. 
+The format is produced from the DataCite export format using the <a href="https://github.com/ec-jrc/datacite-to-dcat-ap">DataCite-to-DCAT-AP XSLT</a>.
+This is the only OAI-PMH metadata format that currently exposes direct links to each record&rsquo;s files content, via the <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution"><code class="prettyprint">dcat:Distribution</code> elements</a>.</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;metadataPrefix=dcat&amp;set=openaire">See example</a></p>
+
+<p><strong><code class="prettyprint">marc21</code></strong></p>
+
+<p>MARC21 — export format primarily supported for legacy reasons. Please consider
+using one of the other export formats as we may discontinue support for MARC21.</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;metadataPrefix=marc21&amp;set=openaire">See example</a></p>
+
+<h2 id="sets">Sets</h2>
+
+<p>We support both harvesting of the <em>entire repository</em> as well as <em>selective
+harvesting</em> of communities.</p>
+
+<h3 id="entire-repository">Entire repository</h3>
+
+<p>To harvest the entire repository, entirely skip the <code class="prettyprint">set</code> parameter (you still need to pass the required <code class="prettyprint">metadataPrefix</code> parameter).</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;
+metadataPrefix=oai_datacite">See example</a></p>
+<div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s"> Harvest the entire repository </span><span class="sh">'''</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">sickle</span><span class="p">.</span><span class="nc">ListRecords</span><span class="p">(</span><span class="n">metadataPrefix</span><span class="o">=</span><span class="sh">'</span><span class="s">oai_dc</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">records</span><span class="p">.</span><span class="nf">next</span><span class="p">()</span>
+<span class="c1"># &lt;Record oai:zenodo.org:3442216&gt;
+</span></code></pre></div>
+<h3 id="selective-harvesting">Selective harvesting</h3>
+
+<p><strong><code class="prettyprint">user-&lt;identifier&gt;</code></strong></p>
+
+<p>Community sets — allows selective harvesting of specific communities. Replace
+<code class="prettyprint">&lt;identifier&gt;</code> with the community identifier. Alternatively each community
+provides a direct harvesting API link on their front-page, which includes the
+correct community identifier.</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;
+metadataPrefix=oai_datacite&amp;set=user-cfa">See example</a></p>
+<div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s"> Fetch a couple of records from the OAI Set of the </span><span class="sh">"</span><span class="s">cfa</span><span class="sh">"</span><span class="s"> community </span><span class="sh">'''</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">sickle</span><span class="p">.</span><span class="nc">ListRecords</span><span class="p">(</span><span class="n">metadataPrefix</span><span class="o">=</span><span class="sh">'</span><span class="s">oai_dc</span><span class="sh">'</span><span class="p">,</span> <span class="nb">set</span><span class="o">=</span><span class="sh">'</span><span class="s">user-cfa</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">records</span><span class="p">.</span><span class="nf">next</span><span class="p">()</span>
+
+<span class="sh">'''</span><span class="s"> To inspect on what sets a record is in </span><span class="sh">'''</span>
+<span class="n">record</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">setSpecs</span>
+<span class="c1"># ['openaire_data', 'user-cfa']
+</span></code></pre></div>
+<h3 id="harvesting-with-a-different-metadata-format">Harvesting with a different metadata format</h3>
+
+<p>There is also the possibility of using different metadata formats. For that, we only need to replace the <code class="prettyprint">metadataPrefix</code> argument.</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;
+metadataPrefix=oai_datacite&amp;set=user-cfa">See example</a></p>
+<div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s"> Community harvest using </span><span class="sh">"</span><span class="s">oai_datacite</span><span class="sh">"</span><span class="s"> metadata format </span><span class="sh">'''</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">sickle</span><span class="p">.</span><span class="nc">ListRecords</span><span class="p">(</span><span class="n">metadataPrefix</span><span class="o">=</span><span class="sh">'</span><span class="s">oai_datacite</span><span class="sh">'</span><span class="p">,</span> <span class="nb">set</span><span class="o">=</span><span class="sh">'</span><span class="s">user-cfa</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">records</span><span class="p">.</span><span class="nf">next</span><span class="p">()</span>
+
+<span class="sh">'''</span><span class="s"> Retrieving metadata from the record </span><span class="sh">'''</span>
+<span class="n">record</span><span class="p">.</span><span class="n">metadata</span>
+<span class="c1"># {
+#    "title": ["Computing and Using Metrics in ADS"],
+#    "creatorName": ["Henneken, Edwin"],
+#    "identifier": ["10.5281/zenodo.10897"],
+#    ...
+# }
+</span></code></pre></div>
+<h3 id="harvesting-with-multiple-filters">Harvesting with multiple filters</h3>
+
+<p>Using multiple filters to harvest records enables a higher level of granularity, allowing us to retrieve specific groups of records.</p>
+
+<p><a href="https://zenodo.org/oai2d?verb=ListRecords&amp;
+metadataPrefix=oai_datacite&amp;set=user-cfa&amp;from=%272019-01-01%27">See example</a></p>
+<div class="highlight"><pre class="highlight python"><code><span class="sh">'''</span><span class="s"> Selecting harvesting using </span><span class="sh">"</span><span class="s">from</span><span class="sh">"</span><span class="s"> </span><span class="sh">'''</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">sickle</span><span class="p">.</span><span class="nc">ListRecords</span><span class="p">(</span><span class="o">**</span><span class="p">{</span>
+    <span class="sh">'</span><span class="s">metadataPrefix</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">oai_dc</span><span class="sh">'</span><span class="p">,</span>
+    <span class="sh">'</span><span class="s">set</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">user-cfa</span><span class="sh">'</span><span class="p">,</span>
+    <span class="sh">'</span><span class="s">from</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">2019-01-01</span><span class="sh">'</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="n">records</span><span class="p">.</span><span class="nf">next</span><span class="p">()</span>
+<span class="c1"># &lt;Record oai:zenodo.org:7661&gt;
+</span>
+<span class="n">records</span><span class="p">.</span><span class="nf">next</span><span class="p">()</span>
+<span class="c1"># &lt;Record oai:zenodo.org:6738&gt;
+</span></code></pre></div>
+<h3 id="other-questions-on-harvesting">Other questions on harvesting</h3>
+
+<p>If you need selective harvesting and your use case is not supported by above
+sets, you can <a href="https://zenodo.org/support">contact us</a> and we can try
+create a specific set for you.</p>
+
+<h2 id="update-schedule">Update schedule</h2>
+
+<p>Most updates are available immediately, some few updates are only reflected in the OAI sets once an hour.</p>
+
+            <h1 id="metadata-dumps">Metadata Dumps</h1>
+
+<p>For users who need to download large subsets of Zenodo records, making individual API calls for each record can be inefficient.
+To address this, we provide bulk metadata dumps that contain exports of Zenodo record metadata in DataCite XML and JSON formats, as well as a CSV list of deleted records.</p>
+
+<p>These dumps are generated <strong>monthly</strong> at the beginning of each month and are available via the <code class="prettyprint">/api/exporter</code> endpoint.
+We maintain the latest 3 snapshots of each dump variant, including creation timestamp, version ID, file size, checksum, and download links.</p>
+
+<h2 id="list-available-dumps">List available dumps</h2>
+
+<p>List all available metadata dumps with their version history.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/exporter</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code>curl https://zenodo.org/api/exporter
+</code></pre></div><div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"records-xml.tar.gz"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"version_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a1b2c3d4-e5f6-7890-abcd-ef1234567890"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-09-13T06:25:32.054451+00:00"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"is_head"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">3970234567</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"checksum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"md5:1c1fd4ab805d52729cdee94d199f7729"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/exporter/records-xml.tar.gz/a1b2c3d4-e5f6-7890-abcd-ef1234567890"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"self_head"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/exporter/records-xml.tar.gz"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"records-deleted.csv.gz"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"version_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e2d16608-5d00-41ae-905e-11aa44643228"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-09-01T23:24:03.867786+00:00"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"is_head"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">26820485</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"checksum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"md5:4605fbea12cab96f3a79d91a9f69f286"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/exporter/records-deleted.csv.gz/e2d16608-5d00-41ae-905e-11aa44643228"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"self_head"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://zenodo.org/api/exporter/records-deleted.csv.gz"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/exporter</code></p>
+
+<h4 id="success-response">Success Response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: JSON object where each key represents a dump variant, and the value is an array of the 3 most recent versions.</li>
+</ul>
+
+<h4 id="response-format">Response format</h4>
+
+<p>Each dump variant includes an array of versions with:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Field</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">version_id</code></td>
+<td style="text-align: left">Unique identifier for this version</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">created</code></td>
+<td style="text-align: left">ISO 8601 timestamp of when the dump was created</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">is_head</code></td>
+<td style="text-align: left">Boolean indicating if this is the latest version</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">size</code></td>
+<td style="text-align: left">File size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">checksum</code></td>
+<td style="text-align: left">File checksum for verification</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">links.self</code></td>
+<td style="text-align: left">URL to download this specific version</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">links.self_head</code></td>
+<td style="text-align: left">URL to download the latest version (only present for <code class="prettyprint">is_head: true</code>)</td>
+</tr>
+</tbody></table>
+
+<h2 id="download-a-dump">Download a dump</h2>
+
+<p>Download the latest version of a specific metadata dump.</p>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+
+<span class="c1"># Download latest version
+</span><span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/exporter/records-xml.tar.gz</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="c1"># Download specific version
+</span><span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">https://zenodo.org/api/exporter/records-xml.tar.gz/a1b2c3d4-e5f6-7890-abcd-ef1234567890</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell"><code><span class="c"># Download latest version</span>
+curl <span class="nt">-O</span> https://zenodo.org/api/exporter/records-xml.tar.gz
+
+<span class="c"># Download specific version</span>
+curl <span class="nt">-O</span> https://zenodo.org/api/exporter/records-xml.tar.gz/a1b2c3d4-e5f6-7890-abcd-ef1234567890
+</code></pre></div>
+<h4 id="http-request">HTTP Request</h4>
+
+<p><code class="prettyprint">GET /api/exporter/:key</code></p>
+
+<p><code class="prettyprint">GET /api/exporter/:key/:version_id</code></p>
+
+<h4 id="url-parameters">URL Parameters</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Parameter</th>
+<th style="text-align: left">Required</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">key</code></td>
+<td style="text-align: left">required</td>
+<td style="text-align: left">The dump variant key (e.g., <code class="prettyprint">records-xml.tar.gz</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">version_id</code></td>
+<td style="text-align: left">optional</td>
+<td style="text-align: left">Specific version UUID. If omitted, returns the latest version.</td>
+</tr>
+</tbody></table>
+
+<h4 id="success-response">Success Response</h4>
+
+<ul>
+<li><strong>Code:</strong> <code class="prettyprint">200 OK</code></li>
+<li><strong>Body</strong>: Binary file content (typically <code class="prettyprint">.tar.gz</code> archive)</li>
+</ul>
+
+<h4 id="archive-structure">Archive structure</h4>
+
+<p><strong>Metadata dumps</strong> (<code class="prettyprint">.tar.gz</code> archives) contain one file per record:</p>
+
+<ul>
+<li>Filename format: <code class="prettyprint">&lt;record_id&gt;.&lt;extension&gt;</code> (e.g., <code class="prettyprint">8435696.xml</code>)</li>
+<li>Each file contains the complete metadata for that record in the specified format</li>
+</ul>
+
+<p><strong>Deleted records dump</strong> (<code class="prettyprint">records-deleted.csv.gz</code>) is a gzip-compressed CSV file with the following columns:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Column</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">record_id</code></td>
+<td style="text-align: left">Zenodo record ID</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">doi</code></td>
+<td style="text-align: left">Record DOI</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">parent_id</code></td>
+<td style="text-align: left">Parent record ID (concept record)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">parent_doi</code></td>
+<td style="text-align: left">Parent record DOI</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">removal_note</code></td>
+<td style="text-align: left">Reason for removal</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">removal_reason</code></td>
+<td style="text-align: left">Category (e.g., &ldquo;spam&rdquo;)</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">removal_date</code></td>
+<td style="text-align: left">Date the record was removed</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">citation_text</code></td>
+<td style="text-align: left">Citation text (if available)</td>
+</tr>
+</tbody></table>
+
+<h2 id="streaming-processing-example">Streaming processing example</h2>
+<div class="highlight"><pre class="highlight python"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="kn">import</span> <span class="n">tarfile</span>
+<span class="kn">import</span> <span class="n">itertools</span>
+<span class="kn">import</span> <span class="n">xml.etree.ElementTree</span> <span class="k">as</span> <span class="n">ET</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="sh">"</span><span class="s">https://zenodo.org/api/exporter/records-xml.tar.gz</span><span class="sh">"</span>
+<span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">resp</span><span class="p">.</span><span class="n">raw</span><span class="p">.</span><span class="n">decode_content</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="n">namespaces</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">'</span><span class="s">datacite</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">http://datacite.org/schema/kernel-4</span><span class="sh">'</span><span class="p">,</span>
+    <span class="sh">'</span><span class="s">oai_datacite</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">http://schema.datacite.org/oai/oai-1.1/</span><span class="sh">'</span>
+<span class="p">}</span>
+
+<span class="k">with</span> <span class="n">tarfile</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="n">fileobj</span><span class="o">=</span><span class="n">resp</span><span class="p">.</span><span class="n">raw</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="sh">"</span><span class="s">r|gz</span><span class="sh">"</span><span class="p">)</span> <span class="k">as</span> <span class="n">tar</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">member</span> <span class="ow">in</span> <span class="n">itertools</span><span class="p">.</span><span class="nf">islice</span><span class="p">(</span><span class="n">tar</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">member</span><span class="p">.</span><span class="nf">isfile</span><span class="p">():</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="n">tar</span><span class="p">.</span><span class="nf">extractfile</span><span class="p">(</span><span class="n">member</span><span class="p">).</span><span class="nf">read</span><span class="p">()</span>
+            <span class="n">root</span> <span class="o">=</span> <span class="n">ET</span><span class="p">.</span><span class="nf">fromstring</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+            <span class="c1"># Extract DOI and title from DataCite XML
+</span>            <span class="n">resource</span> <span class="o">=</span> <span class="n">root</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">.//datacite:resource</span><span class="sh">'</span><span class="p">,</span> <span class="n">namespaces</span><span class="p">)</span>
+            <span class="n">doi</span> <span class="o">=</span> <span class="n">resource</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">datacite:identifier</span><span class="sh">'</span><span class="p">,</span> <span class="n">namespaces</span><span class="p">).</span><span class="n">text</span>
+            <span class="n">title</span> <span class="o">=</span> <span class="n">resource</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">datacite:titles/datacite:title</span><span class="sh">'</span><span class="p">,</span> <span class="n">namespaces</span><span class="p">).</span><span class="n">text</span>
+
+            <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">member</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">doi</span><span class="si">}</span><span class="s"> - </span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Outputs:
+# 12345.xml: 10.5281/zenodo.12345 - Dataset for XYZ
+# ...
+</span></code></pre></div><div class="highlight"><pre class="highlight shell"><code><span class="c"># List files without extracting</span>
+curl <span class="nt">-s</span> https://zenodo.org/api/exporter/records-xml.tar.gz | <span class="nb">tar</span> <span class="nt">-tzf</span> - | <span class="nb">head</span> <span class="nt">-10</span>
+
+<span class="c"># Outputs:</span>
+<span class="c"># 12345.xml</span>
+<span class="c"># 12346.xml</span>
+<span class="c"># ...</span>
+</code></pre></div>
+<p>For large dumps, use streaming to avoid loading the entire file into memory.
+This example shows how to download and process a metadata dump by streaming the <code class="prettyprint">tar.gz</code> archive and extracting individual record files on-the-fly.</p>
+
+            <h1 id="github">GitHub</h1>
+
+<h2 id="add-metadata-to-your-github-repository-release">Add metadata to your GitHub repository release</h2>
+<div class="highlight"><pre class="highlight python"><code><span class="p">{</span>
+    <span class="sh">"</span><span class="s">creators</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="sh">"</span><span class="s">orcid</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">0000-0002-1825-0097</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">affiliation</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Feline reasearch institute</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Field, Gar</span><span class="sh">"</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="sh">"</span><span class="s">orcid</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">0000-0002-1825-0097</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">affiliation</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Feline reasearch institute</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Cat, Felix</span><span class="sh">"</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+
+    <span class="sh">"</span><span class="s">license</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Apache-2.0</span><span class="sh">"</span><span class="p">,</span>
+
+    <span class="sh">"</span><span class="s">title</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Red-Dot: ML-powered laser vector detection</span><span class="sh">"</span><span class="p">,</span>
+
+    <span class="sh">"</span><span class="s">related_identifiers</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="sh">"</span><span class="s">scheme</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">doi</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">identifier</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">10.1234/software.paper.5678</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">relation</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">isDocumentedBy</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">resource_type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">publication-article</span><span class="sh">"</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+
+    <span class="sh">"</span><span class="s">keywords</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span><span class="sh">"</span><span class="s">Cats</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Laser</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Behavior</span><span class="sh">"</span><span class="p">],</span>
+
+    <span class="sh">"</span><span class="s">communities</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span><span class="sh">"</span><span class="s">identifier</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">software-cats</span><span class="sh">"</span><span class="p">}</span>
+    <span class="p">],</span>
+
+    <span class="sh">"</span><span class="s">grants</span><span class="sh">"</span><span class="p">:</span> <span class="p">[{</span><span class="sh">"</span><span class="s">id</span><span class="sh">"</span><span class="p">:</span><span class="sh">"</span><span class="s">777541</span><span class="sh">"</span><span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>We automatically extract metadata about your release from GitHub APIs. For example, the authors are determined from the repository&rsquo;s contributor statistics. To overwrite some of the default metadata that would come from a regular GitHub release you can include a <code class="prettyprint">.zenodo.json</code> file at the root of your GitHub repository.</p>
+
+<p>The contents of the <code class="prettyprint">.zenodo.json</code> file are based on our <a href="https://developers.zenodo.org/#deposit-metadata">deposit metadata documentation</a> and can be structurally validated using our <a href="https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.json">legacy deposit JSON Schema</a>.</p>
+
+<p>In the example shown, we add metadata regarding:</p>
+
+<ul>
+<li>software authorship and ORCiDs, via the <code class="prettyprint">creators</code> field</li>
+<li>Apache-2.0 licensing, via the <code class="prettyprint">license</code> field</li>
+<li>a custom title, via the <code class="prettyprint">title</code> field</li>
+<li>a related identifier to the software paper, via the <code class="prettyprint">related_identifiers</code> field</li>
+<li>keywords, via the <code class="prettyprint">keywords</code> field</li>
+<li>Zenodo communities, via the <code class="prettyprint">communities</code> field</li>
+<li>funding information, via the <code class="prettyprint">grants</code> field</li>
+</ul>
+
+<h2 id="how-to-verify-your-zenodo-json-file">How to verify your &ldquo;.zenodo.json&rdquo; file?</h2>
+
+<p>After creating your <code class="prettyprint">.zenodo.json</code> file you should validate it to make sure that it contains valid JSON. You can use a tool like the <a href="https://jsonformatter.curiousconcept.com">JSON Formatter &amp; Validator</a>, or load it via your favorite programming language.</p>
+
+            <h1 id="rate-limiting">Rate Limiting</h1>
+
+<p>For our content and services to be available to everyone we have to make sure that our resources are being distributed fairly. 
+To achieve this, we have rate-limiting measures in place which limit the number of requests users can perform in a time window. Depending on the complexity and load of each request, different endpoints have different limits configured.</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Pages</th>
+<th style="text-align: left">Limitations</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">Global limit for guest users</td>
+<td style="text-align: left">60 requests per minute, 2000 requests per hour</td>
+</tr>
+<tr>
+<td style="text-align: left">Global limit for <a href="#authentication">authenticated users</a></td>
+<td style="text-align: left">100 requests per minute, 5000 requests per hour</td>
+</tr>
+<tr>
+<td style="text-align: left">Search REST API endpoints</td>
+<td style="text-align: left">30 requests per minute</td>
+</tr>
+<tr>
+<td style="text-align: left">OAI-PMH API harvesting</td>
+<td style="text-align: left">30 requests per minute</td>
+</tr>
+<tr>
+<td style="text-align: left">Thumbnails for image records</td>
+<td style="text-align: left">20 requests per minute</td>
+</tr>
+</tbody></table>
+
+<p>When you are making requests to any of our endpoints, you can inspect the following HTTP response headers for more information of your current rate-limit status:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">HTTP header</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><code class="prettyprint">X-RateLimit-Limit</code></td>
+<td style="text-align: left">Current rate-limit policy, i.e. maximum number of requests per minute</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">X-RateLimit-Remaining</code></td>
+<td style="text-align: left">Number of requests remaining in the current rate limit</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="prettyprint">X-RateLimit-Reset</code></td>
+<td style="text-align: left">Reset time of the current rate limit</td>
+</tr>
+</tbody></table>
+
+        </div>
+        <div class="dark-box">
+            <div class="lang-selector">
+                  <a href="#" data-language-name="python">Python</a>
+                  <a href="#" data-language-name="shell">cURL</a>
+                  <a href="#" data-language-name="javascript">NodeJS</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

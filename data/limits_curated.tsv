@@ -1,0 +1,18 @@
+provider	limit_quote	unit	terms_url	capture_path
+OpenAlex	Requests per second No API key 10 Free API key, or prepaid usage 30 Annual plan 50	requests/second	https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication	evidence/terms/001_OpenAlex.body
+Semantic Scholar	Most Semantic Scholar endpoints are available to the public without authentication, but they are rate-limited to 1000 requests per second shared among all unauthenticated users	requests/second	https://www.semanticscholar.org/product/api	evidence/terms/006_Semantic_Scholar.body
+ROR	the rate limit is a maximum of 2000 requests in a 5-minute period per IP address	requests/5min	https://ror.readme.io/docs/rest-api	evidence/terms/012_ROR.body
+Art Institute of Chicago	Anonymous users are throttled to 60 requests per minute	requests/minute	https://api.artic.edu/docs/	evidence/terms/041_Art_Institute_of_Chicago.body
+OpenLibrary	Default (non-identified requests): - 1 request per second Identified requests (with User-Agent and email): - 3 requests per second	requests/second	https://openlibrary.org/developers/api	evidence/terms/049_OpenLibrary.body
+Zenodo	Global limit for guest users 60 requests per minute, 2000 requests per hour Global limit for authenticated users 100 requests per minute, 5000 requests per hour	requests/minute	https://developers.zenodo.org/	evidence/terms/051_Zenodo.body
+PLOS	Please limit your API requests to 7200 requests a day, 300 per hour, 10 per minute	requests/day	https://api.plos.org/solr/faq/	evidence/terms/062_PLOS.body
+NARA	limits the number of Catalog API requests to a default rate of 10,000 queries per month per API key	queries/month	https://www.archives.gov/research/catalog/help/api	evidence/terms/067_NARA.body
+Met Museum	Please limit request rate to 80 requests per second	requests/second	https://metmuseum.github.io/	evidence/terms/068_Met_Museum.body
+Wikimedia	There is no hard speed limit on read requests, but be considerate and try not to take a site down	requests/second	https://www.mediawiki.org/wiki/API:Etiquette	evidence/terms/050_Wikimedia.body
+Internet Archive	Automated tools should respect rate limits: - Add delays between requests for bulk operations - Honor 429TooManyRequests responses and Retry-After headers	requests/second	https://archive.org/developers/bots.html	evidence/terms/069_IA_bots.body
+GBIF	The maximum rate changes depending on our server load; we do not guarantee any particular query rate will work	requests/second	https://techdocs.gbif.org/en/openapi/	evidence/terms/024_GBIF.body
+Semantic Scholar (keyed)	The introductory rate limit for an API key is 1 RPS on all endpoints	requests/second	https://www.semanticscholar.org/product/api	evidence/terms/006_Semantic_Scholar.body
+Semantic Scholar (anonymous)	they are rate-limited to 1000 requests per second shared among all unauthenticated users	requests/second	https://www.semanticscholar.org/product/api	evidence/terms/006_Semantic_Scholar.body
+DataCite	500 requests per 5 minutes per IP address	requests/5min	https://support.datacite.org/docs/rate-limit	evidence/terms/069_DataCite_ratelimit.body
+DataCite (identified)	1000 requests per 5 minutes per IP address	requests/5min	https://support.datacite.org/docs/rate-limit	evidence/terms/069_DataCite_ratelimit.body
+CORE	One batch request or five single requests per 10 seconds	requests/10s	https://core.ac.uk/services/api	evidence/terms/070_core_api.body

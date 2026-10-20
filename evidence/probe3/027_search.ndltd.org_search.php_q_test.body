@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>503 Service Unavailable</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>503 Service Unavailable</h1>
+<p>NDLTD services are currently under redevelopment. Please check back later.</p>
+
+<p>Visit the main NDLTD page at
+<a href="https://ndltd.org/">NDLTD.org</a><br/>
+Document Archive at
+<a href="http://docs.ndltd.org/">NDLTD Docs</a></p>
+
+</body>
+</html>

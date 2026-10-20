@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+<record>
+  <osti_id>3798039</osti_id>
+  <title>Optical Alignment with X-ray Sources Using Counter Propagating Laser Beams</title>
+  <description></description>
+  <authors>
+      <author>Malone, Robert M. [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)] (ORCID:0000000161308568)</author><author>Castaneda, Jesus J. [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)] (ORCID:0009000534398752)</author><author>Kaufman, Morris I. [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)] (ORCID:0009000976908975)</author><author>McGillivray, Kevin D. [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)] (ORCID:0000000177323754)</author><author>Pillow, Jordan A. [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)] (ORCID:000900092911884X)</author><author>Puentes, Daniel F. [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)] (ORCID:0000000340144335)</author><author>Walters, Katherine L. [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)] (ORCID:0009000152646810)</author><author>Zepeda-Alarcon, Eloisa [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)] (ORCID:0000000182786075)</author><author>Prock, Nichelle L. [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)]</author><author>Raingsan, Lakhena [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)]</author><author>Allam, Numan [Nevada National Security Site/Mission Support and Test Services LLC (NNSS/MSTS), North Las Vegas, NV (United States)]</author>
+  </authors>
+  <product_type>Conference</product_type>
+  <doi>10.2172/3798039</doi>
+  <journal_name></journal_name>
+  <journal_volume></journal_volume>
+  <journal_issue></journal_issue>
+  
+  <article_type></article_type>
+  <conference_info>SPIE Optics + Photonics, 23 - 27 August 2026, San Diego, California, USA</conference_info>
+  <publication_date>2026-09-14T00:00:00</publication_date>
+  <publisher></publisher>
+  <country_publication>United States</country_publication>
+  <format></format>
+  <language>English</language>
+  <availability></availability>
+  <research_orgs>
+      <research_org>NNSS/MSTS (NNSS-MSTS)</research_org>
+  </research_orgs>
+  <sponsor_orgs>
+      <sponsor_org>USDOE National Nuclear Security Administration (NNSA)</sponsor_org>
+  </sponsor_orgs>
+  <contributing_org></contributing_org>
+  <subjects>
+      <subject>73 NUCLEAR PHYSICS AND RADIATION PHYSICS</subject><subject>optical alignment</subject><subject>optical design</subject><subject>optical tolerance</subject><subject>x-ray radiography</subject>
+  </subjects>
+  <doe_contract_number>NA0003624; </doe_contract_number>
+    <report_number>DOE/NV/03624--2420</report_number>
+      <other_identifiers><identifier>STIP WF - 56957230</identifier></other_identifiers>
+  
+  <entry_date>2026-09-14T14:56:54</entry_date>
+  <links>
+      <link rel="citation" href="https://www.osti.gov/biblio/3798039" /><link rel="fulltext" href="https://www.osti.gov/servlets/purl/3798039" />
+  </links>
+</record>
+</records>

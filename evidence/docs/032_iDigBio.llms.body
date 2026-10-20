@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    if (!window.location.pathname.startsWith('/portal/'))
+      window.location.replace("/we-moved");
+    else {
+      let url = new URL(window.location.href);
+      url.hostname = 'portal.idigbio.org';
+      var urlRedirectTarget = url.href;
+      window.location.replace(urlRedirectTarget);
+    }
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=/we-moved" /></noscript>
+</head>
+<body>
+  <p><span id="body-msg-pre">The content you have requested has been moved. </span><a id="body-link" href="/we-moved">Learn more about available resources</a><span id="body-link-post"> if you have not been automatically redirected.</span></p>
+  <script>
+    // If redirect fails for some reason but javascript is allowed
+    // not sure why I'm over-engineering this now that I think about it
+    if (window.location.pathname.startsWith('/portal/')) {
+      Object.assign(document.querySelector('#body-link'), {
+        href: urlRedirectTarget,
+        textContent: 'Go to iDigBio Portal.',
+      });
+      document.querySelector('#body-link-post').textContent = '';
+    }
+  </script>
+</body>
+</html>

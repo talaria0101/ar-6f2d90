@@ -1,0 +1,1 @@
+{"@context":"https://api.europeana.eu/schema/context/api.jsonld","type":"ErrorResponse","success":false,"status":401,"code":"401_key_invalid","error":"API key is invalid","message":"Please register for an API key","seeAlso":"https://pro.europeana.eu/page/apis","timestamp":"2026-10-20T02:03:32Z","path":"http://api.europeana.eu/entity/search?query=test&rows=1"}

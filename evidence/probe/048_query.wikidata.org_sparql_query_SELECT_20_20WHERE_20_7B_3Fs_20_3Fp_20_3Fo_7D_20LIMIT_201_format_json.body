@@ -1,0 +1,21 @@
+{
+  "head" : {
+    "vars" : [ "s", "p", "o" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://creativecommons.org/ns#license"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    } ]
+  }
+}

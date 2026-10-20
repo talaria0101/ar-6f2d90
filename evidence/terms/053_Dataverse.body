@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>API Guide &#8212; Dataverse.org</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+    <link rel="stylesheet" type="text/css" href="../_static/../_font/fontawesome/css/all.min.css?v=76f13783" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=30d94236"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/../_font/fontawesome/js/all.min.js?v=5878f840"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/jquery-3.5.1.min.js"></script>
+    <script src="../_static/js/jquery-ui.min.js"></script>
+    <script src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="../_static/js/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/navbarscroll.js"></script>
+    <script src="../_static/dv_rebind_bootstrap_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../_static/fontcustom.css" />
+<link type="text/css" rel="stylesheet" href="../_static/socicon.css" />
+<link type="text/css" rel="stylesheet" href="../_static/theme.css" />
+<link type="text/css" rel="stylesheet" href="../_static/primefaces.css" />
+<link type="text/css" rel="stylesheet" href="../_static/docsdataverse_org.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link type="image/png" rel="icon" href="../_static/images/favicondataverse.png" />
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Dataverse Guides</a>
+        <span class="navbar-text navbar-version pull-left"><b><a href="../versions.html">v6.12.1</a></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="https://dataverse.org">About Dataverse</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+<!-- Comment out "Site" from navbar (we list guides in the sidebar anyway) -->
+<!--
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+-->
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quickstart Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/what-is-dataverse.html">What is Dataverse?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/publish-a-dataset.html">Publish a Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/publish-a-collection.html">Publish a Collection</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user/account.html">Account Creation + Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/find-use-data.html">Finding and Using Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/dataverse-management.html">Dataverse Collection Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/dataset-management.html">Dataset + File Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user/tabulardataingest/index.html">Tabular Data File Ingest</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user/tabulardataingest/supportedformats.html">Supported File Formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/tabulardataingest/ingestprocess.html">Tabular Data, Representation, Storage and Ingest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/tabulardataingest/spss.html">SPSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/tabulardataingest/stata.html">Stata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/tabulardataingest/rdata.html">R Data Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/tabulardataingest/excel.html">Excel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/tabulardataingest/csv-tsv.html">CSV/TSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user/appendix.html">Appendix</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Admin Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/features.html">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/dashboard.html">Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/external-tools.html">External Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/discoverability.html">Discoverability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/harvestclients.html">Managing Harvesting Clients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/harvestserver.html">Managing Harvesting Server and Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/metadatacustomization.html">Metadata Customization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/metadataexport.html">Metadata Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/timers.html">Dataverse Installation Application Timers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/make-data-count.html">Make Data Count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/integrations.html">Integrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/user-administration.html">User Administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/dataverses-datasets.html">Managing Datasets and Dataverse Collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/solr-search-index.html">Solr Search Index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/ip-groups.html">IP Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/mail-groups.html">Mail Domain Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/collectionquotas.html">Storage Quotas for Collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/monitoring.html">Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/rate-limiting.html">Rate Limiting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/reporting-tools-and-queries.html">Reporting Tools and Common Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/maintenance.html">Maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/backups.html">Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/big-data-administration.html">Scaling Dataverse with Data Size</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ai/index.html">AI Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html">Getting Started with APIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html">API Tokens and Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Search API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html">Data Access API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html">Native API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics.html">Metrics API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html">SWORD API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html">Client Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html">Building External Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curation-labels.html">Dataset Curation Status API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linkeddatanotification.html">Linked Data Notification API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html">API Changelog (Breaking Changes)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation/intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/prep.html">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/prerequisites.html">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/installation-main.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/config.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/big-data-support.html">Big Data Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/upgrading.html">Upgrading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/shibboleth.html">Shibboleth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/oauth2.html">OAuth Login Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/oidc.html">OpenID Connect Login Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/orcid.html">ORCID Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/external-tools.html">External Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/localcontexts.html">LocalContexts Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/advanced.html">Advanced Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributor/index.html">Contributor Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/documentation.html">Writing Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/code.html">Contributing Code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Developer Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developers/intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/dev-environment.html">Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/windows.html">Windows Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/tips.html">Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/version-control.html">Version Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/sql-upgrade-scripts.html">SQL Upgrade Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/testing.html">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/api-design.html">API Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/security.html">Security</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/performance.html">Performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/dependencies.html">Dependency Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/debugging.html">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/coding-style.html">Coding Style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/configuration.html">Consuming Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/deployment.html">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/containers.html">Docker, Kubernetes, and Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/making-releases.html">Making Releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/making-library-releases.html">Making Library Releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/metadataexport.html">Metadata Export Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/tools.html">Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/unf/index.html">Universal Numerical Fingerprint (UNF)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developers/unf/unf-v3.html">UNF Version 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developers/unf/unf-v5.html">UNF Version 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developers/unf/unf-v6.html">UNF Version 6</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/make-data-count.html">Make Data Count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/remote-users.html">Shibboleth, OAuth and OIDC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/geospatial.html">Geospatial Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/selinux.html">SELinux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/aux-file-support.html">Auxiliary File Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/s3-direct-upload-api.html">Direct DataFile Upload/Replace API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/globus-api.html">Globus Transfer API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/dataset-semantic-metadata-api.html">Dataset Semantic Metadata API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/dataset-migration-api.html">Dataset Migration API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/workflows.html">Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/fontcustom.html">Font Custom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/classic-dev-env.html">Classic Dev Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/search-services.html">Search Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/testing/fixtures.html">Fixtures For Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developers/testing/performance.html">Performance Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../container/index.html">Container Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../container/intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../container/running/index.html">Running Dataverse in Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../container/running/production.html">Production</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../container/running/demo.html">Demo or Evaluation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../container/running/metadata-blocks.html">Editing Metadata Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../container/running/github-action.html">GitHub Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../container/running/frontend-dev.html">Frontend Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../container/running/backend-dev.html">Backend Development</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../container/dev-usage.html">Development Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../container/base-image.html">Base Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../container/app-image.html">Application Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../container/configbaker-image.html">Config Baker Image</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../style/index.html">Style Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../style/foundations.html">Foundations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../style/patterns.html">Patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../style/text.html">Text</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+<!-- Comment out "Page" from navbar (we put contents on every page anyway) -->
+<!--
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+-->
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">API Guide</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                <!-- comment out "prev" and "next" buttons -->
+                <!--
+                
+  <li>
+    <a href="../ai/index.html" title="Previous Chapter: AI Guide"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; AI Guide</span>
+    </a>
+  </li>
+  <li>
+    <a href="intro.html" title="Next Chapter: Introduction"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Introduction &raquo;</span>
+    </a>
+  </li>
+                -->
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" aria-label="Search"/>
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Admin Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ai/index.html">AI Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html">Getting Started with APIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html">API Tokens and Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Search API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html">Data Access API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html">Native API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics.html">Metrics API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html">SWORD API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html">Client Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html">Building External Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curation-labels.html">Dataset Curation Status API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linkeddatanotification.html">Linked Data Notification API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html">API Changelog (Breaking Changes)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributor/index.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container/index.html">Container Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../style/index.html">Style Guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content" role="main">
+      
+  <section id="api-guide">
+<h1>API Guide<a class="headerlink" href="#api-guide" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
+<p><strong>Contents:</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#what-is-an-api">What is an API?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#types-of-dataverse-software-api-users">Types of Dataverse Software API Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#how-this-guide-is-organized">How This Guide is Organized</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#getting-help">Getting Help</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started with APIs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#servers-you-can-test-with">Servers You Can Test With</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#getting-an-api-token">Getting an API Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#curl-examples-and-environment-variables">curl Examples and Environment Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#depositing-data">Depositing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#finding-and-downloading-data">Finding and Downloading Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#managing-permissions">Managing Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#getting-the-openapi-document">Getting the OpenAPI Document</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#beyond-getting-started-tasks">Beyond “Getting Started” Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#getting-help">Getting Help</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="auth.html">API Tokens and Authentication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#how-to-get-an-api-token">How to Get an API Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#how-your-api-token-is-like-a-password">How Your API Token Is Like a Password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#passing-your-api-token-as-an-http-header-preferred-or-a-query-parameter">Passing Your API Token as an HTTP Header (Preferred) or a Query Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#resetting-your-api-token">Resetting Your API Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#using-preview-url-tokens-as-api-token">Using Preview URL Tokens as API Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#id1">Bearer Tokens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth.html#signed-urls">Signed URLs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="search.html">Search API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="search.html#parameters">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html#basic-search-example">Basic Search Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html#advanced-search-examples">Advanced Search Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html#date-range-search-example">Date Range Search Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html#iteration">Iteration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html#search-services">Search Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dataaccess.html">Data Access API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#downloading-all-files-in-a-dataset">Downloading All Files in a Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#basic-file-access">Basic File Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#multiple-file-bundle-download">Multiple File (“bundle”) download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#all-formats-bundled-download-for-tabular-files">“All Formats” bundled download for Tabular Files.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#citation-get-citation-in-other-formats">Citation - Get Citation In Other Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#data-variable-metadata-access">Data Variable Metadata Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#preprocessed-data">Preprocessed Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#authentication-and-authorization">Authentication and Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataaccess.html#access-requests-and-processing">Access Requests and Processing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="native-api.html">Native API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#dataverse-collections">Dataverse Collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#datasets">Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#files">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#users-token-management">Users Token Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#builtin-users">Builtin Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#roles">Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#explicit-groups">Explicit Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#shibboleth-groups">Shibboleth Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#info">Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#metadata-blocks">Metadata Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#dataset-fields">Dataset Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#notifications">Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#user-information">User Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#managing-harvesting-server-and-sets">Managing Harvesting Server and Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#managing-harvesting-clients">Managing Harvesting Clients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#pids">PIDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#admin">Admin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="native-api.html#mydata">MyData</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html">Metrics API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="metrics.html#categories">Categories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics.html#return-formats">Return Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics.html#filtering-with-query-parameters">Filtering with Query Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics.html#endpoint-table">Endpoint Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metrics.html#related-api-endpoints">Related API Endpoints</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sword.html">SWORD API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sword.html#about">About</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html#authentication-for-sword">Authentication for SWORD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html#backward-incompatible-changes">Backward incompatible changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html#new-features-as-of-v1-1">New features as of v1.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html#curl-examples">curl examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html#known-issues">Known issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html#bug-fixes-in-v1-1">Bug fixes in v1.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sword.html#client-libraries">Client libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="client-libraries.html">Client Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#c-c">C/C++</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#go">Go</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#java">Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#javascript">Javascript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#julia">Julia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#php">PHP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#python">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#r">R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#ruby">Ruby</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client-libraries.html#rust">Rust</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="external-tools.html">Building External Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html#examples-of-external-tools">Examples of External Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html#how-external-tools-are-presented-to-users">How External Tools Are Presented to Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html#creating-an-external-tool-manifest">Creating an External Tool Manifest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html#testing-your-external-tool">Testing Your External Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html#spreading-the-word-about-your-external-tool">Spreading the Word About Your External Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="curation-labels.html">Dataset Curation Status API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="curation-labels.html#get-a-draft-dataset-s-curation-status">Get a Draft Dataset’s Curation Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curation-labels.html#set-a-draft-dataset-s-curation-label">Set a Draft Dataset’s Curation Label</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curation-labels.html#delete-a-draft-dataset-s-curation-label">Delete a Draft Dataset’s Curation Label</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curation-labels.html#get-the-set-of-allowed-labels-for-a-dataset">Get the Set of Allowed Labels for a Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curation-labels.html#get-a-report-on-the-curation-status-of-all-datasets">Get a Report on the Curation Status of All Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="linkeddatanotification.html">Linked Data Notification API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apps.html">Apps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apps.html#javascript">Javascript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html#python">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html#java">Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html#go">Go</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html#php">PHP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html#ruby">Ruby</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#what-is-an-api">What is an API?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#what-are-common-use-cases-for-dataverse-software-apis">What Are Common Use Cases for Dataverse Software APIs?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#where-can-i-find-examples-of-using-dataverse-software-apis">Where Can I Find Examples of Using Dataverse Software APIs?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#when-should-i-use-the-native-api-vs-the-sword-api">When Should I Use the Native API vs. the SWORD API?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#to-operate-on-a-dataset-should-i-use-its-doi-or-handle-or-its-database-id">To Operate on a Dataset Should I Use Its DOI (or Handle) or Its Database ID?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#where-is-the-comprehensive-list-of-all-api-functionality">Where is the Comprehensive List of All API Functionality?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#is-there-a-changelog-of-api-functionality-that-has-been-added-over-time">Is There a Changelog of API Functionality That Has Been Added Over Time?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#what-functionality-is-gui-only-and-not-available-via-api">What Functionality is GUI Only and Not Available Via API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#why-are-the-return-values-http-status-codes-not-documented">Why Are the Return Values (HTTP Status Codes) Not Documented?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#what-if-my-question-is-not-answered-here">What If My Question Is Not Answered Here?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">API Changelog (Breaking Changes)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-12">v6.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-11">v6.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-10">v6.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-9">v6.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-8">v6.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-7">v6.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-6">v6.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-5">v6.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-4">v6.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-3">v6.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-2">v6.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-1">v6.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v6-0">v6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v5-6">v5.6</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+      <!-- Previous button -->
+        <a href="../ai/index.html" title="Previous Chapter: AI Guide"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo;Previous</span>
+        </a>
+      <!-- Next button -->
+        <a href="intro.html" title="Next Chapter: Introduction" style="float: right;"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Next&raquo</span>
+        </a>
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/api/index.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+      <p>Developed at the <a href="http://www.iq.harvard.edu/" title="Institute for Quantitative Social Science" target="_blank">Institute for Quantitative Social Science</a>  &nbsp;|&nbsp;  Code available at <a href="https://github.com/IQSS/dataverse" title="Dataverse on GitHub" target="_blank"><span class="socicon socicon-github"></span></a> &nbsp;|&nbsp; Created using <a href="https://www.sphinx-doc.org" title="Sphinx" target="_blank">Sphinx</a> 7.4.0<br/>Last updated on Oct 09, 2026 &nbsp;|&nbsp; Dataverse v. 6.12.1 &nbsp;|&nbsp; View the <a href="http://guides.dataverse.org/en/latest/" title="Dataverse Guides">latest version of Dataverse Guides</a></p>
+        <p>Copyright &#169; 2026, The President &amp; Fellows of Harvard College</p> 
+  </div>
+</footer>
+<script>
+    $jqTheme(document).ready(function () {
+        // Rebind bootstrap UI components
+        bind_bsui_components();
+    });
+</script>
+
+  </body>
+</html>

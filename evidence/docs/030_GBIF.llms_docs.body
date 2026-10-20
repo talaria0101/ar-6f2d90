@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Page Not Found :: Technical Documentation</title>
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="/en/_/css/site.css">
+    <link rel="stylesheet" href="/en/_/css/icons.css">
+    <link rel="stylesheet" href="/en/_/css/special-pages.css">
+
+    <!-- Build environment: prod -->
+
+    <link rel="alternate" hreflang="x-default" href="https://techdocs.gbif.org/en" />
+    <link rel="alternate" hreflang="en" href="https://techdocs.gbif.org/en" />
+    
+    
+    
+
+    
+    <script>var uiRootPath = '/en/_'</script>
+  </head>
+  <body class="status-404">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item gbif-logo" href="https://techdocs.gbif.org/en">
+        <svg class="logo" viewBox="90 239.1 539.7 523.9" xmlns="http://www.w3.org/2000/svg">
+            <path class="gbif-logo-svg" d="M325.5,495.4c0-89.7,43.8-167.4,174.2-167.4C499.6,417.9,440.5,495.4,325.5,495.4"></path>
+            <path class="gbif-logo-svg" d="M534.3,731c24.4,0,43.2-3.5,62.4-10.5c0-71-42.4-121.8-117.2-158.4c-57.2-28.7-127.7-43.6-192.1-43.6c28.2-84.6,7.6-189.7-19.7-247.4c-30.3,60.4-49.2,164-20.1,248.3c-57.1,4.2-102.4,29.1-121.6,61.9c-1.4,2.5-4.4,7.8-2.6,8.8c1.4,0.7,3.6-1.5,4.9-2.7c20.6-19.1,47.9-28.4,74.2-28.4c60.7,0,103.4,50.3,133.7,80.5C401.3,704.3,464.8,731.2,534.3,731"></path>
+        </svg>
+        <div  class="nav-brand__name-area">
+          <span>Technical Documentation</span>
+        </div>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="/en/data-publishing/">Data publishing</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="/en/data-processing/">Data processing</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="/en/data-use/">Data use</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="/en/openapi/">API</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="/en/cloud-services/">Cloud services</a>
+</div>
+
+<div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link" href="/en/system-components/">System components</a>
+</div>
+      </div>
+
+      <div class="navbar-end">
+        
+        <div class="navbar-item search hide-for-print">
+          <div id="search-field" class="field">
+            <input id="search-input" type="text" placeholder="Search docs">
+          </div>
+        </div>
+        
+
+        <div class="navbar-item has-dropdown is-hoverable">
+  <!-- Current: en -->
+  <a class="navbar-link" href="#">
+    <svg class="navbar-languages" fill="#fcfcfc" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+    </svg>
+  </a>
+  <div class="navbar-dropdown"><a class="navbar-item" href="/en/../en">English</a></div>
+</div>
+        <div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link">
+    <svg class="navbar-feedback" fill="#fcfcfc" height="24" viewBox="0 0 100 100" width="24" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M15.5,15.498h69v51.754H67.253v17.25L50,67.252H15.5V15.498z"/>
+    </svg>
+  </a>
+  <div class="navbar-dropdown">
+    <a class="navbar-item" href="https://github.com/gbif/tech-docs/issues/new?labels=Feedback&body=Feedback+on+[Page Not Found](https://techdocs.gbif.org/en) ([Github source for this page](../blob/main//modules//pages/))%0A%0AWrite+your+feedback+here.">Leave feedback on GitHub</a>
+    <a class="navbar-item" href="mailto:helpdesk@gbif.org?subject=Feedback on technical documentation 'Page Not Found'&body=Feedback on https://techdocs.gbif.org/en">Send feedback by email</a>
+  </div>
+</div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container">
+  <aside class="nav">
+    <div class="panels">
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="/en/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Page Not Found</h1>
+<div class="paragraph">
+<p>The page you&#8217;re looking for does not exist. It may have been moved. You can return to the <a href="/">start page</a>, or follow one of the links in the navigation to the left.</p>
+</div>
+<div class="paragraph">
+<p>If you arrived on this page by clicking on a link, please notify the owner of the site that the link is broken.
+If you typed the URL of this page manually, please double check that you entered the address correctly.</p>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="horizontal-stripe light-background">
+    <div class="footer-container">
+      <nav class="site-footer__menu">
+        <div>
+<a href="https://www.gbif.org/">GBIF.org</a>
+<a href="https://data-blog.gbif.org/">Data blog</a>
+<a href="https://www.gbif.org/terms">Terms and agreements</a>
+<a href="https://www.gbif.org/contact-us">Contact</a>
+        </div>
+        <div>
+          <strong>GBIF Secretariat</strong> • Universitetsparken 15 • DK-2100 Copenhagen Ø • Denmark
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="horizontal-stripe">
+    <div class="footer-container">
+      <a href="https://www.gbif.org/"><img src="https://www.gbif.org/img/full_logo_white.svg" alt="GBIF"></a>
+    </div>
+  </div>
+</footer>
+<script id="site-script" src="/en/_/js/site.js" data-ui-root-path="/en/_"></script>
+<script async src="/en/_/js/vendor/highlight.js"></script>
+<script src="/en/_/js/vendor/lunr.js"></script>
+<script src="/en/_/js/search-ui.js" id="search-ui-script" data-site-root-path="/en" data-snippet-length="100" data-stylesheet="/en/_/css/search.css"></script>
+<script async src="/en/search-index.js"></script>
+<script defer data-domain="techdocs.gbif.org" src="https://plausible.io/js/script.file-downloads.js"></script>
+  <script>
+    window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };
+    plausible("404", { props: { path: document.location.pathname } });
+  </script>
+  </body>
+</html>

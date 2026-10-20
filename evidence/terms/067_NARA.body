@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en" dir="ltr" prefix="fb: //www.facebook.com/2008/fbml">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WLMC86');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://www.archives.gov/files/apple-icon.png" type="image/png" />
+<meta name="description" content="About the Catalog API On This Page Terms of Use Gaining Access Rate Limits Use Right to Limit Changes Technical Support Disclaimer Related Pages National Archives Catalog API  Getting Started with the Catalog API  Catalog API GitHub  Catalog API Scripts on GitHub Catalog API Swagger Contact the Catalog API Team Catalog_API@nara.gov The National Archives and Records" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="https://www.archives.gov/sites/all/themes/nara/images/naralogo-og.png" />
+<link rel="canonical" href="https://www.archives.gov/research/catalog/help/api" />
+<meta property="og:site_name" content="National Archives" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.archives.gov/research/catalog/help/api" />
+<meta property="og:title" content="API for the National Archives Catalog" />
+<meta property="og:description" content="About the Catalog API On This Page Terms of Use Gaining Access Rate Limits Use Right to Limit Changes Technical Support Disclaimer Related Pages National Archives Catalog API  Getting Started with the Catalog API  Catalog API GitHub  Catalog API Scripts on GitHub Catalog API Swagger Contact the Catalog API Team Catalog_API@nara.gov The National Archives and Records Administration (NARA) offers some of its public data for all of the records in the Catalog in machine readable format via the Catalog Application Programming Interface (API)." />
+<meta property="og:updated_time" content="2026-05-01T09:50:41-04:00" />
+<meta property="og:image" content="https://www.archives.gov/sites/all/themes/nara/images/naralogo-og.png" />
+<meta property="og:image:alt" content="National Archives" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="API for the National Archives Catalog" />
+<meta name="twitter:description" content="About the Catalog API On This Page Terms of Use Gaining Access Rate Limits Use Right to Limit Changes Technical Support Disclaimer Related Pages National Archives Catalog API  Getting Started with" />
+<meta name="twitter:image" content="https://www.archives.gov/sites/all/themes/nara/images/naralogo-x.png" />
+<meta name="twitter:image:alt" content="National Archives" />
+<meta property="article:published_time" content="2021-12-08T08:58:13-05:00" />
+<meta property="article:modified_time" content="2026-05-01T09:50:41-04:00" />
+  <title>API for the National Archives Catalog | National Archives</title>
+
+  <style>
+@import url("https://www.archives.gov/modules/system/system.base.css?tn4vf4");
+</style>
+<style>
+@import url("https://www.archives.gov/sites/all/modules/custom/archives_ui/css/font-awesome.min.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/custom/archives_ui/css/helptext.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/custom/archives_ui/css/ckeditor_custom.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/contrib/calendar/css/calendar_multiday.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/contrib/date/date_repeat_field/date_repeat_field.css?tn4vf4");
+@import url("https://www.archives.gov/modules/field/theme/field.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/custom/findingaid_stat/css/findingaid.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/custom/findingaid_stat/css/explorer_landing.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/custom/nara_catalog/css/nara-api-style.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/custom/nara_document_app/css/documentapp.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/archive_features/nara_timeline/css/custom.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/archive_features/nara_timeline/css/timeline.css?tn4vf4");
+@import url("https://www.archives.gov/modules/node/node.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/contrib/user_alert/css/user-alert.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/custom/varnish_purge/css/varnishpurge.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/contrib/views/css/views.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/modules/contrib/ckeditor/css/ckeditor.css?tn4vf4");
+</style>
+<style>
+@import url("https://www.archives.gov/sites/all/modules/contrib/ctools/css/ctools.css?tn4vf4");
+</style>
+<style>.section-theme #title-bar{background:#29393b url("https://www.archives.gov/files/global-images/section-headers/research1.png") no-repeat center right;}.section-theme #mega-footer > h2{background:#29393b}.section-theme #title-bar .breadcrumb{background-color:#425E62;}.section-theme th{background-color:#29393b !important;}
+</style>
+<style>
+@import url("https://www.archives.gov/sites/all/modules/custom/nara_custom/css/nara_custom.css?tn4vf4");
+</style>
+<style>
+@import url("https://www.archives.gov/sites/all/themes/nara/css/jquery.fancybox.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/themes/nara/css/jquery.fancybox-thumbs.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/themes/nara/css/bootstrap.min.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/themes/nara/css/styles.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/themes/nara/css/vertical-tabs.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/themes/nara/css/overrides.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/themes/nara/css/mediagallery.css?tn4vf4");
+@import url("https://www.archives.gov/sites/all/themes/nara/css/dataTables.bootstrap.min.css?tn4vf4");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic|Merriweather">
+  <script src="https://www.archives.gov/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script src="https://www.archives.gov/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script src="https://www.archives.gov/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
+<script src="https://www.archives.gov/misc/jquery.once.js?v=1.2"></script>
+<script src="https://www.archives.gov/misc/drupal.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/modules/custom/archives_ui/scripts/helptext.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/modules/custom/findingaid_stat/js/script.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/modules/custom/nara_catalog/js/script.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/modules/custom/nara_document_app/js/script.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/modules/custom/nara_alert/js/user-alert-override.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/modules/custom/nara_custom/js/nara_custom.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/affix.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/alert.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/button.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/carousel.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/collapse.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/dropdown.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/modal.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/tooltip.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/popover.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/scrollspy.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/tab.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/transition.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/jPanelMenu.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/jRespond.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/matchHeight.min.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/jquery.fancybox.pack.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/toc.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/jquery.dataTables.min.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/dataTables.bootstrap.min.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/locations.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/scripts.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/jquery.scrollTo.js?tn4vf4"></script>
+<script src="https://www.archives.gov/sites/all/themes/nara/scripts/mediagallery.js?tn4vf4"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"nara","theme_token":"RFqrKellkwD9vQHCGmjO-wQwY_tdJRVlxgZ9-xXJ6UA","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/custom\/archives_ui\/scripts\/helptext.js":1,"sites\/all\/modules\/custom\/findingaid_stat\/js\/script.js":1,"sites\/all\/modules\/custom\/nara_catalog\/js\/script.js":1,"sites\/all\/modules\/custom\/nara_document_app\/js\/script.js":1,"sites\/all\/modules\/contrib\/user_alert\/js\/user-alert.js":1,"sites\/all\/modules\/custom\/nara_custom\/js\/nara_custom.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/affix.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/alert.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/button.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/carousel.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/collapse.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/dropdown.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/modal.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/tooltip.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/popover.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/scrollspy.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/tab.js":1,"sites\/all\/themes\/nara\/assets\/javascripts\/bootstrap\/transition.js":1,"sites\/all\/themes\/nara\/scripts\/jPanelMenu.js":1,"sites\/all\/themes\/nara\/scripts\/jRespond.js":1,"sites\/all\/themes\/nara\/scripts\/matchHeight.min.js":1,"sites\/all\/themes\/nara\/scripts\/jquery.fancybox.pack.js":1,"sites\/all\/themes\/nara\/scripts\/toc.js":1,"sites\/all\/themes\/nara\/scripts\/jquery.dataTables.min.js":1,"sites\/all\/themes\/nara\/scripts\/dataTables.bootstrap.min.js":1,"sites\/all\/themes\/nara\/scripts\/locations.js":1,"sites\/all\/themes\/nara\/scripts\/scripts.js":1,"sites\/all\/themes\/nara\/scripts\/jquery.scrollTo.js":1,"sites\/all\/themes\/nara\/scripts\/mediagallery.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/custom\/archives_ui\/css\/font-awesome.min.css":1,"sites\/all\/modules\/custom\/archives_ui\/css\/helptext.css":1,"sites\/all\/modules\/custom\/archives_ui\/css\/ckeditor_custom.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/findingaid_stat\/css\/findingaid.css":1,"sites\/all\/modules\/custom\/findingaid_stat\/css\/explorer_landing.css":1,"sites\/all\/modules\/custom\/liaisons\/css\/liaisons_style.css":1,"sites\/all\/modules\/custom\/nara_catalog\/css\/nara-api-style.css":1,"sites\/all\/modules\/custom\/nara_document_app\/css\/documentapp.css":1,"sites\/all\/modules\/archive_features\/nara_timeline\/css\/custom.css":1,"sites\/all\/modules\/archive_features\/nara_timeline\/css\/timeline.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/user_alert\/css\/user-alert.css":1,"sites\/all\/modules\/custom\/varnish_purge\/css\/varnishpurge.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"0":1,"sites\/all\/modules\/custom\/nara_custom\/css\/nara_custom.css":1,"sites\/all\/themes\/nara\/css\/jquery.fancybox.css":1,"sites\/all\/themes\/nara\/css\/jquery.fancybox-thumbs.css":1,"sites\/all\/themes\/nara\/css\/do_not_edit.css":1,"sites\/all\/themes\/nara\/css\/bootstrap.min.css":1,"sites\/all\/themes\/nara\/css\/styles.css":1,"sites\/all\/themes\/nara\/css\/vertical-tabs.css":1,"sites\/all\/themes\/nara\/css\/overrides.css":1,"sites\/all\/themes\/nara\/css\/mediagallery.css":1,"sites\/all\/themes\/nara\/css\/dataTables.bootstrap.min.css":1}},"archives_ui":{"trustedDomains":["twitter\\.com","youtube\\.com","youtu\\.be","recordsofrights\\.org","presidentialtimeline\\.org","nationalarchivesstore\\.org","bush41\\.org","nara\\.learn\\.com","bush41\\.org","bushlibrary\\.tamu\\.edu","fdrlibrary\\.marist\\.edu","georgewbushlibrary\\.smu\\.edu","lbjlibrary\\.org","trumanlibrary\\.org","fdrlibrary\\.org","archivesfoundation\\.org","jfklibrary\\.org","Myarchivesstore\\.org","docsteach\\.org","digitalvaults\\.org","jfk50\\.org","reagan\\.utexas\\.edu","clinton\\.presidentiallibraries\\.us","fdrlibrary\\.org","us11\\.campaign-archive.?\\.com","lbjlibrary\\.net","github\\.io","github\\.com","eventbrite\\.com","facebook\\.com","pinterest\\.com","tumblr\\.com","google\\.com","historypin\\.org","giphy\\.com","instagram\\.com","flickr\\.com","foursquare\\.com","addthis\\.com","apple\\.com","georgebushfoundation\\.org","clintonpresidentialcenter\\.org","geraldrfordfoundation\\.org","reaganfoundation\\.org","rooseveltinstitute\\.org","socialarchive\\.iath\\.virginia.edu","s3\\.amazonaws\\.com","surveymonkey\\.com","storify\\.com","constantcontact\\.com","snaccooperative\\.org","x\\.com","discoverlbj\\.org"]},"user_alert":{"url_prefix":"","current_path":"research\/catalog\/help\/api"},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"bottom","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+  
+  <style type="text/css">
+div.form-item-body-und-0-format {
+  display:none;
+}
+div.form-item-field-col-b-und-0-format {
+  display:none;
+}
+div.filter-guidelines {
+  display:none;
+}
+div.filter-help {
+  display:none;
+}
+</style>
+<style type="text/css">
+ul.nav-tabs {
+display:none;
+}
+#block-workbench-block {
+display:none;
+}
+</style>
+
+<script type="text/javascript" src="/includes/javascript/sortable/tablesort.js"></script>
+<script type="text/javascript" src="/includes/javascript/sortable/customsort.js"></script>
+<script type="text/javascript" src="/includes/javascript/sortable/sortable.css"></script>
+<style type="text/css">
+th .sortable a.sort-active {
+color:#ffffff;
+}
+table.sortable th.sortable a.active {
+color:#ffffff;
+}
+table.sortable th.sortable a {
+color:#ffffff;
+}
+table.sortable th a.sortheader {
+color:#ffffff;
+}
+
+
+/* visited link */
+table.sortable th.sortable a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+table.sortable th.sortable a:hover {
+    color: #ffffff;
+}
+
+/* selected link */
+table.sortable th.sortable a:active {
+    color: #ffffff;
+}
+.section-theme th a {
+color:#ffffff;
+}
+
+table.sortable  tr:nth-of-type(odd) {
+      background-color:#F5F5F5;
+}
+table.sortable-onload-1  tr:nth-of-type(odd) {
+      background-color:#F5F5F5;
+ }
+table.sortable-onload-0  tr:nth-of-type(odd) {
+      background-color:#F5F5F5;
+ }
+</style>
+  <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "API for the National Archives Catalog",
+            "url": "https://www.archives.gov/research/catalog/help/api",
+            "datePublished": "2021-12-08T08:58:13-05:00",
+            "dateModified": "2026-05-01T09:50:41-04:00",
+            "additionalProperty": [
+                {
+                    "@type": "PropertyValue",
+                    "name": "PageType",
+                    "value": "webpage"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "Section",
+                    "value": "research/catalog"
+                }
+            ]
+        }
+    ]
+}</script></head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-74775 node-type-3-col-page " >
+
+<div id='background-gradient'>
+
+
+  <div class="wrapper section-theme ">
+    <a class="back-to-top" href="#page-header" style="display: none;">Top</a>  
+    <div id="skip-link">
+      <a href="#main-col" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+    
+<div class="wrapper section-theme">
+  <header id="page-header">
+  
+    <div class="region region-header">
+    <section id="block-block-53" class="block block-block clearfix">
+
+      
+  <div class="col-sm-6" id="logo-wrapper">
+    <div id="logo"><a href="/">The U.S. National Archives Home</a></div>
+
+</div>
+<div class="col-sm-6" id="search-wrapper">
+    <div id="top-links">
+        <a class="noBorder" href="/citizen-archivist">Citizen Archivists</a> &middot;
+        <script type="text/javascript">// <![CDATA[
+        var addthis_pub = "usarchives";
+        var addthis_offset_left = -40;
+        var ui_508_compliant = true;
+        var addthis_brand = "Archives.gov";
+        // ]]></script>
+        <a class="a2a_dd trusted" href="https://www.addtoany.com/share">Bookmark/Share</a>        
+            <script async src="https://static.addtoany.com/menu/page.js"></script> &middot;
+        <a href="/contact">Contact Us</a>
+
+    </div>
+        <div class="input-group" id="site-search">
+        <form action="https://search.archives.gov/search" method="get" name="search">
+            <label for="qt" style="position:absolute;">Search</label>
+            <input class="form-control" id="qt"  type="text"
+                   name="query" placeholder="Search Archives.gov" title="Search Archives.gov"/>
+            <span class="input-group-btn">
+                <button class="btn btn-default" id="go" type="submit" name="submit">Search</button>
+           </span>
+           <input type="hidden" value="" name="utf8">
+           <input id="affiliate" type="hidden" value="national-archives" name="affiliate">
+        </form>
+    </div>
+
+</div>
+
+</section>
+  </div>
+  </header> <!-- /#page-header -->
+
+  
+      <nav id="main-nav" class="clearfix ">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix make-eq"><li class="menu-859 first research"><a href="/research" title="Explore our nation&#039;s history through our documents, photographs, and records." id="research">Research Our Records</a></li>
+<li class="menu-860 veterans"><a href="/veterans" title="Request military records and learn about other services for yourself or a family member." id="veterans" class="veterans">Veterans&#039; Service Records</a></li>
+<li class="menu-861 teachers"><a href="/education" title="Engage students with lesson plans and other classroom materials." id="teachers" class="teachers">Educator Resources</a></li>
+<li class="menu-862 locations"><a href="/locations" title="Plan a trip to a facility near you or learn about our national network of locations and services." id="locations" class="locations">Visit Us</a></li>
+<li class="menu-367 last shop"><a href="/founding-docs" title="Order books, gift items, photographic prints, and document reproductions online." id="shop" class="shop">America&#039;s Founding Documents</a></li>
+</ul>    </nav><!-- /main-nav -->
+  
+<div class='page-body-wrapper'>
+  <div id="page-body" class="no-sidebar">
+    <header id="title-bar">
+                    <p>The National Archives Catalog</p>
+                            <div class="breadcrumb">
+                <a href="/">Home</a> &gt; <a href="/research">Research Our Records</a> &gt; API for the National Archives Catalog            </div><!-- /breadcrumbs -->
+            </header>
+
+    <div class="row">
+              <nav  class="col-sm-2">
+          <aside id="sidebar-first" >
+            <nav id="left-menu" class="">
+      
+  <h3>National Archives Catalog</h3>
+
+<ul>
+  <li><a href="https://catalog.archives.gov/">National Archives Catalog</a></li>
+  <li><a href="/research/catalog/help/using.html">Using the National Archives Catalog</a></li>
+  <!--<li class="youAreHere">What's New in the Catalog?</li> -->
+  <li><a href="/research/catalog/help/search-tips">Search Tips</a></li>
+  <li><a href="/research/catalog/whats-new">What's New in the Catalog</a></li>
+  <li><a href="/research/electronic-records/access-in-catalog-faqs">Electronic Records in the Catalog</a></li>
+  <li><a href="/research/catalog/help/api" class="active">API for the National Archives Catalog</a></li>
+  <li><a href="/research/catalog/lcdrg">Lifecycle Data Requirements Guide</a></li>
+  <li><a href="/research/catalog/catalog-bulk-downloads">Bulk Downloads from the Catalog</a></li>
+  <li><a href="/research/catalog/help/using.html#Contact_Us">Contact Us</a></li>
+</ul>
+  
+</nav>
+          </aside>  <!-- /#sidebar-first -->
+        </nav>
+      
+              <div id="main-col" class="col-sm-10">
+      
+      <p id="print-logo">
+        <img src="/sites/all/themes/nara/images/nara-print-logo.jpg" alt="National Archives Logo" />
+      </p>
+
+      
+                    
+      
+      
+        <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  
+
+  <h1>API for the National Archives Catalog</h1>
+  
+
+<h2>About the Catalog API&nbsp;</h2>
+
+<div class="nwidget ncallout clearfix boxed width33 pull-right " data-additional-classes="" data-alignment="pull-right" data-style="boxed" data-version="1" data-width="33">
+  <h3>On This Page</h3>
+
+  <ul>
+    <li><a href="#terms-of-use">Terms of Use</a></li>
+    <li><a href="#access">Gaining Access</a></li>
+    <li><a href="#rate-limits">Rate Limits</a></li>
+    <li><a href="#use">Use</a></li>
+    <li><a href="#rights">Right to Limit</a></li>
+    <li><a href="#changes">Changes</a></li>
+    <li><a href="#tech-support">Technical Support</a></li>
+    <li><a href="#disclaimer">Disclaimer</a></li>
+  </ul>
+
+  <h3>Related Pages</h3>
+
+  <ul>
+    <li>
+      <p><a href="https://www.archives.gov/research/catalog/help/api">National Archives Catalog API</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.archives.gov/research/catalog/help/api-getting-started">Getting Started with the Catalog API</a></p>
+    </li>
+    <li>
+      <p><a class="untrusted" href="https://github.com/usnationalarchives/Catalog-API">Catalog API GitHub</a></p>
+    </li>
+    <li>
+      <p><a class="untrusted" href="https://github.com/usnationalarchives/Catalog-API/tree/master/bulk-download-scripts">Catalog API Scripts on GitHub</a></p>
+    </li>
+    <li>
+    <p><a href="https://catalog.archives.gov/api/v2/api-docs/">Catalog API Swagger</a></p>
+    </li>
+  </ul>
+
+  <h3>Contact the Catalog API Team</h3>
+
+  <ul>
+    <li>
+      <p><a href="mailto:catalog_api@nara.gov">Catalog_API@nara.gov</a></p>
+    </li>
+  </ul>
+</div>
+
+<p>The National Archives and Records Administration (NARA) offers some of its public data for all of the records in the Catalog in machine readable format via the Catalog Application Programming Interface (API). The open-source Catalog API supports public access to NARA records, facilitates research, and spurs innovation. Application developers can incorporate archival data and metadata into their applications, websites, or datasets.</p>
+
+<p>The API provides access to all available archival descriptions, authority records, metadata about digital objects (i.e. images, videos, etc.), extracted text (such as optical character recognition or OCR text), and public contributions (tags, transcriptions, and comments). The API allows researchers and developers to retrieve metadata in JavaScript Object Notation (JSON) format for any given record or search results set. This method offers added flexibility for advanced search and refinement because the API can search and retrieve using keywords for any field in the system, search within ranges, apply sorts, specify only particular fields to return, or any combination of these options. Bulk export of search results can then be generated leveraging tools such as Python scripts. The API is also writable, which means it can be used to post and manipulate tags, transcriptions, or comments.</p>
+
+<p>To take full advantage of the Catalog API, developers should familiarize themselves by reading about the API for the National Archives Catalog, the <a href="https://catalog.archives.gov/api/v2/api-docs/">Catalog API documentation</a>, and <a href="https://github.com/usnationalarchives/Catalog-API">NARA’s Catalog API on GitHub</a> available online. This documentation provides the detailed definitions and descriptions needed to understand the data elements referenced in the Catalog API documentation.</p>
+
+<h3><a id="terms-of-use" name="terms-of-use"></a>Terms of Use&nbsp;</h3>
+
+<p>This service is offered subject to your acceptance of the terms of use and conditions contained herein as well as any relevant sections of the <a href="/global-pages/privacy.html">Archives.gov Website Use Policies and Privacy Policy</a> (collectively, "this Agreement").</p>
+
+<p>All users agree they will not use the National Archives Catalog content or Catalog API service for any illegal or defamatory purpose of any nature. The API service will not be used to juxtapose our content with any illegal or defamatory material of any nature. Users will not write via the API in violation of the <a href="/citizen-archivist/resources/tagging-policy">Citizen Contribution Policy</a>.&nbsp; No attempts to attack the API or the Catalog, gain unauthorized access, or manipulate data will be allowed.</p>
+
+<p>Users will not scrape data or attempt to download all data from the Catalog via the API, which may affect Catalog performance. To download all publicly available Catalog data, please access the <a href="/developer/national-archives-catalog-dataset">National Archives Catalog dataset on the Amazon Web Services Registry of Open Data</a>.</p>
+
+<h3>Scope</h3>
+
+<p>All of the content, documentation, code and related materials made available to you through the API is subject to these terms. Access to or use of the API or its content constitutes acceptance to this Agreement.</p>
+
+<h3><a id="access" name="access"></a>Gaining Access</h3>
+
+<p>Anyone may request an API key to access and use the API. An assigned API key must be incorporated into each API request. The default API key is a read-only key. See “<a href="#request-key">Use: To Request A Read/Write API Key</a>" below for details on requesting that your API key can read and write.&nbsp;</p>
+
+<p>Do not share your API key or accidentally publish it along with your code to a public repository like GitHub. If it is brought to NARA’s attention that an API key has been posted publicly or is being misused in violation of the Citizen Contribution Policy, NARA’s Website Use Policies, these API terms or in violation of federal law, the key will be deactivated. To report an accidentally published API key, email <a href="mailto:catalog_api@nara.gov">Catalog_API@nara.gov</a> to have your API key deactivated and have a new key established.</p>
+
+<p>NARA will monitor quarterly and deactivate any API keys that have not been used during the past 12 months.&nbsp;</p>
+
+<p>If you attempt to use your API key and cannot access the API because your dormant key was deactivated or for any other reason, email <a href="mailto:catalog_api@nara.gov">Catalog_API@nara.gov</a> and ask for the status of your key to be checked.</p>
+
+<h3><a id="rate-limits" name="rate-limits"></a>Rate Limits</h3>
+
+<p>To ensure consistent system and API availability and performance, NARA limits the number of Catalog API requests to a default rate of 10,000 queries per month per API key.&nbsp;</p>
+
+<p>Exceeding this limit will cause the API key to be temporarily blocked until the first of the following month; your API key query rate limit will automatically reset and be renewed on the first of every month.&nbsp;</p>
+
+<p>Most use cases and research needs can be met by the default API limit. If your research or development efforts require a higher limit, please contact <a href="mailto:catalog_api@nara.gov">Catalog_API@nara.gov</a> with your use case/research need and justification. NARA staff determines the issuance of a higher limit based on the query rate limit types defined below and Catalog API performance.</p>
+
+<div class="table-responsive">
+  <table class="table" style="width: 100%;">
+    <thead>
+      <tr>
+        <th scope="col">Type of Query Rate Limit</th>
+        <th scope="col">Query Rate Limit / Month</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="width:75%;">Default</td>
+        <td style="width:25%;">10,000</td>
+      </tr>
+      <tr>
+        <td style="width:75%;">Higher</td>
+        <td style="width:25%;">150,000</td>
+      </tr>
+      <tr>
+        <td style="width:75%;">NARA Staff and Contractor</td>
+        <td style="width:25%;">500,000</td>
+      </tr>
+      <tr>
+        <td style="width:75%;">NARA Partner (with a signed partnership agreement)</td>
+        <td style="width:25%;">1,500,000</td>
+      </tr>
+      <tr>
+        <td style="width:75%;">NARA Catalog Staff and Contractors (NARA Office of Innovation and Information Services Staff and Contractors who work on and test the Catalog)</td>
+        <td style="width:25%;">Zero query limit / unlimited</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3><a id="use" name="use"></a>Use: Read-Only</h3>
+
+<p>An API key is typically used to develop a service(s) to search, display, analyze, retrieve, view and 'get' information from Catalog data.&nbsp;</p>
+
+<h3>Use: Write User Contributions</h3>
+
+<p>Writing to contributions (examples: tags, comments, and transcriptions) can be enabled for registered Catalog users upon request.&nbsp; All contributions must be in accordance with the Citizen Contribution Policy. Repeated violations of the Citizen Contribution Policy will be&nbsp; grounds for disabling an API key.&nbsp;</p>
+
+<p>Data submitted through the Catalog API is subject to the Federal Records Act and may be archived.</p>
+
+<h3><a id="request-key" name="request-key"></a></h3>
+
+<h3>Use: To Request A Read/Write API Key</h3>
+
+<p>To request a read/write API key and that your Catalog user account be linked to your API key, email <a href="mailto:catalog_api@nara.gov">Catalog_API@nara.gov</a> and include your email address and Catalog user name. If you already have a write API key to be converted to a read/write key, include your API key. The following links provide you with additional information:</p>
+
+<ul>
+  <li><a href="/citizen-archivist/register-and-get-started">Register and Get Started: Contribute to the Catalog</a></li>
+  <li><a href="https://www.login.gov/policy/rules-of-use/">Login.gov Rules of Use</a></li>
+  <li><a href="/citizen-archivist/resources/tagging-policy">Citizen Contribution Policy</a></li>
+</ul>
+
+<h3>Attribution</h3>
+
+<p>All services which utilize or access the API should display the following notice prominently within the application:&nbsp;</p>
+
+<blockquote>"This product uses the National Archives Catalog API but is not endorsed or certified by the National Archives and Records Administration."</blockquote>
+
+<p>NARA’s name may be used in order to identify the source of API content subject to these rules. NARA’s logos may not be used on your website without NARA’s specific written permission. NARA’s name, logos, or the like may not be used to imply endorsement of any product, service, or entity, not-for-profit, commercial or otherwise. All use of NARA logos and seals must be in accordance with <a href="https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-A/part-1200">NARA regulations at 36 CFR 1200</a>.</p>
+
+<h3>Modification or False Representation of Content</h3>
+
+<p>All content accessed through the API may not be modified or falsely represented and still claim the source is NARA.</p>
+
+<h3><a id="rights" name="rights"></a>Right to Limit</h3>
+
+<p>Use of the API may be subject to certain limitations on access, calls, or use as set forth within this Agreement or otherwise provided by NARA. If the National Archives reasonably believes the user has&nbsp; attempted to exceed or circumvent these limits, ability to use the API may be permanently or temporarily blocked. NARA may monitor all use of the API to improve the service or to ensure compliance with this Agreement.</p>
+
+<h3>Service Termination</h3>
+
+<p>Termination of this Agreement, may be done by refraining from further use of the Catalog API. NARA reserves the right to (1) refuse to provide the API , if it is the NARA's opinion that use violates any NARA policy, or (2) terminate or deny access to and use of all or part of the API at any time for any other reason in its sole discretion. All provisions of this Agreement which by their nature should survive termination including, without limitation, warranty disclaimers, indemnity, and limitations of liability.</p>
+
+<h3><a id="changes" name="changes"></a>Changes</h3>
+
+<p>NARA reserves the right, at its sole discretion, to modify or replace this Agreement, in whole or in part, at any time. NARA recommends all users check the terms of use for updates regularly.&nbsp; Continued use of or access to the API following posting of any changes to this Agreement constitutes acceptance of those modified terms. NARA may, in the future, offer new services and/or features through the API. Such new features and/or services shall be subject to the terms and conditions of this Agreement.</p>
+
+<p>The Catalog is still under development and the content is always growing. Please do not cache or store any content returned by the API.</p>
+
+<h3><a id="tech-support" name="tech-support"></a>Limited Technical Support</h3>
+
+<p>The user understands and agrees NARA will provide limited technical support services in connection with any use of the API. Contact the team at <a href="mailto:catalog_api@nara.gov">Catalog_API@nara.gov</a> with reports of any technical issues or questions, or to request limited troubleshooting support.&nbsp;</p>
+
+<h3><a id="disclaimer" name="disclaimer"></a>Disclaimer of Warranties</h3>
+
+<p>The Catalog API is provided "as is" and on an "as-available" basis. NARA hereby disclaims all warranties of any kind, express or implied, including without limitation, the warranties of merchantability, fitness for a particular purpose, and non-infringement. NARA does not guarantee availability of the API service. NARA makes no warranty that the API will be error free or that access thereto will be continuous or uninterrupted.</p>
+
+<h3>Limitations on Liability</h3>
+
+<p>In no event will NARA be liable with respect to any subject matter of this Agreement under any contract, negligence, strict liability or other legal or equitable theory for: (1) any special, incidental, or consequential damages; (2) the cost of procurement of substitute products or services; or (3) for interruption of use or loss or corruption of data.</p>
+
+<h3>General Representations</h3>
+
+<p>All users hereby warrant that (1) use of the API will be in strict accordance with this Agreement, and all applicable laws and regulations, and (2) use of the API will not infringe or misappropriate the intellectual property rights of any third party.</p>
+
+<h3>Indemnification</h3>
+
+<p>Agreement to indemnify and hold harmless NARA, its contractors, employees, agents, and the like from and against any and all claims and expenses including attorney's fees, arising out of your use of the API, including but not limited to violation of this Agreement.</p>
+
+<h3>Miscellaneous</h3>
+
+<p>This Agreement constitutes the entire Agreement between NARA and you concerning the subject matter hereof, and may only be modified by the posting of a revised version on this page by NARA.</p>
+
+<h3>Disputes</h3>
+
+<p>Any disputes arising out of this Agreement and access to or use of the API shall be governed by federal law.</p>
+
+<h3>No Waiver of Rights</h3>
+
+<p>NARA’s failure to exercise or enforce any right or provision of this Agreement shall not constitute waiver of such right or provision.</p>
+
+<p>&nbsp;</p>
+
+
+</section>
+  </div>
+
+    </div>
+
+    
+  </div>
+</div>
+</div> <!-- page-body-wrapper -->
+  <footer id="page-footer">
+    <div class="clearfix row last-update-wrapper ">
+      <p id="last-update">
+              <span class="glyphicon glyphicon-edit"></span> This page was last reviewed on May 1, 2026.<br>
+              <a href="/contact">Contact us with questions or comments</a>.
+      </p>
+    </div>
+
+    <section id="mega-footer" class="clearfix panel-group">
+      <h2 class="footer-title"> Research Our Records</h2>
+  <div class="mega-col panel panel-default">
+  <div class="panel-heading">
+  <h2><a data-target="#online-research" data-toggle="collapse" data-parent="#mega-footer">Online Research</a></h2>
+  </div>
+  <div id="online-research" class="panel-collapse">  
+<ul><li>
+      <a href="/research/topics/">By Topic</a>
+    </li>
+    <li>
+      <a href="/research/start/by-format">By Format</a>
+    </li>
+    <li>
+      <a href="/research/start/by-organization">By Government Organization</a>
+    </li>
+<li>
+      <a href="https://catalog.archives.gov/">National Archives Catalog</a>
+    </li>
+    <li>
+      <a href="/presidential-records">Presidential Records</a>
+    </li>
+    <li>
+      <a href="http://aad.archives.gov/aad/">Access to Archival Databases</a>
+    </li>
+    <li>
+      <a href="/research/alic/">Archives Library Information Center</a>
+    </li>
+    <li>
+      <a href="/exhibits/">Online Exhibits</a>
+    </li>
+  </ul></div>
+</div>
+<div class="mega-col panel panel-default">
+  <div class="panel-heading">
+  <h2><a data-target="#resources-for" data-toggle="collapse" data-parent="#mega-footer">Resources For&#8230;</a></h2>
+  </div>
+  <div id="resources-for" class="panel-collapse">
+  <ul><li>
+      <a href="/research/genealogy/">Genealogists</a>
+    </li>
+    <li>
+      <a href="/research/military/">Military Historians</a>
+    </li>
+    <li>
+      <a href="/preservation/">Preservation and Archives Professionals</a>
+    </li>
+    <li>
+      <a href="/records-mgmt/">Records Managers</a>
+    </li>
+    <li>
+      <a href="/research/military/veterans/">Veterans</a>
+    </li>
+  </ul></div>
+</div>
+<div class="mega-col panel panel-default">
+  <div class="panel-heading">
+  <h2><a data-target="#guides" data-toggle="collapse" data-parent="#mega-footer">Research Guides</a></h2>
+  </div>
+  <div id="guides" class="panel-collapse">
+  <ul><li>
+      <a href="/research/start/">Getting Started</a>
+    </li>
+    <li>
+<a href="/faqs/">National Archives Frequently Asked Questions</a>
+    </li>
+    <li>  
+
+ <a href="/research/guide-fed-records/">Guide to Federal Records</a>
+    </li>
+    <li>
+      <a href="/research/declassification">Declassified Records</a>
+    </li>
+    <li>
+      <a href="/research/start/online-tools">Where to Look for Records</a>
+    </li>
+    <li>
+      <a href="/research/start/">Why Aren't All Records Online?</a>
+    </li>
+  <li>
+      <a href="/research/foia/">How to File a FOIA Request for Archival Records</a>
+    </li>
+  </ul></div>
+</div>
+<div class="mega-col panel panel-default">
+  <div class="panel-heading">
+  <h2><a data-target="#new" data-toggle="collapse" data-parent="#mega-footer">What's New?</a></h2>
+  </div>
+  <div id="new" class="panel-collapse">  
+    <ul><li>
+      <a href="/research/news">News and Notices</a>
+    </li>
+    <li>
+      <a href="/research/accessions/">New Accessions</a>
+    </li>
+    
+  </ul></div>
+</div>
+</section>
+
+          <section id="sub-footer">
+            <div class="region region-footer-bottom">
+    <section id="block-block-54" class="block block-block clearfix">
+
+      
+  <h2><a href="https://www.archives.gov/social-media/">Connect With Us</a></h2>
+
+<ul class="clearfix" id="social-media">
+  <li class="facebook" data-original-title="Facebook" data-placement="bottom" data-toggle="tooltip" title=""><a href="/social-media/facebook">Facebook</a></li>
+  <li class="twitter" data-original-title="X" data-placement="bottom" data-toggle="tooltip" title=""><a href="/social-media/twitter">X</a></li>
+  <li class="instagram" data-original-title="Instagram" data-placement="bottom" data-toggle="tooltip" title=""><a href="/social-media/instagram">Instagram</a></li>
+  <li class="tumblr" data-original-title="Tumblr" data-placement="bottom" data-toggle="tooltip" title=""><a href="/social-media/tumblr">Tumblr</a></li>
+  <li class="youtube" data-original-title="YouTube" data-placement="bottom" data-toggle="tooltip" title=""><a href="/social-media/youtube">YouTube</a></li>
+  <li class="blogs" data-original-title="Blogs" data-placement="bottom" data-toggle="tooltip" title=""><a href="/social-media/blogs">Blogs</a></li>
+  <li class="flickr" data-original-title="Flickr" data-placement="bottom" data-toggle="tooltip" title=""><a href="/social-media/flickr">Flickr</a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p id="footer-links"><a href="/contact/">Contact Us</a> · <a href="/global-pages/accessibility.html">Accessibility</a> · <a href="/global-pages/privacy.html">Privacy Policy</a> · <a href="/foia/">Freedom of Information Act</a> · <a href="/eeo/policy/complaint-activity.html">No FEAR Act</a> · <a href="http://www.usa.gov/">USA.gov</a></p>
+
+<p id="footer-phone">The U.S. National Archives and Records Administration<br />
+  <a href="tel:1-866-272-6272">1-86-NARA-NARA or 1-866-272-6272</a></p>
+
+</section>
+  </div>
+      </section>
+      </footer><!-- /page-footer -->
+
+</div>
+
+<script src="/sites/all/themes/nara/scripts/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script src="/sites/all/themes/nara/scripts/helpers/jquery.fancybox-media.js" type="text/javascript"></script> 
+<script src="/sites/all/themes/nara/scripts/helpers/jquery.fancybox-thumbs.js" type="text/javascript"></script> 
+  <script src="https://www.archives.gov/sites/all/themes/bootstrap/js/bootstrap.js?tn4vf4"></script>
+  </div>
+  <a class="back-to-top" href="#page-header" style="display: inline;">Top</a>
+ <script>
+(function ($) {
+  // Original JavaScript code.
+$('.toc').toc({
+'selectors': 'h2:not(.element-invisible):not(.toc-block h2),h3',
+'container': '#main-col'
+});
+})(jQuery);
+
+//fix extra timeline object issue
+(function(){            
+  if(typeof Drupal.settings['timelineJS'] !== 'undefined'){      
+    timelinejs_arry = Drupal.settings['timelineJS'];
+    tmptimeline=[];
+    for (i = 0; i < timelinejs_arry.length-1; i++) {       
+      if(typeof timelinejs_arry[i]['processed'] !== 'undefined'){                        
+        tmptimeline.push(timelinejs_arry[i]);  
+      } 
+    }
+    Drupal.settings['timelineJS'] = tmptimeline;
+  }
+}());
+</script>
+</div> <!-- end -->
+
+
+  <!-- Modal Structure -->
+<div class="modal fade" id="sitemodal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title"></div>
+        <!-- <h5 class="modal-title">Modal Title</h5> -->
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body"></div>
+      <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

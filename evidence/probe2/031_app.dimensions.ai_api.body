@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-bt="radar_app">
+<head>
+    
+    
+
+    
+
+    
+            <link rel="dns-prefetch preconnect" href="https://www.googletagmanager.com">
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({"productVariant": "Free", "organization": ""});
+            </script>
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NL347C2');</script>
+            <!-- End Google Tag Manager -->
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="robots" content="noarchive" />
+    
+
+    
+	
+	
+	
+    <title>Page not found - Dimensions</title>
+    <meta name="description" content="Re-imagining discovery and access to research: grants, datasets, publications, citations, clinical trials, patents and policy documents in one place.">
+
+    
+    
+    <meta property="og:url" content="https://app.dimensions.ai/api/" />
+
+    
+    
+
+    
+        
+            
+    <meta property="og:description" content="Re-imagining discovery and access to research: grants, datasets, publications, citations, clinical trials, patents and policy documents in one place. With more than 100 million publications and 1 billion citations freely available for personal use, Dimensions provides students and researchers access to the data and information they need - with the lowest barriers possible." />
+    <meta property="twitter:description" content="Re-imagining discovery and access to research: grants, datasets, publications, citations, clinical trials, patents and policy documents in one place. With more than 100 million publications..." />
+
+        
+    
+
+    
+
+    
+
+    
+     <script type="text/javascript">
+        var theme = {"authentication": {"rightSection": {"background": "#2A2359", "boxBackground": "#403A6A", "boxColor": "#fff", "color": "#fff", "svgFill": "#ffffff33"}}, "dialogs": {"header": {"background_color": "#fff", "margin_bottom": "0"}, "logo_max_width": "136px"}, "main_navigation": {"background_color": "#0d4667", "border_color": "#0d4667", "mobile": {"background_color": "#0D4667", "bottom_border": "none", "text_color": "#81bada"}, "sep_color": "#5AC2E3", "text_color": "#81bada"}};
+     </script>
+
+    
+	<meta name="EZproxyRewriting" content="disable" />
+    <script type="text/javascript">
+        config = {
+            application: "https://app.dimensions.ai",
+            
+            
+            
+            
+                page_title: "Page not found - Dimensions",
+            
+            maintenance: false,
+            
+            is_eu_instance: false,
+            minCharsForAutocomplete: {"default": 3, "jurisdiction": 1, "publishing_discipline": 1, "publishing_segment": 1, "publishing_unit": 1, "sales_format": 1},
+            user: {
+                
+                isRegistered: false,
+                currency: "USD",
+                id: "",
+                email: "anonymous",
+                
+                
+            },
+            
+                navigation: {"country_json": "/viz/countries.json", "footer": {"about": "https://www.dimensions.ai/", "cookies": "https://www.dimensions.ai/policies-cookie/", "linkedin": "https://www.linkedin.com/company/digitalscience-dimensions", "privacy": "https://www.dimensions.ai/privacy/", "terms": "https://www.dimensions.ai/policies-terms-legal/", "twitter": "https://twitter.com/DSDimensions", "vpat": "https://www.dimensions.ai/policies/vpat/"}, "link_logo": "/", "login_redirect": "/auth/login", "map_data_json": "/map-data.json", "not_supported": "/not_supported", "orcid_url": "https://orcid.org", "redshift_log": null, "root": "/", "static": "https://cdn-app.dimensions.ai/static"},
+            
+            
+            
+            csrf: 'd0cbe2d0f3097e370a276a736fec6d803aa50008'
+        };
+
+        config.route = '';
+        config.product = {
+            key: "radar",
+            name: {
+                long: "Dimensions",
+                short: "Dimensions"
+            }
+        };
+        config.variant = {
+            id: "radar.free",
+            name: "Free"
+        };
+        
+
+        
+
+
+        
+
+        config.supportEmail = 'support@dimensions.ai';
+        config.lastActivePath = '/api/';
+
+        config.external_scripts = {
+            readcube_badge_script_url: "",
+            dimensions_badge_script_url: "",
+            altmetric_badge_script_url: "",
+            altmetric_badge_details_page_url: ""
+        }
+
+        
+            config.header_actions = {"navigation": {"json": "/menus/header.json"}, "title": ""}
+        
+
+        
+            config.sidebar_actions = {"navigation": {"json": "/sidebar.json"}, "title": ""}
+        
+
+        
+
+        
+
+        
+
+        
+        
+            config.papersai_banner = {"navigation": {"linkout": true, "url": "https://papers.ai/?utm_source=dimensions\u0026utm_medium=referral\u0026utm_campaign=papersai_leaderboard\u0026utm_content=dim_free_top_banner"}};
+        
+
+        
+
+        
+   config.intercomSettings = {"app_id": "ilx5k1fm", "user_role": "anonymous users", "application": "app.dimensions.ai", "altmetric_advanced": false, "product": "Free", "workflow": false, "api": false, "user_id": "2400:1a00:5b2f:821c:869e:56ff:fe03:2b71", "sources": "publication_plus,data_set"}
+
+        
+   config.counterSettings = {"service": {"url": "https://counter.dimensions.ai", "auth": null}, "user": {"ipv4": null, "sessionId": "18e7e47c5788450e9797f58bceaac976"}};
+
+        
+    
+
+        
+    window.config.notifications = Array.isArray(window.config.notifications) ? window.config.notifications : [];
+    
+
+        
+config.dialog_content = {"content": "Please use the search to navigate to your intended document.\u003cbr/\u003e \u003ca href=\"/\"\u003eStart on the main page\u003c/a\u003e", "header": "We are sorry, the requested document is not available at this address.", "id": "not_found"};
+
+    </script>
+	<meta name="EZproxyRewriting" content="enable" />
+
+    
+    
+    
+
+    
+    <noscript>
+        
+<style>
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.dialog-wrapper {
+    background: #fff;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #ddd;
+    min-height: 500px;
+}
+
+.dialog-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 16;
+}
+.dialog {
+    text-align: center;
+}
+.dialog__title {
+    padding: 50px 20px;
+    min-height: 140px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+}
+.dialog__logo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    min-height: 0;
+}
+.dialog__content {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px;
+    line-height: 1.5em;
+}
+</style>
+
+    </noscript>
+
+
+       
+    
+    
+        
+        
+            <link href="https://cdn-app.dimensions.ai/static/style-C2kSxxt3.css" rel="stylesheet"/>
+        
+    
+    
+</head>
+<body class=" no-mathjax"><!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe aria-hidden="true" src="https://www.googletagmanager.com/ns.html?id=GTM-NL347C2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    
+<div id="appRoot"></div>
+
+    
+    
+    
+    
+    <script type="module" crossorigin="use-credentials" src="https://cdn-app.dimensions.ai/static/polyfills-TyAx3zOV-bundle.js"></script>
+    
+    <script type="module" crossorigin="use-credentials" src="https://cdn-app.dimensions.ai/static/dialog-BVY90Jjk-bundle.js"></script>
+
+
+    
+    
+    
+
+
+
+    
+    
+    
+        <script type="text/javascript">
+            (function(){
+                // Save useragent in custom attribute for later (CSS) usage
+                // (cf. https://css-tricks.com/ie-10-specific-styles/)
+                document.documentElement.setAttribute('data-useragent', navigator.userAgent);
+            })()
+        </script>
+    
+    
+    <noscript>
+    
+    
+    <div class="dialog-overlay">
+        <div class="dialog-wrapper">
+            <div class="dialog">
+                <div
+                    class="dialog__title"
+                    style="
+                        background-color: #fff;
+                        
+                        
+                    "
+                >
+                    <img
+                        alt="Dimensions logo"
+                        class="dialog__logo"
+                        src="/images/logo_centered.png"
+                        
+                        style="max-width: 136px;"
+                        
+                        title="Dimensions logo"
+                    />
+                </div>
+                <div class="dialog__content">
+                    
+        
+    <h1>JavaScript is not enabled in your browser.</h1>
+    <p>To use Dimensions, please enable JavaScript in the options of your browser or talk to your local administrator.</p>
+
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </noscript>
+
+</body>
+</html>

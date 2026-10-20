@@ -1,0 +1,420 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>bioRxiv API</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style type="text/css">
+  html {
+  overflow-y: scroll;
+}
+  body {
+        margin: 0px;
+		
+		
+		 font: 14px/1.5 sans-serif;
+		/* line-height:150%;*/
+    }
+header {
+  color: #999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: .5em 0;
+}
+
+
+	h1 {
+		margin-top:40px;
+		line-height:130%;
+	}
+	h2 {
+		margin-top:30px;
+		line-height:130%;
+	}
+
+.navigation {
+  float: right;
+}
+.navigation a {
+	color: #000;
+	text-decoration:none;
+}
+
+.column {
+  max-width: 960px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h2 {
+  margin-top: 2em;
+  margin-bottom: 1.2em;
+}
+
+h1, h2 {
+  text-rendering: optimizeLegibility;
+}
+
+
+
+	
+#main2 {
+	
+	margin-left: auto;
+  	margin-right: auto;
+	/* font: 13px sans-serif; */
+	margin-bottom:40px;
+	line-height:150%;
+    /* text-align:center; */
+	/* border:0px solid black; */
+}
+p {
+	margin-top: 14px;
+	margin-bottom: 14px;
+} 
+p.item {
+	margin-left: 17px;
+	margin-right: 17px;
+}
+
+dl {
+	margin:0;
+	}
+dt {
+	margin-top:4px;
+}
+th {
+	font-size:110%;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:0;
+	padding-right:0;
+}
+td {
+	font-size:100%;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:0;
+	padding-right:0;
+}
+div.item {
+	margin-top:10px;
+	margin-bottom:20px;
+	text-align:left;
+	}
+a {
+    color: #026acb;
+    text-decoration: none;
+    outline: none;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin: 0.7em 0 0.6em 0;
+}
+
+	</style> 
+</head>
+<body>
+
+<!--<img src="https://www.biorxiv.org/sites/default/files/bioRxiv_article.jpg" alt="bioRxiv Logo" />-->
+<header>
+  <div class="column">
+    <div class="navigation">
+     <a href="/">API</a> &nbsp; | &nbsp; <a href="/reports">Reports</a>
+      
+    </div>
+    <a class="user" href="/"><img class="avatar" src="https://www.biorxiv.org/sites/default/files/biorxiv_article_logo.jpg" ></a>
+    
+  </div>
+</header>
+<div class="column">
+
+<div id="main2">
+
+<h1>bioRxiv API Summary</h1>
+<h2>Reports Page</h2>
+<p>A set of reports is available <a href="/reports">here</a>.</p>
+<h2>Content detail</h2>
+<p>
+The format of the endpoint is <i>https://api.biorxiv.org/details/[server]/[interval]/[cursor]/[format]</i> or <i>https://api.biorxiv.org/details/[server]/[DOI]/na/[format]</i>
+
+
+<p>where 'interval' can be 1) two YYYY-MM-DD dates separted by '/' and 'cursor' is the start point which defaults to 0 if not supplied, or 2) a numeric value for the N most recent posts, or 3) a numeric with the letter 'd' for the most recent N days of posts.
+</p>
+<p>Where metadata for multiple papers is returned, results are paginated with 30 papers served in a call. The 'cursor' value can be used to iterate through the result.
+</p>
+<p>For instance, <a href="https://api.biorxiv.org/details/biorxiv/2018-08-21/2018-08-28/45">https://api.biorxiv.org/details/biorxiv/2018-08-21/2018-08-28/45</a> will output 	
+30 results (if that many remain) within the date range of 2018-08-21 to 2018-08-28 beginning from result 45 for biorxiv. <a href="https://api.biorxiv.org/details/medrxiv/2020-03-21/2020-03-24/45">https://api.biorxiv.org/details/medrxiv/2020-03-21/2020-03-24/45</a> will output 	
+30 results (if that many remain) within the date range of 2020-03-21 to 2020-03-24 beginning from result 45 for medrxiv. 
+</p>
+<p>These date range endpoints will also accept a querystring paramater for subject category. The subject category can either be URL-encoded or can have underscore substituted for spaces in the category name. For instance,
+<a href="https://api.biorxiv.org/details/biorxiv/2025-03-21/2025-03-28?category=cell_biology">https://api.biorxiv.org/details/biorxiv/2025-03-21/2025-03-28?category=cell_biology</a> will output metadata for Cell Biology for the specified interval and 
+<a href="https://api.biorxiv.org/details/medrxiv/2025-03-21/2025-03-28?category=cardiovascular%20medicine">https://api.biorxiv.org/details/medrxiv/2025-03-21/2025-03-28?category=cardiovascular%20medicine</a> will do the same for Cardiovascular Medicine.</p>
+
+<p><i>https://api.biorxiv.org/details/[server]/[DOI]/na/[format]</i> returns detail for a single manuscript.
+For instance, <a href="https://api.biorxiv.org/details/medrxiv/10.1101/2020.09.09.20191205">https://api.biorxiv.org/details/medrxiv/10.1101/2020.09.09.20191205</a> will output 	
+metadata for the medrxiv paper with DOI 10.1101/339747.
+</p>
+
+
+<p>
+The 'messages' array in the output provides information about what is being displayed, including
+cursor value, count of all items and count of new papers for the requested interval.
+</p>
+<p>
+Available formats are <i>JSON</i> (json), <i>XML</i> (OAI-PMH XML) and HTML.
+</p>
+<p>The following metadata elements are returned:</p>
+<p>
+<ul><li>doi
+<li>title
+<li>authors
+<li>author_corresponding
+<li>author_corresponding_institution
+<li>date
+<li>version
+<li>type
+<li>license
+<li>category
+<li>jats xml path
+<li>abstract
+<li>published
+<li>server
+</ul>
+</p>
+
+
+<h2>Preprint published article detail for specified server (bioRxiv or medRxiv)</h2>
+
+<p>
+The format of the endpoint is <i>https://api.biorxiv.org/pubs/[server]/[interval]/[cursor]</i> or https://api.biorxiv.org/pubs/[server]/[DOI]/na/[format]. The help documentation
+is here: <a href="https://api.biorxiv.org/pubs/help">
+https://api.biorxiv.org/pubs/help</a>.
+</p>
+<p>where 'server' can be either 'bioRxiv' or 'medRxiv' and 'interval' can be 1) two YYYY-MM-DD dates separted by '/' and 'cursor' is the start point which defaults to 0 if not supplied, or 2) a numeric value for the N most recent published articles, or 3) a numeric with the letter 'd' for the most recent N days of articles.
+</p>
+<p>Results are paginated with 100 articles served in a call. The 'cursor' value can be used to iterate through the result.
+</p>
+<p>For instance, <a href="https://api.biorxiv.org/pubs/medrxiv/2020-03-01/2020-03-30/5">https://api.biorxiv.org/pubs/medrxiv/2020-03-01/2020-03-30/5</a> will output 	
+metadata for the published version of the 100 medRxiv papers (if that many remain) published within the date range of 2020-03-01 to 2020-03-30 beginning from article 5. 
+<a href="https://api.biorxiv.org/pubs/biorxiv/2020-03-01/2020-03-30/5">https://api.biorxiv.org/pubs/biorxiv/2020-03-01/2020-03-30/5</a> will do the same for bioRxiv papers for that period.
+</p>
+<p><i>https://api.biorxiv.org/pubs/[server]/[DOI]/na/[format]</i> returns detail for a single manuscript.
+For instance, 
+<a href="https://api.biorxiv.org/pubs/medrxiv/10.1101/2021.04.29.21256344">https://api.biorxiv.org/pubs/medrxiv/10.1101/2021.04.29.21256344</a> will output 	
+publication metadata for the biorxiv paper with DOI 10.1101/2021.04.29.21256344. Conversely,
+<a href="https://api.biorxiv.org/pubs/medrxiv/10.1371/journal.pone.0256482">https://api.biorxiv.org/pubs/medrxiv/10.1371/journal.pone.0256482</a> will output 	
+publication metadata for the biorxiv paper with published DOI 10.1371/journal.pone.0256482.
+</p>
+<p>
+The 'messages' array in the output provides information about what is being displayed, including
+cursor value and count of items for the requested interval.
+</p>
+<p>
+<!-- The default output format is JSON and CSV download is also available, eg <i>https://api.biorxiv.org/pub/medrxiv/2019-08-21/2019-08-28/3/csv</i>.
+-->
+</p>
+<p>The following metadata elements are returned:</p>
+<p>
+<ul>
+<li>biorxiv_doi
+<li>published_doi
+<li>published_journal
+<li>preprint_platform
+<li>preprint_title
+<li>preprint_authors
+<li>preprint_category
+<li>preprint_date
+<li>published_date
+<li>preprint_abstract
+<li>preprint_author_corresponding
+<li>preprint_author_corresponding_institution
+</ul>
+</p>
+<h2>Published article detail (bioRxiv only)</h2>
+
+<p>
+The format of the endpoint is <i>https://api.biorxiv.org/pub/[interval]/[cursor][format]</i>
+</p>
+<p>where 'interval' can be 1) two YYYY-MM-DD dates separted by '/' and 'cursor' is the start point which defaults to 0 if not supplied, or 2) a numeric value for the N most recent published articles, or 3) a numeric with the letter 'd' for the most recent N days of articles.
+</p>
+<p>Results are paginated with 100 articles served in a call. The 'cursor' value can be used to iterate through the result.
+</p>
+<p>For instance, <a href="https://api.biorxiv.org/pub/2017-08-21/2017-08-28/30">https://api.biorxiv.org/pub/2017-08-21/2017-08-28/30</a> will output 	
+100 articles (if that many remain) within the date range of 2018-08-21 to 2018-08-28 beginning from article 30. 
+</p>
+<p>
+The 'messages' array in the output provides information about what is being displayed, including
+cursor value and count of items for the requested interval.
+</p>
+<p>
+The default output format is JSON and CSV download is also available, eg <i>https://api.biorxiv.org/pub/2017-08-21/2017-08-28/30/csv</i>.
+
+</p>
+<p>The following metadata elements are returned:</p>
+<p>
+<ul>
+<li>biorxiv_doi
+<li>published_doi
+<li>preprint_title
+<li>preprint_category
+<li>preprint_date
+<li>published_date
+</ul>
+</p>
+<h2>Publisher article detail</h2>
+
+<p>
+This endpoint returns information about bioRxiv papers that have been published by a specific publisher.
+The format of the endpoint is <i>https://api.biorxiv.org/publisher/[publisher prefix]/[interval]/[cursor]</i>
+</p>
+<p>The publisher parameter is the publisher prefix, which is a string of the publisher prefix, eg '10.15252' (prior to any slash).
+</p>
+<p>'interval' can be 1) two YYYY-MM-DD dates separted by '/' and 'cursor' is the start point which defaults to 0 if not supplied, or 2) a numeric value for the N most recent published articles, or 3) a numeric with the letter 'd' for the most recent N days of articles.
+</p>
+<p>Results are paginated with 100 articles served in a call. The 'cursor' value can be used to iterate through the result.
+</p>
+<p>For instance, <a href="https://api.biorxiv.org/publisher/10.15252/2018-01-01/2019-01-01/0">https://api.biorxiv.org/publisher/10.15252/2018-01-01/2019-01-01/0</a> will output 	
+100 articles (if that many remain) within the date range of 2018-08-21 to 2018-08-28 beginning from article 1 for biorxiv papers published with any DOI that begins with the publisher prefix '10.15252'. 
+</p>
+<p>
+The 'messages' array in the output provides information about what is being displayed, including
+cursor value and count of items for the requested interval.
+</p>
+<p>The following metadata elements are returned:</p>
+<p>
+<ul><li>biorxiv_doi
+<li>published_doi
+<li>preprint_title
+<li>preprint_category
+<li>preprint_date
+<li>published_date
+</ul>
+</p>
+<h2>bioRxiv content metadata filtered by funder ROR ID</h2>
+<p>
+The format of the endpoint is <i>https://api.biorxiv.org/funder/[server]/[interval]/[funder ROR ID]/[cursor]/[format]</i></i>
+
+
+<p>where <a href="https://ror.org/" target=_blank>'funder ROR ID'</a> must be provided. The API accepts the 9 character unique string that concludes the ROR ID as described here:
+<a href="https://ror.readme.io/docs/identifier" target=_blank>https://ror.readme.io/docs/identifier</a>. For instance, for the the full identifier, https://ror.org/02mhbdp94, the string that this API endpoint accepts is '02mhbdp94', 
+which is the portion of the identifier following the final forward slash. A specific funder identifier can be found using the ROR search page, <a href="https://ror.org/search" target=_blank>https://ror.org/search</a>, or other resources on the ROR site.
+
+</p>
+<p>
+'Interval' can be: 1) two YYYY-MM-DD dates separted by '/' with the first no earlier than 2025-04-10 (the inception date for funder metadata in the submission system); and 'cursor' is the start point 
+which defaults to 0 if not supplied, or 2) a numeric value for the N most recent posts, or 3) a numeric with the letter 'd' for the most recent N days of posts.
+</p>
+<p>Where metadata for multiple papers is returned, results are paginated with 100 papers served in a call. The 'cursor' value can be used to iterate through the result.
+</p>
+<p>For instance, <a href="https://api.biorxiv.org/funder/biorxiv/2025-04-10/2025-07-10/00k4n6c32/45">https://api.biorxiv.org/funder/biorxiv/2025-04-10/2025-07-10/00k4n6c32/45</a> will output 	
+100 results (if that many remain) within the date range of 2025-04-10 to 2025-07-10 beginning from result 45 for bioRxiv papers with funding declaration of European Commission. 
+</p>
+<p>These date range endpoints will also accept a querystring paramater for subject category. The subject category can either be URL-encoded or can have underscore substituted for spaces in the category name. For instance,
+<a href="https://api.biorxiv.org/funder/biorxiv/2025-04-10/2025-07-10/00k4n6c32/?category=cell_biology">https://api.biorxiv.org/details/biorxiv/2025-04-10/2025-07-10/00k4n6c32/?category=cell_biology</a> will output metadata for bioRxiv Cell Biology papers with funding declaration of European Commission
+for the specified interval.</p>
+<p>
+The help documentation
+is here: <a href="https://api.biorxiv.org/funder/help">
+https://api.biorxiv.org/funder/help</a>.
+</p>
+<p>
+The 'messages' array in the output provides information about what is being displayed, including
+cursor value, count of all items and count of new papers for the requested interval.
+</p>
+<p>
+Available formats are <i>JSON</i> (json), and <i>XML</i> (OAI-PMH XML).
+</p>
+<p>The following metadata elements are returned:</p>
+<p>
+<ul><li>doi
+<li>title
+<li>authors
+<li>author_corresponding
+<li>author_corresponding_institution
+<li>date
+<li>version
+<li>type
+<li>license
+<li>category
+<li>jats xml path
+<li>abstract
+<li>funder
+<ul>
+<li>name 
+<li>id 
+<li>id-type
+<li>award
+</ul>
+<li>published
+<li>server
+</ul>
+</p>
+
+
+
+<h2>Content Summary Statistics</h2>
+
+<p>
+The format of the endpoint is <i>https://api.biorxiv.org/sum/[interval]/[format]</i>
+</p>
+<p>where 'interval' can equal 'm' (monthly) or 'y' (yearly).
+</p>
+
+<p>For instance, <a href="https://api.biorxiv.org/sum/m">https://api.biorxiv.org/sum/m</a> will output 	
+monthly new and revised paper interval and cumulative counts. 
+</p>
+<p>
+The default format is JSON. A value of 'csv' will force the output to download as
+a CSV file, eg <a href="https://api.biorxiv.org/sum/m/csv">https://api.biorxiv.org/sum/m/csv</a>
+</p>
+<p>The following metadata elements are returned:</p>
+<p>
+<ul>
+<li>month
+<li>new_papers
+<li>new_papers_cumulative
+<li>revised_papers
+<li>preprint_date
+<li>revised_papers_cumulative
+</ul>
+</p><h2>Usage Summary Statistics</h2>
+
+<p>
+The format of the endpoint is <i>https://api.biorxiv.org/usage/[interval]/[server]/[format]</i>
+</p>
+<p>where 'interval' can equal 'm' (monthly) or 'y' (yearly).
+</p>
+
+<p>For instance, <a href="https://api.biorxiv.org/usage/m/biorxiv">https://api.biorxiv.org/usage/m/biorxiv</a> will output 	
+monthly usage counts for bioRxiv abstract views, full text views and PDF downloads. <a href="https://api.biorxiv.org/usage/m/medrxiv">https://api.biorxiv.org/usage/m/medrxiv</a> will output 	
+monthly usage counts for medRxiv abstract views, full text views and PDF downloads. 
+</p>
+<p>
+The default format is JSON. A value of 'csv' will force the output to download as
+a CSV file, eg <a href="https://api.biorxiv.org/usage/m/biorxiv/csv">https://api.biorxiv.org/usage/m/biorxiv/csv</a>
+</p>
+<p>The following metadata elements are returned:</p>
+<p>
+<ul>
+<li>month
+<li>abstract_views
+<li>full_text_views
+<li>pdf_downloads
+<li>abstract_cumulative
+<li>full_text_cumulative
+<li>pdf_cumulative
+</ul>
+</p>
+<br><br><br>
+</div>
+</body>
+</html>
+
+
+

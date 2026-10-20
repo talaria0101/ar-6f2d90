@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script id="anubis_version" type="application/json">"v1.26.4"
+</script><script id="anubis_challenge" type="application/json">{"rules":{"algorithm":"fast","difficulty":2},"challenge":{"issuedAt":"2026-10-20T03:33:46.438861716+02:00","metadata":{"User-Agent":"Mozilla/5.0 (compatible; ar-6f2d90-research-bot; +https://github.com/talaria0101/ar-6f2d90)","X-Real-Ip":"2400:1a00:5b2f:821c:869e:56ff:fe03:2b71"},"id":"01a156f1-7246-7d08-9e5a-e82b2e8ac40c","method":"fast","randomData":"b5e883e3f15ee787852041335f62da2433b4f41e47b459abf739b9e93d7ba5dc5511f846c834b4023404923044edaefb6c2e7480a43e6fb8b1c527d636756e2f","policyRuleHash":"ac980f49c4d35fab","difficulty":2,"spent":false}}
+</script><script id="anubis_base_prefix" type="application/json">""
+</script><script id="anubis_public_url" type="application/json">""
+</script>
+    <title>Libris | Kollar att du inte är en bot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/.within.website/x/cmd/anubis/static/css/custom.css" />
+  </head>
+
+  <body>
+    <article>
+      <h1>Vi kollar att du inte är en bot</h1>
+
+      <figure>
+        <img src="/.within.website/x/cmd/anubis/static/img/klemming_dardel.jpg" alt="Skiss föreställandes Gustaf E. Klemming läsandes en tidning.">
+        <figcaption style="font-size: smaller;"><a href="https://collection.nationalmuseum.se/sv/collection/item/46223/">Fritz von Dardel (1817-1901), <em>Gustaf E. Klemming, överbibliotekarie. Skissbok "Några af mina samtida bekanta"</em>. Foto: Nationalmuseum.</a></figcaption>
+      </figure>
+      <p>
+        Vi gör en kort kontroll för att skydda webbplatsen mot automatiserade program och skadlig trafik. Det är en säkerhetsåtgärd, likt en captcha, för att verifiera att det är människor och inte bottar som använder webbplatsen. Kontrollen sker automatiskt och tar vanligtvis bara några sekunder. Tack för ditt tålamod.
+      </p>
+      <h2>Når du inte webbplatsen?</h2>
+      <p>
+        Om du till exempel har JavaScript inaktiverat eller använder andra verktyg i din webbläsare kan kontrollen ibland påverka åtkomsten.
+      </p>
+    </article>
+
+    <div class="centered-div"><p id="status">Loading...</p><p id="anubis-script-error" style="display:none;">Anubis could not load its JavaScript. The server may be overloaded. Please reload the page to try again.</p><script id="anubis-main" defer type="module" src="/.within.website/x/cmd/anubis/static/js/main.mjs?cacheBuster=v1.26.4"></script><script>/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this page.
+
+Copyright (c) 2026 Xe Iaso <xe.iaso@techaro.lol>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this page.
+
+## Rationale
+
+This script catches `main.mjs` failing to load and re-injects it with
+jittered exponential backoff.
+
+Without this any failures loading `main.mjs` leaves the challenge page
+sitting on the "Loading..." message forever with no error messaging
+outside of the browser console, which is unavailable on mobile browsers.
+
+Disable loading this script at your peril. You have been warned.
+*/
+(()=>{var f=(e,t=750,n=1e4)=>Math.random()*Math.min(n,t*Math.pow(e,2));var d=(e,t={},n=[])=>{let s=typeof e=="function"?e(t):Object.assign(document.createElement(e),t);return Array.isArray(n)||(n=[n]),s.append(...n),s};var i=e=>document.getElementById(e);var _=e=>e.map(i);(()=>{let e=i("anubis-main");if(!e){console.debug("can't find anubis main.mjs element via ID `anubis-main`, bailing");return}let t=e.getAttribute("src");if(!t){console.debug("can't find src attribute of script element `anubis-main`, bailing");return}let n=t.indexOf("?")===-1?"?":"&",s=4,E=750,A=1e4,c=1e4,a=0,l=0,u=()=>window.__anubisBooted===!0,p=()=>{let r=_(["anubis-script-error","status","progress"]);if(r.filter(D=>D==null).length!==0){console.debug("missing one of the following elements: anubis-script-error, status, progress. cannot proceed, bailing.");return}let[o,M,T]=r;o.style.display="block",M.style.display="none",T.style.display="none"},m=r=>()=>{if(u()||r!==l)return;if(l++,a++,a>s){p();return}let o=f(a,E,A);setTimeout(y,o)},y=()=>{if(u())return;let r=m(l),o=d("script",{async:!0,type:"module",src:t+n+"anubisRetry="+a,onerror:r});document.head.appendChild(o),setTimeout(r,c)},b=m(0);e.onerror=b,setTimeout(b,c)})();})();
+</script><div id="progress" role="progressbar" aria-labelledby="status"><div class="bar-inner"></div></div><div id="testarea"></div></div>
+
+    <article>
+      <p style="font-size: smaller;">Skyddas av <a href="https://anubis.techaro.lol/docs/admin/botstopper/">BotStopper</a>.</p>
+    </article>
+
+  </body>
+
+</html>

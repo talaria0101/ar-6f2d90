@@ -1,0 +1,3546 @@
+[
+ {
+  "service": "OpenAlex",
+  "ok": false,
+  "url": "https://openalex.org/llms.txt",
+  "code": "403",
+  "bytes": 5735,
+  "reason": "http-403",
+  "path": "evidence/docs/001_OpenAlex.llms.body",
+  "sha256": "654cd2af368fe0ef310f2f86992cb07e9bcbc634757b6e36b170b096d0fd5660",
+  "attempts": [
+   {
+    "host": "openalex.org",
+    "url": "https://openalex.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://openalex.org/llms.txt",
+    "path": "evidence/docs/001_OpenAlex.llms.body",
+    "bytes": 5735,
+    "sha256": "654cd2af368fe0ef310f2f86992cb07e9bcbc634757b6e36b170b096d0fd5660"
+   },
+   {
+    "host": "docs.openalex.org",
+    "url": "https://docs.openalex.org/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "served-by-other-host:help.openalex.org",
+    "final_url": "https://help.openalex.org/llms.txt",
+    "path": "evidence/docs/001_OpenAlex.llms_docs.body",
+    "bytes": 34907,
+    "sha256": "7167ae5565c7969cf22708f8f0c84aaf132bc9b4404f25bee4d4be37fbfb3fb9"
+   }
+  ]
+ },
+ {
+  "service": "Crossref",
+  "ok": false,
+  "url": "https://www.crossref.org/llms.txt",
+  "code": "404",
+  "bytes": 286,
+  "reason": "http-404",
+  "path": "evidence/docs/002_Crossref.llms.body",
+  "sha256": "1c1a5adcea873e8db2b191f1642b401fbfe0eae2b6baa26ba0fb9a49db3fd880",
+  "attempts": [
+   {
+    "host": "www.crossref.org",
+    "url": "https://www.crossref.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.crossref.org/llms.txt",
+    "path": "evidence/docs/002_Crossref.llms.body",
+    "bytes": 286,
+    "sha256": "1c1a5adcea873e8db2b191f1642b401fbfe0eae2b6baa26ba0fb9a49db3fd880"
+   }
+  ]
+ },
+ {
+  "service": "DataCite DOIs",
+  "ok": true,
+  "url": "https://support.datacite.org/llms.txt",
+  "code": "200",
+  "bytes": 37922,
+  "reason": "markdown-index",
+  "path": "evidence/docs/003_DataCite_DOIs.llms_docs.body",
+  "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2",
+  "attempts": [
+   {
+    "host": "datacite.org",
+    "url": "https://datacite.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://datacite.org/llms.txt",
+    "path": "evidence/docs/003_DataCite_DOIs.llms.body",
+    "bytes": 75193,
+    "sha256": "ac4f780358ba4326a07c3a9bb83dff5a70cbb95a22be0f4c9385efe182cd722f"
+   },
+   {
+    "host": "support.datacite.org",
+    "url": "https://support.datacite.org/llms.txt",
+    "code": "200",
+    "ok": true,
+    "reason": "markdown-index",
+    "final_url": "https://support.datacite.org/llms.txt",
+    "path": "evidence/docs/003_DataCite_DOIs.llms_docs.body",
+    "bytes": 37922,
+    "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2"
+   }
+  ]
+ },
+ {
+  "service": "DataCite GraphQL",
+  "ok": true,
+  "url": "https://support.datacite.org/llms.txt",
+  "code": "200",
+  "bytes": 37922,
+  "reason": "markdown-index",
+  "path": "evidence/docs/004_DataCite_GraphQL.llms_docs.body",
+  "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2",
+  "attempts": [
+   {
+    "host": "datacite.org",
+    "url": "https://datacite.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://datacite.org/llms.txt",
+    "path": "evidence/docs/004_DataCite_GraphQL.llms.body",
+    "bytes": 75193,
+    "sha256": "ac4f780358ba4326a07c3a9bb83dff5a70cbb95a22be0f4c9385efe182cd722f"
+   },
+   {
+    "host": "support.datacite.org",
+    "url": "https://support.datacite.org/llms.txt",
+    "code": "200",
+    "ok": true,
+    "reason": "markdown-index",
+    "final_url": "https://support.datacite.org/llms.txt",
+    "path": "evidence/docs/004_DataCite_GraphQL.llms_docs.body",
+    "bytes": 37922,
+    "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2"
+   }
+  ]
+ },
+ {
+  "service": "OpenAIRE",
+  "ok": false,
+  "url": "https://graph.openaire.eu/llms.txt",
+  "code": "404",
+  "bytes": 3902,
+  "reason": "http-404",
+  "path": "evidence/docs/005_OpenAIRE.llms.body",
+  "sha256": "b1383d9e5c0a931221e595df3144e40b74ce1d7a6244e2e318a5f2fa183883b6",
+  "attempts": [
+   {
+    "host": "graph.openaire.eu",
+    "url": "https://graph.openaire.eu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://graph.openaire.eu/llms.txt",
+    "path": "evidence/docs/005_OpenAIRE.llms.body",
+    "bytes": 3902,
+    "sha256": "b1383d9e5c0a931221e595df3144e40b74ce1d7a6244e2e318a5f2fa183883b6"
+   }
+  ]
+ },
+ {
+  "service": "CORE",
+  "ok": false,
+  "url": "https://core.ac.uk/llms.txt",
+  "code": "404",
+  "bytes": 54710,
+  "reason": "http-404",
+  "path": "evidence/docs/006_CORE.llms.body",
+  "sha256": "9014a6289873cbac7d6bdd58718739ef9db64e31f542e53bc1330eb2d1219c38",
+  "attempts": [
+   {
+    "host": "core.ac.uk",
+    "url": "https://core.ac.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://core.ac.uk/llms.txt",
+    "path": "evidence/docs/006_CORE.llms.body",
+    "bytes": 54710,
+    "sha256": "9014a6289873cbac7d6bdd58718739ef9db64e31f542e53bc1330eb2d1219c38"
+   },
+   {
+    "host": "api.core.ac.uk",
+    "url": "https://api.core.ac.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.core.ac.uk/llms.txt",
+    "path": "evidence/docs/006_CORE.llms_docs.body",
+    "bytes": 83,
+    "sha256": "dbbcd7df9284912ce38dba1fb189a8aea7aadfad26dd20161d0bcdbf942e8917"
+   }
+  ]
+ },
+ {
+  "service": "Semantic Scholar",
+  "ok": false,
+  "url": "https://www.semanticscholar.org/llms.txt",
+  "code": "404",
+  "bytes": 97358,
+  "reason": "http-404",
+  "path": "evidence/docs/007_Semantic_Scholar.llms.body",
+  "sha256": "5f5d920bbcc228ad1872654d344137c1b5e8705895014c051bd0975f93bd2567",
+  "attempts": [
+   {
+    "host": "www.semanticscholar.org",
+    "url": "https://www.semanticscholar.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.semanticscholar.org/llms.txt",
+    "path": "evidence/docs/007_Semantic_Scholar.llms.body",
+    "bytes": 97358,
+    "sha256": "5f5d920bbcc228ad1872654d344137c1b5e8705895014c051bd0975f93bd2567"
+   },
+   {
+    "host": "api.semanticscholar.org",
+    "url": "https://api.semanticscholar.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.semanticscholar.org/llms.txt",
+    "path": "evidence/docs/007_Semantic_Scholar.llms_docs.body",
+    "bytes": 22,
+    "sha256": "31f1da27f39e9c1952a0109580973ac05138ff366c21bf961b6bea58191bf786"
+   }
+  ]
+ },
+ {
+  "service": "Europe PMC",
+  "ok": false,
+  "url": "https://europepmc.org/llms.txt",
+  "code": "403",
+  "bytes": 5587,
+  "reason": "http-403",
+  "path": "evidence/docs/008_Europe_PMC.llms.body",
+  "sha256": "b2d779fb41f47dc72998ab2d92d39d4ec88e8da0a2c72fb1260e7e542a5a57d0",
+  "attempts": [
+   {
+    "host": "europepmc.org",
+    "url": "https://europepmc.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://europepmc.org/llms.txt",
+    "path": "evidence/docs/008_Europe_PMC.llms.body",
+    "bytes": 5587,
+    "sha256": "b2d779fb41f47dc72998ab2d92d39d4ec88e8da0a2c72fb1260e7e542a5a57d0"
+   }
+  ]
+ },
+ {
+  "service": "PubMed ESearch",
+  "ok": false,
+  "url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+  "code": "404",
+  "bytes": 26450,
+  "reason": "http-404",
+  "path": "evidence/docs/009_PubMed_ESearch.llms.body",
+  "sha256": "82c26b30a62aba6023e8cbbee3e7add17c3c30fa69ab9420a893ead457415590",
+  "attempts": [
+   {
+    "host": "pubmed.ncbi.nlm.nih.gov",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/009_PubMed_ESearch.llms.body",
+    "bytes": 26450,
+    "sha256": "82c26b30a62aba6023e8cbbee3e7add17c3c30fa69ab9420a893ead457415590"
+   },
+   {
+    "host": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/009_PubMed_ESearch.llms_docs.body",
+    "bytes": 135070,
+    "sha256": "f61077c9a0728ebac3e2c8a9fd35fbca956b78ec178598b285bbb0bb66541f6a"
+   }
+  ]
+ },
+ {
+  "service": "PubMed Central OAI",
+  "ok": false,
+  "url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+  "code": "404",
+  "bytes": 135070,
+  "reason": "http-404",
+  "path": "evidence/docs/010_PubMed_Central_OAI.llms.body",
+  "sha256": "f61077c9a0728ebac3e2c8a9fd35fbca956b78ec178598b285bbb0bb66541f6a",
+  "attempts": [
+   {
+    "host": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/010_PubMed_Central_OAI.llms.body",
+    "bytes": 135070,
+    "sha256": "f61077c9a0728ebac3e2c8a9fd35fbca956b78ec178598b285bbb0bb66541f6a"
+   }
+  ]
+ },
+ {
+  "service": "PMC ID Converter",
+  "ok": false,
+  "url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+  "code": "404",
+  "bytes": 135070,
+  "reason": "http-404",
+  "path": "evidence/docs/011_PMC_ID_Converter.llms.body",
+  "sha256": "f61077c9a0728ebac3e2c8a9fd35fbca956b78ec178598b285bbb0bb66541f6a",
+  "attempts": [
+   {
+    "host": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/011_PMC_ID_Converter.llms.body",
+    "bytes": 135070,
+    "sha256": "f61077c9a0728ebac3e2c8a9fd35fbca956b78ec178598b285bbb0bb66541f6a"
+   }
+  ]
+ },
+ {
+  "service": "arXiv",
+  "ok": false,
+  "url": "https://arxiv.org/llms.txt",
+  "code": "404",
+  "bytes": 7221,
+  "reason": "http-404",
+  "path": "evidence/docs/012_arXiv.llms.body",
+  "sha256": "a83edd3fa5931bf94d03584090b434b7092856eb8b485eb97f2e49f51106a8fe",
+  "attempts": [
+   {
+    "host": "arxiv.org",
+    "url": "https://arxiv.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://arxiv.org/llms.txt",
+    "path": "evidence/docs/012_arXiv.llms.body",
+    "bytes": 7221,
+    "sha256": "a83edd3fa5931bf94d03584090b434b7092856eb8b485eb97f2e49f51106a8fe"
+   },
+   {
+    "host": "info.arxiv.org",
+    "url": "https://info.arxiv.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://info.arxiv.org/llms.txt",
+    "path": "evidence/docs/012_arXiv.llms_docs.body",
+    "bytes": 76450,
+    "sha256": "f4ca244abdd379d6a47e5e443c033312b850db388d6efcce589c6a212ed98aaf"
+   }
+  ]
+ },
+ {
+  "service": "bioRxiv",
+  "ok": false,
+  "url": "https://www.biorxiv.org/llms.txt",
+  "code": "404",
+  "bytes": 22421,
+  "reason": "http-404",
+  "path": "evidence/docs/013_bioRxiv.llms.body",
+  "sha256": "2c88b9fd5f11223cc8448268e3b09c2f0112de74284e5f71358194d20dfece6a",
+  "attempts": [
+   {
+    "host": "www.biorxiv.org",
+    "url": "https://www.biorxiv.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.biorxiv.org/llms.txt",
+    "path": "evidence/docs/013_bioRxiv.llms.body",
+    "bytes": 22421,
+    "sha256": "2c88b9fd5f11223cc8448268e3b09c2f0112de74284e5f71358194d20dfece6a"
+   },
+   {
+    "host": "api.biorxiv.org",
+    "url": "https://api.biorxiv.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.biorxiv.org/llms.txt",
+    "path": "evidence/docs/013_bioRxiv.llms_docs.body",
+    "bytes": 196,
+    "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+   }
+  ]
+ },
+ {
+  "service": "medRxiv",
+  "ok": false,
+  "url": "https://www.medrxiv.org/llms.txt",
+  "code": "404",
+  "bytes": 22518,
+  "reason": "http-404",
+  "path": "evidence/docs/014_medRxiv.llms.body",
+  "sha256": "c5f6d61ef25800632e29bba0b048c9f9276cbf5431c8842ae1f41b2ed3adb7bf",
+  "attempts": [
+   {
+    "host": "www.medrxiv.org",
+    "url": "https://www.medrxiv.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.medrxiv.org/llms.txt",
+    "path": "evidence/docs/014_medRxiv.llms.body",
+    "bytes": 22518,
+    "sha256": "c5f6d61ef25800632e29bba0b048c9f9276cbf5431c8842ae1f41b2ed3adb7bf"
+   },
+   {
+    "host": "api.biorxiv.org",
+    "url": "https://api.biorxiv.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.biorxiv.org/llms.txt",
+    "path": "evidence/docs/014_medRxiv.llms_docs.body",
+    "bytes": 196,
+    "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+   }
+  ]
+ },
+ {
+  "service": "Unpaywall",
+  "ok": false,
+  "url": "https://unpaywall.org/llms.txt",
+  "code": "200",
+  "bytes": 1421,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/015_Unpaywall.llms.body",
+  "sha256": "0445953f2b1255c157c7fb0aa91d60f75298895086bded982c89e46d6c5d5b01",
+  "attempts": [
+   {
+    "host": "unpaywall.org",
+    "url": "https://unpaywall.org/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://unpaywall.org/llms.txt",
+    "path": "evidence/docs/015_Unpaywall.llms.body",
+    "bytes": 1421,
+    "sha256": "0445953f2b1255c157c7fb0aa91d60f75298895086bded982c89e46d6c5d5b01"
+   }
+  ]
+ },
+ {
+  "service": "ROR",
+  "ok": false,
+  "url": "https://ror.org/llms.txt",
+  "code": "429",
+  "bytes": 34219,
+  "reason": "http-429",
+  "path": "evidence/docs/016_ROR.llms.body",
+  "sha256": "85d600528f95ed1714b9b7f4db5dcc4d5c9532e72a4a632a1be1157260f957f0",
+  "attempts": [
+   {
+    "host": "ror.org",
+    "url": "https://ror.org/llms.txt",
+    "code": "429",
+    "ok": false,
+    "reason": "http-429",
+    "final_url": "https://ror.org/llms.txt",
+    "path": "evidence/docs/016_ROR.llms.body",
+    "bytes": 34219,
+    "sha256": "85d600528f95ed1714b9b7f4db5dcc4d5c9532e72a4a632a1be1157260f957f0"
+   },
+   {
+    "host": "ror.readme.io",
+    "url": "https://ror.readme.io/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "platform-llms:ror.readme.io",
+    "final_url": "https://ror.readme.io/llms.txt",
+    "path": "evidence/docs/016_ROR.llms_docs.body",
+    "bytes": 4312,
+    "sha256": "c0f21ec0a169af9478e39ba70ae17d4f81004c8f803aa5b332ed45dd53dbfa98"
+   }
+  ]
+ },
+ {
+  "service": "OpenCitations References",
+  "ok": false,
+  "url": "https://opencitations.net/llms.txt",
+  "code": "404",
+  "bytes": 99190,
+  "reason": "http-404",
+  "path": "evidence/docs/017_OpenCitations_References.llms.body",
+  "sha256": "e65a22cbb2d2f434926cdcf386be08fdadf926064dfcec3792cdbdbb81d34831",
+  "attempts": [
+   {
+    "host": "opencitations.net",
+    "url": "https://opencitations.net/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://opencitations.net/llms.txt",
+    "path": "evidence/docs/017_OpenCitations_References.llms.body",
+    "bytes": 99190,
+    "sha256": "e65a22cbb2d2f434926cdcf386be08fdadf926064dfcec3792cdbdbb81d34831"
+   }
+  ]
+ },
+ {
+  "service": "OpenCitations Meta",
+  "ok": false,
+  "url": "https://opencitations.net/llms.txt",
+  "code": "404",
+  "bytes": 99185,
+  "reason": "http-404",
+  "path": "evidence/docs/018_OpenCitations_Meta.llms.body",
+  "sha256": "e7be2a3907c29db90372ada1b057531236442e853aa61ae13f4373740fe80e25",
+  "attempts": [
+   {
+    "host": "opencitations.net",
+    "url": "https://opencitations.net/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://opencitations.net/llms.txt",
+    "path": "evidence/docs/018_OpenCitations_Meta.llms.body",
+    "bytes": 99185,
+    "sha256": "e7be2a3907c29db90372ada1b057531236442e853aa61ae13f4373740fe80e25"
+   }
+  ]
+ },
+ {
+  "service": "HAL",
+  "ok": false,
+  "url": "https://hal.science/llms.txt",
+  "code": "200",
+  "bytes": 12585,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/019_HAL.llms.body",
+  "sha256": "39c6c25d1afed7683ddd9c474f8de03ab89f9870dbae7d9a3c276f78c9ec4ac9",
+  "attempts": [
+   {
+    "host": "hal.science",
+    "url": "https://hal.science/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://hal.science/llms.txt",
+    "path": "evidence/docs/019_HAL.llms.body",
+    "bytes": 12585,
+    "sha256": "39c6c25d1afed7683ddd9c474f8de03ab89f9870dbae7d9a3c276f78c9ec4ac9"
+   },
+   {
+    "host": "api.archives-ouvertes.fr",
+    "url": "https://api.archives-ouvertes.fr/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://api.archives-ouvertes.fr/docs/",
+    "path": "evidence/docs/019_HAL.llms_docs.body",
+    "bytes": 10068,
+    "sha256": "54df623430b92183c68cdc7c737c5f6193e6bcd2593d6ab26f1907e84b7112ba"
+   }
+  ]
+ },
+ {
+  "service": "ORCID",
+  "ok": false,
+  "url": "https://orcid.org/llms.txt",
+  "code": "200",
+  "bytes": 67250,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/020_ORCID.llms.body",
+  "sha256": "3ef612ddad63990b0b929049d893a522ea29302a2cbd59cf4d0407d6607a25e9",
+  "attempts": [
+   {
+    "host": "orcid.org",
+    "url": "https://orcid.org/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://orcid.org/404",
+    "path": "evidence/docs/020_ORCID.llms.body",
+    "bytes": 67250,
+    "sha256": "3ef612ddad63990b0b929049d893a522ea29302a2cbd59cf4d0407d6607a25e9"
+   },
+   {
+    "host": "info.orcid.org",
+    "url": "https://info.orcid.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://info.orcid.org/llms.txt",
+    "path": "evidence/docs/020_ORCID.llms_docs.body",
+    "bytes": 60,
+    "sha256": "d8531a1ac331414d357ac014ac8813b93c2c0ea1756542ad8bacb6d352ed4891"
+   }
+  ]
+ },
+ {
+  "service": "J-STAGE",
+  "ok": false,
+  "url": "https://www.jstage.jst.go.jp/llms.txt",
+  "code": "404",
+  "bytes": 19905,
+  "reason": "http-404",
+  "path": "evidence/docs/021_J-STAGE.llms.body",
+  "sha256": "12702ab0912ba5247bf56920ef99c336fc698ee06853bf30654acbc6dc2e8ed5",
+  "attempts": [
+   {
+    "host": "www.jstage.jst.go.jp",
+    "url": "https://www.jstage.jst.go.jp/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.jstage.jst.go.jp/llms.txt",
+    "path": "evidence/docs/021_J-STAGE.llms.body",
+    "bytes": 19905,
+    "sha256": "12702ab0912ba5247bf56920ef99c336fc698ee06853bf30654acbc6dc2e8ed5"
+   }
+  ]
+ },
+ {
+  "service": "NASA NTRS",
+  "ok": false,
+  "url": "https://ntrs.nasa.gov/llms.txt",
+  "code": "200",
+  "bytes": 46705,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/022_NASA_NTRS.llms.body",
+  "sha256": "45d6262b4f4179cba87150aae1d5c2352caec148dcad6ee825c5462391f98ee5",
+  "attempts": [
+   {
+    "host": "ntrs.nasa.gov",
+    "url": "https://ntrs.nasa.gov/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://ntrs.nasa.gov/llms.txt",
+    "path": "evidence/docs/022_NASA_NTRS.llms.body",
+    "bytes": 46705,
+    "sha256": "45d6262b4f4179cba87150aae1d5c2352caec148dcad6ee825c5462391f98ee5"
+   }
+  ]
+ },
+ {
+  "service": "OSTI.GOV",
+  "ok": false,
+  "url": "https://www.osti.gov/llms.txt",
+  "code": "404",
+  "bytes": 264830,
+  "reason": "http-404",
+  "path": "evidence/docs/023_OSTI.GOV.llms.body",
+  "sha256": "94d69970a57ee0e8c090bb5b80bf7f882f8b71fc588725fbea4600a3e72a0b4f",
+  "attempts": [
+   {
+    "host": "www.osti.gov",
+    "url": "https://www.osti.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.osti.gov/llms.txt",
+    "path": "evidence/docs/023_OSTI.GOV.llms.body",
+    "bytes": 264830,
+    "sha256": "94d69970a57ee0e8c090bb5b80bf7f882f8b71fc588725fbea4600a3e72a0b4f"
+   }
+  ]
+ },
+ {
+  "service": "ClinicalTrials.gov",
+  "ok": false,
+  "url": "https://clinicaltrials.gov/llms.txt",
+  "code": "200",
+  "bytes": 94247,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/024_ClinicalTrials.gov.llms.body",
+  "sha256": "c8f2db34b30c0fd6a31735436288114df705be51bf54fbaf2ad98f957f1af94d",
+  "attempts": [
+   {
+    "host": "clinicaltrials.gov",
+    "url": "https://clinicaltrials.gov/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://clinicaltrials.gov/llms.txt",
+    "path": "evidence/docs/024_ClinicalTrials.gov.llms.body",
+    "bytes": 94247,
+    "sha256": "c8f2db34b30c0fd6a31735436288114df705be51bf54fbaf2ad98f957f1af94d"
+   }
+  ]
+ },
+ {
+  "service": "theses.fr",
+  "ok": false,
+  "url": "https://theses.fr/llms.txt",
+  "code": "404",
+  "bytes": 681836,
+  "reason": "http-404",
+  "path": "evidence/docs/025_theses.fr.llms.body",
+  "sha256": "9a05ab9b74cb3e1b4ec7b42ecaf1d2fd878c7c57e976807d5c9050017cae5a33",
+  "attempts": [
+   {
+    "host": "theses.fr",
+    "url": "https://theses.fr/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://theses.fr/llms.txt",
+    "path": "evidence/docs/025_theses.fr.llms.body",
+    "bytes": 681836,
+    "sha256": "9a05ab9b74cb3e1b4ec7b42ecaf1d2fd878c7c57e976807d5c9050017cae5a33"
+   }
+  ]
+ },
+ {
+  "service": "EconStor",
+  "ok": false,
+  "url": "https://www.econstor.eu/llms.txt",
+  "code": "200",
+  "bytes": 7952,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/026_EconStor.llms.body",
+  "sha256": "41b5738363bca1430257ce7797adbab04c10a95f36e09e909cd056010126603f",
+  "attempts": [
+   {
+    "host": "www.econstor.eu",
+    "url": "https://www.econstor.eu/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://www.econstor.eu/llms.txt",
+    "path": "evidence/docs/026_EconStor.llms.body",
+    "bytes": 7952,
+    "sha256": "41b5738363bca1430257ce7797adbab04c10a95f36e09e909cd056010126603f"
+   }
+  ]
+ },
+ {
+  "service": "EBI Search",
+  "ok": false,
+  "url": "https://www.ebi.ac.uk/llms.txt",
+  "code": "404",
+  "bytes": 20544,
+  "reason": "http-404",
+  "path": "evidence/docs/027_EBI_Search.llms.body",
+  "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6",
+  "attempts": [
+   {
+    "host": "www.ebi.ac.uk",
+    "url": "https://www.ebi.ac.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ebi.ac.uk/llms.txt",
+    "path": "evidence/docs/027_EBI_Search.llms.body",
+    "bytes": 20544,
+    "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6"
+   }
+  ]
+ },
+ {
+  "service": "OSF",
+  "ok": false,
+  "url": "https://osf.io/llms.txt",
+  "code": "200",
+  "bytes": 4207,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/028_OSF.llms.body",
+  "sha256": "185604818b2f43bab5ffb6a9b93f481d2b739fc22853611c62d4f65322665dd3",
+  "attempts": [
+   {
+    "host": "osf.io",
+    "url": "https://osf.io/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://osf.io/llms.txt",
+    "path": "evidence/docs/028_OSF.llms.body",
+    "bytes": 4207,
+    "sha256": "185604818b2f43bab5ffb6a9b93f481d2b739fc22853611c62d4f65322665dd3"
+   },
+   {
+    "host": "developer.osf.io",
+    "url": "https://developer.osf.io/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://developer.osf.io/llms.txt",
+    "path": "evidence/docs/028_OSF.llms_docs.body",
+    "bytes": 263,
+    "sha256": "e13fc03d441161cbd4d27a97bbe9f4b59832c072876f0308e3ca760a71a15978"
+   }
+  ]
+ },
+ {
+  "service": "PsyArXiv",
+  "ok": false,
+  "url": "https://psyarxiv.com/llms.txt",
+  "code": "200",
+  "bytes": 4207,
+  "reason": "served-by-other-host:osf.io",
+  "path": "evidence/docs/029_PsyArXiv.llms.body",
+  "sha256": "185604818b2f43bab5ffb6a9b93f481d2b739fc22853611c62d4f65322665dd3",
+  "attempts": [
+   {
+    "host": "psyarxiv.com",
+    "url": "https://psyarxiv.com/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "served-by-other-host:osf.io",
+    "final_url": "https://osf.io/preprints/psyarxiv/llms.txt",
+    "path": "evidence/docs/029_PsyArXiv.llms.body",
+    "bytes": 4207,
+    "sha256": "185604818b2f43bab5ffb6a9b93f481d2b739fc22853611c62d4f65322665dd3"
+   },
+   {
+    "host": "developer.osf.io",
+    "url": "https://developer.osf.io/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://developer.osf.io/llms.txt",
+    "path": "evidence/docs/029_PsyArXiv.llms_docs.body",
+    "bytes": 263,
+    "sha256": "900b475fabc1677492be0d3da9586c34270253c3701cf3e318f948051bdca3b1"
+   }
+  ]
+ },
+ {
+  "service": "GBIF",
+  "ok": false,
+  "url": "https://www.gbif.org/llms.txt",
+  "code": "403",
+  "bytes": 5479,
+  "reason": "http-403",
+  "path": "evidence/docs/030_GBIF.llms.body",
+  "sha256": "85f0967f43a542116b3a22131c7012e017e54a36aad466bbce3e47a433c998a0",
+  "attempts": [
+   {
+    "host": "www.gbif.org",
+    "url": "https://www.gbif.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.gbif.org/llms.txt",
+    "path": "evidence/docs/030_GBIF.llms.body",
+    "bytes": 5479,
+    "sha256": "85f0967f43a542116b3a22131c7012e017e54a36aad466bbce3e47a433c998a0"
+   },
+   {
+    "host": "techdocs.gbif.org",
+    "url": "https://techdocs.gbif.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://techdocs.gbif.org/llms.txt",
+    "path": "evidence/docs/030_GBIF.llms_docs.body",
+    "bytes": 6947,
+    "sha256": "b0cc5ba901d19d46ac244c398d92830e3e3818ef0c569e100628648afd99dfe9"
+   }
+  ]
+ },
+ {
+  "service": "OBIS",
+  "ok": false,
+  "url": "https://obis.org/llms.txt",
+  "code": "404",
+  "bytes": 153,
+  "reason": "http-404",
+  "path": "evidence/docs/031_OBIS.llms.body",
+  "sha256": "cf9be91f18e11cf4bf9caf1181753266a2b7f159327bb3d0081bcc02260d27c2",
+  "attempts": [
+   {
+    "host": "obis.org",
+    "url": "https://obis.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://obis.org/llms.txt",
+    "path": "evidence/docs/031_OBIS.llms.body",
+    "bytes": 153,
+    "sha256": "cf9be91f18e11cf4bf9caf1181753266a2b7f159327bb3d0081bcc02260d27c2"
+   },
+   {
+    "host": "api.obis.org",
+    "url": "https://api.obis.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.obis.org/llms.txt",
+    "path": "evidence/docs/031_OBIS.llms_docs.body",
+    "bytes": 147,
+    "sha256": "5559b86c20ec010df5a8dd358786dd70c1f9789290de7650b718abd21564eff9"
+   }
+  ]
+ },
+ {
+  "service": "iDigBio",
+  "ok": false,
+  "url": "https://www.idigbio.org/llms.txt",
+  "code": "404",
+  "bytes": 1157,
+  "reason": "http-404",
+  "path": "evidence/docs/032_iDigBio.llms.body",
+  "sha256": "aac75e16f7c7aa92e5c3386a02b94284af585dca061411f940de5741f3405885",
+  "attempts": [
+   {
+    "host": "www.idigbio.org",
+    "url": "https://www.idigbio.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.idigbio.org/llms.txt",
+    "path": "evidence/docs/032_iDigBio.llms.body",
+    "bytes": 1157,
+    "sha256": "aac75e16f7c7aa92e5c3386a02b94284af585dca061411f940de5741f3405885"
+   },
+   {
+    "host": "github.com",
+    "url": "https://github.com/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "platform-llms:github.com",
+    "final_url": "https://github.com/llms.txt",
+    "path": "evidence/docs/032_iDigBio.llms_docs.body",
+    "bytes": 28658,
+    "sha256": "71d217ec3186152052ca1050932c0e6e48e766d3bc5a1359b50aa140436d297f"
+   }
+  ]
+ },
+ {
+  "service": "Encyclopedia of Life",
+  "ok": false,
+  "url": "https://eol.org/llms.txt",
+  "code": "403",
+  "bytes": 5581,
+  "reason": "http-403",
+  "path": "evidence/docs/033_Encyclopedia_of_Life.llms.body",
+  "sha256": "cb7856aece9d634d09ca74516aa6ac678844328f11d3a9f73683cd8a6d25d99d",
+  "attempts": [
+   {
+    "host": "eol.org",
+    "url": "https://eol.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://eol.org/llms.txt",
+    "path": "evidence/docs/033_Encyclopedia_of_Life.llms.body",
+    "bytes": 5581,
+    "sha256": "cb7856aece9d634d09ca74516aa6ac678844328f11d3a9f73683cd8a6d25d99d"
+   }
+  ]
+ },
+ {
+  "service": "UniProt",
+  "ok": false,
+  "url": "https://www.uniprot.org/llms.txt",
+  "code": "200",
+  "bytes": 6577,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/034_UniProt.llms.body",
+  "sha256": "4d5ee983e6ac6aa40e64e3809f9717d9bf09567a7d0d91b14ef1bc775ab31794",
+  "attempts": [
+   {
+    "host": "www.uniprot.org",
+    "url": "https://www.uniprot.org/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://www.uniprot.org/llms.txt",
+    "path": "evidence/docs/034_UniProt.llms.body",
+    "bytes": 6577,
+    "sha256": "4d5ee983e6ac6aa40e64e3809f9717d9bf09567a7d0d91b14ef1bc775ab31794"
+   }
+  ]
+ },
+ {
+  "service": "RCSB PDB",
+  "ok": false,
+  "url": "https://www.rcsb.org/llms.txt",
+  "code": "404",
+  "bytes": 40706,
+  "reason": "http-404",
+  "path": "evidence/docs/035_RCSB_PDB.llms.body",
+  "sha256": "c18a0c68cfe56951c9827a3e90727631aa280e92b097ae7f41e6685c6f9d93a1",
+  "attempts": [
+   {
+    "host": "www.rcsb.org",
+    "url": "https://www.rcsb.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.rcsb.org/llms.txt",
+    "path": "evidence/docs/035_RCSB_PDB.llms.body",
+    "bytes": 40706,
+    "sha256": "c18a0c68cfe56951c9827a3e90727631aa280e92b097ae7f41e6685c6f9d93a1"
+   },
+   {
+    "host": "data.rcsb.org",
+    "url": "https://data.rcsb.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://data.rcsb.org/llms.txt",
+    "path": "evidence/docs/035_RCSB_PDB.llms_docs.body",
+    "bytes": 97,
+    "sha256": "a534cc32ea7f0dc5b2fac06e4422b9eb5af547dbff61f4468896f0c371df5d2c"
+   }
+  ]
+ },
+ {
+  "service": "AlphaFold DB",
+  "ok": false,
+  "url": "https://alphafold.ebi.ac.uk/llms.txt",
+  "code": "404",
+  "bytes": 147,
+  "reason": "http-404",
+  "path": "evidence/docs/036_AlphaFold_DB.llms.body",
+  "sha256": "5559b86c20ec010df5a8dd358786dd70c1f9789290de7650b718abd21564eff9",
+  "attempts": [
+   {
+    "host": "alphafold.ebi.ac.uk",
+    "url": "https://alphafold.ebi.ac.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://alphafold.ebi.ac.uk/llms.txt",
+    "path": "evidence/docs/036_AlphaFold_DB.llms.body",
+    "bytes": 147,
+    "sha256": "5559b86c20ec010df5a8dd358786dd70c1f9789290de7650b718abd21564eff9"
+   }
+  ]
+ },
+ {
+  "service": "Ensembl Ping",
+  "ok": false,
+  "url": "https://www.ensembl.org/llms.txt",
+  "code": "404",
+  "bytes": 1294,
+  "reason": "http-404",
+  "path": "evidence/docs/037_Ensembl_Ping.llms.body",
+  "sha256": "b396d2ccf94ab8f37a10570d1734d7bc6c3c2d0073894fae789f29fa23d18a7b",
+  "attempts": [
+   {
+    "host": "www.ensembl.org",
+    "url": "https://www.ensembl.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://jun2026.archive.ensembl.org/llms.txt",
+    "path": "evidence/docs/037_Ensembl_Ping.llms.body",
+    "bytes": 1294,
+    "sha256": "b396d2ccf94ab8f37a10570d1734d7bc6c3c2d0073894fae789f29fa23d18a7b"
+   },
+   {
+    "host": "rest.ensembl.org",
+    "url": "https://rest.ensembl.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://rest.ensembl.org/llms.txt",
+    "path": "evidence/docs/037_Ensembl_Ping.llms_docs.body",
+    "bytes": 106,
+    "sha256": "c4a0c118c0dd62845929d2ed3cf7ab53566763ed0adf1a2d82f808b25b1a45ae"
+   }
+  ]
+ },
+ {
+  "service": "InterPro",
+  "ok": false,
+  "url": "https://www.ebi.ac.uk/llms.txt",
+  "code": "404",
+  "bytes": 20544,
+  "reason": "http-404",
+  "path": "evidence/docs/038_InterPro.llms.body",
+  "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6",
+  "attempts": [
+   {
+    "host": "www.ebi.ac.uk",
+    "url": "https://www.ebi.ac.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ebi.ac.uk/llms.txt",
+    "path": "evidence/docs/038_InterPro.llms.body",
+    "bytes": 20544,
+    "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6"
+   }
+  ]
+ },
+ {
+  "service": "Reactome",
+  "ok": false,
+  "url": "https://reactome.org/llms.txt",
+  "code": "404",
+  "bytes": 49327,
+  "reason": "http-404",
+  "path": "evidence/docs/039_Reactome.llms.body",
+  "sha256": "bd5de62cafa2628fa504bb82242e4f0ca2d0ec5c06186c60a1f761cf7d0f19a0",
+  "attempts": [
+   {
+    "host": "reactome.org",
+    "url": "https://reactome.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://reactome.org/llms.txt",
+    "path": "evidence/docs/039_Reactome.llms.body",
+    "bytes": 49327,
+    "sha256": "bd5de62cafa2628fa504bb82242e4f0ca2d0ec5c06186c60a1f761cf7d0f19a0"
+   }
+  ]
+ },
+ {
+  "service": "ChEMBL",
+  "ok": false,
+  "url": "https://www.ebi.ac.uk/llms.txt",
+  "code": "404",
+  "bytes": 20544,
+  "reason": "http-404",
+  "path": "evidence/docs/040_ChEMBL.llms.body",
+  "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6",
+  "attempts": [
+   {
+    "host": "www.ebi.ac.uk",
+    "url": "https://www.ebi.ac.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ebi.ac.uk/llms.txt",
+    "path": "evidence/docs/040_ChEMBL.llms.body",
+    "bytes": 20544,
+    "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6"
+   },
+   {
+    "host": "chembl.gitbook.io",
+    "url": "https://chembl.gitbook.io/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "platform-llms:chembl.gitbook.io",
+    "final_url": "https://chembl.gitbook.io/chembl-interface-documentation/llms.txt",
+    "path": "evidence/docs/040_ChEMBL.llms_docs.body",
+    "bytes": 4044,
+    "sha256": "b5683d06e2a271b405aa804e04c530f84dbe9998408eff3a30b6d5b2d667b236"
+   }
+  ]
+ },
+ {
+  "service": "Wayback CDX",
+  "ok": false,
+  "url": "https://web.archive.org/llms.txt",
+  "code": "404",
+  "bytes": 4563,
+  "reason": "http-404",
+  "path": "evidence/docs/041_Wayback_CDX.llms.body",
+  "sha256": "85a362d21df2141bcb9a4cb45bad93730191619c632cf1b5fe2578f49f68a254",
+  "attempts": [
+   {
+    "host": "web.archive.org",
+    "url": "https://web.archive.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://web.archive.org/web/2/http://llms.txt",
+    "path": "evidence/docs/041_Wayback_CDX.llms.body",
+    "bytes": 4563,
+    "sha256": "85a362d21df2141bcb9a4cb45bad93730191619c632cf1b5fe2578f49f68a254"
+   },
+   {
+    "host": "github.com",
+    "url": "https://github.com/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "platform-llms:github.com",
+    "final_url": "https://github.com/llms.txt",
+    "path": "evidence/docs/041_Wayback_CDX.llms_docs.body",
+    "bytes": 28658,
+    "sha256": "71d217ec3186152052ca1050932c0e6e48e766d3bc5a1359b50aa140436d297f"
+   }
+  ]
+ },
+ {
+  "service": "Wayback Availability",
+  "ok": false,
+  "url": "https://web.archive.org/llms.txt",
+  "code": "404",
+  "bytes": 4563,
+  "reason": "http-404",
+  "path": "evidence/docs/042_Wayback_Availability.llms.body",
+  "sha256": "85a362d21df2141bcb9a4cb45bad93730191619c632cf1b5fe2578f49f68a254",
+  "attempts": [
+   {
+    "host": "web.archive.org",
+    "url": "https://web.archive.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://web.archive.org/web/2/http://llms.txt",
+    "path": "evidence/docs/042_Wayback_Availability.llms.body",
+    "bytes": 4563,
+    "sha256": "85a362d21df2141bcb9a4cb45bad93730191619c632cf1b5fe2578f49f68a254"
+   },
+   {
+    "host": "archive.org",
+    "url": "https://archive.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://archive.org/llms.txt",
+    "path": "evidence/docs/042_Wayback_Availability.llms_docs.body",
+    "bytes": 4963,
+    "sha256": "91ee43d65d9cfb290e66bfaab0ca535c4015a3408bc77b6569bdb835ab4ae44c"
+   }
+  ]
+ },
+ {
+  "service": "Wayback TimeMap",
+  "ok": false,
+  "url": "https://web.archive.org/llms.txt",
+  "code": "404",
+  "bytes": 4563,
+  "reason": "http-404",
+  "path": "evidence/docs/043_Wayback_TimeMap.llms.body",
+  "sha256": "85a362d21df2141bcb9a4cb45bad93730191619c632cf1b5fe2578f49f68a254",
+  "attempts": [
+   {
+    "host": "web.archive.org",
+    "url": "https://web.archive.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://web.archive.org/web/2/http://llms.txt",
+    "path": "evidence/docs/043_Wayback_TimeMap.llms.body",
+    "bytes": 4563,
+    "sha256": "85a362d21df2141bcb9a4cb45bad93730191619c632cf1b5fe2578f49f68a254"
+   },
+   {
+    "host": "github.com",
+    "url": "https://github.com/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "platform-llms:github.com",
+    "final_url": "https://github.com/llms.txt",
+    "path": "evidence/docs/043_Wayback_TimeMap.llms_docs.body",
+    "bytes": 28658,
+    "sha256": "71d217ec3186152052ca1050932c0e6e48e766d3bc5a1359b50aa140436d297f"
+   }
+  ]
+ },
+ {
+  "service": "Internet Archive Advanced Search",
+  "ok": false,
+  "url": "https://archive.org/llms.txt",
+  "code": "404",
+  "bytes": 4963,
+  "reason": "http-404",
+  "path": "evidence/docs/044_Internet_Archive_Advanced_Search.llms.body",
+  "sha256": "91ee43d65d9cfb290e66bfaab0ca535c4015a3408bc77b6569bdb835ab4ae44c",
+  "attempts": [
+   {
+    "host": "archive.org",
+    "url": "https://archive.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://archive.org/llms.txt",
+    "path": "evidence/docs/044_Internet_Archive_Advanced_Search.llms.body",
+    "bytes": 4963,
+    "sha256": "91ee43d65d9cfb290e66bfaab0ca535c4015a3408bc77b6569bdb835ab4ae44c"
+   }
+  ]
+ },
+ {
+  "service": "Internet Archive Metadata",
+  "ok": false,
+  "url": "https://archive.org/llms.txt",
+  "code": "404",
+  "bytes": 4963,
+  "reason": "http-404",
+  "path": "evidence/docs/045_Internet_Archive_Metadata.llms.body",
+  "sha256": "91ee43d65d9cfb290e66bfaab0ca535c4015a3408bc77b6569bdb835ab4ae44c",
+  "attempts": [
+   {
+    "host": "archive.org",
+    "url": "https://archive.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://archive.org/llms.txt",
+    "path": "evidence/docs/045_Internet_Archive_Metadata.llms.body",
+    "bytes": 4963,
+    "sha256": "91ee43d65d9cfb290e66bfaab0ca535c4015a3408bc77b6569bdb835ab4ae44c"
+   }
+  ]
+ },
+ {
+  "service": "Arquivo.pt",
+  "ok": false,
+  "url": "https://arquivo.pt/llms.txt",
+  "code": "404",
+  "bytes": 8687,
+  "reason": "http-404",
+  "path": "evidence/docs/046_Arquivo.pt.llms.body",
+  "sha256": "9145dc97ca260a4442c4b726b198f041af40b0027422bc0f5977cd8a2d38caa3",
+  "attempts": [
+   {
+    "host": "arquivo.pt",
+    "url": "https://arquivo.pt/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://arquivo.pt/llms.txt",
+    "path": "evidence/docs/046_Arquivo.pt.llms.body",
+    "bytes": 8687,
+    "sha256": "9145dc97ca260a4442c4b726b198f041af40b0027422bc0f5977cd8a2d38caa3"
+   }
+  ]
+ },
+ {
+  "service": "Arquivo.pt Full-text",
+  "ok": false,
+  "url": "https://arquivo.pt/llms.txt",
+  "code": "404",
+  "bytes": 8687,
+  "reason": "http-404",
+  "path": "evidence/docs/047_Arquivo.pt_Full-text.llms.body",
+  "sha256": "9145dc97ca260a4442c4b726b198f041af40b0027422bc0f5977cd8a2d38caa3",
+  "attempts": [
+   {
+    "host": "arquivo.pt",
+    "url": "https://arquivo.pt/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://arquivo.pt/llms.txt",
+    "path": "evidence/docs/047_Arquivo.pt_Full-text.llms.body",
+    "bytes": 8687,
+    "sha256": "9145dc97ca260a4442c4b726b198f041af40b0027422bc0f5977cd8a2d38caa3"
+   }
+  ]
+ },
+ {
+  "service": "Common Crawl Index",
+  "ok": false,
+  "url": "https://commoncrawl.org/llms.txt",
+  "code": "404",
+  "bytes": 4558,
+  "reason": "http-404",
+  "path": "evidence/docs/048_Common_Crawl_Index.llms.body",
+  "sha256": "bfdf76d3b503fe78c29d91b9eba0aef375b9b15addd8996262cef598812aa7b9",
+  "attempts": [
+   {
+    "host": "commoncrawl.org",
+    "url": "https://commoncrawl.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://commoncrawl.org/llms.txt",
+    "path": "evidence/docs/048_Common_Crawl_Index.llms.body",
+    "bytes": 4558,
+    "sha256": "bfdf76d3b503fe78c29d91b9eba0aef375b9b15addd8996262cef598812aa7b9"
+   }
+  ]
+ },
+ {
+  "service": "Europeana",
+  "ok": false,
+  "url": "https://www.europeana.eu/llms.txt",
+  "code": "403",
+  "bytes": 5654,
+  "reason": "http-403",
+  "path": "evidence/docs/049_Europeana.llms.body",
+  "sha256": "674495f9e5c9a9cc55072493182b29409f02bfeec36c49701eda17bf5c14eb0f",
+  "attempts": [
+   {
+    "host": "www.europeana.eu",
+    "url": "https://www.europeana.eu/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.europeana.eu/llms.txt",
+    "path": "evidence/docs/049_Europeana.llms.body",
+    "bytes": 5654,
+    "sha256": "674495f9e5c9a9cc55072493182b29409f02bfeec36c49701eda17bf5c14eb0f"
+   },
+   {
+    "host": "pro.europeana.eu",
+    "url": "https://pro.europeana.eu/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://pro.europeana.eu/llms.txt",
+    "path": "evidence/docs/049_Europeana.llms_docs.body",
+    "bytes": 5633,
+    "sha256": "ea385ebc15ecc6c0278ffdc35b3c0c3415580575e46406864d237326813d840d"
+   }
+  ]
+ },
+ {
+  "service": "DigitalNZ",
+  "ok": false,
+  "url": "https://digitalnz.org/llms.txt",
+  "code": "202",
+  "bytes": 0,
+  "reason": "http-202",
+  "path": "evidence/docs/050_DigitalNZ.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "digitalnz.org",
+    "url": "https://digitalnz.org/llms.txt",
+    "code": "202",
+    "ok": false,
+    "reason": "http-202",
+    "final_url": "https://digitalnz.org/llms.txt",
+    "path": "evidence/docs/050_DigitalNZ.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   }
+  ]
+ },
+ {
+  "service": "Smithsonian Open Access",
+  "ok": false,
+  "url": "https://www.si.edu/llms.txt",
+  "code": "403",
+  "bytes": 146,
+  "reason": "http-403",
+  "path": "evidence/docs/051_Smithsonian_Open_Access.llms.body",
+  "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+  "attempts": [
+   {
+    "host": "www.si.edu",
+    "url": "https://www.si.edu/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.si.edu/llms.txt",
+    "path": "evidence/docs/051_Smithsonian_Open_Access.llms.body",
+    "bytes": 146,
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864"
+   },
+   {
+    "host": "edan.si.edu",
+    "url": "https://edan.si.edu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://edan.si.edu/llms.txt",
+    "path": "evidence/docs/051_Smithsonian_Open_Access.llms_docs.body",
+    "bytes": 196,
+    "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+   }
+  ]
+ },
+ {
+  "service": "Art Institute of Chicago",
+  "ok": false,
+  "url": "https://www.artic.edu/llms.txt",
+  "code": "403",
+  "bytes": 5608,
+  "reason": "http-403",
+  "path": "evidence/docs/052_Art_Institute_of_Chicago.llms.body",
+  "sha256": "d27a2401f73b6abf7b16c3afa33399c4dce6836db968ad98dbf59ebf4806c4cf",
+  "attempts": [
+   {
+    "host": "www.artic.edu",
+    "url": "https://www.artic.edu/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.artic.edu/llms.txt",
+    "path": "evidence/docs/052_Art_Institute_of_Chicago.llms.body",
+    "bytes": 5608,
+    "sha256": "d27a2401f73b6abf7b16c3afa33399c4dce6836db968ad98dbf59ebf4806c4cf"
+   },
+   {
+    "host": "api.artic.edu",
+    "url": "https://api.artic.edu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.artic.edu/llms.txt",
+    "path": "evidence/docs/052_Art_Institute_of_Chicago.llms_docs.body",
+    "bytes": 6586,
+    "sha256": "9ab203220eceaba031c9aa41b4b2d9aa6709c751b43bee4c084f7b41200364cf"
+   }
+  ]
+ },
+ {
+  "service": "Cleveland (browse)",
+  "ok": false,
+  "url": "https://www.clevelandart.org/llms.txt",
+  "code": "404",
+  "bytes": 26188,
+  "reason": "http-404",
+  "path": "evidence/docs/053_Cleveland_browse.llms.body",
+  "sha256": "3486c35f7f33ad7c891db902928732d7c3c30d0cfe689e9440b48767a9e107f1",
+  "attempts": [
+   {
+    "host": "www.clevelandart.org",
+    "url": "https://www.clevelandart.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.clevelandart.org/llms.txt",
+    "path": "evidence/docs/053_Cleveland_browse.llms.body",
+    "bytes": 26188,
+    "sha256": "3486c35f7f33ad7c891db902928732d7c3c30d0cfe689e9440b48767a9e107f1"
+   },
+   {
+    "host": "openaccess-api.clevelandart.org",
+    "url": "https://openaccess-api.clevelandart.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://openaccess-api.clevelandart.org/llms.txt",
+    "path": "evidence/docs/053_Cleveland_browse.llms_docs.body",
+    "bytes": 22,
+    "sha256": "37ec4665a8102d115ffd1ac20dae94c98b4dac64b0c1a68228aa2a531caeb35d"
+   }
+  ]
+ },
+ {
+  "service": "SMK (browse)",
+  "ok": false,
+  "url": "https://www.smk.dk/llms.txt",
+  "code": "404",
+  "bytes": 115572,
+  "reason": "http-404",
+  "path": "evidence/docs/054_SMK_browse.llms.body",
+  "sha256": "e67cc06d30759d082be314c9ba6013441d7b07f4ce72b5419485d8468b4cdf71",
+  "attempts": [
+   {
+    "host": "www.smk.dk",
+    "url": "https://www.smk.dk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.smk.dk/llms.txt",
+    "path": "evidence/docs/054_SMK_browse.llms.body",
+    "bytes": 115572,
+    "sha256": "e67cc06d30759d082be314c9ba6013441d7b07f4ce72b5419485d8468b4cdf71"
+   }
+  ]
+ },
+ {
+  "service": "Getty Vocabularies",
+  "ok": false,
+  "url": "https://vocab.getty.edu/llms.txt",
+  "code": "500",
+  "bytes": 0,
+  "reason": "http-500",
+  "path": "evidence/docs/055_Getty_Vocabularies.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "vocab.getty.edu",
+    "url": "https://vocab.getty.edu/llms.txt",
+    "code": "500",
+    "ok": false,
+    "reason": "http-500",
+    "final_url": "https://vocab.getty.edu/llms.txt",
+    "path": "evidence/docs/055_Getty_Vocabularies.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "host": "www.getty.edu",
+    "url": "https://www.getty.edu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.getty.edu/llms.txt",
+    "path": "evidence/docs/055_Getty_Vocabularies.llms_docs.body",
+    "bytes": 6402,
+    "sha256": "eea0cf84e1d671d62f1cde27e20d51052a70a2d5b001bfa7511908da35450545"
+   }
+  ]
+ },
+ {
+  "service": "GND (DNB)",
+  "ok": false,
+  "url": "https://www.dnb.de/llms.txt",
+  "code": "404",
+  "bytes": 37699,
+  "reason": "http-404",
+  "path": "evidence/docs/056_GND_DNB.llms.body",
+  "sha256": "751491caca865c7ba7cc479acc80dff6b381e059de871faf17b2839f0ee0604a",
+  "attempts": [
+   {
+    "host": "www.dnb.de",
+    "url": "https://www.dnb.de/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.dnb.de/llms.txt",
+    "path": "evidence/docs/056_GND_DNB.llms.body",
+    "bytes": 37699,
+    "sha256": "751491caca865c7ba7cc479acc80dff6b381e059de871faf17b2839f0ee0604a"
+   }
+  ]
+ },
+ {
+  "service": "K10plus SRU",
+  "ok": false,
+  "url": "https://www.k10plus.de/llms.txt",
+  "code": "000",
+  "bytes": 0,
+  "reason": "http-000",
+  "path": "evidence/docs/057_K10plus_SRU.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "www.k10plus.de",
+    "url": "https://www.k10plus.de/llms.txt",
+    "code": "000",
+    "ok": false,
+    "reason": "http-000",
+    "final_url": "https://www.k10plus.de/llms.txt",
+    "path": "evidence/docs/057_K10plus_SRU.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   }
+  ]
+ },
+ {
+  "service": "The National Archives (UK)",
+  "ok": false,
+  "url": "https://www.nationalarchives.gov.uk/llms.txt",
+  "code": "404",
+  "bytes": 34348,
+  "reason": "http-404",
+  "path": "evidence/docs/058_The_National_Archives_UK.llms.body",
+  "sha256": "7237a017590f6c02fd08099eb90c549d1b10272ebbc7bb7ae4a0f7d210cd9f92",
+  "attempts": [
+   {
+    "host": "www.nationalarchives.gov.uk",
+    "url": "https://www.nationalarchives.gov.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.nationalarchives.gov.uk/llms.txt",
+    "path": "evidence/docs/058_The_National_Archives_UK.llms.body",
+    "bytes": 34348,
+    "sha256": "7237a017590f6c02fd08099eb90c549d1b10272ebbc7bb7ae4a0f7d210cd9f92"
+   },
+   {
+    "host": "discovery.nationalarchives.gov.uk",
+    "url": "https://discovery.nationalarchives.gov.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://discovery.nationalarchives.gov.uk/redirection/notfound",
+    "path": "evidence/docs/058_The_National_Archives_UK.llms_docs.body",
+    "bytes": 76142,
+    "sha256": "2e974ea753ed19c24532e38d9a17e95491782305a65bc7e0c7b0254cb79393be"
+   }
+  ]
+ },
+ {
+  "service": "HathiTrust Bib API",
+  "ok": false,
+  "url": "https://www.hathitrust.org/llms.txt",
+  "code": "403",
+  "bytes": 5635,
+  "reason": "http-403",
+  "path": "evidence/docs/059_HathiTrust_Bib_API.llms.body",
+  "sha256": "905f358eb65439d80fd27d21fe3396019bd0a1e529968787adbf0eefc09f9d8f",
+  "attempts": [
+   {
+    "host": "www.hathitrust.org",
+    "url": "https://www.hathitrust.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.hathitrust.org/llms.txt",
+    "path": "evidence/docs/059_HathiTrust_Bib_API.llms.body",
+    "bytes": 5635,
+    "sha256": "905f358eb65439d80fd27d21fe3396019bd0a1e529968787adbf0eefc09f9d8f"
+   }
+  ]
+ },
+ {
+  "service": "OpenLibrary",
+  "ok": false,
+  "url": "https://openlibrary.org/llms.txt",
+  "code": "404",
+  "bytes": 42630,
+  "reason": "http-404",
+  "path": "evidence/docs/060_OpenLibrary.llms.body",
+  "sha256": "ccc274537e58c4e3d655ac847fc7e48baa2f68e6b3fafaa4e5286014a054a24f",
+  "attempts": [
+   {
+    "host": "openlibrary.org",
+    "url": "https://openlibrary.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://openlibrary.org/llms.txt",
+    "path": "evidence/docs/060_OpenLibrary.llms.body",
+    "bytes": 42630,
+    "sha256": "ccc274537e58c4e3d655ac847fc7e48baa2f68e6b3fafaa4e5286014a054a24f"
+   }
+  ]
+ },
+ {
+  "service": "Wikidata",
+  "ok": false,
+  "url": "https://www.wikidata.org/llms.txt",
+  "code": "404",
+  "bytes": 1868,
+  "reason": "http-404",
+  "path": "evidence/docs/061_Wikidata.llms.body",
+  "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf",
+  "attempts": [
+   {
+    "host": "www.wikidata.org",
+    "url": "https://www.wikidata.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.wikidata.org/llms.txt",
+    "path": "evidence/docs/061_Wikidata.llms.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   }
+  ]
+ },
+ {
+  "service": "Wikimedia Commons",
+  "ok": false,
+  "url": "https://commons.wikimedia.org/llms.txt",
+  "code": "404",
+  "bytes": 1868,
+  "reason": "http-404",
+  "path": "evidence/docs/062_Wikimedia_Commons.llms.body",
+  "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf",
+  "attempts": [
+   {
+    "host": "commons.wikimedia.org",
+    "url": "https://commons.wikimedia.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://commons.wikimedia.org/llms.txt",
+    "path": "evidence/docs/062_Wikimedia_Commons.llms.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   },
+   {
+    "host": "www.mediawiki.org",
+    "url": "https://www.mediawiki.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.mediawiki.org/llms.txt",
+    "path": "evidence/docs/062_Wikimedia_Commons.llms_docs.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   }
+  ]
+ },
+ {
+  "service": "Wikipedia",
+  "ok": false,
+  "url": "https://en.wikipedia.org/llms.txt",
+  "code": "404",
+  "bytes": 1868,
+  "reason": "http-404",
+  "path": "evidence/docs/063_Wikipedia.llms.body",
+  "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf",
+  "attempts": [
+   {
+    "host": "en.wikipedia.org",
+    "url": "https://en.wikipedia.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://en.wikipedia.org/llms.txt",
+    "path": "evidence/docs/063_Wikipedia.llms.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   },
+   {
+    "host": "www.mediawiki.org",
+    "url": "https://www.mediawiki.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.mediawiki.org/llms.txt",
+    "path": "evidence/docs/063_Wikipedia.llms_docs.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   }
+  ]
+ },
+ {
+  "service": "Wikisource",
+  "ok": false,
+  "url": "https://en.wikisource.org/llms.txt",
+  "code": "404",
+  "bytes": 1868,
+  "reason": "http-404",
+  "path": "evidence/docs/064_Wikisource.llms.body",
+  "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf",
+  "attempts": [
+   {
+    "host": "en.wikisource.org",
+    "url": "https://en.wikisource.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://en.wikisource.org/llms.txt",
+    "path": "evidence/docs/064_Wikisource.llms.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   },
+   {
+    "host": "www.mediawiki.org",
+    "url": "https://www.mediawiki.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.mediawiki.org/llms.txt",
+    "path": "evidence/docs/064_Wikisource.llms_docs.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   }
+  ]
+ },
+ {
+  "service": "Zenodo",
+  "ok": false,
+  "url": "https://zenodo.org/llms.txt",
+  "code": "404",
+  "bytes": 14101,
+  "reason": "http-404",
+  "path": "evidence/docs/065_Zenodo.llms.body",
+  "sha256": "cdf8852842e1d56724ad04c815c88f99a4c36d2d5e5e70d324d0dbcf00411c1b",
+  "attempts": [
+   {
+    "host": "zenodo.org",
+    "url": "https://zenodo.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://zenodo.org/llms.txt",
+    "path": "evidence/docs/065_Zenodo.llms.body",
+    "bytes": 14101,
+    "sha256": "cdf8852842e1d56724ad04c815c88f99a4c36d2d5e5e70d324d0dbcf00411c1b"
+   },
+   {
+    "host": "developers.zenodo.org",
+    "url": "https://developers.zenodo.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://developers.zenodo.org/llms.txt",
+    "path": "evidence/docs/065_Zenodo.llms_docs.body",
+    "bytes": 9379,
+    "sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368"
+   }
+  ]
+ },
+ {
+  "service": "Figshare",
+  "ok": false,
+  "url": "https://figshare.com/llms.txt",
+  "code": "202",
+  "bytes": 0,
+  "reason": "http-202",
+  "path": "evidence/docs/066_Figshare.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "figshare.com",
+    "url": "https://figshare.com/llms.txt",
+    "code": "202",
+    "ok": false,
+    "reason": "http-202",
+    "final_url": "https://figshare.com/llms.txt",
+    "path": "evidence/docs/066_Figshare.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "host": "docs.figshare.com",
+    "url": "https://docs.figshare.com/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://docs.figshare.com/llms.txt",
+    "path": "evidence/docs/066_Figshare.llms_docs.body",
+    "bytes": 146,
+    "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0"
+   }
+  ]
+ },
+ {
+  "service": "Dryad",
+  "ok": false,
+  "url": "https://datadryad.org/llms.txt",
+  "code": "404",
+  "bytes": 0,
+  "reason": "http-404",
+  "path": "evidence/docs/067_Dryad.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "datadryad.org",
+    "url": "https://datadryad.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://datadryad.org/llms.txt",
+    "path": "evidence/docs/067_Dryad.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   }
+  ]
+ },
+ {
+  "service": "Dataverse Facets",
+  "ok": false,
+  "url": "https://dataverse.harvard.edu/llms.txt",
+  "code": "202",
+  "bytes": 0,
+  "reason": "http-202",
+  "path": "evidence/docs/068_Dataverse_Facets.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "dataverse.harvard.edu",
+    "url": "https://dataverse.harvard.edu/llms.txt",
+    "code": "202",
+    "ok": false,
+    "reason": "http-202",
+    "final_url": "https://dataverse.harvard.edu/llms.txt",
+    "path": "evidence/docs/068_Dataverse_Facets.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "host": "guides.dataverse.org",
+    "url": "https://guides.dataverse.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://guides.dataverse.org/llms.txt",
+    "path": "evidence/docs/068_Dataverse_Facets.llms_docs.body",
+    "bytes": 153,
+    "sha256": "10174434dbe479c08b32ce3b42b70e7c6336647d29e4393483158d590d35c325"
+   }
+  ]
+ },
+ {
+  "service": "DANS EASY",
+  "ok": false,
+  "url": "https://dans.knaw.nl/llms.txt",
+  "code": "200",
+  "bytes": 4415,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/069_DANS_EASY.llms.body",
+  "sha256": "e9c27779b6e145f860da743acf9348dfb01d8a3d2b1c514c385ab450af84d66d",
+  "attempts": [
+   {
+    "host": "dans.knaw.nl",
+    "url": "https://dans.knaw.nl/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://dans.knaw.nl/llms.txt",
+    "path": "evidence/docs/069_DANS_EASY.llms.body",
+    "bytes": 4415,
+    "sha256": "e9c27779b6e145f860da743acf9348dfb01d8a3d2b1c514c385ab450af84d66d"
+   },
+   {
+    "host": "dataverse.nl",
+    "url": "https://dataverse.nl/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://dataverse.nl/llms.txt",
+    "path": "evidence/docs/069_DANS_EASY.llms_docs.body",
+    "bytes": 7484,
+    "sha256": "773ea165dcc776f95062b10575ec8ac6da0c4ec9cfedff5fcb3fd85f3fe59ee9"
+   }
+  ]
+ },
+ {
+  "service": "B2SHARE",
+  "ok": false,
+  "url": "https://b2share.eudat.eu/llms.txt",
+  "code": "404",
+  "bytes": 13121,
+  "reason": "http-404",
+  "path": "evidence/docs/070_B2SHARE.llms.body",
+  "sha256": "67844edc57e2b937d79669ff4fc616424556f8968f2728b56db3b7d3aca61dd1",
+  "attempts": [
+   {
+    "host": "b2share.eudat.eu",
+    "url": "https://b2share.eudat.eu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://b2share.eudat.eu/llms.txt",
+    "path": "evidence/docs/070_B2SHARE.llms.body",
+    "bytes": 13121,
+    "sha256": "67844edc57e2b937d79669ff4fc616424556f8968f2728b56db3b7d3aca61dd1"
+   },
+   {
+    "host": "eudat.eu",
+    "url": "https://eudat.eu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://eudat.eu/llms.txt",
+    "path": "evidence/docs/070_B2SHARE.llms_docs.body",
+    "bytes": 182,
+    "sha256": "b328af7e706ce4f750a82ab7ac3273368626c3d81e7dca23748f43ca260ee108"
+   }
+  ]
+ },
+ {
+  "service": "DataONE",
+  "ok": false,
+  "url": "https://dataone.org/llms.txt",
+  "code": "401",
+  "bytes": 381,
+  "reason": "http-401",
+  "path": "evidence/docs/071_DataONE.llms.body",
+  "sha256": "ff6d14f77e27f7b90cb2f20bce408189f5f388961f3fcd13fe2df2cc0a002dc3",
+  "attempts": [
+   {
+    "host": "dataone.org",
+    "url": "https://dataone.org/llms.txt",
+    "code": "401",
+    "ok": false,
+    "reason": "http-401",
+    "final_url": "https://old.dataone.org/llms.txt",
+    "path": "evidence/docs/071_DataONE.llms.body",
+    "bytes": 381,
+    "sha256": "ff6d14f77e27f7b90cb2f20bce408189f5f388961f3fcd13fe2df2cc0a002dc3"
+   }
+  ]
+ },
+ {
+  "service": "PANGAEA",
+  "ok": false,
+  "url": "https://www.pangaea.de/llms.txt",
+  "code": "404",
+  "bytes": 10193,
+  "reason": "http-404",
+  "path": "evidence/docs/072_PANGAEA.llms.body",
+  "sha256": "f50097e5cf3884c92d9e62d41260cd9d98befdfe9d775d0d337826edccafe4d6",
+  "attempts": [
+   {
+    "host": "www.pangaea.de",
+    "url": "https://www.pangaea.de/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.pangaea.de/llms.txt",
+    "path": "evidence/docs/072_PANGAEA.llms.body",
+    "bytes": 10193,
+    "sha256": "f50097e5cf3884c92d9e62d41260cd9d98befdfe9d775d0d337826edccafe4d6"
+   }
+  ]
+ },
+ {
+  "service": "re3data",
+  "ok": false,
+  "url": "https://www.re3data.org/llms.txt",
+  "code": "404",
+  "bytes": 9147,
+  "reason": "http-404",
+  "path": "evidence/docs/073_re3data.llms.body",
+  "sha256": "5f97360a2bdc563693d552527ac1c2f2826cc96f3524af0e3e9726e67550f164",
+  "attempts": [
+   {
+    "host": "www.re3data.org",
+    "url": "https://www.re3data.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.re3data.org/llms.txt",
+    "path": "evidence/docs/073_re3data.llms.body",
+    "bytes": 9147,
+    "sha256": "5f97360a2bdc563693d552527ac1c2f2826cc96f3524af0e3e9726e67550f164"
+   }
+  ]
+ },
+ {
+  "service": "Mendeley Data",
+  "ok": false,
+  "url": "https://data.mendeley.com/llms.txt",
+  "code": "404",
+  "bytes": 105448,
+  "reason": "http-404",
+  "path": "evidence/docs/074_Mendeley_Data.llms.body",
+  "sha256": "f66db811988d1e2dcf2a0ea51843c76cdc80b7668f3cca032e1f65190f018aa8",
+  "attempts": [
+   {
+    "host": "data.mendeley.com",
+    "url": "https://data.mendeley.com/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://data.mendeley.com/llms.txt",
+    "path": "evidence/docs/074_Mendeley_Data.llms.body",
+    "bytes": 105448,
+    "sha256": "f66db811988d1e2dcf2a0ea51843c76cdc80b7668f3cca032e1f65190f018aa8"
+   }
+  ]
+ },
+ {
+  "service": "DOI Handle API",
+  "ok": false,
+  "url": "https://www.doi.org/llms.txt",
+  "code": "404",
+  "bytes": 7625,
+  "reason": "http-404",
+  "path": "evidence/docs/075_DOI_Handle_API.llms.body",
+  "sha256": "33875b3eb2a69227bcbc3066bb0b5a7d8738c7b8a2ab940bbbfe7ca1b0a37cba",
+  "attempts": [
+   {
+    "host": "www.doi.org",
+    "url": "https://www.doi.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.doi.org/llms.txt",
+    "path": "evidence/docs/075_DOI_Handle_API.llms.body",
+    "bytes": 7625,
+    "sha256": "33875b3eb2a69227bcbc3066bb0b5a7d8738c7b8a2ab940bbbfe7ca1b0a37cba"
+   }
+  ]
+ },
+ {
+  "service": "PLOS",
+  "ok": false,
+  "url": "https://plos.org/llms.txt",
+  "code": "404",
+  "bytes": 226501,
+  "reason": "http-404",
+  "path": "evidence/docs/076_PLOS.llms.body",
+  "sha256": "96a3e311f2a2bee0bddde64c75955990b094cd6379a663d20fa4a45020cb424a",
+  "attempts": [
+   {
+    "host": "plos.org",
+    "url": "https://plos.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://plos.org/llms.txt",
+    "path": "evidence/docs/076_PLOS.llms.body",
+    "bytes": 226501,
+    "sha256": "96a3e311f2a2bee0bddde64c75955990b094cd6379a663d20fa4a45020cb424a"
+   },
+   {
+    "host": "api.plos.org",
+    "url": "https://api.plos.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.plos.org/llms.txt",
+    "path": "evidence/docs/076_PLOS.llms_docs.body",
+    "bytes": 183,
+    "sha256": "262d0ed97f1b3b59aa0e43c11079862d5eaede1677bf9177b1f497461d0684b8"
+   }
+  ]
+ },
+ {
+  "service": "eLife",
+  "ok": false,
+  "url": "https://elifesciences.org/llms.txt",
+  "code": "406",
+  "bytes": 0,
+  "reason": "http-406",
+  "path": "evidence/docs/077_eLife.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "elifesciences.org",
+    "url": "https://elifesciences.org/llms.txt",
+    "code": "406",
+    "ok": false,
+    "reason": "http-406",
+    "final_url": "https://elifesciences.org/llms.txt",
+    "path": "evidence/docs/077_eLife.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "host": "api.elifesciences.org",
+    "url": "https://api.elifesciences.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.elifesciences.org/llms.txt",
+    "path": "evidence/docs/077_eLife.llms_docs.body",
+    "bytes": 103,
+    "sha256": "8a95416a9e5b30583ff19574ccd04ef774d6b44c5c2581208cc97ceb9b9b540a"
+   }
+  ]
+ },
+ {
+  "service": "Research Square",
+  "ok": false,
+  "url": "https://www.researchsquare.com/llms.txt",
+  "code": "404",
+  "bytes": 5028,
+  "reason": "http-404",
+  "path": "evidence/docs/078_Research_Square.llms.body",
+  "sha256": "aad920c2d5de9053748e7791a3c997c702a8d7cf992a5a0035f6c5c0601ade7d",
+  "attempts": [
+   {
+    "host": "www.researchsquare.com",
+    "url": "https://www.researchsquare.com/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.researchsquare.com/llms.txt",
+    "path": "evidence/docs/078_Research_Square.llms.body",
+    "bytes": 5028,
+    "sha256": "aad920c2d5de9053748e7791a3c997c702a8d7cf992a5a0035f6c5c0601ade7d"
+   }
+  ]
+ },
+ {
+  "service": "DSpace (demo)",
+  "ok": false,
+  "url": "https://dspace.org/llms.txt",
+  "code": "404",
+  "bytes": 154303,
+  "reason": "http-404",
+  "path": "evidence/docs/079_DSpace_demo.llms.body",
+  "sha256": "6ce91dd623e1457d6a71b841121c5ffbcfdbc202441195eaed1a131f03346ac1",
+  "attempts": [
+   {
+    "host": "dspace.org",
+    "url": "https://dspace.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://dspace.org/llms.txt",
+    "path": "evidence/docs/079_DSpace_demo.llms.body",
+    "bytes": 154303,
+    "sha256": "6ce91dd623e1457d6a71b841121c5ffbcfdbc202441195eaed1a131f03346ac1"
+   },
+   {
+    "host": "wiki.lyrasis.org",
+    "url": "https://wiki.lyrasis.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://wiki.lyrasis.org/llms.txt",
+    "path": "evidence/docs/079_DSpace_demo.llms_docs.body",
+    "bytes": 35511,
+    "sha256": "fad64011b56e77666ee8d96f4600c0032be6245522abc00dd9f2a67f0a0a61fd"
+   }
+  ]
+ },
+ {
+  "service": "InvenioRDM (demo)",
+  "ok": false,
+  "url": "https://inveniosoftware.org/llms.txt",
+  "code": "404",
+  "bytes": 9379,
+  "reason": "http-404",
+  "path": "evidence/docs/080_InvenioRDM_demo.llms.body",
+  "sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368",
+  "attempts": [
+   {
+    "host": "inveniosoftware.org",
+    "url": "https://inveniosoftware.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://inveniosoftware.org/llms.txt",
+    "path": "evidence/docs/080_InvenioRDM_demo.llms.body",
+    "bytes": 9379,
+    "sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368"
+   },
+   {
+    "host": "inveniordm.docs.cern.ch",
+    "url": "https://inveniordm.docs.cern.ch/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://inveniordm.docs.cern.ch/llms.txt",
+    "path": "evidence/docs/080_InvenioRDM_demo.llms_docs.body",
+    "bytes": 120236,
+    "sha256": "d2eb83c8e74e0a8fd4871d4f6e237be8e1e92b34e1d96925e46a6a3188f59bb3"
+   }
+  ]
+ },
+ {
+  "service": "Zenodo Communities",
+  "ok": false,
+  "url": "https://zenodo.org/llms.txt",
+  "code": "404",
+  "bytes": 14101,
+  "reason": "http-404",
+  "path": "evidence/docs/081_Zenodo_Communities.llms.body",
+  "sha256": "cdf8852842e1d56724ad04c815c88f99a4c36d2d5e5e70d324d0dbcf00411c1b",
+  "attempts": [
+   {
+    "host": "zenodo.org",
+    "url": "https://zenodo.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://zenodo.org/llms.txt",
+    "path": "evidence/docs/081_Zenodo_Communities.llms.body",
+    "bytes": 14101,
+    "sha256": "cdf8852842e1d56724ad04c815c88f99a4c36d2d5e5e70d324d0dbcf00411c1b"
+   },
+   {
+    "host": "developers.zenodo.org",
+    "url": "https://developers.zenodo.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://developers.zenodo.org/llms.txt",
+    "path": "evidence/docs/081_Zenodo_Communities.llms_docs.body",
+    "bytes": 9379,
+    "sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368"
+   }
+  ]
+ },
+ {
+  "service": "Figshare Collections",
+  "ok": false,
+  "url": "https://figshare.com/llms.txt",
+  "code": "202",
+  "bytes": 0,
+  "reason": "http-202",
+  "path": "evidence/docs/082_Figshare_Collections.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "figshare.com",
+    "url": "https://figshare.com/llms.txt",
+    "code": "202",
+    "ok": false,
+    "reason": "http-202",
+    "final_url": "https://figshare.com/llms.txt",
+    "path": "evidence/docs/082_Figshare_Collections.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "host": "docs.figshare.com",
+    "url": "https://docs.figshare.com/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://docs.figshare.com/llms.txt",
+    "path": "evidence/docs/082_Figshare_Collections.llms_docs.body",
+    "bytes": 146,
+    "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0"
+   }
+  ]
+ },
+ {
+  "service": "DataCite Activities",
+  "ok": true,
+  "url": "https://support.datacite.org/llms.txt",
+  "code": "200",
+  "bytes": 37922,
+  "reason": "markdown-index",
+  "path": "evidence/docs/083_DataCite_Activities.llms_docs.body",
+  "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2",
+  "attempts": [
+   {
+    "host": "datacite.org",
+    "url": "https://datacite.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://datacite.org/llms.txt",
+    "path": "evidence/docs/083_DataCite_Activities.llms.body",
+    "bytes": 75193,
+    "sha256": "ac4f780358ba4326a07c3a9bb83dff5a70cbb95a22be0f4c9385efe182cd722f"
+   },
+   {
+    "host": "support.datacite.org",
+    "url": "https://support.datacite.org/llms.txt",
+    "code": "200",
+    "ok": true,
+    "reason": "markdown-index",
+    "final_url": "https://support.datacite.org/llms.txt",
+    "path": "evidence/docs/083_DataCite_Activities.llms_docs.body",
+    "bytes": 37922,
+    "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2"
+   }
+  ]
+ },
+ {
+  "service": "DataCite Clients",
+  "ok": true,
+  "url": "https://support.datacite.org/llms.txt",
+  "code": "200",
+  "bytes": 37922,
+  "reason": "markdown-index",
+  "path": "evidence/docs/084_DataCite_Clients.llms_docs.body",
+  "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2",
+  "attempts": [
+   {
+    "host": "datacite.org",
+    "url": "https://datacite.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://datacite.org/llms.txt",
+    "path": "evidence/docs/084_DataCite_Clients.llms.body",
+    "bytes": 75193,
+    "sha256": "ac4f780358ba4326a07c3a9bb83dff5a70cbb95a22be0f4c9385efe182cd722f"
+   },
+   {
+    "host": "support.datacite.org",
+    "url": "https://support.datacite.org/llms.txt",
+    "code": "200",
+    "ok": true,
+    "reason": "markdown-index",
+    "final_url": "https://support.datacite.org/llms.txt",
+    "path": "evidence/docs/084_DataCite_Clients.llms_docs.body",
+    "bytes": 37922,
+    "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2"
+   }
+  ]
+ },
+ {
+  "service": "DataCite Providers",
+  "ok": true,
+  "url": "https://support.datacite.org/llms.txt",
+  "code": "200",
+  "bytes": 37922,
+  "reason": "markdown-index",
+  "path": "evidence/docs/085_DataCite_Providers.llms_docs.body",
+  "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2",
+  "attempts": [
+   {
+    "host": "datacite.org",
+    "url": "https://datacite.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://datacite.org/llms.txt",
+    "path": "evidence/docs/085_DataCite_Providers.llms.body",
+    "bytes": 75193,
+    "sha256": "ac4f780358ba4326a07c3a9bb83dff5a70cbb95a22be0f4c9385efe182cd722f"
+   },
+   {
+    "host": "support.datacite.org",
+    "url": "https://support.datacite.org/llms.txt",
+    "code": "200",
+    "ok": true,
+    "reason": "markdown-index",
+    "final_url": "https://support.datacite.org/llms.txt",
+    "path": "evidence/docs/085_DataCite_Providers.llms_docs.body",
+    "bytes": 37922,
+    "sha256": "de8a93495619fdb72f375c26ef9d12af8a0c7d4b566f1dd1a4e6a419b68d5ae2"
+   }
+  ]
+ },
+ {
+  "service": "Crossref Funders",
+  "ok": false,
+  "url": "https://www.crossref.org/llms.txt",
+  "code": "404",
+  "bytes": 286,
+  "reason": "http-404",
+  "path": "evidence/docs/086_Crossref_Funders.llms.body",
+  "sha256": "86a5fb9256a2878b6235871675f351f2a90815cdff54906a01e0b29987be3db2",
+  "attempts": [
+   {
+    "host": "www.crossref.org",
+    "url": "https://www.crossref.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.crossref.org/llms.txt",
+    "path": "evidence/docs/086_Crossref_Funders.llms.body",
+    "bytes": 286,
+    "sha256": "86a5fb9256a2878b6235871675f351f2a90815cdff54906a01e0b29987be3db2"
+   }
+  ]
+ },
+ {
+  "service": "Crossref Journals",
+  "ok": false,
+  "url": "https://www.crossref.org/llms.txt",
+  "code": "404",
+  "bytes": 286,
+  "reason": "http-404",
+  "path": "evidence/docs/087_Crossref_Journals.llms.body",
+  "sha256": "ae8413bc9d0bde76250c73bc442042f319f7d6b3b505c27d3235a1ed6559b4f9",
+  "attempts": [
+   {
+    "host": "www.crossref.org",
+    "url": "https://www.crossref.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.crossref.org/llms.txt",
+    "path": "evidence/docs/087_Crossref_Journals.llms.body",
+    "bytes": 286,
+    "sha256": "ae8413bc9d0bde76250c73bc442042f319f7d6b3b505c27d3235a1ed6559b4f9"
+   }
+  ]
+ },
+ {
+  "service": "OpenAIRE Organizations",
+  "ok": false,
+  "url": "https://graph.openaire.eu/llms.txt",
+  "code": "404",
+  "bytes": 3902,
+  "reason": "http-404",
+  "path": "evidence/docs/088_OpenAIRE_Organizations.llms.body",
+  "sha256": "b1383d9e5c0a931221e595df3144e40b74ce1d7a6244e2e318a5f2fa183883b6",
+  "attempts": [
+   {
+    "host": "graph.openaire.eu",
+    "url": "https://graph.openaire.eu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://graph.openaire.eu/llms.txt",
+    "path": "evidence/docs/088_OpenAIRE_Organizations.llms.body",
+    "bytes": 3902,
+    "sha256": "b1383d9e5c0a931221e595df3144e40b74ce1d7a6244e2e318a5f2fa183883b6"
+   }
+  ]
+ },
+ {
+  "service": "OpenAlex Concepts",
+  "ok": false,
+  "url": "https://openalex.org/llms.txt",
+  "code": "403",
+  "bytes": 5735,
+  "reason": "http-403",
+  "path": "evidence/docs/089_OpenAlex_Concepts.llms.body",
+  "sha256": "2888eef13028a0455a9da8b3ef7f420d96473608be43131d79fe80ccc55c018a",
+  "attempts": [
+   {
+    "host": "openalex.org",
+    "url": "https://openalex.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://openalex.org/llms.txt",
+    "path": "evidence/docs/089_OpenAlex_Concepts.llms.body",
+    "bytes": 5735,
+    "sha256": "2888eef13028a0455a9da8b3ef7f420d96473608be43131d79fe80ccc55c018a"
+   },
+   {
+    "host": "docs.openalex.org",
+    "url": "https://docs.openalex.org/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "served-by-other-host:help.openalex.org",
+    "final_url": "https://help.openalex.org/llms.txt",
+    "path": "evidence/docs/089_OpenAlex_Concepts.llms_docs.body",
+    "bytes": 34907,
+    "sha256": "7167ae5565c7969cf22708f8f0c84aaf132bc9b4404f25bee4d4be37fbfb3fb9"
+   }
+  ]
+ },
+ {
+  "service": "OpenAlex Keywords",
+  "ok": false,
+  "url": "https://openalex.org/llms.txt",
+  "code": "403",
+  "bytes": 5735,
+  "reason": "http-403",
+  "path": "evidence/docs/090_OpenAlex_Keywords.llms.body",
+  "sha256": "b62c1cc3c5d6bdee6fbb1642a0b0914c820af80db7f5d6a7d2ab3c3935f76df0",
+  "attempts": [
+   {
+    "host": "openalex.org",
+    "url": "https://openalex.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://openalex.org/llms.txt",
+    "path": "evidence/docs/090_OpenAlex_Keywords.llms.body",
+    "bytes": 5735,
+    "sha256": "b62c1cc3c5d6bdee6fbb1642a0b0914c820af80db7f5d6a7d2ab3c3935f76df0"
+   },
+   {
+    "host": "docs.openalex.org",
+    "url": "https://docs.openalex.org/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "served-by-other-host:help.openalex.org",
+    "final_url": "https://help.openalex.org/llms.txt",
+    "path": "evidence/docs/090_OpenAlex_Keywords.llms_docs.body",
+    "bytes": 34907,
+    "sha256": "7167ae5565c7969cf22708f8f0c84aaf132bc9b4404f25bee4d4be37fbfb3fb9"
+   }
+  ]
+ },
+ {
+  "service": "PubMed EInfo",
+  "ok": false,
+  "url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+  "code": "404",
+  "bytes": 26450,
+  "reason": "http-404",
+  "path": "evidence/docs/091_PubMed_EInfo.llms.body",
+  "sha256": "e91b96ee1742c86b6f7474a4589e17424e8b80783881dc313ffef89fd796654f",
+  "attempts": [
+   {
+    "host": "pubmed.ncbi.nlm.nih.gov",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/091_PubMed_EInfo.llms.body",
+    "bytes": 26450,
+    "sha256": "e91b96ee1742c86b6f7474a4589e17424e8b80783881dc313ffef89fd796654f"
+   },
+   {
+    "host": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/091_PubMed_EInfo.llms_docs.body",
+    "bytes": 135070,
+    "sha256": "f61077c9a0728ebac3e2c8a9fd35fbca956b78ec178598b285bbb0bb66541f6a"
+   }
+  ]
+ },
+ {
+  "service": "HAL References",
+  "ok": false,
+  "url": "https://hal.science/llms.txt",
+  "code": "200",
+  "bytes": 12585,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/092_HAL_References.llms.body",
+  "sha256": "42e4baa65d4c8f07f5fe7e1c4a631ee2426fe494539ba3f841b9689a94dca41f",
+  "attempts": [
+   {
+    "host": "hal.science",
+    "url": "https://hal.science/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://hal.science/llms.txt",
+    "path": "evidence/docs/092_HAL_References.llms.body",
+    "bytes": 12585,
+    "sha256": "42e4baa65d4c8f07f5fe7e1c4a631ee2426fe494539ba3f841b9689a94dca41f"
+   },
+   {
+    "host": "api.archives-ouvertes.fr",
+    "url": "https://api.archives-ouvertes.fr/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://api.archives-ouvertes.fr/docs/",
+    "path": "evidence/docs/092_HAL_References.llms_docs.body",
+    "bytes": 10068,
+    "sha256": "54df623430b92183c68cdc7c737c5f6193e6bcd2593d6ab26f1907e84b7112ba"
+   }
+  ]
+ },
+ {
+  "service": "GBIF Species",
+  "ok": false,
+  "url": "https://www.gbif.org/llms.txt",
+  "code": "403",
+  "bytes": 5479,
+  "reason": "http-403",
+  "path": "evidence/docs/093_GBIF_Species.llms.body",
+  "sha256": "6c506204bd463b3829137948c7f6e449e9afec7a940a71ab87bad2846a5ad979",
+  "attempts": [
+   {
+    "host": "www.gbif.org",
+    "url": "https://www.gbif.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.gbif.org/llms.txt",
+    "path": "evidence/docs/093_GBIF_Species.llms.body",
+    "bytes": 5479,
+    "sha256": "6c506204bd463b3829137948c7f6e449e9afec7a940a71ab87bad2846a5ad979"
+   },
+   {
+    "host": "techdocs.gbif.org",
+    "url": "https://techdocs.gbif.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://techdocs.gbif.org/llms.txt",
+    "path": "evidence/docs/093_GBIF_Species.llms_docs.body",
+    "bytes": 6947,
+    "sha256": "b0cc5ba901d19d46ac244c398d92830e3e3818ef0c569e100628648afd99dfe9"
+   }
+  ]
+ },
+ {
+  "service": "GBIF Datasets",
+  "ok": false,
+  "url": "https://www.gbif.org/llms.txt",
+  "code": "403",
+  "bytes": 5479,
+  "reason": "http-403",
+  "path": "evidence/docs/094_GBIF_Datasets.llms.body",
+  "sha256": "57e92a56ae0663131e0ef90521fa2cd9c8f69babb6f2da94db201d5c2b9fd9df",
+  "attempts": [
+   {
+    "host": "www.gbif.org",
+    "url": "https://www.gbif.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.gbif.org/llms.txt",
+    "path": "evidence/docs/094_GBIF_Datasets.llms.body",
+    "bytes": 5479,
+    "sha256": "57e92a56ae0663131e0ef90521fa2cd9c8f69babb6f2da94db201d5c2b9fd9df"
+   },
+   {
+    "host": "techdocs.gbif.org",
+    "url": "https://techdocs.gbif.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://techdocs.gbif.org/llms.txt",
+    "path": "evidence/docs/094_GBIF_Datasets.llms_docs.body",
+    "bytes": 6947,
+    "sha256": "b0cc5ba901d19d46ac244c398d92830e3e3818ef0c569e100628648afd99dfe9"
+   }
+  ]
+ },
+ {
+  "service": "RCSB PDB Search",
+  "ok": false,
+  "url": "https://www.rcsb.org/llms.txt",
+  "code": "404",
+  "bytes": 40706,
+  "reason": "http-404",
+  "path": "evidence/docs/095_RCSB_PDB_Search.llms.body",
+  "sha256": "c18a0c68cfe56951c9827a3e90727631aa280e92b097ae7f41e6685c6f9d93a1",
+  "attempts": [
+   {
+    "host": "www.rcsb.org",
+    "url": "https://www.rcsb.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.rcsb.org/llms.txt",
+    "path": "evidence/docs/095_RCSB_PDB_Search.llms.body",
+    "bytes": 40706,
+    "sha256": "c18a0c68cfe56951c9827a3e90727631aa280e92b097ae7f41e6685c6f9d93a1"
+   },
+   {
+    "host": "search.rcsb.org",
+    "url": "https://search.rcsb.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://search.rcsb.org/llms.txt",
+    "path": "evidence/docs/095_RCSB_PDB_Search.llms_docs.body",
+    "bytes": 100,
+    "sha256": "ca5bc9cef24e6a943a19d547344cff3e89471af809b42c9b719ff92dc429c624"
+   }
+  ]
+ },
+ {
+  "service": "Ensembl Lookup",
+  "ok": false,
+  "url": "https://www.ensembl.org/llms.txt",
+  "code": "404",
+  "bytes": 1294,
+  "reason": "http-404",
+  "path": "evidence/docs/096_Ensembl_Lookup.llms.body",
+  "sha256": "b396d2ccf94ab8f37a10570d1734d7bc6c3c2d0073894fae789f29fa23d18a7b",
+  "attempts": [
+   {
+    "host": "www.ensembl.org",
+    "url": "https://www.ensembl.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://jun2026.archive.ensembl.org/llms.txt",
+    "path": "evidence/docs/096_Ensembl_Lookup.llms.body",
+    "bytes": 1294,
+    "sha256": "b396d2ccf94ab8f37a10570d1734d7bc6c3c2d0073894fae789f29fa23d18a7b"
+   },
+   {
+    "host": "rest.ensembl.org",
+    "url": "https://rest.ensembl.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://rest.ensembl.org/llms.txt",
+    "path": "evidence/docs/096_Ensembl_Lookup.llms_docs.body",
+    "bytes": 106,
+    "sha256": "c4a0c118c0dd62845929d2ed3cf7ab53566763ed0adf1a2d82f808b25b1a45ae"
+   }
+  ]
+ },
+ {
+  "service": "InterPro Entry",
+  "ok": false,
+  "url": "https://www.ebi.ac.uk/llms.txt",
+  "code": "404",
+  "bytes": 20544,
+  "reason": "http-404",
+  "path": "evidence/docs/097_InterPro_Entry.llms.body",
+  "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6",
+  "attempts": [
+   {
+    "host": "www.ebi.ac.uk",
+    "url": "https://www.ebi.ac.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ebi.ac.uk/llms.txt",
+    "path": "evidence/docs/097_InterPro_Entry.llms.body",
+    "bytes": 20544,
+    "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6"
+   }
+  ]
+ },
+ {
+  "service": "Reactome Search",
+  "ok": false,
+  "url": "https://reactome.org/llms.txt",
+  "code": "404",
+  "bytes": 49327,
+  "reason": "http-404",
+  "path": "evidence/docs/098_Reactome_Search.llms.body",
+  "sha256": "a8986635e3cc7dc099b82a23355fd23af7eb2d109ec69ea17f0fbafd93a42c01",
+  "attempts": [
+   {
+    "host": "reactome.org",
+    "url": "https://reactome.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://reactome.org/llms.txt",
+    "path": "evidence/docs/098_Reactome_Search.llms.body",
+    "bytes": 49327,
+    "sha256": "a8986635e3cc7dc099b82a23355fd23af7eb2d109ec69ea17f0fbafd93a42c01"
+   }
+  ]
+ },
+ {
+  "service": "ChEMBL Molecule",
+  "ok": false,
+  "url": "https://www.ebi.ac.uk/llms.txt",
+  "code": "404",
+  "bytes": 20544,
+  "reason": "http-404",
+  "path": "evidence/docs/099_ChEMBL_Molecule.llms.body",
+  "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6",
+  "attempts": [
+   {
+    "host": "www.ebi.ac.uk",
+    "url": "https://www.ebi.ac.uk/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ebi.ac.uk/llms.txt",
+    "path": "evidence/docs/099_ChEMBL_Molecule.llms.body",
+    "bytes": 20544,
+    "sha256": "8cca4c999d641279366a7b7d476e6ce94bbaeafeddcdad3b78346a590aac16d6"
+   },
+   {
+    "host": "chembl.gitbook.io",
+    "url": "https://chembl.gitbook.io/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "platform-llms:chembl.gitbook.io",
+    "final_url": "https://chembl.gitbook.io/chembl-interface-documentation/llms.txt",
+    "path": "evidence/docs/099_ChEMBL_Molecule.llms_docs.body",
+    "bytes": 4044,
+    "sha256": "b5683d06e2a271b405aa804e04c530f84dbe9998408eff3a30b6d5b2d667b236"
+   }
+  ]
+ },
+ {
+  "service": "OpenLibrary Authors",
+  "ok": false,
+  "url": "https://openlibrary.org/llms.txt",
+  "code": "404",
+  "bytes": 42630,
+  "reason": "http-404",
+  "path": "evidence/docs/100_OpenLibrary_Authors.llms.body",
+  "sha256": "07e5315ff4fbc1849fa29d5a8a7b5c1abbc3a87173eaf446b05c9bd3e5cf0094",
+  "attempts": [
+   {
+    "host": "openlibrary.org",
+    "url": "https://openlibrary.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://openlibrary.org/llms.txt",
+    "path": "evidence/docs/100_OpenLibrary_Authors.llms.body",
+    "bytes": 42630,
+    "sha256": "07e5315ff4fbc1849fa29d5a8a7b5c1abbc3a87173eaf446b05c9bd3e5cf0094"
+   }
+  ]
+ },
+ {
+  "service": "OpenLibrary Subjects",
+  "ok": false,
+  "url": "https://openlibrary.org/llms.txt",
+  "code": "404",
+  "bytes": 42630,
+  "reason": "http-404",
+  "path": "evidence/docs/101_OpenLibrary_Subjects.llms.body",
+  "sha256": "7b85bc64d150c48845f7c2904a8ed4f4a57cd6c8d2216ab579dd5b0bad482fbc",
+  "attempts": [
+   {
+    "host": "openlibrary.org",
+    "url": "https://openlibrary.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://openlibrary.org/llms.txt",
+    "path": "evidence/docs/101_OpenLibrary_Subjects.llms.body",
+    "bytes": 42630,
+    "sha256": "7b85bc64d150c48845f7c2904a8ed4f4a57cd6c8d2216ab579dd5b0bad482fbc"
+   }
+  ]
+ },
+ {
+  "service": "Wikidata Search",
+  "ok": false,
+  "url": "https://www.wikidata.org/llms.txt",
+  "code": "404",
+  "bytes": 1868,
+  "reason": "http-404",
+  "path": "evidence/docs/102_Wikidata_Search.llms.body",
+  "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf",
+  "attempts": [
+   {
+    "host": "www.wikidata.org",
+    "url": "https://www.wikidata.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.wikidata.org/llms.txt",
+    "path": "evidence/docs/102_Wikidata_Search.llms.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   }
+  ]
+ },
+ {
+  "service": "Wikimedia Pageviews",
+  "ok": false,
+  "url": "https://www.mediawiki.org/llms.txt",
+  "code": "404",
+  "bytes": 1868,
+  "reason": "http-404",
+  "path": "evidence/docs/103_Wikimedia_Pageviews.llms.body",
+  "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf",
+  "attempts": [
+   {
+    "host": "www.mediawiki.org",
+    "url": "https://www.mediawiki.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.mediawiki.org/llms.txt",
+    "path": "evidence/docs/103_Wikimedia_Pageviews.llms.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   },
+   {
+    "host": "wikimedia.org",
+    "url": "https://wikimedia.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.wikimedia.org/llms.txt",
+    "path": "evidence/docs/103_Wikimedia_Pageviews.llms_docs.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   }
+  ]
+ },
+ {
+  "service": "DNB SRU",
+  "ok": false,
+  "url": "https://www.dnb.de/llms.txt",
+  "code": "404",
+  "bytes": 37699,
+  "reason": "http-404",
+  "path": "evidence/docs/104_DNB_SRU.llms.body",
+  "sha256": "b39336835b9aff3d8ed0cf60bfbb500108dd28fba176b6a71a9884756b4f64d1",
+  "attempts": [
+   {
+    "host": "www.dnb.de",
+    "url": "https://www.dnb.de/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.dnb.de/llms.txt",
+    "path": "evidence/docs/104_DNB_SRU.llms.body",
+    "bytes": 37699,
+    "sha256": "b39336835b9aff3d8ed0cf60bfbb500108dd28fba176b6a71a9884756b4f64d1"
+   }
+  ]
+ },
+ {
+  "service": "K10plus SRU (GVK)",
+  "ok": false,
+  "url": "https://www.k10plus.de/llms.txt",
+  "code": "000",
+  "bytes": 0,
+  "reason": "http-000",
+  "path": "evidence/docs/105_K10plus_SRU_GVK.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "www.k10plus.de",
+    "url": "https://www.k10plus.de/llms.txt",
+    "code": "000",
+    "ok": false,
+    "reason": "http-000",
+    "final_url": "https://www.k10plus.de/llms.txt",
+    "path": "evidence/docs/105_K10plus_SRU_GVK.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   }
+  ]
+ },
+ {
+  "service": "Europeana Entity",
+  "ok": false,
+  "url": "https://www.europeana.eu/llms.txt",
+  "code": "403",
+  "bytes": 5654,
+  "reason": "http-403",
+  "path": "evidence/docs/106_Europeana_Entity.llms.body",
+  "sha256": "93badc173824c00747eb172873f22da8d4cee9846c796828ac9df475ff37f7fb",
+  "attempts": [
+   {
+    "host": "www.europeana.eu",
+    "url": "https://www.europeana.eu/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.europeana.eu/llms.txt",
+    "path": "evidence/docs/106_Europeana_Entity.llms.body",
+    "bytes": 5654,
+    "sha256": "93badc173824c00747eb172873f22da8d4cee9846c796828ac9df475ff37f7fb"
+   },
+   {
+    "host": "pro.europeana.eu",
+    "url": "https://pro.europeana.eu/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://pro.europeana.eu/llms.txt",
+    "path": "evidence/docs/106_Europeana_Entity.llms_docs.body",
+    "bytes": 5633,
+    "sha256": "8b63db683d70ec0b8a9a1f50360c2c6acbb62a0043b7e49aea199660dbbab7ab"
+   }
+  ]
+ },
+ {
+  "service": "Smithsonian Category Search",
+  "ok": false,
+  "url": "https://www.si.edu/llms.txt",
+  "code": "403",
+  "bytes": 146,
+  "reason": "http-403",
+  "path": "evidence/docs/107_Smithsonian_Category_Search.llms.body",
+  "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+  "attempts": [
+   {
+    "host": "www.si.edu",
+    "url": "https://www.si.edu/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.si.edu/llms.txt",
+    "path": "evidence/docs/107_Smithsonian_Category_Search.llms.body",
+    "bytes": 146,
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864"
+   },
+   {
+    "host": "edan.si.edu",
+    "url": "https://edan.si.edu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://edan.si.edu/llms.txt",
+    "path": "evidence/docs/107_Smithsonian_Category_Search.llms_docs.body",
+    "bytes": 196,
+    "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+   }
+  ]
+ },
+ {
+  "service": "Art Institute (browse)",
+  "ok": false,
+  "url": "https://www.artic.edu/llms.txt",
+  "code": "403",
+  "bytes": 5608,
+  "reason": "http-403",
+  "path": "evidence/docs/108_Art_Institute_browse.llms.body",
+  "sha256": "cfc3796e2b838e0f6b2bbc5d8d52b19a6d189ea2379d4475602b02eca19067b2",
+  "attempts": [
+   {
+    "host": "www.artic.edu",
+    "url": "https://www.artic.edu/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.artic.edu/llms.txt",
+    "path": "evidence/docs/108_Art_Institute_browse.llms.body",
+    "bytes": 5608,
+    "sha256": "cfc3796e2b838e0f6b2bbc5d8d52b19a6d189ea2379d4475602b02eca19067b2"
+   },
+   {
+    "host": "api.artic.edu",
+    "url": "https://api.artic.edu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.artic.edu/llms.txt",
+    "path": "evidence/docs/108_Art_Institute_browse.llms_docs.body",
+    "bytes": 6586,
+    "sha256": "9ab203220eceaba031c9aa41b4b2d9aa6709c751b43bee4c084f7b41200364cf"
+   }
+  ]
+ },
+ {
+  "service": "Met Museum Objects",
+  "ok": false,
+  "url": "https://www.metmuseum.org/llms.txt",
+  "code": "429",
+  "bytes": 34224,
+  "reason": "http-429",
+  "path": "evidence/docs/109_Met_Museum_Objects.llms.body",
+  "sha256": "9d681c0931a223ad568278dd43e5ab284121a3d408effd3a20e8833cc72b4b5f",
+  "attempts": [
+   {
+    "host": "www.metmuseum.org",
+    "url": "https://www.metmuseum.org/llms.txt",
+    "code": "429",
+    "ok": false,
+    "reason": "http-429",
+    "final_url": "https://www.metmuseum.org/llms.txt",
+    "path": "evidence/docs/109_Met_Museum_Objects.llms.body",
+    "bytes": 34224,
+    "sha256": "9d681c0931a223ad568278dd43e5ab284121a3d408effd3a20e8833cc72b4b5f"
+   },
+   {
+    "host": "metmuseum.github.io",
+    "url": "https://metmuseum.github.io/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://metmuseum.github.io/llms.txt",
+    "path": "evidence/docs/109_Met_Museum_Objects.llms_docs.body",
+    "bytes": 9379,
+    "sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368"
+   }
+  ]
+ },
+ {
+  "service": "NARA Catalog",
+  "ok": false,
+  "url": "https://catalog.archives.gov/llms.txt",
+  "code": "200",
+  "bytes": 5454,
+  "reason": "html-not-markdown",
+  "path": "evidence/docs/110_NARA_Catalog.llms.body",
+  "sha256": "64f334d04ad9c9e56607f11c4fad19022e8cd8cb5acb7de9a7b1938eb94b43d1",
+  "attempts": [
+   {
+    "host": "catalog.archives.gov",
+    "url": "https://catalog.archives.gov/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "html-not-markdown",
+    "final_url": "https://catalog.archives.gov/llms.txt",
+    "path": "evidence/docs/110_NARA_Catalog.llms.body",
+    "bytes": 5454,
+    "sha256": "64f334d04ad9c9e56607f11c4fad19022e8cd8cb5acb7de9a7b1938eb94b43d1"
+   },
+   {
+    "host": "www.archives.gov",
+    "url": "https://www.archives.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.archives.gov/files/llms.txt",
+    "path": "evidence/docs/110_NARA_Catalog.llms_docs.body",
+    "bytes": 30146,
+    "sha256": "f45f36c48962b16c61e4102c9854c94a404338cf0e5b017e7b7ffecc1fe5a06b"
+   }
+  ]
+ },
+ {
+  "service": "HathiTrust JSON",
+  "ok": false,
+  "url": "https://www.hathitrust.org/llms.txt",
+  "code": "403",
+  "bytes": 5635,
+  "reason": "http-403",
+  "path": "evidence/docs/111_HathiTrust_JSON.llms.body",
+  "sha256": "fcd3ec43315ccc07e719a204fc8b0b2b604987682be50bbbe9f7088b4aad1d6c",
+  "attempts": [
+   {
+    "host": "www.hathitrust.org",
+    "url": "https://www.hathitrust.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://www.hathitrust.org/llms.txt",
+    "path": "evidence/docs/111_HathiTrust_JSON.llms.body",
+    "bytes": 5635,
+    "sha256": "fcd3ec43315ccc07e719a204fc8b0b2b604987682be50bbbe9f7088b4aad1d6c"
+   }
+  ]
+ },
+ {
+  "service": "Common Crawl URL lookup",
+  "ok": false,
+  "url": "https://commoncrawl.org/llms.txt",
+  "code": "404",
+  "bytes": 4558,
+  "reason": "http-404",
+  "path": "evidence/docs/112_Common_Crawl_URL_lookup.llms.body",
+  "sha256": "bfdf76d3b503fe78c29d91b9eba0aef375b9b15addd8996262cef598812aa7b9",
+  "attempts": [
+   {
+    "host": "commoncrawl.org",
+    "url": "https://commoncrawl.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://commoncrawl.org/llms.txt",
+    "path": "evidence/docs/112_Common_Crawl_URL_lookup.llms.body",
+    "bytes": 4558,
+    "sha256": "bfdf76d3b503fe78c29d91b9eba0aef375b9b15addd8996262cef598812aa7b9"
+   }
+  ]
+ },
+ {
+  "service": "Europe PMC Citations",
+  "ok": false,
+  "url": "https://europepmc.org/llms.txt",
+  "code": "403",
+  "bytes": 5587,
+  "reason": "http-403",
+  "path": "evidence/docs/113_Europe_PMC_Citations.llms.body",
+  "sha256": "c29677aac0f274143373950054504c22a89d8aa6d041f37e61beec48b4c1f45d",
+  "attempts": [
+   {
+    "host": "europepmc.org",
+    "url": "https://europepmc.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://europepmc.org/llms.txt",
+    "path": "evidence/docs/113_Europe_PMC_Citations.llms.body",
+    "bytes": 5587,
+    "sha256": "c29677aac0f274143373950054504c22a89d8aa6d041f37e61beec48b4c1f45d"
+   }
+  ]
+ },
+ {
+  "service": "Europe PMC References",
+  "ok": false,
+  "url": "https://europepmc.org/llms.txt",
+  "code": "403",
+  "bytes": 5587,
+  "reason": "http-403",
+  "path": "evidence/docs/114_Europe_PMC_References.llms.body",
+  "sha256": "b60fcbcdcd4a123f8f889a65665fa7e722c3ecd8b0553e32a845d60fde2afc8f",
+  "attempts": [
+   {
+    "host": "europepmc.org",
+    "url": "https://europepmc.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://europepmc.org/llms.txt",
+    "path": "evidence/docs/114_Europe_PMC_References.llms.body",
+    "bytes": 5587,
+    "sha256": "b60fcbcdcd4a123f8f889a65665fa7e722c3ecd8b0553e32a845d60fde2afc8f"
+   }
+  ]
+ },
+ {
+  "service": "OpenLibrary Covers",
+  "ok": false,
+  "url": "https://openlibrary.org/llms.txt",
+  "code": "404",
+  "bytes": 42630,
+  "reason": "http-404",
+  "path": "evidence/docs/115_OpenLibrary_Covers.llms.body",
+  "sha256": "a9c73267a7d9a9a47e8edc2478d5970e04e0f8eab2ad69d144a9c34d93b484d0",
+  "attempts": [
+   {
+    "host": "openlibrary.org",
+    "url": "https://openlibrary.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://openlibrary.org/llms.txt",
+    "path": "evidence/docs/115_OpenLibrary_Covers.llms.body",
+    "bytes": 42630,
+    "sha256": "a9c73267a7d9a9a47e8edc2478d5970e04e0f8eab2ad69d144a9c34d93b484d0"
+   }
+  ]
+ },
+ {
+  "service": "PubMed EFetch",
+  "ok": false,
+  "url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+  "code": "404",
+  "bytes": 26450,
+  "reason": "http-404",
+  "path": "evidence/docs/116_PubMed_EFetch.llms.body",
+  "sha256": "96b01033893927aa96c47396025848085db9e253015ec946772c88fccefd0a21",
+  "attempts": [
+   {
+    "host": "pubmed.ncbi.nlm.nih.gov",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/116_PubMed_EFetch.llms.body",
+    "bytes": 26450,
+    "sha256": "96b01033893927aa96c47396025848085db9e253015ec946772c88fccefd0a21"
+   },
+   {
+    "host": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/116_PubMed_EFetch.llms_docs.body",
+    "bytes": 135070,
+    "sha256": "f61077c9a0728ebac3e2c8a9fd35fbca956b78ec178598b285bbb0bb66541f6a"
+   }
+  ]
+ },
+ {
+  "service": "PubMed ELink",
+  "ok": false,
+  "url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+  "code": "404",
+  "bytes": 26450,
+  "reason": "http-404",
+  "path": "evidence/docs/117_PubMed_ELink.llms.body",
+  "sha256": "b738029d6226ca0a873f11f67ee5224aa535afef5573be4bb9747f00d00196c6",
+  "attempts": [
+   {
+    "host": "pubmed.ncbi.nlm.nih.gov",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/117_PubMed_ELink.llms.body",
+    "bytes": 26450,
+    "sha256": "b738029d6226ca0a873f11f67ee5224aa535afef5573be4bb9747f00d00196c6"
+   },
+   {
+    "host": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.ncbi.nlm.nih.gov/llms.txt",
+    "path": "evidence/docs/117_PubMed_ELink.llms_docs.body",
+    "bytes": 135070,
+    "sha256": "f61077c9a0728ebac3e2c8a9fd35fbca956b78ec178598b285bbb0bb66541f6a"
+   }
+  ]
+ },
+ {
+  "service": "Semantic Scholar Citations",
+  "ok": false,
+  "url": "https://www.semanticscholar.org/llms.txt",
+  "code": "404",
+  "bytes": 97358,
+  "reason": "http-404",
+  "path": "evidence/docs/118_Semantic_Scholar_Citations.llms.body",
+  "sha256": "502b7bcc0f36e1e57167d36b33b71ed7aa235ff94dbc71b4a8331c663527f5c5",
+  "attempts": [
+   {
+    "host": "www.semanticscholar.org",
+    "url": "https://www.semanticscholar.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.semanticscholar.org/llms.txt",
+    "path": "evidence/docs/118_Semantic_Scholar_Citations.llms.body",
+    "bytes": 97358,
+    "sha256": "502b7bcc0f36e1e57167d36b33b71ed7aa235ff94dbc71b4a8331c663527f5c5"
+   },
+   {
+    "host": "api.semanticscholar.org",
+    "url": "https://api.semanticscholar.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://api.semanticscholar.org/llms.txt",
+    "path": "evidence/docs/118_Semantic_Scholar_Citations.llms_docs.body",
+    "bytes": 22,
+    "sha256": "31f1da27f39e9c1952a0109580973ac05138ff366c21bf961b6bea58191bf786"
+   }
+  ]
+ },
+ {
+  "service": "Wikidata EntityData",
+  "ok": false,
+  "url": "https://www.wikidata.org/llms.txt",
+  "code": "404",
+  "bytes": 1868,
+  "reason": "http-404",
+  "path": "evidence/docs/119_Wikidata_EntityData.llms.body",
+  "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf",
+  "attempts": [
+   {
+    "host": "www.wikidata.org",
+    "url": "https://www.wikidata.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://www.wikidata.org/llms.txt",
+    "path": "evidence/docs/119_Wikidata_EntityData.llms.body",
+    "bytes": 1868,
+    "sha256": "76563b4eeb07e461f97c018d6f0744fdaf2b0af79ebd90410e0452733d164bdf"
+   }
+  ]
+ },
+ {
+  "service": "OpenAIRE Datasets",
+  "ok": false,
+  "url": "https://graph.openaire.eu/llms.txt",
+  "code": "404",
+  "bytes": 3902,
+  "reason": "http-404",
+  "path": "evidence/docs/120_OpenAIRE_Datasets.llms.body",
+  "sha256": "b1383d9e5c0a931221e595df3144e40b74ce1d7a6244e2e318a5f2fa183883b6",
+  "attempts": [
+   {
+    "host": "graph.openaire.eu",
+    "url": "https://graph.openaire.eu/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://graph.openaire.eu/llms.txt",
+    "path": "evidence/docs/120_OpenAIRE_Datasets.llms.body",
+    "bytes": 3902,
+    "sha256": "b1383d9e5c0a931221e595df3144e40b74ce1d7a6244e2e318a5f2fa183883b6"
+   }
+  ]
+ },
+ {
+  "service": "OpenAlex Authors",
+  "ok": false,
+  "url": "https://openalex.org/llms.txt",
+  "code": "403",
+  "bytes": 5735,
+  "reason": "http-403",
+  "path": "evidence/docs/121_OpenAlex_Authors.llms.body",
+  "sha256": "e9369c2132985528f9e1938f003863a942843eb8c41a8ade5ef55bc46481a92e",
+  "attempts": [
+   {
+    "host": "openalex.org",
+    "url": "https://openalex.org/llms.txt",
+    "code": "403",
+    "ok": false,
+    "reason": "http-403",
+    "final_url": "https://openalex.org/llms.txt",
+    "path": "evidence/docs/121_OpenAlex_Authors.llms.body",
+    "bytes": 5735,
+    "sha256": "e9369c2132985528f9e1938f003863a942843eb8c41a8ade5ef55bc46481a92e"
+   },
+   {
+    "host": "docs.openalex.org",
+    "url": "https://docs.openalex.org/llms.txt",
+    "code": "200",
+    "ok": false,
+    "reason": "served-by-other-host:help.openalex.org",
+    "final_url": "https://help.openalex.org/llms.txt",
+    "path": "evidence/docs/121_OpenAlex_Authors.llms_docs.body",
+    "bytes": 34907,
+    "sha256": "7167ae5565c7969cf22708f8f0c84aaf132bc9b4404f25bee4d4be37fbfb3fb9"
+   }
+  ]
+ },
+ {
+  "service": "Dryad (dataset list)",
+  "ok": false,
+  "url": "https://datadryad.org/llms.txt",
+  "code": "404",
+  "bytes": 0,
+  "reason": "http-404",
+  "path": "evidence/docs/122_Dryad_dataset_list.llms.body",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts": [
+   {
+    "host": "datadryad.org",
+    "url": "https://datadryad.org/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://datadryad.org/llms.txt",
+    "path": "evidence/docs/122_Dryad_dataset_list.llms.body",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   }
+  ]
+ },
+ {
+  "service": "OpenCitations Citation Count",
+  "ok": false,
+  "url": "https://opencitations.net/llms.txt",
+  "code": "404",
+  "bytes": 99195,
+  "reason": "http-404",
+  "path": "evidence/docs/123_OpenCitations_Citation_Count.llms.body",
+  "sha256": "4741c49f9525acf40c2c8c2e7ef1bf54884a1a60546c6cab2e21f62eed92dd85",
+  "attempts": [
+   {
+    "host": "opencitations.net",
+    "url": "https://opencitations.net/llms.txt",
+    "code": "404",
+    "ok": false,
+    "reason": "http-404",
+    "final_url": "https://opencitations.net/llms.txt",
+    "path": "evidence/docs/123_OpenCitations_Citation_Count.llms.body",
+    "bytes": 99195,
+    "sha256": "4741c49f9525acf40c2c8c2e7ef1bf54884a1a60546c6cab2e21f62eed92dd85"
+   }
+  ]
+ }
+]

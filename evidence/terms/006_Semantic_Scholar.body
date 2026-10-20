@@ -1,0 +1,237 @@
+<!DOCTYPE html><!-- Last Published: Wed Jan 28 2026 22:26:58 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="webflow.semanticscholar.org" data-wf-page="6584745360a4872a287a88b9" data-wf-site="605236bb767e9a5bb229c63c" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Semantic Scholar Academic Graph API | Semantic Scholar</title><meta content="Build projects that accelerate scientific progress with the Semantic Scholar Academic Graph API" name="description"/><meta content="Semantic Scholar Academic Graph API | Semantic Scholar" property="og:title"/><meta content="Build projects that accelerate scientific progress with the Semantic Scholar Academic Graph API" property="og:description"/><meta content="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/60a2cb67437bf2de419d5137_s2-og.png" property="og:image"/><meta content="Semantic Scholar Academic Graph API | Semantic Scholar" name="twitter:title"/><meta content="Build projects that accelerate scientific progress with the Semantic Scholar Academic Graph API" name="twitter:description"/><meta content="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/60a2cb67437bf2de419d5137_s2-og.png" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/css/semanticscholar.shared.4f9c7a6aa.min.css" rel="stylesheet" type="text/css" integrity="sha384-T5x6aqBcXG30iSOnnKzTVTUTHbc3dzsAQ/hSoR7Kid0amUrVFAeaICQGsrZ/UBkt" crossorigin="anonymous"/><style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="5c380bd4-27df-daeb-e0b2-501b91b775b0"] {-webkit-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c3f9f70a-f87e-fb7e-60c2-75d188a7e2f7"] {-webkit-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="10783756-1402-d223-6027-4f231868062d"] {-webkit-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="73f5d8ef-21ca-6a07-2c35-6dc3a4438a96"] {-webkit-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c3cbc29f-d56e-3377-de6e-24d36c0ea02a"] {-webkit-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="7dd8cac1-5853-b1e9-b5d3-0d6656fd703e"] {-webkit-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0f2f0914-d4de-a0ae-bd45-b71dab0921f0"] {-webkit-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Roboto Slab:300,regular,500,700","Roboto:300,regular,500,700,900","Roboto Mono:regular","Roboto Mono:100,200,300,regular"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/609add8e5f5ce7570f656904_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/609adda9bd029148c37023a9_webclip.png" rel="apple-touch-icon"/><script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script><link href="/api/1/user/webflow.css" rel="stylesheet" type="text/css">
+
+<!-- Heap Analytics Snippet -->
+<script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("2424575119");
+</script>
+<!--End Heap Analytics Snippet-->
+
+<style type="text/css">
+  
+	/* Auth */
+	.site-header__navigation-auth {
+		display: var(--has-auth--block) !important;
+  	}
+	.site-header__navigation-not-auth {
+		display: var(--no-auth--none) !important;
+  	}
+  
+	/* Dropdown Menu Top Bar */
+	.dropdown .dropdown__menu:before{
+    	border-color: transparent transparent #1857B6 transparent;
+		border-style: solid;
+		border-width: 0 8px 8px 8px;
+		content:"";
+		height: 0;
+		position: absolute;
+		right: 12px;
+		top: -12px;
+		width: 0;
+	}
+  
+	/* Embedded Newsletter Hubspot Form */
+	.newsletter .hbspt-form label{
+		margin: 0;
+	}
+	.newsletter .hbspt-form .hs-form {
+		align-items: end;
+		display: flex;
+	}
+	.newsletter .hbspt-form .hs-form-field {
+		flex: 1;
+		position: relative;
+	}
+	.newsletter .hbspt-form .hs-form-field .hs-input {
+		border: 1px solid #546973;	
+		font-size: 16px;
+		height: 36px;
+		line-height: 36px;
+		padding: 8px;
+		width: 100%;
+	}
+	.newsletter .hbspt-form .hs-form-field .hs-input.error {
+		border-color: #a92020;
+	}
+	.newsletter .hbspt-form .hs-form-field .hs-error-msgs {
+		background: #a92020;
+		bottom: -44px;
+		left: 4px;
+		list-style: none;
+		margin: 0;
+		padding: 6px 12px;
+		position: absolute;
+	}
+	.newsletter .hbspt-form .hs-form-field .hs-error-msgs:after {
+		border-color: transparent transparent transparent #a92020;	
+		border-style: solid;
+		border-width: 8px 0 0 8px;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: -8px;
+		width: 0;
+	}
+	.newsletter .hbspt-form .hs-form-field .hs-error-msg {
+		color: #fff;
+		font-size: 14px;
+	}
+	.newsletter .hbspt-form .hs-submit {
+		flex: 0 0 auto;
+	}
+	.newsletter .hbspt-form .hs-submit .hs-button {
+		background: #1857B6;
+		border: none;
+		border-radius: 0 3px 3px 0;
+		color: #fff;
+		cursor: pointer;
+		font-size: 14px;
+		height: 36px;
+		line-height: 36px;
+		margin: 0;
+		padding: 0 14px;
+		transition: background-color 250ms cubic-bezier(.25, .46, .45, .94);
+	}
+	.newsletter .hbspt-form .hs-submit .hs-button:hover {
+		background: #0f3875;
+	}
+	.newsletter .hbspt-form .hs_error_rollup {
+		display: none;
+	}
+	.newsletter .hbspt-form .submitted-message{
+		border: 1px solid #1857B6;
+		border-radius: 3px;
+		padding: 12px;
+	}
+	.newsletter .hbspt-form .submitted-message p {
+		color: #fff;
+		margin: 0;
+		text-align: left !important;
+	}
+	.newsletter-embed--accessibility .hbspt-form label{
+    	color: #fff;
+      	font-family: "Roboto Slab", Serif;
+		font-size: 18px;
+      	font-weight: 400;
+	    text-align: center;
+      	padding-bottom: 12px;
+  	}
+  
+  	/* Paper Object */
+	.paper{
+		filter: drop-shadow(0 1px 2px rgba(0,0,0,.1));
+	}
+	.paper:after{
+		background: #D9DADB;
+		clip-path: polygon(0 0, 100% 100%, 0 100%);
+		content: " ";
+		height: 24px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 24px;
+	}
+	.paper__content{
+		clip-path: polygon(0 0, calc(100% - 24px) 0%, 100% calc(0% + 24px), 100% 100%, 0% 100%);
+	}
+  
+  
+  	/* Testimonials */
+  	.testimonial__citation:after{
+		content: "";
+		position: absolute;
+	    top: 36px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 8px 0 8px 8px;
+		border-color: transparent transparent transparent #f5f6f7;
+		left: -24px;
+  	}
+  
+  	.testimonial__citation.testimonial__citation--alt:after{
+		left: auto;
+    	right: -24px;
+	    border-width: 8px 8px 8px 0;
+    	border-color: transparent #f5f6f7 transparent transparent; 
+	}
+  
+  	@media screen and (max-width: 767px){
+		.testimonial__citation:after{
+			display: none;
+      	}
+  }
+</style></head><body><header class="site-header site-header--fixed"><div class="site-header__content"><a href="https://www.semanticscholar.org" class="site-header__logo w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/6053b48e21b11570b9788241_s2-logo-small.svg" loading="lazy" alt="Semantic Scholar" height="36" class="logo-small"/><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/605274dd4af9b0ca8ac84182_s2-logo.svg" loading="lazy" alt="Semantic Scholar" height="36" class="logo-large"/></a><div class="site-header__search w-form"><form id="wf-form-Search" name="wf-form-Search" data-name="Search" action="https://www.semanticscholar.org/search" method="get" class="search__form" data-wf-page-id="6584745360a4872a287a88b9" data-wf-element-id="6ab03a1e-944e-9291-1968-b70fe5f1160b" data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e"><input class="search__field w-input" maxlength="256" name="q" data-name="q" placeholder="Search over 214 million papers from all fields of science" type="text" id="q"/><input type="submit" data-wait="Please wait..." class="search__submit w-button" value="Search"/></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><div class="site-header__navigation site-header__navigation-auth"><div class="site-header__navigation-wrapper"><a data-w-id="6ab03a1e-944e-9291-1968-b70fe5f11616" href="#" class="site-header__navigation-close w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/60908306c5938d99543d2b58_close.svg" loading="lazy" alt=""/></a><div data-hover="false" data-delay="0" class="site-header__navigation dropdown w-dropdown"><div class="site-header__navigation dropdown button button--secondary w-dropdown-toggle"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/605b9e8398d437113ca1d650_icon-account.svg" loading="lazy" alt="Icon - Account" height="12" class="dropdown image"/><div class="dropdown icon w-icon-dropdown-toggle"></div><div class="dropdown dropdown__text">Account</div></div><nav class="dropdown dropdown__menu w-dropdown-list"><a href="https://www.semanticscholar.org/me/research" class="dropdown dropdown__link w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/62dafc4d8c585c6c25f98ce9_menu-icon-dashboard.svg" loading="lazy" width="18" height="18" alt="" class="dropdown dropdown__image"/><div>Research Dashboard</div></a><a href="https://www.semanticscholar.org/me/recommendations" class="dropdown dropdown__link w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/62dafc4d4e4b2383249840d1_menu-icon-feeds.svg" loading="lazy" width="18" height="18" alt="" class="dropdown dropdown__image"/><div>Research Feeds</div></a><a href="https://www.semanticscholar.org/me/library/all" class="dropdown dropdown__link w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/62dafc4c42e988c961b5809a_menu-icon-library.svg" loading="lazy" width="18" height="18" alt="" class="dropdown dropdown__image"/><div>Library</div></a><a href="https://www.semanticscholar.org/me/account" class="dropdown dropdown__link dropdown__link--section w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/62dafc4d3f5f3076275ec271_menu-icon-settings.svg" loading="lazy" width="18" height="18" alt="" class="dropdown dropdown__image"/><div>Settings</div></a><a href="https://www.semanticscholar.org/me/research" class="dropdown dropdown__link w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/62dafc4c2ab4d9438fee8d1c_menu-icon-logout.svg" loading="lazy" width="18" height="18" alt="" class="dropdown dropdown__image"/><div>Sign Out</div></a></nav></div></div><a data-w-id="6ab03a1e-944e-9291-1968-b70fe5f11630" href="#" class="site-header__navigation-open">Menu</a></div><div class="site-header__navigation site-header__navigation-not-auth"><div class="site-header__navigation-wrapper"><a data-w-id="6ab03a1e-944e-9291-1968-b70fe5f11634" href="#" class="site-header__navigation-close w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/60908306c5938d99543d2b58_close.svg" loading="lazy" alt=""/></a><a href="https://www.semanticscholar.org/sign-in" class="site-header__navigation button button--secondary w-button">Sign In</a><a href="https://www.semanticscholar.org/sign-in" class="site-header__navigation button w-button">Create Free Account</a></div><a data-w-id="6ab03a1e-944e-9291-1968-b70fe5f11662" href="#" class="site-header__navigation-open">Menu</a></div></div></header><main class="main"><div class="section-navigation"><div class="section-navigation__container"><div class="section-navigation__intro"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/624235ea65058666ddc08d70_S2AG.svg" loading="lazy" alt="Logo for Semantic Scholar Academic Graph API" class="section-navigation__logo"/><a href="/product/api" aria-current="page" class="section-navigation__title w--current">Semantic Scholar API</a></div><ul role="list" class="section-navigation__links"><li><a href="/product/api" aria-current="page" class="section-navigation__link w--current">Overview</a></li><li><a href="/product/api/tutorial" class="section-navigation__link">Tutorial</a></li><li><a href="https://api.semanticscholar.org/api-docs/" class="section-navigation__link">Documentation</a></li><li><a href="/product/api/gallery" class="section-navigation__link">Gallery</a></li><li><a href="https://www.semanticscholar.org/paper/The-Semantic-Scholar-Open-Data-Platform-Kinney-Anastasiades/cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1" target="_blank" class="section-navigation__link section-navigation__link__cta">Cite the Paper</a></li></ul></div></div><div class="blade blade--white"><div class="blade__grid"><div class="blade__content"><h1>Semantic Scholar API - Overview</h1><p class="p__intro p__intro--header"><strong>Providing a reliable source of scholarly data for developers</strong></p><p class="p__intro">Build projects that accelerate scientific progress with the Semantic Scholar Academic Graph API</p><ul role="list"><li><a href="https://github.com/allenai/s2-folks/tree/main/examples" target="_blank">Code Examples</a></li><li><a href="https://github.com/allenai/s2-folks/issues" target="_blank">Q&amp;A Bank</a></li><li><a href="#api-key">Request an API Key</a></li><li><a href="https://status.api.semanticscholar.org/" target="_blank">API Service Status Page</a></li><li><a href="https://www.semanticscholar.org/paper/The-Semantic-Scholar-Open-Data-Platform-Kinney-Anastasiades/cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1" target="_blank">Read the Paper</a></li></ul></div><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/610c7a03d5f5738687626adb_api-site.png" loading="lazy" id="w-node-_3713b416-d59e-a9d5-2a39-d29bf6f079b7-287a88b9" sizes="(max-width: 601px) 100vw, 601px" alt="Illustration: Data Transfer via API" srcset="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/610c7a03d5f5738687626adb_api-site-p-500.png 500w, https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/610c7a03d5f5738687626adb_api-site.png 601w"/></div></div><section class="blade"><div class="blade__grid blade__grid--1-2"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/60d4e8b2554784749365b7f7_our_research-01.png" loading="lazy" id="w-node-_37723b14-25d9-8939-d698-6a9e0173eb77-287a88b9" sizes="(max-width: 788px) 100vw, 788px" alt="illustration: a decorative representation of our research" srcset="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/60d4e8b2554784749365b7f7_our_research-01-p-500.png 500w, https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/60d4e8b2554784749365b7f7_our_research-01.png 788w" class="blade__illustration"/><div class="blade__content"><h3>Why use Semantic Scholar API?</h3><p>The Semantic Scholar REST API allows you to find and explore scientific publication data about authors, papers, citations, venues, and more. The API is organized into the following services:</p><ul role="list"><li><strong>Academic Graph</strong>: Provides data about authors, papers, citations, venues, SPECTER2 embeddings, and more that allows you to link directly to the corresponding page on <a href="https://www.semanticscholar.org" target="_blank">semanticscholar.org</a> for more information.</li><li><strong>Recommendations</strong>: Provides recommended papers similar to a given paper.<br/></li><li><strong>Datasets</strong>: Provides downloadable links of datasets in the academic graph.</li></ul><p class="margin-bottom--m">To learn more about our API service, read <a href="https://www.semanticscholar.org/paper/The-Semantic-Scholar-Open-Data-Platform-Kinney-Anastasiades/cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1">The Semantic Scholar Open Data Platform paper</a>.</p><a href="/product/api/tutorial" class="button button--hero w-button">Get Started</a></div></div></section><div class="blade blade--white"><div class="blade__grid blade__grid--full"><div class="blade__content"></div><div data-w-id="5c380bd4-27df-daeb-e0b2-501b91b775b0" class="testimonial"><blockquote class="testimonial__quote">Semantic Scholar providing infrastructure for the research ecosystem is exciting as it enables partners like Litmaps to focus on creating great experiences for end users. We found the Semantic Scholar API and bulk data, clear and straightforward to use. The documentation, examples, and easy access to the raw data allowed us to move quickly on data integration, and get back to solving problems for our users.</blockquote><div id="w-node-_67f802fb-650a-1f2e-6afc-0b1d6f5423b3-287a88b9" class="testimonial__citation"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/610c7f1075e9f2094711775a_axton-pitt.jpeg" loading="lazy" alt="Profile Photo: Axton Pitt" class="testimonial__image"/><p class="cite"><strong class="testimonial__name">Axton Pitt</strong>Co-founder and CTO, <a href="https://www.litmaps.co/" target="_blank">Litmaps</a></p></div></div><div data-w-id="10783756-1402-d223-6027-4f231868062d" class="testimonial testimonial--alt"><div class="testimonial__citation testimonial__citation--alt"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/610c7f1075e9f2898711775b_eddie-smolyansky.jpeg" loading="lazy" alt="Profile Photo: Eddie Smolyansky" class="testimonial__image"/><p class="cite"><strong class="testimonial__name">Eddie Smolyansky</strong>Co-founder, <a href="https://www.connectedpapers.com/" target="_blank">Connected Papers</a></p></div><blockquote class="testimonial__quote">Since day 1 Connected Papers has been built on top of the Semantic Scholar Open Corpus and APIs, and heavily relies on them to provide paper discovery and search capabilities to our users. The APIs are well maintained, frequently updated, fast, and easy to use. The team is extremely responsive and has supported our growth every step of the way from open beta to a million users. This massive resource given to the public for free is a great driver for innovation in science and we are proud to be a part of the next layer of tools being built on top of it.</blockquote></div><div data-w-id="c3f9f70a-f87e-fb7e-60c2-75d188a7e2f7" class="testimonial"><blockquote class="testimonial__quote">We are a startup that tracks the evolution and progress of AI research. Thanks to the Semantic Scholar API pulling in the latest references to papers from top AI conferences has been a really simple task. Otherwise, it would have taken much more time and effort.</blockquote><div class="testimonial__citation"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/610c7f10c0073c5890950067_eduardo-grimaldo.jpeg" loading="lazy" alt="Profile Photo: Eduardo Antonio Espinosa Grimaldo" class="testimonial__image"/><p class="cite"><strong class="testimonial__name">Eduardo Antonio Espinosa Grimaldo</strong>Founder, <a href="https://www.stateoftheart.ai/" target="_blank">Stateoftheart AI</a></p></div></div><div data-w-id="0f2f0914-d4de-a0ae-bd45-b71dab0921f0" class="testimonial testimonial--alt"><div class="testimonial__citation testimonial__citation--alt"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/64adb8734b0888938b804fd6_mansimov_1_opt.png" loading="lazy" alt="Elman Mansimov
+" class="testimonial__image"/><p class="cite"><strong class="testimonial__name">Elman Mansimov</strong>Co-Owner, <a href="https://www.sourcely.net/" target="_blank">Sourcely</a> and <a href="https://www.yomu.ai/" target="_blank">Yomu</a></p></div><blockquote class="testimonial__quote">We at Sourcely have migrated to the Semantic Scholar API to provide academic references to students writing their essays, and our experience working with academic references APIs has never been better. Not only is the Semantic Scholar API very easy to use, quick, and reliable, but it also incorporates a lot of additional metadata like PDF URLs, abstract, summarization, and more, that are not easily accessible with other academic reference providers like Google Scholar. Students love the references provided by Semantic Scholar API and their experience on Sourcely has improved since migration. On top of that, the Semantic Scholar team has been very helpful in answering our questions and considering our feedback.</blockquote></div></div></div><div class="blade blade--collapsed"><div class="blade__grid blade__grid--full"><h4 class="margin-top--none content-centered">Access Our Continually Updating Corpus</h4><div class="w-layout-grid grid--stats"><div data-w-id="73f5d8ef-21ca-6a07-2c35-6dc3a4438a96" class="well stat"><h5 class="stat__value">214 Million</h5><h5 class="stat__key">Papers</h5></div><div data-w-id="c3cbc29f-d56e-3377-de6e-24d36c0ea02a" class="well stat"><h5 class="stat__value">2.49 Billion</h5><h5 class="stat__key">Citations</h5></div><div data-w-id="7dd8cac1-5853-b1e9-b5d3-0d6656fd703e" class="well stat"><h5 class="stat__value">79 Million</h5><h5 class="stat__key">Authors</h5></div></div></div></div><div id="api-key" class="blade blade--collapsed blade--white"><div class="blade__grid blade__grid--2-1 blade__grid--v-centered"><div class="blade__content"><h3 id="Browser-Redirect" class="margin-top--none">Do I need an API Key?</h3><p class="p__intro">Most Semantic Scholar endpoints are available to the public without authentication, but they are rate-limited to 1000 requests per second shared among all unauthenticated users. Requests may also be further throttled during periods of heavy use.</p><p>Certain endpoints require authentication via an API key, and authenticated users have access to higher rate limits. As a best practice, we recommend including your API key with every request. Using an API key will also help us better support you when you need additional help.<br/><br/>The introductory rate limit for an API key is 1 RPS on all endpoints.<br/></p><p>You will receive your private API key via email. Do not share your key with anyone.<br/></p><a href="#api-key-form" class="button button--secondary w-button">Request an API key</a></div><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/646283a933a17ce6545e4b43_api-key.png" loading="lazy" id="w-node-cb6fb680-cd93-c432-91df-4cc0ebecc27b-287a88b9" sizes="(max-width: 776px) 100vw, 776px" alt="illustration of an key with data bits around it" srcset="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/646283a933a17ce6545e4b43_api-key-p-500.png 500w, https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/646283a933a17ce6545e4b43_api-key.png 776w"/></div></div><section class="blade blade--collapsed"><div class="blade__grid blade__grid--full"><div class="blade__content"><h2 class="margin-top--none">Additional Resources</h2><p class="p__intro">We also provide the following datasets as free and open resources.</p><div class="w-layout-grid grid--3-col"><div class="card"><a href="https://api.semanticscholar.org/api-docs/datasets" target="_blank" class="api__resource w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/624235ea65058666ddc08d70_S2AG.svg" loading="lazy" alt="" class="api__resource__image"/><h6 class="api__resource__title">Semantic Scholar Academic Graph Dataset (S2AG)</h6><p class="api__resource__text">Download records for research papers published in all fields as an easy-to-use JSON archive</p></a></div><div class="card"><a href="https://supp.ai/" target="_blank" class="api__resource w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/60d0eb8d0f99808b93adc50c_download.svg" loading="lazy" alt="SUPP.AI Logo" class="api__resource__image"/><h6 class="api__resource__title">SUPP.AI</h6><p class="api__resource__text">An AI-curated corpus of supplements, drugs, and interactions</p></a></div><div class="card"><a href="https://www.semanticscholar.org/product/api/tutorial#datasets" target="_blank" class="api__resource w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/624234b0830e804c9be00dc1_S2ORC.svg" loading="lazy" alt="Semantic Scholar Open Research Corpus" class="api__resource__image"/><h6 class="api__resource__title">S2ORC</h6><p class="api__resource__text">A general purpose corpus for NLP and text mining research over scientific papers</p></a></div></div></div></div></section><section id="api-key-form" class="blade blade--dark"><div class="blade__grid blade__grid--full"><div id="w-node-a8f5c822-cacc-9f83-d735-5ba111e7f331-287a88b9" class="blade__content"><div class="card card--m card--centered"><div class="w-embed w-script"><!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "5910970",
+	formId: "105f3885-cfd8-4b57-a570-6174c5c1650a"
+});
+</script></div></div></div></div></section></main><div class="newsletter"><div class="newsletter__container"><div class="newsletter-layout"><h5 class="newsletter-title">Stay Connected With Semantic Scholar</h5><div class="newsletter-embed w-embed w-script"><!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "5910970",
+	formId: "b8dd2b25-f81d-4cba-a9b6-044e249b7a07"
+});
+</script></div></div></div></div><footer class="site-footer"><div class="site-footer__top"><div class="site-footer__top-container"><div class="site-footer__about"><h6 class="site-footer site-footer__title">What Is Semantic Scholar?</h6><p class="site-footer site-footer__text">Semantic Scholar is a free, AI-powered research tool for scientific literature, based at Ai2.</p><a href="/about" class="site-footer site-footer__link">Learn More</a></div><div class="site-footer__navigation"><ul role="list" class="site-footer site-footer__list w-list-unstyled"><li><h6 class="site-footer site-footer__title">About</h6></li><li><a href="/about" class="site-footer site-footer__link">About Us<br/></a></li><li><a href="/about/publishers" class="site-footer site-footer__link">Publishers</a></li><li><a href="https://medium.com/ai2-blog/semantic-scholar/home" target="_blank" class="site-footer site-footer__link">Blog</a></li><li><a href="https://allenai.org/careers?team=semantic+scholar#current-openings" target="_blank" class="site-footer site-footer__link">Ai2 Careers</a></li></ul><ul role="list" class="site-footer site-footer__list w-list-unstyled"><li><h6 class="site-footer site-footer__title">Product</h6></li><li><a href="/product" class="site-footer site-footer__link">Product Overview</a></li><li><a href="/product/semantic-reader" class="site-footer site-footer__link">Semantic Reader</a></li><li><a href="/product/scholars-hub" class="site-footer site-footer__link">Scholar&#x27;s Hub</a></li><li><a href="/product/beta-program" class="site-footer site-footer__link">Beta Program</a></li></ul><ul role="list" class="site-footer site-footer__list w-list-unstyled"><li><h6 class="site-footer site-footer__title">API</h6></li><li><a href="/product/api" aria-current="page" class="site-footer site-footer__link w--current">API Overview</a></li><li><a href="/product/api/tutorial" class="site-footer site-footer__link">API Tutorials</a></li><li><a href="https://api.semanticscholar.org/api-docs/" class="site-footer site-footer__link">API Documentation</a></li><li><a href="/product/api/gallery" class="site-footer site-footer__link">API Gallery</a></li></ul><ul role="list" class="site-footer site-footer__list w-list-unstyled"><li><h6 class="site-footer site-footer__title">Research</h6></li><li><a href="https://allenai.org/papers?tag=Semantic%20Scholar" target="_blank" class="site-footer site-footer__link">Publications</a></li><li><a href="https://allenai.org/careers" target="_blank" class="site-footer site-footer__link">Research Careers</a></li><li><a href="https://allenai.org/ai-for-science" class="site-footer site-footer__link">Resources</a></li></ul><ul id="w-node-a1cfe8f5-f656-0f8f-b57f-f2c91de1b718-46e684e3" role="list" class="site-footer site-footer__list w-list-unstyled"><li><h6 class="site-footer site-footer__title">Help</h6></li><li><a href="https://www.semanticscholar.org/faq" class="site-footer site-footer__link">FAQ</a></li><li><a href="/about/librarians" class="site-footer site-footer__link">Librarians</a></li><li><a href="/product/tutorials" class="site-footer site-footer__link">Tutorials</a></li></ul></div></div></div><div class="site-footer__bottom"><div class="site-footer__bottom-container"><p class="site-footer__legal">Proudly built by <a href="https://allenai.org/" target="_blank" class="site-footer site-footer__link">Ai2</a> with the help of our Collaborators<br/><a href="https://allenai.org/terms.html" target="_blank" class="site-footer site-footer__link">Terms of Service</a>  •  <a href="https://allenai.org/privacy-policy.html" target="_blank" class="site-footer site-footer__link">Privacy Policy</a>  •  <a href="/product/api/license" class="site-footer site-footer__link">API License Agreement</a></p><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/66a167e36965869758dd87f8_Ai2_logo_offwhite_RGB.png" loading="lazy" alt="" class="site-footer__logo"/></div></div><div class="contact-modal"><div class="contact-modal__container"><a data-w-id="094e8a79-f899-529e-250c-5240927de9d7" href="#" class="contact-modal__close w-inline-block"><img src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/61e9b4e329b9d877dee723c3_close-light.svg" loading="lazy" alt="Close" class="contact-modal__close-jewel"/></a><h4 class="margin-top--none">Contact Us</h4><div class="contact-modal__form-wrapper w-form"><form id="freshdesk-contact-form" name="wf-form-Contact" data-name="Contact" action="https://www.semanticscholar.org/api/1/feedback" method="post" class="contact-modal__form" data-wf-page-id="6584745360a4872a287a88b9" data-wf-element-id="7663d2bf-5ed9-4856-37e4-a4966bfbf84f" data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e"><p class="margin-bottom--sm">Please visit our <a href="https://www.semanticscholar.org/faq">FAQ</a> to find helpful information before submitting your question.<br/></p><label for="contact-form-name">Your name</label><input class="w-input" maxlength="256" name="name" data-name="name" placeholder="" type="text" id="contact-form-name"/><label for="contact-form-email-2">Your email</label><input class="w-input" maxlength="256" name="email" data-name="email" placeholder="" type="email" id="contact-form-email" required=""/><label for="contact-form-subject">Subject<br/></label><input class="w-input" maxlength="256" name="subject" data-name="subject" placeholder="" type="text" id="contact-form-subject" required=""/><label for="contact-form-topic">Topic<br/></label><select id="contact-form-topic" name="topic" data-name="topic" required="" class="select-field w-select"><option value="">Select A Topic</option><option value="Takedown Request">Remove A Paper</option><option value="Author Disambiguation">Merge Authors</option><option value="Other Problem">Other</option></select><label for="contact-form-feedback-2">Feedback<br/></label><textarea id="contact-form-feedback" name="feedback" maxlength="5000" data-name="feedback" placeholder="" required="" class="margin-bottom--sm w-input"></textarea><div data-sitekey="6LdTDpgqAAAAABjsCMeT00cfexfPZEK8qSpYu47Q" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div><input type="submit" data-wait="Please wait..." class="button w-button" value="Contact Us"/></form><div class="contact-modal__form-success w-form-done"><div><strong>Thanks! </strong>Your feedback has been submitted.</div></div><div class="contact-modal__form-error w-form-fail"><div>Something went wrong while submitting the form, please try again.</div></div></div></div><div data-w-id="094e8a79-f899-529e-250c-5240927de9fe" class="contact-modal__overlay"></div></div></footer><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=605236bb767e9a5bb229c63c" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/js/semanticscholar.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/605236bb767e9a5bb229c63c/js/semanticscholar.fe96bbc7.ab965af9c8cdc598.js" type="text/javascript" integrity="sha384-GgjFHlCUOGPijUnhWhzToWufs7YtX7hpdyF+dxf92HrzUNUnxW2vipCBM/q29vdv" crossorigin="anonymous"></script><script>
+    $(document).ready(function() { 
+
+        // Contact Form
+        $('.contact-modal__form').submit(function(e){
+
+            // Stops regular form submit
+            e.preventDefault();
+
+            // Sets variables, encodes form into json
+            var $this = $(this),
+                $parent = $this.parent(),
+                $success = $parent.find(".contact-modal__form-success"),
+                $error = $parent.find(".contact-modal__form-error"),
+                action = $this.attr('action'),
+                submission = $this.serializeArray().reduce((memo, field) => ({...memo, [field.name]: field.value}), {});
+
+            // Record URL
+            submission.url=window.location.href;
+
+            // Submit
+            $.ajax(action, {
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(submission),
+                cache: false,
+                dataType: 'json',
+                crossDomain: true,
+                processData: false
+            }).always(function(e){
+
+                // Hides form, shows success
+                $this.hide();
+                $success.show();
+
+            });
+
+            // just in case
+            return false;
+        });
+
+
+        // Listens for links to /about/contact and pops up contact form instead of redirecting.
+        $('.main a[href$="about/contact"]').on('click', function(e){
+            
+            e.preventDefault();
+            $('.contact-modal').show();
+
+        });
+
+    });
+</script></body></html>

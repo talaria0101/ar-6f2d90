@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Error &ndash; Data Publisher for Earth &amp; Environmental Science</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700,700italic,600italic,300,300italic,800,800italic">
+<link rel="stylesheet" href="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/bootstrap-24col/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/css/pangaea.css">
+<!--[if lte IE 9]>
+<style>#topics-pulldown-wrapper label:after { display:none; }</style>
+<![endif]-->
+<link rel="shortcut icon" href="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/favicon.ico">
+<link rel="icon" href="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="image_src" type="image/png" href="https://www.pangaea.de/assets/social-icons/pangaea-share.png">
+<meta property="og:image" content="https://www.pangaea.de/assets/social-icons/pangaea-share.png">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/js/layout-min.js"></script>
+<script type="text/javascript">
+var _paq=window._paq=window._paq||[];(function(){
+var u="https://analytics.pangaea.de/";
+_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setCookieDomain','pangaea.de']);_paq.push(['setDomains',['pangaea.de','www.pangaea.de','doi.pangaea.de']]);
+_paq.push(["setSiteId",1]);_paq.push(['enableLinkTracking']);_paq.push(['setDownloadClasses',['dataset-download-link']]);_paq.push(["trackPageView"]);
+var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.async=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);
+})();
+</script>
+</head>
+<body class="homepage-layout">
+<div id="header-wrapper">
+  <div class="container-fluid">
+    <header class="row"><!-- volle Screen-Breite -->
+      <div class="content-wrapper"><!-- max. Breite -->
+        <div id="login-area-wrapper" class="hidden-print"><div id="login-area"><span id="user-name">Not logged in</span><a id="signup-button" class="glyphicon glyphicon-plus-sign self-referer-link" title="Sign Up / Create Account" aria-label="Sign up" target="_self" rel="nofollow" href="https://www.pangaea.de/user/signup.php?referer=https%3A%2F%2Fwww.pangaea.de%2Fllms.txt" data-template="https://www.pangaea.de/user/signup.php?referer=#u#"></a><a id="login-button" class="glyphicon glyphicon-log-in self-referer-link" title="Log In" aria-label="Log in" target="_self" rel="nofollow" href="https://www.pangaea.de/user/login.php?referer=https%3A%2F%2Fwww.pangaea.de%2Fllms.txt" data-template="https://www.pangaea.de/user/login.php?referer=#u#"></a></div></div>
+        <div class="blindspalte header-block col-lg-3 col-md-4"></div>
+        
+        <div id="header-logo-block" class="header-block col-lg-3 col-md-4 col-sm-4 col-xs-8">
+          <div id="pangaea-logo">
+            <a title="PANGAEA home" href="/" class="home-link"><img src="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/layout-images/pangaea-logo.png" alt="PANGAEA home"></a>
+          </div>
+        </div>
+        
+        <div id="header-mid-block" class="header-block col-lg-12 col-md-9 col-sm-20 col-xs-16">
+          <div id="pangaea-logo-headline">
+            PANGAEA<span class="punkt">.</span>
+          </div>
+          <div id="pangaea-logo-slogan">
+            <span>Data Publisher for Earth &amp; </span><span class="nowrap">Environmental Science</span>
+          </div>
+          <div id="search-area-header" class="row"></div>
+        </div>
+        
+        <div id="header-main-menu-block" class="header-block hidden-print col-lg-6 col-md-7 col-sm-24 col-xs-24">
+          <nav id="main-nav">
+            <ul>
+              <li id="menu-search">
+                <!-- class on link is important, don't change!!! -->
+                <a href="/" class="home-link">Search</a>
+              </li>
+              <li id="menu-submit">
+                <a href="/submit/">Submit</a>
+              </li>
+              <li id="menu-help">
+                <a href="//wiki.pangaea.de/">Help</a>
+              </li>
+              <li id="menu-about">
+                <a href="/about/">About</a>
+              </li>
+              <li id="menu-contact">
+                <a href="/contact/">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+<div id="flex-wrapper">
+<div id="main-container" class="container-fluid">
+<div id="main-row" class="row main-row">
+<div id="main" class="col-lg-24 col-md-24 col-sm-24 col-xs-24">
+
+<div id="main-block" class="row">
+
+<div class="blindspalte col-lg-3 col-md-4 col-sm-0 col-xs-0"></div>
+
+<div class="col-lg-21 col-md-20 col-sm-24 col-xs-24">
+<div class="row">
+<div id="main-text" class="col-lg-24 col-md-24 col-sm-24 col-xs-24">
+<div class="text-block top-border">
+<h1>404 Not Found: /llms.txt</h1>
+
+<p>The requested object does not exist on this server.
+The link you followed is either outdated, inaccurate,
+or the server has been instructed not to let you have it.</p>
+
+
+<h2>You can do the following:</h2>
+<form action="/" method="get">
+<ul>
+ <li>Visit the <a href="/">PANGAEA Homepage</a></li>
+ <li><p>Search <a href="/">PANGAEA</a> for:
+  <input type="text" name="q" size="40" value="llms" />
+  <input type="submit" value="Search" />
+ </li>
+</ul>
+</form>
+</div></div></div></div></div></div></div></div>
+</div>
+<div id="footer-wrapper" class="top-border hidden-print">
+  <div class="container-fluid">
+    <footer class="row"><!-- volle Screen-Breite -->
+      <div class="content-wrapper"><!-- max. Breite -->
+        <div class="blindspalte col-lg-3 col-md-4 col-sm-4 col-xs-4"></div>
+        <div id="footer-hosted-by-area" class="col-lg-21 col-md-9 col-sm-24 col-xs-24">
+          <div class="col-lg-12 col-md-24 col-sm-24 col-xs-24">
+            <div class="headline underlined">
+              PANGAEA is hosted by
+            </div>
+            
+            <div>
+              <p>
+                Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research (AWI)<br/>
+                Center for Marine Environmental Sciences, University of Bremen (MARUM)
+              </p>
+            </div>
+
+            <div class="headline underlined">
+              The System is supported by
+            </div>
+            
+            <div>
+              <p>
+                The European Commission, Research<br/>
+                Federal Ministry of Research, Technology and Space (BMFTR)<br/>
+                Deutsche Forschungsgemeinschaft (DFG)<br/>
+                International Ocean Discovery Program (IODP)
+              </p>
+            </div>
+
+            <div class="headline underlined">
+              Citation
+            </div>
+
+            <div>
+              <p>
+                <strong>Felden, J; Möller, L; Schindler, U; Huber, R; Schumacher, S; Koppe, R; Diepenbroek, M; Glöckner, FO (2023):</strong>
+                PANGAEA &ndash; Data Publisher for Earth &amp; Environmental Science. <em>Scientific Data</em>, <strong>10(1)</strong>, 347,
+                <a class="text-linkwrap doi-link" href="https://doi.org/10.1038/s41597-023-02269-x" target="_blank">https://doi.org/10.1038/s41597-023-02269-x</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-24 col-sm-24 col-xs-24">
+            <div class="headline underlined">
+              PANGAEA is certified by
+            </div>
+            
+            <div>
+              <a href="//www.worlddatasystem.org/" target="_blank" title="World Data System">
+                <img class="col-lg-6 col-md-6 col-sm-6 col-xs-6" src="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/logos/logo-wds-block.png" alt="World Data System">
+              </a>
+              <a href="//www.wmo.int/" target="_blank" title="World Meteorological Organization">
+                <img class="col-lg-6 col-md-6 col-sm-6 col-xs-6" src="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/logos/logo-wmo-block.png" alt="World Meteorological Organization">
+              </a>
+              <a href="//www.coretrustseal.org/" target="_blank" title="CoreTrustSeal">
+                <img class="col-lg-6 col-md-6 col-sm-6 col-xs-6" src="/assets/v.2d6f89e80fb0ee2bf039f8938c1ebe6a/logos/logo-coretrustseal-block.png" alt="CoreTrustSeal">
+              </a>
+            </div>
+          </div>
+        </div>
+                
+        <div id="footer-menu-area" class="col-lg-24 col-md-24 col-sm-24 col-xs-24">
+          <div class="blindspalte col-lg-3 col-md-4 col-sm-4 col-xs-4"></div>
+          <div id="footer-menu-wrapper" class="col-lg-21 col-md-20 col-sm-24 col-xs-24">
+            <nav id="footer-nav">
+              <ul>
+                <li id="about-legal-notice">
+                  <a href="/about/legal.php">Legal notice</a>
+                </li>
+                <li id="about-term">
+                  <a href="/about/terms.php">Terms of use</a>
+                </li>
+                <li id="about-privacy-policy">
+                  <a href="/about/privacypolicy.php">Privacy policy</a>
+                </li>
+                <li id="about-cookies">
+                  <a href="/about/cookies.php">Cookies</a>
+                </li>
+                <li id="about-jobs">
+                  <a href="/about/jobs.php">Jobs</a>
+                </li>
+                <li id="about-contact">
+                  <a href="/contact/">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
